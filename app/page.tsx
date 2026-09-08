@@ -1,0 +1,151 @@
+"use client";
+
+import { useCallback, useEffect, useState } from "react";
+import { ArrowLeft, ArrowRight, BookOpen, Brain, Check, ChevronRight, Lightbulb, Menu, RotateCcw, Target, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Progress } from "@/components/ui/progress";
+import { grades, Grade, GradeId, Lesson, Level, Task } from "./content";
+
+type Route = { kind:"home" } | {kind:"grade"; gradeId:GradeId} | {kind:"area"; gradeId:GradeId; areaId:string} | {kind:"lesson";gradeId:GradeId;areaId:string;lessonId:string} | {kind:"smart";gradeId:GradeId};
+type GradeProgress = {completed:string[];lastLesson:string|null;bestFirst:number;lastFirst:number;recentTaskIds:string[];weak:Record<string,number>};
+const emptyProgress:GradeProgress={completed:[],lastLesson:null,bestFirst:0,lastFirst:0,recentTaskIds:[],weak:{}};
+
+const escapeHtml=(s:string)=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+function mathHtml(source:string){
+  let s=escapeHtml(source);
+  for(let n=0;n<3;n++){
+    s=s.replace(/\[\[frac:([^\[\]|]+)\|([^\[\]]+)\]\]/g,"<span class='frac'><span>$1</span><span>$2</span></span>");
+    s=s.replace(/\[\[sqrt:([^\[\]]+)\]\]/g,"<span class='sqrt'><span>$1</span></span>");
+  }
+  return s.replace(/\^([0-9n]+)/g,"<sup>$1</sup>").replace(/·/g,"<span class='op'>·</span>");
+}
+function MathText({children,className=""}:{children:string;className?:string}){return <span className={`math ${className}`} dangerouslySetInnerHTML={{__html:mathHtml(children)}}/>}
+
+function parseRoute():Route{
+  if(typeof window==="undefined") return {kind:"home"};
+  const p=window.location.hash.replace(/^#\/?/,"").split("/").filter(Boolean);
+  const g=Number(p[1]) as GradeId;
+  if(p[0]==="razred" && [6,7,8].includes(g)) return {kind:"grade",gradeId:g};
+  if(p[0]==="oblast" && [6,7,8].includes(g) && p[2]) return {kind:"area",gradeId:g,areaId:p[2]};
+  if(p[0]==="lekcija" && [6,7,8].includes(g) && p[2] && p[3]) return {kind:"lesson",gradeId:g,areaId:p[2],lessonId:p[3]};
+  if(p[0]==="pametno" && [6,7,8].includes(g)) return {kind:"smart",gradeId:g};
+  return {kind:"home"};
+}
+
+function routeHash(r:Route){
+  if(r.kind==="home") return "#/";
+  if(r.kind==="grade") return `#/razred/${r.gradeId}`;
+  if(r.kind==="area") return `#/oblast/${r.gradeId}/${r.areaId}`;
+  if(r.kind==="lesson") return `#/lekcija/${r.gradeId}/${r.areaId}/${r.lessonId}`;
+  return `#/pametno/${r.gradeId}`;
+}
+
+function useGradeProgress(gradeId:GradeId){
+  const key=`matematikon68-progress-v1-${gradeId}`;
+  const [progress,setProgress]=useState<GradeProgress>(emptyProgress);
+  const [loaded,setLoaded]=useState(false);
+  useEffect(()=>{try{const raw=localStorage.getItem(key);setProgress(raw?{...emptyProgress,...JSON.parse(raw)}:emptyProgress)}catch{setProgress(emptyProgress)}finally{setLoaded(true)}},[key]);
+  const save=useCallback((next:GradeProgress)=>{setProgress(next);localStorage.setItem(key,JSON.stringify(next))},[key]);
+  return [progress,save,loaded] as const;
+}
+
+function Logo({go}:{go:(r:Route)=>void}){return <button className="brand" onClick={()=>go({kind:"home"})}><span>∑</span><b>Matematik<span>ON</span></b><small>6–8</small></button>}
+
+function Header({route,go}:{route:Route;go:(r:Route)=>void}){
+  const [open,setOpen]=useState(false);
+  const item=(label:string,r:Route,active:boolean)=><button className={active?"active":""} onClick={()=>{go(r);setOpen(false)}}>{label}</button>;
+  return <header className="site-header"><div className="nav-wrap"><Logo go={go}/><button className="menu-toggle" aria-label={open?"Zatvori meni":"Otvori meni"} onClick={()=>setOpen(v=>!v)}>{open?<X/>:<Menu/>}</button><nav className={open?"open":""} aria-label="Glavna navigacija">
+    {item("Početna",{kind:"home"},route.kind==="home")}
+    {[6,7,8].map(id=>item(`${id}. razred`,{kind:"grade",gradeId:id as GradeId},"gradeId" in route&&route.gradeId===id))}
+  </nav></div></header>
+}
+
+function HomePage({go}:{go:(r:Route)=>void}){return <main>
+  <section className="home-hero"><div className="shell hero-grid"><div><p className="eyebrow">MATEMATIKA ZA STARIJE RAZREDE</p><h1>Izaberi razred.<br/><em>Uči korak po korak.</em></h1><p>Jasne lekcije, pravilna matematika i vežbanje koje pamti tvoj napredak.</p></div><div className="symbol-board" aria-hidden="true"><span>√</span><span className="board-frac"><i>3</i><i>5</i></span><span>∠</span><b>6–8</b></div></div></section>
+  <section className="shell grade-choice"><div className="section-heading"><div><p className="eyebrow">SEPTEMBAR</p><h2>Koji razred biraš?</h2></div><p>Odaberi razred i odmah nastavi na dostupno gradivo.</p></div><div className="grade-grid">{grades.map((g,i)=><button key={g.id} className={`grade-card g${g.id}`} onClick={()=>go({kind:"grade",gradeId:g.id})}><span className="grade-number">0{i+1}</span><div><strong>{g.id}.</strong><h3>RAZRED</h3><p>{g.description}</p></div><ChevronRight/></button>)}</div></section>
+  </main>}
+
+function ProgressBlock({grade,progress}:{grade:Grade;progress:GradeProgress}){
+  const total=grade.areas.flatMap(a=>a.lessons).length; const done=progress.completed.length; const pct=Math.round(done/total*100);
+  return <div className="progress-card"><div><span>Napredak u {grade.id}. razredu</span><strong>{pct}%</strong></div><Progress value={pct}/><p>{done} od {total} završenih lekcija</p></div>
+}
+
+function GradePage({grade,go}:{grade:Grade;go:(r:Route)=>void}){
+  const [progress]=useGradeProgress(grade.id);
+  const first=grade.areas.find(a=>!a.review)?.lessons[0] ?? grade.areas[0].lessons[0];
+  const last=grade.areas.flatMap(a=>a.lessons.map(l=>({a,l}))).find(x=>x.l.id===progress.lastLesson);
+  const cont=last??{a:grade.areas.find(a=>a.lessons.some(l=>l.id===first.id))!,l:first};
+  return <main className="shell page"><div className="grade-mast" style={{"--grade":grade.accent} as React.CSSProperties}><p className="eyebrow">SEPTEMBAR · {grade.id}. RAZRED</p><h1>{grade.id}. razred</h1><p>{grade.description}</p></div>
+    <div className="dashboard-grid"><ProgressBlock grade={grade} progress={progress}/><button className="continue-card" onClick={()=>go({kind:"lesson",gradeId:grade.id,areaId:cont.a.id,lessonId:cont.l.id})}><span><BookOpen/></span><div><small>{progress.lastLesson?"NASTAVI UČENJE":"PRVA LEKCIJA"}</small><strong>{cont.l.title}</strong><p>{cont.a.title}</p></div><ArrowRight/></button></div>
+    <div className="section-heading compact"><div><p className="eyebrow">DOSTUPNO</p><h2>Oblasti</h2></div></div><div className="area-grid">{grade.areas.map((a,i)=>{
+      const done=a.lessons.filter(l=>progress.completed.includes(l.id)).length;const pct=Math.round(done/a.lessons.length*100);
+      return <button className={a.review?"area-card review":"area-card"} key={a.id} onClick={()=>go({kind:"area",gradeId:grade.id,areaId:a.id})}><span>{a.review?"↺":String(i).padStart(2,"0")}</span><div><small>{a.review?"KRATKO OBNAVLJANJE":"GLAVNA OBLAST"}</small><h3>{a.title}</h3><p>{a.short}</p><div className="mini-progress"><i style={{width:`${pct}%`}}/></div></div><b>{pct}%</b></button>})}
+      <button className="smart-card" onClick={()=>go({kind:"smart",gradeId:grade.id})}><span><Brain/></span><div><small>10 ZADATAKA</small><h3>Pametno vežbanje</h3><p>Vežbaj po nivou i otkrij šta treba da ponoviš.</p></div><ChevronRight/></button></div><p className="soon">Nove oblasti uskoro.</p>
+  </main>
+}
+
+function AreaPage({grade,areaId,go}:{grade:Grade;areaId:string;go:(r:Route)=>void}){
+  const area=grade.areas.find(a=>a.id===areaId)!; const [progress]=useGradeProgress(grade.id); const done=area.lessons.filter(l=>progress.completed.includes(l.id)).length;const pct=Math.round(done/area.lessons.length*100);
+  return <main className="shell page"><button className="back-link" onClick={()=>go({kind:"grade",gradeId:grade.id})}><ArrowLeft/> {grade.id}. razred</button><div className="area-head"><p className="eyebrow">{area.review?"KRATKO OBNAVLJANJE":"SEPTEMBARSKA OBLAST"}</p><h1>{area.title}</h1><p>{area.short}</p><div className="area-progress-line"><Progress value={pct}/><strong>{pct}%</strong></div></div>
+    <div className="lesson-grid">{area.lessons.map((l,i)=><button key={l.id} className={progress.completed.includes(l.id)?"lesson-card completed":"lesson-card"} onClick={()=>go({kind:"lesson",gradeId:grade.id,areaId:area.id,lessonId:l.id})}><span>{progress.completed.includes(l.id)?<Check/>:String(i+1).padStart(2,"0")}</span><div><small>{progress.completed.includes(l.id)?"ZAVRŠENO":`LEKCIJA ${i+1}`}</small><h2>{l.title}</h2></div><ChevronRight/></button>)}</div>
+  </main>
+}
+
+function Diagram({type}:{type:Lesson["diagram"]}){
+  if(type==="tales") return <figure className="diagram"><svg viewBox="0 0 520 260" role="img" aria-label="Talesova teorema: duž MN paralelna je duži BC"><path d="M85 220 L260 35 L445 220 Z"/><path className="accent" d="M158 143 L369 143"/><circle cx="260" cy="35" r="4"/><text x="262" y="25">A</text><text x="72" y="235">B</text><text x="445" y="235">C</text><text x="142" y="137">M</text><text x="374" y="137">N</text><text x="205" y="130">MN ∥ BC</text></svg><figcaption>Paralela MN deli krake trougla proporcionalno.</figcaption></figure>;
+  if(type==="similarity") return <figure className="diagram"><svg viewBox="0 0 560 240" role="img" aria-label="Dva slična trougla"><path d="M35 205 L145 45 L230 205 Z"/><path className="accent" d="M300 205 L455 20 L535 205 Z"/><text x="140" y="34">A</text><text x="22" y="222">B</text><text x="232" y="222">C</text><text x="450" y="15">A₁</text><text x="284" y="222">B₁</text><text x="536" y="222">C₁</text><text x="250" y="120">∼</text></svg><figcaption>Jednaki uglovi i proporcionalne stranice.</figcaption></figure>;
+  if(type==="scale") return <figure className="diagram"><svg viewBox="0 0 520 220" role="img" aria-label="Poređenje duži u razmeri"><path d="M55 70 H455"/><path className="accent" d="M55 155 H255"/><path d="M55 58 V82 M455 58 V82 M55 143 V167 M255 143 V167"/><text x="235" y="55">a</text><text x="145" y="140">b</text><text x="235" y="205">a : b</text></svg><figcaption>Razmeru duži računamo tek kada su u istoj jedinici.</figcaption></figure>;
+  return null;
+}
+
+function TaskCard({task,onDone,number}:{task:Task;onDone:(result:{firstCorrect:boolean;usedSolution:boolean})=>void;number?:number}){
+  const [value,setValue]=useState("");const [attempts,setAttempts]=useState(0);const [message,setMessage]=useState("");const [hint,setHint]=useState(false);const [solution,setSolution]=useState(false);const [finished,setFinished]=useState(false);
+  useEffect(()=>{setValue("");setAttempts(0);setMessage("");setHint(false);setSolution(false);setFinished(false)},[task.id]);
+  const norm=(v:string)=>v.trim().replace(/−/g,"-").replace(/\s+/g,"").replace(",",".").toLowerCase();
+  const check=()=>{if(!value)return;const ok=norm(value)===norm(task.answer);if(ok){setFinished(true);setMessage("Tačno! Bravo.");onDone({firstCorrect:attempts===0&&!solution,usedSolution:solution})}else{setAttempts(a=>a+1);setMessage("Nije tačno. Pokušaj ponovo.")}};
+  return <article data-task-id={task.id} className={`task-card ${finished?"is-correct":""}`}><div className="task-top"><span>{number?`Zadatak ${number}`:"Proveri znanje"}</span><small className={`level ${task.level}`}>{task.level==="basic"?"Osnovni":task.level==="medium"?"Srednji":"Napredni"}</small></div><p>{task.prompt}</p>{task.math&&<div className="task-math"><MathText>{task.math}</MathText></div>}
+    {task.kind==="choice"?<div className="choices">{task.choices!.map(c=><button key={c} disabled={finished} className={value===c?"selected":""} onClick={()=>setValue(c)}><MathText>{c}</MathText></button>)}</div>:<label className="answer-input"><span>Odgovor</span><input value={value} disabled={finished} onChange={e=>setValue(e.target.value)} onKeyDown={e=>{if(e.key==="Enter")check()}} inputMode="decimal" placeholder="Upiši odgovor"/></label>}
+    {!finished&&<div className="task-actions"><Button onClick={check} disabled={!value}>Proveri</Button>{attempts>=2&&!hint&&<Button variant="outline" onClick={()=>setHint(true)}><Lightbulb/> Nagoveštaj</Button>}{attempts>=2&&<Button variant="ghost" onClick={()=>setSolution(true)}>Prikaži postupak</Button>}</div>}
+    {message&&<p className={finished?"feedback good":"feedback bad"}>{message}</p>}{hint&&<p className="hint"><Lightbulb/> {task.hint}</p>}{solution&&<div className="solution"><strong>Postupak</strong><MathText>{task.solution}</MathText>{!finished&&<Button onClick={()=>{setFinished(true);onDone({firstCorrect:false,usedSolution:true})}}>Razumem, nastavi</Button>}</div>}
+  </article>
+}
+
+function LessonPage({grade,areaId,lessonId,go}:{grade:Grade;areaId:string;lessonId:string;go:(r:Route)=>void}){
+  const area=grade.areas.find(a=>a.id===areaId)!;const lesson=area.lessons.find(l=>l.id===lessonId)!;const [progress,save,loaded]=useGradeProgress(grade.id);const [done,setDone]=useState<Record<string,boolean>>({});
+  useEffect(()=>{if(loaded)save({...progress,lastLesson:lesson.id})},[lesson.id,loaded]); // eslint-disable-line react-hooks/exhaustive-deps
+  const all=area.lessons;const index=all.findIndex(l=>l.id===lesson.id);const completed=lesson.tasks.every(t=>done[t.id]);
+  useEffect(()=>{if(loaded&&completed&&!progress.completed.includes(lesson.id))save({...progress,lastLesson:lesson.id,completed:[...progress.completed,lesson.id]})},[completed,loaded]); // eslint-disable-line react-hooks/exhaustive-deps
+  const jump=(l:Lesson)=>go({kind:"lesson",gradeId:grade.id,areaId:area.id,lessonId:l.id});
+  return <main className="lesson-page"><nav className="lesson-nav"><button disabled={index===0} onClick={()=>jump(all[index-1])}><ArrowLeft/> <span>Prethodna lekcija</span></button><button onClick={()=>go({kind:"area",gradeId:grade.id,areaId:area.id})}><BookOpen/><span>Pregled oblasti</span></button><button disabled={index===all.length-1} onClick={()=>jump(all[index+1])}><span>Sledeća lekcija</span><ArrowRight/></button></nav>
+    <div className="lesson-shell"><header className="lesson-title"><p className="eyebrow">{grade.id}. RAZRED · {area.title.toUpperCase()}</p><h1>{lesson.title}</h1><p>{lesson.intro}</p></header>
+      <section className="lesson-layout"><div className="learn-column"><article className="content-card"><div className="card-title"><span>01</span><h2>Najvažnije</h2></div><ul>{lesson.rules.map(r=><li key={r}>{r}</li>)}</ul><div className="formula-row">{lesson.formulas.map(f=><div key={f}><MathText>{f}</MathText></div>)}</div></article>
+      {lesson.diagram&&<Diagram type={lesson.diagram}/>}<article className="content-card"><div className="card-title"><span>02</span><h2>Primeri</h2></div><div className="examples">{lesson.examples.map((e,i)=><div key={e}><small>PRIMER {i+1}</small><MathText>{e}</MathText></div>)}</div></article>
+      <article className="content-card solved-card"><div className="card-title"><span>03</span><h2>Rešen primer</h2></div><h3><MathText>{lesson.solved.question}</MathText></h3><ol>{lesson.solved.steps.map(s=><li key={s}><MathText>{s}</MathText></li>)}</ol></article></div>
+      <aside><div className="quiz-head"><p className="eyebrow">KRATKA PROVERA</p><h2>Probaj samostalno</h2><p>Pogrešan odgovor nije kraj — pokušaj ponovo.</p></div>{lesson.tasks.map((t,i)=><TaskCard key={t.id} task={t} number={i+1} onDone={()=>setDone(d=>({...d,[t.id]:true}))}/>)}{completed&&<div className="lesson-finish"><Check/><div><strong>Lekcija je završena!</strong><p>Napredak je sačuvan na ovom uređaju.</p></div></div>}</aside></section>
+    </div><nav className="lesson-nav bottom"><button disabled={index===0} onClick={()=>jump(all[index-1])}><ArrowLeft/> <span>Prethodna</span></button><button onClick={()=>go({kind:"area",gradeId:grade.id,areaId:area.id})}><BookOpen/><span>Pregled oblasti</span></button><button disabled={index===all.length-1} onClick={()=>jump(all[index+1])}><span>Sledeća</span><ArrowRight/></button></nav></main>
+}
+
+function shuffle<T>(arr:T[]){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function buildSession(grade:Grade,level:Level,recent:string[]){
+  const allowed:Level[]=level==="basic"?["basic","medium"]:level==="medium"?["basic","medium"]:["medium","advanced"];
+  const pool=grade.areas.flatMap(a=>a.lessons.flatMap(l=>l.tasks)).filter(t=>allowed.includes(t.level));
+  const fresh=shuffle(pool.filter(t=>!recent.includes(t.id)));const rest=shuffle(pool.filter(t=>recent.includes(t.id)));return [...fresh,...rest].slice(0,10);
+}
+
+function SmartPractice({grade,go}:{grade:Grade;go:(r:Route)=>void}){
+  const [progress,save]=useGradeProgress(grade.id);const [level,setLevel]=useState<Level>("basic");const [tasks,setTasks]=useState<Task[]>([]);const [at,setAt]=useState(0);const [results,setResults]=useState<{task:Task;firstCorrect:boolean;usedSolution:boolean}[]>([]);const [started,setStarted]=useState(false);
+  const start=()=>{setTasks(buildSession(grade,level,progress.recentTaskIds));setAt(0);setResults([]);setStarted(true)};
+  const finishOne=(r:{firstCorrect:boolean;usedSolution:boolean})=>{if(results.some(x=>x.task.id===tasks[at].id))return;const next=[...results,{task:tasks[at],...r}];setResults(next);if(at<tasks.length-1)setAt(at+1);else{const first=next.filter(x=>x.firstCorrect&&!x.usedSolution).length;const weak={...progress.weak};next.filter(x=>!x.firstCorrect||x.usedSolution).forEach(x=>weak[x.task.skill]=(weak[x.task.skill]||0)+1);save({...progress,lastFirst:first,bestFirst:Math.max(progress.bestFirst,first),recentTaskIds:tasks.map(t=>t.id),weak});setStarted(false)}};
+  const first=results.filter(x=>x.firstCorrect&&!x.usedSolution).length;const weakSkills=Object.entries(progress.weak).sort((a,b)=>b[1]-a[1]).slice(0,3);
+  if(!started&&results.length===10)return <main className="shell page smart-page"><button className="back-link" onClick={()=>go({kind:"grade",gradeId:grade.id})}><ArrowLeft/> {grade.id}. razred</button><div className="result-card"><span className="result-icon"><Target/></span><p className="eyebrow">SESIJA JE ZAVRŠENA</p><h1>{first}/10 iz prvog pokušaja</h1><div className="result-grid"><div><small>REZULTAT IZ PRVOG POKUŠAJA</small><strong>{first}/10</strong></div><div><small>NA KRAJU ZAVRŠENO</small><strong>10/10</strong></div></div><p>{first>=8?"Odlično! Nastavi ovim tempom.":first>=5?"Dobro napreduješ. Ponovi slabe tačke.":"Vrati se na preporučene lekcije i pokušaj ponovo."}</p><Button size="lg" onClick={start}><RotateCcw/> Nova sesija</Button></div>{weakSkills.length>0&&<div className="recommend-card"><h2>Šta da ponoviš</h2>{weakSkills.map(([s])=><span key={s}>{s}</span>)}</div>}</main>;
+  if(!started)return <main className="shell page smart-page"><button className="back-link" onClick={()=>go({kind:"grade",gradeId:grade.id})}><ArrowLeft/> {grade.id}. razred</button><div className="smart-intro"><span><Brain/></span><p className="eyebrow">PAMETNO VEŽBANJE</p><h1>10 zadataka za {grade.id}. razred</h1><p>Izaberi nivo. Zadaci se ne ponavljaju u istoj sesiji, a preporuke koriste samo rezultat prvog pokušaja.</p><div className="level-picker">{(["basic","medium","advanced"] as Level[]).map(l=><button key={l} className={level===l?`active ${l}`:l} onClick={()=>setLevel(l)}><i/>{l==="basic"?"Osnovni":l==="medium"?"Srednji":"Napredni"}</button>)}</div><Button size="lg" onClick={start}>Počni vežbanje <ArrowRight/></Button>{progress.bestFirst>0&&<p className="best">Najbolji rezultat iz prvog pokušaja: <strong>{progress.bestFirst}/10</strong></p>}</div></main>;
+  return <main className="shell page smart-page"><button className="back-link" onClick={()=>go({kind:"grade",gradeId:grade.id})}><ArrowLeft/> Prekini vežbanje</button><div className="session-head"><div><p className="eyebrow">PAMETNO VEŽBANJE · {grade.id}. RAZRED</p><h1>Zadatak {at+1} od 10</h1></div><div className="session-score"><small>TAČNO IZ PRVOG</small><strong>{first}/{at}</strong></div></div><Progress value={(at/10)*100}/><TaskCard key={tasks[at].id} task={tasks[at]} number={at+1} onDone={finishOne}/></main>
+}
+
+export default function HomePageRoot(){
+  const [route,setRoute]=useState<Route>({kind:"home"});
+  useEffect(()=>{const sync=()=>setRoute(parseRoute());sync();window.addEventListener("hashchange",sync);return()=>window.removeEventListener("hashchange",sync)},[]);
+  const go=(r:Route)=>{window.location.hash=routeHash(r);setRoute(r);window.scrollTo({top:0,behavior:"smooth"})};
+  const grade="gradeId" in route?grades.find(g=>g.id===route.gradeId):undefined;
+  return <><Header route={route} go={go}/>{route.kind==="home"&&<HomePage go={go}/>} {route.kind==="grade"&&grade&&<GradePage key={grade.id} grade={grade} go={go}/>} {route.kind==="area"&&grade&&<AreaPage key={`${grade.id}-${route.areaId}`} grade={grade} areaId={route.areaId} go={go}/>} {route.kind==="lesson"&&grade&&<LessonPage key={`${grade.id}-${route.areaId}`} grade={grade} areaId={route.areaId} lessonId={route.lessonId} go={go}/>} {route.kind==="smart"&&grade&&<SmartPractice key={grade.id} grade={grade} go={go}/>}<footer className="shell"><Logo go={go}/><p>Znanje raste svakim rešenim zadatkom.</p></footer></>
+}
