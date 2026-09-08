@@ -41,5 +41,12 @@ export function localize(value:string,script:ScriptChoice){return script==="cyrl
 
 export function localizeMathText(value:string,script:ScriptChoice){
   if(script==="latn")return value;
-  return localizePreservingNotation(value,true);
+  return value.split(/(\s+)/).map(part=>{
+    if(!part.trim())return part;
+    // Čuvamo celu formulu i interne oznake renderera pre preslovljavanja teksta.
+    if(/[0-9²³=<>∥∈∉⊂√π·:+−–—/|()[\]{}^_]/.test(part))return part;
+    const bare=part.replace(/^[([{„"']+/,"").replace(/[)\]}.,;:!?“”"']+$/,"");
+    if(isProtectedNotation(bare,true,value,value.indexOf(part)))return part;
+    return toCyrillic(part);
+  }).join("");
 }
