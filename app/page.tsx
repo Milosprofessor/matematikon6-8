@@ -8,21 +8,13 @@ import { grades, Grade, GradeId, Lesson, Level, Task } from "./content";
 import { examplesForLesson, tasksForLesson } from "./content/enhancements";
 import { AreaTestTask, getAreaTest } from "./content/area-tests";
 import { localizeMathText, ScriptChoice, ScriptProvider, useCurrentScript, useLocalizedDom, useScriptPreference } from "./i18n";
+import { mathHtml } from "./math-format";
 
 type Route = { kind:"home" } | {kind:"grade"; gradeId:GradeId} | {kind:"area"; gradeId:GradeId; areaId:string} | {kind:"lesson";gradeId:GradeId;areaId:string;lessonId:string} | {kind:"smart";gradeId:GradeId} | {kind:"test";gradeId:GradeId;areaId:string};
 type TestScore={best:number;last:number};
 type GradeProgress = {completed:string[];lastLesson:string|null;bestFirst:number;lastFirst:number;recentTaskIds:string[];weak:Record<string,number>;tests:Record<string,TestScore>};
 const emptyProgress:GradeProgress={completed:[],lastLesson:null,bestFirst:0,lastFirst:0,recentTaskIds:[],weak:{},tests:{}};
 
-const escapeHtml=(s:string)=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
-function mathHtml(source:string){
-  let s=escapeHtml(source);
-  for(let n=0;n<3;n++){
-    s=s.replace(/\[\[frac:([^\[\]|]+)\|([^\[\]]+)\]\]/g,"<span class='frac'><span>$1</span><span>$2</span></span>");
-    s=s.replace(/\[\[sqrt:([^\[\]]+)\]\]/g,"<span class='sqrt'><span>$1</span></span>");
-  }
-  return s.replace(/\^([0-9n]+)/g,"<sup>$1</sup>").replace(/·/g,"<span class='op'>·</span>");
-}
 function MathText({children,className=""}:{children:string;className?:string}){const script=useCurrentScript();return <span className={`math ${className}`} dangerouslySetInnerHTML={{__html:mathHtml(localizeMathText(children,script))}}/>}
 
 function parseRoute():Route{

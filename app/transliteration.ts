@@ -43,6 +43,7 @@ export function localizeMathText(value:string,script:ScriptChoice){
   if(script==="latn")return value;
   return value.split(/(\s+)/).map(part=>{
     if(!part.trim())return part;
+    if(part.includes("_"))return part.replace(/_([A-Za-zČĆŽŠĐčćžšđ]+)/g,(_,sub:string)=>`_${sub.length===1?sub:toCyrillic(sub)}`);
     // Čuvamo celu formulu i interne oznake renderera pre preslovljavanja teksta.
     if(/[0-9²³=<>∥∈∉⊂√π·:+−–—/|()[\]{}^_]/.test(part))return part;
     const bare=part.replace(/^[([{„"']+/,"").replace(/[)\]}.,;:!?“”"']+$/,"");
