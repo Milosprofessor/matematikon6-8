@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MatematikON6-8 — matematika korak po korak",
+  title: "МатематикON6-8 — математика корак по корак",
   description:
-    "Interaktivne lekcije, zadaci i Pametno vežbanje za 6, 7. i 8. razred.",
+    "Интерактивне лекције, задаци и Паметно вежбање за 6, 7. и 8. разред.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="sr-Latn">
+    <html lang="sr-Cyrl">
       <body className="antialiased">{children}</body>
     </html>
   );
