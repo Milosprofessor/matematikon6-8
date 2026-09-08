@@ -1,38 +1,16 @@
 "use client";
 
 import { createContext, ReactNode, RefObject, useContext, useLayoutEffect, useRef, useSyncExternalStore } from "react";
+import { localize, localizeMathText } from "./transliteration";
+import type { ScriptChoice } from "./transliteration";
 
-export type ScriptChoice = "cyrl" | "latn";
+export { localize, localizeMathText, toCyrillic } from "./transliteration";
+export type { ScriptChoice } from "./transliteration";
 const scriptKey = "matematikon68-script";
-
-const pairs: Array<[string,string]> = [
-  ["DŽ","Џ"],["Dž","Џ"],["dž","џ"],["LJ","Љ"],["Lj","Љ"],["lj","љ"],["NJ","Њ"],["Nj","Њ"],["nj","њ"],
-  ["A","А"],["B","Б"],["C","Ц"],["Č","Ч"],["Ć","Ћ"],["D","Д"],["Đ","Ђ"],["E","Е"],["F","Ф"],["G","Г"],["H","Х"],["I","И"],["J","Ј"],["K","К"],["L","Л"],["M","М"],["N","Н"],["O","О"],["P","П"],["R","Р"],["S","С"],["Š","Ш"],["T","Т"],["U","У"],["V","В"],["Z","З"],["Ž","Ж"],
-  ["a","а"],["b","б"],["c","ц"],["č","ч"],["ć","ћ"],["d","д"],["đ","ђ"],["e","е"],["f","ф"],["g","г"],["h","х"],["i","и"],["j","ј"],["k","к"],["l","л"],["m","м"],["n","н"],["o","о"],["p","п"],["r","р"],["s","с"],["š","ш"],["t","т"],["u","у"],["v","в"],["z","з"],["ž","ж"]
-];
-
-export function toCyrillic(value:string){
-  let out=value;
-  for(const [latin,cyrillic] of pairs) out=out.split(latin).join(cyrillic);
-  return out;
-}
-
-export function localize(value:string,script:ScriptChoice){return script==="cyrl"?toCyrillic(value):value}
 
 const ScriptContext=createContext<ScriptChoice>("cyrl");
 export function ScriptProvider({script,children}:{script:ScriptChoice;children:ReactNode}){return <ScriptContext.Provider value={script}>{children}</ScriptContext.Provider>}
 export function useCurrentScript(){return useContext(ScriptContext)}
-
-export function localizeMathText(value:string,script:ScriptChoice){
-  if(script==="latn")return value;
-  return value.split(/(\s+)/).map(part=>{
-    if(!part.trim())return part;
-    if(/[0-9=<>∥∈∉⊂√π·:+−–—/()[\]{}^_]/.test(part))return part;
-    if(/^[A-ZČĆŽŠĐ₁₂₃]+[.,;:]?$/.test(part))return part;
-    if(/^[a-hj-tv-z][.,;:]?$/.test(part))return part;
-    return toCyrillic(part);
-  }).join("");
-}
 
 const scriptEvent="matematikon68-script-change";
 const getScriptSnapshot=():ScriptChoice=>localStorage.getItem(scriptKey)==="latn"?"latn":"cyrl";
