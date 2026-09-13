@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, ReactNode, RefObject, useContext, useLayoutEffect, useRef, useSyncExternalStore } from "react";
-import { localize, localizeMathText } from "./transliteration";
+import { localize } from "./transliteration";
 import type { ScriptChoice } from "./transliteration";
 
 export { localize, localizeMathText, toCyrillic } from "./transliteration";

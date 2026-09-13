@@ -26,10 +26,25 @@ function isProtectedNotation(token:string,mathMode:boolean,value:string,offset:n
     const after=value.slice(offset+token.length).trimStart();
     return /[0-9)]$/.test(before)||/^[0-9(]/.test(after);
   }
+  if(/^[A-Z]{1,4}(?:[₀-₉0-9])?$/.test(token)){
+    const before=value.slice(0,offset).trimEnd();
+    const after=value.slice(offset+token.length).trimStart();
+    const besideMath=/[=<>≤≥∥∈∉⊂√π·:+−–—/|([{^△∼]$/.test(before)||/^[=<>≤≥∥∈∉⊂√π·:+−–—/|)\]}^△∼]/.test(after);
+    const namedNotation=/(?:odredi|izračunaj|označi|tačk(?:a|e|u)|duž(?:i|ima)?|stranic(?:a|e|u|i)|ug(?:ao|la|lu)|temen(?:a|u)|koordinat(?:a|e|u)|trougl(?:a|u|ovi)|stav)\b[^.!?]{0,40}$/i.test(before);
+    if(besideMath||namedNotation)return true;
+  }
+  if(/^[a-z]$/.test(token)){
+    const before=value.slice(0,offset).trimEnd();
+    const after=value.slice(offset+token.length).trimStart();
+    const besideMath=/[=<>≤≥∥∈∉⊂√π·:+−–—/|([{^△∼]$/.test(before)||/^[=<>≤≥∥∈∉⊂√π·:+−–—/|)\]}^△∼]/.test(after);
+    const namedAsVariable=/(?:broj(?:a|u)?|promenljiv(?:a|e|u)|stranic(?:a|e|u)|dužin(?:a|e|u)|visin(?:a|e|u)|koordinat(?:a|e|u)|tačk(?:a|e|u)|kvadrat(?:a|u)?|oznak(?:a|e|u))\s*$/i.test(before);
+    if(besideMath||namedAsVariable)return true;
+    if(token==="a"&&/\s$/.test(value.slice(0,offset))&&/^\s/.test(value.slice(offset+1)))return false;
+  }
   if(!mathMode)return false;
-  if(/^[A-ZČĆŽŠĐ](?:[₀-₉0-9])?$/.test(token))return true;
-  if(/^[A-ZČĆŽŠĐ]{2,4}(?:[₀-₉0-9])?$/.test(token))return true;
-  if(/^[a-hj-tv-z]$/.test(token))return true;
+  if(/^[A-ZČĆŽŠĐ](?:\^?[23]|[²³₀-₉0-9])?$/.test(token))return true;
+  if(/^[A-ZČĆŽŠĐ]{2,4}(?:\^?[23]|[²³₀-₉0-9])?$/.test(token))return true;
+  if(/^[a-hj-tv-z](?:\^?[23]|[²³₀-₉0-9])?$/.test(token))return true;
   return false;
 }
 
@@ -41,13 +56,9 @@ export function localize(value:string,script:ScriptChoice){return script==="cyrl
 
 export function localizeMathText(value:string,script:ScriptChoice){
   if(script==="latn")return value;
-  return value.split(/(\s+)/).map(part=>{
-    if(!part.trim())return part;
-    if(part.includes("_"))return part.replace(/_([A-Za-zČĆŽŠĐčćžšđ]+)/g,(_,sub:string)=>`_${sub.length===1?sub:toCyrillic(sub)}`);
-    // Čuvamo celu formulu i interne oznake renderera pre preslovljavanja teksta.
-    if(/[0-9²³=<>∥∈∉⊂√π·:+−–—/|()[\]{}^_]/.test(part))return part;
-    const bare=part.replace(/^[([{„"']+/,"").replace(/[)\]}.,;:!?“”"']+$/,"");
-    if(isProtectedNotation(bare,true,value,value.indexOf(part)))return part;
-    return toCyrillic(part);
-  }).join("");
+  const masked=value.replace(/\[\[frac:/g,"[[FRAC:").replace(/\[\[sqrt:/g,"[[SQRT:");
+  return localizePreservingNotation(masked,true)
+    .replace(/\[\[FRAC:/g,"[[frac:")
+    .replace(/\[\[SQRT:/g,"[[sqrt:")
+    .replace(/_([A-Za-zČĆŽŠĐčćžšđ]+)/g,(_,sub:string)=>`_${sub.length===1?sub:toCyrillic(sub)}`);
 }

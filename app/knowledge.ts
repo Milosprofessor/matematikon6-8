@@ -1,10 +1,12 @@
-import type { Grade, Level } from "./content";
+import type { ErrorCategory, Grade, Level } from "./content";
 
 export type AttemptSource = "lesson" | "smart" | "test" | "focus";
 export type KnowledgeAttempt = {
   taskId: string;
   lessonId: string;
   skill: string;
+  taskType?: string;
+  errorCategory?: ErrorCategory;
   level: Level;
   source: AttemptSource;
   firstCorrect: boolean;
@@ -17,6 +19,8 @@ export type Mastery = { score: number | null; band: MasteryBand; samples: number
 export type PracticeResult = { firstCorrect: boolean; usedSolution: boolean; skill?: string };
 
 const sourceWeight: Record<AttemptSource,number>={lesson:1,smart:1.08,test:1.18,focus:1.12};
+const levelWeight:Record<Level,number>={basic:0.9,medium:1.08,advanced:1.18};
+const reasoningWeight:Partial<Record<ErrorCategory,number>>={concept:1.08,rule:1.08,diagram:1.12,method:1.15};
 
 export function appendKnowledgeAttempt(attempts:KnowledgeAttempt[],attempt:KnowledgeAttempt){
   return [...attempts,attempt].slice(-500);
@@ -28,12 +32,17 @@ export function estimateMastery(attempts:KnowledgeAttempt[]):Mastery{
   let earned=0,total=0;
   recent.forEach((attempt,index)=>{
     const recency=1+index/Math.max(1,recent.length-1);
-    const weight=recency*sourceWeight[attempt.source];
+    const weight=recency*sourceWeight[attempt.source]*levelWeight[attempt.level]*(reasoningWeight[attempt.errorCategory??"calculation"]??1);
     total+=weight;
     if(attempt.firstCorrect&&!attempt.usedSolution)earned+=weight;
   });
   // Blago početno izravnavanje sprečava da samo jedan zadatak potpuno odredi status.
-  const score=Math.round(100*(earned+0.65*2.5)/(total+2.5));
+  let score=Math.round(100*(earned+0.65*2.5)/(total+2.5));
+  // Više istih varijanti ne može samo po sebi da dokaže potpuno vladanje lekcijom.
+  // Ograničenje važi tek kada svi noviji pokušaji nose novu oznaku tipa zadatka,
+  // pa stari sačuvani napredak ostaje kompatibilan.
+  const typed=recent.filter(attempt=>attempt.taskType);
+  if(recent.length>=4&&typed.length===recent.length&&new Set(typed.map(attempt=>attempt.taskType)).size===1)score=Math.min(score,79);
   return {score,band:score>=80?"good":score>=60?"practice":"weak",samples:recent.length};
 }
 

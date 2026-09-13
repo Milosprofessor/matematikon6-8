@@ -4,12 +4,13 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, BookOpen, Brain, Check, ChevronRight, GraduationCap, Lightbulb, Menu, RotateCcw, Target, Trophy, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { grades, Grade, GradeId, Lesson, Level, Task } from "./content";
+import { grades, Grade, GradeId, Lesson, Level, Task, TaskDiagram } from "./content";
 import { examplesForLesson, tasksForLesson } from "./content/enhancements";
 import { AreaTestTask, getAreaTest } from "./content/area-tests";
-import { localizeMathText, ScriptChoice, ScriptProvider, useCurrentScript, useLocalizedDom, useScriptPreference } from "./i18n";
+import { localize, localizeMathText, ScriptChoice, ScriptProvider, useCurrentScript, useLocalizedDom, useScriptPreference } from "./i18n";
 import { mathHtml } from "./math-format";
-import { adaptiveLevel, adaptiveMessage, appendKnowledgeAttempt, areaMastery, AttemptSource, KnowledgeAttempt, knowledgeRecommendation, lessonMastery, MasteryBand, recommendedLevel, skillMasteries } from "./knowledge";
+import { adaptiveMessage, appendKnowledgeAttempt, areaMastery, AttemptSource, KnowledgeAttempt, knowledgeRecommendation, lessonMastery, MasteryBand, recommendedLevel, skillMasteries } from "./knowledge";
+import { pickAdaptiveTask, SessionResult, SessionTask, withTaskMetadata } from "./practice-engine";
 
 type Route = { kind:"home" } | {kind:"grade"; gradeId:GradeId} | {kind:"area"; gradeId:GradeId; areaId:string} | {kind:"lesson";gradeId:GradeId;areaId:string;lessonId:string} | {kind:"smart";gradeId:GradeId} | {kind:"focus";gradeId:GradeId;lessonId:string;skill?:string} | {kind:"test";gradeId:GradeId;areaId:string};
 type TestScore={best:number;last:number};
@@ -56,7 +57,7 @@ function Logo({go}:{go:(r:Route)=>void}){return <button data-no-transliterate cl
 
 function Header({route,go,script,setScript}:{route:Route;go:(r:Route)=>void;script:ScriptChoice;setScript:(s:ScriptChoice)=>void}){
   const [open,setOpen]=useState(false);
-  const item=(label:string,r:Route,active:boolean)=><button className={active?"active":""} onClick={()=>{go(r);setOpen(false)}}>{label}</button>;
+  const item=(label:string,r:Route,active:boolean)=><button key={label} className={active?"active":""} onClick={()=>{go(r);setOpen(false)}}>{label}</button>;
   return <header className="site-header"><div className="nav-wrap"><Logo go={go}/><nav className={open?"open":""} aria-label="Glavna navigacija">
     {item("Početna",{kind:"home"},route.kind==="home")}
     {[6,7,8].map(id=>item(`${id}. razred`,{kind:"grade",gradeId:id as GradeId},"gradeId" in route&&route.gradeId===id))}
@@ -127,6 +128,25 @@ function Diagram({type}:{type:Lesson["diagram"]}){
   return null;
 }
 
+function TaskDiagramView({diagram}:{diagram:TaskDiagram}){
+  const script=useCurrentScript();const label=(value:string)=>localize(value,script);
+  if(diagram.type==="number-line"){
+    const span=Math.max(1,diagram.max-diagram.min);const x=(value:number)=>42+(value-diagram.min)/span*436;
+    const ticks=Array.from({length:span+1},(_,index)=>diagram.min+index);
+    return <figure className="task-diagram" data-no-transliterate><svg viewBox="0 0 520 118" role="img" aria-label={label("Brojna prava")}><path d="M28 58 H492"/><path d="M484 51 L492 58 L484 65"/>{ticks.map(value=><g key={value}><path d={`M${x(value)} 51 V65`}/><text x={x(value)} y="86">{value}</text></g>)}{diagram.points.map(point=><g key={`${point.label}-${point.value}`}><circle className="accent-dot" cx={x(point.value)} cy="58" r="7"/><text className="point-label" x={x(point.value)} y="31">{point.label}</text></g>)}</svg></figure>;
+  }
+  if(diagram.type==="shadow")return <figure className="task-diagram" data-no-transliterate><svg viewBox="0 0 520 180" role="img" aria-label={label("Visine i senke")}><path d="M30 145 H490"/><path className="shape" d="M90 145 V42 M78 42 H102"/><path className="accent" d="M90 42 L215 145"/><path className="shape" d="M320 145 V20 M306 20 H334"/><path className="accent" d="M320 20 L475 145"/><text x="54" y="89">{diagram.objectHeight}</text><text x="126" y="166">{diagram.objectShadow}</text><text x="356" y="166">{diagram.targetShadow}</text><text x="42" y="24">{label(diagram.objectLabel)}</text><text x="340" y="20">{diagram.targetLabel??"h"}</text></svg></figure>;
+  if(diagram.type==="similarity"){
+    const second=diagram.variant==="rotated"?"M300 40 L505 95 L342 158 Z":diagram.variant==="mirrored"?"M520 175 L385 35 L300 175 Z":"M300 175 L410 30 L520 175 Z";
+    const secondLabels=diagram.variant==="rotated"?[[295,34,"D"],[520,94,"E"],[340,178,"F"]]:diagram.variant==="mirrored"?[[525,195,"D"],[385,25,"E"],[288,195,"F"]]:[[410,20,"D"],[288,194,"E"],[524,194,"F"]];
+    return <figure className="task-diagram" data-no-transliterate><svg viewBox="0 0 560 210" role="img" aria-label={label("Slični trouglovi")}><path className="shape" d="M35 175 L135 35 L235 175 Z"/><path className="accent" d={second}/><text x="130" y="25">A</text><text x="22" y="194">B</text><text x="238" y="194">C</text>{secondLabels.map(([x,y,value])=><text key={String(value)} x={Number(x)} y={Number(y)}>{value}</text>)}<text x="265" y="108">∼</text></svg></figure>;
+  }
+  const variant=diagram.variant??"triangle";
+  if(variant==="rays")return <figure className="task-diagram" data-no-transliterate><svg viewBox="0 0 540 220" role="img" aria-label={label("Paralelne prave seku krake ugla")}><path className="shape" d="M55 190 L470 35 M55 190 L495 175"/><path className="accent" d="M205 134 L215 185 M350 80 L370 180"/><text x="42" y="208">O</text><text x="185" y="125">A</text><text x="194" y="205">B</text><text x="338" y="68">C</text><text x="365" y="201">D</text><text x="264" y="112">AB ∥ CD</text></svg></figure>;
+  if(variant==="trapezoid")return <figure className="task-diagram" data-no-transliterate><svg viewBox="0 0 540 220" role="img" aria-label={label("Talesova teorema u trapezu")}><path className="shape" d="M80 185 L170 45 H390 L470 185 Z"/><path className="accent" d="M170 45 L470 185 M390 45 L80 185"/><text x="155" y="34">A</text><text x="393" y="34">B</text><text x="52" y="205">D</text><text x="475" y="205">C</text><text x="274" y="124">O</text><text x="275" y="24">AB ∥ CD</text></svg></figure>;
+  return <figure className="task-diagram" data-no-transliterate><svg viewBox="0 0 540 230" role="img" aria-label={label("Talesova teorema u trouglu")}><path className="shape" d="M65 200 L270 25 L475 200 Z"/><path className="accent" d="M155 123 H385"/><text x="263" y="18">A</text><text x="48" y="219">B</text><text x="478" y="219">C</text><text x="136" y="115">M</text><text x="390" y="115">N</text></svg></figure>;
+}
+
 function TaskCard({task,onDone,number}:{task:Task;onDone:(result:{firstCorrect:boolean;usedSolution:boolean})=>void;number?:number}){
   const [value,setValue]=useState("");const [attempts,setAttempts]=useState(0);const [message,setMessage]=useState("");const [hint,setHint]=useState(false);const [solution,setSolution]=useState(false);const [finished,setFinished]=useState(false);
   const norm=(v:string)=>v.trim().replace(/[−–—]/g,"-").replace(/\s+/g,"").replace(/,/g,".").toLowerCase();
@@ -134,19 +154,19 @@ function TaskCard({task,onDone,number}:{task:Task;onDone:(result:{firstCorrect:b
   const check=()=>{if(!value)return;const ok=sameAnswer(value,task.answer);if(ok){setFinished(true);setMessage("Tačno! Bravo.");onDone({firstCorrect:attempts===0&&!solution,usedSolution:solution})}else{setAttempts(a=>a+1);setMessage("Nije tačno. Pokušaj ponovo.")}};
   const negativeAllowed=task.kind==="input"&&norm(task.answer).startsWith("-");const inputId=`answer-${task.id.replace(/[^a-zA-Z0-9_-]/g,"-")}`;
   const toggleMinus=()=>setValue(current=>{const clean=current.replace(/^[−-]/,"");return /^[−-]/.test(current)?clean:`-${clean}`});
-  return <article data-task-id={task.id} className={`task-card ${finished?"is-correct":""}`}><div className="task-top"><span>{number?`Zadatak ${number}`:"Proveri znanje"}</span><small className={`level ${task.level}`}>{task.level==="basic"?"Osnovni":task.level==="medium"?"Srednji":"Napredni"}</small></div><p>{task.prompt}</p>{task.math&&<div className="task-math"><MathText>{task.math}</MathText></div>}
+  return <article data-task-id={task.id} className={`task-card ${finished?"is-correct":""}`}><div className="task-top"><span>{number?`Zadatak ${number}`:"Proveri znanje"}</span><small className={`level ${task.level}`}>{task.level==="basic"?"Osnovni":task.level==="medium"?"Srednji":"Napredni"}</small></div><p>{task.prompt}</p>{task.diagram&&<TaskDiagramView diagram={task.diagram}/>} {task.math&&<div className="task-math"><MathText>{task.math}</MathText></div>}
     {task.kind==="choice"?<div className="choices">{task.choices!.map(c=><button key={c} disabled={finished} className={value===c?"selected":""} onClick={()=>setValue(c)}><MathText>{c}</MathText></button>)}</div>:<div className="answer-input"><label htmlFor={inputId}>Odgovor</label><div className="input-row"><input id={inputId} type="text" value={value} disabled={finished} onChange={e=>setValue(e.target.value)} onKeyDown={e=>{if(e.key==="Enter")check()}} inputMode={negativeAllowed?"text":"decimal"} autoCapitalize="off" autoCorrect="off" spellCheck={false} placeholder="Upiši odgovor"/>{negativeAllowed&&<button data-no-transliterate type="button" className="minus-key" disabled={finished} onClick={toggleMinus} aria-label="Unesi ili ukloni znak minus">−</button>}</div></div>}
     {!finished&&<div className="task-actions"><Button onClick={check} disabled={!value}>Proveri</Button>{attempts>=2&&!hint&&<Button variant="outline" onClick={()=>setHint(true)}><Lightbulb/> Nagoveštaj</Button>}{attempts>=2&&<Button variant="ghost" onClick={()=>setSolution(true)}>Prikaži postupak</Button>}</div>}
-    {message&&<p className={finished?"feedback good":"feedback bad"}>{message}</p>}{hint&&<p className="hint"><Lightbulb/> {task.hint}</p>}{solution&&<div className="solution"><strong>Postupak</strong><MathText>{task.solution}</MathText>{!finished&&<Button onClick={()=>{setFinished(true);onDone({firstCorrect:false,usedSolution:true})}}>Razumem, nastavi</Button>}</div>}
+    {message&&<p className={finished?"feedback good":"feedback bad"}>{message}</p>}{hint&&<p className="hint"><Lightbulb/> <MathText>{task.hint}</MathText></p>}{solution&&<div className="solution"><strong>Postupak</strong><MathText>{task.solution}</MathText>{!finished&&<Button onClick={()=>{setFinished(true);onDone({firstCorrect:false,usedSolution:true})}}>Razumem, nastavi</Button>}</div>}
   </article>
 }
 
 function asKnowledgeAttempt(task:Task,lessonId:string,source:AttemptSource,result:{firstCorrect:boolean;usedSolution:boolean}):KnowledgeAttempt{
-  return {taskId:task.id,lessonId,skill:task.skill,level:task.level,source,firstCorrect:result.firstCorrect,usedSolution:result.usedSolution,at:Date.now()};
+  const measured=withTaskMetadata(task);return {taskId:measured.id,lessonId,skill:measured.skill,taskType:measured.taskType,errorCategory:measured.errorCategory,level:measured.level,source,firstCorrect:result.firstCorrect,usedSolution:result.usedSolution,at:Date.now()};
 }
 
 function LessonPage({grade,areaId,lessonId,go}:{grade:Grade;areaId:string;lessonId:string;go:(r:Route)=>void}){
-  const area=grade.areas.find(a=>a.id===areaId)!;const lesson=area.lessons.find(l=>l.id===lessonId)!;const lessonTasks=tasksForLesson(lesson.id,lesson.tasks);const lessonExamples=examplesForLesson(lesson.id,lesson.examples);const [progress,save,loaded]=useGradeProgress(grade.id);const [done,setDone]=useState<Record<string,boolean>>({});
+  const area=grade.areas.find(a=>a.id===areaId)!;const lesson=area.lessons.find(l=>l.id===lessonId)!;const lessonTasks=tasksForLesson(lesson.id,lesson.tasks).filter(task=>!task.practiceOnly);const lessonExamples=examplesForLesson(lesson.id,lesson.examples);const [,save,loaded]=useGradeProgress(grade.id);const [done,setDone]=useState<Record<string,boolean>>({});
   useEffect(()=>{if(loaded)save(previous=>({...previous,lastLesson:lesson.id}))},[lesson.id,loaded,save]);
   const all=area.lessons;const index=all.findIndex(l=>l.id===lesson.id);const completed=lessonTasks.every(t=>done[t.id]);
   useEffect(()=>{if(loaded&&completed)save(previous=>previous.completed.includes(lesson.id)?previous:{...previous,lastLesson:lesson.id,completed:[...previous.completed,lesson.id]})},[completed,lesson.id,loaded,save]);
@@ -161,29 +181,7 @@ function LessonPage({grade,areaId,lessonId,go}:{grade:Grade;areaId:string;lesson
 }
 
 function shuffle<T>(arr:T[]){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
-type SessionTask=Task&{lessonId:string;areaId:string};
-type SessionResult={task:SessionTask;firstCorrect:boolean;usedSolution:boolean};
 const levelName=(level:Level)=>level==="basic"?"osnovnog":level==="medium"?"srednjeg":"naprednog";
-function sessionPool(grade:Grade):SessionTask[]{return grade.areas.flatMap(area=>area.lessons.flatMap(lesson=>tasksForLesson(lesson.id,lesson.tasks).map(task=>({...task,lessonId:lesson.id,areaId:area.id}))))}
-function repeatedErrorSkill(results:SessionResult[]){
-  const counts=new Map<string,number>();results.slice(-4).filter(result=>!result.firstCorrect||result.usedSolution).forEach(result=>counts.set(result.task.skill,(counts.get(result.task.skill)??0)+1));
-  return [...counts.entries()].find(([,count])=>count>=2)?.[0];
-}
-function pickAdaptiveTask(grade:Grade,selected:Level,results:SessionResult[],usedIds:string[],recentIds:string[],attempts:KnowledgeAttempt[],focus?:{lessonId:string;skill?:string}){
-  const pool=sessionPool(grade);const used=new Set(usedIds);const effective=adaptiveLevel(selected,results);const errorSkill=repeatedErrorSkill(results);
-  const storedWeak=skillMasteries(attempts).find(item=>item.samples>=2&&item.band==="weak")?.skill;
-  const prioritySkill=focus?.skill??errorSkill??(usedIds.length%3===0?storedWeak:undefined);
-  const priorityLesson=focus?.lessonId??[...results].reverse().find(result=>result.task.skill===prioritySkill)?.task.lessonId??[...attempts].reverse().find(attempt=>attempt.skill===prioritySkill)?.lessonId;
-  const scoped=focus?pool.filter(task=>task.lessonId===focus.lessonId):pool;
-  const available=scoped.filter(task=>!used.has(task.id));
-  const byLevel=available.filter(task=>task.level===effective);
-  const skillAtLevel=prioritySkill?byLevel.filter(task=>task.skill===prioritySkill):[];
-  const lessonAtLevel=priorityLesson?byLevel.filter(task=>task.lessonId===priorityLesson):[];
-  const bySkill=prioritySkill?available.filter(task=>task.skill===prioritySkill):[];
-  const candidates=skillAtLevel.length?skillAtLevel:lessonAtLevel.length?lessonAtLevel:bySkill.length?bySkill:byLevel.length?byLevel:available.length?available:pool.filter(task=>!used.has(task.id));
-  const fresh=candidates.filter(task=>!recentIds.includes(task.id));
-  return shuffle(fresh.length?fresh:candidates)[0];
-}
 
 function SmartPractice({grade,go}:{grade:Grade;go:(r:Route)=>void}){
   const [progress,save]=useGradeProgress(grade.id);const [level,setLevel]=useState<Level>("basic");const [tasks,setTasks]=useState<SessionTask[]>([]);const [results,setResults]=useState<SessionResult[]>([]);const [started,setStarted]=useState(false);
@@ -196,10 +194,10 @@ function SmartPractice({grade,go}:{grade:Grade;go:(r:Route)=>void}){
 }
 
 function FocusPractice({grade,lessonId,skill,go}:{grade:Grade;lessonId:string;skill?:string;go:(r:Route)=>void}){
-  const found=grade.areas.flatMap(area=>area.lessons.map(lesson=>({area,lesson}))).find(item=>item.lesson.id===lessonId);const [progress,save]=useGradeProgress(grade.id);const [tasks,setTasks]=useState<SessionTask[]>([]);const [results,setResults]=useState<SessionResult[]>([]);
+  const found=grade.areas.flatMap(area=>area.lessons.map(lesson=>({area,lesson}))).find(item=>item.lesson.id===lessonId);const [progress,save]=useGradeProgress(grade.id);
   const targetSkill=skill??skillMasteries(progress.knowledgeAttempts,lessonId)[0]?.skill;const selected:Level=lessonMastery(progress.knowledgeAttempts,lessonId).band==="good"?"medium":"basic";
+  const [tasks,setTasks]=useState<SessionTask[]>(()=>{const first=found?pickAdaptiveTask(grade,selected,[],[],progress.recentTaskIds,progress.knowledgeAttempts,{lessonId,skill:targetSkill}):undefined;return first?[first]:[]});const [results,setResults]=useState<SessionResult[]>([]);
   const reset=()=>{const firstTask=pickAdaptiveTask(grade,selected,[],[],progress.recentTaskIds,progress.knowledgeAttempts,{lessonId,skill:targetSkill});setTasks(firstTask?[firstTask]:[]);setResults([]);window.scrollTo({top:0,behavior:"smooth"})};
-  useEffect(()=>{if(tasks.length===0&&found)reset()},[lessonId]); // eslint-disable-line react-hooks/exhaustive-deps
   if(!found)return <main className="shell page"><button className="back-link" onClick={()=>go({kind:"grade",gradeId:grade.id})}><ArrowLeft/> {grade.id}. razred</button></main>;
   const current=tasks[results.length];const first=results.filter(item=>item.firstCorrect&&!item.usedSolution).length;const finished=results.length===5;const mastery=lessonMastery(progress.knowledgeAttempts,lessonId);const liveMessage=adaptiveMessage(selected,results);
   const finishOne=(result:{firstCorrect:boolean;usedSolution:boolean})=>{if(!current||results.some(item=>item.task.id===current.id))return;const next=[...results,{task:current,...result}];setResults(next);save(previous=>({...previous,knowledgeAttempts:appendKnowledgeAttempt(previous.knowledgeAttempts,asKnowledgeAttempt(current,lessonId,"focus",result)),recommendationCursor:next.length===5?previous.recommendationCursor+1:previous.recommendationCursor}));if(next.length<5){const nextTask=pickAdaptiveTask(grade,selected,next,tasks.map(item=>item.id),progress.recentTaskIds,[...progress.knowledgeAttempts,asKnowledgeAttempt(current,lessonId,"focus",result)],{lessonId,skill:targetSkill});if(nextTask)setTasks(items=>[...items,nextTask])}};
