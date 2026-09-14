@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { ArrowLeft, ArrowRight, BookOpen, Brain, Check, ChevronRight, GraduationCap, Lightbulb, Menu, RotateCcw, Target, Trophy, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, Brain, Check, ChevronRight, GraduationCap, Lightbulb, Menu, Presentation, RotateCcw, Target, Trophy, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { grades, Grade, GradeId, Lesson, Level, Task, TaskDiagram } from "./content";
@@ -209,13 +209,13 @@ function asKnowledgeAttempt(task:Task,lessonId:string,source:AttemptSource,resul
 }
 
 function LessonPage({grade,areaId,lessonId,go}:{grade:Grade;areaId:string;lessonId:string;go:(r:Route)=>void}){
-  const area=grade.areas.find(a=>a.id===areaId)!;const lesson=area.lessons.find(l=>l.id===lessonId)!;const lessonTasks=tasksForLesson(lesson.id,lesson.tasks).filter(task=>!task.practiceOnly);const lessonExamples=examplesForLesson(lesson.id,lesson.examples);const [,save,loaded]=useGradeProgress(grade.id);const [done,setDone]=useState<Record<string,boolean>>({});
+  const area=grade.areas.find(a=>a.id===areaId)!;const lesson=area.lessons.find(l=>l.id===lessonId)!;const lessonTasks=tasksForLesson(lesson.id,lesson.tasks).filter(task=>!task.practiceOnly);const lessonExamples=examplesForLesson(lesson.id,lesson.examples);const [,save,loaded]=useGradeProgress(grade.id);const [done,setDone]=useState<Record<string,boolean>>({});const [classMode,setClassMode]=useState(false);
   useEffect(()=>{if(loaded)save(previous=>({...previous,lastLesson:lesson.id}))},[lesson.id,loaded,save]);
   const all=area.lessons;const index=all.findIndex(l=>l.id===lesson.id);const completed=lessonTasks.every(t=>done[t.id]);
   useEffect(()=>{if(loaded&&completed)save(previous=>previous.completed.includes(lesson.id)?previous:{...previous,lastLesson:lesson.id,completed:[...previous.completed,lesson.id]})},[completed,lesson.id,loaded,save]);
   const jump=(l:Lesson)=>go({kind:"lesson",gradeId:grade.id,areaId:area.id,lessonId:l.id});
-  return <main className="lesson-page"><nav className="lesson-nav"><button disabled={index===0} onClick={()=>jump(all[index-1])}><ArrowLeft/> <span>Prethodna lekcija</span></button><button onClick={()=>go({kind:"area",gradeId:grade.id,areaId:area.id})}><BookOpen/><span>Pregled oblasti</span></button><button disabled={index===all.length-1} onClick={()=>jump(all[index+1])}><span>Sledeća lekcija</span><ArrowRight/></button></nav>
-    <div className="lesson-shell"><header className="lesson-title"><p className="eyebrow">{grade.id}. RAZRED · {area.title.toUpperCase()}</p><h1>{lesson.title}</h1><p>{lesson.intro}</p></header>
+  return <main className={classMode?"lesson-page class-mode":"lesson-page"}><nav className="lesson-nav"><button disabled={index===0} onClick={()=>jump(all[index-1])}><ArrowLeft/> <span>Prethodna lekcija</span></button><button onClick={()=>go({kind:"area",gradeId:grade.id,areaId:area.id})}><BookOpen/><span>Pregled oblasti</span></button><button disabled={index===all.length-1} onClick={()=>jump(all[index+1])}><span>Sledeća lekcija</span><ArrowRight/></button></nav>
+    <div className="lesson-shell"><header className="lesson-title"><div><p className="eyebrow">{grade.id}. RAZRED · {area.title.toUpperCase()}</p><h1>{lesson.title}</h1><p>{lesson.intro}</p></div><Button className="class-mode-toggle" variant={classMode?"default":"outline"} aria-pressed={classMode} onClick={()=>setClassMode(value=>!value)}><Presentation/>{classMode?"Završi čas":"Pokreni čas"}</Button></header>
       <section className="lesson-layout"><div className="learn-column"><article className="content-card"><div className="card-title"><span>01</span><h2>Najvažnije</h2></div><ul>{lesson.rules.map(r=><li key={r}>{r}</li>)}</ul><div className="formula-row">{lesson.formulas.map(f=><div key={f}><MathText>{f}</MathText></div>)}</div></article>
       {lesson.diagram&&<Diagram type={lesson.diagram}/>} {lesson.interactive&&<LessonInteractive type={lesson.interactive}/>}<article className="content-card"><div className="card-title"><span>02</span><h2>Primeri</h2></div><div className="examples">{lessonExamples.map((e,i)=><div key={`${i}-${e}`}><small>PRIMER {i+1}</small><MathText>{e}</MathText></div>)}</div></article>
       <article className="content-card solved-card"><div className="card-title"><span>03</span><h2>Rešen primer</h2></div><h3><MathText>{lesson.solved.question}</MathText></h3><ol>{lesson.solved.steps.map(s=><li key={s}><MathText>{s}</MathText></li>)}</ol></article></div>
@@ -224,7 +224,7 @@ function LessonPage({grade,areaId,lessonId,go}:{grade:Grade;areaId:string;lesson
 }
 
 function shuffle<T>(arr:T[]){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
-const levelName=(level:Level)=>level==="basic"?"osnovnog":level==="medium"?"srednjeg":"naprednog";
+const levelName=(level:Level)=>level==="basic"?"osnovni":level==="medium"?"srednji":"napredni";
 
 function SmartPractice({grade,areaId,go}:{grade:Grade;areaId:string;go:(r:Route)=>void}){
   const [progress,save,loaded]=useGradeProgress(grade.id);const [level,setLevel]=useState<Level>("basic");const [tasks,setTasks]=useState<SessionTask[]>([]);const [results,setResults]=useState<SessionResult[]>([]);const [started,setStarted]=useState(false);

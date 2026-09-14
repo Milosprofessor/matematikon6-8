@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test, { after } from "node:test";
 import { createServer } from "vite";
 import { fileURLToPath } from "node:url";
@@ -65,6 +66,17 @@ test("7. razred ne koristi kvadratni koren pre odgovarajuće lekcije",()=>{
   assert.match(JSON.stringify(lessons.slice(rootIndex)),/√|\[\[sqrt:/,"koreni moraju ostati u kasnijim lekcijama");
 });
 
+test("7. razred poštuje granice između kvadrata, određivanja korena i svojstava",()=>{
+  const lessons=mainLessons(grade7Areas);const byId=id=>lessons.find(lesson=>lesson.id===id);
+  const squareLesson={...byId("kvadrat-racionalnog"),tasks:tasksForLesson("kvadrat-racionalnog",byId("kvadrat-racionalnog").tasks)};
+  assert.doesNotMatch(JSON.stringify(squareLesson),/x\^2|x²/,"jednačina x²=a ne sme da se proverava pre odgovarajuće lekcije");
+  const numberLine={...byId("brojna-prava"),tasks:tasksForLesson("brojna-prava",byId("brojna-prava").tasks)};
+  assert.doesNotMatch(JSON.stringify(numberLine),/zaokruž|zaokruzi/i,"zaokruživanje ne pripada ovoj ranijoj lekciji");
+  const determining={...byId("odredjivanje-korena"),tasks:tasksForLesson("odredjivanje-korena",byId("odredjivanje-korena").tasks)};
+  assert.doesNotMatch(JSON.stringify(determining),/najveći kvadratni činilac|rastavljanjem|sqrt:a·b|√\(9·5\)/i,"svojstvo proizvoda pripada sledećoj lekciji");
+  assert.match(JSON.stringify(byId("svojstva-korena")),/sqrt:a·b|Koren proizvoda/i,"svojstvo proizvoda mora ostati u svojoj lekciji");
+});
+
 test("ciljano vežbanje Realnih brojeva ostaje bez korena",()=>{
   const grade=grades.find(item=>item.id===7);
   const pattern=/√|\[\[sqrt:|koren/i;
@@ -93,6 +105,25 @@ test("8. razred ima različite geometrijske tipove i crteže",()=>{
   assert.ok(all.filter(task=>task.diagram).length>=18,"nedovoljno vizuelnih zadataka");
   for(const type of ["number-line","tales","similarity","shadow"].filter(type=>type!=="number-line"))assert.ok(all.some(task=>task.diagram?.type===type),`nedostaje crtež ${type}`);
   for(const variant of ["triangle","rays","trapezoid"])assert.ok(all.some(task=>task.diagram?.type==="tales"&&task.diagram.variant===variant),`nedostaje Talesova konfiguracija ${variant}`);
+});
+
+test("8. razred ne koristi proporcije i stavove sličnosti pre njihove lekcije",()=>{
+  const lessons=mainLessons(grade8Areas);const byId=id=>lessons.find(lesson=>lesson.id===id);
+  const ratio={...byId("razmera-duzi"),examples:examplesForLesson("razmera-duzi",byId("razmera-duzi").examples),tasks:tasksForLesson("razmera-duzi",byId("razmera-duzi").tasks)};
+  assert.doesNotMatch(JSON.stringify(ratio),/unakrsni proizvod|napiši proporciju|nepoznati član razmere/i,"razmera duži ne sme zahtevati buduću lekciju o proporcijama");
+  const similar={...byId("slicni-trouglovi"),examples:examplesForLesson("slicni-trouglovi",byId("slicni-trouglovi").examples),tasks:tasksForLesson("slicni-trouglovi",byId("slicni-trouglovi").tasks)};
+  assert.doesNotMatch(JSON.stringify(similar),/po SSS|daju sličnost po|grade slične trouglove/i,"stavovi sličnosti ne smeju biti korišćeni pre svoje lekcije");
+  const ratioTasks=ratio.tasks.filter(task=>["8-1a","8-1b"].includes(task.id));
+  assert.ok(ratioTasks.every(task=>/skraćenu razmeru/i.test(task.prompt)),"ekvivalentna neskraćena razmera ne sme biti drugi tačan odgovor");
+  const sss=tasksForLesson("stavovi-slicnosti",byId("stavovi-slicnosti").tasks).find(task=>task.id==="8-6h");
+  assert.equal(sss.math,"3:6=4:8=5:10","SSS primer mora koristiti stranice koje grade trougao");
+});
+
+test("tekst i crtež zadatka o indirektnom merenju koriste iste oznake",()=>{
+  const lesson=mainLessons(grade8Areas).find(item=>item.id==="primene-slicnosti");
+  const task=tasksForLesson(lesson.id,lesson.tasks).find(item=>item.id==="8-7g");
+  assert.equal(task.diagram?.type,"similarity");
+  for(const label of ["ABC","DEF","AB","DE","BC","EF"])assert.match(task.math,new RegExp(label),`${task.id}: nedostaje oznaka ${label}`);
 });
 
 test("prvi pokušaj ostaje ključan, a novi dobri rezultati popravljaju procenu",()=>{
@@ -130,6 +161,19 @@ test("više simuliranih pametnih sesija po oblasti ne meša oblasti i ne ponavlj
       results.push({task,firstCorrect:true,usedSolution:false});
     }
     assert.equal(new Set(tasks.map(task=>task.id)).size,10,`${grade.id}. razred: ponovljen konkretan zadatak`);
+  }
+});
+
+test("slabiji učenik dobija lakše i tipološki različite zadatke",()=>{
+  for(const grade of grades){
+    const area=grade.areas.find(item=>!item.review&&(item.month??"september")==="september");const unlockedLessonIds=practiceLessons(grade,area.id).filter(item=>(item.area.month??"september")==="september").map(item=>item.lesson.id);const scope={areaId:area.id,unlockedLessonIds};
+    let state=grade.id*211;const random=()=>((state=(state*48271)%2147483647)/2147483647);const tasks=[];const results=[];
+    for(let index=0;index<10;index++){
+      const task=pickAdaptiveTask(grade,"advanced",results,tasks.map(item=>item.id),[],[],scope,random);assert.ok(task);tasks.push(task);
+      if(index>0)assert.notEqual(task.taskType,tasks[index-1].taskType,`${grade.id}. razred: ponovljen tip kod slabijeg učenika`);
+      results.push({task,firstCorrect:false,usedSolution:false,attemptCount:2,finalCorrect:true});
+    }
+    assert.ok(tasks.slice(-3).some(task=>task.level==="basic"),`${grade.id}. razred: sistem nije vratio učenika na osnovni nivo`);
   }
 });
 
@@ -173,6 +217,7 @@ test("ćirilica ne menja matematičke oznake, promenljive ni jedinice",()=>{
   assert.equal(localizeMathText("△ABC∼△DEF; stranici BC odgovara EF.","cyrl"),"△ABC∼△DEF; страници BC одговара EF.");
   assert.equal(localizeMathText("a^2+b^2=c^2, h_a=5 cm","cyrl"),"a^2+b^2=c^2, h_a=5 cm");
   assert.equal(localizeMathText("[[frac:3|4]] = [[frac:9|12]], a rezultat je 0,75.","cyrl"),"[[frac:3|4]] = [[frac:9|12]], а резултат је 0,75.");
+  assert.equal(localizeMathText("Ako je △ABC∼△DEF, pa je k=2.","cyrl"),"Ако је △ABC∼△DEF, па је k=2.");
 });
 
 test("svaki septembarski matematički zapis se renderuje bez sirovih oznaka",()=>{
@@ -192,6 +237,8 @@ test("svaki septembarski matematički zapis se renderuje bez sirovih oznaka",()=
   }
   assert.match(mathHtml(localizeMathText("[[sqrt:2,25]]=1,5, h_a=5 cm","cyrl")),/class='sqrt'/);
   assert.match(mathHtml(localizeMathText("h_a=5 cm","cyrl")),/h<sub>a<\/sub>/);
+  const closedRoot=mathHtml(localizeMathText("[[sqrt:(−6)^2]]=6","cyrl"));
+  assert.match(closedRoot,/class='sqrt'><span>\(−6\)<sup>2<\/sup><\/span><\/span>=6/,"stepen mora ostati pod znakom korena");
 });
 
 test("završni testovi ostaju potpuni i matematički povezani sa lekcijama",()=>{
@@ -201,4 +248,15 @@ test("završni testovi ostaju potpuni i matematički povezani sa lekcijama",()=>
     for(const level of ["basic","medium","advanced"])assert.ok(tasks.some(task=>task.level===level),`${gradeId}. razred: test nema nivo ${level}`);
     for(const task of tasks.filter(task=>task.kind==="choice"))assert.ok(task.choices.includes(task.answer),`${task.id}: odgovor nije ponuđen`);
   }
+});
+
+test("Pokreni čas je izolovan prikaz lekcije prilagođen dodiru",()=>{
+  const page=readFileSync(new URL("../app/page.tsx",import.meta.url),"utf8");
+  const css=readFileSync(new URL("../app/globals.css",import.meta.url),"utf8");
+  assert.match(page,/Pokreni čas/);
+  assert.match(page,/Završi čas/);
+  assert.match(page,/aria-pressed=\{classMode\}/);
+  assert.match(css,/\.lesson-page\.class-mode \.lesson-layout\{grid-template-columns:1fr\}/);
+  assert.match(css,/\.lesson-page\.class-mode \.choices button[^}]*min-height:56px/);
+  assert.match(css,/@media\(max-width:680px\)[\s\S]*\.lesson-page\.class-mode \.lesson-layout aside\{grid-template-columns:1fr\}/);
 });

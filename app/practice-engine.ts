@@ -71,5 +71,12 @@ export function pickAdaptiveTask(grade:Grade,selected:Level,results:SessionResul
   const base=fresh.length?fresh:candidates;
   const lastTypes=new Set(results.slice(-2).map(result=>result.task.taskType).filter(Boolean));
   const varied=base.filter(task=>!task.taskType||!lastTypes.has(task.taskType));
-  return shuffle(varied.length?varied:base,random)[0];
+  // Ako prioritetna veština trenutno nema drugi tip na istom nivou, najpre
+  // tražimo drugačiju konstrukciju iste veštine ili lekcije, pa tek onda
+  // dopuštamo ponavljanje tipa. Težina i dalje ostaje adaptivna.
+  const withoutRecentType=(tasks:SessionTask[])=>tasks.filter(task=>!task.taskType||!lastTypes.has(task.taskType));
+  const alternatives=[withoutRecentType(bySkill),withoutRecentType(lessonAtLevel),withoutRecentType(byLevel),withoutRecentType(available)].find(tasks=>tasks.length)??[];
+  const freshAlternatives=alternatives.filter(task=>!recentIds.includes(task.id));
+  const fallback=freshAlternatives.length?freshAlternatives:alternatives;
+  return shuffle(varied.length?varied:fallback.length?fallback:base,random)[0];
 }

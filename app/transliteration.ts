@@ -33,7 +33,12 @@ function isProtectedNotation(token:string,mathMode:boolean,value:string,offset:n
   const touchesRatio=/^[A-Za-z]$/.test(token)&&(value.slice(0,offset).endsWith(":")||value.slice(offset+token.length).startsWith(":"));
   if(/^[IUO]$/.test(token)&&/[A-ZČĆŽŠĐ]{2,}[\s,]*$/.test(beforeToken)&&/^[A-ZČĆŽŠĐ]{2,}/.test(afterToken))return false;
   if(touchesRatio)return true;
-  if(/^[a-z]{1,4}$/.test(token)&&touchesMath)return true;
+  if(/^(?:sin|cos|tg|ctg|min|max)$/.test(token))return true;
+  if(/^[a-z]$/.test(token)&&touchesMath)return true;
+  // Višeslovni matematički zapis (npr. px u a=px) čuvamo samo kada
+  // neposredno sledi operator. Obične reči poput „je” ispred formule
+  // moraju da promene pismo.
+  if(/^[a-z]{2,4}$/.test(token)&&/[=<>≤≥∥∈∉⊂√·+−/|([{^△∼]$/.test(beforeToken))return true;
   if(/^[A-Z]{1,4}(?:[₀-₉0-9])?$/.test(token)){
     const namedNotation=/(?:odredi|izračunaj|označi|tačk(?:a|e|u)|duž(?:i|ima)?|stranic(?:a|e|u|i)|ug(?:ao|la|lu)|temen(?:a|u)|koordinat(?:a|e|u)|trougl(?:a|u|ovi)|stav)\b[^.!?]{0,40}$/i.test(beforeToken);
     if(touchesMath||namedNotation)return true;
