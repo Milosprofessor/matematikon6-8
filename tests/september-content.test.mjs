@@ -13,12 +13,13 @@ const {grade8Areas}=await vite.ssrLoadModule("/app/content/grade8.ts");
 const {tasksForLesson,examplesForLesson}=await vite.ssrLoadModule("/app/content/enhancements.ts");
 const {estimateMastery,adaptiveLevel}=await vite.ssrLoadModule("/app/knowledge.ts");
 const {grades}=await vite.ssrLoadModule("/app/content/index.ts");
-const {pickAdaptiveTask}=await vite.ssrLoadModule("/app/practice-engine.ts");
+const {pickAdaptiveTask,practiceGroupKey,practiceLessons,sessionPool,unlockedPracticeLessonIds}=await vite.ssrLoadModule("/app/practice-engine.ts");
 const {localize,localizeMathText}=await vite.ssrLoadModule("/app/transliteration.ts");
 const {mathHtml}=await vite.ssrLoadModule("/app/math-format.ts");
 const {getAreaTest}=await vite.ssrLoadModule("/app/content/area-tests.ts");
 
 function mainLessons(areas){return areas.filter(area=>!area.review&&(area.month??"september")==="september").flatMap(area=>area.lessons)}
+function lessonScope(grade,lessonId){const area=grade.areas.find(item=>item.lessons.some(lesson=>lesson.id===lessonId));return {areaId:area.id,unlockedLessonIds:[lessonId],lessonId}}
 
 test("6. razred ima raznovrsnu septembarsku bazu na sva tri nivoa",()=>{
   const ids=[];
@@ -71,7 +72,7 @@ test("ciljano vežbanje Realnih brojeva ostaje bez korena",()=>{
     let state=lessonId.length*97;const random=()=>((state=(state*48271)%2147483647)/2147483647);
     const tasks=[];const results=[];
     for(let index=0;index<5;index++){
-      const task=pickAdaptiveTask(grade,"medium",results,tasks.map(item=>item.id),[],[],{lessonId},random);
+      const task=pickAdaptiveTask(grade,"medium",results,tasks.map(item=>item.id),[],[],lessonScope(grade,lessonId),random);
       assert.ok(task,`${lessonId}: nema ciljanog zadatka`);
       assert.doesNotMatch(JSON.stringify(task),pattern,`${lessonId}: Pametno vežbanje je prerano izabralo koren`);
       tasks.push(task);results.push({task,firstCorrect:index!==1,usedSolution:false});
@@ -117,13 +118,14 @@ test("težina se menja tek posle niza rezultata",()=>{
   assert.equal(adaptiveLevel("advanced",[miss,miss,miss]),"medium");
 });
 
-test("više simuliranih pametnih sesija ne ponavlja isti zadatak ni isti tip zaredom",()=>{
-  for(const grade of grades)for(let session=0;session<12;session++){
+test("više simuliranih pametnih sesija po oblasti ne meša oblasti i ne ponavlja isti zadatak",()=>{
+  for(const grade of grades)for(const area of grade.areas.filter(item=>!item.review).filter((item,index,all)=>all.findIndex(other=>practiceGroupKey(grade,other.id)===practiceGroupKey(grade,item.id))===index))for(let session=0;session<4;session++){
     let state=(grade.id*100+session)||1;const random=()=>((state=(state*48271)%2147483647)/2147483647);
-    const tasks=[];const results=[];
+    const tasks=[];const results=[];const unlockedLessonIds=practiceLessons(grade,area.id).map(item=>item.lesson.id);const scope={areaId:area.id,unlockedLessonIds};
     for(let index=0;index<10;index++){
-      const task=pickAdaptiveTask(grade,"medium",results,tasks.map(item=>item.id),[],[],undefined,random);
-      assert.ok(task,`${grade.id}. razred: nema narednog zadatka`);tasks.push(task);
+      const task=pickAdaptiveTask(grade,"medium",results,tasks.map(item=>item.id),[],[],scope,random);
+      assert.ok(task,`${grade.id}. razred/${area.id}: nema narednog zadatka`);tasks.push(task);
+      assert.ok(unlockedLessonIds.includes(task.lessonId),`${task.id}: zadatak je iz druge oblasti`);
       if(index>0)assert.notEqual(task.taskType,tasks[index-1].taskType,`${grade.id}. razred: isti tip je ponovljen zaredom`);
       results.push({task,firstCorrect:true,usedSolution:false});
     }
@@ -132,13 +134,36 @@ test("više simuliranih pametnih sesija ne ponavlja isti zadatak ni isti tip zar
 });
 
 test("ciljano Talesovo vežbanje menja konstrukciju zadatka",()=>{
-  const grade=grades.find(item=>item.id===8);const focus={lessonId:"talesova-teorema",skill:"Talesova teorema"};
+  const grade=grades.find(item=>item.id===8);const focus={...lessonScope(grade,"talesova-teorema"),skill:"Talesova teorema"};
   let state=91;const random=()=>((state=(state*48271)%2147483647)/2147483647);const tasks=[];const results=[];
   for(let index=0;index<5;index++){
     const task=pickAdaptiveTask(grade,"medium",results,tasks.map(item=>item.id),[],[],focus,random);assert.ok(task);tasks.push(task);results.push({task,firstCorrect:index>1,usedSolution:false});
   }
   assert.equal(new Set(tasks.map(task=>task.id)).size,5);
   assert.ok(new Set(tasks.map(task=>task.taskType)).size>=3,"slaba tačka mora da se proveri kroz više tipova");
+});
+
+test("oblast otključava lekcije redom i ne uvodi buduće gradivo",()=>{
+  const grade=grades.find(item=>item.id===7);const areaId="realni-brojevi";const ordered=practiceLessons(grade,areaId).map(item=>item.lesson.id);const rootIndex=ordered.indexOf("kvadratni-koren");
+  assert.ok(rootIndex>0);
+  const current=ordered[rootIndex-1];const unlockedLessonIds=unlockedPracticeLessonIds(grade,areaId,ordered.slice(0,rootIndex-1),current);
+  assert.deepEqual(unlockedLessonIds,ordered.slice(0,rootIndex));
+  const pool=sessionPool(grade,{areaId,unlockedLessonIds});
+  assert.ok(pool.length>0);assert.ok(pool.every(task=>unlockedLessonIds.includes(task.lessonId)));assert.ok(!pool.some(task=>task.lessonId==="kvadratni-koren"));
+  assert.doesNotMatch(JSON.stringify(pool),/√|\[\[sqrt:|kvadratni koren/i);
+});
+
+test("oblast koja traje u septembru i oktobru deli jedno Pametno vežbanje",()=>{
+  const grade=grades.find(item=>item.id===8);
+  assert.equal(practiceGroupKey(grade,"slicnost"),practiceGroupKey(grade,"slicnost-pravougli-trougao"));
+  assert.ok(practiceLessons(grade,"slicnost").some(item=>item.lesson.id==="slicnost-pravougli"));
+});
+
+test("anti-repeat istorija se primenjuje unutar izabrane oblasti",()=>{
+  const grade=grades.find(item=>item.id===6);const areaId="celi-brojevi";const unlockedLessonIds=practiceLessons(grade,areaId).map(item=>item.lesson.id);const scope={areaId,unlockedLessonIds};
+  const first=pickAdaptiveTask(grade,"basic",[],[],[],[],scope,()=>0);assert.ok(first);
+  const next=pickAdaptiveTask(grade,"basic",[],[],[first.id],[],scope,()=>0);assert.ok(next);assert.notEqual(next.id,first.id);
+  assert.ok(unlockedLessonIds.includes(next.lessonId));
 });
 
 test("ćirilica ne menja matematičke oznake, promenljive ni jedinice",()=>{

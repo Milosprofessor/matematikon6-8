@@ -10,8 +10,11 @@ export type KnowledgeAttempt = {
   level: Level;
   source: AttemptSource;
   firstCorrect: boolean;
+  /** Jasna nova oznaka; firstCorrect ostaje zbog kompatibilnosti starog napretka. */
+  firstAttemptCorrect?: boolean;
   usedSolution: boolean;
   attemptCount?: number;
+  attemptsCount?: number;
   finalCorrect?: boolean;
   at: number;
 };

@@ -74,8 +74,8 @@ test("novi matematički zapisi se renderuju i pismo čuva oznake",()=>{
 
 test("ciljano vežbanje bira različite oktobarske tipove",()=>{
   for(const [gradeId,lessonId] of [[6,"nejednakost-trougla"],[7,"pitagora-trapez"],[8,"ortogonalna-projekcija"]]){
-    const grade=grades.find(item=>item.id===gradeId);let state=gradeId*97;const random=()=>((state=(state*48271)%2147483647)/2147483647);const tasks=[];const results=[];
-    for(let i=0;i<5;i++){const task=pickAdaptiveTask(grade,"medium",results,tasks.map(item=>item.id),[],[],{lessonId},random);assert.ok(task);tasks.push(task);results.push({task,firstCorrect:i>1,usedSolution:false,attemptCount:i>1?1:2,finalCorrect:true});}
+    const grade=grades.find(item=>item.id===gradeId);const area=grade.areas.find(item=>item.lessons.some(lesson=>lesson.id===lessonId));const scope={areaId:area.id,unlockedLessonIds:[lessonId],lessonId};let state=gradeId*97;const random=()=>((state=(state*48271)%2147483647)/2147483647);const tasks=[];const results=[];
+    for(let i=0;i<5;i++){const task=pickAdaptiveTask(grade,"medium",results,tasks.map(item=>item.id),[],[],scope,random);assert.ok(task);tasks.push(task);results.push({task,firstCorrect:i>1,usedSolution:false,attemptCount:i>1?1:2,finalCorrect:true});}
     assert.equal(new Set(tasks.map(task=>task.id)).size,5);
     assert.ok(new Set(tasks.map(task=>task.taskType)).size>=3,`${lessonId}: adaptivna raznovrsnost`);
   }
@@ -84,6 +84,20 @@ test("ciljano vežbanje bira različite oktobarske tipove",()=>{
 test("postojeći localStorage ključevi ostaju nepromenjeni, a pokušaji su prošireni kompatibilno",async()=>{
   const source=await readFile(new URL("../app/page.tsx",import.meta.url),"utf8");
   assert.match(source,/matematikon68-progress-v1-\$\{gradeId\}/);
+  assert.match(source,/practiceByArea:normalizePracticeByArea\(parsed\.practiceByArea\)/);
+  assert.match(source,/kind:"smart";gradeId:GradeId;areaId:string/);
+  assert.match(source,/`#\/pametno\/\$\{r\.gradeId\}\/\$\{r\.areaId\}`/);
+  assert.doesNotMatch(source,/className="smart-card"/,"na stranici razreda ne sme ostati zajedničko vežbanje");
   assert.match(source,/attemptCount:result\.attemptCount/);
+  assert.match(source,/firstAttemptCorrect:result\.firstCorrect/);
+  assert.match(source,/attemptsCount:result\.attemptCount/);
   assert.match(source,/finalCorrect:result\.finalCorrect/);
+});
+
+test("Pametno vežbanje oblasti ostaje prilagođeno telefonu",async()=>{
+  const css=await readFile(new URL("../app/globals.css",import.meta.url),"utf8");
+  assert.match(css,/@media\(max-width:680px\)[\s\S]*\.level-picker\{grid-template-columns:1fr\}/);
+  assert.match(css,/@media\(max-width:680px\)[\s\S]*\.area-tools,[^{]*\{grid-template-columns:1fr\}/);
+  assert.match(css,/\.answer-input input\{[^}]*height:50px/);
+  assert.match(css,/\.minus-key\{[^}]*flex:0 0 52px/);
 });

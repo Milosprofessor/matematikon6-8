@@ -4,6 +4,7 @@ import { adaptiveLevel, KnowledgeAttempt, skillMasteries } from "./knowledge";
 
 export type SessionTask=Task&{lessonId:string;areaId:string};
 export type SessionResult={task:SessionTask;firstCorrect:boolean;usedSolution:boolean;attemptCount?:number;finalCorrect?:boolean};
+export type PracticeScope={areaId:string;unlockedLessonIds:string[];lessonId?:string;skill?:string};
 
 function shuffle<T>(arr:T[],random=Math.random){const copy=[...arr];for(let i=copy.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]]}return copy}
 
@@ -30,7 +31,18 @@ function inferredErrorCategory(task:Task):ErrorCategory{
 }
 
 export function withTaskMetadata<T extends Task>(task:T):T{return {...task,taskType:task.taskType??inferredTaskType(task),errorCategory:task.errorCategory??inferredErrorCategory(task)}}
-export function sessionPool(grade:Grade):SessionTask[]{return grade.areas.flatMap(area=>area.lessons.flatMap(lesson=>tasksForLesson(lesson.id,lesson.tasks).map(task=>({...withTaskMetadata(task),lessonId:lesson.id,areaId:area.id}))))}
+export function practiceGroupKey(grade:Grade,areaId:string){const area=grade.areas.find(item=>item.id===areaId);return area?.practiceGroupId??area?.id??areaId}
+export function practiceAreas(grade:Grade,areaId:string){const key=practiceGroupKey(grade,areaId);return grade.areas.filter(area=>(area.practiceGroupId??area.id)===key)}
+export function practiceLessons(grade:Grade,areaId:string){return practiceAreas(grade,areaId).flatMap(area=>area.lessons.map(lesson=>({area,lesson})))}
+export function unlockedPracticeLessonIds(grade:Grade,areaId:string,completed:string[],lastLesson:string|null){
+  const ordered=practiceLessons(grade,areaId);if(ordered.length===0)return [];
+  const reached=new Set(completed);if(lastLesson)reached.add(lastLesson);
+  const furthest=ordered.reduce((max,item,index)=>reached.has(item.lesson.id)?Math.max(max,index):max,-1);
+  return ordered.slice(0,Math.max(0,furthest)+1).map(item=>item.lesson.id);
+}
+export function sessionPool(grade:Grade,scope:PracticeScope):SessionTask[]{
+  const unlocked=new Set(scope.unlockedLessonIds);return practiceAreas(grade,scope.areaId).flatMap(area=>area.lessons.filter(lesson=>unlocked.has(lesson.id)&&(!scope.lessonId||lesson.id===scope.lessonId)).flatMap(lesson=>tasksForLesson(lesson.id,lesson.tasks).map(task=>({...withTaskMetadata(task),lessonId:lesson.id,areaId:area.id}))));
+}
 
 function repeatedErrorTarget(results:SessionResult[]){
   const misses=results.slice(-5).filter(result=>!result.firstCorrect||result.usedSolution);const counts=new Map<string,number>();
@@ -40,12 +52,12 @@ function repeatedErrorTarget(results:SessionResult[]){
   return skill?{skill,errorCategory:last?.errorCategory,taskType:last?.taskType}:undefined;
 }
 
-export function pickAdaptiveTask(grade:Grade,selected:Level,results:SessionResult[],usedIds:string[],recentIds:string[],attempts:KnowledgeAttempt[],focus?:{lessonId:string;skill?:string},random=Math.random){
-  const pool=sessionPool(grade);const used=new Set(usedIds);const effective=adaptiveLevel(selected,results);const errorTarget=repeatedErrorTarget(results);
-  const storedWeak=skillMasteries(attempts).find(item=>item.samples>=2&&item.band==="weak")?.skill;
-  const prioritySkill=focus?.skill??errorTarget?.skill??(usedIds.length%3===0?storedWeak:undefined);
-  const priorityLesson=focus?.lessonId??[...results].reverse().find(result=>result.task.skill===prioritySkill)?.task.lessonId??[...attempts].reverse().find(attempt=>attempt.skill===prioritySkill)?.lessonId;
-  const scoped=focus?pool.filter(task=>task.lessonId===focus.lessonId):pool;
+export function pickAdaptiveTask(grade:Grade,selected:Level,results:SessionResult[],usedIds:string[],recentIds:string[],attempts:KnowledgeAttempt[],scope:PracticeScope,random=Math.random){
+  const scoped=sessionPool(grade,scope);const used=new Set(usedIds);const effective=adaptiveLevel(selected,results);const errorTarget=repeatedErrorTarget(results);
+  const unlocked=new Set(scope.unlockedLessonIds);const scopedAttempts=attempts.filter(attempt=>unlocked.has(attempt.lessonId)&&(!scope.lessonId||attempt.lessonId===scope.lessonId));
+  const storedWeak=skillMasteries(scopedAttempts).find(item=>item.samples>=2&&item.band==="weak")?.skill;
+  const prioritySkill=scope.skill??errorTarget?.skill??(usedIds.length%3===0?storedWeak:undefined);
+  const priorityLesson=scope.lessonId??[...results].reverse().find(result=>result.task.skill===prioritySkill)?.task.lessonId??[...scopedAttempts].reverse().find(attempt=>attempt.skill===prioritySkill)?.lessonId;
   const available=scoped.filter(task=>!used.has(task.id));
   const byLevel=available.filter(task=>task.level===effective);
   const differentErrorType=(tasks:SessionTask[])=>errorTarget?.taskType?tasks.filter(task=>task.taskType!==errorTarget.taskType):tasks;
@@ -54,7 +66,7 @@ export function pickAdaptiveTask(grade:Grade,selected:Level,results:SessionResul
   const lessonAtLevel=priorityLesson?byLevel.filter(task=>task.lessonId===priorityLesson):[];
   const bySkill=prioritySkill?available.filter(task=>task.skill===prioritySkill):[];
   const variedSkillAtLevel=differentErrorType(skillAtLevel);
-  const candidates=sameErrorDifferentType.length?sameErrorDifferentType:variedSkillAtLevel.length?variedSkillAtLevel:skillAtLevel.length?skillAtLevel:bySkill.length?bySkill:lessonAtLevel.length?lessonAtLevel:byLevel.length?byLevel:available.length?available:pool.filter(task=>!used.has(task.id));
+  const candidates=sameErrorDifferentType.length?sameErrorDifferentType:variedSkillAtLevel.length?variedSkillAtLevel:skillAtLevel.length?skillAtLevel:bySkill.length?bySkill:lessonAtLevel.length?lessonAtLevel:byLevel.length?byLevel:available;
   const fresh=candidates.filter(task=>!recentIds.includes(task.id));
   const base=fresh.length?fresh:candidates;
   const lastTypes=new Set(results.slice(-2).map(result=>result.task.taskType).filter(Boolean));

@@ -49,6 +49,8 @@ export type Area = {
   short: string;
   review?: boolean;
   month?: "september" | "october";
+  /** Ista matematička oblast može da traje kroz više meseci, ali deli jedno vežbanje. */
+  practiceGroupId?: string;
   assessment?: "final" | "mini";
   lessons: Lesson[];
 };
