@@ -11,6 +11,8 @@ export type KnowledgeAttempt = {
   source: AttemptSource;
   firstCorrect: boolean;
   usedSolution: boolean;
+  attemptCount?: number;
+  finalCorrect?: boolean;
   at: number;
 };
 

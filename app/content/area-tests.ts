@@ -1,4 +1,5 @@
 import { C, I, GradeId, Task } from "./types";
+import { octoberAreaTests } from "./october-tests";
 
 export type AreaTestTask = Task & { lessonId:string };
 const L=(task:Task,lessonId:string):AreaTestTask=>({...task,lessonId});
@@ -15,7 +16,7 @@ export const areaTests: Record<GradeId,Record<string,AreaTestTask[]>> = {
     L(I("t6-8","Izračunaj.","(−9)·(−8)","72","Isti znaci daju plus.","9·8=72.","basic","Množenje"),"mnozenje"),
     L(I("t6-9","Izračunaj.","84:(−7)","-12","Različiti znaci daju minus.","84:7=12, pa je rezultat −12.","medium","Deljenje"),"deljenje"),
     L(I("t6-10","Izračunaj.","18:(−3)−2·(−5)","4","Deljenje i množenje imaju prednost.","−6−(−10)=4.","advanced","Brojevni izrazi"),"brojevni-izrazi")
-  ]},
+  ],...octoberAreaTests[6]},
   7:{"realni-brojevi":[
     L(C("t7-1","Izaberi tačan zapis.","[[frac:9|20]]",["0,45","0,9","0,18"],"0,45","Proširi do imenioca 100.","9/20=45/100=0,45.","basic","Decimalni zapis"),"decimalni-zapis"),
     L(C("t7-2","Izaberi tačan razlomak.","0,32",["[[frac:8|25]]","[[frac:3|20]]","[[frac:16|25]]"],"[[frac:8|25]]","Zapiši 32/100 i skrati.","32/100=8/25.","medium","Decimalni u razlomak"),"decimalni-u-razlomak"),
@@ -27,7 +28,7 @@ export const areaTests: Record<GradeId,Record<string,AreaTestTask[]>> = {
     L(C("t7-8","Izaberi tačan odgovor.","[[sqrt:[[frac:64|121]]]]",["[[frac:8|11]]","[[frac:64|11]]","[[frac:4|11]]"],"[[frac:8|11]]","Korenuj brojilac i imenilac.","√64/√121=8/11.","medium","Određivanje korena"),"odredjivanje-korena"),
     L(C("t7-9","Pojednostavi.","[[sqrt:75]]",["5√3","15√3","25√3"],"5√3","75=25·3.","√75=5√3.","advanced","Svojstva korena"),"svojstva-korena"),
     L(C("t7-10","Koja jednakost nije tačna?","",["√(16·9)=√16·√9","√(49/4)=√49/√4","√(4+9)=√4+√9"],"√(4+9)=√4+√9","Koren zbira se ne rastavlja.","√13 nije 5.","advanced","Svojstva korena"),"svojstva-korena")
-  ]},
+  ],...octoberAreaTests[7]},
   8:{"slicnost":[
     L(C("t8-1","Odredi razmeru.","35 cm : 1,4 m",["1:4","4:1","1:5"],"1:4","1,4 m=140 cm.","35:140=1:4.","basic","Razmera duži"),"razmera-duzi"),
     L(C("t8-2","Koji par je nesamerljiv?","",["4 cm i 10 cm","a i 3a","a i a√5"],"a i a√5","Traži iracionalnu razmeru.","Razmera 1/√5 je iracionalna.","medium","Samerljive duži"),"samerljive-duzi"),
@@ -39,7 +40,7 @@ export const areaTests: Record<GradeId,Record<string,AreaTestTask[]>> = {
     L(C("t8-8","Da li je dovoljan stav SSS?","Stranice: 3, 6, 8 i 6, 12, 16",["Da","Ne","Samo za pravougle trouglove"],"Da","Proveri tri razmere.","3/6=6/12=8/16=1/2.","advanced","Stavovi sličnosti"),"stavovi-slicnosti"),
     L(I("t8-9","Odredi visinu drveta.","Štap 1,5 m, senka 2 m; senka drveta 10 m","7,5","Visina/senka je ista.","1,5/2=h/10, pa je h=7,5 m.","medium","Primene sličnosti"),"primene-slicnosti"),
     L(I("t8-10","Odredi stvarnu dužinu.","Razmera 1:400, na planu 7 cm","28","7·400=2800 cm.","2800 cm=28 m.","advanced","Primene sličnosti"),"primene-slicnosti")
-  ]}
+  ],...octoberAreaTests[8]}
 };
 
 export function getAreaTest(gradeId:GradeId,areaId:string){return areaTests[gradeId]?.[areaId]??[]}

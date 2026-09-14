@@ -5,7 +5,11 @@ export type TaskDiagram =
   | { type:"number-line"; min:number; max:number; points:{ value:number; label:string }[] }
   | { type:"tales"; variant?:"triangle"|"rays"|"trapezoid"; labels?:Record<string,string> }
   | { type:"similarity"; variant?:"upright"|"rotated"|"mirrored"; labels?:Record<string,string> }
-  | { type:"shadow"; objectLabel:string; objectHeight:string; objectShadow:string; targetShadow:string; targetLabel?:string };
+  | { type:"shadow"; objectLabel:string; objectHeight:string; objectShadow:string; targetShadow:string; targetLabel?:string }
+  | { type:"triangle"; variant:"angles"|"sides"|"inequality"|"transversal"; labels?:Record<string,string> }
+  | { type:"graph"; k:number; point?:{x:number;y:number}; labels?:Record<string,string> }
+  | { type:"pythagoras"; variant:"right"|"rectangle"|"square"|"isosceles"|"equilateral"|"rhombus"|"trapezoid"; labels?:Record<string,string> }
+  | { type:"space"; variant:"point-line-plane"|"skew-lines"|"planes"|"orthogonal"|"projection"|"polyhedron"; labels?:Record<string,string> };
 export type Task = {
   id: string;
   prompt: string;
@@ -35,7 +39,8 @@ export type Lesson = {
   examples: string[];
   solved: { question: string; steps: string[] };
   tasks: Task[];
-  diagram?: "tales" | "similarity" | "scale";
+  diagram?: "tales" | "similarity" | "scale" | "triangle" | "direct-proportion" | "pythagoras" | "space";
+  interactive?: "triangle-angles" | "direct-proportion" | "pythagoras" | "space-relations";
 };
 
 export type Area = {
@@ -43,6 +48,8 @@ export type Area = {
   title: string;
   short: string;
   review?: boolean;
+  month?: "september" | "october";
+  assessment?: "final" | "mini";
   lessons: Lesson[];
 };
 

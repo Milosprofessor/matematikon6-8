@@ -1,5 +1,6 @@
 import { C, I, Task } from "./types";
 import { septemberTasks } from "./september-expansion";
+import { octoberTasks } from "./october-expansion";
 
 export const extraExamples: Record<string,string[]> = {
   "skup-celih-brojeva":["Broju 14 suprotan je broj −14."],
@@ -65,5 +66,5 @@ export const extraTasks: Record<string,Task[]> = {
   "primene-slicnosti":[I("8-7d","Odredi stvarnu dužinu.","Razmera 1:250, na planu 6 cm","15","6·250=1500 cm.","1500 cm=15 m.","basic","Razmera plana"),I("8-7e","Odredi visinu zgrade.","Čovek 1,8 m baca senku 1,2 m; senka zgrade je 10 m","15","Visina/senka je ista.","1,8/1,2=h/10, pa je h=15 m.","advanced","Senke")]
 };
 
-export function tasksForLesson(lessonId:string,tasks:Task[]){return [...tasks,...(extraTasks[lessonId]??[]),...(septemberTasks[lessonId]??[])]}
+export function tasksForLesson(lessonId:string,tasks:Task[]){return [...tasks,...(extraTasks[lessonId]??[]),...(septemberTasks[lessonId]??[]),...(octoberTasks[lessonId]??[])]}
 export function examplesForLesson(lessonId:string,examples:string[]){return [...examples,...(extraExamples[lessonId]??[])]}

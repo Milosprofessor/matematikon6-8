@@ -18,7 +18,7 @@ const {localize,localizeMathText}=await vite.ssrLoadModule("/app/transliteration
 const {mathHtml}=await vite.ssrLoadModule("/app/math-format.ts");
 const {getAreaTest}=await vite.ssrLoadModule("/app/content/area-tests.ts");
 
-function mainLessons(areas){return areas.filter(area=>!area.review).flatMap(area=>area.lessons)}
+function mainLessons(areas){return areas.filter(area=>!area.review&&(area.month??"september")==="september").flatMap(area=>area.lessons)}
 
 test("6. razred ima raznovrsnu septembarsku bazu na sva tri nivoa",()=>{
   const ids=[];

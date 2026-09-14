@@ -1,6 +1,7 @@
 import { Area, C, I } from "./types";
+import { grade6OctoberAreas } from "./october";
 
-export const grade6Areas: Area[] = [
+const grade6SeptemberAreas: Area[] = [
   {
     id:"obnavljanje-5", title:"Obnavljanje gradiva 5. razreda", short:"Kratko podsećanje na brojeve, razlomke i geometriju.", review:true,
     lessons:[{
@@ -33,3 +34,5 @@ export const grade6Areas: Area[] = [
     ]
   }
 ];
+
+export const grade6Areas: Area[] = [...grade6SeptemberAreas, ...grade6OctoberAreas];

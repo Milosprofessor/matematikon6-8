@@ -7,7 +7,7 @@ function normalizeRawRoots(source:string){
 }
 
 function renderSubscripts(source:string){
-  return source.replace(/([A-Za-zА-Яа-яČĆŽŠĐčćžšđ])_([A-Za-zА-Яа-яČĆŽŠĐčćžšđ]+)/g,"$1<sub>$2</sub>");
+  return source.replace(/([A-Za-zА-Яа-яČĆŽŠĐčćžšđΑ-Ωα-ω])_([A-Za-zА-Яа-яČĆŽŠĐčćžšđΑ-Ωα-ω0-9]+)/g,"$1<sub>$2</sub>");
 }
 
 export function mathHtml(source:string){

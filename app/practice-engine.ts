@@ -3,7 +3,7 @@ import { tasksForLesson } from "./content/enhancements";
 import { adaptiveLevel, KnowledgeAttempt, skillMasteries } from "./knowledge";
 
 export type SessionTask=Task&{lessonId:string;areaId:string};
-export type SessionResult={task:SessionTask;firstCorrect:boolean;usedSolution:boolean};
+export type SessionResult={task:SessionTask;firstCorrect:boolean;usedSolution:boolean;attemptCount?:number;finalCorrect?:boolean};
 
 function shuffle<T>(arr:T[],random=Math.random){const copy=[...arr];for(let i=copy.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]]}return copy}
 

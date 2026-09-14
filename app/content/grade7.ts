@@ -1,6 +1,7 @@
 import { Area, C, I } from "./types";
+import { grade7OctoberAreas } from "./october";
 
-export const grade7Areas: Area[] = [
+const grade7SeptemberAreas: Area[] = [
   {id:"obnavljanje-6",title:"Obnavljanje gradiva 6. razreda",short:"Racionalni brojevi, apsolutna vrednost i stepeni — ukratko.",review:true,lessons:[{
     id:"kratko-obnavljanje-6",title:"Kratko obnavljanje",intro:"Za početak sedmog razreda najvažnije je da sigurno računaš sa racionalnim brojevima i razumeš brojnu pravu.",
     rules:["Razlomke svedi na zajednički imenilac.","Kod negativnih brojeva pažljivo prati znak.","Stepen pokazuje koliko puta množimo osnovu samu sobom."],
@@ -22,3 +23,5 @@ export const grade7Areas: Area[] = [
     {id:"svojstva-korena",title:"Svojstva kvadratnog korena",intro:"Koren proizvoda ili količnika nenegativnih brojeva možemo rastaviti na proizvod ili količnik korena.",rules:["Svojstvo proizvoda važi za nenegativne brojeve.","Svojstvo količnika zahteva pozitivan imenilac.","√(a+b) uglavnom nije √a+√b."],formulas:["[[sqrt:a·b]]=[[sqrt:a]]·[[sqrt:b]]","[[sqrt:[[frac:a|b]]]]=[[frac:√a|√b]]","[[sqrt:a^2]]=|a|"],examples:["√(4·7)=2√7","√(36·5)=6√5","√([[frac:25|9]])=[[frac:5|3]]"],solved:{question:"Pojednostavi √72.",steps:["72=36·2.","√72=√36·√2.","√72=6√2."]},tasks:[C("7-10a","Pojednostavi.","[[sqrt:50]]",["5√2","10√5","25√2"],"5√2","50=25·2.","√50=√25·√2=5√2.","medium","Svojstva korena"),I("7-10b","Izračunaj.","[[sqrt:16·9]]","12","Možeš korenovati svaki činilac.","√16·√9=4·3=12.","basic","Koren proizvoda"),C("7-10c","Koja jednakost nije tačna?","",["√(9·4)=√9·√4","√(25/4)=√25/√4","√(9+16)=√9+√16"],"√(9+16)=√9+√16","Koren zbira se ne rastavlja.","√25=5, dok je 3+4=7.","advanced","Svojstva korena") ]}
   ]}
 ];
+
+export const grade7Areas: Area[] = [...grade7SeptemberAreas, ...grade7OctoberAreas];

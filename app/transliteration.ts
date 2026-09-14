@@ -14,9 +14,10 @@ export function toCyrillic(value:string){
 
 const setSymbols=new Set(["N","Z","Q","R"]);
 const measurementUnits=/^(?:mm|cm|dm|km|mg|kg|ml|cl|dl|min|m|g|l|h)(?:\^?[23]|[²³])?$/;
-const latinToken=/[A-Za-zČĆŽŠĐčćžšđ]+(?:\^?[23]|[²³₀-₉0-9])?/g;
+const latinToken=/[A-Za-zČĆŽŠĐčćžšđ]+(?:_[A-Za-zČĆŽŠĐčćžšđ0-9]+)?(?:\^?[23]|[²³₀-₉0-9])?/g;
 
 function isProtectedNotation(token:string,mathMode:boolean,value:string,offset:number){
+  if(/^[A-Za-z](?:_[A-Za-z0-9]+)$/.test(token))return true;
   if(setSymbols.has(token))return true;
   if(measurementUnits.test(token))return true;
   // „s” je u običnom tekstu predlog, a merna jedinica samo uz broj.
@@ -26,19 +27,23 @@ function isProtectedNotation(token:string,mathMode:boolean,value:string,offset:n
     const after=value.slice(offset+token.length).trimStart();
     return /[0-9)]$/.test(before)||/^[0-9(]/.test(after);
   }
+  const beforeToken=value.slice(0,offset).trimEnd();
+  const afterToken=value.slice(offset+token.length).trimStart();
+  const touchesMath=/[=<>≤≥∥∈∉⊂√π·+−/|([{^△∼]$/.test(beforeToken)||/^[=<>≤≥∥∈∉⊂√π·+−/|)\]}^△∼]/.test(afterToken);
+  const touchesRatio=/^[A-Za-z]$/.test(token)&&(value.slice(0,offset).endsWith(":")||value.slice(offset+token.length).startsWith(":"));
+  if(/^[IUO]$/.test(token)&&/[A-ZČĆŽŠĐ]{2,}[\s,]*$/.test(beforeToken)&&/^[A-ZČĆŽŠĐ]{2,}/.test(afterToken))return false;
+  if(touchesRatio)return true;
+  if(/^[a-z]{1,4}$/.test(token)&&touchesMath)return true;
   if(/^[A-Z]{1,4}(?:[₀-₉0-9])?$/.test(token)){
-    const before=value.slice(0,offset).trimEnd();
-    const after=value.slice(offset+token.length).trimStart();
-    const besideMath=/[=<>≤≥∥∈∉⊂√π·:+−–—/|([{^△∼]$/.test(before)||/^[=<>≤≥∥∈∉⊂√π·:+−–—/|)\]}^△∼]/.test(after);
-    const namedNotation=/(?:odredi|izračunaj|označi|tačk(?:a|e|u)|duž(?:i|ima)?|stranic(?:a|e|u|i)|ug(?:ao|la|lu)|temen(?:a|u)|koordinat(?:a|e|u)|trougl(?:a|u|ovi)|stav)\b[^.!?]{0,40}$/i.test(before);
-    if(besideMath||namedNotation)return true;
+    const namedNotation=/(?:odredi|izračunaj|označi|tačk(?:a|e|u)|duž(?:i|ima)?|stranic(?:a|e|u|i)|ug(?:ao|la|lu)|temen(?:a|u)|koordinat(?:a|e|u)|trougl(?:a|u|ovi)|stav)\b[^.!?]{0,40}$/i.test(beforeToken);
+    if(touchesMath||namedNotation)return true;
   }
   if(/^[a-z]$/.test(token)){
-    const before=value.slice(0,offset).trimEnd();
-    const after=value.slice(offset+token.length).trimStart();
-    const besideMath=/[=<>≤≥∥∈∉⊂√π·:+−–—/|([{^△∼]$/.test(before)||/^[=<>≤≥∥∈∉⊂√π·:+−–—/|)\]}^△∼]/.test(after);
-    const namedAsVariable=/(?:broj(?:a|u)?|promenljiv(?:a|e|u)|stranic(?:a|e|u)|dužin(?:a|e|u)|visin(?:a|e|u)|koordinat(?:a|e|u)|tačk(?:a|e|u)|kvadrat(?:a|u)?|oznak(?:a|e|u))\s*$/i.test(before);
-    if(besideMath||namedAsVariable)return true;
+    // Srpski veznik „i” je čest odmah posle matematičkih imenica
+    // (npr. „stranica i uglova”), pa ne sme biti zaštićen kao promenljiva.
+    if(token==="i"||token==="u"||token==="o")return false;
+    const namedAsVariable=/(?:odredi|izračunaj|nađi|znak|broj(?:a|u)?|promenljiv(?:a|e|u)|stranic(?:a|e|u)|dužin(?:a|e|u)|visin(?:a|e|u)|koordinat(?:a|e|u)|tačk(?:a|e|u)|kvadrat(?:a|u)?|oznak(?:a|e|u))\s*$/i.test(beforeToken);
+    if(touchesMath||namedAsVariable)return true;
     if(token==="a"&&/\s$/.test(value.slice(0,offset))&&/^\s/.test(value.slice(offset+1)))return false;
   }
   if(!mathMode)return false;

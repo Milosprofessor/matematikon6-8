@@ -1,6 +1,7 @@
 import { Area, C, I } from "./types";
+import { grade8OctoberAreas } from "./october";
 
-export const grade8Areas: Area[] = [
+const grade8SeptemberAreas: Area[] = [
   {id:"obnavljanje-7",title:"Obnavljanje gradiva 7. razreda",short:"Realni brojevi, trouglovi, četvorouglovi, površine i Pitagorina teorema.",review:true,lessons:[{
     id:"kratko-obnavljanje-7",title:"Kratko obnavljanje",intro:"Ponovi znanja koja su potrebna za sličnost: računanje u skupu realnih brojeva, osobine figura, površine i Pitagorinu teoremu.",
     rules:["U izrazu poštuj redosled računskih operacija.","Zbir uglova trougla je 180°.","Pitagorina teorema važi samo u pravouglom trouglu.","Površinu biraj prema poznatim elementima."],
@@ -19,3 +20,5 @@ export const grade8Areas: Area[] = [
     {id:"primene-slicnosti",title:"Primene sličnosti",intro:"Sličnost koristimo za merenje visina i rastojanja, rad sa planovima, kartama, maketama i senkama.",rules:["Napravi skicu i označi odgovarajuće duži.","Sve veličine izrazi u istim jedinicama.","Proveri da li je rezultat realan."],formulas:["[[frac:visina|senka]] = konstanta","dužina na planu : stvarna dužina = razmera"],examples:["Štap i drvo sa paralelnim Sunčevim zracima grade slične trouglove.","Razmera 1:100 znači 1 cm na planu = 100 cm u stvarnosti.","Model u razmeri 1:20 je 20 puta manji."],solved:{question:"Štap visine 1,5 m baca senku 2 m. Senka drveta je 8 m. Odredi visinu drveta.",steps:["Zapiši proporciju 1,5/2=h/8.","2h=1,5·8=12.","h=6 m."]},tasks:[I("8-7a","Odredi stvarnu dužinu.","Razmera 1:200, na planu 4 cm","8","4·200=800 cm.","800 cm=8 m.","basic","Razmera plana"),I("8-7b","Odredi visinu drveta.","Štap: 2 m, senka 3 m; senka drveta 12 m","8","Visina/senka je ista.","2/3=h/12, pa je h=8 m.","medium","Senke"),C("8-7c","Izaberi tačan odgovor.","Model je dug 15 cm u razmeri 1:40.",["3,75 m","6 m","60 m"],"6 m","Pomnoži 15 cm sa 40.","600 cm=6 m.","advanced","Modeli i razmera")],diagram:"scale"}
   ]}
 ];
+
+export const grade8Areas: Area[] = [...grade8SeptemberAreas, ...grade8OctoberAreas];
