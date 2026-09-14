@@ -10,7 +10,7 @@ after(async()=>vite.close());
 const {grade6Areas}=await vite.ssrLoadModule("/app/content/grade6.ts");
 const {grade7Areas}=await vite.ssrLoadModule("/app/content/grade7.ts");
 const {grade8Areas}=await vite.ssrLoadModule("/app/content/grade8.ts");
-const {tasksForLesson}=await vite.ssrLoadModule("/app/content/enhancements.ts");
+const {tasksForLesson,examplesForLesson}=await vite.ssrLoadModule("/app/content/enhancements.ts");
 const {estimateMastery,adaptiveLevel}=await vite.ssrLoadModule("/app/knowledge.ts");
 const {grades}=await vite.ssrLoadModule("/app/content/index.ts");
 const {pickAdaptiveTask}=await vite.ssrLoadModule("/app/practice-engine.ts");
@@ -45,6 +45,37 @@ test("7. razred proverava različite veštine realnih brojeva na sva tri nivoa",
   const realTasks=mainLessons(grade7Areas).flatMap(lesson=>tasksForLesson(lesson.id,lesson.tasks));
   for(const required of ["zaokruzivanje","pronadji-gresku","koren-naspram-jednacine","decimalni-zapis-klasifikacija","citanje-pribliznog-polozaja"]){
     assert.ok(realTasks.some(task=>task.taskType===required),`nedostaje tip ${required}`);
+  }
+});
+
+test("7. razred ne koristi kvadratni koren pre odgovarajuće lekcije",()=>{
+  const lessons=mainLessons(grade7Areas);
+  const rootIndex=lessons.findIndex(lesson=>lesson.id==="kvadratni-koren");
+  assert.ok(rootIndex>0,"lekcija o kvadratnom korenu mora postojati u redosledu");
+  const prematurePattern=/√|\[\[sqrt:|koren/i;
+  for(const lesson of lessons.slice(0,rootIndex)){
+    const content={...lesson,examples:examplesForLesson(lesson.id,lesson.examples),tasks:tasksForLesson(lesson.id,lesson.tasks)};
+    assert.doesNotMatch(JSON.stringify(content),prematurePattern,`${lesson.id}: kvadratni koren je uveden prerano`);
+  }
+  const earlyIds=new Set(lessons.slice(0,rootIndex).map(lesson=>lesson.id));
+  for(const task of getAreaTest(7,"realni-brojevi").filter(task=>earlyIds.has(task.lessonId))){
+    assert.doesNotMatch(JSON.stringify(task),prematurePattern,`${task.id}: završna provera vezuje koren za preranu lekciju`);
+  }
+  assert.match(JSON.stringify(lessons.slice(rootIndex)),/√|\[\[sqrt:/,"koreni moraju ostati u kasnijim lekcijama");
+});
+
+test("ciljano vežbanje Realnih brojeva ostaje bez korena",()=>{
+  const grade=grades.find(item=>item.id===7);
+  const pattern=/√|\[\[sqrt:|koren/i;
+  for(const lessonId of ["realni-brojevi","brojna-prava"]){
+    let state=lessonId.length*97;const random=()=>((state=(state*48271)%2147483647)/2147483647);
+    const tasks=[];const results=[];
+    for(let index=0;index<5;index++){
+      const task=pickAdaptiveTask(grade,"medium",results,tasks.map(item=>item.id),[],[],{lessonId},random);
+      assert.ok(task,`${lessonId}: nema ciljanog zadatka`);
+      assert.doesNotMatch(JSON.stringify(task),pattern,`${lessonId}: Pametno vežbanje je prerano izabralo koren`);
+      tasks.push(task);results.push({task,firstCorrect:index!==1,usedSolution:false});
+    }
   }
 });
 

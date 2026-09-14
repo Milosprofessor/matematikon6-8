@@ -120,17 +120,17 @@ export const septemberTasks:Record<string,Task[]>={
   ],
   "realni-brojevi":[
     P(C("7-5f","Odredi vrstu broja.","0,1010010001…",["Racionalan","Iracionalan"],"Iracionalan","Zapis se ne završava i nema period.","Beskonačan neperiodičan decimalni zapis predstavlja iracionalan broj.","advanced","Vrste brojeva"),"decimalni-zapis-klasifikacija","concept"),
-    P(C("7-5g","Izaberi racionalan broj.","",["[[sqrt:50]]","0,(27)","π"],"0,(27)","Periodičan decimalni zapis je racionalan.","0,(27) je racionalan broj.","basic","Vrste brojeva"),"izbor-po-vrsti","concept"),
-    P(C("7-5h","Odredi pripadnost.","[[sqrt:49]]",["∈ Q i ∈ R","∉ Q i ∈ R","∉ R"],"∈ Q i ∈ R","Najpre izračunaj koren.","√49=7, pa broj pripada i Q i R.","medium","Skupovi brojeva"),"pripadnost-skupovima","concept"),
-    P(C("7-5i","Pronađi grešku.","π=[[frac:22|7]]",["Jednakost je tačna.","[[frac:22|7]] je samo približna vrednost broja π.","π je racionalan broj."],"[[frac:22|7]] je samo približna vrednost broja π.","Uporedi tačnu i približnu vrednost.","Broj π je iracionalan; [[frac:22|7]] je racionalna približna vrednost.","advanced","Iracionalni brojevi"),"pronadji-gresku","concept"),
+    P(C("7-5g","Izaberi racionalan broj.","",["π","0,(27)","2,020020002…"],"0,(27)","Periodičan decimalni zapis je racionalan.","0,(27) je racionalan broj.","basic","Vrste brojeva"),"izbor-po-vrsti","concept"),
+    P(C("7-5h","Odredi pripadnost.","−1,25",["∈ Q i ∈ R","∉ Q i ∈ R","∉ R"],"∈ Q i ∈ R","Konačan decimalni zapis je racionalan.","Broj −1,25 pripada i Q i R.","medium","Skupovi brojeva"),"pripadnost-skupovima","concept"),
+    P(C("7-5i","Pronađi grešku.","π=[[frac:22|7]]",["Jednakost je tačna.","[[frac:22|7]] je samo približna vrednost broja π.","Broj π pripada racionalnim brojevima."],"[[frac:22|7]] je samo približna vrednost broja π.","Uporedi tačnu i približnu vrednost.","Broj π pripada iracionalnim brojevima; [[frac:22|7]] je racionalna približna vrednost.","advanced","Iracionalni brojevi"),"pronadji-gresku","concept"),
     P(C("7-5j","Koji niz je tačno uređen po uključenosti?","",["Z⊂Q⊂R","R⊂Q⊂Z","Q⊂Z⊂R"],"Z⊂Q⊂R","Svaki ceo broj je racionalan, a svaki racionalan je realan.","Tačno je Z⊂Q⊂R.","medium","Skupovi brojeva"),"hijerarhija-skupova","rule"),
   ],
   "brojna-prava":[
-    P(C("7-6f","Između kojih celih brojeva je broj?","[[sqrt:47]]",["5 i 6","6 i 7","7 i 8"],"6 i 7","Pronađi susedne potpune kvadrate.","36<47<49, pa je 6<√47<7.","basic","Procena korena"),"ogranicavanje-korena","method"),
-    P(C("7-6g","Odredi najbolju procenu tačke A.","",["√10≈3,16","√8≈2,83","√12≈3,46"],"√10≈3,16","Tačka A je malo desno od broja 3.","Položaj 3,2 najbolje odgovara proceni √10≈3,16.","medium","Brojna prava"),"citanje-pribliznog-polozaja","diagram",{type:"number-line",min:1,max:5,points:[{value:3.2,label:"A"}]}),
-    P(I("7-6h","Zaokruži na jednu decimalu.","[[sqrt:20]]≈4,472…","4,5","Pogledaj cifru stotih.","Cifra stotih je 7, zato 4,472… zaokružujemo na 4,5.","medium","Približna vrednost korena"),"zaokruzivanje","method"),
-    P(C("7-6i","Uporedi.","[[sqrt:30]] __ 5,4",["<",">","="],">","Uporedi kvadrate pozitivnih brojeva.","5,4²=29,16<30, pa je √30>5,4.","advanced","Poređenje realnih brojeva"),"poredjenje-kvadriranjem","method"),
-    P(C("7-6j","Odredi najbliži ceo broj.","[[sqrt:70]]",["7","8","9"],"8","√70 je približno 8,37.","8,37 je bliže broju 8 nego broju 9.","advanced","Približna vrednost korena"),"najblizi-ceo","method"),
+    P(C("7-6f","Između kojih celih brojeva je broj?","−2,65",["−4 i −3","−3 i −2","−2 i −1"],"−3 i −2","Uporedi −2,65 sa susednim celim brojevima.","Važi −3<−2,65<−2.","basic","Položaj realnog broja"),"ogranicavanje-decimalnog-broja","method"),
+    P(C("7-6g","Odredi najbolju procenu tačke A.","",["2,2","π","3,8"],"π","Tačka A je malo desno od broja 3.","Položaj 3,2 najbolje odgovara broju π≈3,14.","medium","Brojna prava"),"citanje-pribliznog-polozaja","diagram",{type:"number-line",min:1,max:5,points:[{value:3.2,label:"A"}]}),
+    P(I("7-6h","Zaokruži na jednu decimalu.","2,718…","2,7","Pogledaj cifru stotih.","Cifra stotih je 1, zato 2,718… zaokružujemo na 2,7.","medium","Približna vrednost"),"zaokruzivanje","method"),
+    P(C("7-6i","Uporedi.","π __ 3,15",["<",">","="],"<","Koristi π≈3,14.","Pošto je 3,14<3,15, dobijamo π<3,15.","advanced","Poređenje realnih brojeva"),"poredjenje-priblizavanjem","method"),
+    P(C("7-6j","Odredi najbliži ceo broj.","3,72",["3","4","5"],"4","Uporedi rastojanja do 3 i 4.","3,72 je bliže broju 4 nego broju 3.","advanced","Približna vrednost"),"najblizi-ceo","method"),
   ],
   "intervali":[
     P(C("7-7f","Zapiši kao interval.","−5<x≤2",["(−5,2]","[−5,2)","[−5,2]"],"(−5,2]","−5 nije uključeno, a 2 jeste.","Interval je (−5,2].","basic","Intervali"),"nejednakost-u-interval","rule"),
@@ -145,6 +145,7 @@ export const septemberTasks:Record<string,Task[]>={
     P(I("7-8h","Izračunaj.","[[sqrt:(−6)^2]]","6","Važi √(a²)=|a|.","√(−6)²=|−6|=6.","medium","Definicija korena"),"koren-kvadrata","rule"),
     P(I("7-8i","Odredi stranicu kvadrata.","P=144 cm^2","12","Stranica je kvadratni koren površine.","a=√144=12 cm.","advanced","Kvadratni koren"),"geometrijski-kontekst","method"),
     P(C("7-8j","Pronađi grešku.","[[sqrt:25]]=−5",["Nema greške.","√25 je 5.","√25 je ±5."],"√25 je 5.","Znak √ označava nenegativan koren.","√25=5; jednačina x²=25 ima rešenja ±5.","basic","Definicija korena"),"pronadji-gresku","concept"),
+    P(C("7-8k","Izaberi iracionalan broj.","",["[[sqrt:36]]","[[sqrt:12]]","0,25"],"[[sqrt:12]]","Uporedi 12 sa potpunim kvadratima.","Broj 12 nije potpun kvadrat, pa je √12 iracionalan broj.","medium","Koren i vrste brojeva"),"klasifikacija-korena","concept"),
   ],
   "odredjivanje-korena":[
     P(C("7-9f","Izaberi približnu vrednost.","[[sqrt:2]]",["1,14","1,41","1,73"],"1,41","1,4²=1,96 i 1,5²=2,25.","√2≈1,41.","basic","Približna vrednost korena"),"izbor-priblizne-vrednosti","method"),
