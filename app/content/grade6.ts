@@ -1,5 +1,5 @@
 import { Area, C, I } from "./types";
-import { grade6OctoberAreas } from "./october";
+import { grade6OctoberAreas } from "./october-curriculum";
 
 const grade6SeptemberAreas: Area[] = [
   {
@@ -35,4 +35,18 @@ const grade6SeptemberAreas: Area[] = [
   }
 ];
 
-export const grade6Areas: Area[] = [...grade6SeptemberAreas, ...grade6OctoberAreas];
+const octoberIntegerLessons = new Set(["mnozenje", "deljenje", "mnozenje-deljenje", "brojevni-izrazi"]);
+
+const grade6CalendarAreas: Area[] = grade6SeptemberAreas.map(area => area.id !== "celi-brojevi" ? area : ({
+  ...area,
+  practiceGroupId: "celi-brojevi",
+  monthShort: {september:"Od skupa celih brojeva do sabiranja i oduzimanja.",october:"Množenje, deljenje i brojevni izrazi sa celim brojevima."},
+  monthOrder: {september:1,october:2},
+  lessons: area.lessons.map((lesson, index, lessons) => ({
+    ...lesson,
+    month: octoberIntegerLessons.has(lesson.id) ? "october" : "september",
+    prerequisites: index ? [lessons[index - 1].id] : [],
+  })),
+}));
+
+export const grade6Areas: Area[] = [...grade6CalendarAreas, ...grade6OctoberAreas];

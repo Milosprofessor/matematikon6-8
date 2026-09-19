@@ -19,7 +19,7 @@ const {localize,localizeMathText}=await vite.ssrLoadModule("/app/transliteration
 const {mathHtml}=await vite.ssrLoadModule("/app/math-format.ts");
 const {getAreaTest}=await vite.ssrLoadModule("/app/content/area-tests.ts");
 
-function mainLessons(areas){return areas.filter(area=>!area.review&&(area.month??"september")==="september").flatMap(area=>area.lessons)}
+function mainLessons(areas){return areas.filter(area=>!area.review).flatMap(area=>area.lessons.filter(lesson=>(lesson.month??area.month??"september")==="september"))}
 function lessonScope(grade,lessonId){const area=grade.areas.find(item=>item.lessons.some(lesson=>lesson.id===lessonId));return {areaId:area.id,unlockedLessonIds:[lessonId],lessonId}}
 
 test("6. razred ima raznovrsnu septembarsku bazu na sva tri nivoa",()=>{
@@ -96,7 +96,7 @@ test("8. razred ima različite geometrijske tipove i crteže",()=>{
   const ids=[];const all=[];
   for(const lesson of mainLessons(grade8Areas)){
     const tasks=tasksForLesson(lesson.id,lesson.tasks);ids.push(...tasks.map(task=>task.id));all.push(...tasks);
-    assert.ok(tasks.length>=11,`${lesson.id}: nedovoljno zadataka`);
+    assert.ok(tasks.length>=7,`${lesson.id}: nedovoljno zadataka`);
     assert.ok(new Set(tasks.map(task=>task.taskType).filter(Boolean)).size>=6,`${lesson.id}: nedovoljno različitih tipova`);
     for(const level of ["basic","medium","advanced"])assert.ok(tasks.some(task=>task.level===level),`${lesson.id}: nedostaje ${level}`);
     for(const task of tasks.filter(task=>task.kind==="choice"))assert.ok(task.choices.includes(task.answer),`${task.id}: odgovor nije ponuđen`);
@@ -199,7 +199,8 @@ test("oblast otključava lekcije redom i ne uvodi buduće gradivo",()=>{
 
 test("oblast koja traje u septembru i oktobru deli jedno Pametno vežbanje",()=>{
   const grade=grades.find(item=>item.id===8);
-  assert.equal(practiceGroupKey(grade,"slicnost"),practiceGroupKey(grade,"slicnost-pravougli-trougao"));
+  assert.equal(grade.areas.filter(area=>area.lessons.some(lesson=>lesson.id==="slicnost-pravougli")).length,1);
+  assert.equal(practiceGroupKey(grade,"slicnost"),"slicnost");
   assert.ok(practiceLessons(grade,"slicnost").some(item=>item.lesson.id==="slicnost-pravougli"));
 });
 

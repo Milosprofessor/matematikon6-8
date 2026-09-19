@@ -34,14 +34,24 @@ export function withTaskMetadata<T extends Task>(task:T):T{return {...task,taskT
 export function practiceGroupKey(grade:Grade,areaId:string){const area=grade.areas.find(item=>item.id===areaId);return area?.practiceGroupId??area?.id??areaId}
 export function practiceAreas(grade:Grade,areaId:string){const key=practiceGroupKey(grade,areaId);return grade.areas.filter(area=>(area.practiceGroupId??area.id)===key)}
 export function practiceLessons(grade:Grade,areaId:string){return practiceAreas(grade,areaId).flatMap(area=>area.lessons.map(lesson=>({area,lesson})))}
+function curriculumOrder(grade:Grade){
+  const monthRank={september:0,october:1};
+  return grade.areas.flatMap((area,areaIndex)=>area.lessons.map((lesson,lessonIndex)=>{
+    const month=lesson.month??area.month??"september";
+    return {id:lesson.id,monthRank:monthRank[month],areaOrder:area.review?-1:(area.monthOrder?.[month]??areaIndex),lessonIndex};
+  })).sort((a,b)=>a.monthRank-b.monthRank||a.areaOrder-b.areaOrder||a.lessonIndex-b.lessonIndex).map(item=>item.id);
+}
 export function unlockedPracticeLessonIds(grade:Grade,areaId:string,completed:string[],lastLesson:string|null){
   const ordered=practiceLessons(grade,areaId);if(ordered.length===0)return [];
-  const reached=new Set(completed);if(lastLesson)reached.add(lastLesson);
+  const reached=new Set(completed);const globalOrder=curriculumOrder(grade);const globalLast=lastLesson?globalOrder.indexOf(lastLesson):-1;
+  if(globalLast>=0)globalOrder.slice(0,globalLast+1).forEach(lessonId=>reached.add(lessonId));else if(lastLesson)reached.add(lastLesson);
   const furthest=ordered.reduce((max,item,index)=>reached.has(item.lesson.id)?Math.max(max,index):max,-1);
-  return ordered.slice(0,Math.max(0,furthest)+1).map(item=>item.lesson.id);
+  const available=new Set(reached);const unlocked:string[]=[];
+  for(const item of ordered.slice(0,Math.max(0,furthest)+1))if((item.lesson.prerequisites??[]).every(required=>available.has(required))){unlocked.push(item.lesson.id);available.add(item.lesson.id)}
+  return unlocked;
 }
 export function sessionPool(grade:Grade,scope:PracticeScope):SessionTask[]{
-  const unlocked=new Set(scope.unlockedLessonIds);return practiceAreas(grade,scope.areaId).flatMap(area=>area.lessons.filter(lesson=>unlocked.has(lesson.id)&&(!scope.lessonId||lesson.id===scope.lessonId)).flatMap(lesson=>tasksForLesson(lesson.id,lesson.tasks).map(task=>({...withTaskMetadata(task),lessonId:lesson.id,areaId:area.id}))));
+  const unlocked=new Set(scope.unlockedLessonIds);return practiceAreas(grade,scope.areaId).flatMap(area=>area.lessons.filter(lesson=>unlocked.has(lesson.id)&&(!scope.lessonId||lesson.id===scope.lessonId)).flatMap(lesson=>tasksForLesson(lesson.id,lesson.tasks).filter(task=>(task.prerequisites??[]).every(required=>unlocked.has(required))).map(task=>({...withTaskMetadata(task),lessonId:lesson.id,areaId:area.id}))));
 }
 
 function repeatedErrorTarget(results:SessionResult[]){

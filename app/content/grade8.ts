@@ -1,5 +1,5 @@
 import { Area, C, I } from "./types";
-import { grade8OctoberAreas } from "./october";
+import { grade8OctoberAreas, grade8SeptemberContinuation } from "./october-curriculum";
 
 const grade8SeptemberAreas: Area[] = [
   {id:"obnavljanje-7",title:"Obnavljanje gradiva 7. razreda",short:"Realni brojevi, trouglovi, četvorouglovi, površine i Pitagorina teorema.",review:true,lessons:[{
@@ -21,4 +21,18 @@ const grade8SeptemberAreas: Area[] = [
   ]}
 ];
 
-export const grade8Areas: Area[] = [...grade8SeptemberAreas, ...grade8OctoberAreas];
+const grade8CalendarAreas: Area[] = grade8SeptemberAreas.map(area => {
+  if (area.id !== "slicnost") return area;
+  const lessons = [...area.lessons, grade8SeptemberContinuation];
+  return {
+    ...area,
+    practiceGroupId: "slicnost",
+    lessons: lessons.map((lesson, index) => ({
+      ...lesson,
+      month: "september",
+      prerequisites: lesson.prerequisites ?? (index ? [lessons[index - 1].id] : []),
+    })),
+  };
+});
+
+export const grade8Areas: Area[] = [...grade8CalendarAreas, ...grade8OctoberAreas];
