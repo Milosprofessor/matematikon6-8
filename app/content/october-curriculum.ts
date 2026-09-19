@@ -95,6 +95,38 @@ export const grade6OctoberAreas: Area[] = [sequence({
   ],
 })];
 
+const pitagoraCetvorougao: Lesson = {
+  id: "pitagora-cetvorougao",
+  title: "Pitagorina teorema u četvorouglu",
+  month: "october",
+  intro: "Dijagonalom četvorougao možemo podeliti na dva trougla. Pitagorinu teoremu primenjujemo samo u onom pomoćnom trouglu za koji znamo da je pravougli.",
+  rules: [
+    "Najpre nacrtaj dijagonalu koja daje pravougle trouglove.",
+    "Za svaki korak jasno odredi katete i hipotenuzu.",
+    "Ne pretpostavljaj da su dijagonala i stranica normalne ako to nije dato.",
+  ],
+  formulas: ["AC^2=AB^2+BC^2", "AD^2=AC^2+CD^2"],
+  examples: [
+    "AB=6 cm i BC=8 cm daju AC=10 cm kada je ∠ABC=90°.",
+    "AC=5 cm i CD=12 cm daju AD=13 cm kada je ∠ACD=90°.",
+    "Za AB=9 cm, BC=12 cm i CD=8 cm dobijamo AC=15 cm, zatim AD=17 cm.",
+  ],
+  solved: {
+    question: "U četvorouglu ABCD važi ∠ABC=∠ACD=90°. Ako su AB=6 cm, BC=8 cm i CD=24 cm, odredi AD.",
+    steps: ["U △ABC je AC²=6²+8²=100, pa je AC=10 cm.", "U △ACD je AD²=10²+24²=676.", "AD=26 cm."],
+  },
+  diagram: "quadrilateral",
+  tasks: [
+    I("o7-cv-1", "Odredi dijagonalu AC.", "∠ABC=90°, AB=8 cm, BC=15 cm", "17", "Posmatraj △ABC.", "AC²=8²+15²=289, pa je AC=17 cm.", "basic", "Pitagora u četvorouglu", { taskType:"dijagonala-cetvorougla", errorCategory:"diagram", diagram:{type:"pythagoras",variant:"quadrilateral",labels:{AB:"8",BC:"15",AC:"?",CD:"",AD:""}} }),
+    C("o7-cv-2", "Izaberi pravilan prvi korak.", "∠ABC=90°", ["AC²=AB²+BC²", "AB²=AC²+BC²", "AC=AB+BC"], "AC²=AB²+BC²", "AC je hipotenuza trougla ABC.", "Tačan je prvi zapis.", "basic", "Pitagora u četvorouglu", { taskType:"izbor-pomocnog-trougla", errorCategory:"method" }),
+    I("o7-cv-3", "Odredi AD.", "∠ABC=∠ACD=90°, AB=9 cm, BC=12 cm, CD=8 cm", "17", "Najpre odredi AC.", "AC=15 cm, zatim AD²=15²+8²=289, pa je AD=17 cm.", "medium", "Pitagora u četvorouglu", { taskType:"dva-pravouga-trougla", errorCategory:"method", diagram:{type:"pythagoras",variant:"quadrilateral",labels:{AB:"9",BC:"12",CD:"8",AD:"?"}} }),
+    C("o7-cv-4", "Tačno ili netačno?", "Svaka dijagonala četvorougla daje dva pravougla trougla.", ["Tačno", "Netačno"], "Netačno", "Pravi ugao mora biti dat ili dokazan.", "Dijagonala u opštem četvorouglu ne mora dati pravougle trouglove.", "medium", "Pitagora u četvorouglu", { taskType:"tacno-netacno", errorCategory:"concept", practiceOnly:true }),
+    C("o7-cv-5", "Pronađi grešku.", "AB=6, BC=8, ∠ABC=90°, pa je AC=14.", ["Treba AC=10.", "Treba AC=2.", "Nema greške."], "Treba AC=10.", "Sabiraju se kvadrati, ne dužine.", "AC=√(6²+8²)=10.", "medium", "Pitagora u četvorouglu", { taskType:"pronadji-gresku", errorCategory:"calculation", practiceOnly:true }),
+    I("o7-cv-6", "Odredi obim četvorougla.", "AB=6, BC=8, CD=24, AD=26", "64", "Saberi četiri stranice.", "O=6+8+24+26=64.", "advanced", "Pitagora u četvorouglu", { taskType:"obim-posle-primene", errorCategory:"calculation", practiceOnly:true }),
+    C("o7-cv-7", "Koji podatak nedostaje?", "Poznate su četiri stranice četvorougla; želimo Pitagorinom teoremom dijagonalu AC.", ["Podatak da je ∠ABC=90°", "Boja četvorougla", "Naziv dijagonale BD"], "Podatak da je ∠ABC=90°", "Pitagorina teorema zahteva pravougli trougao.", "Mora biti poznato da je △ABC pravougli.", "advanced", "Pitagora u četvorouglu", { taskType:"nedostajuci-uslov", errorCategory:"concept", practiceOnly:true }),
+  ],
+};
+
 const posebniPravougli: Lesson = {
   id: "specijalni-pravougli-trouglovi",
   title: "Pravougli trouglovi sa uglovima 30°, 60° i 45°",
@@ -170,7 +202,7 @@ const pojamStepena: Lesson = {
 const legacyPitagora = legacyGrade7.find(area => area.id === "pitagorina-teorema")!;
 const pitagora: Area = {...legacyPitagora,lessons:legacyPitagora.lessons.map((lesson,index)=>index?lesson:{...lesson,prerequisites:["svojstva-korena"]})};
 export const grade7OctoberAreas: Area[] = [
-  sequence({ ...pitagora, lessons: [...pitagora.lessons, posebniPravougli, konstrukcijaIracionalnih] }),
+  sequence({ ...pitagora, lessons: [...pitagora.lessons.flatMap(lesson=>lesson.id==="pitagora-jednakokraki"?[lesson,pitagoraCetvorougao]:[lesson]), posebniPravougli, konstrukcijaIracionalnih] }),
   sequence({ id: "stepeni", title: "Stepeni", short: "Pojam stepena sa prirodnim izložiocem.", month: "october", assessment: "mini", lessons: [pojamStepena] }),
 ];
 

@@ -17,7 +17,7 @@ const {pickAdaptiveTask,practiceLessons,sessionPool,unlockedPracticeLessonIds}=a
 
 const expected={
   6:{areas:["celi-brojevi","trougao"],lessons:["mnozenje","deljenje","mnozenje-deljenje","brojevni-izrazi","trougao-vrste","zbir-uglova-trougla","uglovi-transverzala","odnos-stranica-uglova","nejednakost-trougla","konstrukcije-uglova"]},
-  7:{areas:["pitagorina-teorema","stepeni"],lessons:["pitagorina-teorema","nepoznata-stranica-pravougli","pitagora-pravougaonik-kvadrat","pitagora-jednakokraki","pitagora-romb","pitagora-trapez","specijalni-pravougli-trouglovi","konstrukcija-iracionalnih-brojeva","pojam-stepena"]},
+  7:{areas:["pitagorina-teorema","stepeni"],lessons:["pitagorina-teorema","nepoznata-stranica-pravougli","pitagora-pravougaonik-kvadrat","pitagora-jednakokraki","pitagora-cetvorougao","pitagora-romb","pitagora-trapez","specijalni-pravougli-trouglovi","konstrukcija-iracionalnih-brojeva","pojam-stepena"]},
   8:{areas:["tacka-prava-ravan","linearne-jednacine"],lessons:["rogalj","poliedar","pojam-linearne-jednacine","ekvivalentne-transformacije","resavanje-linearnih-jednacina","primena-linearnih-jednacina","linearne-nejednacine"]}
 };
 const monthOf=(area,lesson)=>lesson.month??area.month??"september";

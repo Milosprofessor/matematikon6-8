@@ -9,7 +9,7 @@ export type TaskDiagram =
   | { type:"shadow"; objectLabel:string; objectHeight:string; objectShadow:string; targetShadow:string; targetLabel?:string }
   | { type:"triangle"; variant:"angles"|"sides"|"inequality"|"transversal"; labels?:Record<string,string> }
   | { type:"graph"; k:number; point?:{x:number;y:number}; labels?:Record<string,string> }
-  | { type:"pythagoras"; variant:"right"|"rectangle"|"square"|"isosceles"|"equilateral"|"rhombus"|"trapezoid"; labels?:Record<string,string> }
+  | { type:"pythagoras"; variant:"right"|"rectangle"|"square"|"isosceles"|"equilateral"|"quadrilateral"|"rhombus"|"trapezoid"; labels?:Record<string,string> }
   | { type:"space"; variant:"point-line-plane"|"skew-lines"|"planes"|"orthogonal"|"projection"|"polyhedron"; labels?:Record<string,string> };
 export type Task = {
   id: string;
@@ -45,7 +45,7 @@ export type Lesson = {
   month?: Month;
   /** Prethodne lekcije potrebne za razumevanje ove lekcije. */
   prerequisites?: string[];
-  diagram?: "tales" | "similarity" | "scale" | "triangle" | "direct-proportion" | "pythagoras" | "space";
+  diagram?: "tales" | "similarity" | "scale" | "triangle" | "direct-proportion" | "pythagoras" | "quadrilateral" | "space";
   interactive?: "triangle-angles" | "direct-proportion" | "pythagoras" | "space-relations";
 };
 
