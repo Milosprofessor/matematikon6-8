@@ -8,6 +8,7 @@ const root=fileURLToPath(new URL("..",import.meta.url));
 const vite=await createServer({appType:"custom",configFile:false,root,resolve:{alias:{"@":root}},server:{middlewareMode:true,hmr:false}});
 after(async()=>vite.close());
 
+const {learningByLesson}=await vite.ssrLoadModule("/app/content/learning.ts");
 const {grades}=await vite.ssrLoadModule("/app/content/index.ts");
 const {tasksForLesson}=await vite.ssrLoadModule("/app/content/enhancements.ts");
 const {getAreaTest}=await vite.ssrLoadModule("/app/content/area-tests.ts");
@@ -16,9 +17,9 @@ const {localize,localizeMathText}=await vite.ssrLoadModule("/app/transliteration
 const {pickAdaptiveTask,practiceLessons,sessionPool,unlockedPracticeLessonIds}=await vite.ssrLoadModule("/app/practice-engine.ts");
 
 const expected={
-  6:{areas:["celi-brojevi","trougao"],lessons:["mnozenje","deljenje","mnozenje-deljenje","brojevni-izrazi","trougao-vrste","zbir-uglova-trougla","uglovi-transverzala","odnos-stranica-uglova","nejednakost-trougla","konstrukcije-uglova"]},
-  7:{areas:["pitagorina-teorema","stepeni"],lessons:["pitagorina-teorema","nepoznata-stranica-pravougli","pitagora-pravougaonik-kvadrat","pitagora-jednakokraki","pitagora-cetvorougao","pitagora-romb","pitagora-trapez","specijalni-pravougli-trouglovi","konstrukcija-iracionalnih-brojeva","pojam-stepena"]},
-  8:{areas:["tacka-prava-ravan","linearne-jednacine"],lessons:["rogalj","poliedar","pojam-linearne-jednacine","ekvivalentne-transformacije","resavanje-linearnih-jednacina","primena-linearnih-jednacina","linearne-nejednacine"]}
+ 6:{areas:['celi-brojevi','trougao','racionalni-brojevi'],lessons:['mnozenje-deljenje','brojevni-izrazi','trougao-vrste','zbir-uglova-trougla','uglovi-transverzala','uglovi-na-transverzali','odnos-stranica-uglova','nejednakost-trougla','skup-racionalnih-brojeva','apsolutna-vrednost-racionalnog']},
+ 7:{areas:['realni-brojevi','direktna-proporcionalnost','pitagorina-teorema'],lessons:['jednacine-kvadrat','direktna-proporcionalnost','funkcija-ykx','proporcije','produzena-proporcija','primena-produzene-proporcije','pitagorina-teorema','nepoznata-stranica-pravougli','pitagora-pravougaonik-kvadrat','pitagora-jednakokraki','pitagora-romb','pitagora-trapez']},
+ 8:{areas:['tacka-prava-ravan'],lessons:['snalazenje-u-prostoru','tacka-prava-ravan-osnove','odnosi-pravih-ravni','dve-ravni','ortogonalnost','ortogonalna-projekcija','poliedar']}
 };
 const monthOf=(area,lesson)=>lesson.month??area.month??"september";
 const lessonsIn=(area,month)=>area.lessons.filter(lesson=>monthOf(area,lesson)===month);
@@ -42,7 +43,7 @@ test("preduslovi otključavaju oktobarske veštine redom",()=>{
       assert.ok(position.get(required)<position.get(lesson.id),`${lesson.id}: preduslov mora doći ranije`);
     }
   }
-  for(const [gradeId,areaId,lastLesson,forbidden] of [[6,"celi-brojevi","sabiranje-oduzimanje","mnozenje"],[7,"pitagorina-teorema","pitagora-trapez","specijalni-pravougli-trouglovi"],[8,"tacka-prava-ravan","ortogonalna-projekcija","rogalj"],[8,"linearne-jednacine","ekvivalentne-transformacije","resavanje-linearnih-jednacina"]]){
+  for(const [gradeId,areaId,lastLesson,forbidden] of [[6,"celi-brojevi","sabiranje-oduzimanje","mnozenje"],[7,"pitagorina-teorema","pitagora-jednakokraki","pitagora-romb"],[8,"tacka-prava-ravan","ortogonalnost","ortogonalna-projekcija"],[7,"direktna-proporcionalnost","proporcije","produzena-proporcija"]]){
     const grade=grades.find(item=>item.id===gradeId);const ordered=practiceLessons(grade,areaId).map(item=>item.lesson.id);const lastIndex=ordered.indexOf(lastLesson);
     const unlocked=unlockedPracticeLessonIds(grade,areaId,ordered.slice(0,lastIndex),lastLesson);
     assert.ok(!unlocked.includes(forbidden),`${gradeId}/${areaId}: prerano otključana lekcija ${forbidden}`);
@@ -51,11 +52,11 @@ test("preduslovi otključavaju oktobarske veštine redom",()=>{
   const grade6=grades.find(item=>item.id===6);
   const integersAfterFirstTriangle=unlockedPracticeLessonIds(grade6,"celi-brojevi",[],"trougao-vrste");
   assert.ok(integersAfterFirstTriangle.includes("sabiranje-oduzimanje"),"septembarski deo celih brojeva ostaje dostupan");
-  assert.ok(!integersAfterFirstTriangle.includes("mnozenje"),"trougao ne sme prerano otključati kasnije oktobarske cele brojeve");
+  assert.ok(integersAfterFirstTriangle.includes("mnozenje"),"množenje pripada prethodnom septembarskom delu plana");
 
-  const grade8=grades.find(item=>item.id===8);
-  const equationsAtStart=unlockedPracticeLessonIds(grade8,"linearne-jednacine",[],"pojam-linearne-jednacine");
-  assert.deepEqual(equationsAtStart,["pojam-linearne-jednacine"],"početak jednačina otključava samo obrađenu lekciju");
+  const grade7=grades.find(item=>item.id===7);
+  const proportionsAtStart=unlockedPracticeLessonIds(grade7,'direktna-proporcionalnost',[],'direktna-proporcionalnost');
+  assert.deepEqual(proportionsAtStart,['direktna-proporcionalnost']);
 });
 
 test("svaka oktobarska lekcija ima jasan balans i raznovrsnu bazu",()=>{
@@ -63,8 +64,7 @@ test("svaka oktobarska lekcija ima jasan balans i raznovrsnu bazu",()=>{
   for(const grade of grades)for(const area of areasIn(grade,"october"))for(const lesson of lessonsIn(area,"october")){
     const tasks=tasksForLesson(lesson.id,lesson.tasks);ids.push(...tasks.map(task=>task.id));
     assert.ok(lesson.rules.length>=3,`${lesson.id}: pravila`);
-    assert.ok(lesson.examples.length>=3,`${lesson.id}: primeri`);
-    assert.ok(lesson.solved.steps.length>=3,`${lesson.id}: rešen primer`);
+    assert.ok(learningByLesson[lesson.id]?.steps.length>=3,`${lesson.id}: objašnjen postupak`);
     assert.ok(tasks.length>=7,`${lesson.id}: broj zadataka`);
     assert.ok(new Set(tasks.map(task=>task.taskType).filter(Boolean)).size>=5,`${lesson.id}: broj tipova`);
     for(const level of ["basic","medium","advanced"])assert.ok(tasks.some(task=>task.level===level),`${lesson.id}: ${level}`);
@@ -99,7 +99,7 @@ test("novi matematički zapisi se renderuju i pismo čuva oznake",()=>{
 });
 
 test("ciljano vežbanje bira različite oktobarske tipove",()=>{
-  for(const [gradeId,lessonId] of [[6,"konstrukcije-uglova"],[7,"specijalni-pravougli-trouglovi"],[8,"resavanje-linearnih-jednacina"]]){
+  for(const [gradeId,lessonId] of [[6,"uglovi-na-transverzali"],[7,"jednacine-kvadrat"],[8,"poliedar"]]){
     const grade=grades.find(item=>item.id===gradeId);const area=grade.areas.find(item=>item.lessons.some(lesson=>lesson.id===lessonId));const scope={areaId:area.id,unlockedLessonIds:[lessonId],lessonId};let state=gradeId*97;const random=()=>((state=(state*48271)%2147483647)/2147483647);const tasks=[];const results=[];
     for(let i=0;i<5;i++){const task=pickAdaptiveTask(grade,"medium",results,tasks.map(item=>item.id),[],[],scope,random);assert.ok(task);tasks.push(task);results.push({task,firstCorrect:i>1,usedSolution:false,attemptCount:i>1?1:2,finalCorrect:true});}
     assert.equal(new Set(tasks.map(task=>task.id)).size,5);

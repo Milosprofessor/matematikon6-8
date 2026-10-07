@@ -1,3 +1,4 @@
+import { taskWithVisual } from "./task-visuals";
 import { C, I, Task } from "./types";
 import { septemberTasks } from "./september-expansion";
 import { octoberTasks } from "./october-expansion";
@@ -68,5 +69,5 @@ export const extraTasks: Record<string,Task[]> = {
   "primene-slicnosti":[I("8-7d","Odredi stvarnu dužinu.","Razmera 1:250, na planu 6 cm","15","6·250=1500 cm.","1500 cm=15 m.","basic","Razmera plana"),I("8-7e","Odredi visinu zgrade.","Čovek 1,8 m baca senku 1,2 m; senka zgrade je 10 m","15","Visina/senka je ista.","1,8/1,2=h/10, pa je h=15 m.","advanced","Senke")]
 };
 
-export function tasksForLesson(lessonId:string,tasks:Task[]){return applySeptemberWorkLevels(lessonId,applyOctoberWorkLevels(lessonId,[...tasks,...(extraTasks[lessonId]??[]),...(septemberTasks[lessonId]??[]),...(octoberTasks[lessonId]??[]),...octoberVariants(lessonId),...septemberVariants(lessonId)]))}
+export function tasksForLesson(lessonId:string,tasks:Task[]){const pool=[...tasks,...(extraTasks[lessonId]??[]),...(septemberTasks[lessonId]??[]),...(octoberTasks[lessonId]??[]),...octoberVariants(lessonId),...septemberVariants(lessonId)];const unique=pool.filter((task,index)=>pool.findIndex(item=>item.id===task.id)===index);return applySeptemberWorkLevels(lessonId,applyOctoberWorkLevels(lessonId,unique)).map(task=>taskWithVisual(lessonId,task))}
 export function examplesForLesson(lessonId:string,examples:string[]){return [...examples,...(extraExamples[lessonId]??[])]}

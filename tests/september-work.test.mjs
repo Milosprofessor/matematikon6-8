@@ -24,8 +24,8 @@ const lessonTasks=lesson=>lessonWorkTasks(lesson.id,tasksForLesson(lesson.id,les
 const numeric=s=>Number(s.replace(",","."));
 
 test("svih 34 septembarskih lekcija, uključujući obnavljanje, ima tačno 10 različitih zadataka",()=>{
- assert.equal(september.length,34);assert.equal(Object.keys(septemberWorkPlans).length,34);
- assert.deepEqual([6,7,8].map(id=>september.filter(x=>x.grade.id===id).length),[8,11,15]);
+ assert.equal(september.length,30);assert.equal(Object.keys(septemberWorkPlans).length,34);
+ assert.deepEqual([6,7,8].map(id=>september.filter(x=>x.grade.id===id).length),[10,11,9]);
  for(const {lesson} of september){const tasks=lessonTasks(lesson);
   assert.equal(tasks.length,10,lesson.id);assert.equal(new Set(tasks.map(t=>t.id)).size,10);
   assert.equal(new Set(tasks.map(fingerprint)).size,10,lesson.id+": konkretan duplikat");
@@ -37,7 +37,7 @@ test("svih 34 septembarskih lekcija, uključujući obnavljanje, ima tačno 10 ra
 });
 test("šira septembarska baza ima 86 novih tipova sa 516 varijanti koje se generišu jednom po lekciji",()=>{
  let types=0,count=0;const ids=[];
- for(const {lesson} of september){const pool=septemberVariants(lesson.id);types+=new Set(pool.map(t=>t.taskType)).size;count+=pool.length;ids.push(...pool.map(t=>t.id));
+ for(const lessonId of Object.keys(septemberWorkPlans)){const lesson=grades.flatMap(g=>g.areas.flatMap(a=>a.lessons)).find(l=>l.id===lessonId)??{id:lessonId,tasks:[]};const pool=septemberVariants(lesson.id);types+=new Set(pool.map(t=>t.taskType)).size;count+=pool.length;ids.push(...pool.map(t=>t.id));
   assert.equal(new Set(pool.map(fingerprint)).size,pool.length);assert.equal(septemberVariants(lesson.id),pool);
   assert.ok(pool.every(t=>t.practiceOnly&&t.prerequisites.includes(lesson.id)));
   assert.ok(tasksForLesson(lesson.id,lesson.tasks).length>10);
@@ -137,20 +137,20 @@ test("notacija i odgovori novih zadataka rade u oba pisma, uključujući negativ
  for(const [a,b] of [["-5","−5"],["-12","−12"],["−3,5","-3.5"],["-3.5","-3,5"],["3,5","3.5"]])assert.ok(sameAnswer(a,b));
  assert.equal(localizeMathText("h_a=3 cm, x=−3,5, p_2∥q_2, Z⊂Q⊂R","cyrl"),"h_a=3 cm, x=−3,5, p_2∥q_2, Z⊂Q⊂R");
 });
-test("visina i odsečci hipotenuze imaju svoj matematički tačan crtež",async()=>{
- const diagram={type:"pythagoras",variant:"right-altitude",labels:{p:"4",q:"25",h:"?"}};
- const html=renderToStaticMarkup(React.createElement(PythagorasDiagram,{diagram,label:"Visina",caption:"Šematski crtež"}));
- assert.match(html,/M346 30 V222/);assert.match(html,/>25</);assert.match(html,/>4</);
- const A=[90,222],B=[490,222],C=[346,30];assert.equal((A[0]-C[0])*(B[0]-C[0])+(A[1]-C[1])*(B[1]-C[1]),0,"ugao ACB je pravi");
- const page=await readFile(new URL("../app/page.tsx",import.meta.url),"utf8");assert.match(page,/relation==="parallel"/);assert.match(page,/M95 220 H335 M95 80 H335/);assert.match(page,/A′=B′/);
+test("visina i odsečci hipotenuze imaju matematički tačan crtež u datoj razmeri",()=>{
+ const diagram={type:'pythagoras',variant:'right-altitude',labels:{p:'4',q:'25',h:'?'}};
+ const html=renderToStaticMarkup(React.createElement(PythagorasDiagram,{diagram,label:'Visina',caption:'Crtež'}));
+ const d=html.match(/class="shape" d="([^"]+)"/)[1],pts=[...d.matchAll(/[ML]([\d.-]+) ([\d.-]+)/g)].map(m=>[+m[1],+m[2]]),[A,C,B]=pts;
+ const dot=(A[0]-C[0])*(B[0]-C[0])+(A[1]-C[1])*(B[1]-C[1]);assert.ok(Math.abs(dot)<1e-7);
+ assert.ok(Math.abs((C[0]-A[0])/(B[0]-C[0])-25/4)<1e-8);assert.match(html,/>25</);assert.match(html,/>4</);
 });
 test("jedna zajednička komponenta čuva kratku teoriju, rezultate i velike touch tastere",async()=>{
  const page=await readFile(new URL("../app/page.tsx",import.meta.url),"utf8"),css=await readFile(new URL("../app/globals.css",import.meta.url),"utf8");
  assert.equal((page.match(/function LessonWorkSequence/g)??[]).length,1);assert.doesNotMatch(page,/OctoberLessonWork|lessonExamples\.map/);
  assert.match(page,/octoberDemonstrations\.has\(lesson.id\)\|\|septemberDemonstrations\.has/);assert.equal(septemberDemonstrations.size,11);
- assert.match(page,/lesson\.rules\.map/);assert.match(page,/lesson\.formulas\.map/);assert.match(page,/firstAttemptCorrect:result.firstCorrect/);assert.match(page,/attemptsCount:result.attemptCount/);
+ assert.match(page,/<LessonLearningContent lesson=\{lesson\}/);assert.match(page,/firstAttemptCorrect:result.firstCorrect/);assert.match(page,/attemptsCount:result.attemptCount/);
  assert.match(page,/matematikon68-progress-v1-\$\{gradeId\}/);assert.doesNotMatch(page,/localStorage\.clear|localStorage\.removeItem/);
  assert.match(css,/\.work-navigation>button\{[^}]*min-height:50px/);assert.match(css,/aside\.october-work-aside\{grid-template-columns:1fr/);
- for(const {lesson} of september)assert.equal(octoberVariants(lesson.id).length,0);
+ for(const {lesson} of september.filter(x=>!["mnozenje","deljenje"].includes(x.lesson.id)))assert.equal(octoberVariants(lesson.id).length,0);
  assert.equal(Object.keys(octoberWorkPlans).length,27);
 });

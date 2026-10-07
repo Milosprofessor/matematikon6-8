@@ -1,5 +1,9 @@
 import { C, I, GradeId, Task } from "./types";
 import { octoberAreaTests } from "./october-tests";
+import {grades} from './index';
+import {lessonWorkTasks} from './october-work';
+import {tasksForLesson} from './enhancements';
+import {taskWithVisual} from './task-visuals';
 
 export type AreaTestTask = Task & { lessonId:string };
 const L=(task:Task,lessonId:string):AreaTestTask=>({...task,lessonId});
@@ -43,4 +47,19 @@ export const areaTests: Record<GradeId,Record<string,AreaTestTask[]>> = {
   ],...octoberAreaTests[8]}
 };
 
-export function getAreaTest(gradeId:GradeId,areaId:string){return areaTests[gradeId]?.[areaId]??[]}
+export function getAreaTest(gradeId:GradeId,areaId:string):AreaTestTask[]{
+ const area=grades.find(grade=>grade.id===gradeId)?.areas.find(area=>area.id===areaId);if(!area)return [];
+ const lessonIds=new Set(area.lessons.map(lesson=>lesson.id));
+ let test=(areaTests[gradeId]?.[areaId]??[]).filter(task=>lessonIds.has(task.lessonId));
+ // Reuse authored tasks for newly available areas and for spatial lessons
+ // whose old test covered later topics. No second task generator is needed.
+ if(!test.length||areaId==='tacka-prava-ravan'){
+  const pool=area.lessons.flatMap(lesson=>lessonWorkTasks(lesson.id,tasksForLesson(lesson.id,lesson.tasks)).map(task=>({...task,lessonId:lesson.id})));
+  const chosen:AreaTestTask[]=[];
+  for(const lesson of area.lessons){const candidate=pool.find(task=>task.lessonId===lesson.id&&task.level==='basic');if(candidate)chosen.push(candidate);}
+  for(const level of ['medium','advanced'] as const){const candidate=pool.find(task=>task.level===level&&!chosen.some(t=>t.id===task.id));if(candidate)chosen.push(candidate);}
+  for(const candidate of pool)if(chosen.length<10&&!chosen.some(t=>t.id===candidate.id))chosen.push(candidate);
+  test=chosen.slice(0,10);
+ }
+ return test.map(task=>({...taskWithVisual(task.lessonId,task),lessonId:task.lessonId}));
+}

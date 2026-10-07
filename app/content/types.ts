@@ -3,11 +3,15 @@ export type Level = "basic" | "medium" | "advanced";
 export type Month = "september" | "october";
 export type ErrorCategory = "concept" | "calculation" | "sign" | "rule" | "diagram" | "method";
 export type TaskDiagram =
-  | { type:"number-line"; min:number; max:number; points:{ value:number; label:string }[] }
-  | { type:"tales"; variant?:"triangle"|"rays"|"trapezoid"; labels?:Record<string,string> }
+  | { type:"number-line"; min:number; max:number; divisions?:number; points:{ value:number; label:string }[]; interval?:{start:number;end:number;closedStart:boolean;closedEnd:boolean}; arrows?:{from:number;to:number;label?:string}[] }
+  | { type:"tales"; variant?:"triangle"|"rays"|"trapezoid"|"division"; orientation?:number; labels?:Record<string,string> }
   | { type:"similarity"; variant?:"upright"|"rotated"|"mirrored"; labels?:Record<string,string> }
   | { type:"shadow"; objectLabel:string; objectHeight:string; objectShadow:string; targetShadow:string; targetLabel?:string }
-  | { type:"triangle"; variant:"angles"|"sides"|"inequality"|"transversal"; labels?:Record<string,string> }
+  | { type:"triangle"; variant:"angles"|"sides"|"inequality"|"transversal"|"external"|"parallel"; labels?:Record<string,string> }
+  | { type:"segments"; lengths:number[]; names?:string[]; unit?:string }
+  | { type:"parallel-angles"; angle?:number; slope?:"rising"|"falling"; relation?:"corresponding"|"alternate"|"interior"; labels?:Record<string,string>; markedAngles?:{at:"upper"|"lower";sector:"top-right"|"top-left"|"bottom-right"|"bottom-left";label:string}[] }
+  | { type:"construction"; angle:number; bisect?:boolean; labels?:Record<string,string> }
+  | { type:"square-area"; side?:string; area?:string }
   | { type:"graph"; k:number; point?:{x:number;y:number}; labels?:Record<string,string> }
   | { type:"pythagoras"; variant:"right"|"right-altitude"|"rectangle"|"square"|"isosceles"|"equilateral"|"quadrilateral"|"rhombus"|"trapezoid"|"right-trapezoid"; labels?:Record<string,string> }
   | { type:"space"; variant:"point-line-plane"|"skew-lines"|"planes"|"orthogonal"|"projection"|"polyhedron"; labels?:Record<string,string> };
@@ -47,6 +51,17 @@ export type Lesson = {
   prerequisites?: string[];
   diagram?: "tales" | "similarity" | "scale" | "triangle" | "direct-proportion" | "pythagoras" | "quadrilateral" | "space";
   interactive?: "triangle-angles" | "direct-proportion" | "pythagoras" | "space-relations";
+};
+
+export type LessonLearning = {
+  aim:string;
+  idea:string[];
+  steps:string[];
+  why:string;
+  caution:string;
+  extraFormulas:string[];
+  sourcePages:string;
+  visuals:string[];
 };
 
 export type Area = {

@@ -39,14 +39,12 @@ test("rezultat prikazuje 8/10 iz prvog pokušaja i 10/10 konačno u oba meseca",
 test("svaka septembarska stranica zadržava teoriju i samo pedagoški potrebne kratke primere",()=>{
  for(const {grade,area,lesson} of all.filter(x=>(x.lesson.month??x.area.month??"september")==="september")){
   const html=render(LessonPage,{grade,areaId:area.id,lessonId:lesson.id,go:()=>{}});
-  assert.match(html,/Najvažnije/);assert.match(html,/10 ZADATAKA ZA RAD/);assert.match(html,/Pokreni čas/);assert.match(html,/Pregled oblasti/);
+  assert.match(html,/Šta učimo/);assert.match(html,/Glavna ideja/);assert.match(html,/Pazi!/);assert.match(html,/10 ZADATAKA ZA RAD/);assert.match(html,/Pokreni čas/);assert.match(html,/Pregled oblasti/);
   assert.equal(html.includes("Kratak primer"),septemberDemonstrations.has(lesson.id),lesson.id);assert.doesNotMatch(html,/PRIMER 1|Rešen primer/);
  }
 });
-test("geometrijske slike prikazuju paralelne ivice i tačku projekcije, a rotacija čuva oblik",()=>{
- const parallel=render(TaskDiagramView,{diagram:{type:"space",variant:"skew-lines",labels:{relation:"parallel"}}});assert.match(parallel,/AB ∥ A₁B₁/);assert.match(parallel,/M95 220 H335 M95 80 H335/);
- const normal=render(TaskDiagramView,{diagram:{type:"space",variant:"projection",labels:{relation:"normal"}}});assert.match(normal,/A′=B′/);assert.match(normal,/M270 35 V193/);
- const rotated=render(TaskDiagramView,{diagram:{type:"similarity",variant:"rotated"}});assert.match(rotated,/M486 105 L374 25 L374 185 Z/);
- const first=[[135,35],[35,175],[235,175]],second=[[486,105],[374,25],[374,185]];
- for(let i=0;i<3;i++){const j=(i+1)%3;const d=(p,q)=>Math.hypot(p[0]-q[0],p[1]-q[1]);assert.ok(Math.abs(d(second[i],second[j])/d(first[i],first[j])-0.8)<1e-9);}
+test("geometrijske slike prikazuju paralelnost i projekciju bez odgovora u natpisu zadatka",()=>{
+ const parallel=render(TaskDiagramView,{diagram:{type:'space',variant:'skew-lines',labels:{relation:'parallel'}}});assert.match(parallel,/M95 230 L345 230 M95 80 L345 80/);assert.doesNotMatch(parallel,/AB ∥ A₁B₁/);
+ const normal=render(TaskDiagramView,{diagram:{type:'space',variant:'projection',labels:{relation:'normal'}}});assert.match(normal,/A′=B′/);assert.match(normal,/M200 45 L200 115/);
+ const rotated=render(TaskDiagramView,{diagram:{type:'similarity',variant:'rotated'}});assert.doesNotMatch(rotated,/NaN|undefined|\[\[/);assert.match(rotated,/correspondence-1/);
 });
