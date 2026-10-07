@@ -5,6 +5,12 @@ export function PythagorasDiagram({diagram,label,caption}:{diagram:Diagram;label
  const l=diagram.labels??{},variant=diagram.variant;
  let shape=<><path className="shape" d="M85 195 V45 L450 195 Z"/><path d="M85 174 H106 V195"/></>;
  let labels=<><text x="62" y="125">{l.a??l.h??"a"}</text><text x="270" y="220">{l.b??l.q??"b"}</text><text x="300" y="105">{l.c??l.p??"c"}</text></>;
+ if(variant==="right-altitude"){
+  // C is on the circle with diameter AB: AC⊥BC. CD is the altitude,
+  // q=AD, p=DB, a=BC, b=AC, consistent with a²=cp and b²=cq.
+  shape=<><path className="shape" d="M90 222 L346 30 L490 222 Z"/><path className="accent" d="M346 30 V222"/><path d="M346 201 H367 V222 M329.2 42.6 L341.8 59.4 L358.6 46.8"/></>;
+  labels=<><text x="74" y="247">A</text><text x="510" y="247">B</text><text x="346" y="18">C</text><text x="346" y="247">D</text><text x="218" y="245">{l.q??"q"}</text><text x="422" y="245">{l.p??"p"}</text><text x="368" y="139">{l.h??"h"}</text><text x="218" y="107">{l.b??"b"}</text><text x="450" y="113">{l.a??"a"}</text></>;
+ }
  if(variant==="rectangle"||variant==="square"){
   const left=variant==="square"?185:75,right=variant==="square"?335:455;
   shape=<><path className="shape" d={`M${left} 45 H${right} V195 H${left} Z`}/><path className="accent" d={`M${left} 195 L${right} 45`}/><path d={`M${left} 174 H${left+21} V195`}/></>;
@@ -27,5 +33,5 @@ export function PythagorasDiagram({diagram,label,caption}:{diagram:Diagram;label
   shape=<><path className="shape" d={isRight?"M70 195 V55 H395 L470 195 Z":"M70 195 L145 55 H395 L470 195 Z"}/><path className="accent" d="M395 55 V195"/><path d="M395 174 H416 V195"/></>;
   labels=<><text x="448" y="125">{l.c??"c"}</text><text x="375" y="125">{l.h??"h"}</text><text x="434" y="218">{l.diff??(isRight?"a−b":"(a−b)/2")}</text></>;
  }
- return <figure className="task-diagram" data-no-transliterate><svg viewBox={variant==="quadrilateral"||variant==="rhombus"?"0 0 560 270":"0 0 540 240"} role="img" aria-label={label}>{shape}{labels}</svg><figcaption>{caption}</figcaption></figure>;
+ return <figure className="task-diagram" data-no-transliterate><svg viewBox={variant==="right-altitude"?"0 0 540 270":variant==="quadrilateral"||variant==="rhombus"?"0 0 560 270":"0 0 540 240"} role="img" aria-label={label}>{shape}{labels}</svg><figcaption>{caption}</figcaption></figure>;
 }

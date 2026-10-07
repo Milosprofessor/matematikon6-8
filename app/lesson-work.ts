@@ -1,10 +1,27 @@
 import type { Task } from "./content/types";
+import type { KnowledgeAttempt } from "./knowledge";
 
 export type TaskResult={firstCorrect:boolean;usedSolution:boolean;attemptCount:number;finalCorrect:boolean};
 export type TaskSnapshot={value:string;attempts:number;hint:boolean;solution:boolean;feedback:""|"wrong"|"correct";result?:TaskResult};
 export type LessonWork={taskIds:string[];current:number;run:number;tasks:Record<string,TaskSnapshot>};
 export const emptyTask=():TaskSnapshot=>({value:"",attempts:0,hint:false,solution:false,feedback:""});
 export const emptyLessonWork=(taskIds:string[],run=0):LessonWork=>({taskIds:[...taskIds],current:0,run,tasks:{}});
+/** Recover only individually recorded lesson results, never invent a 10/10
+ * from an old completed-lesson flag. Existing analytics are not appended again. */
+export function resumeLessonWork(lessonId:string,tasks:Task[],attempts:KnowledgeAttempt[],saved?:LessonWork):LessonWork{
+ if(saved)return saved;
+ const work=emptyLessonWork(tasks.map(task=>task.id));
+ const latest=new Map<string,KnowledgeAttempt>();
+ for(const attempt of [...attempts].sort((a,b)=>a.at-b.at))if(attempt.lessonId===lessonId&&attempt.source==="lesson"&&attempt.finalCorrect!==false)latest.set(attempt.taskId,attempt);
+ for(const task of tasks){
+  const attempt=latest.get(task.id);if(!attempt)continue;
+  const count=Math.max(1,attempt.attemptsCount??attempt.attemptCount??1);
+  work.tasks[task.id]={value:task.answer,attempts:count,hint:false,solution:attempt.usedSolution,feedback:"correct",result:{firstCorrect:(attempt.firstAttemptCorrect??attempt.firstCorrect)&&!attempt.usedSolution&&count===1,usedSolution:attempt.usedSolution,attemptCount:count,finalCorrect:true}};
+ }
+ const firstUnfinished=tasks.findIndex(task=>!work.tasks[task.id]?.result);
+ work.current=firstUnfinished<0?tasks.length:firstUnfinished;
+ return work;
+}
 export const normalizeAnswer=(v:string)=>v.trim().replace(/[−–—]/g,"-").replace(/\s+/g,"").replace(/,/g,".").toLowerCase();
 export function sameAnswer(entered:string,answer:string){
  const a=normalizeAnswer(entered),b=normalizeAnswer(answer),an=Number(a),bn=Number(b);
@@ -30,7 +47,7 @@ export function normalizeLessonWork(value:unknown):Record<string,LessonWork>{
    if(!raw||typeof raw!=="object")continue;
    const attempts=Number.isInteger(raw.attempts)&&raw.attempts>=0?raw.attempts:0;
    const solution=raw.solution===true;
-   const result=raw.result?.finalCorrect===true?{firstCorrect:raw.result.firstCorrect===true&&!solution&&raw.result.attemptCount===1,usedSolution:solution||raw.result.usedSolution===true,attemptCount:Math.max(attempts,Number(raw.result.attemptCount)||1),finalCorrect:true}:undefined;
+   const result=raw.result?.finalCorrect===true?{firstCorrect:raw.result.firstCorrect===true&&!solution&&!raw.result.usedSolution&&raw.result.attemptCount===1&&attempts<=1,usedSolution:solution||raw.result.usedSolution===true,attemptCount:Math.max(attempts,Number(raw.result.attemptCount)||1),finalCorrect:true}:undefined;
    tasks[taskId]={value:typeof raw.value==="string"?raw.value:"",attempts,hint:raw.hint===true,solution,feedback:result?"correct":raw.feedback==="wrong"?"wrong":"",result};
   }
   output[lessonId]={taskIds,current:Math.min(taskIds.length,Math.max(0,Number.isInteger(item.current)?item.current!:0)),run:Number.isInteger(item.run)&&item.run!>=0?item.run!:0,tasks};

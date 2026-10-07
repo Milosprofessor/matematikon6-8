@@ -1,4 +1,5 @@
 import { C, I, ErrorCategory, Level, Task, TaskDiagram } from "./types";
+import { septemberWorkPlans } from "./september-work";
 
 // Ten deliberately chosen tasks in the lesson; variants remain in the area pool.
 // IDs of existing tasks and lessons are preserved for saved progress.
@@ -196,7 +197,7 @@ export function octoberVariants(lessonId:string):Task[]{
  cache.set(lessonId,tasks);return tasks;
 }
 export function lessonWorkTasks(lessonId:string,pool:Task[]):Task[]{
- const plan=octoberWorkPlans[lessonId];if(!plan)return pool.filter(task=>!task.practiceOnly);
+ const plan=octoberWorkPlans[lessonId]??septemberWorkPlans[lessonId];if(!plan)return pool.filter(task=>!task.practiceOnly);
  return plan.map(id=>{const task=pool.find(item=>item.id===id);if(!task)throw new Error("Missing lesson work task: "+id);return task});
 }
 export function applyOctoberWorkLevels(lessonId:string,tasks:Task[]):Task[]{

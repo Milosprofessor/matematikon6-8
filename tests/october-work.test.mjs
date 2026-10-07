@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test,{after} from "node:test";
 import {readFile} from "node:fs/promises";
+import {createHash} from "node:crypto";
 import {createServer} from "vite";
 import {fileURLToPath} from "node:url";
 import React from "react";
@@ -20,6 +21,11 @@ const {practiceLessons,sessionPool,pickAdaptiveTask,unlockedPracticeLessonIds,wi
 const {appendKnowledgeAttempt,lessonMastery}=await vite.ssrLoadModule("/app/knowledge.ts");
 const october=grades.flatMap(grade=>grade.areas.flatMap(area=>area.lessons.filter(lesson=>(lesson.month??area.month??"september")==="october").map(lesson=>({grade,area,lesson}))));
 const fingerprint=t=>JSON.stringify([t.prompt,t.math,t.choices,t.diagram]);
+
+test("sadržaj i puna baza 27 oktobarskih lekcija identični su verziji pre septembarskog proširenja",()=>{
+ const snapshot=october.map(({grade,area,lesson})=>({grade:grade.id,area:area.id,lesson,pool:tasksForLesson(lesson.id,lesson.tasks).map(withTaskMetadata),month:"october"}));
+ assert.equal(createHash("sha256").update(JSON.stringify(snapshot)).digest("hex"),"c98aceb4d7308e5c0a492d0374a8260f5f8833f21650d1f8601b020938528804");
+});
 
 test("27 oktobarskih lekcija ima po 10 izabranih interaktivnih zadataka",()=>{
  assert.equal(october.length,27);assert.equal(Object.keys(octoberWorkPlans).length,27);
@@ -136,13 +142,13 @@ test("geometrijski crteži razlikuju kvadrat, pravi trapez i cele dijagonale",()
  const equilateral=render({type:"pythagoras",variant:"equilateral",labels:{a:"8"}});assert.match(equilateral,/>8\/2</);
  assert.match(square,/Шематски цртеж/);
 });
-test("stari ključevi, septembarski prikaz i touch mete ostaju očuvani",async()=>{
+test("stari ključevi i touch mete ostaju očuvani uz zajednički tok oba meseca",async()=>{
  const source=await readFile(new URL("../app/page.tsx",import.meta.url),"utf8"),css=await readFile(new URL("../app/globals.css",import.meta.url),"utf8");
  assert.match(source,/matematikon68-progress-v1-\$\{gradeId\}/);assert.match(source,/\.\.\.emptyProgress,\.\.\.parsed/);assert.match(source,/lessonWork:normalizeLessonWork/);assert.doesNotMatch(source,/localStorage\.clear|localStorage\.removeItem/);
- assert.match(source,/!isOctober&&<article/);assert.equal(octoberDemonstrations.size,7);
+ assert.match(source,/<LessonWorkSequence lesson=\{lesson\}/);assert.equal(octoberDemonstrations.size,7);
  assert.match(source,/inputMode=\{negativeAllowed\?"text":"decimal"\}/);assert.match(source,/onSnapshot=\{next=>snapshot/);
  assert.match(css,/\.work-navigation>button\{[^}]*min-height:50px/);assert.match(css,/aside\.october-work-aside\{grid-template-columns:1fr/);
  for(const grade of grades)for(const area of grade.areas)for(const lesson of area.lessons.filter(l=>(l.month??area.month??"september")==="september")){
-  const pool=tasksForLesson(lesson.id,lesson.tasks);assert.deepEqual(lessonWorkTasks(lesson.id,pool),pool.filter(t=>!t.practiceOnly));assert.equal(octoberVariants(lesson.id).length,0);
+  const pool=tasksForLesson(lesson.id,lesson.tasks);assert.equal(lessonWorkTasks(lesson.id,pool).length,10);assert.equal(octoberVariants(lesson.id).length,0);
  }
 });

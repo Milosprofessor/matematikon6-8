@@ -5,9 +5,10 @@ import { ArrowLeft, ArrowRight, BookOpen, Brain, Check, ChevronRight, Graduation
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { grades, Grade, GradeId, Lesson, Level, Task, TaskDiagram } from "./content";
-import { examplesForLesson, tasksForLesson } from "./content/enhancements";
+import { tasksForLesson } from "./content/enhancements";
 import { lessonWorkTasks, octoberDemonstrations } from "./content/october-work";
-import { acceptProcedure, emptyLessonWork, emptyTask, LessonWork, normalizeAnswer, normalizeLessonWork, submitTask, TaskResult, TaskSnapshot, workTotals } from "./lesson-work";
+import { septemberDemonstrations } from "./content/september-work";
+import { acceptProcedure, emptyLessonWork, emptyTask, LessonWork, normalizeAnswer, normalizeLessonWork, resumeLessonWork, submitTask, TaskResult, TaskSnapshot, workTotals } from "./lesson-work";
 import { AreaTestTask, getAreaTest } from "./content/area-tests";
 import { localize, localizeMathText, ScriptChoice, ScriptProvider, useCurrentScript, useLocalizedDom, useScriptPreference } from "./i18n";
 import { mathHtml } from "./math-format";
@@ -177,8 +178,9 @@ function TaskDiagramView({diagram}:{diagram:TaskDiagram}){
   }
   if(diagram.type==="shadow")return <figure className="task-diagram" data-no-transliterate><svg viewBox="0 0 520 180" role="img" aria-label={label("Visine i senke")}><path d="M30 145 H490"/><path className="shape" d="M90 145 V42 M78 42 H102"/><path className="accent" d="M90 42 L215 145"/><path className="shape" d="M320 145 V20 M306 20 H334"/><path className="accent" d="M320 20 L475 145"/><text x="54" y="89">{diagram.objectHeight}</text><text x="126" y="166">{diagram.objectShadow}</text><text x="356" y="166">{diagram.targetShadow}</text><text x="42" y="24">{label(diagram.objectLabel)}</text><text x="340" y="20">{diagram.targetLabel??"h"}</text></svg></figure>;
   if(diagram.type==="similarity"){
-    const second=diagram.variant==="rotated"?"M300 40 L505 95 L342 158 Z":diagram.variant==="mirrored"?"M520 175 L385 35 L300 175 Z":"M300 175 L410 30 L520 175 Z";
-    const secondLabels=diagram.variant==="rotated"?[[295,34,"D"],[520,94,"E"],[340,178,"F"]]:diagram.variant==="mirrored"?[[525,195,"D"],[385,25,"E"],[288,195,"F"]]:[[410,20,"D"],[288,194,"E"],[524,194,"F"]];
+    // Uniform scaling, rotation or reflection of ABC; never distort its angles.
+    const second=diagram.variant==="rotated"?"M486 105 L374 25 L374 185 Z":"M420 23.8 L312 175 L528 175 Z";
+    const secondLabels=diagram.variant==="rotated"?[[510,109,"D"],[363,15,"E"],[363,203,"F"]]:diagram.variant==="mirrored"?[[420,15,"D"],[535,194,"E"],[300,194,"F"]]:[[420,15,"D"],[300,194,"E"],[535,194,"F"]];
     return <figure className="task-diagram" data-no-transliterate><svg viewBox="0 0 560 210" role="img" aria-label={label("Slični trouglovi")}><path className="shape" d="M35 175 L135 35 L235 175 Z"/><path className="accent" d={second}/><text x="130" y="25">A</text><text x="22" y="194">B</text><text x="238" y="194">C</text>{secondLabels.map(([x,y,value])=><text key={String(value)} x={Number(x)} y={Number(y)}>{value}</text>)}<text x="265" y="108">∼</text></svg></figure>;
   }
   if(diagram.type==="triangle"){
@@ -191,6 +193,8 @@ function TaskDiagramView({diagram}:{diagram:TaskDiagram}){
     return <PythagorasDiagram diagram={diagram} label={label("Primena Pitagorine teoreme")} caption={label("Šematski crtež — dužine čitaj iz oznaka.")}/>;
   }
   if(diagram.type==="space"){
+    if(diagram.labels?.relation==="parallel")return <figure className="task-diagram" data-no-transliterate><svg viewBox="0 0 540 260" role="img" aria-label={label("Paralelne ivice kocke")}><path className="shape" d="M95 80 H335 V220 H95 Z M170 35 H410 V175 H335 M170 35 L95 80 M410 35 L335 80 M410 175 L335 220"/><path className="dashed" d="M95 220 L170 175 V35 M170 175 H410"/><path className="accent" d="M95 220 H335 M95 80 H335"/><text x="80" y="244">A</text><text x="347" y="244">B</text><text x="80" y="72">A₁</text><text x="347" y="72">B₁</text><text x="230" y="155">AB ∥ A₁B₁</text></svg></figure>;
+    if(diagram.labels?.relation==="normal")return <figure className="task-diagram" data-no-transliterate><svg viewBox="0 0 540 260" role="img" aria-label={label("Projekcija normalne duži je tačka")}><path className="plane-fill" d="M75 220 L165 155 H465 L375 220 Z"/><path className="accent" d="M270 35 V193"/><circle className="accent-dot" cx="270" cy="40" r="5"/><circle className="accent-dot" cx="270" cy="100" r="5"/><circle className="accent-dot" cx="270" cy="193" r="6"/><path d="M270 174 H289 V193"/><text x="293" y="46">A</text><text x="293" y="106">B</text><text x="290" y="218">A′=B′</text><text x="440" y="199">α</text></svg></figure>;
     const l=diagram.labels??{};return <figure className="task-diagram" data-no-transliterate><svg viewBox="0 0 540 260" role="img" aria-label={label("Odnosi u prostoru")}><path className="shape" d="M95 80 H335 V220 H95 Z M170 35 H410 V175 H335 M170 35 L95 80 M410 35 L335 80 M410 175 L335 220"/><path className="dashed" d="M95 220 L170 175 V35 M170 175 H410"/>{diagram.variant==="point-line-plane"&&<><path className="accent" d="M55 205 L460 125"/><circle className="accent-dot" cx="255" cy="165" r="7"/></>}{diagram.variant==="skew-lines"&&<><path className="accent" d="M95 220 H335 M410 35 V175"/><text x="210" y="214">{l.first??"a"}</text><text x="430" y="110">{l.second??"b"}</text></>}{diagram.variant==="planes"&&<><path className="plane-fill" d="M95 80 H335 L410 35 H170 Z"/><path className="plane-fill second" d="M95 220 H335 L410 175 H170 Z"/></>}{diagram.variant==="orthogonal"&&<><path className="plane-fill" d="M95 220 H335 L410 175 H170 Z"/><path className="accent" d="M95 220 V80"/><path d="M95 197 H118 V220"/></>}{diagram.variant==="projection"&&<><path className="plane-fill" d="M95 220 H335 L410 175 H170 Z"/><path className="accent" d="M205 55 L350 145 M205 55 V196 M350 145 V186 M205 196 L350 186"/><text x="280" y="75">{l.object??"AB"}</text><text x="280" y="211">{l.projection??"A′B′"}</text></>}{diagram.variant==="polyhedron"&&<><circle className="accent-dot" cx="95" cy="220" r="5"/><circle className="accent-dot" cx="410" cy="35" r="5"/></>}<text x="270" y="247">{l.plane??"α"}</text>{diagram.variant!=="skew-lines"&&diagram.variant!=="projection"&&<text x="390" y="67">{l.line??"p"}</text>}</svg></figure>;
   }
   const variant=diagram.variant??"triangle";
@@ -212,11 +216,11 @@ function TaskCard({task,onDone,number,total,snapshot,onSnapshot}:{task:Task;onDo
   </article>
 }
 
-function OctoberLessonWork({lesson,tasks,progress,save,loaded}:{lesson:Lesson;tasks:Task[];progress:GradeProgress;save:(update:(previous:GradeProgress)=>GradeProgress)=>void;loaded:boolean}){
-  const ids=tasks.map(task=>task.id);const work=progress.lessonWork[lesson.id]??emptyLessonWork(ids);const at=Math.min(work.current,tasks.length);const totals=workTotals(work,ids);
-  const move=(current:number)=>save(previous=>({...previous,lessonWork:{...previous.lessonWork,[lesson.id]:{...(previous.lessonWork[lesson.id]??emptyLessonWork(ids)),taskIds:ids,current}}}));
+function LessonWorkSequence({lesson,tasks,progress,save,loaded}:{lesson:Lesson;tasks:Task[];progress:GradeProgress;save:(update:(previous:GradeProgress)=>GradeProgress)=>void;loaded:boolean}){
+  const ids=tasks.map(task=>task.id);const work=resumeLessonWork(lesson.id,tasks,progress.knowledgeAttempts,progress.lessonWork[lesson.id]);const at=Math.min(work.current,tasks.length);const totals=workTotals(work,ids);
+  const move=(current:number)=>save(previous=>({...previous,lessonWork:{...previous.lessonWork,[lesson.id]:{...resumeLessonWork(lesson.id,tasks,previous.knowledgeAttempts,previous.lessonWork[lesson.id]),taskIds:ids,current}}}));
   const snapshot=(task:Task,next:TaskSnapshot)=>save(previous=>{
-    const old=previous.lessonWork[lesson.id]??emptyLessonWork(ids);const freshResult=!!next.result&&!old.tasks[task.id]?.result;
+    const old=resumeLessonWork(lesson.id,tasks,previous.knowledgeAttempts,previous.lessonWork[lesson.id]);const freshResult=!!next.result&&!old.tasks[task.id]?.result;
     const updated={...old,taskIds:ids,tasks:{...old.tasks,[task.id]:next}};const finished=workTotals(updated,ids).final===tasks.length;
     return {...previous,lessonWork:{...previous.lessonWork,[lesson.id]:updated},completed:finished&&!previous.completed.includes(lesson.id)?[...previous.completed,lesson.id]:previous.completed,knowledgeAttempts:freshResult?appendKnowledgeAttempt(previous.knowledgeAttempts,asKnowledgeAttempt(task,lesson.id,"lesson",next.result!)):previous.knowledgeAttempts};
   });
@@ -231,17 +235,16 @@ function asKnowledgeAttempt(task:Task,lessonId:string,source:AttemptSource,resul
 }
 
 function LessonPage({grade,areaId,lessonId,go}:{grade:Grade;areaId:string;lessonId:string;go:(r:Route)=>void}){
-  const area=grade.areas.find(a=>a.id===areaId)!;const lesson=area.lessons.find(l=>l.id===lessonId)!;const isOctober=calendarMonth(area,lesson)==="october";const lessonTasks=lessonWorkTasks(lesson.id,tasksForLesson(lesson.id,lesson.tasks));const lessonExamples=examplesForLesson(lesson.id,lesson.examples);const [progress,save,loaded]=useGradeProgress(grade.id);const [done,setDone]=useState<Record<string,boolean>>({});const [classMode,setClassMode]=useState(false);
+  const area=grade.areas.find(a=>a.id===areaId)!;const lesson=area.lessons.find(l=>l.id===lessonId)!;const lessonTasks=lessonWorkTasks(lesson.id,tasksForLesson(lesson.id,lesson.tasks));const [progress,save,loaded]=useGradeProgress(grade.id);const [classMode,setClassMode]=useState(false);
   useEffect(()=>{if(loaded)save(previous=>({...previous,lastLesson:lesson.id}))},[lesson.id,loaded,save]);
-  const all=area.lessons;const index=all.findIndex(l=>l.id===lesson.id);const completed=!isOctober&&lessonTasks.every(t=>done[t.id]);
-  useEffect(()=>{if(loaded&&completed)save(previous=>previous.completed.includes(lesson.id)?previous:{...previous,lastLesson:lesson.id,completed:[...previous.completed,lesson.id]})},[completed,lesson.id,loaded,save]);
+  const all=area.lessons;const index=all.findIndex(l=>l.id===lesson.id);
   const jump=(l:Lesson)=>go({kind:"lesson",gradeId:grade.id,areaId:area.id,lessonId:l.id});
   return <main className={classMode?"lesson-page class-mode":"lesson-page"}><nav className="lesson-nav"><button disabled={index===0} onClick={()=>jump(all[index-1])}><ArrowLeft/> <span>Prethodna lekcija</span></button><button onClick={()=>go({kind:"area",gradeId:grade.id,areaId:area.id})}><BookOpen/><span>Pregled oblasti</span></button><button disabled={index===all.length-1} onClick={()=>jump(all[index+1])}><span>Sledeća lekcija</span><ArrowRight/></button></nav>
     <div className="lesson-shell"><header className="lesson-title"><div><p className="eyebrow">{grade.id}. RAZRED · {area.title.toUpperCase()}</p><h1>{lesson.title}</h1><p>{lesson.intro}</p></div><Button className="class-mode-toggle" variant={classMode?"default":"outline"} aria-pressed={classMode} onClick={()=>setClassMode(value=>!value)}><Presentation/>{classMode?"Završi čas":"Pokreni čas"}</Button></header>
       <section className="lesson-layout"><div className="learn-column"><article className="content-card"><div className="card-title"><span>01</span><h2>Najvažnije</h2></div><ul>{lesson.rules.map(r=><li key={r}>{r}</li>)}</ul><div className="formula-row">{lesson.formulas.map(f=><div key={f}><MathText>{f}</MathText></div>)}</div></article>
-      {lesson.diagram&&<Diagram type={lesson.diagram}/>} {lesson.interactive&&<LessonInteractive type={lesson.interactive}/>} {!isOctober&&<article className="content-card"><div className="card-title"><span>02</span><h2>Primeri</h2></div><div className="examples">{lessonExamples.map((e,i)=><div key={`${i}-${e}`}><small>PRIMER {i+1}</small><MathText>{e}</MathText></div>)}</div></article>}
-      {(!isOctober||octoberDemonstrations.has(lesson.id))&&<article className="content-card solved-card"><div className="card-title"><span>{isOctober?"02":"03"}</span><h2>{isOctober?"Kratak primer":"Rešen primer"}</h2></div><h3><MathText>{lesson.solved.question}</MathText></h3><ol>{lesson.solved.steps.map(s=><li key={s}><MathText>{s}</MathText></li>)}</ol></article>}</div>
-      <aside className={isOctober?"october-work-aside":""}><div className="quiz-head"><p className="eyebrow">{isOctober?"10 ZADATAKA ZA RAD":"KRATKA PROVERA"}</p><h2>Probaj samostalno</h2><p>Pogrešan odgovor nije kraj — pokušaj ponovo.</p></div>{isOctober?<OctoberLessonWork lesson={lesson} tasks={lessonTasks} progress={progress} save={save} loaded={loaded}/>:<>{lessonTasks.map((t,i)=><TaskCard key={t.id} task={t} number={i+1} onDone={result=>{setDone(d=>({...d,[t.id]:true}));save(previous=>({...previous,knowledgeAttempts:appendKnowledgeAttempt(previous.knowledgeAttempts,asKnowledgeAttempt(t,lesson.id,"lesson",result))}))}}/>)}{completed&&<div className="lesson-finish"><Check/><div><strong>Lekcija je završena!</strong><p>Napredak je sačuvan na ovom uređaju.</p></div></div>}</>}</aside></section>
+      {lesson.id==="slicnost-pravougli"?<TaskDiagramView diagram={{type:"pythagoras",variant:"right-altitude"}}/>:lesson.diagram&&<Diagram type={lesson.diagram}/>} {lesson.interactive&&<LessonInteractive type={lesson.interactive}/>}
+      {(octoberDemonstrations.has(lesson.id)||septemberDemonstrations.has(lesson.id))&&<article className="content-card solved-card"><div className="card-title"><span>02</span><h2>Kratak primer</h2></div><h3><MathText>{lesson.solved.question}</MathText></h3><ol>{lesson.solved.steps.map(s=><li key={s}><MathText>{s}</MathText></li>)}</ol></article>}</div>
+      <aside className="october-work-aside"><div className="quiz-head"><p className="eyebrow">10 ZADATAKA ZA RAD</p><h2>Probaj samostalno</h2><p>Pogrešan odgovor nije kraj — pokušaj ponovo.</p></div><LessonWorkSequence lesson={lesson} tasks={lessonTasks} progress={progress} save={save} loaded={loaded}/></aside></section>
     </div><nav className="lesson-nav bottom"><button disabled={index===0} onClick={()=>jump(all[index-1])}><ArrowLeft/> <span>Prethodna</span></button><button onClick={()=>go({kind:"area",gradeId:grade.id,areaId:area.id})}><BookOpen/><span>Pregled oblasti</span></button><button disabled={index===all.length-1} onClick={()=>jump(all[index+1])}><span>Sledeća</span><ArrowRight/></button></nav></main>
 }
 
