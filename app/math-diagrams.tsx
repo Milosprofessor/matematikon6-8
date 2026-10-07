@@ -18,8 +18,8 @@ function fitTriangle(a?:number,b?:number,c?:number,alpha?:number,beta?:number):P
  else {const al=alpha??65,be=beta??50,ga=180-al-be;const length=Math.sin(be*Math.PI/180)/Math.sin(al*Math.PI/180);raw=[[1-length*Math.cos(ga*Math.PI/180),-length*Math.sin(ga*Math.PI/180)],[0,0],[1,0]];}
  const xs=raw.map(p=>p[0]),ys=raw.map(p=>p[1]),minX=Math.min(...xs),minY=Math.min(...ys),w=Math.max(...xs)-minX,h=Math.max(...ys)-minY;const s=Math.min(430/(w||1),185/(h||1));return raw.map(p=>[80+(430-w*s)/2+(p[0]-minX)*s,45+(p[1]-minY)*s]);
 }
-export function PreciseDiagram({diagram,task=false}:{diagram:TaskDiagram;task?:boolean}){
- const Frame=(props:Parameters<typeof DiagramFrame>[0])=><DiagramFrame {...props} caption={task?'Poznate podatke čitaj iz oznaka; crtež služi za prepoznavanje odnosa.':props.caption}/>;
+export function PreciseDiagram({diagram,task=false,captionOverride}:{diagram:TaskDiagram;task?:boolean;captionOverride?:string|null}){
+ const Frame=(props:Parameters<typeof DiagramFrame>[0])=><DiagramFrame {...props} caption={task?'Poznate podatke čitaj iz oznaka; crtež služi za prepoznavanje odnosa.':captionOverride===undefined?props.caption:captionOverride??undefined}/>;
  const script=useCurrentScript();const l='labels' in diagram?diagram.labels??{}:{};
  if(diagram.type==='number-line'){
   const span=Math.max(1,diagram.max-diagram.min),x=(v:number)=>55+(v-diagram.min)*490/span,step=Math.max(1,Math.ceil(span/10));const ticks=[];for(let v=diagram.min;v<=diagram.max;v+=step)ticks.push(v);

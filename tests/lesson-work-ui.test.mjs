@@ -14,7 +14,6 @@ const {ScriptProvider}=await vite.ssrLoadModule("/app/i18n.tsx");
 const {grades}=await vite.ssrLoadModule("/app/content/index.ts");
 const {tasksForLesson}=await vite.ssrLoadModule("/app/content/enhancements.ts");
 const {lessonWorkTasks}=await vite.ssrLoadModule("/app/content/october-work.ts");
-const {septemberDemonstrations}=await vite.ssrLoadModule("/app/content/september-work.ts");
 const {emptyLessonWork,emptyTask,submitTask}=await vite.ssrLoadModule("/app/lesson-work.ts");
 const all=grades.flatMap(grade=>grade.areas.flatMap(area=>area.lessons.map(lesson=>({grade,area,lesson}))));
 const render=(component,props,script="cyrl")=>renderToStaticMarkup(React.createElement(ScriptProvider,{script},React.createElement(component,props)));
@@ -36,11 +35,11 @@ test("rezultat prikazuje 8/10 iz prvog pokušaja i 10/10 konačno u oba meseca",
   assert.match(html,/Iz prvog pokušaja: <strong>8\/10/);assert.match(html,/Konačno rešeno: <strong>10\/10/);assert.match(html,/Pokušaj ponovo/);assert.doesNotMatch(html,/data-task-id=/);
  }
 });
-test("svaka septembarska stranica zadržava teoriju i samo pedagoški potrebne kratke primere",()=>{
- for(const {grade,area,lesson} of all.filter(x=>(x.lesson.month??x.area.month??"september")==="september")){
+test("svaka stranica oba meseca ima sažeto objašnjenje i brz prelaz na zadatke",()=>{
+ for(const {grade,area,lesson} of all){
   const html=render(LessonPage,{grade,areaId:area.id,lessonId:lesson.id,go:()=>{}});
-  assert.match(html,/Šta učimo/);assert.match(html,/Glavna ideja/);assert.match(html,/Pazi!/);assert.match(html,/10 ZADATAKA ZA RAD/);assert.match(html,/Pokreni čas/);assert.match(html,/Pregled oblasti/);
-  assert.equal(html.includes("Kratak primer"),septemberDemonstrations.has(lesson.id),lesson.id);assert.doesNotMatch(html,/PRIMER 1|Rešen primer/);
+  assert.match(html,/Шта треба да знаш/);assert.match(html,/Пази:/);assert.match(html,/10 ZADATAKA ZA RAD/);assert.match(html,/Pokreni čas/);assert.match(html,/Pregled oblasti/);
+  assert.match(html,new RegExp(`href="#lesson-work-${lesson.id}"`));assert.match(html,new RegExp(`id="lesson-work-${lesson.id}"`));assert.doesNotMatch(html,/Kratak primer|PRIMER 1|Rešen primer|Glavna ideja|Zašto to važi/);
  }
 });
 test("geometrijske slike prikazuju paralelnost i projekciju bez odgovora u natpisu zadatka",()=>{

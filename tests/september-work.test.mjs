@@ -147,8 +147,8 @@ test("visina i odsečci hipotenuze imaju matematički tačan crtež u datoj razm
 test("jedna zajednička komponenta čuva kratku teoriju, rezultate i velike touch tastere",async()=>{
  const page=await readFile(new URL("../app/page.tsx",import.meta.url),"utf8"),css=await readFile(new URL("../app/globals.css",import.meta.url),"utf8");
  assert.equal((page.match(/function LessonWorkSequence/g)??[]).length,1);assert.doesNotMatch(page,/OctoberLessonWork|lessonExamples\.map/);
- assert.match(page,/octoberDemonstrations\.has\(lesson.id\)\|\|septemberDemonstrations\.has/);assert.equal(septemberDemonstrations.size,11);
- assert.match(page,/<LessonLearningContent lesson=\{lesson\}/);assert.match(page,/firstAttemptCorrect:result.firstCorrect/);assert.match(page,/attemptsCount:result.attemptCount/);
+ assert.doesNotMatch(page,/octoberDemonstrations\.has|septemberDemonstrations\.has/);assert.equal(septemberDemonstrations.size,11);
+ assert.match(page,/<LessonLearningContent key=\{lesson.id\} lesson=\{lesson\}/);assert.match(page,/firstAttemptCorrect:result.firstCorrect/);assert.match(page,/attemptsCount:result.attemptCount/);
  assert.match(page,/matematikon68-progress-v1-\$\{gradeId\}/);assert.doesNotMatch(page,/localStorage\.clear|localStorage\.removeItem/);
  assert.match(css,/\.work-navigation>button\{[^}]*min-height:50px/);assert.match(css,/aside\.october-work-aside\{grid-template-columns:1fr/);
  for(const {lesson} of september.filter(x=>!["mnozenje","deljenje"].includes(x.lesson.id)))assert.equal(octoberVariants(lesson.id).length,0);

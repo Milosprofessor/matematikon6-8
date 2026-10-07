@@ -60,6 +60,7 @@ export type LessonLearning = {
   why:string;
   caution:string;
   extraFormulas:string[];
+  example?:string;
   sourcePages:string;
   visuals:string[];
 };

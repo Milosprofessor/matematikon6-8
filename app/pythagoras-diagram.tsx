@@ -38,5 +38,5 @@ export function PythagorasDiagram({diagram,label,caption}:{diagram:Diagram;label
   shape=<><path className="shape" d={polygon([A,B,C])}/><Right p={C} a={A} b={B}/></>;
   labels=<><Vertex p={A} name="A" dx={-18} dy={-10}/><Vertex p={B} name="B" dx={18} dy={19}/><Vertex p={C} name="C" dx={-18} dy={19}/><Label a={C} b={B} offset={-28}>{l.a??'a'}</Label><Label a={C} b={A} offset={27}>{l.b??'b'}</Label><Label a={A} b={B}>{l.c??'c'}</Label></>;
  }
- return <figure className="task-diagram precise-diagram" data-no-transliterate><svg viewBox="0 0 600 335" role="img" aria-label={label}>{shape}{labels}</svg><figcaption>{caption}</figcaption></figure>;
+ return <figure className="task-diagram precise-diagram" data-no-transliterate><svg viewBox="0 0 600 335" role="img" aria-label={label}>{shape}{labels}</svg>{caption&&<figcaption>{caption}</figcaption>}</figure>;
 }

@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import test,{after} from 'node:test';
 import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
 import {createServer} from 'vite';
 import {fileURLToPath} from 'node:url';
 import React from 'react';
@@ -15,7 +16,7 @@ const point=(html,name)=>{const match=html.match(new RegExp('data-vertex="'+name
 const distance=(a,b)=>Math.hypot(a[0]-b[0],a[1]-b[1]);
 const parallel=(a,b,c,d)=>Math.abs((b[0]-a[0])*(d[1]-c[1])-(b[1]-a[1])*(d[0]-c[0]))<1e-7;
 test('svih 59 aktivnih lekcija imaju objašnjen cilj, postupak, razlog i čestu grešku u oba pisma',()=>{
- assert.equal(all.length,59);for(const {lesson:l} of all){const content=learningByLesson[l.id];assert.ok(content?.idea.length&&content.steps.length&&content.why&&content.caution,l.id);for(const script of ['latn','cyrl']){const html=render(LessonLearningContent,{lesson:l},script);assert.doesNotMatch(html,/\[\[(?:frac|sqrt):|NaN|undefined/);assert.doesNotMatch(html,/sourcePages|Udžbenik|Operativni plan/);assert.match(html,/learning-method/);}}
+ assert.equal(all.length,59);for(const {lesson:l} of all){const content=learningByLesson[l.id];assert.ok(content?.idea.length&&content.steps.length&&content.why&&content.caution,l.id);for(const script of ['latn','cyrl']){const html=render(LessonLearningContent,{lesson:l},script);assert.doesNotMatch(html,/\[\[(?:frac|sqrt):|NaN|undefined/);assert.doesNotMatch(html,/sourcePages|Udžbenik|Operativni plan/);assert.match(html,/learning-compact/);}}
 });
 test('svaki postojeći aktivni zadatak čuva ID, pitanje, odgovor, nivo i tok rada; izuzetak je preciziranje kose duži',()=>{
  let count=0;for(const original of fixture){const current=all.find(x=>x.grade.id===original.grade&&x.lesson.id===original.lessonId);if(!current)continue;const tasks=lessonWorkTasks(current.lesson.id,tasksForLesson(current.lesson.id,current.lesson.tasks));assert.deepEqual(tasks.map(t=>t.id),original.tasks.map(t=>t.id));for(let i=0;i<10;i++){const expected=original.tasks[i],actual=tasks[i];for(const key of Object.keys(expected)){if(expected.id==='o8-pro-3'&&['math','hint','solution'].includes(key))continue;assert.deepEqual(actual[key],expected[key],expected.id+'/'+key);}count++;}}assert.equal(count,500);
@@ -60,4 +61,20 @@ test('prostorni zadaci razlikuju koplanarne tačke, paralelne normale i zaklonje
 test('nove lekcije ostaju na 10 zadataka, a podaci učenika i algoritam znanja ostaju kompatibilni',async()=>{
  for(const {lesson:l} of all)assert.equal(lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)).length,10,l.id);
  const p=await readFile(new URL('../app/page.tsx',import.meta.url),'utf8');assert.match(p,/matematikon68-progress-v1-\$\{gradeId\}/);assert.doesNotMatch(p,/localStorage\.clear|localStorage\.removeItem/);
+});
+test('sažimanje čuva kompletnu bazu zadataka, crteže, redosled i nivoe iz objavljene verzije 16',()=>{
+ const protectedData=all.map(({grade:g,area:a,lesson:l})=>({grade:g.id,area:a.id,month:l.month??a.month??'september',id:l.id,pool:tasksForLesson(l.id,l.tasks),work:lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)),visuals:lessonVisuals(l.id)}));
+ assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'58bafe12e9aea9f98100bbf37e22b403d392be31f3f434d4731565b5dcf39966');
+});
+test('glavno objašnjenje je kratko, ima jednu napomenu i čuva svaki izbor geometrijskog prikaza',()=>{
+ const counts=[];let figures=0;
+ for(const {lesson:l} of all){const html=render(LessonLearningContent,{lesson:l}),visuals=lessonVisuals(l.id);const words=html.replace(/<svg[^]*?<\/svg>/g,'').replace(/<[^>]+>/g,' ').replace(/&[^;]+;/g,' ').split(/\s+/).filter(Boolean).length;counts.push(words);assert.ok(words<=250,l.id+': '+words);assert.equal((html.match(/class="learning-note"/g)??[]).length,1,l.id);assert.equal((html.match(/<svg/g)??[]).length,visuals.length,l.id);figures+=visuals.length;
+  if(visuals.length>1){assert.equal((html.match(/aria-controls="learning-/g)??[]).length,visuals.length,l.id);assert.equal((html.match(/ hidden=""/g)??[]).length,visuals.length-1,l.id);}
+  assert.ok((html.match(/learning-micro-example/g)??[]).length<=1,l.id);assert.doesNotMatch(html,/Šta učimo|Glavna ideja|Zašto to važi|Urađeni primer/);
+ }
+ assert.equal(figures,83);assert.ok(counts.reduce((a,b)=>a+b,0)/counts.length<=180);
+});
+test('sažeti tekst zadržava ključne uslove i oba pisma bez prevođenja matematičkih oznaka',()=>{
+ const source=id=>JSON.stringify(learningByLesson[id]);assert.match(source('talesova-teorema'),/MN∥BC/);assert.match(source('stavovi-slicnosti'),/zahvaćen/);assert.match(source('jednacine-kvadrat'),/dva suprotna/);assert.match(source('poliedar'),/konveks/);assert.match(source('deljenje'),/b≠0/);assert.match(source('svojstva-korena'),/nenegativ/);
+ const lesson=all.find(x=>x.lesson.id==='tacka-prava-ravan-osnove').lesson;const html=render(LessonLearningContent,{lesson},'cyrl');assert.match(html,/Шта треба да знаш/);assert.match(html,/A∈p/);assert.doesNotMatch(html,/А∈п/);
 });

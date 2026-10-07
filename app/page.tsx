@@ -6,8 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { grades, Grade, GradeId, Lesson, Level, Task, TaskDiagram } from "./content";
 import { tasksForLesson } from "./content/enhancements";
-import { lessonWorkTasks, octoberDemonstrations } from "./content/october-work";
-import { septemberDemonstrations } from "./content/september-work";
+import { lessonWorkTasks } from "./content/october-work";
 import { acceptProcedure, emptyLessonWork, emptyTask, LessonWork, normalizeAnswer, normalizeLessonWork, resumeLessonWork, submitTask, TaskResult, TaskSnapshot, workTotals } from "./lesson-work";
 import { AreaTestTask, getAreaTest } from "./content/area-tests";
 import { localize, localizeMathText, ScriptChoice, ScriptProvider, useCurrentScript, useLocalizedDom, useScriptPreference } from "./i18n";
@@ -214,10 +213,9 @@ function LessonPage({grade,areaId,lessonId,go}:{grade:Grade;areaId:string;lesson
   const all=area.lessons;const index=all.findIndex(l=>l.id===lesson.id);
   const jump=(l:Lesson)=>go({kind:"lesson",gradeId:grade.id,areaId:area.id,lessonId:l.id});
   return <main className={classMode?"lesson-page class-mode":"lesson-page"}><nav className="lesson-nav"><button disabled={index===0} onClick={()=>jump(all[index-1])}><ArrowLeft/> <span>Prethodna lekcija</span></button><button onClick={()=>go({kind:"area",gradeId:grade.id,areaId:area.id})}><BookOpen/><span>Pregled oblasti</span></button><button disabled={index===all.length-1} onClick={()=>jump(all[index+1])}><span>Sledeća lekcija</span><ArrowRight/></button></nav>
-    <div className="lesson-shell"><header className="lesson-title"><div><p className="eyebrow">{grade.id}. RAZRED · {area.title.toUpperCase()}</p><h1>{lesson.title}</h1><p>{lesson.intro}</p></div><Button className="class-mode-toggle" variant={classMode?"default":"outline"} aria-pressed={classMode} onClick={()=>setClassMode(value=>!value)}><Presentation/>{classMode?"Završi čas":"Pokreni čas"}</Button></header>
-      <section className="lesson-layout"><div className="learn-column"><LessonLearningContent lesson={lesson}/> {lesson.interactive&&<LessonInteractive type={lesson.interactive}/>}
-      {(octoberDemonstrations.has(lesson.id)||septemberDemonstrations.has(lesson.id))&&<article className="content-card solved-card"><div className="card-title"><span>02</span><h2>Kratak primer</h2></div><h3><MathText>{lesson.solved.question}</MathText></h3><ol>{lesson.solved.steps.map(s=><li key={s}><MathText>{s}</MathText></li>)}</ol></article>}</div>
-      <aside className="october-work-aside"><div className="quiz-head"><p className="eyebrow">10 ZADATAKA ZA RAD</p><h2>Probaj samostalno</h2><p>Pogrešan odgovor nije kraj — pokušaj ponovo.</p></div><LessonWorkSequence lesson={lesson} tasks={lessonTasks} progress={progress} save={save} loaded={loaded}/></aside></section>
+    <div className="lesson-shell"><header className="lesson-title"><div><p className="eyebrow">{grade.id}. RAZRED · {area.title.toUpperCase()}</p><h1>{lesson.title}</h1></div><div className="lesson-entry-actions"><a className="lesson-task-jump" href={`#lesson-work-${lesson.id}`}>Pređi na zadatke</a><Button className="class-mode-toggle" variant={classMode?"default":"outline"} aria-pressed={classMode} onClick={()=>setClassMode(value=>!value)}><Presentation/>{classMode?"Završi čas":"Pokreni čas"}</Button></div></header>
+      <section className="lesson-layout"><div className="learn-column"><LessonLearningContent key={lesson.id} lesson={lesson}/>{lesson.interactive&&<details className="lesson-explore" open={classMode}><summary>Istraži menjajući podatke</summary><LessonInteractive type={lesson.interactive}/></details>}</div>
+      <aside className="october-work-aside" id={`lesson-work-${lesson.id}`} tabIndex={-1}><div className="quiz-head"><p className="eyebrow">10 ZADATAKA ZA RAD</p><h2>Probaj samostalno</h2><p>Pogrešan odgovor nije kraj — pokušaj ponovo.</p></div><LessonWorkSequence lesson={lesson} tasks={lessonTasks} progress={progress} save={save} loaded={loaded}/></aside></section>
     </div><nav className="lesson-nav bottom"><button disabled={index===0} onClick={()=>jump(all[index-1])}><ArrowLeft/> <span>Prethodna</span></button><button onClick={()=>go({kind:"area",gradeId:grade.id,areaId:area.id})}><BookOpen/><span>Pregled oblasti</span></button><button disabled={index===all.length-1} onClick={()=>jump(all[index+1])}><span>Sledeća</span><ArrowRight/></button></nav></main>
 }
 
