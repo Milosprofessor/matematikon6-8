@@ -1,6 +1,7 @@
 import { C, I, Task } from "./types";
 import { septemberTasks } from "./september-expansion";
 import { octoberTasks } from "./october-expansion";
+import { applyOctoberWorkLevels, octoberVariants } from "./october-work";
 
 export const extraExamples: Record<string,string[]> = {
   "skup-celih-brojeva":["Broju 14 suprotan je broj −14."],
@@ -41,7 +42,7 @@ export const extraTasks: Record<string,Task[]> = {
   "oduzimanje":[I("6-5d","Izračunaj.","18 − (−7)","25","Oduzimanje negativnog je sabiranje.","18+7=25.","basic","Oduzimanje"),I("6-5e","Odredi x.","x − (−9) = 4","-5","Jednačina je x+9=4.","x=4−9=−5.","advanced","Oduzimanje")],
   "rastojanje":[I("6-6d","Odredi rastojanje.","P(−14), Q(2)","16","Koristi apsolutnu vrednost razlike.","|−14−2|=16.","medium","Rastojanje"),C("6-6e","Odredi tačku x.","d(x,0)=7 i x<0",["−7","0","7"],"−7","Traži se negativna tačka.","x=−7.","advanced","Rastojanje")],
   "sabiranje-oduzimanje":[I("6-7d","Izračunaj.","−16 + 9 − (−5)","-2","Oduzimanje −5 postaje +5.","−16+9+5=−2.","medium","Sabiranje i oduzimanje"),I("6-7e","Dopuni.","−8 − x = −13","5","Koji broj oduzet od −8 daje −13?","x=5.","advanced","Sabiranje i oduzimanje")],
-  "mnozenje":[I("6-8d","Izračunaj.","(−11)·(−7)","77","Isti znaci daju plus.","11·7=77.","basic","Množenje"),I("6-8e","Odredi x.","6·x=−54","-9","Podeli sa 6.","x=−54:6=−9.","advanced","Množenje")],
+  "mnozenje":[I("6-8d","Izračunaj.","(−11)·(−7)","77","Isti znaci daju plus.","11·7=77.","basic","Množenje"),I("6-8e","Odredi x.","6·x=−54","-9","Koji negativan broj pomnožen sa 6 daje −54?","Pošto je 6·9=54, važi 6·(−9)=−54. Zato je x=−9.","advanced","Množenje")],
   "deljenje":[I("6-9d","Izračunaj.","84:(−12)","-7","Različiti znaci daju minus.","84:12=7, pa je rezultat −7.","basic","Deljenje"),I("6-9e","Odredi x.","x:(−5)=8","-40","Pomnoži sa −5.","x=8·(−5)=−40.","advanced","Deljenje")],
   "mnozenje-deljenje":[I("6-10d","Izračunaj.","(−54):9·(−4)","24","Računaj sleva nadesno.","−54:9=−6, a −6·(−4)=24.","medium","Množenje i deljenje"),I("6-10e","Izračunaj.","72:(−8):(−3)","3","Računaj sleva nadesno.","72:(−8)=−9, zatim −9:(−3)=3.","advanced","Množenje i deljenje")],
   "brojevni-izrazi":[I("6-11d","Izračunaj.","−5·(−2+6) + 7","-13","Prvo zagrada, zatim množenje.","−2+6=4, −5·4+7=−13.","medium","Brojevni izrazi"),I("6-11e","Izračunaj.","36:(−3·2) − (−4)","-2","Najpre izračunaj izraz u zagradi.","−3·2=−6, 36:(−6)=−6, a −6+4=−2.","advanced","Brojevni izrazi")],
@@ -66,5 +67,5 @@ export const extraTasks: Record<string,Task[]> = {
   "primene-slicnosti":[I("8-7d","Odredi stvarnu dužinu.","Razmera 1:250, na planu 6 cm","15","6·250=1500 cm.","1500 cm=15 m.","basic","Razmera plana"),I("8-7e","Odredi visinu zgrade.","Čovek 1,8 m baca senku 1,2 m; senka zgrade je 10 m","15","Visina/senka je ista.","1,8/1,2=h/10, pa je h=15 m.","advanced","Senke")]
 };
 
-export function tasksForLesson(lessonId:string,tasks:Task[]){return [...tasks,...(extraTasks[lessonId]??[]),...(septemberTasks[lessonId]??[]),...(octoberTasks[lessonId]??[])]}
+export function tasksForLesson(lessonId:string,tasks:Task[]){return applyOctoberWorkLevels(lessonId,[...tasks,...(extraTasks[lessonId]??[]),...(septemberTasks[lessonId]??[]),...(octoberTasks[lessonId]??[]),...octoberVariants(lessonId)])}
 export function examplesForLesson(lessonId:string,examples:string[]){return [...examples,...(extraExamples[lessonId]??[])]}
