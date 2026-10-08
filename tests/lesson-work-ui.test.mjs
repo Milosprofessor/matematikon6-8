@@ -38,7 +38,7 @@ test("rezultat prikazuje 8/10 iz prvog pokušaja i 10/10 konačno u oba meseca",
 test("svaka stranica oba meseca ima sažeto objašnjenje i brz prelaz na zadatke",()=>{
  for(const {grade,area,lesson} of all){
   const html=render(LessonPage,{grade,areaId:area.id,lessonId:lesson.id,go:()=>{}});
-  assert.match(html,/Шта треба да знаш/);assert.match(html,/Пази:/);assert.match(html,/10 ZADATAKA ZA RAD/);assert.match(html,/Pokreni čas/);assert.match(html,/Pregled oblasti/);
+  assert.match(html,/Шта треба да знаш/);assert.match(html,/Запамти:/);assert.match(html,/10 ZADATAKA ZA RAD/);assert.match(html,/Pokreni čas/);assert.match(html,/Pregled oblasti/);
   assert.match(html,new RegExp(`href="#lesson-work-${lesson.id}"`));assert.match(html,new RegExp(`id="lesson-work-${lesson.id}"`));assert.doesNotMatch(html,/Kratak primer|PRIMER 1|Rešen primer|Glavna ideja|Zašto to važi/);
  }
 });

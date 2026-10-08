@@ -157,3 +157,35 @@ footer{display:flex;align-items:center;justify-content:space-between;min-height:
 /* One concise explanation, with the same diagrams available by selection. */
 .learning-compact p{margin-bottom:12px;line-height:1.55}.learning-compact h3{margin:16px 0 8px}.learning-compact .learning-visual{margin:0;padding:0;border:0}.learning-compact .learning-visual[hidden]{display:none}.learning-compact .visual-note{margin:4px 0 12px;font-size:15px}.learning-gallery{margin-block:12px}.visual-switch{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}.visual-switch button{min-height:48px;padding:8px 14px;border:1px solid #d7cfea;border-radius:10px;background:#fff;color:#4e495f;font-weight:750;cursor:pointer}.visual-switch button[aria-pressed=true]{background:#eee9ff;border-color:#6945dc;color:#5b32d6}.visual-switch button:focus-visible,.lesson-task-jump:focus-visible,.lesson-explore summary:focus-visible{outline:3px solid #6945dc;outline-offset:3px}.learning-compact .formula-row{gap:8px;margin-block:8px 12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}.learning-compact .formula-row>div{min-width:0;padding:10px 12px;overflow-x:auto}.learning-compact .learning-table-wrap{margin-block:12px}.learning-compact .learning-table th,.learning-compact .learning-table td{padding:9px}.learning-steps{display:grid;gap:8px;padding-left:20px;margin:14px 0;line-height:1.55;color:#4e495f}.learning-compact .learning-reason{margin-bottom:12px}.learning-compact .learning-note{padding:10px 12px;margin:0;border-left:3px solid #d2ad5a;background:#fffaf0;border-radius:0 8px 8px 0}.learning-note strong{color:#765108}.learning-micro-example{padding:8px 0}.lesson-entry-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.lesson-task-jump{display:flex;align-items:center;justify-content:center;min-height:50px;padding:12px 16px;border-radius:12px;background:#5b32d6;color:white;text-decoration:none;font-weight:750}.october-work-aside{scroll-margin-top:90px}.lesson-explore{margin-top:14px;border:1px solid var(--border);border-radius:14px;background:#fff}.lesson-explore summary{padding:15px 18px;min-height:50px;font-weight:750;color:#5b32d6;cursor:pointer}.lesson-explore .learning-interactive{margin:0;border:0}.class-mode .learning-steps,.class-mode .learning-compact .visual-note,.class-mode .learning-compact p{font-size:20px}.class-mode .visual-switch button{font-size:20px;min-height:54px}
 @media(max-width:680px){.lesson-entry-actions{display:grid;grid-template-columns:1fr 1fr;width:100%}.lesson-entry-actions>*{width:100%;min-width:0}.lesson-task-jump{padding-inline:10px;font-size:14px}.learning-compact .formula-row{grid-template-columns:1fr}.visual-switch button{flex:1;white-space:nowrap}.learning-compact .learning-table{font-size:14px}}
+
+/* A single notebook surface; each numbered point is one mathematical idea. */
+.learning-notes .learning-points{display:grid;gap:0;list-style:none;margin:0;padding:0;min-width:0}
+.learning-notes .learning-point{min-width:0;padding:20px 0;border-top:1px solid var(--border)}
+.learning-notes .learning-point:first-child{padding-top:3px;border-top:0}
+.learning-notes .learning-point:last-child{padding-bottom:0}
+.learning-notes .learning-point-title{display:grid;grid-template-columns:1.65em minmax(0,1fr);gap:5px;align-items:baseline;margin:0 0 10px;font-size:19px;line-height:1.35;color:#241d43}
+.learning-point-number{color:#5b32d6;font-variant-numeric:tabular-nums;font-weight:900}
+.learning-point-title .math{font-family:inherit;font-size:inherit;font-weight:800}
+.learning-point-body{min-width:0;padding-left:calc(1.65 * 19px + 5px)}
+.learning-notes .learning-explanation,.learning-notes .learning-definition{margin:0 0 10px;line-height:1.6;overflow-wrap:break-word}
+.learning-notes .learning-definition{font-weight:650;color:#322b50}
+.learning-notes .formula-row{margin:10px 0 12px}
+.learning-notes .formula-row>div{min-height:54px;border-radius:8px;background:#f5f2fc;font-size:20px}
+.learning-notes .learning-visual{margin:12px 0 10px}
+.learning-notes .precise-diagram{margin:0;padding:6px 0;border-radius:8px}
+.learning-notes .visual-note{margin:7px 0 0;color:#686178;font-size:14px;line-height:1.5}
+.learning-notes .learning-note{margin:12px 0 0;padding:8px 11px;font-size:15px;line-height:1.55}
+.learning-notes .learning-table-wrap{margin:10px 0 12px;max-width:100%;overscroll-behavior-x:contain}
+.learning-notes .learning-table-wrap:focus-visible{outline:3px solid #6945dc;outline-offset:3px}
+.class-mode .learning-notes .learning-point-title{font-size:26px}
+.class-mode .learning-point-body{padding-left:calc(1.65 * 26px + 5px)}
+.class-mode .learning-notes .learning-point{padding-block:24px}
+.class-mode .learning-notes .formula-row>div{font-size:26px;min-height:68px}
+.class-mode .learning-notes .visual-note{font-size:19px}
+@media(max-width:680px){
+ .learning-notes .learning-point{padding-block:17px}
+ .learning-notes .learning-point-title,.class-mode .learning-notes .learning-point-title{font-size:18px;grid-template-columns:1.5em minmax(0,1fr)}
+ .learning-notes .learning-point-body,.class-mode .learning-notes .learning-point-body{padding-left:0}
+ .learning-notes .formula-row>div{font-size:19px}
+ .learning-notes .visual-note{font-size:14px}
+}

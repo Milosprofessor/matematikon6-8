@@ -69,7 +69,7 @@ test('sažimanje čuva kompletnu bazu zadataka, crteže, redosled i nivoe iz obj
 test('glavno objašnjenje je kratko, ima jednu napomenu i čuva svaki izbor geometrijskog prikaza',()=>{
  const counts=[];let figures=0;
  for(const {lesson:l} of all){const html=render(LessonLearningContent,{lesson:l}),visuals=lessonVisuals(l.id);const words=html.replace(/<svg[^]*?<\/svg>/g,'').replace(/<[^>]+>/g,' ').replace(/&[^;]+;/g,' ').split(/\s+/).filter(Boolean).length;counts.push(words);assert.ok(words<=250,l.id+': '+words);assert.equal((html.match(/class="learning-note"/g)??[]).length,1,l.id);assert.equal((html.match(/<svg/g)??[]).length,visuals.length,l.id);figures+=visuals.length;
-  if(visuals.length>1){assert.equal((html.match(/aria-controls="learning-/g)??[]).length,visuals.length,l.id);assert.equal((html.match(/ hidden=""/g)??[]).length,visuals.length-1,l.id);}
+  assert.doesNotMatch(html,/ hidden=""|aria-controls="learning-/);assert.equal((html.match(/class="learning-point"/g)??[]).length>=2,true,l.id);
   assert.ok((html.match(/learning-micro-example/g)??[]).length<=1,l.id);assert.doesNotMatch(html,/Šta učimo|Glavna ideja|Zašto to važi|Urađeni primer/);
  }
  assert.equal(figures,83);assert.ok(counts.reduce((a,b)=>a+b,0)/counts.length<=180);
