@@ -7,9 +7,9 @@ import {renderToStaticMarkup} from "react-dom/server";
 
 const root=fileURLToPath(new URL("..",import.meta.url));
 // Test-only exports: production page and component structure stay unchanged.
-const vite=await createServer({appType:"custom",configFile:false,root,resolve:{alias:{"@":root}},plugins:[{name:"lesson-work-test-exports",transform(code,id){if(id.split("?")[0].endsWith("/app/page.tsx"))return code+"\nexport {LessonWorkSequence,LessonPage,TaskDiagramView};"}}],server:{middlewareMode:true,hmr:false}});
+const vite=await createServer({appType:"custom",configFile:false,root,resolve:{alias:{"@":root}},plugins:[{name:"lesson-work-test-exports",transform(code,id){if(id.split("?")[0].endsWith("/app/page.tsx"))return code+"\nexport {LessonWorkSequence,LessonPage,TaskDiagramView,parseRoute,routeHash};"}}],server:{middlewareMode:true,hmr:false}});
 after(()=>vite.close());
-const {LessonWorkSequence,LessonPage,TaskDiagramView}=await vite.ssrLoadModule("/app/page.tsx");
+const {LessonWorkSequence,LessonPage,TaskDiagramView,parseRoute,routeHash}=await vite.ssrLoadModule("/app/page.tsx");
 const {ScriptProvider}=await vite.ssrLoadModule("/app/i18n.tsx");
 const {grades}=await vite.ssrLoadModule("/app/content/index.ts");
 const {tasksForLesson}=await vite.ssrLoadModule("/app/content/enhancements.ts");
@@ -17,6 +17,30 @@ const {lessonWorkTasks}=await vite.ssrLoadModule("/app/content/october-work.ts")
 const {emptyLessonWork,emptyTask,submitTask}=await vite.ssrLoadModule("/app/lesson-work.ts");
 const all=grades.flatMap(grade=>grade.areas.flatMap(area=>area.lessons.map(lesson=>({grade,area,lesson}))));
 const render=(component,props,script="cyrl")=>renderToStaticMarkup(React.createElement(ScriptProvider,{script},React.createElement(component,props)));
+
+test("direktne adrese svih lekcija i pregled oblasti čuvaju kontekst razreda",()=>{
+ const previousWindow=globalThis.window;
+ try{
+  for(const {grade,area,lesson} of all){
+   for(const route of [{kind:"lesson",gradeId:grade.id,areaId:area.id,lessonId:lesson.id},{kind:"area",gradeId:grade.id,areaId:area.id}]){
+    globalThis.window={location:{hash:routeHash(route)}};
+    assert.deepEqual(parseRoute(),route,lesson.id);
+   }
+  }
+ }finally{if(previousWindow===undefined)delete globalThis.window;else globalThis.window=previousWindow;}
+});
+test("fragment sekcije nije ruta lekcije i dugme ga ne sme koristiti za navigaciju",()=>{
+ const previousWindow=globalThis.window;
+ try{
+  for(const {grade,area,lesson} of all){
+   const html=render(LessonPage,{grade,areaId:area.id,lessonId:lesson.id,go:()=>{}});
+   assert.doesNotMatch(html,/href="#lesson-work-/);
+   globalThis.window={location:{hash:`#lesson-work-${lesson.id}`}};
+   assert.deepEqual(parseRoute(),{kind:"home"},lesson.id);
+   delete globalThis.window;
+  }
+ }finally{if(previousWindow===undefined)delete globalThis.window;else globalThis.window=previousWindow;}
+});
 
 test("oba meseca renderuju isti pojedinačni zadatak, povratak i sledeći korak",()=>{
  for(const {lesson} of all){const tasks=lessonWorkTasks(lesson.id,tasksForLesson(lesson.id,lesson.tasks)),work=emptyLessonWork(tasks.map(t=>t.id));
@@ -39,7 +63,7 @@ test("svaka stranica oba meseca ima sažeto objašnjenje i brz prelaz na zadatke
  for(const {grade,area,lesson} of all){
   const html=render(LessonPage,{grade,areaId:area.id,lessonId:lesson.id,go:()=>{}});
   assert.match(html,/Шта треба да знаш/);assert.match(html,/Запамти:/);assert.match(html,/10 ZADATAKA ZA RAD/);assert.match(html,/Pokreni čas/);assert.match(html,/Pregled oblasti/);
-  assert.match(html,new RegExp(`href="#lesson-work-${lesson.id}"`));assert.match(html,new RegExp(`id="lesson-work-${lesson.id}"`));assert.doesNotMatch(html,/Kratak primer|PRIMER 1|Rešen primer|Glavna ideja|Zašto to važi/);
+  assert.match(html,new RegExp(`<button type="button" class="lesson-task-jump" aria-controls="lesson-work-${lesson.id}"`));assert.doesNotMatch(html,/href="#lesson-work-/);assert.match(html,new RegExp(`id="lesson-work-${lesson.id}"`));assert.doesNotMatch(html,/Kratak primer|PRIMER 1|Rešen primer|Glavna ideja|Zašto to važi/);
  }
 });
 test("geometrijske slike prikazuju paralelnost i projekciju bez odgovora u natpisu zadatka",()=>{

@@ -165,6 +165,7 @@ footer{display:flex;align-items:center;justify-content:space-between;min-height:
 .learning-notes .learning-point:last-child{padding-bottom:0}
 .learning-notes .learning-point-title{display:grid;grid-template-columns:1.65em minmax(0,1fr);gap:5px;align-items:baseline;margin:0 0 10px;font-size:19px;line-height:1.35;color:#241d43}
 .learning-point-number{color:#5b32d6;font-variant-numeric:tabular-nums;font-weight:900}
+.lesson-task-jump{cursor:pointer}
 .learning-point-title .math{font-family:inherit;font-size:inherit;font-weight:800}
 .learning-point-body{min-width:0;padding-left:calc(1.65 * 19px + 5px)}
 .learning-notes .learning-explanation,.learning-notes .learning-definition{margin:0 0 10px;line-height:1.6;overflow-wrap:break-word}
