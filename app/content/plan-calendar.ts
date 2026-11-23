@@ -1,4 +1,5 @@
 import type {Area,GradeId,Lesson,Month} from './types';
+import {semester7} from './semester7';
 import {semester6} from './semester6';
 import {grade6PlanAdditions,grade7PlanAdditions} from './plan-additions';
 
@@ -6,7 +7,7 @@ import {grade6PlanAdditions,grade7PlanAdditions} from './plan-additions';
  * later lessons remain in their source modules and saved progress is untouched. */
 export function plannedAreas(grade:GradeId,original:Area[]):Area[]{
  const byId=new Map(original.flatMap(a=>a.lessons.map(l=>[l.id,l] as const)));
- for(const lesson of grade===6?[...grade6PlanAdditions,...semester6]:grade===7?grade7PlanAdditions:[])byId.set(lesson.id,lesson);
+ for(const lesson of grade===6?[...grade6PlanAdditions,...semester6]:grade===7?[...grade7PlanAdditions,...semester7]:[])byId.set(lesson.id,lesson);
  const make=(areaId:string,ids:string[],month:Month,overrides:Partial<Area>={}):Area=>{
   const base=original.find(a=>a.id===areaId);
   return {...base,id:areaId,title:base?.title??'Direktna proporcionalnost',short:base?.short??'Odnosi veličina, proporcije i njihova primena.',...overrides,month,
@@ -36,7 +37,9 @@ export function plannedAreas(grade:GradeId,original:Area[]):Area[]{
   real.monthShort={september:'Racionalni i realni brojevi, kvadrat i kvadratni koren.',october:'Jednačine sa kvadratom nepoznate.'};
   return [make('obnavljanje-6',['kratko-obnavljanje-6'],'september'),real,
    make('direktna-proporcionalnost',['direktna-proporcionalnost','funkcija-ykx','proporcije','produzena-proporcija','primena-produzene-proporcije'],'october'),
-   make('pitagorina-teorema',['pitagorina-teorema','nepoznata-stranica-pravougli','pitagora-pravougaonik-kvadrat','pitagora-jednakokraki','pitagora-romb','pitagora-trapez'],'october')];
+   extend(make('pitagorina-teorema',['pitagorina-teorema','nepoznata-stranica-pravougli','pitagora-pravougaonik-kvadrat','pitagora-jednakokraki','pitagora-romb','pitagora-trapez'],'october'),'november',['specijalni-pravougli-trouglovi','pitagora-cetvorougao','konstrukcija-iracionalnih-brojeva','pitagora-obrat'],'Posebni trouglovi, konstrukcije i obrat teoreme.'),
+   extend(make('stepeni',['pojam-stepena','stepeni-ista-osnova'],'november',{short:'Stepenovanje, pravila računanja i primene.'}),'december',['stepen-proizvoda','standardni-zapis'],'Stepen proizvoda, količnika i stepena, standardni zapis i primene.'),
+   make('mnogougao',['dijagonale-mnogougla'],'december',{title:'Mnogougao',short:'Dijagonale iz jednog temena i ukupan broj dijagonala.',assessment:'mini'})];
  }
  return [make('obnavljanje-7',['kratko-obnavljanje-7'],'september'),
   make('slicnost',['razmera-duzi','samerljive-duzi','proporcionalnost','talesova-teorema','slicni-trouglovi','stavovi-slicnosti','primene-slicnosti','slicnost-pravougli'],'september'),
