@@ -1,5 +1,8 @@
 import assert from "node:assert/strict";
-import { chromium } from "@playwright/test";
+import { createRequire } from "node:module";
+// Isolated QA installation cannot force npm to recalculate the app lockfile.
+const requireQa = createRequire("/tmp/matematikon-e2e-deps/browser-test.js");
+const { chromium } = requireQa("@playwright/test");
 
 const base = process.env.QA_URL || "http://127.0.0.1:4173/";
 const cases = [
