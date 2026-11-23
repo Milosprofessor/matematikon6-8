@@ -53,7 +53,7 @@ try {
         await waitFor(".lesson-title h1");
         await waitFor(".october-work-aside .task-card");
         assert.ok((await page.locator(".lesson-title h1").innerText()).length>4);
-        assert.equal(await page.locator(".task-top").first().innerText().then(x=>/Zadatak 1 od 10|Задатак 1 од 10/.test(x)),true);
+        assert.equal(await page.locator(".october-work-aside .task-card").getAttribute("data-task-id"),row.id+"-1","Pogrešan početni zadatak");
         assert.equal(await page.locator(".lesson-task-jump").count(),1);
         await page.locator(".lesson-task-jump").click();
         assert.equal(await page.evaluate(()=>document.activeElement?.classList?.contains("october-work-aside")),true);
