@@ -1,3 +1,5 @@
+import {grades} from './index';
+import {lessonVisuals} from './lesson-visuals';
 import {learningByLesson} from './learning';
 
 type PointLayout = {
@@ -343,6 +345,16 @@ export const noteLayouts:Record<string,PointLayout[]>={
   p('Sistematsko brojanje i provera','s0 s1',{note:true}),
  ],
 };
+
+for(const lesson of grades.flatMap(g=>g.areas.flatMap(a=>a.lessons))){
+ if(noteLayouts[lesson.id])continue;
+ const theory=learningByLesson[lesson.id];
+ noteLayouts[lesson.id]=[
+  p(lesson.title,'',{text:lesson.intro,definition:true}),
+  p('Pravilo','',{text:lesson.rules[0],f:theory.extraFormulas.map((_,i)=>i),v:lessonVisuals(lesson.id).map((_,i)=>i)}),
+  p('Postupak','',{text:lesson.rules[1],note:true}),
+ ];
+}
 
 const sentences=(text:string)=>text.split(/(?<=[.!?])\s+(?=[A-ZŠĐČĆŽ])/u);
 export function lessonNotes(id:string){

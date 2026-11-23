@@ -1,8 +1,11 @@
 export type GradeId = 6 | 7 | 8;
 export type Level = "basic" | "medium" | "advanced";
-export type Month = "september" | "october";
+export const months = ["september", "october", "november", "december"] as const;
+export type Month = typeof months[number];
+export const monthLabels: Record<Month,string> = {september:"SEPTEMBAR", october:"OKTOBAR", november:"NOVEMBAR", december:"DECEMBAR"};
 export type ErrorCategory = "concept" | "calculation" | "sign" | "rule" | "diagram" | "method";
 export type TaskDiagram =
+  | { type:"semester-figure"; variant:"pentagon"|"prism-net"|"pyramid" }
   | { type:"number-line"; min:number; max:number; divisions?:number; points:{ value:number; label:string }[]; interval?:{start:number;end:number;closedStart:boolean;closedEnd:boolean}; arrows?:{from:number;to:number;label?:string}[] }
   | { type:"tales"; variant?:"triangle"|"rays"|"trapezoid"|"division"; orientation?:number; labels?:Record<string,string> }
   | { type:"similarity"; variant?:"upright"|"rotated"|"mirrored"; labels?:Record<string,string> }

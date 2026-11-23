@@ -1,0 +1,66 @@
+name: Nastavnicka proba u Chromiumu
+
+on:
+  push:
+    branches:
+      - feature/prvo-polugodiste-2026-27
+    paths:
+      - "qa/**"
+      - ".github/workflows/semester-browser-qa.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: browser-qa-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Checkout current development branch
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - name: Install locked dependencies
+        run: npm run install:ci
+      - name: Build from current development branch
+        run: npm run build
+      - name: Install temporary browser QA dependency without editing lockfile
+        run: npm install --prefix /tmp/matematikon-e2e-deps --no-save --package-lock=false --ignore-scripts @playwright/test@1.56.1
+      - name: Confirm runner preinstalled Chrome
+        run: google-chrome --version
+      - name: Start development preview for exact commit
+        shell: bash
+        run: |
+          npm run dev -- --port 4173 --host 127.0.0.1 >/tmp/matematikon-browser-qa.log 2>&1 &
+          echo $! > /tmp/matematikon-browser-qa.pid
+          for attempt in $(seq 1 90); do
+            if curl --fail --silent http://127.0.0.1:4173/ -o /tmp/matematikon-browser-qa-index.html; then
+              echo "Development preview available"
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "Development preview did not start"
+          tail -120 /tmp/matematikon-browser-qa.log || true
+          exit 1
+      - name: Run six-lesson mobile and desktop trial with real task input
+        run: node qa/semester-browser-smoke.mjs
+        env:
+          QA_URL: http://127.0.0.1:4173/
+      - name: Upload diagnostics on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: semester-browser-qa-diagnostics
+          path: |
+            /tmp/matematikon-browser-qa.log
+            /tmp/qa-*.png
+          if-no-files-found: ignore
+          retention-days: 7

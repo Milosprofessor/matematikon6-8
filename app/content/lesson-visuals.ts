@@ -8,6 +8,17 @@ const similar=v({type:'similarity',labels:{AB:'3',BC:'4',AC:'5',DE:'6',EF:'8',DF
 const similarRotated=v({type:'similarity',variant:'rotated',labels:{AB:'3',BC:'4',AC:'5',DE:'6',EF:'8',DF:'10'}},'Rotacija menja položaj, a ne redosled odgovarajućih temena: A↔D, B↔E, C↔F.');
 const space=v({type:'space',variant:'polyhedron'},'Telo prikazujemo u ravni crteža. Isprekidane linije predstavljaju zaklonjene ivice, a AC₁ je prostorna dijagonala.');
 const visuals:Record<string,LessonVisual[]>={
+ 'q-poredak':[v({type:'number-line',min:-1,max:1,divisions:4,points:[{value:-0.75,label:'−0,75'},{value:-0.25,label:'−0,25'}]},'Broj −0,25 je desno od −0,75 i zato je veći.')],
+ 'q-zbir-razlika':[v({type:'number-line',min:-2,max:2,divisions:2,points:[{value:-1.5,label:'A'},{value:0.5,label:'B'}]},'Od A do B su četiri polukoraka, odnosno dve jedinice.')],
+ 'pitagora-obrat':[v({type:'pythagoras',variant:'right',labels:{a:'3',b:'4',c:'5'}},'Za stranice 3, 4 i 5 jednakost kvadrata potvrđuje pravi ugao.')],
+ 'specijalni-pravougli-trouglovi':[v({type:'pythagoras',variant:'equilateral'},'Visina jednakostraničnog trougla daje dva podudarna trougla sa uglovima 30°, 60° i 90°.')],
+ 'konstrukcija-iracionalnih-brojeva':[v({type:'pythagoras',variant:'right',labels:{a:'1',b:'2'}},'Katete dužina 1 i 2 daju hipotenuzu dužine √5. Prenesi je šestarom na brojnu pravu.')],
+ 'dijagonale-mnogougla':[v({type:'semester-figure',variant:'pentagon'},'Iz A polaze dve dijagonale: AC i AD. Duži AB i AE su stranice.')],
+ 'prizma-elementi':[space],
+ 'prizma-mreza':[v({type:'semester-figure',variant:'prism-net'},'Dva kvadrata su osnove. Četiri pravougaonika zajedno čine omotač.')],
+ 'prizma-zapremina':[space],
+ 'piramida-elementi':[v({type:'semester-figure',variant:'pyramid'},'SO je visina i normalna je na ravan osnove. O je centar kvadrata.')],
+
  'kratko-obnavljanje-5':[v({type:'pythagoras',variant:'rectangle'},'Za obim saberi sve četiri stranice: O=2(a+b). Dijagonala povezuje nesusedna temena.')],
  'skup-celih-brojeva':[line],'apsolutna-vrednost':[line],'uporedjivanje':[line],
  'sabiranje':[v({type:'number-line',min:-5,max:3,points:[{value:-2,label:'Početak'},{value:1,label:'Kraj'}],arrows:[{from:-2,to:1,label:'+3'}]},'Dodavanje pozitivnog broja pomera nas udesno; dodavanje negativnog ulevo.')],

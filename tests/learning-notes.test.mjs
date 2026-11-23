@@ -18,7 +18,7 @@ const all=grades.flatMap(g=>g.areas.flatMap(a=>a.lessons));
 const render=(lesson,script)=>renderToStaticMarkup(React.createElement(ScriptProvider,{script},React.createElement(LessonLearningContent,{lesson})));
 const plain=html=>html.replace(/<[^>]+>/g,' ').replace(/&[^;]+;/g,' ').replace(/\s+/g,' ');
 
-test('svih 59 lekcija imaju 2–5 smislenih, kratkih tačaka i samo jednu napomenu',()=>{
+test('svih 86 lekcija imaju 2–5 smislenih, kratkih tačaka i samo jednu napomenu',()=>{
  assert.deepEqual(Object.keys(noteLayouts).sort(),all.map(l=>l.id).sort());
  for(const l of all){
   const notes=lessonNotes(l.id);
@@ -41,7 +41,7 @@ test('sve postojeće formule ostaju tačne i pojavljuju se tačno jednom',()=>{
  }
 });
 
-test('svih 83 crteža je vidljivo unutar odgovarajuće nastavne tačke u oba pisma',()=>{
+test('svih 93 crteža je vidljivo unutar odgovarajuće nastavne tačke u oba pisma',()=>{
  let count=0;
  for(const l of all){
   const visuals=lessonVisuals(l.id),notes=lessonNotes(l.id);
@@ -57,7 +57,7 @@ test('svih 83 crteža je vidljivo unutar odgovarajuće nastavne tačke u oba pis
    }
   }
  }
- assert.equal(count,83);
+ assert.equal(count,93);
 });
 
 test('prikazane beleške čuvaju uslove teorema i ne uvode koren unapred',()=>{
