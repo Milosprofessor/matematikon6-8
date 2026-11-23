@@ -32,7 +32,7 @@ jobs:
       - name: Build from current development branch
         run: npm run build
       - name: Install temporary browser QA dependency without editing lockfile
-        run: npm install --no-save --package-lock=false --ignore-scripts @playwright/test@1.56.1
+        run: npm install --prefix /tmp/matematikon-e2e-deps --no-save --package-lock=false --ignore-scripts @playwright/test@1.56.1
       - name: Confirm runner preinstalled Chrome
         run: google-chrome --version
       - name: Start development preview for exact commit
