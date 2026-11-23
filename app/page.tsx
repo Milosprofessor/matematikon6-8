@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, BookOpen, Brain, Check, ChevronRight, GraduationCap, Lightbulb, Menu, Presentation, RotateCcw, Target, Trophy, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { grades, Grade, GradeId, Lesson, Level, Task, TaskDiagram } from "./content";
+import { months, monthLabels, Month, grades, Grade, GradeId, Lesson, Level, Task, TaskDiagram } from "./content";
 import { tasksForLesson } from "./content/enhancements";
 import { lessonWorkTasks } from "./content/october-work";
 import { acceptProcedure, emptyLessonWork, emptyTask, LessonWork, normalizeAnswer, normalizeLessonWork, resumeLessonWork, submitTask, TaskResult, TaskSnapshot, workTotals } from "./lesson-work";
@@ -17,7 +17,7 @@ import { PythagorasDiagram } from "./pythagoras-diagram";
 import { adaptiveMessage, appendKnowledgeAttempt, areaMastery, AttemptSource, KnowledgeAttempt, knowledgeRecommendation, lessonMastery, MasteryBand, recommendedLevel, skillMasteries } from "./knowledge";
 import { pickAdaptiveTask, practiceAreas, practiceGroupKey, practiceLessons, SessionResult, sessionPool, SessionTask, unlockedPracticeLessonIds, withTaskMetadata } from "./practice-engine";
 
-type Route = { kind:"home" } | {kind:"grade"; gradeId:GradeId} | {kind:"area"; gradeId:GradeId; areaId:string} | {kind:"lesson";gradeId:GradeId;areaId:string;lessonId:string} | {kind:"smart";gradeId:GradeId;areaId:string} | {kind:"focus";gradeId:GradeId;lessonId:string;skill?:string} | {kind:"test";gradeId:GradeId;areaId:string};
+type Route = { kind:"home" } | {kind:"grade"; gradeId:GradeId} | {kind:"area"; gradeId:GradeId; areaId:string; month?:Month} | {kind:"lesson";gradeId:GradeId;areaId:string;lessonId:string} | {kind:"smart";gradeId:GradeId;areaId:string} | {kind:"focus";gradeId:GradeId;lessonId:string;skill?:string} | {kind:"test";gradeId:GradeId;areaId:string};
 type TestScore={best:number;last:number;total?:number};
 type AreaPracticeProgress={bestFirst:number;bestTotal:number;lastFirst:number;lastTotal:number;recentTaskIds:string[]};
 type GradeProgress = {completed:string[];lastLesson:string|null;bestFirst:number;lastFirst:number;recentTaskIds:string[];weak:Record<string,number>;tests:Record<string,TestScore>;knowledgeAttempts:KnowledgeAttempt[];recommendationCursor:number;practiceByArea:Record<string,AreaPracticeProgress>;lessonWork:Record<string,LessonWork>};
@@ -35,7 +35,7 @@ function parseRoute():Route{
   const p=window.location.hash.replace(/^#\/?/,"").split("/").filter(Boolean);
   const g=Number(p[1]) as GradeId;
   if(p[0]==="razred" && [6,7,8].includes(g)) return {kind:"grade",gradeId:g};
-  if(p[0]==="oblast" && [6,7,8].includes(g) && p[2]) return {kind:"area",gradeId:g,areaId:p[2]};
+  if(p[0]==="oblast" && [6,7,8].includes(g) && p[2]) return {kind:"area",gradeId:g,areaId:p[2],...(months.includes(p[3] as Month)?{month:p[3] as Month}:{})};
   if(p[0]==="lekcija" && [6,7,8].includes(g) && p[2] && p[3]) return {kind:"lesson",gradeId:g,areaId:p[2],lessonId:p[3]};
   if(p[0]==="pametno" && [6,7,8].includes(g) && p[2]) return {kind:"smart",gradeId:g,areaId:p[2]};
   if(p[0]==="pametno" && [6,7,8].includes(g)) return {kind:"grade",gradeId:g};
@@ -47,7 +47,7 @@ function parseRoute():Route{
 function routeHash(r:Route){
   if(r.kind==="home") return "#/";
   if(r.kind==="grade") return `#/razred/${r.gradeId}`;
-  if(r.kind==="area") return `#/oblast/${r.gradeId}/${r.areaId}`;
+  if(r.kind==="area") return `#/oblast/${r.gradeId}/${r.areaId}${r.month?"/"+r.month:""}`;
   if(r.kind==="lesson") return `#/lekcija/${r.gradeId}/${r.areaId}/${r.lessonId}`;
   if(r.kind==="smart") return `#/pametno/${r.gradeId}/${r.areaId}`;
   if(r.kind==="focus") return `#/slaba-tacka/${r.gradeId}/${r.lessonId}${r.skill?`/${encodeURIComponent(r.skill)}`:""}`;
@@ -78,7 +78,7 @@ function Header({route,go,script,setScript}:{route:Route;go:(r:Route)=>void;scri
 
 function HomePage({go}:{go:(r:Route)=>void}){return <main>
   <section className="home-hero"><div className="shell hero-grid"><div><p className="eyebrow">MATEMATIKA ZA STARIJE RAZREDE</p><h1>Izaberi razred.<br/><em>Uči korak po korak.</em></h1><p>Jasne lekcije, pravilna matematika i vežbanje koje pamti tvoj napredak.</p></div><div className="symbol-board" aria-hidden="true"><span>√</span><span className="board-frac"><i>3</i><i>5</i></span><span>∠</span><b>6–8</b></div></div></section>
-  <section className="shell grade-choice"><div className="section-heading"><div><p className="eyebrow">SEPTEMBAR + OKTOBAR</p><h2>Koji razred biraš?</h2></div><p>Odaberi razred i odmah nastavi na dostupno gradivo.</p></div><div className="grade-grid">{grades.map((g,i)=><button key={g.id} className={`grade-card g${g.id}`} onClick={()=>go({kind:"grade",gradeId:g.id})}><span className="grade-number">0{i+1}</span><div><strong>{g.id}.</strong><h3>RAZRED</h3><p>{g.description}</p></div><ChevronRight/></button>)}</div></section>
+  <section className="shell grade-choice"><div className="section-heading"><div><p className="eyebrow">PRVO POLUGODIŠTE</p><h2>Koji razred biraš?</h2></div><p>Odaberi razred i odmah nastavi na dostupno gradivo.</p></div><div className="grade-grid">{grades.map((g,i)=><button key={g.id} className={`grade-card g${g.id}`} onClick={()=>go({kind:"grade",gradeId:g.id})}><span className="grade-number">0{i+1}</span><div><strong>{g.id}.</strong><h3>RAZRED</h3><p>{g.description}</p></div><ChevronRight/></button>)}</div></section>
   </main>}
 
 function ProgressBlock({grade,progress}:{grade:Grade;progress:GradeProgress}){
@@ -88,11 +88,10 @@ function ProgressBlock({grade,progress}:{grade:Grade;progress:GradeProgress}){
 
 const masteryLabel=(band:MasteryBand)=>band==="good"?"Dobro savladano":band==="practice"?"Potrebno još vežbe":band==="weak"?"Slaba tačka":"Još nije procenjeno";
 const masteryDot=(band:MasteryBand)=>band==="good"?"🟢":band==="practice"?"🟡":band==="weak"?"🔴":"⚪";
-const calendarMonth=(area:Grade["areas"][number],lesson:Lesson):"september"|"october"=>lesson.month??area.month??"september";
-const calendarMonthLabel=(month:"september"|"october")=>month==="october"?"OKTOBAR":"SEPTEMBAR";
-const areaPeriod=(area:Grade["areas"][number])=>{
-  const months=new Set(area.lessons.map(lesson=>calendarMonth(area,lesson)));
-  return months.size>1?"SEPTEMBAR + OKTOBAR":months.has("october")?"OKTOBAR":"SEPTEMBAR";
+const calendarMonth=(area:Grade["areas"][number],lesson:Lesson):Month=>lesson.month??area.month??"september";
+const calendarMonthLabel=(month:Month)=>monthLabels[month];
+function areaPeriod(area:Grade["areas"][number]){
+  return months.filter(month=>area.lessons.some(l=>calendarMonth(area,l)===month)).map(calendarMonthLabel).join(" + ");
 };
 
 function KnowledgeDashboard({grade,progress,go}:{grade:Grade;progress:GradeProgress;go:(r:Route)=>void}){
@@ -123,22 +122,24 @@ function GradePage({grade,go}:{grade:Grade;go:(r:Route)=>void}){
   const first=grade.areas.find(a=>!a.review)?.lessons[0] ?? grade.areas[0].lessons[0];
   const last=grade.areas.flatMap(a=>a.lessons.map(l=>({a,l}))).find(x=>x.l.id===progress.lastLesson);
   const cont=last??{a:grade.areas.find(a=>a.lessons.some(l=>l.id===first.id))!,l:first};
-  const monthAreas=(month:"september"|"october")=>grade.areas.filter(area=>!area.review&&area.lessons.some(lesson=>calendarMonth(area,lesson)===month)).sort((a,b)=>(a.monthOrder?.[month]??100)-(b.monthOrder?.[month]??100));
-  const renderArea=(a:Grade["areas"][number],i:number,month?:"september"|"october")=>{const visible=month?a.lessons.filter(lesson=>calendarMonth(a,lesson)===month):a.lessons;const done=visible.filter(l=>progress.completed.includes(l.id)).length;const pct=Math.round(done/Math.max(1,visible.length)*100);const test=progress.tests[a.id];const total=(test?.total??getAreaTest(grade.id,a.id).length)||10;const short=month?a.monthShort?.[month]??a.short:a.short;return <button className={a.review?"area-card review":"area-card"} key={`${a.id}-${month??"review"}`} onClick={()=>go({kind:"area",gradeId:grade.id,areaId:a.id})}><span>{a.review?"↺":String(i+1).padStart(2,"0")}</span><div><small>{a.review?"KRATKO OBNAVLJANJE":`${month==="october"?"OKTOBARSKI":"SEPTEMBARSKI"} DEO OBLASTI`}</small><h3>{a.title}</h3><p>{short}</p>{test&&<p className="area-test-score">Najbolji rezultat: {test.best}/{total}</p>}<div className="mini-progress"><i style={{width:`${pct}%`}}/></div></div><b>{pct}%</b></button>};
-  return <main className="shell page"><div className="grade-mast" style={{"--grade":grade.accent} as React.CSSProperties}><p className="eyebrow">SEPTEMBAR + OKTOBAR · {grade.id}. RAZRED</p><h1>{grade.id}. razred</h1><p>{grade.description}</p></div>
+  const monthAreas=(month:Month)=>grade.areas.filter(area=>!area.review&&area.lessons.some(lesson=>calendarMonth(area,lesson)===month)).sort((a,b)=>(a.monthOrder?.[month]??100)-(b.monthOrder?.[month]??100));
+  const renderArea=(a:Grade["areas"][number],i:number,month?:Month)=>{const visible=month?a.lessons.filter(lesson=>calendarMonth(a,lesson)===month):a.lessons;const done=visible.filter(l=>progress.completed.includes(l.id)).length;const pct=Math.round(done/Math.max(1,visible.length)*100);const test=progress.tests[a.id];const total=(test?.total??getAreaTest(grade.id,a.id).length)||10;const short=month?a.monthShort?.[month]??a.short:a.short;return <button className={a.review?"area-card review":"area-card"} key={`${a.id}-${month??"review"}`} onClick={()=>go({kind:"area",gradeId:grade.id,areaId:a.id,month})}><span>{a.review?"↺":String(i+1).padStart(2,"0")}</span><div><small>{a.review?"KRATKO OBNAVLJANJE":`${calendarMonthLabel(month??"september")}`}</small><h3>{a.title}</h3><p>{short}</p>{test&&<p className="area-test-score">Najbolji rezultat: {test.best}/{total}</p>}<div className="mini-progress"><i style={{width:`${pct}%`}}/></div></div><b>{pct}%</b></button>};
+  return <main className="shell page"><div className="grade-mast" style={{"--grade":grade.accent} as React.CSSProperties}><p className="eyebrow">PRVO POLUGODIŠTE · {grade.id}. RAZRED</p><h1>{grade.id}. razred</h1><p>{grade.description}</p></div>
     <div className="dashboard-grid"><ProgressBlock grade={grade} progress={progress}/><button className="continue-card" onClick={()=>go({kind:"lesson",gradeId:grade.id,areaId:cont.a.id,lessonId:cont.l.id})}><span><BookOpen/></span><div><small>{progress.lastLesson?"NASTAVI UČENJE":"PRVA LEKCIJA"}</small><strong>{cont.l.title}</strong><p>{cont.a.title}</p></div><ArrowRight/></button></div>
     <KnowledgeDashboard grade={grade} progress={progress} go={go}/>
     <div className="section-heading compact"><div><p className="eyebrow">DOSTUPNO</p><h2>Oblasti</h2></div></div>
-    <section className="month-block"><div className="month-heading"><span>SEPTEMBAR</span><small>Prethodno gradivo</small></div><div className="area-grid">{grade.areas.filter(a=>a.review).map((area,index)=>renderArea(area,index))}{monthAreas("september").map((area,index)=>renderArea(area,index,"september"))}</div></section>
-    <section className="month-block current"><div className="month-heading"><span>OKTOBAR</span><small>Trenutno gradivo</small></div><div className="area-grid">{monthAreas("october").map((area,index)=>renderArea(area,index,"october"))}</div></section><p className="soon">Novembarske oblasti uskoro.</p>
+    {months.map(month=><section key={month} className="month-block"><div className="month-heading"><span>{calendarMonthLabel(month)}</span></div><div className="area-grid">
+      {month==="september"&&grade.areas.filter(a=>a.review).map((area,index)=>renderArea(area,index))}
+      {monthAreas(month).map((area,index)=>renderArea(area,index,month))}
+    </div></section>)}
   </main>
 }
 
-function AreaPage({grade,areaId,go}:{grade:Grade;areaId:string;go:(r:Route)=>void}){
+function AreaPage({grade,areaId,month,go}:{grade:Grade;areaId:string;month?:Month;go:(r:Route)=>void}){
   const area=grade.areas.find(a=>a.id===areaId)!; const [progress]=useGradeProgress(grade.id); const done=area.lessons.filter(l=>progress.completed.includes(l.id)).length;const pct=Math.round(done/area.lessons.length*100);const unlockedTestLessons=new Set(unlockedPracticeLessonIds(grade,area.id,progress.completed,progress.lastLesson));const test=getAreaTest(grade.id,area.id).filter(task=>unlockedTestLessons.has(task.lessonId));const testScore=progress.tests[area.id];
   const testTotal=(testScore?.total??test.length)||10;const assessment=area.assessment==="mini"?"Mini-provera":"Završni test";
-  return <main className="shell page"><button className="back-link" onClick={()=>go({kind:"grade",gradeId:grade.id})}><ArrowLeft/> {grade.id}. razred</button><div className="area-head"><p className="eyebrow">{area.review?"KRATKO OBNAVLJANJE":`${areaPeriod(area)} · OBLAST`}</p><h1>{area.title}</h1><p>{area.short}</p><div className="area-progress-line"><Progress value={pct}/><strong>{pct}%</strong></div><div className="area-status"><span>{done} od {area.lessons.length} završenih lekcija</span>{testScore&&<span><Trophy/> {assessment}: {testScore.last}/{testTotal} · najbolji {testScore.best}/{testTotal}</span>}</div></div>
-    <div className="lesson-grid">{area.lessons.map((l,i)=><button key={l.id} className={progress.completed.includes(l.id)?"lesson-card completed":"lesson-card"} onClick={()=>go({kind:"lesson",gradeId:grade.id,areaId:area.id,lessonId:l.id})}><span>{progress.completed.includes(l.id)?<Check/>:String(i+1).padStart(2,"0")}</span><div><small>{progress.completed.includes(l.id)?"ZAVRŠENO":`${calendarMonthLabel(calendarMonth(area,l))} · LEKCIJA ${i+1}`}</small><h2>{l.title}</h2></div><ChevronRight/></button>)}</div><div className="area-tools"><button className="area-tool-card smart" onClick={()=>go({kind:"smart",gradeId:grade.id,areaId:area.id})}><span><Brain/></span><div><small>DO 10 ZADATAKA</small><h2>Pametno vežbanje</h2><p>Vežbaj samo dostupne lekcije ove oblasti.</p></div><ChevronRight/></button>{!area.review&&test.length>0&&<button className="area-tool-card test" onClick={()=>go({kind:"test",gradeId:grade.id,areaId:area.id})}><span><GraduationCap/></span><div><small>{assessment.toUpperCase()} · {test.length} ZADATAKA</small><h2>{assessment}</h2><p>{testScore?`Najbolji rezultat: ${testScore.best}/${testTotal}`:"Proveri znanje iz obrađenih lekcija."}</p></div><ChevronRight/></button>}</div>
+  return <main className="shell page"><button className="back-link" onClick={()=>go({kind:"grade",gradeId:grade.id})}><ArrowLeft/> {grade.id}. razred</button><div className="area-head"><p className="eyebrow">{area.review?"KRATKO OBNAVLJANJE":`${month?calendarMonthLabel(month):areaPeriod(area)} · OBLAST`}</p><h1>{area.title}</h1><p>{area.short}</p><div className="area-progress-line"><Progress value={pct}/><strong>{pct}%</strong></div><div className="area-status"><span>{done} od {area.lessons.length} završenih lekcija</span>{testScore&&<span><Trophy/> {assessment}: {testScore.last}/{testTotal} · najbolji {testScore.best}/{testTotal}</span>}</div></div>
+    <div className="lesson-grid">{area.lessons.filter(l=>!month||calendarMonth(area,l)===month).map((l,i)=><button key={l.id} className={progress.completed.includes(l.id)?"lesson-card completed":"lesson-card"} onClick={()=>go({kind:"lesson",gradeId:grade.id,areaId:area.id,lessonId:l.id})}><span>{progress.completed.includes(l.id)?<Check/>:String(i+1).padStart(2,"0")}</span><div><small>{progress.completed.includes(l.id)?"ZAVRŠENO":`${calendarMonthLabel(calendarMonth(area,l))} · LEKCIJA ${i+1}`}</small><h2>{l.title}</h2></div><ChevronRight/></button>)}</div><div className="area-tools"><button className="area-tool-card smart" onClick={()=>go({kind:"smart",gradeId:grade.id,areaId:area.id})}><span><Brain/></span><div><small>DO 10 ZADATAKA</small><h2>Pametno vežbanje</h2><p>Vežbaj samo dostupne lekcije ove oblasti.</p></div><ChevronRight/></button>{!area.review&&test.length>0&&<button className="area-tool-card test" onClick={()=>go({kind:"test",gradeId:grade.id,areaId:area.id})}><span><GraduationCap/></span><div><small>{assessment.toUpperCase()} · {test.length} ZADATAKA</small><h2>{assessment}</h2><p>{testScore?`Najbolji rezultat: ${testScore.best}/${testTotal}`:"Proveri znanje iz obrađenih lekcija."}</p></div><ChevronRight/></button>}</div>
   </main>
 }
 
@@ -271,5 +272,5 @@ export default function HomePageRoot(){
   useEffect(()=>{const sync=()=>setRoute(parseRoute());sync();window.addEventListener("hashchange",sync);return()=>window.removeEventListener("hashchange",sync)},[]);
   const go=(r:Route)=>{window.location.hash=routeHash(r);setRoute(r);window.scrollTo({top:0,behavior:"smooth"})};
   const grade="gradeId" in route?grades.find(g=>g.id===route.gradeId):undefined;
-  return <ScriptProvider script={script}><div ref={rootRef}><Header route={route} go={go} script={script} setScript={setScript}/>{route.kind==="home"&&<HomePage go={go}/>} {route.kind==="grade"&&grade&&<GradePage key={grade.id} grade={grade} go={go}/>} {route.kind==="area"&&grade&&<AreaPage key={`${grade.id}-${route.areaId}`} grade={grade} areaId={route.areaId} go={go}/>} {route.kind==="lesson"&&grade&&<LessonPage key={`${grade.id}-${route.areaId}-${route.lessonId}`} grade={grade} areaId={route.areaId} lessonId={route.lessonId} go={go}/>} {route.kind==="smart"&&grade&&<SmartPractice key={`${grade.id}-${route.areaId}`} grade={grade} areaId={route.areaId} go={go}/>} {route.kind==="focus"&&grade&&<FocusPractice key={`${grade.id}-${route.lessonId}-${route.skill??""}`} grade={grade} lessonId={route.lessonId} skill={route.skill} go={go}/>} {route.kind==="test"&&grade&&<AreaTestPage key={`${grade.id}-${route.areaId}`} grade={grade} areaId={route.areaId} go={go}/>}<footer className="shell"><Logo go={go}/><p>Znanje raste svakim rešenim zadatkom.</p></footer></div></ScriptProvider>
+  return <ScriptProvider script={script}><div ref={rootRef}><Header route={route} go={go} script={script} setScript={setScript}/>{route.kind==="home"&&<HomePage go={go}/>} {route.kind==="grade"&&grade&&<GradePage key={grade.id} grade={grade} go={go}/>} {route.kind==="area"&&grade&&<AreaPage key={`${grade.id}-${route.areaId}`} grade={grade} areaId={route.areaId} month={route.month} go={go}/>} {route.kind==="lesson"&&grade&&<LessonPage key={`${grade.id}-${route.areaId}-${route.lessonId}`} grade={grade} areaId={route.areaId} lessonId={route.lessonId} go={go}/>} {route.kind==="smart"&&grade&&<SmartPractice key={`${grade.id}-${route.areaId}`} grade={grade} areaId={route.areaId} go={go}/>} {route.kind==="focus"&&grade&&<FocusPractice key={`${grade.id}-${route.lessonId}-${route.skill??""}`} grade={grade} lessonId={route.lessonId} skill={route.skill} go={go}/>} {route.kind==="test"&&grade&&<AreaTestPage key={`${grade.id}-${route.areaId}`} grade={grade} areaId={route.areaId} go={go}/>}<footer className="shell"><Logo go={go}/><p>Znanje raste svakim rešenim zadatkom.</p></footer></div></ScriptProvider>
 }

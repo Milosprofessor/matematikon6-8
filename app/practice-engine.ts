@@ -1,3 +1,4 @@
+import { months } from "./content/types";
 import type { ErrorCategory, Grade, Level, Task } from "./content";
 import { tasksForLesson } from "./content/enhancements";
 import { adaptiveLevel, KnowledgeAttempt, skillMasteries } from "./knowledge";
@@ -35,10 +36,9 @@ export function practiceGroupKey(grade:Grade,areaId:string){const area=grade.are
 export function practiceAreas(grade:Grade,areaId:string){const key=practiceGroupKey(grade,areaId);return grade.areas.filter(area=>(area.practiceGroupId??area.id)===key)}
 export function practiceLessons(grade:Grade,areaId:string){return practiceAreas(grade,areaId).flatMap(area=>area.lessons.map(lesson=>({area,lesson})))}
 function curriculumOrder(grade:Grade){
-  const monthRank={september:0,october:1};
   return grade.areas.flatMap((area,areaIndex)=>area.lessons.map((lesson,lessonIndex)=>{
     const month=lesson.month??area.month??"september";
-    return {id:lesson.id,monthRank:monthRank[month],areaOrder:area.review?-1:(area.monthOrder?.[month]??areaIndex),lessonIndex};
+    return {id:lesson.id,monthRank:months.indexOf(month),areaOrder:area.review?-1:(area.monthOrder?.[month]??areaIndex),lessonIndex};
   })).sort((a,b)=>a.monthRank-b.monthRank||a.areaOrder-b.areaOrder||a.lessonIndex-b.lessonIndex).map(item=>item.id);
 }
 export function unlockedPracticeLessonIds(grade:Grade,areaId:string,completed:string[],lastLesson:string|null){
