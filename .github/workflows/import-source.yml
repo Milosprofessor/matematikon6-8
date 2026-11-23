@@ -2,7 +2,8 @@ name: Import MatematikON 6–8 original source
 on:
   push:
     paths:
-      - "matematikon6-8_v19_GitHub_Codex.zip"
+      - "matematikon6-8_v19_GitHub_Codex*.zip"
+      - ".github/workflows/import-source.yml"
   workflow_dispatch:
 
 permissions:
@@ -25,7 +26,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          ARCHIVE="matematikon6-8_v19_GitHub_Codex.zip"
+          ARCHIVE="matematikon6-8_v19_GitHub_Codex(2).zip"
           PROJECT="matematikon6-8"
           EXPECTED_SHA="60c4b9f265c3596d0f9c071299f337820f12d5b0"
           test -f "$ARCHIVE" || { echo "Upload $ARCHIVE first"; exit 1; }
