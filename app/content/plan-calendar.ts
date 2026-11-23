@@ -1,4 +1,5 @@
 import type {Area,GradeId,Lesson,Month} from './types';
+import {semester8} from './semester8';
 import {semester7} from './semester7';
 import {semester6} from './semester6';
 import {grade6PlanAdditions,grade7PlanAdditions} from './plan-additions';
@@ -7,7 +8,7 @@ import {grade6PlanAdditions,grade7PlanAdditions} from './plan-additions';
  * later lessons remain in their source modules and saved progress is untouched. */
 export function plannedAreas(grade:GradeId,original:Area[]):Area[]{
  const byId=new Map(original.flatMap(a=>a.lessons.map(l=>[l.id,l] as const)));
- for(const lesson of grade===6?[...grade6PlanAdditions,...semester6]:grade===7?[...grade7PlanAdditions,...semester7]:[])byId.set(lesson.id,lesson);
+ for(const lesson of grade===6?[...grade6PlanAdditions,...semester6]:grade===7?[...grade7PlanAdditions,...semester7]:semester8)byId.set(lesson.id,lesson);
  const make=(areaId:string,ids:string[],month:Month,overrides:Partial<Area>={}):Area=>{
   const base=original.find(a=>a.id===areaId);
   return {...base,id:areaId,title:base?.title??'Direktna proporcionalnost',short:base?.short??'Odnosi veličina, proporcije i njihova primena.',...overrides,month,
@@ -43,5 +44,8 @@ export function plannedAreas(grade:GradeId,original:Area[]):Area[]{
  }
  return [make('obnavljanje-7',['kratko-obnavljanje-7'],'september'),
   make('slicnost',['razmera-duzi','samerljive-duzi','proporcionalnost','talesova-teorema','slicni-trouglovi','stavovi-slicnosti','primene-slicnosti','slicnost-pravougli'],'september'),
-  make('tacka-prava-ravan',['snalazenje-u-prostoru','tacka-prava-ravan-osnove','odnosi-pravih-ravni','dve-ravni','ortogonalnost','ortogonalna-projekcija','poliedar'],'october')];
+  make('tacka-prava-ravan',['snalazenje-u-prostoru','tacka-prava-ravan-osnove','odnosi-pravih-ravni','dve-ravni','ortogonalnost','ortogonalna-projekcija','poliedar'],'october'),
+  extend(make('linearne-jednacine',['pojam-linearne-jednacine','ekvivalentne-transformacije','resavanje-linearnih-jednacina','primena-linearnih-jednacina','svodjenje-jednacina','linearne-nejednacine'],'november'),'december',['slozene-nejednacine'],'Složenije linearne nejednačine i primene.'),
+  make('prizma',['prizma-elementi','prizma-mreza','prizma-zapremina'],'december',{title:'Prizma',short:'Elementi, mreža, površina i zapremina prave prizme.',assessment:'mini'}),
+  make('piramida',['piramida-elementi'],'december',{title:'Piramida',short:'Osnova, vrh, bočne strane i visina piramide.',assessment:'mini'})];
 }

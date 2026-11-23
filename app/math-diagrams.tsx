@@ -21,6 +21,26 @@ function fitTriangle(a?:number,b?:number,c?:number,alpha?:number,beta?:number):P
 export function PreciseDiagram({diagram,task=false,captionOverride}:{diagram:TaskDiagram;task?:boolean;captionOverride?:string|null}){
  const Frame=(props:Parameters<typeof DiagramFrame>[0])=><DiagramFrame {...props} caption={task?'Poznate podatke čitaj iz oznaka; crtež služi za prepoznavanje odnosa.':captionOverride===undefined?props.caption:captionOverride??undefined}/>;
  const script=useCurrentScript();const l='labels' in diagram?diagram.labels??{}:{};
+ if(diagram.type==='semester-figure'){
+  if(diagram.variant==='pentagon'){
+   const center:Point=[300,150];
+   const vertices:Point[]=Array.from({length:5},(_,i)=>[300+112*Math.sin(i*2*Math.PI/5),150-112*Math.cos(i*2*Math.PI/5)]);
+   return <Frame title="Dijagonale iz temena A petougla"><path d={polygon(vertices)}/>{[2,3].map(i=><path key={i} className="accent" d={line(vertices[0],vertices[i])}/>)}{vertices.map((pt,i)=><Vertex key={i} p={pt} name={'ABCDE'[i]} center={center}/>)}</Frame>;
+  }
+  if(diagram.variant==='prism-net'){
+   return <Frame title="Mreža prave prizme sa kvadratnom osnovom">
+    <path className="plane-fill" d="M220 30h65v65h-65z M220 185h65v65h-65z"/>
+    {[0,1,2,3].map(i=><rect key={i} x={155+65*i} y="95" width="65" height="90" fill="none" stroke="currentColor"/>)}
+    <Text p={[247,70]}>B</Text><Text p={[247,225]}>B</Text><Text p={[433,146]}>H</Text>
+   </Frame>;
+  }
+  return <Frame title="Pravilna četvorostrana piramida sa visinom SO">
+   <path className="shape" d="M135 235H350L435 165L285 30Z M285 30L350 235"/>
+   <path className="dashed" d="M135 235L220 165H435 M220 165L285 30"/>
+   <path className="accent dashed" d="M285 30V200"/><circle cx="285" cy="200" r="3"/>
+   <Text p={[285,23]}>S</Text><Text p={[290,208]}>O</Text><Text p={[300,120]}>H</Text>
+  </Frame>;
+ }
  if(diagram.type==='number-line'){
   const span=Math.max(1,diagram.max-diagram.min),x=(v:number)=>55+(v-diagram.min)*490/span,step=Math.max(1,Math.ceil(span/10));const ticks=[];for(let v=diagram.min;v<=diagram.max;v+=step)ticks.push(v);
   const iv=diagram.interval;return <Frame title="Brojna prava" viewBox="0 0 600 180"><path d="M35 95 H565 M557 88 L565 95 L557 102"/>{ticks.map(v=><g key={v}><path d={'M'+x(v)+' 87 V103'}/><Text p={[x(v),128]}>{String(v).replace('.',',')}</Text></g>)}{diagram.divisions&&Array.from({length:Math.round(span*diagram.divisions)+1},(_,i)=>{const value=diagram.min+i/diagram.divisions!;return <path key={'minor'+i} className="minor-tick" d={'M'+x(value)+' 90 V100'}/>})}{iv&&<><path className="accent" d={'M'+x(iv.start)+' 95 H'+x(iv.end)}/>{[[iv.start,iv.closedStart],[iv.end,iv.closedEnd]].map(([v,closed],i)=><circle key={i} className={closed?'closed-end':'open-end'} cx={x(Number(v))} cy="95" r="7"/>)}</>}{diagram.points.map((p,i)=><g key={i}><circle className="accent-dot" cx={x(p.value)} cy="95" r="6"/><Text p={[x(p.value),60]}>{localizeMathText(p.label,script)}</Text></g>)}{diagram.arrows?.map((ar,i)=>{const y=34+i*17,end=x(ar.to),start=x(ar.from),dir=end>start?1:-1;return <g key={i}><path className="accent" d={'M'+start+' '+y+' H'+end+' M'+(end-8*dir)+' '+(y-5)+' L'+end+' '+y+' L'+(end-8*dir)+' '+(y+5)}/>{ar.label&&<Text p={[(start+end)/2,y-9]}>{localizeMathText(ar.label,script)}</Text>}</g>})}</Frame>;
