@@ -1,3 +1,7 @@
+> **NE KORISTITI — PLAN JE ZAMENJEN.** Vlasnik je ispravio zahtev: prvo treba završiti PRVO polugodište 2026/27. Važeći plan je u grani `feature/prvo-polugodiste-2026-27`, fajl `PLAN_PRVO_POLUGODISTE_2026_27.md`. Ne pokretati razvoj drugog polugodišta na osnovu ovog dokumenta.
+
+---
+
 # MatematikON 6–8 — razvoj drugog polugodišta, 2026/2027.
 
 ## Opseg i cilj
