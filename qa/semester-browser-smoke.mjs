@@ -14,7 +14,7 @@ const screens = [
   {name:"Android 360x800",width:360,height:800,touch:true},
   {name:"desktop 1366x768",width:1366,height:768,touch:false}
 ];
-const browser = await chromium.launch({headless:true});
+const browser = await chromium.launch({headless:true,channel:"chrome",args:["--no-sandbox"]});
 let page;
 const failures=[];
 const results=[];
