@@ -11,7 +11,10 @@ function renderSubscripts(source:string){
 }
 
 export function mathHtml(source:string){
-  let value=escapeHtml(normalizeRawRoots(source));
+  // Legacy examples also contain inline quotients such as 3/8 or x/2.
+  // Match complete mathematical operands, leaving prose and unit names alone.
+  const fractions=source.replace(/(?<![\p{L}\d/])(\d+(?:[,.]\d+)?|[abcdnpqxy])\/(\d+(?:[,.]\d+)?|[abcdnpqxy])(?![\p{L}\d/])/gu,"[[frac:$1|$2]]");
+  let value=escapeHtml(normalizeRawRoots(fractions));
   for(let pass=0;pass<3;pass++){
     value=value.replace(/\[\[frac:([^\[\]|]+)\|([^\[\]]+)\]\]/g,"<span class='frac'><span>$1</span><span>$2</span></span>");
     value=value.replace(/\[\[sqrt:([^\[\]]+)\]\]/g,"<span class='sqrt'><span>$1</span></span>");

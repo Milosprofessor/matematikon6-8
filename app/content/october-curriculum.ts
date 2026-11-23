@@ -238,7 +238,7 @@ const linearneJednacine: Area = {
   assessment: "mini",
   lessons: [
     equationLesson({
-      id: "pojam-linearne-jednacine", title: "Pojam linearne jednačine", intro: "Jednačina je jednakost sa nepoznatom. Rešenje je broj koji jednakost čini tačnom.",
+      id: "pojam-linearne-jednacine", title: "Pojam linearne jednačine", intro: "Linearni izraz ima oblik ax+b, gde su a i b dati brojevi. Izjednačavanjem dva izraza dobijamo jednačinu. Rešenje je broj za koji je ta jednakost tačna.",
       rules: ["Leva i desna strana moraju imati jednake vrednosti za rešenje.", "Proveru radimo zamenom nepoznate dobijenim brojem.", "Linearna jednačina sa jednom nepoznatom može se svesti na oblik ax+b=0."],
       formulas: ["ax+b=0", "a≠0", "x=−[[frac:b|a]]"], examples: ["x+5=12 ima rešenje x=7.", "3x=18 ima rešenje x=6.", "2x+1=2x+1 važi za svaki realan x."],
       solved: { question: "Da li je x=4 rešenje jednačine 3x−2=10?", steps: ["Uvrsti x=4 u levu stranu.", "3·4−2=12−2=10.", "Leva strana jednaka je desnoj, pa x=4 jeste rešenje."] },

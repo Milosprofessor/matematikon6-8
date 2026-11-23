@@ -47,19 +47,30 @@ export const areaTests: Record<GradeId,Record<string,AreaTestTask[]>> = {
   ],...octoberAreaTests[8]}
 };
 
-export function getAreaTest(gradeId:GradeId,areaId:string):AreaTestTask[]{
+export function getAreaTest(gradeId:GradeId,areaId:string,unlocked?:ReadonlySet<string>):AreaTestTask[]{
  const area=grades.find(grade=>grade.id===gradeId)?.areas.find(area=>area.id===areaId);if(!area)return [];
- const lessonIds=new Set(area.lessons.map(lesson=>lesson.id));
+ const lessons=area.lessons.filter(l=>!unlocked||unlocked.has(l.id));
+ const lessonIds=new Set(lessons.map(lesson=>lesson.id));
  let test=(areaTests[gradeId]?.[areaId]??[]).filter(task=>lessonIds.has(task.lessonId));
- // Reuse authored tasks for newly available areas and for spatial lessons
- // whose old test covered later topics. No second task generator is needed.
- if(!test.length||areaId==='tacka-prava-ravan'){
-  const pool=area.lessons.flatMap(lesson=>lessonWorkTasks(lesson.id,tasksForLesson(lesson.id,lesson.tasks)).map(task=>({...task,lessonId:lesson.id})));
+ // Include the later lessons of continuing areas. Select after applying the
+ // student's progress so the first eligible lesson also has a usable check.
+ if(!test.length||areaId==='tacka-prava-ravan'||area.lessons.some(l=>l.month==='november'||l.month==='december')){
   const chosen:AreaTestTask[]=[];
-  for(const lesson of area.lessons){const candidate=pool.find(task=>task.lessonId===lesson.id&&task.level==='basic');if(candidate)chosen.push(candidate);}
-  for(const level of ['medium','advanced'] as const){const candidate=pool.find(task=>task.level===level&&!chosen.some(t=>t.id===task.id));if(candidate)chosen.push(candidate);}
-  for(const candidate of pool)if(chosen.length<10&&!chosen.some(t=>t.id===candidate.id))chosen.push(candidate);
-  test=chosen.slice(0,10);
+  const levels=["basic","medium","advanced"] as const;
+  const pools=lessons.map(lesson=>{
+   const authored=test.filter(t=>t.lessonId===lesson.id);
+   const work=lessonWorkTasks(lesson.id,tasksForLesson(lesson.id,lesson.tasks));
+   return [...authored,...work.map(task=>({...task,lessonId:lesson.id}))];
+  });
+  for(let round=0;round<10&&chosen.length<10;round++){
+   for(const [index,pool] of pools.entries()){
+    const remaining=pool.filter(task=>!chosen.some(t=>t.id===task.id));
+    const next=remaining.find(t=>t.level===levels[(index+round)%3])??remaining[0];
+    if(next)chosen.push(next);
+    if(chosen.length===10)break;
+   }
+  }
+  test=chosen;
  }
  return test.map(task=>({...taskWithVisual(task.lessonId,task),lessonId:task.lessonId}));
 }

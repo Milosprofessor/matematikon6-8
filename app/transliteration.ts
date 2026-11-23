@@ -19,6 +19,12 @@ const latinToken=/[A-Za-zČĆŽŠĐčćžšđ]+(?:_[A-Za-zČĆŽŠĐčćžšđ0-
 function isProtectedNotation(token:string,mathMode:boolean,value:string,offset:number){
   if(/^[A-Za-z](?:_[A-Za-z0-9]+)$/.test(token))return true;
   if(setSymbols.has(token))return true;
+  // Products such as ax or bd can start an expression or a fraction field.
+  // Check adjacent symbols without matching an ordinary word beside a space.
+  if(mathMode && /^[abcdkmnpqstxyz]{2,4}$/.test(token)){
+    const left=value.slice(0,offset), right=value.slice(offset+token.length);
+    if(/[0-9=+−·(|:]$/.test(left)||/^[=+−·^²³|)\]]/.test(right))return true;
+  }
   if(measurementUnits.test(token))return true;
   // „s” je u običnom tekstu predlog, a merna jedinica samo uz broj.
   if(token==="s"){

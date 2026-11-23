@@ -17,10 +17,10 @@ export const grade6PlanAdditions:Lesson[] = [
       "n = [[frac:n|1]]",
       "−(−r)=r"
     ],
-    "examples": [],
+    "examples": ["Broj 0 može se zapisati kao [[frac:0|9]], jer je 0:9=0."],
     "solved": {
-      "question": "",
-      "steps": []
+      "question": "Kako zapisati −2 kao razlomak sa imeniocem 6?",
+      "steps": ["Iz −2=[[frac:x|6]] sledi x=−2·6.", "Dobijamo −2=[[frac:−12|6]]."]
     },
     "tasks": [
       {
@@ -237,10 +237,10 @@ export const grade6PlanAdditions:Lesson[] = [
       "Apsolutna vrednost razlomka = apsolutna vrednost brojioca : apsolutna vrednost imenioca (imenilac ≠ 0)",
       "|0|=0"
     ],
-    "examples": [],
+    "examples": ["|−[[frac:3|8]]|=[[frac:3|8]], jer merimo rastojanje od nule."],
     "solved": {
-      "question": "",
-      "steps": []
+      "question": "Koja dva racionalna broja imaju apsolutnu vrednost 1,25?",
+      "steps": ["Obeleži tačke udaljene 1,25 jedinica od nule.", "Jedna je desno na 1,25, a druga levo na −1,25."]
     },
     "tasks": [
       {
@@ -465,10 +465,10 @@ export const grade6PlanAdditions:Lesson[] = [
       "p ∥ q ⇒ naizmenični unutrašnji uglovi su jednaki",
       "p ∥ q ⇒ α+β=180° za unutrašnje uglove sa iste strane"
     ],
-    "examples": [],
+    "examples": ["Naizmenični unutrašnji ugao uz dati ugao od 68° takođe ima 68°."],
     "solved": {
-      "question": "",
-      "steps": []
+      "question": "Transverzala seče dve paralelne prave. Jedan unutrašnji ugao je 68°. Koliki je unutrašnji ugao sa iste strane?",
+      "steps": ["Zbir ova dva ugla je 180°.", "Drugi ugao je 180°−68°=112°."]
     },
     "tasks": [
       {
@@ -672,10 +672,10 @@ export const grade7PlanAdditions:Lesson[] = [
       "x^2=r, r<0 ⇒ nema realnih rešenja",
       "(x−a)^2=r, r≥0 ⇒ x−a=±[[sqrt:r]]"
     ],
-    "examples": [],
+    "examples": ["Za x²=0 jedino rešenje je 0, jer svaki drugi realan broj ima pozitivan kvadrat."],
     "solved": {
-      "question": "",
-      "steps": []
+      "question": "Reši (x−1)²=9 u skupu realnih brojeva.",
+      "steps": ["Broj x−1 može biti 3 ili −3.", "Iz x−1=3 sledi x=4, a iz x−1=−3 sledi x=−2."]
     },
     "month": "october",
     "prerequisites": [
@@ -914,10 +914,10 @@ export const grade7PlanAdditions:Lesson[] = [
       "k=[[frac:y|x]], x≠0",
       "x=[[frac:y|k]], k≠0"
     ],
-    "examples": [],
+    "examples": ["Za stalnu brzinu od 60 km/h za 1,5 h prelazimo 60·1,5=90 km."],
     "solved": {
-      "question": "",
-      "steps": []
+      "question": "Pet metara platna košta 1800 dinara. Koliko košta 3,5 m po istoj ceni po metru?",
+      "steps": ["Jedan metar košta 1800:5=360 dinara.", "Za 3,5 m plaćamo 3,5·360=1260 dinara."]
     },
     "interactive": "direct-proportion",
     "tasks": [
@@ -1131,10 +1131,10 @@ export const grade7PlanAdditions:Lesson[] = [
       "y=kx",
       "O(0,0)"
     ],
-    "examples": [],
+    "examples": ["Tačka B(−3,6) je na istoj pravoj, jer je 6=−2·(−3)."],
     "solved": {
-      "question": "",
-      "steps": []
+      "question": "Kako nacrtati grafik y=−2x?",
+      "steps": ["Za x=0 dobijamo y=0. Za x=2 dobijamo y=−4.", "Ucrtaj O(0,0) i A(2,−4) pa povuci pravu kroz njih."]
     },
     "diagram": "direct-proportion",
     "tasks": [
@@ -1387,10 +1387,10 @@ export const grade7PlanAdditions:Lesson[] = [
       "a:b=c:d, b≠0, d≠0",
       "a·d=b·c"
     ],
-    "examples": [],
+    "examples": ["Iz 5:2=15:x sledi 5x=30, pa je x=6."],
     "solved": {
-      "question": "",
-      "steps": []
+      "question": "Nađi x ako je 3:8=x:20.",
+      "steps": ["Unakrsnim množenjem dobijaš 8x=60.", "x=7,5. Provera: 3·20=8·7,5."]
     },
     "tasks": [
       {
@@ -1609,10 +1609,10 @@ export const grade7PlanAdditions:Lesson[] = [
       "a:b:c=p:q:r",
       "a=px, b=qx, c=rx"
     ],
-    "examples": [],
+    "examples": ["Za a:b:c=1:2:5 i zbir 32 jedan deo je 32:8=4. Veličine su 4, 8 i 20."],
     "solved": {
-      "question": "",
-      "steps": []
+      "question": "Ako je a:b:c=2:3:4 i b=18, pronađi a i c.",
+      "steps": ["Tri dela vrede 18, pa jedan deo vredi 6.", "a=2·6=12, a c=4·6=24."]
     },
     "tasks": [
       {
@@ -1825,10 +1825,10 @@ export const grade7PlanAdditions:Lesson[] = [
     "formulas": [
       "x=[[frac:ukupno|zbir odnosa]]"
     ],
-    "examples": [],
+    "examples": ["Za uglove trougla u odnosu 2:3:5 jedan deo je 180°:10=18°. Uglovi su 36°, 54° i 90°."],
     "solved": {
-      "question": "",
-      "steps": []
+      "question": "Podeli 2700 dinara u odnosu 2:3:4.",
+      "steps": ["Zbir je 9 delova. Jedan deo vredi 2700:9=300 dinara.", "Dodeli 600, 900 i 1200 dinara. Njihov zbir je 2700."]
     },
     "tasks": [
       {

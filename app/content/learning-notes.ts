@@ -351,7 +351,8 @@ for(const lesson of grades.flatMap(g=>g.areas.flatMap(a=>a.lessons))){
  const theory=learningByLesson[lesson.id];
  noteLayouts[lesson.id]=[
   p(lesson.title,'',{text:lesson.intro,definition:true}),
-  p('Pravilo i postupak','',{text:lesson.rules.slice(0,2).join(' '),f:theory.extraFormulas.map((_,i)=>i),v:lessonVisuals(lesson.id).map((_,i)=>i),note:true}),
+  p('Pravilo','',{text:lesson.rules[0],f:theory.extraFormulas.map((_,i)=>i),v:lessonVisuals(lesson.id).map((_,i)=>i)}),
+  p('Postupak','',{text:lesson.rules[1],note:true}),
  ];
 }
 
