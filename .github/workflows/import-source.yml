@@ -1,0 +1,51 @@
+name: Import MatematikON 6–8 original source
+on:
+  push:
+    paths:
+      - "matematikon6-8_v19_GitHub_Codex.zip"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-matematikon68
+  cancel-in-progress: false
+
+jobs:
+  import:
+    if: github.repository == 'Milosprofessor/matematikon6-8'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Restore original source and Git history
+        shell: bash
+        run: |
+          set -euo pipefail
+          ARCHIVE="matematikon6-8_v19_GitHub_Codex.zip"
+          PROJECT="matematikon6-8"
+          EXPECTED_SHA="60c4b9f265c3596d0f9c071299f337820f12d5b0"
+          test -f "$ARCHIVE" || { echo "Upload $ARCHIVE first"; exit 1; }
+          TMP="$RUNNER_TEMP/matematikon-import"
+          mkdir -p "$TMP"
+          unzip -q "$ARCHIVE" -d "$TMP"
+          SOURCE="$TMP/$PROJECT"
+          test -f "$SOURCE/migration/original-history.bundle"
+          python3 "$SOURCE/migration/verify-original.py"
+          BUNDLE="$SOURCE/migration/original-history.bundle"
+          git bundle verify "$BUNDLE"
+          BUNDLE_SHA="$(git bundle list-heads "$BUNDLE" | awk '$2=="refs/heads/main" {print $1}')"
+          test "$BUNDLE_SHA" = "$EXPECTED_SHA"
+          git fetch "$BUNDLE" refs/heads/main:refs/heads/original-sites-history
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git merge --allow-unrelated-histories --no-ff --no-commit original-sites-history
+          cp -a "$SOURCE/." .
+          rm -f migration/original-history.bundle
+          git rm -- "$ARCHIVE"
+          git add -A
+          git commit -m "import: original MatematikON 6-8 v19 files and history"
+          git push origin HEAD:main
