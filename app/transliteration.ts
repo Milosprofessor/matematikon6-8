@@ -1,0 +1,74 @@
+export type ScriptChoice = "cyrl" | "latn";
+
+const pairs: Array<[string,string]> = [
+  ["DŽ","Џ"],["Dž","Џ"],["dž","џ"],["LJ","Љ"],["Lj","Љ"],["lj","љ"],["NJ","Њ"],["Nj","Њ"],["nj","њ"],
+  ["A","А"],["B","Б"],["C","Ц"],["Č","Ч"],["Ć","Ћ"],["D","Д"],["Đ","Ђ"],["E","Е"],["F","Ф"],["G","Г"],["H","Х"],["I","И"],["J","Ј"],["K","К"],["L","Л"],["M","М"],["N","Н"],["O","О"],["P","П"],["R","Р"],["S","С"],["Š","Ш"],["T","Т"],["U","У"],["V","В"],["Z","З"],["Ž","Ж"],
+  ["a","а"],["b","б"],["c","ц"],["č","ч"],["ć","ћ"],["d","д"],["đ","ђ"],["e","е"],["f","ф"],["g","г"],["h","х"],["i","и"],["j","ј"],["k","к"],["l","л"],["m","м"],["n","н"],["o","о"],["p","п"],["r","р"],["s","с"],["š","ш"],["t","т"],["u","у"],["v","в"],["z","з"],["ž","ж"]
+];
+
+export function toCyrillic(value:string){
+  let out=value;
+  for(const [latin,cyrillic] of pairs) out=out.split(latin).join(cyrillic);
+  return out;
+}
+
+const setSymbols=new Set(["N","Z","Q","R"]);
+const measurementUnits=/^(?:mm|cm|dm|km|mg|kg|ml|cl|dl|min|m|g|l|h)(?:\^?[23]|[²³])?$/;
+const latinToken=/[A-Za-zČĆŽŠĐčćžšđ]+(?:_[A-Za-zČĆŽŠĐčćžšđ0-9]+)?(?:\^?[23]|[²³₀-₉0-9])?/g;
+
+function isProtectedNotation(token:string,mathMode:boolean,value:string,offset:number){
+  if(/^[A-Za-z](?:_[A-Za-z0-9]+)$/.test(token))return true;
+  if(setSymbols.has(token))return true;
+  if(measurementUnits.test(token))return true;
+  // „s” je u običnom tekstu predlog, a merna jedinica samo uz broj.
+  if(token==="s"){
+    if(mathMode)return true;
+    const before=value.slice(0,offset).trimEnd();
+    const after=value.slice(offset+token.length).trimStart();
+    return /[0-9)]$/.test(before)||/^[0-9(]/.test(after);
+  }
+  const beforeToken=value.slice(0,offset).trimEnd();
+  const afterToken=value.slice(offset+token.length).trimStart();
+  const touchesMath=/[=<>≤≥∥∈∉⊂√π·+−/|([{^△∼]$/.test(beforeToken)||/^[=<>≤≥∥∈∉⊂√π·+−/|)\]}^△∼]/.test(afterToken);
+  const touchesRatio=/^[A-Za-z]$/.test(token)&&(value.slice(0,offset).endsWith(":")||value.slice(offset+token.length).startsWith(":"));
+  if(/^[IUO]$/.test(token)&&/[A-ZČĆŽŠĐ]{2,}[\s,]*$/.test(beforeToken)&&/^[A-ZČĆŽŠĐ]{2,}/.test(afterToken))return false;
+  if(touchesRatio)return true;
+  if(/^(?:sin|cos|tg|ctg|min|max)$/.test(token))return true;
+  if(/^[a-z]$/.test(token)&&touchesMath)return true;
+  // Višeslovni matematički zapis (npr. px u a=px) čuvamo samo kada
+  // neposredno sledi operator. Obične reči poput „je” ispred formule
+  // moraju da promene pismo.
+  if(/^[a-z]{2,4}$/.test(token)&&/[=<>≤≥∥∈∉⊂√·+−/|([{^△∼]$/.test(beforeToken))return true;
+  if(/^[A-Z]{1,4}(?:[₀-₉0-9])?$/.test(token)){
+    const namedNotation=/(?:odredi|izračunaj|označi|tačk(?:a|e|u)|duž(?:i|ima)?|stranic(?:a|e|u|i)|ug(?:ao|la|lu)|temen(?:a|u)|koordinat(?:a|e|u)|trougl(?:a|u|ovi)|stav)\b[^.!?]{0,40}$/i.test(beforeToken);
+    if(touchesMath||namedNotation)return true;
+  }
+  if(/^[a-z]$/.test(token)){
+    // Srpski veznik „i” je čest odmah posle matematičkih imenica
+    // (npr. „stranica i uglova”), pa ne sme biti zaštićen kao promenljiva.
+    if(token==="i"||token==="u"||token==="o")return false;
+    const namedAsVariable=/(?:odredi|izračunaj|nađi|znak|broj(?:a|u)?|promenljiv(?:a|e|u)|stranic(?:a|e|u)|dužin(?:a|e|u)|visin(?:a|e|u)|koordinat(?:a|e|u)|tačk(?:a|e|u)|kvadrat(?:a|u)?|oznak(?:a|e|u))\s*$/i.test(beforeToken);
+    if(touchesMath||namedAsVariable)return true;
+    if(token==="a"&&/\s$/.test(value.slice(0,offset))&&/^\s/.test(value.slice(offset+1)))return false;
+  }
+  if(!mathMode)return false;
+  if(/^[A-ZČĆŽŠĐ](?:\^?[23]|[²³₀-₉0-9])?$/.test(token))return true;
+  if(/^[A-ZČĆŽŠĐ]{2,4}(?:\^?[23]|[²³₀-₉0-9])?$/.test(token))return true;
+  if(/^[a-hj-tv-z](?:\^?[23]|[²³₀-₉0-9])?$/.test(token))return true;
+  return false;
+}
+
+function localizePreservingNotation(value:string,mathMode:boolean){
+  return value.replace(latinToken,(token,offset)=>isProtectedNotation(token,mathMode,value,offset)?token:toCyrillic(token));
+}
+
+export function localize(value:string,script:ScriptChoice){return script==="cyrl"?localizePreservingNotation(value,false):value}
+
+export function localizeMathText(value:string,script:ScriptChoice){
+  if(script==="latn")return value;
+  const masked=value.replace(/\[\[frac:/g,"[[FRAC:").replace(/\[\[sqrt:/g,"[[SQRT:");
+  return localizePreservingNotation(masked,true)
+    .replace(/\[\[FRAC:/g,"[[frac:")
+    .replace(/\[\[SQRT:/g,"[[sqrt:")
+    .replace(/_([A-Za-zČĆŽŠĐčćžšđ]+)/g,(_,sub:string)=>`_${sub.length===1?sub:toCyrillic(sub)}`);
+}

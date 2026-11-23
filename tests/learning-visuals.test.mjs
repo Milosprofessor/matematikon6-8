@@ -1,0 +1,80 @@
+import assert from 'node:assert/strict';
+import test,{after} from 'node:test';
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {createServer} from 'vite';
+import {fileURLToPath} from 'node:url';
+import React from 'react';
+import {renderToStaticMarkup} from 'react-dom/server';
+const root=fileURLToPath(new URL('..',import.meta.url)),vite=await createServer({root,configFile:false,appType:'custom',resolve:{alias:{'@':root}},server:{middlewareMode:true,hmr:false}});after(()=>vite.close());
+const {grades}=await vite.ssrLoadModule('/app/content/index.ts'),{learningByLesson}=await vite.ssrLoadModule('/app/content/learning.ts'),{lessonVisuals}=await vite.ssrLoadModule('/app/content/lesson-visuals.ts'),{tasksForLesson}=await vite.ssrLoadModule('/app/content/enhancements.ts'),{lessonWorkTasks}=await vite.ssrLoadModule('/app/content/october-work.ts'),{taskWithVisual}=await vite.ssrLoadModule('/app/content/task-visuals.ts'),{PreciseDiagram}=await vite.ssrLoadModule('/app/math-diagrams.tsx'),{PythagorasDiagram}=await vite.ssrLoadModule('/app/pythagoras-diagram.tsx'),{LessonLearningContent}=await vite.ssrLoadModule('/app/lesson-learning.tsx'),{ScriptProvider}=await vite.ssrLoadModule('/app/i18n.tsx');
+const all=grades.flatMap(g=>g.areas.flatMap(a=>a.lessons.map(l=>({grade:g,area:a,lesson:l}))));
+const fixture=JSON.parse(await readFile(new URL('./fixtures/original-lesson-work.json',import.meta.url),'utf8'));
+const render=(C,props,script='latn')=>renderToStaticMarkup(React.createElement(ScriptProvider,{script},React.createElement(C,props)));
+const drawing=d=>render(d.type==='pythagoras'?PythagorasDiagram:PreciseDiagram,{diagram:d,label:'Crtež',caption:'Crtež',task:true});
+const point=(html,name)=>{const match=html.match(new RegExp('data-vertex="'+name+'" cx="([^"]+)" cy="([^"]+)"'));assert.ok(match,name);return [+match[1],+match[2]];};
+const distance=(a,b)=>Math.hypot(a[0]-b[0],a[1]-b[1]);
+const parallel=(a,b,c,d)=>Math.abs((b[0]-a[0])*(d[1]-c[1])-(b[1]-a[1])*(d[0]-c[0]))<1e-7;
+test('svih 59 aktivnih lekcija imaju objašnjen cilj, postupak, razlog i čestu grešku u oba pisma',()=>{
+ assert.equal(all.length,59);for(const {lesson:l} of all){const content=learningByLesson[l.id];assert.ok(content?.idea.length&&content.steps.length&&content.why&&content.caution,l.id);for(const script of ['latn','cyrl']){const html=render(LessonLearningContent,{lesson:l},script);assert.doesNotMatch(html,/\[\[(?:frac|sqrt):|NaN|undefined/);assert.doesNotMatch(html,/sourcePages|Udžbenik|Operativni plan/);assert.match(html,/learning-compact/);}}
+});
+test('svaki postojeći aktivni zadatak čuva ID, pitanje, odgovor, nivo i tok rada; izuzetak je preciziranje kose duži',()=>{
+ let count=0;for(const original of fixture){const current=all.find(x=>x.grade.id===original.grade&&x.lesson.id===original.lessonId);if(!current)continue;const tasks=lessonWorkTasks(current.lesson.id,tasksForLesson(current.lesson.id,current.lesson.tasks));assert.deepEqual(tasks.map(t=>t.id),original.tasks.map(t=>t.id));for(let i=0;i<10;i++){const expected=original.tasks[i],actual=tasks[i];for(const key of Object.keys(expected)){if(expected.id==='o8-pro-3'&&['math','hint','solution'].includes(key))continue;assert.deepEqual(actual[key],expected[key],expected.id+'/'+key);}count++;}}assert.equal(count,500);
+});
+test('objašnjenja i vizuelizacije 7. razreda ne uvode koren pre lekcije o korenu',()=>{
+ const g=grades.find(g=>g.id===7),lessons=g.areas.flatMap(a=>a.lessons),at=lessons.findIndex(l=>l.id==='kvadratni-koren');for(const l of lessons.slice(0,at)){const c=learningByLesson[l.id];assert.doesNotMatch(JSON.stringify([c.aim,c.idea,c.steps,c.why,c.caution,c.extraFormulas,lessonVisuals(l.id)]),/koren|sqrt:|√/i,l.id);}
+});
+test('SVG za svaku lekciju i sve varijante ima konačne koordinate i čitljive matematičke oznake',()=>{
+ for(const {lesson:l} of all){const diagrams=[...lessonVisuals(l.id).map(v=>v.diagram),...tasksForLesson(l.id,l.tasks).map(t=>t.diagram).filter(Boolean)];for(const d of diagrams){const html=drawing(d);assert.match(html,/<svg/);assert.doesNotMatch(html,/NaN|Infinity|undefined|\[\[(?:sqrt|frac):/);}}
+});
+test('Tales u više brojnih varijanti čuva paralelnost, dati odnos i sve poznate dužine',()=>{
+ const l=all.find(x=>x.lesson.id==='talesova-teorema').lesson;const tasks=tasksForLesson(l.id,l.tasks);
+ for(const t of tasks.filter(t=>t.diagram?.type==='tales'&&['triangle','rays'].includes(t.diagram.variant))){const d=t.diagram,h=drawing(d),isRays=d.variant==='rays',[origin,outer1,outer2,inner1,inner2]=isRays?['O','C','D','A','B']:['A','B','C','M','N'],A=point(h,origin),B=point(h,outer1),C=point(h,outer2),M=point(h,inner1),N=point(h,inner2);assert.ok(parallel(M,N,B,C),t.id);assert.ok(Math.abs(distance(A,M)/distance(A,B)-distance(A,N)/distance(A,C))<1e-8,t.id);const labels=d.labels;if(!isRays&&labels.AB&&labels.AC)assert.ok(Math.abs(distance(A,B)/distance(A,C)-Number(labels.AB)/Number(labels.AC))<1e-7,t.id);}
+ const h=drawing({type:'tales',variant:'trapezoid',labels:{AO:'3',OC:'6',BO:'4'}}),A=point(h,'A'),B=point(h,'B'),C=point(h,'C'),D=point(h,'D');assert.ok(parallel(A,B,C,D));assert.ok(Math.abs(distance(A,C)/distance(B,D)-9/12)<1e-8);
+});
+test('rotacija i ogledanje sličnih trouglova čuvaju sve tri razmere i redosled temena',()=>{
+ for(const variant of ['upright','rotated','mirrored']){const h=drawing({type:'similarity',variant,labels:{AB:'3',BC:'4',AC:'5',DE:'6',EF:'8',DF:'10'}});for(const [a,b,c,d] of [['A','B','D','E'],['B','C','E','F'],['A','C','D','F']])assert.ok(Math.abs(distance(point(h,c),point(h,d))/distance(point(h,a),point(h,b))-2)<1e-8,variant);assert.ok(Math.abs(distance(point(h,'A'),point(h,'B'))/distance(point(h,'B'),point(h,'C'))-.75)<1e-8);}
+});
+test('crtež zavisi od poznatih podataka, nikad od upisanog odgovora ili rešenja',()=>{
+ for(const {lesson:l} of all)for(const t of tasksForLesson(l.id,l.tasks)){if(t.id==='o8-pro-3')continue;assert.deepEqual(taskWithVisual(l.id,{...t,answer:'TAJNI_ODGOVOR',solution:'TAJNO_REŠENJE'}).diagram,taskWithVisual(l.id,t).diagram,t.id);}
+});
+test('oznaka obima i razlika osnovica ne postaju lažne poznate dužine',()=>{
+ const sample={id:'qa',prompt:'Odredi odnos.',math:'△ABC∼△DEF, O_ABC=12, O_DEF=24',answer:'2',solution:'',hint:'',level:'basic',skill:'Razmera',choices:['2']};
+ const d=taskWithVisual('slicni-trouglovi',sample).diagram;assert.ok(d);assert.equal(d.labels.BC,undefined);assert.equal(d.labels.EF,undefined);const html=drawing(d);assert.ok(Math.abs(distance(point(html,'D'),point(html,'E'))/distance(point(html,'A'),point(html,'B'))-2)<1e-8);
+ const trapez=taskWithVisual('pitagora-trapez',{...sample,prompt:'Odredi visinu jednakokrakog trapeza.',math:'a−b=12, c=10'}).diagram;assert.equal(trapez.labels.b,undefined);assert.equal(trapez.labels.diff,'12');
+});
+test('visina na hipotenuzu prati zadate h,p i a,c bez otkrivanja nepoznate oznake',()=>{
+ for(const labels of [{h:'12',p:'9'},{h:'12',q:'16'},{a:'6',c:'10'}]){
+  const html=drawing({type:'pythagoras',variant:'right-altitude',labels}),A=point(html,'A'),B=point(html,'B'),C=point(html,'C'),D=point(html,'D'),p=distance(D,B),q=distance(A,D),h=distance(C,D),a=distance(C,B),c=distance(A,B);
+  assert.ok(Math.abs(h*h-p*q)<1e-7);if(labels.h&&labels.p){assert.ok(Math.abs(h/p-12/9)<1e-7);assert.doesNotMatch(html,/>16</);}if(labels.h&&labels.q){assert.ok(Math.abs(h/q-12/16)<1e-7);assert.doesNotMatch(html,/>9</);}if(labels.a){assert.ok(Math.abs(a/c-.6)<1e-7);assert.doesNotMatch(html,/>6[.,]4</);}
+ }
+});
+test('obrnuti zadatak o senkama čuva odnos poznatih visina i paralelnost zraka',()=>{
+ const html=drawing({type:'shadow',objectLabel:'Štap',objectHeight:'2 m',objectShadow:'3 m',targetShadow:'?',targetLabel:'6 m'}),heights=html.match(/class="shape" d="M75 240 V([\d.]+) M330 240 V([\d.]+)"/);assert.ok(heights);assert.ok(Math.abs((240-Number(heights[2]))/(240-Number(heights[1]))-3)<1e-7);assert.doesNotMatch(html,/>9 m</);
+});
+test('prostorni zadaci razlikuju koplanarne tačke, paralelne normale i zaklonjeno teme',()=>{
+ const get=id=>{for(const {lesson:l} of all){const t=lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)).find(t=>t.id===id);if(t)return t;}throw new Error(id);};
+ assert.equal(get('sw-plane-four-0').diagram.labels.case,'four');assert.equal(get('o8-tpr-7').diagram.labels.case,'tetrahedron');assert.equal(get('sw-normal-parallel-0').diagram.labels.case,'parallel-normals');
+ const normals=drawing(get('sw-normal-parallel-0').diagram);assert.match(normals,/M210 35 V205 M365 35 V205/);const hidden=drawing(get('sw-space-hidden-0').diagram);assert.deepEqual(point(hidden,'A'),[190,160]);assert.match(hidden,/class="dashed" d="M190 160 L95 230"/);
+ const cube=drawing(get('o8-ms-1').diagram);assert.equal((cube.match(/<path class="(?:shape|dashed)"/g)??[]).length,12);
+});
+test('nove lekcije ostaju na 10 zadataka, a podaci učenika i algoritam znanja ostaju kompatibilni',async()=>{
+ for(const {lesson:l} of all)assert.equal(lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)).length,10,l.id);
+ const p=await readFile(new URL('../app/page.tsx',import.meta.url),'utf8');assert.match(p,/matematikon68-progress-v1-\$\{gradeId\}/);assert.doesNotMatch(p,/localStorage\.clear|localStorage\.removeItem/);
+});
+test('sažimanje čuva kompletnu bazu zadataka, crteže, redosled i nivoe iz objavljene verzije 16',()=>{
+ const protectedData=all.map(({grade:g,area:a,lesson:l})=>({grade:g.id,area:a.id,month:l.month??a.month??'september',id:l.id,pool:tasksForLesson(l.id,l.tasks),work:lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)),visuals:lessonVisuals(l.id)}));
+ assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'58bafe12e9aea9f98100bbf37e22b403d392be31f3f434d4731565b5dcf39966');
+});
+test('glavno objašnjenje je kratko, ima jednu napomenu i čuva svaki izbor geometrijskog prikaza',()=>{
+ const counts=[];let figures=0;
+ for(const {lesson:l} of all){const html=render(LessonLearningContent,{lesson:l}),visuals=lessonVisuals(l.id);const words=html.replace(/<svg[^]*?<\/svg>/g,'').replace(/<[^>]+>/g,' ').replace(/&[^;]+;/g,' ').split(/\s+/).filter(Boolean).length;counts.push(words);assert.ok(words<=250,l.id+': '+words);assert.equal((html.match(/class="learning-note"/g)??[]).length,1,l.id);assert.equal((html.match(/<svg/g)??[]).length,visuals.length,l.id);figures+=visuals.length;
+  assert.doesNotMatch(html,/ hidden=""|aria-controls="learning-/);assert.equal((html.match(/class="learning-point"/g)??[]).length>=2,true,l.id);
+  assert.ok((html.match(/learning-micro-example/g)??[]).length<=1,l.id);assert.doesNotMatch(html,/Šta učimo|Glavna ideja|Zašto to važi|Urađeni primer/);
+ }
+ assert.equal(figures,83);assert.ok(counts.reduce((a,b)=>a+b,0)/counts.length<=180);
+});
+test('sažeti tekst zadržava ključne uslove i oba pisma bez prevođenja matematičkih oznaka',()=>{
+ const source=id=>JSON.stringify(learningByLesson[id]);assert.match(source('talesova-teorema'),/MN∥BC/);assert.match(source('stavovi-slicnosti'),/zahvaćen/);assert.match(source('jednacine-kvadrat'),/dva suprotna/);assert.match(source('poliedar'),/konveks/);assert.match(source('deljenje'),/b≠0/);assert.match(source('svojstva-korena'),/nenegativ/);
+ const lesson=all.find(x=>x.lesson.id==='tacka-prava-ravan-osnove').lesson;const html=render(LessonLearningContent,{lesson},'cyrl');assert.match(html,/Шта треба да знаш/);assert.match(html,/A∈p/);assert.doesNotMatch(html,/А∈п/);
+});

@@ -1,0 +1,14 @@
+[
+  ".nvmrc",
+  "AGENTS.md",
+  "README_GITHUB_CODEX.md",
+  "codex/check.sh",
+  "codex/setup.sh",
+  "codex/start-preview.sh",
+  "migration/added-files.json",
+  "migration/original-files.sha256.json",
+  "migration/original-history.bundle",
+  "migration/source-provenance.json",
+  "migration/validation.json",
+  "migration/verify-original.py"
+]
