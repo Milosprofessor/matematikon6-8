@@ -12,6 +12,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: browser-qa-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   browser:
     runs-on: ubuntu-24.04
@@ -29,8 +33,8 @@ jobs:
         run: npm run build
       - name: Install temporary browser QA dependency without editing lockfile
         run: npm install --no-save --package-lock=false --ignore-scripts @playwright/test@1.56.1
-      - name: Install Chromium system libraries and browser
-        run: npx playwright install --with-deps chromium
+      - name: Confirm runner preinstalled Chrome
+        run: google-chrome --version
       - name: Start development preview for exact commit
         shell: bash
         run: |
