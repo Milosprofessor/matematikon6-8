@@ -74,6 +74,8 @@ try {
   await run("6. razred — deset zadataka, pogrešni odgovori, pomoć, osvežavanje i napredak",async()=>{
     await page.goto(url("#/lekcija/6/racionalni-brojevi/q-zapisi"),{waitUntil:"domcontentloaded"});
     await waitFor(".october-work-aside .task-card");
+    await page.locator(".script-switch button").filter({hasText:"Lat"}).click();
+    await page.waitForFunction(()=>document.querySelector(".script-switch button:last-child")?.getAttribute("aria-pressed")==="true");
     const answers=[
       {input:"5"},{input:"-0,6"},{choice:0},{input:"21"},{input:"-5"},
       {choice:0},{choice:2},{input:"16"},{choice:0},{input:"-9"}
