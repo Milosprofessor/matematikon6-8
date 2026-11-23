@@ -1,3 +1,4 @@
+import { grades } from './index';
 import type {LessonLearning} from "./types";
 
 /** Reviewed against the supplied textbooks; source notes are not shown to pupils. */
@@ -1628,3 +1629,13 @@ export const learningByLesson:Record<string,LessonLearning> = {
     ]
   }
 };
+
+// Later lessons carry their definitions, procedure and examples together.
+for(const lesson of grades.flatMap(g=>g.areas.flatMap(a=>a.lessons))){
+  if(learningByLesson[lesson.id])continue;
+  learningByLesson[lesson.id]={
+    aim:lesson.title, idea:[lesson.intro,lesson.rules[0]], steps:[lesson.rules[1]],
+    why:lesson.rules[0], caution:lesson.rules.at(-1)!, extraFormulas:lesson.formulas,
+    example:lesson.solved.steps.join(" "), sourcePages:"Operativni plan 2026/27.", visuals:[],
+  };
+}
