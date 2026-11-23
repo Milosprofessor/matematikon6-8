@@ -32,6 +32,6 @@ jobs:
       - name: Build application independently
         run: npm run build
       - name: Run all tests
-        run: node --test tests/*.test.mjs
+        run: node --test --test-concurrency=1 tests/*.test.mjs
       - name: Typecheck QA
         run: node_modules/.bin/tsc --noEmit -p tsconfig.qa.json
