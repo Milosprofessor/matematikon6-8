@@ -30,7 +30,7 @@ export const semester7 = [
     title: "Proizvod i količnik stepena jednakih osnova",
     intro: "Stepen sa prirodnim izložiocem je proizvod jednakih činilaca. Pri množenju jednakih osnova broj činilaca se sabira.",
     rules: ["Ako su osnove jednake i različite od nule, pri deljenju oduzmi izložioce. Jednaki izložioci daju količnik 1.", "Kada je izložilac delioca veći, posle skraćivanja u imeniocu ostaje stepen iste osnove.", "Pravilo za proizvod ne važi za zbir stepena."],
-    formulas: ["a^m·a^n=a^{m+n}", "a^m:a^n=a^{m−n}, a≠0, m>n"],
+    formulas: ["a^m·a^n=a^{m+n}", "a^m:a^n=a^{m−n}, a≠0, m>n", "a^m:a^m=1, a≠0", "a^m:a^n=[[frac:1|a^{n−m}]], a≠0, n>m"],
     examples: ["5²:5⁴=[[frac:1|5²]]=[[frac:1|25]]."],
     solved: { question: "Kako izračunati 3⁵·3²:3⁴ bez razvijanja velikih proizvoda?", steps: ["Pri množenju dobijamo izložilac 5+2=7.", "Posle deljenja ostaje 7−4=3.", "3³=27."] },
   }, [
