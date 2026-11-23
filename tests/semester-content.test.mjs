@@ -124,3 +124,24 @@ test("promenljive u proizvodima, složeni izložioci i razlomci ostaju matemati�
     assert.match(mathHtml("10^{−n}"),/<sup>−n<\/sup>/);
   }
 });
+
+test("površina i zapremina pravilnih trostranih i šestostranih prizmi ostaju matematički tačne",()=>{
+  const povrsina=byId("prizma-mreza");
+  const zapremina=byId("prizma-zapremina");
+  const p=povrsina.tasks.find(t=>t.taskType==="pravilni-sestougao-povrsina");
+  const v=zapremina.tasks.find(t=>t.taskType==="pravilni-sestougao-zapremina");
+  const t=zapremina.tasks.find(t=>t.taskType==="pravilna-trostrana-zapremina");
+  assert.ok(p&&v&&t,"nedostaje primena formule za pravilnu prizmu");
+  assert.equal(p.kind,"choice");
+  assert.equal(v.kind,"choice");
+  assert.equal(t.kind,"choice");
+  assert.ok(Math.abs((2*6*(2**2*Math.sqrt(3)/4)+6*2*5)-(60+12*Math.sqrt(3)))<1e-10);
+  assert.ok(Math.abs((6*(2**2*Math.sqrt(3)/4)*3)-(18*Math.sqrt(3)))<1e-10);
+  assert.ok(Math.abs(((4**2*Math.sqrt(3)/4)*3)-(12*Math.sqrt(3)))<1e-10);
+  assert.equal(p.answer,"(60+12√3) cm²");
+  assert.equal(v.answer,"18√3 cm³");
+  assert.equal(t.answer,"12√3 cm³");
+  for(const sc of ["cyrl","latn"])for(const text of [p.answer,v.answer,t.answer,...p.choices,...v.choices,...t.choices,...povrsina.formulas]){
+    assert.doesNotMatch(mathHtml(localizeMathText(text,sc)),/\[\[(?:frac|sqrt):|NaN|undefined/);
+  }
+});
