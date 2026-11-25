@@ -190,3 +190,26 @@ footer{display:flex;align-items:center;justify-content:space-between;min-height:
  .learning-notes .formula-row>div{font-size:19px}
  .learning-notes .visual-note{font-size:14px}
 }
+
+.spring-lab svg { display:block; width:100%; max-width:34rem; height:auto; margin:1rem auto; background:#f7faff; border:1px solid #c5d2e2; border-radius:.75rem; }
+.spring-lab svg line, .spring-lab svg path { stroke:#263d59; stroke-width:2; fill:none; }
+.spring-lab svg .lab-shape { fill:#b7dbef; fill-opacity:.72; stroke:#214a68; stroke-width:2; }
+.spring-lab svg .second { fill:#f9ce79; stroke:#845714; }
+.spring-lab svg .guide { fill:none; stroke:#3563aa; stroke-width:2; stroke-dasharray:5 3; }
+.spring-lab svg .cut { stroke:#9c4b00; stroke-width:3; }
+.spring-lab svg .grid-line { stroke:#c8d5e3; stroke-width:1; }
+.spring-lab svg circle { fill:#214a68; }
+.spring-lab svg .active-dot { fill:#a9400d; stroke:white; stroke-width:2; }
+.spring-lab svg text { font:600 14px system-ui,sans-serif; fill:#152c44; }
+.spring-lab .lab-grid { touch-action:none; }
+.spring-lab .lab-options,.spring-lab .lab-controls { display:flex; flex-wrap:wrap; gap:.5rem; margin:.75rem 0; }
+.spring-lab button { min-height:44px; padding:.45rem .7rem; border:1px solid #92a8c0; border-radius:.6rem; background:white; color:#203856; cursor:pointer; }
+.spring-lab button[aria-pressed=true] { background:#244b76; color:white; border-color:#244b76; }
+.spring-lab button:disabled { opacity:.55; }
+.spring-lab p { margin:.65rem 0; line-height:1.55; }
+.lab-range { display:flex; flex-wrap:wrap; align-items:center; gap:.5rem; flex:1 1 9rem; min-width:0; }
+.lab-range output { font-variant-numeric:tabular-nums; font-weight:700; }
+.lab-range input { flex:1 1 100%; width:100%; min-height:44px; accent-color:#254f85; }
+
+.math-vector { display:inline-block; position:relative; padding-top:.45em; line-height:1.05; }
+.math-vector::before { content:"→"; position:absolute; top:-.28em; left:0; right:0; text-align:center; }

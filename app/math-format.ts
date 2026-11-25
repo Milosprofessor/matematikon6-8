@@ -20,6 +20,7 @@ export function mathHtml(source:string){
     value=value.replace(/\[\[sqrt:([^\[\]]+)\]\]/g,"<span class='sqrt'><span>$1</span></span>");
   }
   return renderSubscripts(value)
+    .replace(/→([A-Z]{2})(?![A-Za-z])/g, "<span class='math-vector'>$1</span>")
     .replace(/\^\{([A-Za-z0-9+−·-]+)\}/g,"<sup>$1</sup>")
     .replace(/\^([0-9mnx]+)/g,"<sup>$1</sup>")
     .replace(/·/g,"<span class='op'>·</span>");
