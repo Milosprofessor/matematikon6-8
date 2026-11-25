@@ -28,4 +28,3 @@ export default springLesson({
   ["Dijagonale četvorougla dužine 6 i 10 cm nisu normalne. Da li se iz tih podataka može zaključiti da je P=30 cm²?",["Ne","Da"],"Da li je druga dijagonala istovremeno visina?","Bez pravog ugla njena dužina ne daje zbir visina na prvu dijagonalu."],
   ["Dve jednake romboidne pločice oblika romba imaju dijagonale 10 i 4 cm. Bez preklapanja pokrivaju koliko cm²?","40","Najpre površina jedne pločice.","10·4:2=20 cm². Dve imaju 40 cm²."]
 ]);
-

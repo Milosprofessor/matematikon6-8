@@ -28,4 +28,3 @@ export default springLesson({
   ["U centralnoj simetriji tačka se preslika u samu sebe. Koja je to tačka?",["Centar","Svaka tačka ose","Svako teme"],"Gde je sredina kada se krajevi poklapaju?","Jedino je centar na nultom rastojanju od svog lika."],
   ["Obim trougla je 24 cm. U njemu podudarnom trouglu dve stranice su 7 i 8 cm. Koliko cm ima treća?","9","Podudarnost čuva i obim.","Treća je 24−7−8=9 cm."]
 ]);
-

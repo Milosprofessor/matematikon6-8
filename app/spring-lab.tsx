@@ -164,4 +164,3 @@ export function SpringLab({id}:{id:string}){
   }
   return <section className="content-card spring-lab"><h2>Istraži na crtežu</h2>{lab}</section>;
 }
-

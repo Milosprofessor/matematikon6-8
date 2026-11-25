@@ -28,4 +28,3 @@ export default springLesson({
   ["Prosečna temperatura u tri merenja je 2 °C. Dve vrednosti su −1 i 6 °C. Treća u °C?","1","Zbir svih merenja je tri puta prosek.","Ukupan zbir je 6. Nedostaje 6−(−1+6)=1 °C."],
   ["U tabeli su vremena 0, 2 i 5 sati uz rastojanja 0, 8 i 20 km. Kolika je prosečna brzina za ceo put u km na sat?","4","Koristi ukupan put i ukupno vreme.","20:5=4 km na sat. Obe pojedinačne deonice imaju i isti količnik."]
 ]);
-

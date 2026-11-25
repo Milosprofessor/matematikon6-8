@@ -28,4 +28,3 @@ export default springLesson({
   ["Od 30 m ograde ostaje 2 m. Tri strane dvorišta su 6, 7 i 8 m. Četvrta ima koliko m?","7","Prvo nađi potrošenu ogradu.","Obim je 28 m, pa je četvrta strana 28−21=7 m."],
   ["Spoljašnji uglovi konveksnog četvorougla po jedan pri svakom temenu imaju zbir koliko stepeni?","360","Od četiri opružena ugla oduzmi sve unutrašnje.","4·180°−360°=360°."]
 ]);
-

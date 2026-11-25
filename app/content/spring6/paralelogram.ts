@@ -28,4 +28,3 @@ export default springLesson({
   ["Dijagonale paralelograma imaju 10 i 16 cm. Koliki je u cm zbir dužina od preseka do sva četiri temena?","26","Saberi četiri polovine.","5+5+8+8=26 cm."],
   ["Jedan ugao paralelograma je tri puta veći od susednog. Manji ima koliko stepeni?","45","Susedni uglovi daju 180°.","x+3x=180° daje x=45°."]
 ]);
-

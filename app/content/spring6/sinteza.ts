@@ -28,4 +28,3 @@ export default springLesson({
   ["U grupi je odnos učenika dve sekcije 3:2. U prvoj je 6 više nego u drugoj. Ukupan broj učenika ako je svako u tačno jednoj sekciji?","30","Razlika odgovara jednom delu.","Jedan deo je 6. Ukupno pet delova ima 30 učenika."],
   ["Koliko najmanje paketa površine pokrivanja 1,6 m² treba za pod od 9 m²?","6","Proveri dva susedna cela broja.","Pet paketa pokriva 8 m², šest pokriva 9,6 m². Zato je šest dovoljno."]
 ]);
-

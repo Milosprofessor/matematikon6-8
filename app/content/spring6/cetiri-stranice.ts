@@ -28,4 +28,3 @@ export default springLesson({
   ["Trapez osnovica 10 i 6 cm ima jedan krak 5 cm. Najveći ceo broj centimetara koji može biti drugi krak?","8","Pomoćni trougao ima dve stranice 4 i 5 cm.","Treća mora biti manja od 9 i veća od 1. Najveći ceo izbor je 8."],
   ["Može li iz istih osnovica i jedne zadate visine nastati više nepodudarnih trapeza ako dužine krakova nisu zadate?",["Da","Ne"],"Pomeraj gornju osnovicu duž njene prave.","Pomeranje čuva obe osnovice i visinu, ali menja dužine krakova. Zato oblik nije jedinstven."]
 ]);
-

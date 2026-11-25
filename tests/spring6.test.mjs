@@ -103,4 +103,3 @@ test("tačno poređenje razlomaka, decimala, negativnih i graničnih zapisa",()=
   for(const [a,b] of [["−2/4","-0,5"],[".125","1/8"],["112/6","56/3"],["3/-4","-0.75"],["6e-2","0,06"]])assert.ok(sameAnswer(a,b));
   for(const a of ["0/0","1/0","2/","2/3/4","","1,00000000000000001"])assert.ok(!sameAnswer(a,"1"));
 });
-

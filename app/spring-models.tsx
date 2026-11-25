@@ -49,4 +49,3 @@ export function TrapezoidConstruction(){
    <div className="lab-options">{[1,2,3,4].map(i=><button key={i} aria-label={"Korak "+i} aria-pressed={i===step} onClick={()=>setStep(i)}>{i}</button>)}</div>
    <p>{["Na AB odmeri AE=9−5=4 cm. Preostaje EB=5 cm.","Iz A opiši luk poluprečnika 3, a iz E luk poluprečnika 4 cm. Njihov presek je D.","Iz D u smeru AB prenesi DC=5 cm na paraleli sa AB.","Spoji B i C. EBCD ima jednake i paralelne naspramne stranice EB i DC, pa je BC=ED=4 cm."][step-1]}</p></>;
 }
-

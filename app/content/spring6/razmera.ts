@@ -28,4 +28,3 @@ export default springLesson({
   ["Odnos devojčica i dečaka je 4:3. Ako je dečaka 12, koliko je dece ukupno?","28","Tri dela imaju 12 dece.","Jedan deo je 4, pa sedam delova ima 28 dece."],
   ["Koji odnos opisuje 150 ml prema 1 l?",["3:20","3:2","20:3"],"Litar je hiljadu mililitara.","150:1000 skrati sa 50 i dobijaš 3:20."]
 ]);
-

@@ -34,4 +34,31 @@ Svaka jedinica ima tri primera, deset zadataka (4+4+2), odvojenu mini-proveru i 
 - [Školski program VI, tabela sadržaja i didaktičko uputstvo, str. 191–199](https://oss9maj.edu.rs/wp-content/uploads/2022/02/skolski-program-6-razred-jun-2019.pdf)
 - [Program škole 2023–2027, šesti razred](https://www.stevansremac.edu.rs/wp-content/uploads/Школски-програм-Шести-разред-2327.pdf)
 - [Matematiskop • globalni i operativni plan, nastavne jedinice 2026/27](https://www.matematiskop.co.rs/6-razred-nastavni-materijali/)
+- [Prosvetni glasnik 1/2026 • tekst izmene, čl. 1–3](https://zuov.gov.rs/preuzimanje/2281/prosvetni-glasnik-2026-1/603007/program-nastave-i-ucenja-za-5-razred-os) — novi predmetni program u tom prilogu odnosi se na peti razred.
+- [Odobreni udžbenik V. Stojanovića • sadržaj, odeljak 2.6–2.11, 4.1–4.8 i 5.3–5.5](https://www.matematiskop.co.rs/wp-content/uploads/2023/10/Udzbenik-6-promo.pdf) — odobrenje 650-02-00039/2019-07, korišćen za proveru terminologije i obuhvata.
 - [Audit nastavnikovih realizovanih operativnih planova](./IZVESTAJ_PRVO_POLUGODISTE.md)
+
+## Evidencija realizacije
+
+U tabeli je prvi mesec obrade. Svaka stavka ima tri rešena primera, deset samostalnih zadataka, jedan dopunski i tri posebna pitanja u mini-proveri. Link otvara izvor odgovarajuće lekcije.
+
+| Mesec | Nastavna jedinica | Realizacija |
+|---|---|---|
+| Januar | [Od teksta do izraza, jednačine ili nejednačine](./app/content/spring6/model.ts) | Implementirana i proverena kroz mesečni meni |
+| Januar | [Konstrukcije uglova i trouglova](./app/content/spring6/konstrukcije.ts) | Implementirana i proverena kroz mesečni meni |
+| Februar | [Podudarnost, simetrija i kružnice trougla](./app/content/spring6/podudarnost.ts) | Implementirana i proverena kroz mesečni meni |
+| Februar | [Koordinate, pomeranje i čitanje podataka](./app/content/spring6/koordinate.ts) | Implementirana i proverena kroz mesečni meni |
+| Februar | [Osna i centralna simetrija i translacija](./app/content/spring6/preslikavanja.ts) | Implementirana i proverena kroz mesečni meni |
+| Februar | [Tabele, dijagrami i tumačenje podataka](./app/content/spring6/podaci.ts) | Implementirana i proverena kroz mesečni meni |
+| Mart | [Razmera i proporcija](./app/content/spring6/razmera.ts) | Implementirana i proverena kroz mesečni meni |
+| Mart | [Direktna i obrnuta proporcionalnost](./app/content/spring6/zavisnost.ts) | Implementirana i proverena kroz mesečni meni |
+| Mart | [Procenat, osnovica i promena cene](./app/content/spring6/procenti.ts) | Implementirana i proverena kroz mesečni meni |
+| Mart | [Četvorougao, dijagonale, uglovi i obim](./app/content/spring6/uglovi.ts) | Implementirana i proverena kroz mesečni meni |
+| April | [Paralelogram, pravougaonik, romb i kvadrat](./app/content/spring6/paralelogram.ts) | Implementirana i proverena kroz mesečni meni |
+| April | [Vektori i konstrukcija paralelograma](./app/content/spring6/vektori.ts) | Implementirana i proverena kroz mesečni meni |
+| April | [Trapez, srednje linije i deltoid](./app/content/spring6/trapez.ts) | Implementirana i proverena kroz mesečni meni |
+| April | [Konstrukcije trapeza, romba i deltoida](./app/content/spring6/cetiri-stranice.ts) | Implementirana i proverena kroz mesečni meni |
+| Maj | [Površina kvadrata, pravougaonika i paralelograma](./app/content/spring6/merenje.ts) | Implementirana i proverena kroz mesečni meni |
+| Maj | [Površina trougla i trapeza](./app/content/spring6/trougao-trapez.ts) | Implementirana i proverena kroz mesečni meni |
+| Maj | [Normalne dijagonale i površine složenih figura](./app/content/spring6/delovi.ts) | Implementirana i proverena kroz mesečni meni |
+| Jun | [Godišnja sistematizacija i mešoviti problemi](./app/content/spring6/sinteza.ts) | Implementirana i proverena kroz mesečni meni |

@@ -28,4 +28,3 @@ export default springLesson({
   ["Koji poluprečnik u cm uzimaš iz B ako su AB=8 cm, BC=6 cm i CA=5 cm?","6","Traži udaljenost traženog temena od B.","C je od B udaljeno BC=6 cm."],
   ["Najveća celobrojna treća stranica za stranice 3,5 i 4,5 cm ima koliko cm?","7","Zbir nije dozvoljena granica.","Treća je manja od 8 i veća od 1. Najveći ceo izbor je 7."]
 ]);
-

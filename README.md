@@ -1,4 +1,12 @@
-# vinext-starter
+# MatematikON 6–8
+
+[Plan drugog polugodišta za VI razred](./PLAN_DRUGO_POLUGODISTE_6_RAZRED_2026_27.md) · [Lekcije, rezultati testova i ograničenja](./IZVESTAJ_DRUGO_POLUGODISTE_6_RAZRED_2026_27.md)
+
+Za proveru ove verzije pokreni `npm run install:ci`, `npm run build`, `node --test --test-concurrency=1 tests/*.test.mjs`, `npm run typecheck` i `npm run lint`. Komanda `npm run build:pages` priprema statičke fajlove u `dist/pages/` za posluživanje ispod putanje projekta. Razvojni i statički ulaz koriste isti React prikaz i iste hash rute.
+
+Praktične testove pokreću `node qa/semester-browser-smoke.mjs` i `node qa/spring6-browser.mjs`. Podesi `QA_URL` na pokrenutu aplikaciju. Za drugi Chromium izvršni fajl podesi `QA_CHROME`. Instalacija Playwrighta za QA prati [.github/workflows/semester-browser-qa.yml](./.github/workflows/semester-browser-qa.yml).
+
+## Vinext starter
 
 A clean full-stack starter running on [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and Drizzle support.
 

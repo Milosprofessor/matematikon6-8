@@ -28,4 +28,3 @@ export default springLesson({
   ["Uspon od 4,25 m dovodi do kote 1,5 m. Koja je bila početna kota u metrima?","-2,75","Početnu visinu dobijaš obrnutom promenom.","1,5−4,25=−2,75."],
   ["Na −4 °C hladi se za 0,75 °C svakog sata. Posle koliko sati je prvi put tačno −7 °C?","4","Pad uporedi sa promenom za jedan sat.","−4−0,75t=−7 daje −0,75t=−3, pa je t=4."]
 ]);
-

@@ -28,4 +28,3 @@ export default springLesson({
   ["U jednakokrakom trapezu razlika osnovica je 10 cm, a kraća ima 8 cm. Koliko cm ima srednja linija?","13","Izračunaj dužu osnovicu.","Duža je 18 cm, pa m=(18+8):2=13 cm."],
   ["Može li trapez osnovica 15 i 5 cm i oba kraka od 4 cm postojati?",["Ne","Da"],"Uporedi krak sa njegovom horizontalnom projekcijom.","Projekcija svakog kraka bila bi (15−5):2=5 cm. Krak dužine 4 cm ne može imati projekciju od 5 cm."]
 ]);
-

@@ -28,4 +28,3 @@ export default springLesson({
   ["U tabeli su redom 4, 9, 7 i 10 putnika. Koliki je najveći porast između susednih merenja?","5","Izračunaj sve susedne razlike.","Promene su +5, −2 i +3. Najveći porast je 5."],
   ["Tri uzastopna temena pravougaonika su A(−2, 1), B(4, 1), C(4, 5). Koja je apscisa temena D?","-2","Stranica AD je uspravna.","D deli apscisu sa A i ordinatu sa C. Zato je D(−2, 5)."]
 ]);
-

@@ -28,4 +28,3 @@ export default springLesson({
   ["Bašta ima površinu 3 ara. Za travu treba 20 g semena po m². Koliko kg treba?","6","Ar ima sto kvadratnih metara.","300·20=6000 g, odnosno 6 kg."],
   ["Osnovica je 9 cm i visina 5 cm. Pri nepromenjenoj osnovici visina poraste za 2 cm. Koliki je prirast površine u cm²?","18","Uporedi proizvode pre i posle.","9·7−9·5=9·2=18 cm²."]
 ]);
-

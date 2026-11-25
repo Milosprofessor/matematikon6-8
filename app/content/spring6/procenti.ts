@@ -28,4 +28,3 @@ export default springLesson({
   ["Cena se smanji sa 1500 na 1200. Daj procenat smanjenja.","20","Uporedi uštedu sa početnom cenom.","300:1500=0,20 daje 20%."],
   ["Na kvizu je tačno 85% od 40 odgovora. Koliko je odgovora pogrešno ako su svi dati?","6","Nađi preostali procenat.","Pogrešnih je 15%. Zato je 0,15·40=6."]
 ]);
-

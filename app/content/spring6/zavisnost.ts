@@ -28,4 +28,3 @@ export default springLesson({
   ["Može li tabela (1, 3), (2, 6), (3, 10) cela pripadati direktnoj proporcionalnosti?",["Ne","Da"],"Proveri poslednji par.","Prva dva količnika su 3. Treći je 10:3, različit od 3."],
   ["U kampu je ostalo 120 jednakih obroka. Za koliko dana je to dovoljno pri potrošnji od 20 obroka dnevno?","6","Podeli zalihu dnevnom potrošnjom.","120:20=6 dana."]
 ]);
-

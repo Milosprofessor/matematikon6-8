@@ -74,4 +74,3 @@ for (const area of springAreas) {
   springChecks.set(area.id, {id: area.id, areaId: area.id, title: "Provera oblasti • " + area.title, items});
 }
 for (const check of finals) springChecks.set(check.id, check);
-

@@ -28,4 +28,3 @@ export default springLesson({
   ["Za konstrukciju iz AB, AD i ugla A, kroz D ide paralela kojoj pravoj?",["AB","AD","BD"],"Naspramne stranice su paralelne.","CD∥AB, zato tražena prava prolazi kroz D paralelno sa AB."],
   ["A(1, 2), B(4, 3), C(5, 7) su redom temena paralelograma. Kolika je ordinata D?","6","Vektor →BC prenesi iz A.","Od B do C se ide 1 desno i 4 gore. Od A stižeš u D(2, 6)."]
 ]);
-

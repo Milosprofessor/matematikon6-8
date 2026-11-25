@@ -28,4 +28,3 @@ export default springLesson({
   ["Trapez ima osnovice 4 i 8 m. Visina se poveća sa 3 na 5 m. Površina se poveća za koliko m²?","12","Srednja linija ostaje ista.","m=6 m, promena visine je 2 m. Prirast je 6·2=12 m²."],
   ["Visina deli osnovicu trougla na odsečke 4 i 6 cm, a manji nastali trougao ima 10 cm². Koliko cm² ima ceo?","25","Iz manjeg trougla odredi visinu.","10=4h:2 daje h=5 cm. Ukupno P=(4+6)·5:2=25 cm²."]
 ]);
-

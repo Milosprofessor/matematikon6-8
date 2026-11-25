@@ -28,4 +28,3 @@ export default springLesson({
   ["U simetričnim trouglovima uglovi koji odgovaraju imaju zbir 124°. Koliki je jedan u stepenima?","62","Podudarnost čuva odgovarajuće uglove.","Dva jednaka ugla daju 124°, pa je svaki 62°."],
   ["A se translacijom pomeri 3 desno i 2 gore, zatim centralno preslika oko O. Početna A je (−1, 4). Koja je konačna ordinata?","-6","Posle translacije promeni znak obe koordinate.","Međupoložaj je (2, 6). Centralni lik je (−2, −6)."]
 ]);
-
