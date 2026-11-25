@@ -1634,8 +1634,8 @@ export const learningByLesson:Record<string,LessonLearning> = {
 for(const lesson of grades.flatMap(g=>g.areas.flatMap(a=>a.lessons))){
   if(learningByLesson[lesson.id])continue;
   learningByLesson[lesson.id]={
-    aim:lesson.title, idea:[lesson.intro,lesson.rules[0]], steps:[lesson.rules[1]],
+    aim:lesson.aim??lesson.title, idea:[lesson.intro,lesson.rules[0]], steps:[lesson.rules[1]],
     why:lesson.rules[0], caution:lesson.rules.at(-1)!, extraFormulas:lesson.formulas,
-    example:lesson.solved.steps.join(" "), sourcePages:"Operativni plan 2026/27.", visuals:[],
+    example:lesson.solved.steps.join(" "), sourcePages:lesson.aim?"Program VI razreda i predlog rasporeda, januar–jun 2027.":"Operativni plan 2026/27.", visuals:[],
   };
 }
