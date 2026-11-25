@@ -11,6 +11,7 @@ test("Svih 17 lekcija i 25 provera imaju prihvatljiv ključ i različite ID-jeve
  const lessons=spring7Areas.flatMap(a=>a.lessons);assert.equal(lessons.length,17);assert.equal(checks7.size,25);
  const tasks=lessons.flatMap(l=>l.tasks).concat([...checks7.values()].flatMap(c=>c.items));
  assert.equal(new Set(tasks.map(t=>t.id)).size,tasks.length);
+ assert.equal(new Set(tasks.map(t=>t.prompt)).size,tasks.length);
  for(const task of tasks)assert.ok(submitTask({...emptyTask(),value:task.answer},task).result?.firstCorrect,task.id);
 });
 test("Ekvivalentni oblici, potpun proizvod i tačan broj π",()=>{
@@ -37,7 +38,7 @@ test("Nezavisna provera računskih i modelskih odgovora",()=>{
  rotacija:[3,5,0,-3,-3,20+75,1+4,5,360/8,(1+7)/2,-4,4,40+75,360/12,0,(2+8)/2],
  podaci:[(3+5+7)/3,4,3,3+6,(3+9)/2,3*7-3-5,3,(2*3+3*5)/5,5/5,(4*3+2*9)/6,(4+9)/2,6,3*8-4-6,10/5,4,(4*4+2*10)/6],
  procena:[4.4,.02,4,0,-4.75,1,4.3,4.5,3,.002*10,-5.75,5.4,2,6,5,.002*20],
- sinteza:[12,null,12,-7,(7+9)/2,5,Math.hypot(3,4),5,60,5,8.5,14,6,60,14,6]
+ sinteza:[12,null,12,-7,(7+9)/2,5,Math.hypot(3,4),5,30*3.1416-94,3*4,8.5,14,6,60,14,6]
  };
  for(const l of spring7Areas.flatMap(a=>a.lessons)){
   const rows=[...l.tasks,...l.mini,...l.areaQuestions];
