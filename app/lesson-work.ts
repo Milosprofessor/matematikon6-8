@@ -1,3 +1,4 @@
+import { algebraAnswer } from "./polynomial-answer";
 import type { Task } from "./content/types";
 import type { KnowledgeAttempt } from "./knowledge";
 
@@ -46,10 +47,12 @@ export function sameAnswer(entered:string,answer:string){
  }
  return false;
 }
-export function submitTask(state:TaskSnapshot,task:Pick<Task,"answer">):TaskSnapshot{
+export function submitTask(state:TaskSnapshot,task:Pick<Task,"answer"> & Partial<Pick<Task,"kind"|"id"|"prompt">>):TaskSnapshot{
  if(state.result||!state.value.trim())return state;
  const attempts=state.attempts+1;
- if(!sameAnswer(state.value,task.answer))return {...state,attempts,feedback:"wrong"};
+ const symbolic=task.id?.startsWith("s7-")&&task.kind==="input"&&/[xπ]/.test(task.answer);
+ const form=task.answer.includes("(")?(task.answer.endsWith("^2")?"square":"product"):/razvij|sredi|sređen/i.test(task.prompt??"")?"expanded":"value";
+ if(!(symbolic?algebraAnswer(state.value,task.answer,form):sameAnswer(state.value,task.answer)))return {...state,attempts,feedback:"wrong"};
  return {...state,attempts,feedback:"correct",result:{firstCorrect:state.attempts===0&&!state.solution,usedSolution:state.solution,attemptCount:attempts,finalCorrect:true}};
 }
 export function acceptProcedure(state:TaskSnapshot):TaskSnapshot{

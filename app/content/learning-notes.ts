@@ -349,6 +349,17 @@ export const noteLayouts:Record<string,PointLayout[]>={
 for(const lesson of grades.flatMap(g=>g.areas.flatMap(a=>a.lessons))){
  if(noteLayouts[lesson.id])continue;
  const theory=learningByLesson[lesson.id];
+ if(lesson.id.startsWith("s7-")){
+  const paragraphs=(text:string)=>text.split(/(?<=[.!?])\s+(?=[A-ZŠĐČĆŽ])/u);
+  const rule=paragraphs(lesson.rules[0]), method=paragraphs(lesson.rules[1]);
+  noteLayouts[lesson.id]=[
+   p(lesson.title,'',{text:lesson.intro,definition:true}),
+   p('Pravilo','',{text:rule.slice(0,3).join(' '),f:theory.extraFormulas.map((_,i)=>i)}),
+   ...(rule.length>3?[p('Obrazloženje','',{text:rule.slice(3).join(' ')})]:[]),
+   p('Postupak','',{text:method.slice(0,3).join(' '),note:true}),
+   ...(method.length>3?[p('Provera konstrukcije','',{text:method.slice(3).join(' ')})]:[])
+  ];continue;
+ }
  noteLayouts[lesson.id]=[
   p(lesson.title,'',{text:lesson.intro,definition:true}),
   p('Pravilo','',{text:lesson.rules[0],f:theory.extraFormulas.map((_,i)=>i),v:lessonVisuals(lesson.id).map((_,i)=>i)}),
