@@ -1,0 +1,30 @@
+import { springLesson } from "../spring6/lesson";
+
+export default springLesson({
+  id: "s7-uglovi",
+  title: "Unutrašnji i spoljašnji uglovi mnogougla",
+  month: "january",
+  aim: "Prepoznaj konveksnost i odredi nepoznati ugao pomoću podele na trouglove.",
+  intro: "Prati ivicu zatvorenog poligonalnog dvorišta. Duži između uzastopnih temena su stranice, a između nesusednih temena dijagonale. Posmatramo jednostavne mnogouglove čije se stranice ne ukrštaju.",
+  rules: ["U konveksnom mnogouglu duž između bilo koje dve njegove tačke cela pripada figuri. Ako figura ima udubljenje, bar jedan unutrašnji ugao veći je od 180°. Iz jednog temena konveksnog n-tougla povuci sve dijagonale. Dobijaš n−2 trougla bez preklapanja.", "Saberi uglove tih trouglova. Za spoljašnji ugao produži stranicu i meri zaokret do sledeće stranice. Pri obilasku konveksnog mnogougla u istom smeru svi zaokreti zajedno daju pun krug.", "Uopšteno, uglovi mnogougla nisu jednaki. Deljenje zbira brojem temena daje veličinu svakog ugla samo ako su svi uglovi jednaki."],
+  formulas: ["S=(n−2)·180°", "α+β=180°"],
+  skills: ["stranice", "trouglovi", "vrsta", "suplement", "zbir", "obrnuto", "nedostaje", "zaokret", "promena", "uslov", "dijagonale"],
+  worked: [{"question": "Koliki je zbir uglova sedmougla?", "steps": ["Iz jednog temena konveksnog sedmougla povlačimo četiri dijagonale. One daju pet trouglova.", "Zbir je 5·180°=900°. Isti zbir važi za svaki jednostavan sedmougao jer se i on može podeliti na pet trouglova."]}, {"question": "Konveksni petougao ima uglove 95°, 100°, 110° i 120°. Nađi peti.", "steps": ["Ceo zbir je (5−2)·180°=540°. Četiri poznata ugla daju 425°.", "Preostaje 540°−425°=115°. Svaki ugao je manji od opruženog."]}, {"question": "Jedan spoljašnji ugao pravilnog mnogougla je 24°. Koliko ima dijagonala?", "steps": ["Jednaki zaokreti daju 360°, pa ima 360:24=15 temena.", "Svako teme spaja se sa 12 nesusednih temena. Svaku dijagonalu brojimo dvaput, zato ih ima 15·12:2=90."]}],
+}, [
+  ["Koliko stranica ima mnogougao sa osam temena?", "8", "Obiđi granicu jednom.", "Iz svakog temena polazi jedna sledeća stranica. Ukupno ih je osam."],
+  ["Na koliko trouglova dijagonale iz jednog temena dele konveksni šestougao?", "4", "Počni od dva trougla u četvorouglu.", "Za n=6 dobijaš n−2=4 trougla."],
+  ["Unutrašnji ugao jednostavnog mnogougla je 214°. Kakav je mnogougao?", ["Nekonveksan", "Konveksan", "Obavezno pravilan"], "Uporedi ugao sa opruženim.", "Ugao veći od 180° pokazuje udubljenje."],
+  ["Unutrašnji ugao je 137°. Koliko stepeni iznosi susedni spoljašnji?", "43", "Zajedno čine opružen ugao.", "180−137=43."],
+  ["Mnogougao ima 12 temena. Koliki je zbir unutrašnjih uglova u stepenima?", "1800", "Broj trouglova je za dva manji.", "Deset trouglova daje 10·180°=1800°."],
+  ["Zbir uglova je 1260°. Koliko mnogougao ima temena?", "9", "Koliko puta je sadržano 180°?", "n−2=1260:180=7, pa je n=9."],
+  ["U četvorouglu su tri ugla 82°, 96° i 101°. Odredi četvrti u stepenima.", "81", "Uporedi poznati zbir sa 360°.", "Poznati daju 279°. Preostaje 360°−279°=81°."],
+  ["Četiri spoljašnja ugla konveksnog petougla su 50°, 65°, 80° i 90°. Peti u stepenima?", "75", "Celokupan zaokret iznosi 360°.", "Zbir četiri je 285°. Peti je 75°."],
+  ["Odsecanjem jednog ugla konveksnog mnogougla nastaju dva nova temena umesto jednog. Za koliko stepeni raste zbir?", "180", "Uporedi broj temena pre i posle.", "Broj temena poraste za jedan, pa u triangulaciji dobijaš još jedan trougao."],
+  ["Može li konveksni petougao imati četiri unutrašnja ugla od po 85°?", ["Ne", "Da"], "Izračunaj nedostajući ugao.", "540°−4·85°=200°. To protivreči konveksnosti."],
+  ["Iz jednog temena konveksnog mnogougla polazi pet dijagonala. Koliki je zbir unutrašnjih uglova u stepenima?", "1080", "Dodaj samo teme i dva suseda.", "n=5+3=8, pa zbir iznosi 6·180°."],
+  ["Na koliko trouglova možeš rastaviti konveksni devetougao dijagonalama iz istog temena?", "7", "Prebroj oblasti između susednih zraka.", "n−2=9−2=7."],
+  ["Spoljašnji ugao pravilnog mnogougla je 18°. Koliko ima stranica?", "20", "Podeli pun ugao veličinom zaokreta.", "360:18=20."],
+  ["Zbir uglova konveksnog mnogougla je pet puta veći od zbira spoljašnjih. Koliko ima temena?", "12", "Spoljašnji daju pun okret.", "(n−2)·180°=5·360°, pa je n−2=10 i n=12."],
+  ["Spoljašnji ugao je 56°. Koliki je unutrašnji u stepenima?", "124", "Nađi dopunu do opruženog ugla.", "180−56=124."],
+  ["U konveksnom desetouglu dijagonala odvaja četvorougao. Koliko stranica ima drugi deo?", "8", "Presečna dijagonala se pojavljuje na obe granice.", "Delovi zajedno imaju 10+2=12 stranica. Drugi ima 12−4=8."],
+]);

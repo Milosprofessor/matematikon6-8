@@ -1,0 +1,30 @@
+import { springLesson } from "../spring6/lesson";
+
+export default springLesson({
+  id: "s7-povrsina",
+  title: "Obim i površina mnogougla",
+  month: "february",
+  aim: "Izaberi osnovicu i visinu, izračunaj apotemu i razloži figuru na delove.",
+  intro: "Dve bašte mogu imati ograde iste dužine, a različite površine. Za ogradu pratiš granicu. Za setvu meriš deo ravni unutar te granice.",
+  rules: ["Pravilni mnogougao podeli iz centra na jednake trouglove. Apotema je normalno rastojanje centra do stranice. Svaki trougao ima površinu jednaku polovini proizvoda stranice i apoteme. Sabiranjem osnovica dobija se obim.", "Za nepravilnu figuru nacrtaj pomoćne duži. Saberi površine delova koji se ne preklapaju ili oduzmi izrez od veće poznate figure. Svi podaci moraju biti u usklađenim jedinicama.", "Poluprečnik opisane kružnice vodi do temena. Apotema vodi do sredine stranice. Sam obim nepravilne figure ne određuje površinu."],
+  formulas: ["P=[[frac:O·h|2]]", "O=n·a"],
+  skills: ["obim", "apotema", "trougao", "jedinica", "okvir", "obrnuto", "razlaganje", "skaliranje", "kateta", "granica", "podela"],
+  worked: [{"question": "Kvadrat ima obim 32 cm i apotemu 4 cm. Nađi površinu.", "steps": ["Saberi površine centralnih trouglova kao polovinu proizvoda obima i zajedničke visine.", "P=32·4:2=64 cm²."]}, {"question": "Od pravougaonika 12 cm sa 8 cm odsečen je pravougaoni ugaoni deo 3 cm sa 4 cm. Kolika je preostala površina?", "steps": ["Cela površina je 12·8=96 cm². Izdvojeni deo ima 3·4=12 cm².", "Preostalo je 96−12=84 cm²."]}, {"question": "Odredi površinu pravilnog šestougla stranice 6 cm.", "steps": ["Visina centralnog jednakostraničnog trougla deli osnovicu na dve duži od 3 cm. Hipotenuza je 6 cm.", "a²+b²=c². Zamenom dobijamo 3²+h²=6², zatim 9+h²=36 i h²=27. Dužina je pozitivna, pa je h=3√3 cm.", "Obim je 36 cm. Površina je 36·3√3:2=54√3 cm²."]}],
+}, [
+  ["Pravilni osmougao ima stranice od 2,5 cm. Obim u cm?", "20", "Broj jednakih stranica je osam.", "O=8·2,5=20 cm."],
+  ["Šta je apotema pravilnog mnogougla?", ["Normalno rastojanje centra do stranice", "Rastojanje dva temena", "Dužina stranice"], "Koja visina pripada centralnom trouglu?", "Normala iz centra pada u sredinu osnovice i daje visinu trougla."],
+  ["Deo mnogougla je trougao osnovice 7 m i visine 4 m. Površina u m²?", "14", "Trougao zauzima polovinu paralelograma.", "P=7·4:2=14 m²."],
+  ["Koja jedinica meri popločani deo dvorišta?", ["m²", "m", "cm³"], "Pločice prekrivaju ravan.", "Pokrivanje meri površinu, pa koristimo kvadratne jedinice."],
+  ["Iz pravougaonika 9 cm sa 8 cm isečen je kvadrat stranice 3 cm. Koliko cm² je ostalo?", "63", "Od cele figure oduzmi otvor.", "P=9·8−3²=72−9=63 cm²."],
+  ["Kvadrat ima površinu 64 cm² i obim 32 cm. Kolika je apotema u cm?", "4", "Kreni od formule sa obimom.", "64=32h:2=16h. Sledi h=4 cm."],
+  ["Kućica na crtežu je pravougaonik 8 cm sa 5 cm i trougao iznad njega osnovice 8 cm i visine 3 cm. Površina u cm²?", "52", "Saberi zid i krov.", "8·5+8·3:2=40+12=52 cm²."],
+  ["Sve dužine pravilnog mnogougla uvećamo tri puta. Koliko puta poraste površina?", "9", "Prati i obim i apotemu.", "Oba činioca porastu po tri puta, pa površina raste devet puta."],
+  ["Tetiva kružnice duga je 10 cm. Poluprečnik je 13 cm. Izračunaj rastojanje centra od tetive u cm.", "12", "Spoji centar sa sredinom tetive.", "a²+b²=c². Zamenom 5²+h²=13², pa 25+h²=169 i h²=144. Pozitivna dužina je h=12 cm."],
+  ["Od ugla pravougaonika 7 m sa 5 m odseče se pravougaonik 2 m sa 1 m. Obim preostalog L-oblika u m?", "24", "Koje dužine su nestale, a koje se pojavile?", "Dve uklonjene duži zamenjuju dve iste dužine. Obim ostaje 2·(7+5)=24 m."],
+  ["Koliko jednakih trouglova iz centra čini pravilan petnaestougao?", "15", "Svaka stranica je jedna osnovica.", "Petnaest stranica daje petnaest centralnih trouglova."],
+  ["Obim pravilnog devetougla je 54 cm. Stranica u cm?", "6", "Podeli obim na jednake dužine.", "54:9=6 cm."],
+  ["Podelom parcele dobijeni su trapez osnovica 10 i 6 m, visine 5 m, i kvadrat stranice 3 m. Ukupna površina u m²?", "49", "Nađi obe površine pre sabiranja.", "Trapez ima (10+6)·5:2=40 m², a kvadrat 9 m². Ukupno je 49 m²."],
+  ["Kvadratni plac stranice 20 m ima stazu širine 2 m sa unutrašnje strane cele ograde. Površina staze u m²?", "144", "Koliko puta se širina oduzima od stranice?", "Unutrašnji kvadrat ima stranicu 20−4=16 m. Staza ima 400−256=144 m²."],
+  ["Kvadrat površine 36 cm² ima koliku apotemu u cm?", "3", "Centar je na pola puta između naspramnih stranica.", "Stranica je 6 cm. Polovina je 3 cm."],
+  ["Šestougao je sastavljen od šest jednakostraničnih trouglova stranice 4 cm. Kolika je njegova površina podeljena sa √3, u cm²?", "24", "Odredi visinu jednog trougla.", "a²+b²=c² daje 2²+h²=4², zatim 4+h²=16, h²=12 i h=2√3 cm. Šest površina od 4√3 cm² daje 24√3 cm²."],
+]);

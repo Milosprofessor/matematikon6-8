@@ -1,0 +1,30 @@
+import { springLesson } from "../spring6/lesson";
+
+export default springLesson({
+  id: "s7-jednacine",
+  title: "Transformacije polinoma u jednačinama",
+  month: "april",
+  aim: "Sredi obe strane jednačine, razlikuj broj mogućih rešenja i proveri rezultat.",
+  intro: "Ponekad se ista površina pojavljuje na obe strane problema. Posle oduzimanja te površine preostaje jednačina prvog stepena iako je početni zapis sadržao kvadrate.",
+  rules: ["Razvij zagrade ili primeni identitet. Sredi svaku stranu posebno, zatim primeni istu operaciju na obe strane. Kada se kvadratni članovi ponište, prouči preostalu linearnu jednačinu.", "Ako dobiješ uvek tačnu jednakost, odgovara svaki realan broj. Netačna jednakost znači da rešenja nema. Dobijenu pojedinačnu vrednost zameni u početnu jednačinu i ispitaj eventualni uslov dužine.", "Ne deli obe strane promenljivom koja može biti nula. Time možeš izgubiti rešenje. Član možeš oduzeti sa obe strane i kada je nula."],
+  formulas: ["(x+a)²−x²=2ax+a²", "A=B ⇔ A−C=B−C"],
+  skills: ["zamena", "razvij", "linearno", "vrsta", "kvadrat", "minus", "nemoguce", "proizvodi", "model", "gubitak", "suprotni"],
+  worked: [{"question": "Reši x(x+3)−x²=12.", "steps": ["Razvij proizvod. Dobijaš x²+3x−x²=12, pa 3x=12.", "Deljenjem sa 3 je x=4. Provera: 4·7−16=12."]}, {"question": "Reši (x−2)²=x²+8.", "steps": ["Leva strana postaje x²−4x+4. Oduzimanjem x² sa obe strane ostaje −4x+4=8.", "Sledi −4x=4 i x=−1. Provera: (−1−2)²=9 i (−1)²+8=9."]}, {"question": "Kvadratna bašta se proširi za 2 m duž obe dimenzije. Površina poraste za 28 m². Kolika je bila stranica?", "steps": ["Označi početnu stranicu sa x>0. Razlika površina je (x+2)²−x²=28.", "Posle sređivanja 4x+4=28, pa je x=6. Provera: 8²−6²=28 m². Početna stranica je 6 m."]}],
+}, [
+  ["Da li x=3 zadovoljava x(x+2)=x²+6?", ["Da", "Ne"], "Izračunaj obe strane.", "Levo je 3·5=15. Desno je 9+6=15."],
+  ["Koji je koeficijent uz x u (x+3)²−x²?", "6", "Kvadratni članovi se ponište.", "Ostaje 6x+9."],
+  ["Reši x(x+2)−x²=10.", "5", "Razvij proizvod.", "x²+2x−x²=10 daje 2x=10 i x=5."],
+  ["Ko zadovoljava (x+1)²=x²+2x+1?", ["Svi realni brojevi", "Samo nula", "Nijedan broj"], "Proveri identitet.", "Obe strane posle razvijanja imaju iste članove za svako x."],
+  ["Reši (x+2)²=x²+20.", "4", "Oduzmi kvadrat nepoznate sa obe strane.", "4x+4=20, pa je 4x=16 i x=4."],
+  ["Reši (x−3)²−x²=21.", "-2", "Srednji član je negativan.", "−6x+9=21 daje −6x=12 i x=−2."],
+  ["Koliko rešenja ima (x−1)(x+1)=x²+1?", "0", "Primeni razliku kvadrata.", "Dobije se x²−1=x²+1, odnosno −1=1. Takvog x nema."],
+  ["Reši (x+1)(x+4)=x(x+3)+10.", "3", "Prikaži oba unakrsna proizvoda.", "x²+5x+4=x²+3x+10, pa je 2x=6 i x=3."],
+  ["Kvadratu je stranica produžena za 3 cm i površina je povećana za 45 cm². Početna stranica u cm?", "6", "Razliku površina izjednači sa 45.", "(x+3)²−x²=45 daje 6x+9=45. Dobijamo x=6 cm i provera je 81−36=45."],
+  ["Učenik skrati jednačinu x²=3x sa x i dobije samo 3. Koje je rešenje izgubio?", "0", "Proveri vrednost kojom je zabranjeno deliti.", "Za x=0 obe strane su nula. Deljenje sa x podrazumevalo bi x≠0."],
+  ["Reši (x+1)²−(x−1)²=28.", "7", "Kvadratni i slobodni članovi se ponište.", "Ostaje 4x=28, pa je x=7."],
+  ["Reši x(x−4)−x²=12.", "-3", "Razvij levu stranu.", "−4x=12, pa x=−3."],
+  ["Reši (x+5)²=x²+55.", "3", "Sa obe strane oduzmi x².", "10x+25=55, pa 10x=30 i x=3."],
+  ["Ako se stranica kvadrata smanji za 2 cm, površina se smanji za 32 cm². Početna stranica u cm?", "9", "Oduzmi novi kvadrat od starog.", "x²−(x−2)²=32 daje 4x−4=32 i x=9. Nova stranica ima 7 cm i 81−49=32."],
+  ["Koliko rešenja ima x(x+2)=x²+2x+7?", "0", "Oduzmi iste članove sa obe strane.", "Ostaje 0=7, što je nemoguće."],
+  ["Reši (x+2)(x−3)=(x−1)².", "7", "Prvo sredi obe strane.", "x²−x−6=x²−2x+1. Posle oduzimanja x² i dodavanja 2x dobija se x−6=1, pa x=7."],
+]);

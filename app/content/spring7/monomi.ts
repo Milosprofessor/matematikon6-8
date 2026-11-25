@@ -1,0 +1,30 @@
+import { springLesson } from "../spring6/lesson";
+
+export default springLesson({
+  id: "s7-monomi",
+  title: "Od brojevnog izraza do monoma",
+  month: "february",
+  aim: "Zameni slova brojevima, prepoznaj slične monome i razlikuj njihov zbir od proizvoda.",
+  intro: "Tri paketa po četiri sveske i dva takva paketa daju 3·4+2·4=(3+2)·4. Ako broj svezaka u paketu označiš sa x, ista računica daje 3x+2x=5x. Slovo može predstavljati različite brojeve.",
+  rules: ["Monom je broj ili proizvod broja i stepena promenljivih sa nenegativnim celobrojnim izložiocima. Broj ispred promenljivog dela je koeficijent. Stepen nenultog monoma je zbir izložilaca svih promenljivih.", "Za vrednost izraza zameni svako slovo brojem u zagradi. Pri sabiranju grupiši samo jednake promenljive delove i saberi njihove koeficijente. Pri množenju pomnoži koeficijente i saberi izložioce jednakih osnova.", "Monomi 2x i 3x² nisu slični. Njihov zbir ostaje 2x+3x², dok je njihov proizvod 6x³."],
+  formulas: ["ax+bx=(a+b)x", "x²·x³=x⁵"],
+  skills: ["koeficijent", "stepen", "vrednost", "slicni", "zbir", "proizvod", "suprotni", "zamena", "model", "nepoznat", "znak"],
+  worked: [{"question": "Šta čitaš iz −4x²y?", "steps": ["Koeficijent je −4, a promenljivi deo x²y. Skriveni izložilac uz y je 1.", "Stepen je 2+1=3. Za x=−2 i y=1 vrednost je −4·(−2)²·1=−16."]}, {"question": "Sredi 5ab−2ba+4a.", "steps": ["Promena redosleda činilaca ne menja proizvod, pa je ba=ab. Član 4a ima drugi promenljivi deo.", "Grupiši (5−2)ab+4a=3ab+4a."]}, {"question": "Izračunaj (−3x²y)·(−2xy³) za x=2 i y=−1.", "steps": ["Dva minusa daju plus. Odvojeno računamo x²·x=x³ i y·y³=y⁴, pa je proizvod 6x³y⁴.", "Zamena daje 6·2³·(−1)⁴=6·8·1=48."]}],
+}, [
+  ["Koji je koeficijent monoma −7xy²?", "-7", "Znak je deo koeficijenta.", "Zapis je (−7)·x·y², pa je koeficijent −7."],
+  ["Odredi stepen monoma 9a³b².", "5", "Saberi izložioce promenljivih.", "3+2=5. Broj 9 ne menja stepen."],
+  ["Izračunaj 3x−1 za x=−2.", "-7", "Zameni x brojem u zagradi.", "3·(−2)−1=−6−1=−7."],
+  ["Koji monom je sličan monomu 5ab²?", ["−3b²a", "5a²b", "5ab"], "Uporedi izložioce uz isto slovo.", "b²a=ab², dok ostali imaju drugačije izložioce."],
+  ["Sredi 8x−3x+x.", "6x", "Uz samo x stoji koeficijent 1.", "(8−3+1)x=6x."],
+  ["Izračunaj (−2x²)·(3x³).", "-6x^5", "Posebno odredi znak i izložilac.", "(−2)·3=−6 i x²·x³=x⁵, pa je proizvod −6x⁵."],
+  ["Kolika je vrednost 4a²−4a² za a=−12?", "0", "Da li je potrebno računati kvadrat?", "Dva člana su suprotna. Njihov zbir je nula za svako a."],
+  ["Upiši vrednost −x²+2y za x=−3 i y=4.", "-1", "Razlikuj −x² od (−x)².", "−(−3)²+2·4=−9+8=−1."],
+  ["Četiri plave kese sa po x klikera i tri crvene sa po 2x klikera. Napiši sređen monom za ukupan broj.", "10x", "Najpre izračunaj sadržaj svih crvenih kesa.", "4x+3·2x=4x+6x=10x."],
+  ["Monom x na nepoznati prirodan izložilac puta y³ ima stepen 8. Nađi izložilac uz x.", "5", "Ukupan stepen je zbir.", "Ako je izložilac k, k+3=8, pa je k=5."],
+  ["Odredi koeficijent proizvoda (−a)·(−5a²).", "5", "Nevidljivi koeficijent je −1.", "(−1)·(−5)=5, a proizvod je 5a³."],
+  ["Koji je koeficijent monoma −b³?", "-1", "Dopiši broj ispred slova.", "−b³=(−1)·b³."],
+  ["Za x=−2 izračunaj 4x²−3x.", "22", "Zagrade čuvaju znak pri zameni.", "4·4−3·(−2)=16+6=22."],
+  ["Za koji koeficijent k zbir kx²+9x² ima vrednost nula za svako x?", "-9", "Probaj x=1, pa proveri opšti slučaj.", "k+9=0 daje k=−9. Tada su članovi suprotni."],
+  ["Stepen monoma 3ab⁴c je koliko?", "6", "Vidljivim izložiocima dodaj skrivene jedinice.", "1+4+1=6."],
+  ["Pravougaonik ima stranice 3x i 2x, a kvadrat stranicu x, za x>0. Izrazi ukupnu površinu bez preklapanja.", "7x^2", "Saberi površine, a ne stranice.", "3x·2x+x²=6x²+x²=7x²."],
+]);

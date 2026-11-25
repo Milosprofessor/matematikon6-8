@@ -1,0 +1,30 @@
+import { springLesson } from "../spring6/lesson";
+
+export default springLesson({
+  id: "s7-podaci",
+  title: "Podaci, aritmetička sredina, medijana i mod",
+  month: "may",
+  aim: "Prikupi podatke i odaberi pokazatelj koji odgovara pitanju.",
+  intro: "Izmeri koliko minuta traje put do škole tokom pet dana. Beleži istu veličinu u istoj jedinici. U tabeli svakoj različitoj vrednosti pridruži broj pojavljivanja, a na dijagramu tu učestalost predstavi visinom stupca.",
+  rules: ["Aritmetička sredina odgovara jednakoj raspodeli ukupnog zbira. Za medijanu poređaj podatke: kod neparnog broja uzmi srednji, kod parnog izračunaj prosek dva srednja.", "Mod je najčešća vrednost. Dve vrednosti mogu deliti najveću učestalost. Jedno veoma dugo putovanje snažno utiče na prosek, dok srednji položaj uređenog niza može ostati isti.", "Ne računaj prosek različitih vrednosti samo jednom ako se neke od njih javljaju više puta. Zbir i delilac moraju obuhvatiti sva merenja."],
+  formulas: ["m=[[frac:zbir merenja|broj merenja]]"],
+  skills: ["sredina", "medijana", "mod", "učestalost", "parni-uzorak", "nedostaje", "grafikon", "ponderisanje", "promena", "objedinjavanje", "parni-uzorak"],
+  worked: [{"question": "Nađi medijanu brojeva 11, 5, 6.", "steps": ["Poređaj vrednosti rastuće.", "Redosled je 5, 6, 11. Srednji član je 6."]}, {"question": "Na stubičastom dijagramu 5 učenika bira fudbal, a dvostruko više košarku. Za koliko je drugi stubac viši, u učenicima?", "steps": ["Prvo odredi obe frekvencije.", "Razlika je 10−5=5 učenika."]}, {"question": "Četiri učenika imaju prosek 5, a druga dva 11. Koliki je prosek svih šest?", "steps": ["Vrati zbir svake grupe pa ih objedini.", "Zbirovi su 20 i 22. Podeli njihov zbir sa šest i dobijaš 7."]}],
+}, [
+  ["Uzorak je 3, 5, 7. Koliki je prosek?", "5", "Saberi pa podeli brojem merenja.", "Zbir je 15, pa je sredina 5."],
+  ["Nađi medijanu brojeva 9, 3, 4.", "4", "Poređaj vrednosti rastuće.", "Redosled je 3, 4, 9. Srednji član je 4."],
+  ["Nađi mod podataka 3, 5, 3, 6.", "3", "Prebroj pojavljivanja svake vrednosti.", "Vrednost 3 se javlja dvaput, ostale po jednom."],
+  ["Dve grupe imaju 3 i 6 odgovora. Koliko je ukupno odgovora?", "9", "Saberi frekvencije.", "Broj odgovora je 3+6=9."],
+  ["Merenja su 9, 3, 2 i 10. Kolika je medijana?", "6,0", "Za paran broj uzmi sredinu dva srednja člana.", "Redosled je 2, 3, 9, 10. Sredina srednjih brojeva je (3+9):2."],
+  ["Tri rezultata imaju prosek 7. Dva su 3 i 5. Koji nedostaje?", "13", "Vrati zbir iz poznatog proseka.", "Zbir je 21. Oduzimanjem poznatih dobija se 13."],
+  ["Na stubičastom dijagramu 3 učenika bira fudbal, a dvostruko više košarku. Za koliko je drugi stubac viši, u učenicima?", "3", "Prvo odredi obe frekvencije.", "Razlika je 6−3=3 učenika."],
+  ["Dve ocene su 3, a 3 ocena su 5. Upiši tačnu srednju ocenu kao razlomak.", "21/5", "Uzmi u obzir učestalost.", "Zbir je 2·3+3·5=21, a broj ocena 5. Podeli zbir brojem ocena."],
+  ["Najvećem od pet različitih rezultata dodamo 5. Za koliko raste prosek?", "1", "Jedino se zbir povećao.", "Porast zbira 5 podeli sa 5. Medijana se pri tome ne menja."],
+  ["Četiri učenika imaju prosek 3, a druga dva 9. Koliki je prosek svih šest?", "5", "Vrati zbir svake grupe pa ih objedini.", "Zbirovi su 12 i 18. Podeli njihov zbir sa šest i dobijaš 5."],
+  ["Merenja su 9, 4, 2 i 10. Kolika je medijana?", "6,5", "Za paran broj uzmi sredinu dva srednja člana.", "Redosled je 2, 4, 9, 10. Sredina srednjih brojeva je (4+9):2."],
+  ["Uzorak je 4, 6, 8. Koliki je prosek?", "6", "Saberi pa podeli brojem merenja.", "Zbir je 18, pa je sredina 6."],
+  ["Tri rezultata imaju prosek 8. Dva su 4 i 6. Koji nedostaje?", "14", "Vrati zbir iz poznatog proseka.", "Zbir je 24. Oduzimanjem poznatih dobija se 14."],
+  ["Najvećem od pet različitih rezultata dodamo 10. Za koliko raste prosek?", "2", "Jedino se zbir povećao.", "Porast zbira 10 podeli sa 5. Medijana se pri tome ne menja."],
+  ["Nađi mod podataka 4, 6, 4, 7.", "4", "Prebroj pojavljivanja svake vrednosti.", "Vrednost 4 se javlja dvaput, ostale po jednom."],
+  ["Četiri učenika imaju prosek 4, a druga dva 10. Koliki je prosek svih šest?", "6", "Vrati zbir svake grupe pa ih objedini.", "Zbirovi su 16 i 20. Podeli njihov zbir sa šest i dobijaš 6."],
+]);

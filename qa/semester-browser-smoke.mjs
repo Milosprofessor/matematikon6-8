@@ -37,8 +37,8 @@ try {
       for(const grade of [6,7,8]){
         await page.goto(url("#/razred/"+grade),{waitUntil:"domcontentloaded"});
         await waitFor(".month-block");
-        await page.waitForFunction(n=>document.querySelectorAll(".month-block").length===n,grade===6?10:4);
-        assert.equal(await page.locator(".month-block").count(),grade===6?10:4);
+        await page.waitForFunction(n=>document.querySelectorAll(".month-block").length===n,grade===8?4:10);
+        assert.equal(await page.locator(".month-block").count(),grade===8?4:10);
         for(const block of await page.locator(".month-block").all())
           assert.ok(await block.locator(".area-card").count()>0,"Prazan mesec u razredu "+grade);
       }
