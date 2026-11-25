@@ -60,4 +60,5 @@ export default unit({
   ["Koji deo mreže pravilne četvorostrane piramide je kvadrat?",["Osnova","Omotač","Bočna strana"],"Razlikuj centralni mnogougao od trouglova.","Osnovu okružuju četiri podudarna trougla."],
   ["Pravilna šestostrana piramida ima omotač 90 cm² i osnovnu ivicu 5 cm. Bočna visina u cm?","6","Obim osnove je 30 cm.","90=30·s:2. Množenje sa 2 i deljenje sa 30 daje s=6 cm."],
   ["Krov nad kvadratom stranice 12 m ima visinu 8 m iznad centra. Kolika je površina krova bez poda u m²?","240","Najpre odredi bočnu visinu.","a²+b²=c². Iz 6²+8²=s² dobija se s=10 m. M=48·10:2=240 m²."]
-]);
+], ["strane","visina","obim","trougao","omotač","šator","presek","ivica","mreža","pravougaonik"],
+  ["Bočna strana ima krake od 13 cm i osnovicu 24 cm. Visina na osnovicu u cm?","5","Visina prepolovljava osnovicu.","a²+b²=c². Katete su 12 i s, hipotenuza 13. Iz 144+s²=169 sledi s²=25 i s=5 cm."]);

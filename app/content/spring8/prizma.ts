@@ -60,4 +60,5 @@ export default unit({
   ["Za koju prizmu ne postoji dijagonalni presek kroz dijagonalu osnove?",["Trostranu","Četvorostranu","Šestostranu"],"Pogledaj temena osnove.","U trouglu svaki par temena određuje stranicu."],
   ["Prava prizma ima dve osnove po 15 cm² i omotač 72 cm². Ukupna površina u cm²?","102","Računaj oba poklopca.","P=2B+M=30+72=102 cm²."],
   ["Kutija je iznutra 9 cm puta 12 cm puta 20 cm. Najduži tanak prav štap koji staje ima koliko cm?","25","Računaj najpre dijagonalu dna.","a²+b²=c². U osnovi d²=81+144=225, d=15 cm. U preseku D²=225+400=625 pa D=25 cm."]
-]);
+], ["osnove","oblik","zapremina","omotač","presek","trougaona-osnova","strana","šestougao","visina","zapremina"],
+  ["Prava prizma ima B=32 cm² i ukupnu površinu 154 cm². Omotač u cm²?","90","Odvoji dve osnove od ukupne površine.","M=P−2B=154−64=90 cm²."]);

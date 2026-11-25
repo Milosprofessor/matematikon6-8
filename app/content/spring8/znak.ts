@@ -58,4 +58,5 @@ export default unit({
   ["Prava y=−3 je u odnosu na x-osu kakva?",["Paralelna i različita","Normalna","Poklapa se"],"Uporedi ordinate.","Obe su vodoravne, sa ordinatama −3 i 0."],
   ["Kako su postavljene prave y=4x+7 i y=3x+7?",["Seku se","Poklapaju se","Paralelne različite"],"Uporedi početnu vrednost i nagib.","Obe sadrže (0; 7), a imaju različite nagibe."],
   ["Prava ima nulu 5 i prolazi kroz (1; 12). Koliki je njen odsečak na y-osi?","15","Koristi tačke (5; 0) i (1; 12).","Nagib je (0−12):(5−1)=−3. Iz 0=−3·5+n dobijaš n=15."]
-]);
+], ["osa","konstanta","nule","monotonost","nula","znak","implicitni","položaj","parametar","prag"],
+  ["Koji je nagib prave y+2x=5?","−2","Izrazi y.","Posle oduzimanja 2x sa obe strane sledi y=5−2x."]);

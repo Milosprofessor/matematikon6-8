@@ -59,4 +59,5 @@ export default unit({
   ["Ravan kroz centar seče sferu po kom objektu?",["Kružnici","Punom krugu","Prečniku"],"Sfera je samo granica lopte.","Presek sadrži tačke na obodu velikog kruga."],
   ["Površina velikog kruga je 49π cm². Površina sfere u cm², tačno?","196π","Uporedi dve formule.","P_sfere=4πR²=4·49π=196π cm²."],
   ["Voda sasvim prekrije punu kuglu poluprečnika 3 dm u uspravnom valjku sa B=12π dm². Porast nivoa u dm bez prelivanja?","3","Istisnuta zapremina jednaka je zapremini kugle.","Kugla zauzima 4π·27:3=36π dm³. Porast je 36π:(12π)=3 dm."]
-]);
+], ["rotacija","prečnik","presek","tangenta","površina","zapremina","prečnik","radijus","rastojanje","pretapanje"],
+  ["Poluprečnik preseka je 8 cm, udaljenost ravni od centra 6 cm. Prečnik lopte u cm?","20","Pronađi hipotenuzu odgovarajućeg trougla.","a²+b²=c². R²=64+36=100, pa R=10 cm i prečnik 20 cm."]);

@@ -60,4 +60,5 @@ export default unit({
   ["Ako je visina kupe 9 cm, a osnova 12 cm², kolika je zapremina u cm³?","36","Površina osnove je već data.","V=B·H:3=12·9:3=36 cm³."],
   ["Kupa ima omotač 40π cm² i izvodnicu 10 cm. Prečnik osnove u cm?","8","Iz omotača izračunaj r.","M=πrs daje r=4 cm, pa je d=8 cm."],
   ["Peščana kupa ima r=3 m i H=2 m. Tačna površina tla koju bi pokrio taj pesak u sloju debljine 0,5 m u m²?","12π","Ukupna zapremina ostaje ista.","V=π·9·2:3=6π m³. Za sloj visine 0,5 m važi B=6π:0,5=12π m²."]
-]);
+], ["mreža","rotacija","luk","omotač","visina","zapremina","površina","poređenje","isečak","izvodnica"],
+  ["Kupa ima površinu osnove 49π cm² i H=6 cm. Zapremina u cm³, tačno?","98π","Površina osnove već je izračunata.","V=B·H:3=49π·6:3=98π cm³."]);

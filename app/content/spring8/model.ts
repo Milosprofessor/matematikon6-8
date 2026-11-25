@@ -58,4 +58,5 @@ export default unit({
   ["Ako x predstavlja sate, a y kilometre, koji izraz ima jedinicu km na sat?",["y:x","x·y","y+x"],"Brzina je količnik puta i vremena.","Za x>0, y kilometara podeljeno sa x sati daje prosečnu brzinu."],
   ["Zbir godina majke i sina je 54, a razlika 28. Koliko godina ima sin?","13","Neka x bude starost majke.","x+y=54 i x−y=28 daju x=41, y=13. Zaista 41+13=54, a 41−13=28."],
   ["Dva radnika naprave 18 delova na sat zajedno. Za 2 sata rada prvog i 3 sata rada drugog nastane 47 delova. Koliko delova na sat pravi prvi?","7","Razdvoji učinke po radnicima.","Neka x i y označe učinak na sat. x+y=18, 2x+3y=47. Oduzmi 2x+2y=36, pa y=11 i x=7. Zaista 14+33=47."]
-]);
+], ["brojanje","jedinice","domen","račun","zbir","vozila","cena","pravougaonik","mešavina","cifre"],
+  ["Zbir stranica pravougaonika je 14 cm za jedan par susednih stranica, razlika je 2 cm. Kraća u cm?","6","Za dužu x i kraću y napiši dva uslova.","x+y=14, x−y=2 daju x=8 i y=6. Zbir je 14, razlika 2."]);

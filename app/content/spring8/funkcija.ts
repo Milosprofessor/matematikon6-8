@@ -58,4 +58,5 @@ export default unit({
   ["Za y=4x odredi odsečak n.","0","Izračunaj y za x=0.","y=4·0=0. Grafik prolazi kroz koordinatni početak."],
   ["Prava spaja (−2; 5) i (2; −3). Koliki je k?","−2","Obe razlike računaj u istom smeru.","k=(−3−5):(2+2)=−8:4=−2."],
   ["Put za 4 minuta raste sa 1,2 km na 2 km. Koliko metara prelazi vozilo u 7 minuta istom brzinom?","1400","Iz razlike položaja odredi brzinu.","0,8 km je 800 m. Brzina je 800:4=200 m po minutu, pa za 7 minuta prelazi 1400 m."]
-]);
+], ["odsečak","promena","tabela","promenljiva","obrnuti-račun","nagib","odsečak","tarifa","prava","model"],
+  ["Grafik ima nagib 4 i odsečak −3. Ordinata za x=−2?","−11","Uvrsti x u pravilo.","y=4·(−2)−3=−11."]);

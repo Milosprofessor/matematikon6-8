@@ -60,4 +60,5 @@ export default unit({
   ["Osni presek valjka sa r=3 cm i H=8 cm ima površinu od koliko cm²?","48","Cela širina je prečnik.","Presek je pravougaonik stranica 6 i 8 cm. Površina je 48 cm²."],
   ["Etiketa je duga 14π cm i visoka 4 cm. Nađi prečnik limenke u cm ako nema preklopa.","14","Dužina je obim kruga.","πd=14π daje d=14 cm."],
   ["Voda iz punog valjka poluprečnika 2 dm i visine 9 dm preliva se u valjak poluprečnika 3 dm. Nivo vode u dm ako ništa ne iscuri?","4","Zapremina vode se čuva.","Prvi valjak sadrži 36π dm³. U drugom je B=9π dm², pa H=36π:(9π)=4 dm."]
-]);
+], ["rotacija","mreža","osnova","etiketa","presek","zapremina","kvadrat","visina","dijagonala","posuda"],
+  ["Osni presek valjka ima obim 36 cm i H=10 cm. Nađi r u cm.","4","Druga stranica pravougaonika je prečnik.","2(d+10)=36 pa d=8 cm i r=4 cm."]);

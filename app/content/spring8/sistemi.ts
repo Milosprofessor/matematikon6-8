@@ -57,4 +57,5 @@ export default unit({
   ["Koji je uslov tačan za sve uređene parove?",["0x+0y=0","0x+0y=1","x+y=0"],"Uvrsti proizvoljne koordinate.","Leva strana prve jednakosti uvek iznosi nula."],
   ["Sistem y=2 i 2x+3y=7 ima koje rešenje? Unesi par koristeći tačku-zarez.","(1/2;2)","Postavi y=2 u drugu jednačinu.","2x+6=7 daje x=1/2. Obe jednakosti važe."],
   ["Reši 2x+3y=1 i 3x−2y=8. Unesi par.","(2;-1)","Pomnoži prvu jednačinu sa 2, drugu sa 3.","Sabiranjem dobijaš 13x=26 pa x=2. Dat je 4+3y=1 pa y=−1. Provera: 6+2=8."]
-]);
+], ["provera","vertikala","presek","par","zamena","zamena","eliminacija","paralelnost","razlomci","identitet"],
+  ["Reši x+3y=16 i x−y=4. Upiši par.","(7;3)","Oduzmi drugu od prve.","4y=12 daje y=3. Iz x−3=4 sledi x=7. Provera: 7+9=16."]);

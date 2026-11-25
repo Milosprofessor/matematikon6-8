@@ -1,3 +1,4 @@
+import { checks8 } from "./spring8/checks";
 import { checks7 } from "./spring7/checks";
 import { springChecks } from "./spring6/checks";
 import { C, I, GradeId, Task } from "./types";
@@ -50,7 +51,7 @@ export const areaTests: Record<GradeId,Record<string,AreaTestTask[]>> = {
 };
 
 export function getAreaTest(gradeId:GradeId,areaId:string,unlocked?:ReadonlySet<string>):AreaTestTask[]{
- const spring = gradeId === 6 ? springChecks.get(areaId) : gradeId === 7 ? checks7.get(areaId) : undefined;
+ const spring = gradeId === 6 ? springChecks.get(areaId) : gradeId === 7 ? checks7.get(areaId) : checks8.get(areaId);
  if (spring) return spring.items;
  const area=grades.find(grade=>grade.id===gradeId)?.areas.find(area=>area.id===areaId);if(!area)return [];
  const lessons=area.lessons.filter(l=>!unlocked||unlocked.has(l.id));

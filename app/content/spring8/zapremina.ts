@@ -58,4 +58,5 @@ export default unit({
   ["Koliko puta je veća zapremina prizme od zapremine piramide iste osnove i visine?","3","Uporedi oba proizvoda.","B·H je tri puta veće od B·H:3."],
   ["Dijagonalni presek pravilne četvorostrane piramide ima osnovicu 10 cm i visinu 6 cm. Njegova površina u cm²?","30","Presek je trougao.","P_preseka=10·6:2=30 cm²."],
   ["Od bloka 6 dm puta 5 dm puta 9 dm ostaje piramida jednake osnove i visine. Zapremina uklonjenog dela u litrima?","180","Oduzmi zapremine u istoj jedinici.","Blok ima 270 dm³, piramida 90 dm³. Razlika je 180 dm³ odnosno 180 l."]
-]);
+], ["zapremina","poređenje","jedinica","pravilnost","visina","ivica","trougao","skaliranje","presek","šestougao"],
+  ["Šator piramidalnog oblika ima B=18 m² i H=2,5 m. Unutrašnja zapremina u m³?","15","Visina je normalna na pod.","V=B·H:3=18·2,5:3=15 m³."]);

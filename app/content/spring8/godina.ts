@@ -60,4 +60,5 @@ export default unit({
   ["Koja veličina se izražava u kvadratnim centimetrima?",["Površina etikete","Zapremina soka","Dužina šava"],"Biraj prema broju dimenzija.","Etiketa zauzima deo površi i meri se u cm²."],
   ["Dve slične trougaone strane imaju odgovarajuće osnovice 6 i 9 cm. Ako je manja površina 20 cm², veća u cm²?","45","Kvadriraj razmeru dužina.","k=9:6=1,5. Veća površina iznosi 20·2,25=45 cm²."],
   ["Rezervoar gubi 4 l u minuti. Posle 7 minuta ostaje 50 l. Posle koliko minuta od početka ostaje tačno 10 l?","17","Prvo nađi početnu zapreminu.","Na početku je bilo 50+28=78 l. Iz 78−4t=10 sledi t=17 min. Provera: 78−68=10 l."]
-]);
+], ["razmera","sličnost","projekcija","merenje","nejednačina","prosek","osnova","tarifa","slična-tela","poređenje"],
+  ["Dva plana imaju razmere 1 prema 100 i 1 prema 250. Isti zid je na prvom dug 15 cm. Dužina na drugom u cm?","6","Oba plana predstavljaju istu stvarnu dužinu.","Zid ima 1500 cm. U razmeri 1 prema 250 crtež meri 1500:250=6 cm."]);

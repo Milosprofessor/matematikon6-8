@@ -61,4 +61,5 @@ export default unit({
   ["Koji presek lopte ima najveću površinu?",["Kroz centar","Tangentni","Svaki ima istu površinu"],"Posmatraj udaljenost ravni.","Za d=0 je ρ=R, najveći mogući poluprečnik."],
   ["Na rezervoaru piše 0,72 m³. Kolika mu je zapremina u litrima?","720","Prevedi metre u decimetre pre kubiranja.","1 m³=1000 dm³, pa je 0,72 m³=720 l."],
   ["Kocka ivice 6 cm ima kroz celu visinu kružni otvor poluprečnika 1 cm. Koliki je koeficijent uz π u zapremini uklonjenog materijala u cm³?","6","Izbušeni deo ima oblik valjka.","Otvor ima osnovu π cm² i visinu 6 cm pa je uklonjeno 6π cm³."]
-]);
+], ["površina","jedinice","izbor","presek","poređenje","šupljina","spoj","kapacitet","upisivanje","razlika"],
+  ["Prizma i piramida zajedno imaju 72 cm³, uz istu osnovu i visinu. Zapremina piramide u cm³?","18","Zapremine su u odnosu tri prema jedan.","Četiri jednaka dela imaju 72 cm³. Piramida zauzima jedan deo odnosno 18 cm³."]);
