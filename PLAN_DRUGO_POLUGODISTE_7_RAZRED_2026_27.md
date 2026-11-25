@@ -59,3 +59,25 @@ Svaka jedinica predviđa 3 rešena primera, 4 osnovna, 4 srednja i 2 napredna za
 - [ZVKOV](https://ceo.edu.rs/), standardi za kraj osnovne škole (Sl. glasnik RS 104/2024). Za pojedinačne jedinice merodavan je predmetni program VII razreda.
 - [Matematiskop, globalni plan 2026/27 i operativni materijali](https://www.matematiskop.co.rs/7-razred-nastavni-materijali/). Objavljene pripreme povezuju Pitagoru, koordinatni sistem i stepene u jesen.
 - [Klett](https://klett.rs/matematika-7/) i [Novi Logos](https://logos-edu.rs/matematika-7/) imaju portale materijala za sedmi razred. [Vulkan](https://www.vulkanznanje.rs/sedmi-razred-rs.aspx) odvaja planove za Srbiju i Vojvodinu; [odobreni udžbenik](https://www.vulkanznanje.rs/p/5294/NOVO-IZDANJE-MATEMATIKA-7-UDZBENIK-SA-ZBIRKOM-ZADATAKA). [Zavod za udžbenike](https://www.knjizara.zavod.co.rs/prirucnik-matematika-7-i-orng) uz priručnik navodi orijentacioni raspored. Nisu potvrđeni mesečni planovi svih izdavača za 2026/27. Oni nisu osnova za pripisivanje ovog rasporeda pojedinom izdavaču.
+
+## Evidencija realizacije po jedinici
+
+| Mesec | Jedinica i izvor | Provera |
+|---|---|---|
+| Januar | [Unutrašnji i spoljašnji uglovi mnogougla](app/content/spring7/uglovi.ts) | Ključ, 10 zadataka za rad, mini-provera, otvaranje iz kalendara i povratak |
+| Januar | [Pravilni mnogouglovi i njihove konstrukcije](app/content/spring7/pravilni.ts) | Ključ, 10 zadataka za rad, mini-provera, otvaranje iz kalendara i povratak |
+| Februar | [Obim i površina mnogougla](app/content/spring7/povrsina.ts) | Ključ, 10 zadataka za rad, mini-provera, otvaranje iz kalendara i povratak |
+| Februar | [Ortocentar, težište i dokaz podudarnošću](app/content/spring7/centri.ts) | Ključ, 10 zadataka za rad, mini-provera, otvaranje iz kalendara i povratak |
+| Februar | [Od brojevnog izraza do monoma](app/content/spring7/monomi.ts) | Ključ, 10 zadataka za rad, mini-provera, otvaranje iz kalendara i povratak |
+| Mart | [Stepen, zbir i razlika polinoma](app/content/spring7/polinomi.ts) | Ključ, 10 zadataka za rad, mini-provera, otvaranje iz kalendara i povratak |
+| Mart | [Množenje monoma polinomom i polinoma polinomom](app/content/spring7/proizvod.ts) | Ključ, 10 zadataka za rad, mini-provera, otvaranje iz kalendara i povratak |
+| Mart | [Kvadrat binoma i razlika kvadrata](app/content/spring7/identiteti.ts) | Ključ, 10 zadataka za rad, mini-provera, otvaranje iz kalendara i povratak |
+| April | [Rastavljanje polinoma na činioce](app/content/spring7/cinioci.ts) | Ključ, 10 zadataka za rad, mini-provera, otvaranje iz kalendara i povratak |
+| April | [Transformacije polinoma u jednačinama](app/content/spring7/jednacine.ts) | Ključ, 10 zadataka za rad, mini-provera, otvaranje iz kalendara i povratak |
+| April | [Tetiva, luk i uglovi u krugu](app/content/spring7/kruznica.ts) | Ključ, 10 zadataka za rad, mini-provera, otvaranje iz kalendara i povratak |
+| Maj | [Obim kruga i dužina kružnog luka](app/content/spring7/luk.ts) | Ključ, 10 zadataka za rad, mini-provera, otvaranje iz kalendara i povratak |
+| Maj | [Površina kruga, isečka i prstena](app/content/spring7/isecci.ts) | Ključ, 10 zadataka za rad, mini-provera, otvaranje iz kalendara i povratak |
+| Maj | [Rotacija tačke, duži i mnogougla](app/content/spring7/rotacija.ts) | Ključ, 10 zadataka za rad, mini-provera, otvaranje iz kalendara i povratak |
+| Maj | [Podaci, aritmetička sredina, medijana i mod](app/content/spring7/podaci.ts) | Ključ, 10 zadataka za rad, mini-provera, otvaranje iz kalendara i povratak |
+| Jun | [Približna vrednost i apsolutna greška](app/content/spring7/procena.ts) | Ključ, 10 zadataka za rad, mini-provera, otvaranje iz kalendara i povratak |
+| Jun | [Godišnja sistematizacija i priprema za osmi razred](app/content/spring7/sinteza.ts) | Ključ, 10 zadataka za rad, mini-provera, otvaranje iz kalendara i povratak |
