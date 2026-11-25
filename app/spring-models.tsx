@@ -2,7 +2,10 @@
 
 import { useState } from "react";
 
+import { useCurrentScript, localize } from "./i18n";
+
 export function DataChart(){
+  const script=useCurrentScript();
   const [mode,setMode]=useState(0), [day,setDay]=useState(0);
   const days=["Pon","Uto","Sre","Čet"], a=[6,10,4,8], b=[8,6,10,4];
   return <><p>Biblioteka beleži broj pozajmljenih knjiga u dva odeljenja. Izaberi prikaz i dan.</p>
@@ -14,7 +17,7 @@ export function DataChart(){
     {[a,b].map((series,i)=><g key={i} fill={i?"#ac590b":"#225589"}>
       {mode===2&&<polyline points={series.map((v,j)=>(68+j*62)+","+(170-v*14)).join(" ")} fill="none" stroke={i?"#ac590b":"#225589"} strokeWidth="2.5" strokeDasharray={i?"5 2":undefined}/>}
       {series.map((v,j)=>mode===1?<rect key={j} x={52+j*62+i*17} y={170-v*14} width="14" height={v*14}/>:<rect key={j} x={64+j*62} y={166-v*14} width="8" height="8" rx={i?0:4}/>)}
-    </g>)}{days.map((d,j)=><text key={d} textAnchor="middle" x={68+j*62} y="196">{d}</text>)}</svg>}
+    </g>)}{days.map((d,j)=><text key={d} textAnchor="middle" x={68+j*62} y="196">{localize(d,script)}</text>)}</svg>}
     <p>Plavo · odeljenje A. Narandžasto · odeljenje B.</p>
     <div className="lab-options">{days.map((d,i)=><button key={d} aria-pressed={i===day} onClick={()=>setDay(i)}>{d}</button>)}</div><p aria-live="polite">{days[day]} · A: {a[day]}, B: {b[day]}. Zajedno {a[day]+b[day]} knjiga.</p></>;
 }

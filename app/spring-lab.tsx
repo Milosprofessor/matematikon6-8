@@ -2,6 +2,7 @@
 
 import { useEffect, useState, type ReactNode, type PointerEvent } from "react";
 
+import { useCurrentScript, localize } from "./i18n";
 import { DataChart, ReflectionLab, TrapezoidConstruction } from "./spring-models";
 
 type Point = [number, number];
@@ -15,7 +16,8 @@ function Range({label,value,min,max,set}:{label:string;value:number;min:number;m
   return <label className="lab-range">{label} <output>{value}</output><input type="range" min={min} max={max} value={value} onChange={e=>set(Number(e.target.value))}/></label>;
 }
 function Canvas({title,children}:{title:string;children:ReactNode}){
-  return <svg viewBox="0 0 320 220" role="img" aria-label={title}><title>{title}</title>{children}</svg>;
+  const caption=localize(title,useCurrentScript());
+  return <svg viewBox="0 0 320 220" role="img" aria-label={caption}><title>{caption}</title>{children}</svg>;
 }
 function Choice({names,at,set}:{names:string[];at:number;set:(n:number)=>void}){
   return <div className="lab-options">{names.map((name,i)=><button type="button" key={name} aria-pressed={i===at} onClick={()=>set(i)}>{name}</button>)}</div>;
@@ -123,7 +125,10 @@ function AreaLab({initial=0}:{initial?:number}){
     drawing=<>{shape([[52,52],[119,52],[119,170],[52,170]])}{shape([[119+shift,110],[223+shift,110],[223+shift,170],[119+shift,170]],"second")}</>;
     caption="Razmakni dva pravougaonika koji grade figuru u obliku slova L. Njihove površine se sabiraju jer se unutrašnjosti ne preklapaju.";
   }
-  return <><Choice names={["Paralelogram","Trougao","Trapez","Romb","Deltoid","Složena figura"]} at={mode} set={i=>{setMode(i);setStage(0)}}/><Canvas title="Izvođenje formule za površinu">{drawing}</Canvas>
+  const labels=mode===0?<><text x="140" y="178">a</text><text x="88" y="114">h</text></>:
+    mode===1||mode===2?<><text x="91" y="181">a</text><text x={mode===1?101:125} y="139">h</text>{mode===2&&<text x="89" y="66">b</text>}</>:
+    mode===3||mode===4?<><text x="90" y={103-18*t}>e</text><text x="157" y={87-18*t}>h₁</text><text x="157" y={139+18*t}>h₂</text></>:null;
+  return <><Choice names={["Paralelogram","Trougao","Trapez","Romb","Deltoid","Složena figura"]} at={mode} set={i=>{setMode(i);setStage(0)}}/><Canvas title="Izvođenje formule za površinu">{drawing}{labels}</Canvas>
   <Range label="Prati promenu (%)" value={stage} min={0} max={100} set={setStage}/><div className="lab-options"><button onClick={()=>setStage(0)}>Početna figura</button><button onClick={()=>setStage(100)}>Završni položaj</button></div><p>{caption}</p></>;
 }
 

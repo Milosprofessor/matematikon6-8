@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 import { fileURLToPath } from "node:url";
 const path = relative => fileURLToPath(new URL(relative, import.meta.url));
 await build({
-  configFile: false, root: path("../pages/"), base: "./", publicDir: false,
+  configFile: false, root: path("../static-pages/"), base: "./", publicDir: false,
   plugins: [react()], resolve: {alias: {"@": path("../")}},
   build: {outDir: path("../dist/pages/"), emptyOutDir: true},
 });
