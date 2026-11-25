@@ -23,9 +23,28 @@ export function resumeLessonWork(lessonId:string,tasks:Task[],attempts:Knowledge
  return work;
 }
 export const normalizeAnswer=(v:string)=>v.trim().replace(/[−–—]/g,"-").replace(/\s+/g,"").replace(/,/g,".").toLowerCase();
+// Exact rational comparison accepts decimal commas and unreduced fractions.
+function rational(value:string): [bigint,bigint] | undefined {
+ const match = /^([+-]?)(\d*)(?:\.(\d+))?(?:\/([+-]?\d+))?$/.exec(value);
+ if (!match || value.length > 80 || (!match[2] && !match[3])) return;
+ const digits = match[2] + (match[3] ?? "");
+ const numerator = BigInt((match[1] === "-" ? "-" : "") + digits);
+ const scale = BigInt("1" + "0".repeat(match[3]?.length ?? 0));
+ const denominator = scale * BigInt(match[4] ?? "1");
+ if (denominator !== BigInt(0)) return [numerator, denominator];
+}
 export function sameAnswer(entered:string,answer:string){
- const a=normalizeAnswer(entered),b=normalizeAnswer(answer),an=Number(a),bn=Number(b);
- return a!==""&&b!==""&&Number.isFinite(an)&&Number.isFinite(bn)?an===bn:a===b;
+ const a=normalizeAnswer(entered), b=normalizeAnswer(answer);
+ if (!a || !b) return false;
+ if (a===b) return true;
+ const left=rational(a), right=rational(b);
+ if(left && right) return left[0]*right[1]===right[0]*left[1];
+ // Keep scientific notation accepted by legacy numeric input.
+ if(!a.includes("/")&&!b.includes("/")&&(!left||!right)){
+   const x=Number(a), y=Number(b);
+   return Number.isFinite(x)&&Number.isFinite(y)&&x===y;
+ }
+ return false;
 }
 export function submitTask(state:TaskSnapshot,task:Pick<Task,"answer">):TaskSnapshot{
  if(state.result||!state.value.trim())return state;

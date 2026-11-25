@@ -1,3 +1,4 @@
+import { springChecks } from "./spring6/checks";
 import { C, I, GradeId, Task } from "./types";
 import { octoberAreaTests } from "./october-tests";
 import {grades} from './index';
@@ -48,6 +49,8 @@ export const areaTests: Record<GradeId,Record<string,AreaTestTask[]>> = {
 };
 
 export function getAreaTest(gradeId:GradeId,areaId:string,unlocked?:ReadonlySet<string>):AreaTestTask[]{
+ const spring = gradeId === 6 ? springChecks.get(areaId) : undefined;
+ if (spring) return spring.items;
  const area=grades.find(grade=>grade.id===gradeId)?.areas.find(area=>area.id===areaId);if(!area)return [];
  const lessons=area.lessons.filter(l=>!unlocked||unlocked.has(l.id));
  const lessonIds=new Set(lessons.map(lesson=>lesson.id));

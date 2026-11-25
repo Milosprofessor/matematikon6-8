@@ -1,8 +1,8 @@
 export type GradeId = 6 | 7 | 8;
 export type Level = "basic" | "medium" | "advanced";
-export const months = ["september", "october", "november", "december"] as const;
+export const months = ["september", "october", "november", "december", "january", "february", "march", "april", "may", "june"] as const;
 export type Month = typeof months[number];
-export const monthLabels: Record<Month,string> = {september:"SEPTEMBAR", october:"OKTOBAR", november:"NOVEMBAR", december:"DECEMBAR"};
+export const monthLabels: Record<Month,string> = {september:"SEPTEMBAR", october:"OKTOBAR", november:"NOVEMBAR", december:"DECEMBAR", january:"JANUAR", february:"FEBRUAR", march:"MART", april:"APRIL", may:"MAJ", june:"JUN"};
 export type ErrorCategory = "concept" | "calculation" | "sign" | "rule" | "diagram" | "method";
 export type TaskDiagram =
   | { type:"semester-figure"; variant:"pentagon"|"prism-net"|"pyramid" }
@@ -47,6 +47,10 @@ export type Lesson = {
   rules: string[];
   formulas: string[];
   examples: string[];
+  aim?: string;
+  worked?: {question: string; steps: string[]}[];
+  mini?: Task[];
+  areaQuestions?: Task[];
   solved: { question: string; steps: string[] };
   tasks: Task[];
   month?: Month;
@@ -73,6 +77,7 @@ export type Area = {
   title: string;
   short: string;
   review?: boolean;
+  reviewPoints?: string[];
   month?: Month;
   /** Kratak opis dela oblasti koji se zaista obrađuje u datom mesecu. */
   monthShort?: Partial<Record<Month,string>>;

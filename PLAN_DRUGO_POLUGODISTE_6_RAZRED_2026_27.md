@@ -10,6 +10,8 @@ Za centralnu Srbiju nastava traje od 18. januara do 11. juna. U dostupnoj nastav
 | Januar | Konstrukcije uglova i trouglova | uglovi, nejednakost trougla | konstruiše ugao i trougao prema podacima | lukovi šestara, koraci SSS |
 | Februar | Podudarnost, simetrija i kružnice trougla | konstrukcije | uparuje elemente, obrazlaže stav, konstruiše centre i visinu | osna i centralna simetrija |
 | Februar | Koordinate, kretanje i podaci | brojevna prava | ucrtava, čita, preslikava i tumači podatke | pomeranje tačke po mreži |
+| Februar | Osna i centralna simetrija i translacija | koordinate, podudarnost | konstruiše lik i proverava podudarnost | dva trougla na mreži |
+| Februar | Tabele, dijagrami i tumačenje podataka | koordinate, srednja vrednost | bira prikaz i obrazlaže zaključke | dvostruki stubići, tačke, linije i tabela |
 | Mart | Razmera i proporcija | količnik | koristi isti redosled veličina i jedinice | karta, mešavine |
 | Mart | Direktna i obrnuta proporcionalnost | proporcije, koordinate | razlikuje stalan količnik i proizvod | tabela i grafik |
 | Mart | Procentni račun | razlomci i razmera | nalazi deo, celinu i procenat | kupovina, poređenje ponuda |
@@ -17,6 +19,7 @@ Za centralnu Srbiju nastava traje od 18. januara do 11. juna. U dostupnoj nastav
 | April | Paralelogram i posebni slučajevi | četvorougao | izvodi i koristi svojstva stranica, uglova i dijagonala | model sa dijagonalama |
 | April | Vektori i konstrukcija paralelograma | pomeraj i paralelne prave | sabira, oduzima i množi vektor brojem | konstrukcija, pomeranje |
 | April | Trapez, srednje linije i deltoid | paralelne prave, simetrija | računa srednju liniju, konstruiše trapez i koristi svojstva deltoida | promenljive figure |
+| April | Konstrukcije trapeza, romba i deltoida | SSS, paralelogram | nalazi pomoćni trougao i proverava uslove | konstrukcija trapeza iz četiri stranice |
 | Maj | Merenje površine, pravougaonik i paralelogram | mreža, visina | preračunava jedinice i izvodi formulu premeštanjem | rastavljanje i sklapanje |
 | Maj | Površina trougla i trapeza | paralelogram | bira odgovarajuću visinu i udvostručuje figuru | druga podudarna figura |
 | Maj | Normalne dijagonale i složene figure | površina trougla | računa površine romba, deltoida i složenih figura | raspodela na delove |
