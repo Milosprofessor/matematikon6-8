@@ -140,7 +140,7 @@ test("stari ključevi i touch mete ostaju očuvani uz zajednički tok oba meseca
  const source=await readFile(new URL("../app/page.tsx",import.meta.url),"utf8"),css=await readFile(new URL("../app/globals.css",import.meta.url),"utf8");
  assert.match(source,/matematikon68-progress-v1-\$\{gradeId\}/);assert.match(source,/\.\.\.emptyProgress,\.\.\.parsed/);assert.match(source,/lessonWork:normalizeLessonWork/);assert.doesNotMatch(source,/localStorage\.clear|localStorage\.removeItem/);
  assert.match(source,/<LessonWorkSequence lesson=\{lesson\}/);assert.equal(octoberDemonstrations.size,7);
- assert.match(source,/inputMode=\{negativeAllowed\?"text":"decimal"\}/);assert.match(source,/onSnapshot=\{next=>snapshot/);
+ assert.match(source,/inputMode=\{negativeAllowed\|\|task.answer.includes\("\/"\)\?"text":"decimal"\}/);assert.match(source,/onSnapshot=\{next=>snapshot/);
  assert.match(css,/\.work-navigation>button\{[^}]*min-height:50px/);assert.match(css,/aside\.october-work-aside\{grid-template-columns:1fr/);
  for(const grade of grades)for(const area of grade.areas)for(const lesson of area.lessons.filter(l=>(l.month??area.month??"september")==="september")){
   const pool=tasksForLesson(lesson.id,lesson.tasks);assert.equal(lessonWorkTasks(lesson.id,pool).length,10);if(!["mnozenje","deljenje"].includes(lesson.id))assert.equal(octoberVariants(lesson.id).length,0);

@@ -17,7 +17,7 @@ const screens = [
   {name:"Android 360x800",width:360,height:800,touch:true},
   {name:"desktop 1366x768",width:1366,height:768,touch:false}
 ];
-const browser = await chromium.launch({headless:true,channel:"chrome",args:["--no-sandbox"]});
+const browser = await chromium.launch({headless:true,...(process.env.QA_CHROME?{executablePath:process.env.QA_CHROME}:{channel:"chrome"}),args:["--no-sandbox"]});
 let page;
 const failures=[];
 const results=[];
@@ -33,12 +33,12 @@ try {
     page=await context.newPage();
     const jsErrors=[];
     page.on("pageerror",e=>jsErrors.push(String(e)));
-    await run(screen.name+" — 4 meseca i 3 razreda",async()=>{
+    await run(screen.name+" — kalendar po razredu",async()=>{
       for(const grade of [6,7,8]){
         await page.goto(url("#/razred/"+grade),{waitUntil:"domcontentloaded"});
         await waitFor(".month-block");
-        await page.waitForFunction(()=>document.querySelectorAll(".month-block").length===4);
-        assert.equal(await page.locator(".month-block").count(),4);
+        await page.waitForFunction(n=>document.querySelectorAll(".month-block").length===n,grade===6?10:4);
+        assert.equal(await page.locator(".month-block").count(),grade===6?10:4);
         for(const block of await page.locator(".month-block").all())
           assert.ok(await block.locator(".area-card").count()>0,"Prazan mesec u razredu "+grade);
       }
