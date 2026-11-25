@@ -1,0 +1,30 @@
+import { springLesson } from "../spring6/lesson";
+
+export default springLesson({
+  id: "s7-isecci",
+  title: "Površina kruga, isečka i prstena",
+  month: "may",
+  aim: "Rastavi složenu figuru i izračunaj tačnu površinu.",
+  intro: "Iseci krug na jednake isečke i složi ih naizmenično. Kada su isečci sve uži, oblik je sve bliži pravougaoniku visine r i osnovice polovine obima.",
+  rules: ["Proizvod polovine obima i poluprečnika daje πr². Isečak omeđuju dva poluprečnika i njihov luk. Njegova površina ima isti udeo u površini kruga kao njegov ugao u punom uglu.", "Kod prstena oduzmi površine dva koncentrična kruga. Kod složene figure najpre označi svaki deo, uskladi jedinice i odluči šta treba sabrati ili oduzeti.", "Kvadriraj svaki poluprečnik posebno. Kvadrat razlike poluprečnika daje površinu drugog kruga."],
+  formulas: ["P=πr²", "P_i=[[frac:α|360°]]·πr²", "P_p=π(R²−r²)"],
+  skills: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "4"],
+  worked: [{"question": "Prečnik je 20 m. Tačna površina u m²?", "steps": ["Prvo prepolovi prečnik.", "r=10 m, pa P=πr²=100π m²."]}, {"question": "U kvadrat stranice 16 cm upisan je krug. Tačna površina uglova izvan kruga u cm²?", "steps": ["Prečnik je jednak stranici kvadrata.", "Kvadrat ima 256 cm², krug ima 64π cm². Oduzmi."]}, {"question": "Prsten površine 36π cm² ima unutrašnji poluprečnik 8 cm. Spoljašnji u cm?", "steps": ["Postavi P=π(R²−r²).", "Posle deljenja sa π i dodavanja 64 dobija se R²=100. Pozitivna dužina je 10 cm."]}],
+}, [
+  ["Poluprečnik je 4 cm. Tačna površina u cm²?", "16π", "Kvadriraj poluprečnik.", "P=πr²=16π cm²."],
+  ["Prečnik je 12 m. Tačna površina u m²?", "36π", "Prvo prepolovi prečnik.", "r=6 m, pa P=πr²=36π m²."],
+  ["Površina je 16π cm². Poluprečnik u cm?", "4", "Pođi od P=πr².", "r²=16. Pozitivni koren daje 4 cm."],
+  ["Koji deo celog kruga zauzima isečak ugla 90°?", "1/4", "Podeli ugao sa 360°.", "Skrati odnos ugla isečka i punog ugla."],
+  ["Četvrtina kruga ima poluprečnik 4 dm. Tačna površina u dm²?", "4π", "Podeli površinu punog kruga na četiri.", "P=16π:4=4π dm²."],
+  ["Koncentrične kružnice imaju poluprečnike 6 i 4 cm. Površina prstena u cm²?", "20π", "Oduzmi površinu unutrašnjeg kruga od spoljašnjeg.", "P=(6²−4²)π=20π cm²."],
+  ["U kvadrat stranice 8 cm upisan je krug. Tačna površina uglova izvan kruga u cm²?", "64-16π", "Prečnik je jednak stranici kvadrata.", "Kvadrat ima 64 cm², krug ima 16π cm². Oduzmi."],
+  ["Polukrug prečnika 8 m naslonjen je na pravougaonik duž iste stranice. Druga stranica je 3 m. Ukupna površina u m²?", "24+8π", "Saberi dve površine bez preklapanja.", "Pravougaonik ima 24 m², polukrug 8π m²."],
+  ["Krug ima površinu 24π cm². Isečak ima 4π cm². Ugao u stepenima?", "60", "Uporedi površine.", "Isečak zauzima šestinu kruga, pa je ugao 60°."],
+  ["Prsten površine 20π cm² ima unutrašnji poluprečnik 4 cm. Spoljašnji u cm?", "6", "Postavi P=π(R²−r²).", "Posle deljenja sa π i dodavanja 16 dobija se R²=36. Pozitivna dužina je 6 cm."],
+  ["Četvrtina kruga ima poluprečnik 6 dm. Tačna površina u dm²?", "9π", "Podeli površinu punog kruga na četiri.", "P=36π:4=9π dm²."],
+  ["Poluprečnik je 6 cm. Tačna površina u cm²?", "36π", "Kvadriraj poluprečnik.", "P=πr²=36π cm²."],
+  ["Koncentrične kružnice imaju poluprečnike 8 i 6 cm. Površina prstena u cm²?", "28π", "Oduzmi površinu unutrašnjeg kruga od spoljašnjeg.", "P=(8²−6²)π=28π cm²."],
+  ["Krug ima površinu 36π cm². Isečak ima 6π cm². Ugao u stepenima?", "60", "Uporedi površine.", "Isečak zauzima šestinu kruga, pa je ugao 60°."],
+  ["Površina je 36π cm². Poluprečnik u cm?", "6", "Pođi od P=πr².", "r²=36. Pozitivni koren daje 6 cm."],
+  ["Prsten površine 28π cm² ima unutrašnji poluprečnik 6 cm. Spoljašnji u cm?", "8", "Postavi P=π(R²−r²).", "Posle deljenja sa π i dodavanja 36 dobija se R²=64. Pozitivna dužina je 8 cm."],
+]);

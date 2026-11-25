@@ -1,0 +1,30 @@
+import { springLesson } from "../spring6/lesson";
+
+export default springLesson({
+  id: "s7-identiteti",
+  title: "Kvadrat binoma i razlika kvadrata",
+  month: "march",
+  aim: "Objasni odakle dolazi srednji član i kada se unakrsni članovi poništavaju.",
+  intro: "Kvadrat stranice a+b preseci po obe podele. Dva mala kvadrata nisu jedini delovi: između njih ostaju dva pravougaonika stranica a i b.",
+  rules: ["U proizvodu (a+b)(a+b) dobijaš a², ab, ba i b². Dva jednaka proizvoda daju 2ab. Ako umesto b uzmeš −b, srednji član menja znak, dok poslednji ostaje pozitivan.", "U proizvodu (a−b)(a+b) unakrsni članovi imaju suprotne znakove i poništavaju se. Za a>b>0 možeš iz velikog kvadrata izvaditi mali i presložiti ostatak u pravougaonik stranica a−b i a+b. Algebarsko množenje dokazuje jednakost za sve realne a i b.", "Razlikuj (a−b)² od a²−b². Na primer za a=5 i b=2 prva vrednost je 9, a druga 21."],
+  formulas: ["(a+b)²=a²+2ab+b²", "(a−b)²=a²−2ab+b²", "(a−b)(a+b)=a²−b²"],
+  skills: ["srednji", "konstanta", "par", "razvijanje", "minus", "racun", "dopuna", "greska", "poredjenje", "parametar", "slika"],
+  worked: [{"question": "Razvij (x+4)².", "steps": ["Napiši proizvod dve iste zagrade. Četiri polja imaju vrednosti x², 4x, 4x i 16.", "Saberi dve trake od po 4x. Rezultat je x²+8x+16."]}, {"question": "Razvij (3x−2)².", "steps": ["Prvi kvadrat je (3x)²=9x². Dvostruki proizvod je 2·3x·2=12x, sa minusom zbog razlike.", "Poslednji kvadrat je 2²=4. Dobijaš 9x²−12x+4."]}, {"question": "Izračunaj 103·97 bez dugog množenja.", "steps": ["Činioci su podjednako udaljeni od 100: 103=100+3 i 97=100−3.", "Razlika kvadrata daje 100²−3²=10000−9=9991."]}],
+}, [
+  ["Koliki je koeficijent uz x u (x+6)²?", "12", "Postoje dva jednaka pravougaonika.", "2·x·6=12x."],
+  ["Koliki je slobodni član u (x−7)²?", "49", "Kvadriraj i znak.", "(−7)²=49."],
+  ["Izaberi proizvod jednak a²−9.", ["(a−3)(a+3)", "(a−3)²", "(a+3)²"], "Traži suprotne druge članove.", "Prvi i poslednji proizvod daju a² i −9, ostali se poništavaju."],
+  ["Napiši razvijen oblik (x+2)².", "x^2+4x+4", "Kvadrati na krajevima i dvostruki proizvod između.", "x²+2·x·2+2²=x²+4x+4."],
+  ["Razvij (2x−5)².", "4x^2-20x+25", "Kvadriraj ceo prvi član.", "(2x)²−2·2x·5+5²=4x²−20x+25."],
+  ["Izračunaj 48·52 primenom identiteta.", "2496", "Činioci su 50−2 i 50+2.", "50²−2²=2500−4=2496."],
+  ["Dopuni 9x²+24x+c tako da dobiješ kvadrat binoma. Nađi c.", "16", "Prvi član binoma je 3x.", "2·3x·b=24x daje b=4. Zato je c=4²=16."],
+  ["Za x=3 kolika je razlika (x+1)²−(x²+1)?", "6", "Razvij samo prvu zagradu.", "Ostaju dva srednja proizvoda, 2x=6."],
+  ["Za koliko je kvadrat broja 51 veći od kvadrata broja 49?", "200", "Razliku kvadrata pretvori u proizvod.", "51²−49²=(51−49)(51+49)=2·100=200."],
+  ["Sredi (x+3)²−(x−3)².", "12x", "Oba kvadrata imaju iste krajnje članove.", "x²+6x+9−x²+6x−9=12x."],
+  ["Kvadrat stranice a+b podeljen je na a², b² i još koliko pravougaonika površine ab?", "2", "Podeli obe susedne stranice.", "Preseci daju četiri polja, od kojih su dva dimenzija a sa b."],
+  ["Razvij (x−4)².", "x^2-8x+16", "Srednji član ima minus.", "x²−2·4x+16=x²−8x+16."],
+  ["Koliko je 101²?", "10201", "Kvadriraj 100+1.", "10000+200+1=10201."],
+  ["Kvadrat (kx−3)² ima član −42x. Koliki je k?", "7", "Izdvoj dvostruki proizvod.", "−2·k·3=−42, pa k=7."],
+  ["Koeficijent uz x u (x−9)² je koliko?", "-18", "Prati znak u dvostrukom proizvodu.", "Srednji član je −2·9x=−18x."],
+  ["Dve kvadratne ploče imaju stranice 22 cm i 18 cm. Za koliko cm² se razlikuju?", "160", "Razlika površina odgovara razlici kvadrata.", "(22−18)(22+18)=4·40=160 cm²."],
+]);

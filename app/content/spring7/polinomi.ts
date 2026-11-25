@@ -1,0 +1,30 @@
+import { springLesson } from "../spring6/lesson";
+
+export default springLesson({
+  id: "s7-polinomi",
+  title: "Stepen, zbir i razlika polinoma",
+  month: "march",
+  aim: "Sredi polinom, odredi njegov stepen i pravilno oduzmi čitavu zagradu.",
+  intro: "Na jednom računu su tri sveske po x dinara i olovka od 20 dinara. Zapis 3x+20 je zbir dva monoma. Svaki član nosi svoj predznak.",
+  rules: ["Polinom je konačan zbir monoma. Polinom sa dva neslična nenulta člana je binom, a sa tri trinom. Stepen nenultog sređenog polinoma je najveći stepen preostalog člana; nenulta konstanta ima stepen nula.", "Za zbir prepiši oba polinoma i prikupi slične članove. Za razliku dodaj suprotan polinom: promeni znak svakom članu drugog polinoma. Sredi izraz pre određivanja stepena jer se najviši članovi mogu poništiti.", "Minus ispred zagrade menja svaki predznak. U izrazu x−(2x−5) poslednji član postaje +5."],
+  formulas: ["P−Q=P+(−Q)", "−(a−b)=−a+b"],
+  skills: ["clanovi", "konstanta", "stepen", "zbir", "razlika", "ponistavanje", "model", "greska", "parametar", "oporavak", "suprotan"],
+  worked: [{"question": "Odredi stepen 4x³+2x−4x³+1.", "steps": ["Članovi trećeg stepena se poništavaju. Ostaje 2x+1.", "Najviši preostali izložilac je 1, pa je stepen 1."]}, {"question": "Saberi 3x²−2x+4 i x²+5x−9.", "steps": ["Grupiši kvadratne, linearne i stalne članove: (3+1)x²+(−2+5)x+(4−9).", "Zbir je 4x²+3x−5. Za x=0 obe strane daju −5."]}, {"question": "Oduzmi 2a²−3a+1 od 5a²−a−4.", "steps": ["Postavi (5a²−a−4)−(2a²−3a+1). Posle promene znakova druge zagrade dobijaš 5a²−a−4−2a²+3a−1.", "Grupiši članove istog stepena. Razlika je 3a²+2a−5."]}],
+}, [
+  ["Koliko članova ima sređen polinom x²−x+4?", "3", "Razdvoji sabirke sa znakovima.", "Članovi su x², −x i 4."],
+  ["Koji je slobodni član u 7x²−5x−2?", "-2", "Slobodni član nema promenljivu.", "Broj bez x je −2."],
+  ["Stepen polinoma 8−4x⁵+x² je koliko?", "5", "Redosled pisanja nije važan.", "Najveći izložilac je 5."],
+  ["Sredi izraz 2x+4+3x−1.", "5x+3", "Grupiši članove sa x i bez x.", "(2+3)x+(4−1)=5x+3."],
+  ["Oslobodi se zagrada i sredi 4x−(x−6).", "3x+6", "Zameni oduzimanje dodavanjem suprotnog.", "4x−x+6=3x+6."],
+  ["Koji je stepen izraza 5x⁴+3−5x⁴?", "0", "Prvo sredi izraz.", "Posle poništavanja ostaje nenulta konstanta 3, čiji je stepen 0."],
+  ["Od obima 6x+8 cm oduzeta je dužina 2x+3 cm. Napiši izraz za ostatak u cm.", "4x+5", "Zaokruži ceo izraz koji oduzimaš.", "6x+8−2x−3=4x+5."],
+  ["Sara dobija 2x−8 iz 3x−(x−8). Koji član joj je pogrešan?", ["Stalni član", "Koeficijent uz x", "Oba člana"], "Proveri njen račun za x=0.", "Tačan izraz je 2x+8. Razlika od −8 daje +8."],
+  ["Za koji k polinom (k−3)x²+7x−1 ima stepen 1?", "3", "Kvadratni član mora nestati.", "k−3=0 daje k=3, dok 7x ostaje."],
+  ["Zbir dva polinoma je x²+5x+1. Prvi je x²−2x+4. Napiši drugi.", "7x-3", "Od zbira oduzmi poznati sabirak.", "x²+5x+1−x²+2x−4=7x−3."],
+  ["Napiši suprotan polinom polinomu 2x−9.", "-2x+9", "Promeni oba znaka.", "−(2x−9)=−2x+9. Njihov zbir je 0."],
+  ["Stepen sređenog polinoma 4x²−x+7 je koliko?", "2", "Koji član ima najveći izložilac?", "Član 4x² ima stepen 2."],
+  ["Sredi (7x−3)−(2x+5).", "5x-8", "Oba člana druge zagrade menjaju znak.", "7x−3−2x−5=5x−8."],
+  ["Koji broj treba dodati polinomu 2x²−5x+1 da za x=2 dobiješ nulu?", "1", "Izračunaj prvobitnu vrednost.", "2·4−10+1=−1. Dodavanjem jednog dobija se nula."],
+  ["Stepen izraza x³+x²−x³+2 je koliko?", "2", "Sredi pre čitanja stepena.", "Ostaje x²+2, stepena 2."],
+  ["Ako P−Q=3x−4 i Q=2−x, napiši sređen P.", "2x-2", "Dodaj isti Q na obe strane.", "P=3x−4+2−x=2x−2."],
+]);

@@ -1,0 +1,30 @@
+import { springLesson } from "../spring6/lesson";
+
+export default springLesson({
+  id: "s7-sinteza",
+  title: "Godišnja sistematizacija i priprema za osmi razred",
+  month: "june",
+  aim: "Izaberi model, poveži oblasti i proveri smisao rezultata.",
+  intro: "Pre računanja označi šta se traži: dužina, površina, broj ili srednja vrednost. Zatim nacrtaj skicu ili tabelu i zapiši poznate uslove.",
+  rules: ["U geometriji najpre prepoznaj figuru i njene uslove. U algebri ista veličina može imati dva zapisa, na primer razliku površina kao razliku kvadrata ili kao proizvod.", "Kad izračunaš nepoznatu, uvrsti je u polaznu jednakost. Proveri da je dužina pozitivna, površina u kvadratnim jedinicama, a rezultat sa π tačan sve dok ga ne zaokružiš.", "Kod proseka dve grupe nemoj zanemariti njihove veličine. Kod uglova u krugu označi luk koji ugao zahvata."],
+  formulas: ["a²+b²=c²", "a²−b²=(a−b)(a+b)", "P=πr²"],
+  skills: ["precnik", "obim", "2", "3", "4", "5", "pitagora", "algebra", "8", "9", "4"],
+  worked: [{"question": "Za r=11 m napiši tačan obim u m pomoću π.", "steps": ["Jedan krug ima obim jednak proizvodu prečnika i π.", "O=2πr=22π m."]}, {"question": "Pravougaona parcela širine 9 m i dužine 12 m ima koliko metara dugu dijagonalu?", "steps": ["Nacrtaj pravougli trougao sa dijagonalom kao hipotenuzom.", "a²+b²=c². Zamenom 9²+12²=c², zatim 81+144=c². Iz c²=225 uzimamo pozitivnu dužinu c=15 m."]}, {"question": "Rotacija za 180° preslikava A(4,2) u B(10,8). Kolika je apscisa centra?", "steps": ["Centar je sredina duži AB.", "Apscisa je polovina zbira 4 i 10, dakle 7."]}],
+}, [
+  ["Poluprečnik je 6 cm. Koliki je prečnik u cm?", "12", "Prečnik prolazi kroz centar.", "Sastavljen je od dva poluprečnika iste dužine."],
+  ["Za r=9 m napiši tačan obim u m pomoću π.", "18π", "Jedan krug ima obim jednak proizvodu prečnika i π.", "O=2πr=18π m."],
+  ["Površina je 144π cm². Poluprečnik u cm?", "12", "Pođi od P=πr².", "r²=144. Pozitivni koren daje 12 cm."],
+  ["Rotiraj (7,9) za 180° oko početka. Nova apscisa?", "-7", "Slika je naspram početne tačke.", "Obe koordinate menjaju znak. Slika je (−7,−9)."],
+  ["Merenja su 9, 7, 2 i 10. Kolika je medijana?", "8,0", "Za paran broj uzmi sredinu dva srednja člana.", "Redosled je 2, 7, 9, 10. Sredina srednjih brojeva je (7+9):2."],
+  ["Broj je zaokružen na najbliži umnožak od 10 cm. Najveća moguća greška u cm?", "5", "Najudaljenije tačke su na polovini razmaka.", "Polovina koraka od 10 cm je 5 cm."],
+  ["Pravougaona parcela širine 3 m i dužine 4 m ima koliko metara dugu dijagonalu?", "5", "Nacrtaj pravougli trougao sa dijagonalom kao hipotenuzom.", "a²+b²=c². Zamenom 3²+4²=c², zatim 9+16=c². Iz c²=25 uzimamo pozitivnu dužinu c=5 m."],
+  ["Dve kvadratne ploče imaju stranice x+1 i x metara, x>0. Razlika površina u m² je 11. Odredi x.", "5", "Postavi jednačinu pomoću kvadrata binoma.", "(x+1)²−x²=11 daje 2x+1=11. Odatle x=5 m."],
+  ["Krug ima površinu 36π cm². Isečak ima 6π cm². Ugao u stepenima?", "60", "Uporedi površine.", "Isečak zauzima šestinu kruga, pa je ugao 60°."],
+  ["Rotacija za 180° preslikava A(2,2) u B(8,8). Kolika je apscisa centra?", "5", "Centar je sredina duži AB.", "Apscisa je polovina zbira 2 i 8, dakle 5."],
+  ["Merenja su 9, 8, 2 i 10. Kolika je medijana?", "8,5", "Za paran broj uzmi sredinu dva srednja člana.", "Redosled je 2, 8, 9, 10. Sredina srednjih brojeva je (8+9):2."],
+  ["Poluprečnik je 7 cm. Koliki je prečnik u cm?", "14", "Prečnik prolazi kroz centar.", "Sastavljen je od dva poluprečnika iste dužine."],
+  ["Broj je zaokružen na najbliži umnožak od 12 cm. Najveća moguća greška u cm?", "6", "Najudaljenije tačke su na polovini razmaka.", "Polovina koraka od 12 cm je 6 cm."],
+  ["Krug ima površinu 48π cm². Isečak ima 8π cm². Ugao u stepenima?", "60", "Uporedi površine.", "Isečak zauzima šestinu kruga, pa je ugao 60°."],
+  ["Površina je 196π cm². Poluprečnik u cm?", "14", "Pođi od P=πr².", "r²=196. Pozitivni koren daje 14 cm."],
+  ["Rotacija za 180° preslikava A(3,2) u B(9,8). Kolika je apscisa centra?", "6", "Centar je sredina duži AB.", "Apscisa je polovina zbira 3 i 9, dakle 6."],
+]);

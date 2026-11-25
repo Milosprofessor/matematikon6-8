@@ -1,0 +1,30 @@
+import { springLesson } from "../spring6/lesson";
+
+export default springLesson({
+  id: "s7-kruznica",
+  title: "Tetiva, luk i uglovi u krugu",
+  month: "april",
+  aim: "Razlikuj krug od njegove granice i prepoznaj tačno koji luk zahvata ugao.",
+  intro: "Kružnica je skup tačaka na udaljenosti r od centra. Krug obuhvata i unutrašnjost. Duž koja spaja dve tačke kružnice je tetiva, a deo kružnice između njih je luk.",
+  rules: ["Centralni ugao ima teme u centru, a periferijski na kružnici. Periferijski zahvata luk između krajeva njegovih krakova koji ne sadrži njegovo teme.", "Spoji teme periferijskog ugla sa centrom. Dobijeni jednakokraki trouglovi omogućavaju da pomoću spoljašnjeg ugla vidiš zašto centralni ugao nad istim lukom iznosi dvostruku meru periferijskog.", "Isti krajevi tetive mogu određivati dva različita luka. Ako promeniš stranu tetive, proveri koji luk sada zahvataš."],
+  formulas: ["φ=2α", "d=2r"],
+  skills: ["precnik", "periferijski", "luk", "tetiva", "veci-luk", "ista-strana", "naspramni", "trougao", "jednacina", "podela", "veci-luk"],
+  worked: [{"question": "Centralni ugao ima 100°. Koliki je periferijski nad istim lukom u stepenima?", "steps": ["Označi krajeve luka i centar.", "Periferijski ugao nad tim lukom je polovina centralnog, dakle 50°."]}, {"question": "Naspramni uglovi četvorougla upisanog u kružnicu su 90° i x. Nađi x u stepenima.", "steps": ["Njihovi lukovi zajedno čine celu kružnicu.", "Polovine tih lukova daju 180°. Traženi ugao je 90°."]}, {"question": "Luk mere 150° tačka M deli u odnosu 1 prema 2. Koliko stepeni ima periferijski ugao nad dužim delom?", "steps": ["Odredi meru jednog dela odnosa.", "Jedan deo je 50°. Duži luk ima 100°, pa ugao nad njim iznosi 50°."]}],
+}, [
+  ["Poluprečnik je 5 cm. Koliki je prečnik u cm?", "10", "Prečnik prolazi kroz centar.", "Sastavljen je od dva poluprečnika iste dužine."],
+  ["Centralni ugao ima 60°. Koliki je periferijski nad istim lukom u stepenima?", "30", "Označi krajeve luka i centar.", "Periferijski ugao nad tim lukom je polovina centralnog, dakle 30°."],
+  ["Periferijski ugao od 30° zahvata luk AB. Kolika je mera tog luka u stepenima?", "60", "Mera luka jednaka je meri pripadnog centralnog ugla.", "Dvostruka vrednost je 60°."],
+  ["Tetiva duga 4 cm je prečnik. Koliki je ugao nad njom u tački kružnice različitoj od krajeva?", "90", "Prečnik odvaja polukrug.", "Pripadni luk ima 180°, a periferijski ugao ima 90°. Upiši broj stepeni."],
+  ["Manji luk ima 60°. Koliko stepeni meri periferijski ugao nad većim lukom?", "150", "Najpre dopuni luk do punog kruga.", "Veći luk ima 300°. Njegova polovina je 150°."],
+  ["Uglovi APB i AQB zahvataju isti luk. Prvi je 33°. Drugi u stepenima?", "33", "Oba su polovina istog centralnog ugla.", "Jednake polovine daju 33°."],
+  ["Naspramni uglovi četvorougla upisanog u kružnicu su 70° i x. Nađi x u stepenima.", "110", "Njihovi lukovi zajedno čine celu kružnicu.", "Polovine tih lukova daju 180°. Traženi ugao je 110°."],
+  ["AB je prečnik, C na kružnici, ugao CAB je 30°. Odredi ugao ABC u stepenima.", "60", "Prvo odredi ugao kod C.", "Ugao nad prečnikom je prav. Druga dva daju 90°, pa je ugao kod B 60°."],
+  ["Centralni ugao nad istim lukom veći je od periferijskog za 30°. Centralni u stepenima?", "60", "Neka je manji ugao x.", "Razlika je 2x−x=x=30°. Veći ima 60°."],
+  ["Luk mere 90° tačka M deli u odnosu 1 prema 2. Koliko stepeni ima periferijski ugao nad dužim delom?", "30", "Odredi meru jednog dela odnosa.", "Jedan deo je 30°. Duži luk ima 60°, pa ugao nad njim iznosi 30°."],
+  ["Manji luk ima 80°. Koliko stepeni meri periferijski ugao nad većim lukom?", "140", "Najpre dopuni luk do punog kruga.", "Veći luk ima 280°. Njegova polovina je 140°."],
+  ["Poluprečnik je 6 cm. Koliki je prečnik u cm?", "12", "Prečnik prolazi kroz centar.", "Sastavljen je od dva poluprečnika iste dužine."],
+  ["Uglovi APB i AQB zahvataju isti luk. Prvi je 43°. Drugi u stepenima?", "43", "Oba su polovina istog centralnog ugla.", "Jednake polovine daju 43°."],
+  ["Centralni ugao nad istim lukom veći je od periferijskog za 40°. Centralni u stepenima?", "80", "Neka je manji ugao x.", "Razlika je 2x−x=x=40°. Veći ima 80°."],
+  ["Periferijski ugao od 40° zahvata luk AB. Kolika je mera tog luka u stepenima?", "80", "Mera luka jednaka je meri pripadnog centralnog ugla.", "Dvostruka vrednost je 80°."],
+  ["Luk mere 120° tačka M deli u odnosu 1 prema 2. Koliko stepeni ima periferijski ugao nad dužim delom?", "40", "Odredi meru jednog dela odnosa.", "Jedan deo je 40°. Duži luk ima 80°, pa ugao nad njim iznosi 40°."],
+]);

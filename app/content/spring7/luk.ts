@@ -1,0 +1,30 @@
+import { springLesson } from "../spring6/lesson";
+
+export default springLesson({
+  id: "s7-luk",
+  title: "Obim kruga i dužina kružnog luka",
+  month: "may",
+  aim: "Odredi dužinu luka, ugao ili poluprečnik iz poznatog dela obima.",
+  intro: "Označi jednu tačku na obodu točka. Dok se točak bez klizanja jednom okrene, tačka se vraća na podlogu, a centar pređe dužinu cele kružnice.",
+  rules: ["Odnos obima kružnice i njenog prečnika je broj π. Otuda je O=πd=2πr. Tačan rezultat ostavi sa π.", "Izmeri centralni ugao luka. Udeo njegovog ugla u 360° jednak je udelu dužine luka u celom obimu. Ako tražiš ugao, prvo odredi taj udeo iz dužina.", "Broj 3,14 je približna vrednost. Znak ≈ koristi tek kada zameniš π približnim brojem."],
+  formulas: ["O=2πr", "l=[[frac:α|360°]]·2πr"],
+  skills: ["precnik", "obim", "odnos", "polovina", "cetvrtina", "obrnuto", "okreti", "priblizno", "ugao", "granica", "cetvrtina"],
+  worked: [{"question": "Za r=7 m napiši tačan obim u m pomoću π.", "steps": ["Jedan krug ima obim jednak proizvodu prečnika i π.", "O=2πr=14π m."]}, {"question": "Točak prečnika 6 dm napravi 10 okreta bez klizanja. Tačan put u dm?", "steps": ["Za svaki pun okret pređe jedan obim.", "Jedan obim je 6π dm. Pomnoži brojem okreta."]}, {"question": "Polukružni prozor ima poluprečnik 6 dm. Napiši tačnu ukupnu dužinu okvira u dm.", "steps": ["Obiđi i zakrivljeni i pravi deo.", "Luk ima 6π dm, a prečnik 12 dm. Saberi njihove dužine."]}],
+}, [
+  ["Za r=4 cm nađi d u cm.", "8", "Prečnik je duž kroz centar.", "d=2r=8 cm."],
+  ["Za r=5 m napiši tačan obim u m pomoću π.", "10π", "Jedan krug ima obim jednak proizvodu prečnika i π.", "O=2πr=10π m."],
+  ["Krug ima prečnik 6 cm i obim 6π cm. Koji je tačan količnik obima i prečnika?", "π", "Podeli obim prečnikom.", "Broj π je upravo taj stalni odnos."],
+  ["Prečnik je 8 cm. Dužina polukružnog luka u cm, tačno?", "4π", "Polukružni luk je polovina obima.", "O=8π cm. Polovina iznosi 4π cm."],
+  ["Poluprečnik je 8 cm. Dužina luka od 90° u cm?", "4π", "90° je četvrtina punog ugla.", "Obim je 16π cm. Podeli sa četiri."],
+  ["Obim je 12π m. Koliki je poluprečnik u m?", "6", "Kreni od O=2πr.", "12π=2πr daje r=6 m."],
+  ["Točak prečnika 4 dm napravi 6 okreta bez klizanja. Tačan put u dm?", "24π", "Za svaki pun okret pređe jedan obim.", "Jedan obim je 4π dm. Pomnoži brojem okreta."],
+  ["Koristeći π≈3,14 proceni obim kružnice prečnika 10 cm u cm.", "31,4", "Sada se traži približan broj.", "O≈3,14·10 cm."],
+  ["Na kružnici poluprečnika 12 cm luk je dug 4π cm. Centralni ugao u stepenima?", "60", "Uporedi sa celim obimom.", "Ceo obim je 24π cm. Luk je šestina, pa je ugao 360°:6=60°."],
+  ["Polukružni prozor ima poluprečnik 4 dm. Napiši tačnu ukupnu dužinu okvira u dm.", "4π+8", "Obiđi i zakrivljeni i pravi deo.", "Luk ima 4π dm, a prečnik 8 dm. Saberi njihove dužine."],
+  ["Poluprečnik je 10 cm. Dužina luka od 90° u cm?", "5π", "90° je četvrtina punog ugla.", "Obim je 20π cm. Podeli sa četiri."],
+  ["Za r=5 cm nađi d u cm.", "10", "Prečnik je duž kroz centar.", "d=2r=10 cm."],
+  ["Obim je 16π m. Koliki je poluprečnik u m?", "8", "Kreni od O=2πr.", "16π=2πr daje r=8 m."],
+  ["Na kružnici poluprečnika 15 cm luk je dug 5π cm. Centralni ugao u stepenima?", "60", "Uporedi sa celim obimom.", "Ceo obim je 30π cm. Luk je šestina, pa je ugao 360°:6=60°."],
+  ["Krug ima prečnik 8 cm i obim 8π cm. Koji je tačan količnik obima i prečnika?", "π", "Podeli obim prečnikom.", "Broj π je upravo taj stalni odnos."],
+  ["Polukružni prozor ima poluprečnik 5 dm. Napiši tačnu ukupnu dužinu okvira u dm.", "5π+10", "Obiđi i zakrivljeni i pravi deo.", "Luk ima 5π dm, a prečnik 10 dm. Saberi njihove dužine."],
+]);

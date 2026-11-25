@@ -1,0 +1,30 @@
+import { springLesson } from "../spring6/lesson";
+
+export default springLesson({
+  id: "s7-proizvod",
+  title: "Množenje monoma polinomom i polinoma polinomom",
+  month: "march",
+  aim: "Koristi mrežu proizvoda kako bi svaki član jednog činioca pomnožio svakim članom drugog.",
+  intro: "Račun 7·23 možeš rastaviti na 7·20+7·3. Ako jednu dužinu pravougaonika podeliš na delove, njegove površine se isto tako sabiraju.",
+  rules: ["Distributivni zakon važi za sve realne brojeve. Monom ispred zagrade množi svaki član u zagradi. Za dva polinoma organizuj članove prvog po vrstama, a drugog po kolonama i popuni svako polje njihovim proizvodom.", "Posle množenja saberi sva polja, pa sredi slične monome. Pravougaona slika sa dužinama predstavlja pozitivne veličine. Za negativne članove polja tabele čitamo kao algebarske proizvode sa znakom.", "Ne preskači unakrsne proizvode. Dva binoma daju četiri parcijalna proizvoda pre sređivanja."],
+  formulas: ["a(b+c)=ab+ac", "(a+b)(c+d)=ac+ad+bc+bd"],
+  skills: ["broj", "raspodela", "monom", "slobodni", "mreza", "znak", "linearni", "troclan", "model", "parametar", "provera"],
+  worked: [{"question": "Razvij 3x(2x−5).", "steps": ["Pomnoži 3x sa svakim članom posebno. Prvi proizvod je 6x², drugi je −15x.", "Saberi ih: 3x(2x−5)=6x²−15x."]}, {"question": "Razvij (x+2)(x+5).", "steps": ["Red za x sadrži x² i 5x. Red za 2 sadrži 2x i 10.", "Saberi sva četiri polja: x²+5x+2x+10=x²+7x+10."]}, {"question": "Sredi (2x−3)(x²+x−4).", "steps": ["Prvi red je 2x³+2x²−8x, a drugi −3x²−3x+12. Svaki red ima tri proizvoda.", "Saberi kolone jednakih stepena: 2x³−x²−11x+12. Slobodni član možeš proveriti proizvodom (−3)·(−4)."]}],
+}, [
+  ["Koliko polja ima tabela za proizvod binoma i trinoma?", "6", "Pomnoži broj vrsta i broj kolona.", "Dve vrste puta tri kolone daju šest parcijalnih proizvoda."],
+  ["Razvij 4(x+3).", "4x+12", "Svaki sabirak pomnoži četvorkom.", "4·x+4·3=4x+12."],
+  ["Razvij x(x−2).", "x^2-2x", "Dva člana daju dva proizvoda.", "x·x+x·(−2)=x²−2x."],
+  ["Koji slobodni član ima (x−7)(x+3)?", "-21", "Postavi x=0.", "Jedini stalni proizvod je (−7)·3=−21."],
+  ["Razvij (x+3)(x+4).", "x^2+7x+12", "Napiši i 4x i 3x.", "x²+4x+3x+12=x²+7x+12."],
+  ["Razvij (x−2)(x−6).", "x^2-8x+12", "Dva negativna broja daju pozitivan proizvod.", "x²−6x−2x+12=x²−8x+12."],
+  ["Nađi koeficijent uz x u (2x+3)(x−5).", "-7", "Koja dva polja sadrže upravo x?", "2x·(−5)+3·x=−10x+3x=−7x."],
+  ["Razvij −2x(x²−x+3).", "-2x^3+2x^2-6x", "Sačuvaj minus i pomnoži sva tri člana.", "Dobijamo −2x³, zatim +2x², zatim −6x."],
+  ["Pravougaonik stranica x+3 i x+1 (x>0) ima izrez površine x². Izrazi preostalu površinu.", "4x+3", "Pomnoži stranice pa oduzmi izrez.", "(x+3)(x+1)−x²=x²+x+3x+3−x²=4x+3."],
+  ["U proizvodu (x+k)(x−2) koeficijent uz x je 5. Odredi k.", "7", "Napiši oba unakrsna proizvoda.", "Linearni član je (k−2)x, pa je k−2=5 i k=7."],
+  ["Za x=−1 izračunaj vrednost (x+3)(2x−4).", "-12", "Izaberi najkraći zapis za zamenu.", "Prva zagrada je 2, druga −6. Proizvod je −12."],
+  ["Razvij 5(x−7).", "5x-35", "Množi oba člana.", "5·x+5·(−7)=5x−35."],
+  ["Sredi (x+1)(x−4).", "x^2-3x-4", "Stavi po jedan član u svaku kolonu.", "x²−4x+x−4=x²−3x−4."],
+  ["Ako je slobodni član (x−4)(x+k) jednak 28, koliki je k?", "-7", "Slobodni član dobijaš za x=0.", "−4k=28 daje k=−7."],
+  ["Pre sređivanja, koliko proizvoda dobijaš množenjem dva trinoma?", "9", "Za svaki član prvog računaj tri proizvoda.", "3·3=9."],
+  ["Učenik tvrdi (x+2)(x−2)=x²+4. Za koji od ponuđenih x se najbrže vidi greška računom bez množenja promenljivih?", ["0", "Nijedan", "Samo iracionalan broj"], "Uvrsti nulu.", "Za x=0 proizvod je −4, dok izraz x²+4 daje 4. Jedan kontraprimer pobija identitet."],
+]);

@@ -1,0 +1,30 @@
+import { springLesson } from "../spring6/lesson";
+
+export default springLesson({
+  id: "s7-procena",
+  title: "Približna vrednost i apsolutna greška",
+  month: "june",
+  aim: "Odredi bližu procenu i obrazloži koliko rezultat može odstupati.",
+  intro: "Lenjir sa milimetarskim podeocima ne pokazuje proizvoljan broj decimala. Zapis merenja treba da saopšti i njegovu preciznost.",
+  rules: ["Apsolutna greška je rastojanje tačne i približne vrednosti na brojevnoj pravoj. Kod zaokruživanja na najbliži podeok greška je najviše polovina koraka.", "Za broj između dve moguće vrednosti izračunaj obe razlike po apsolutnoj vrednosti. Izaberi bližu vrednost; u zadatku koji traži broj decimala zadrži traženi zapis.", "Ne zaokružuj svaki međurezultat ako možeš računati sa tačnim vrednostima do poslednjeg koraka."],
+  formulas: ["Δ=|x−a|", "a−Δ≤x≤a+Δ"],
+  skills: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "4"],
+  worked: [{"question": "Kolika je apsolutna greška kada 6,18 zamenimo sa 6,2?", "steps": ["Na brojevnoj pravoj izmeri razmak.", "6,20−6,18=0,02. Greška je nenegativna."]}, {"question": "Merenje 6,5 m ima grešku najviše 0,2 m. Najmanja moguća dužina u m?", "steps": ["Oduzmi dozvoljenu grešku.", "6,5−0,2=6,3 m."]}, {"question": "Približan obim dobija se kada za π uzmemo 3,14. Ako je prečnik tačno 30 cm i greška aproksimacije π manja je od 0,002, koja se gornja granica greške obima u cm dobija množenjem?", "steps": ["Kad se broj pomnoži prečnikom, istim faktorom množi se njegova greška.", "Greška obima je manja od 30·0,002=0,06 cm."]}],
+}, [
+  ["Zaokruži 4,37 na desetine.", "4,4", "Uporedi sa dve najbliže desetine.", "Cifra stotih je 7, pa je bliža naredna desetina."],
+  ["Kolika je apsolutna greška kada 4,18 zamenimo sa 4,2?", "0,02", "Na brojevnoj pravoj izmeri razmak.", "4,20−4,18=0,02. Greška je nenegativna."],
+  ["Koja je manja cela granica za √17, između dva uzastopna cela broja?", "4", "Uporedi podkoreni broj sa potpunim kvadratima.", "4²<17<5², pa je donja granica 4."],
+  ["Broj 4,000 dat je tačno kao 4. Kolika je greška?", "0", "Uporedi vrednosti zapisa.", "Razlika između jednakih brojeva je nula."],
+  ["Zaokruži −4,746 na stote.", "-4,75", "Zaokruži apsolutnu vrednost, zatim vrati znak.", "Cifra hiljaditih je 6, pa se cifra stotih poveća za jedan."],
+  ["Broj je zaokružen na najbliži umnožak od 2 cm. Najveća moguća greška u cm?", "1", "Najudaljenije tačke su na polovini razmaka.", "Polovina koraka od 2 cm je 1 cm."],
+  ["Merenje 4,5 m ima grešku najviše 0,2 m. Najmanja moguća dužina u m?", "4,3", "Oduzmi dozvoljenu grešku.", "4,5−0,2=4,3 m."],
+  ["Koja je bliža procena za 4,496: broj 4,49 ili 4,50? Upiši bliži broj.", "4,50", "Uporedi apsolutne greške.", "Prva greška je 0,006 a druga 0,004. Manja greška daje bolju procenu."],
+  ["Svaka od tri izmerene stranice trougla ima grešku najviše 1 mm. Kolika je najbolja opšta gornja granica greške obima u mm?", "3", "U najnepovoljnijem slučaju sve greške su istog smera.", "Saberi tri granice po 1 mm."],
+  ["Približan obim dobija se kada za π uzmemo 3,14. Ako je prečnik tačno 10 cm i greška aproksimacije π manja je od 0,002, koja se gornja granica greške obima u cm dobija množenjem?", "0,02", "Kad se broj pomnoži prečnikom, istim faktorom množi se njegova greška.", "Greška obima je manja od 10·0,002=0,02 cm."],
+  ["Zaokruži −5,746 na stote.", "-5,75", "Zaokruži apsolutnu vrednost, zatim vrati znak.", "Cifra hiljaditih je 6, pa se cifra stotih poveća za jedan."],
+  ["Zaokruži 5,37 na desetine.", "5,4", "Uporedi sa dve najbliže desetine.", "Cifra stotih je 7, pa je bliža naredna desetina."],
+  ["Broj je zaokružen na najbliži umnožak od 4 cm. Najveća moguća greška u cm?", "2", "Najudaljenije tačke su na polovini razmaka.", "Polovina koraka od 4 cm je 2 cm."],
+  ["Svaka od tri izmerene stranice trougla ima grešku najviše 2 mm. Kolika je najbolja opšta gornja granica greške obima u mm?", "6", "U najnepovoljnijem slučaju sve greške su istog smera.", "Saberi tri granice po 2 mm."],
+  ["Koja je manja cela granica za √26, između dva uzastopna cela broja?", "5", "Uporedi podkoreni broj sa potpunim kvadratima.", "5²<26<6², pa je donja granica 5."],
+  ["Približan obim dobija se kada za π uzmemo 3,14. Ako je prečnik tačno 20 cm i greška aproksimacije π manja je od 0,002, koja se gornja granica greške obima u cm dobija množenjem?", "0,04", "Kad se broj pomnoži prečnikom, istim faktorom množi se njegova greška.", "Greška obima je manja od 20·0,002=0,04 cm."],
+]);

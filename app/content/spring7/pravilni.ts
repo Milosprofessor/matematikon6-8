@@ -1,0 +1,30 @@
+import { springLesson } from "../spring6/lesson";
+
+export default springLesson({
+  id: "s7-pravilni",
+  title: "Pravilni mnogouglovi i njihove konstrukcije",
+  month: "january",
+  aim: "Poveži centralni ugao sa stranicom i konstruiši trougao, kvadrat i šestougao u kružnici.",
+  intro: "Postavi šest jednakih oznaka duž kružnice. Spajanjem susednih oznaka dobijaš šest jednakih tetiva. U pravilnom mnogouglu jednake su sve stranice i svi unutrašnji uglovi.",
+  rules: ["Poluprečnici do uzastopnih temena dele pun ugao na n jednakih centralnih uglova. Svaki odgovarajući trougao je jednakokrak. Njegova dva ugla uz osnovicu zajedno daju unutrašnji ugao pravilnog mnogougla.", "Za šestougao opiši kružnicu, zadrži otvor šestara jednak poluprečniku i sa početne tačke prenesi tu duž šest puta u istom smeru. Spoji susede. Spajanjem svakog drugog temena dobijaš jednakostranični trougao. Za kvadrat povuci dva međusobno normalna prečnika i spoji krajeve redom.", "Jednake stranice same nisu dovoljne za pravilnost. Romb sa uglovima od 60° i 120° ima jednake stranice, ali nema jednake uglove."],
+  formulas: ["φ=[[frac:360°|n]]", "α=180°−φ", "O=n·a"],
+  skills: ["centralni", "temena", "otvor", "pravilan", "unutrasnji", "obim", "lukovi", "konstrukcija", "jednacina", "mogucnost", "odnos"],
+  worked: [{"question": "Koji je centralni ugao pravilnog osmougla?", "steps": ["Osam jednakih uglova oko centra čine 360°.", "Jedan je 360°:8=45°. Unutrašnji je 180°−45°=135°."]}, {"question": "Zašto je kod pravilnog šestougla stranica jednaka poluprečniku?", "steps": ["Centralni ugao je 60°. Dva poluprečnika su jednaka, pa su druga dva ugla po (180°−60°):2=60°.", "Trougao je jednakostraničan. Otvor šestara zato određuje upravo susedno teme."]}, {"question": "Kako iz konstruisanog kvadrata dobiti pravilni osmougao?", "steps": ["Ostavi kvadrat upisan u kružnicu. Prepolovi svaki od četiri centralna ugla od 90°.", "Preseci simetrala sa odgovarajućim lukovima daju četiri nova temena. Spoji osam tačaka redom. Jednaki centralni uglovi daju jednake tetive."]}],
+}, [
+  ["Odredi centralni ugao pravilnog petougla u stepenima.", "72", "Pun ugao podeli na pet jednakih delova.", "360:5=72."],
+  ["Koliko temena određuju dva međusobno normalna prečnika na kružnici?", "4", "Svaki prečnik ima po dva kraja.", "Dva različita prečnika imaju četiri različita kraja."],
+  ["Kružnica ima poluprečnik 7 cm. Koliki otvor šestara u cm prenosi stranicu pravilnog šestougla?", "7", "Pogledaj centralni trougao.", "Centralni trougao je jednakostraničan, pa je a=r=7 cm."],
+  ["Koji podatak uz jednake uglove garantuje pravilnost konveksnog mnogougla?", ["Sve stranice su jednake", "Dve stranice su jednake", "Ima paran broj temena"], "Pročitaj oba uslova definicije.", "Jednakost svih stranica i svih uglova definiše pravilni mnogougao."],
+  ["Unutrašnji ugao pravilnog dvanaestougla u stepenima?", "150", "Prvo nađi centralni ugao.", "Centralni je 360°:12=30°, a unutrašnji 180°−30°=150°."],
+  ["Pravilni mnogougao centralnog ugla 40° ima stranicu 3 cm. Koliki je obim u cm?", "27", "Iz centralnog ugla nađi broj stranica.", "n=360:40=9. Obim je 9·3=27 cm."],
+  ["Iz šest temena pravilnog šestougla spajamo svako drugo dok se ne vratimo na početak. Koliko stranica ima dobijena figura?", "3", "Prati temena A, C, E.", "Posle tri jednaka koraka vraćamo se u A i dobijamo trougao."],
+  ["Koja konstrukcija deli svaki luk pravilnog osmougla na dva jednaka luka?", ["Simetrala pripadnog centralnog ugla", "Simetrala bilo kog spoljašnjeg ugla", "Produžetak stranice"], "Nađi polupravu kroz centar.", "Jednaki centralni uglovi nad istom kružnicom određuju jednake lukove."],
+  ["Unutrašnji ugao pravilnog mnogougla pet puta je veći od centralnog. Koliko ima temena?", "12", "Njihov zbir iznosi 180°.", "5φ+φ=180°, pa je φ=30°. Dobija se 360:30=12."],
+  ["Može li 50° biti centralni ugao pravilnog mnogougla?", ["Ne", "Da"], "Da li jednak broj koraka zatvara pun krug?", "360:50=7,2. Broj temena mora biti prirodan."],
+  ["Koliko stepeni ima ugao uz osnovicu centralnog trougla pravilnog desetougla?", "72", "Dva ugla uz osnovicu su jednaka.", "Centralni je 36°, pa je svaki uz osnovicu (180°−36°):2=72°."],
+  ["Centralni ugao pravilnog dvadesetougla u stepenima?", "18", "Svih dvadeset uglova daju pun ugao.", "360:20=18."],
+  ["Upisani kvadrat ima dijagonalu 14 cm. Koliki je poluprečnik u cm?", "7", "Dijagonala prolazi kroz centar.", "Dijagonala je prečnik, pa je r=14:2=7 cm."],
+  ["Pravilan mnogougao ima unutrašnji ugao 165°. Koliko iz jednog temena ima dijagonala?", "21", "Najpre nađi spoljašnji ugao.", "Spoljašnji je 15°, n=24. Iz jednog temena polazi 24−3=21 dijagonala."],
+  ["Pravilni šestougao upisan je u kružnicu poluprečnika 4 cm. Obim u cm?", "24", "Jedna stranica je poluprečnik.", "O=6·4=24 cm."],
+  ["Dva susedna centralna trougla pravilnog mnogougla imaju po dva poluprečnika i jednake zahvaćene uglove. Koji stav neposredno važi?", ["SUS", "USU", "Samo jednakost uglova"], "Ugao je između dva para jednakih stranica.", "Poluprečnik, centralni ugao i poluprečnik daju stav SUS, pa su i osnovice jednake."],
+]);

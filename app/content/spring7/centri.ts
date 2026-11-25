@@ -1,0 +1,30 @@
+import { springLesson } from "../spring6/lesson";
+
+export default springLesson({
+  id: "s7-centri",
+  title: "Ortocentar, težište i dokaz podudarnošću",
+  month: "february",
+  aim: "Konstruiši visinu i težišnu duž i opravdaj jednakost elemenata pomoću podudarnosti.",
+  intro: "Ako izrežeš trougao od ravnomernog kartona, možeš ga osloniti na vrh olovke u njegovom težištu. Na crtežu ga pronalaziš pomoću sredina stranica.",
+  rules: ["Visina leži na pravoj kroz teme normalnoj na naspramnu stranicu. Prave tri visine seku se u ortocentru H. Težišna duž spaja teme i sredinu naspramne stranice. Tri težišne duži seku se u težištu T, koje svaku deli u odnosu 2 prema 1 računajući od temena.", "Sredinu konstruiši simetralom stranice. Spoji je sa naspramnim temenom i ponovi za drugu stranicu. Za ortocentar povuci dve normale iz temena na naspramne prave. Treću liniju koristi za proveru. U dokazima upari odgovarajuća temena i navedi tri podatka za SSS, SUS ili USU.", "Visina ne mora da polovi stranicu. Kod tupouglog trougla neke visine zahtevaju produženje stranica, a težište je uvek unutar trougla."],
+  formulas: ["AT:TM=2:1", "AT=[[frac:2|3]]·AM"],
+  skills: ["presek", "sredina", "teziste", "pravougli", "odnos", "obrnuto", "polozaj", "stav", "povrsina", "dokaz", "konstrukcija"],
+  worked: [{"question": "Težišna duž AM je 12 cm. Nađi AT i TM.", "steps": ["Podeli 12 cm na tri jednaka dela od po 4 cm.", "Od temena su dva dela, AT=8 cm, a TM=4 cm."]}, {"question": "Gde se nalazi ortocentar pravouglog trougla?", "steps": ["Svaka kateta je normalna na drugu, pa dve visine leže na katetama.", "Njihov presek je teme pravog ugla, dakle ono je ortocentar."]}, {"question": "U jednakokrakom trouglu AB=AC. Dokaži da težišna duž AM prolazi pod pravim uglom kroz osnovicu.", "steps": ["BM=CM jer je M sredina. AM je zajednička stranica, a AB=AC je dato. Trouglovi ABM i ACM su podudarni po SSS.", "Uglovi kod M su jednaki i zajedno daju 180°. Zato svaki ima 90°, pa je AM ujedno visina."]}],
+}, [
+  ["Kako se zove presek pravih na kojima leže visine?", ["Ortocentar", "Težište", "Centar opisane kružnice"], "Razlikuj normalu iz temena i spoj sa sredinom.", "Tri prave visina prolaze kroz ortocentar."],
+  ["BC=18 cm, a M je sredina. Koliko je BM u cm?", "9", "Sredina daje dva jednaka dela.", "BM=18:2=9 cm."],
+  ["Koju tačku spajamo sa temenom da bismo dobili težišnu duž?", ["Sredinu naspramne stranice", "Ortocentar", "Bilo koje podnožje visine"], "Pogledaj krajeve težišne duži.", "Jedan kraj je teme, drugi je sredina naspramne stranice."],
+  ["Kad je ugao kod B prav, koje teme je ortocentar?", ["B", "A", "C"], "Dve visine leže na katetama.", "Katete su normalne i seku se kod B."],
+  ["Ako je TM=5 cm na težišnoj duži AM, koliko je AT u cm?", "10", "Deo ka temenu duži je dva puta.", "AT=2·5=10 cm."],
+  ["Rastojanje temena od težišta je 14 cm. Koliko cm ima cela odgovarajuća težišna duž?", "21", "Do sredine stranice nedostaje jedan deo.", "Kraći deo je 14:2=7 cm. Cela duž je 14+7=21 cm."],
+  ["Gde je ortocentar tupouglog trougla?", ["Izvan trougla", "Uvek u trouglu", "U sredini najduže stranice"], "Produži prave dve stranice.", "Dve prave visina seku se izvan granice trougla."],
+  ["AB=AC, BM=CM i AM je zajednička. Koji stav uparuje ABM i ACM?", ["SSS", "USU", "Samo jednakost jednog ugla"], "Prebroj parove jednakih stranica.", "Tri para stranica određuju podudarnost po SSS."],
+  ["Težišna duž deli trougao površine 54 cm² na dva dela. Površina jednog dela u cm²?", "27", "Uporedi osnovice i zajedničku visinu.", "Polovine stranice su jednake. Uz istu visinu imaju jednake površine od 54:2=27 cm²."],
+  ["Dve stranice jednog trougla jednake su dvema drugog, kao i ugao između njih. Koji zaključak je opravdan?", ["Podudarni su po SUS", "Podudarni su samo ako je ugao prav", "Moraju biti jednakostranični"], "Gde se nalazi poznati ugao?", "Ugao je zahvaćen datim stranicama, što je upravo uslov SUS."],
+  ["Koliko različitih težišnih duži je dovoljno nacrtati da se odredi težište?", "2", "Traži presek.", "Prve dve određuju tačku, treća služi proveri."],
+  ["AM=24 cm. Koliko je TM u cm?", "8", "Kraći deo čini trećinu.", "TM=24:3=8 cm."],
+  ["Oštrougli trougao ima ortocentar na kom mestu?", ["U unutrašnjosti", "Izvan", "U temenu"], "Nacrtaj dve visine.", "Obe visine prolaze unutrašnjošću i seku se unutra."],
+  ["Razlika delova težišne duži na koje je deli težište je 6 cm. Cela duž u cm?", "18", "Dužine su 2u i u.", "Razlika je u=6 cm, a zbir je 3u=18 cm."],
+  ["Kako se zove zajednička tačka tri težišne duži?", ["Težište", "Ortocentar", "Podnožje"], "Svaka polazi iz temena do sredine stranice.", "Njihov presek po definiciji je težište."],
+  ["Simetrala ugla pri vrhu jednakokrakog trougla seče osnovicu u D. Za dokaz da je D sredina najpre primeni koji stav na dva nastala trougla?", ["SUS", "SSS odmah iz podatka o D", "Samo jednakost uglova"], "Uporedi krake, zajedničku duž i ugao kod vrha.", "Kraci su jednaki, duž do D zajednička, a zahvaćeni uglovi jednaki. Podudarnost daje jednake delove osnovice."],
+]);

@@ -1,0 +1,30 @@
+import { springLesson } from "../spring6/lesson";
+
+export default springLesson({
+  id: "s7-cinioci",
+  title: "Rastavljanje polinoma na činioce",
+  month: "april",
+  aim: "Prepoznaj zajednički činilac ili identitet i proveri proizvod razvijanjem.",
+  intro: "Kada 6·8+6·2 zapišeš kao 6(8+2), vidiš zajedničkih šest grupa. Istim obrnutim čitanjem distributivnog zakona zbir monoma postaje proizvod.",
+  rules: ["Prvo potraži najveći zajednički pozitivan celobrojni činilac koeficijenata i najmanji izložilac zajedničke promenljive. Svaki član podeli izabranim činiocem. Preostali binom ili trinom ispitaj kao razliku kvadrata ili kvadrat binoma.", "Kod razlike dva kvadrata koristi zbir i razliku njihovih korena. Kod trinoma proveri oba krajnja kvadrata i srednji dvostruki proizvod. Proveru završi množenjem svih činilaca i sređivanjem.", "Proizvod sa činiocem 1 ne predstavlja traženo rastavljanje. Pazi na znak i na to da kod izvlačenja celog člana u zagradi preostaje 1."],
+  formulas: ["ab+ac=a(b+c)", "a²−b²=(a−b)(a+b)", "a²−2ab+b²=(a−b)²"],
+  skills: ["faktor", "ostatak", "razlika", "kvadrat", "zajednicki", "negativan", "provjera", "uslov", "dva-koraka", "primena", "obrnuto"],
+  worked: [{"question": "Izdvoji zajednički činilac iz 8x²+12x.", "steps": ["Zajednički broj je 4, a najmanji zajednički stepen je x. Podeli oba člana sa 4x kao monome.", "Dobijaš 4x(2x+3). Množenje vraća i 8x² i 12x."]}, {"question": "Rastavi 9x²−16.", "steps": ["Prepoznaj (3x)²−4². Uzmi razliku i zbir istih članova.", "Dobijamo (3x−4)(3x+4). Unakrsni proizvodi se poništavaju."]}, {"question": "Rastavi 2x²−12x+18.", "steps": ["Prvo izdvoji 2. Ostaje x²−6x+9 sa poslednjim članom 3² i srednjim članom −2·x·3.", "Prepoznaj kvadrat razlike. Rezultat je 2(x−3)², a razvijanje daje početni trinom."]}],
+}, [
+  ["Koji najveći pozitivan ceo broj deli koeficijente 12x i 18?", "6", "Nabroj zajedničke delioce brojeva.", "Delioci oba broja su 1, 2, 3 i 6. Najveći je 6."],
+  ["Izdvojeno je 5x iz 5x²+5x. Koji slobodni član ostaje u zagradi?", "1", "Šta pomnoženo sa 5x daje 5x?", "5x(x+1)=5x²+5x."],
+  ["Rastavi x²−25 na dva nekonstantna linearna činioca.", "(x-5)(x+5)", "25 je kvadrat broja 5.", "Razlika kvadrata daje (x−5)(x+5), a unakrsni članovi su suprotni."],
+  ["Zapiši x²+6x+9 kao kvadrat binoma.", "(x+3)^2", "Krajnji član je 3².", "Srednji član je 2·3x. Zato je izraz (x+3)²."],
+  ["Rastavi 3x²−12x izdvajanjem 3x. Upiši proizvod.", "3x(x-4)", "Podeli oba člana sa zajedničkim monomom.", "Ostaje x−4. Provera daje 3x²−12x."],
+  ["Rastavi x²−10x+25 kao kvadrat binoma.", "(x-5)^2", "Predznak srednjeg člana određuje znak u zagradi.", "−2·x·5=−10x, a 5²=25."],
+  ["Koji je koeficijent uz x posle razvijanja (x−4)(x+9)?", "5", "Saberi dva unakrsna proizvoda.", "9x−4x=5x. Slobodni član je −36."],
+  ["Da li je x²+4x+9 kvadrat polinoma x+3?", ["Ne", "Da"], "Uporedi srednje članove.", "(x+3)²=x²+6x+9, pa koeficijent 4 nije odgovarajući."],
+  ["Potpuno rastavi 2x²−18 izdvajanjem broja i dvaju nekonstantnih linearnih činilaca.", "2(x-3)(x+3)", "Prvo izvuci 2, pa pogledaj x²−9.", "2(x²−9)=2(x−3)(x+3)."],
+  ["Izračunaj 87²−13² pomoću činilaca.", "7400", "Zbir ova dva broja je okrugao.", "(87−13)(87+13)=74·100=7400."],
+  ["Koji broj nedostaje u (x−7)(x+7)=x²−c?", "49", "Pomnoži samo stalne članove.", "−7·7=−49. Zato je c=49."],
+  ["Rastavi x²−4 na dva nekonstantna linearna činioca.", "(x-2)(x+2)", "4=2².", "Razlika kvadrata daje proizvod zbira i razlike."],
+  ["Zapiši x²−14x+49 kao kvadrat binoma.", "(x-7)^2", "Proveri dvostruki proizvod.", "−2·7x=−14x i 7²=49."],
+  ["Potpuno rastavi 3x²−48 na izdvojeni broj i dva nekonstantna linearna činioca.", "3(x-4)(x+4)", "Prvo podeli koeficijente sa 3.", "3(x²−16)=3(x−4)(x+4)."],
+  ["Iz 6x²+18x izdvoj 6x. Napiši samo preostali binom.", "x+3", "Podeli oba člana.", "6x² odgovara članu x, a 18x članu 3."],
+  ["Za koji pozitivan c je x²−cx+36 kvadrat binoma?", "12", "Koji broj na kvadrat daje 36?", "Pošto je (x−6)²=x²−12x+36, c=12."],
+]);

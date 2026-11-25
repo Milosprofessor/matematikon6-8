@@ -1,0 +1,30 @@
+import { springLesson } from "../spring6/lesson";
+
+export default springLesson({
+  id: "s7-rotacija",
+  title: "Rotacija tačke, duži i mnogougla",
+  month: "may",
+  aim: "Konstruiši sliku pomoću centra, ugla i smera.",
+  intro: "Kazaljka sata se okreće oko osovine. Svaka njena tačka opisuje kružnicu čiji je centar u osovini.",
+  rules: ["Rotaciju određuju centar, ugao i smer. Rastojanje svake tačke do centra ostaje isto, a zrak od centra do slike zaklapa zadati orijentisani ugao sa prvobitnim zrakom.", "Za svako teme nacrtaj kružnicu oko centra kroz to teme. Prenesi ugao u zadatom smeru i označi presek novog zraka sa kružnicom. Spoji slike temena istim redosledom.", "Smer menja sliku. Kod koordinata prvo posmatraj položaj u odnosu na centar rotacije."],
+  formulas: ["OA=OA′", "∠AOA′=α"],
+  skills: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "4"],
+  worked: [{"question": "Posle rotacije tačke oko O početno rastojanje od O iznosilo je 7 cm. Novo rastojanje u cm?", "steps": ["Šestar zadržava isti otvor.", "Slika leži na istoj kružnici poluprečnika 7 cm."]}, {"question": "Centar je (3,1), a A=(7,1). Posle 90° suprotno kazaljci nova ordinata?", "steps": ["Odredi pomeraj u odnosu na centar.", "Četiri koraka udesno postaju četiri nagore iz centra (3,1). Ordinata je 5."]}, {"question": "Rotacija za 180° preslikava A(3,2) u B(9,8). Kolika je apscisa centra?", "steps": ["Centar je sredina duži AB.", "Apscisa je polovina zbira 3 i 9, dakle 6."]}],
+}, [
+  ["Rotiraj tačku (3,0) oko početka za 90° suprotno kazaljci. Nova ordinata?", "3", "Pozitivna poluosa x prelazi u pozitivnu poluosu y.", "Slika je (0,3)."],
+  ["Posle rotacije tačke oko O početno rastojanje od O iznosilo je 5 cm. Novo rastojanje u cm?", "5", "Šestar zadržava isti otvor.", "Slika leži na istoj kružnici poluprečnika 5 cm."],
+  ["Rotiraš sam centar za 30°. Koliko cm se pomeri?", "0", "Centar je nepokretna tačka.", "Njegovo rastojanje od sopstvene slike je nula."],
+  ["Rotiraj (3,5) za 180° oko početka. Nova apscisa?", "-3", "Slika je naspram početne tačke.", "Obe koordinate menjaju znak. Slika je (−3,−5)."],
+  ["Rotacija od 90° u smeru kazaljke oko početka preslikava (3,5) u koju ordinatu?", "-3", "Prati pomeraj duž pozitivne ose x.", "Pravilo je (x,y) → (y,−x), pa je ordinata −3."],
+  ["Dve uzastopne rotacije od 20° i 75° imaju isti centar i smer. Ukupan ugao?", "95", "Saberi uglove sa istim smerom.", "Ukupan obrt ima 95°."],
+  ["Centar je (1,1), a A=(5,1). Posle 90° suprotno kazaljci nova ordinata?", "5", "Odredi pomeraj u odnosu na centar.", "Četiri koraka udesno postaju četiri nagore iz centra (1,1). Ordinata je 5."],
+  ["Trougao površine 5 cm² rotira se za 100°. Površina slike u cm²?", "5", "Rotacija čuva podudarnost.", "Stranice i visine su jednake odgovarajućim dužinama, pa površina ostaje 5 cm²."],
+  ["Koliki je najmanji pozitivan ugao rotacije koji pravilni 8-ugao oko centra preslikava na sebe? Upiši u stepenima.", "360/8", "Prvo teme mora preći na sledeće teme.", "Pun ugao se deli na 8 jednakih delova."],
+  ["Rotacija za 180° preslikava A(1,2) u B(7,8). Kolika je apscisa centra?", "4", "Centar je sredina duži AB.", "Apscisa je polovina zbira 1 i 7, dakle 4."],
+  ["Rotacija od 90° u smeru kazaljke oko početka preslikava (4,6) u koju ordinatu?", "-4", "Prati pomeraj duž pozitivne ose x.", "Pravilo je (x,y) → (y,−x), pa je ordinata −4."],
+  ["Rotiraj tačku (4,0) oko početka za 90° suprotno kazaljci. Nova ordinata?", "4", "Pozitivna poluosa x prelazi u pozitivnu poluosu y.", "Slika je (0,4)."],
+  ["Dve uzastopne rotacije od 40° i 75° imaju isti centar i smer. Ukupan ugao?", "115", "Saberi uglove sa istim smerom.", "Ukupan obrt ima 115°."],
+  ["Koliki je najmanji pozitivan ugao rotacije koji pravilni 12-ugao oko centra preslikava na sebe? Upiši u stepenima.", "360/12", "Prvo teme mora preći na sledeće teme.", "Pun ugao se deli na 12 jednakih delova."],
+  ["Rotiraš sam centar za 60°. Koliko cm se pomeri?", "0", "Centar je nepokretna tačka.", "Njegovo rastojanje od sopstvene slike je nula."],
+  ["Rotacija za 180° preslikava A(2,2) u B(8,8). Kolika je apscisa centra?", "5", "Centar je sredina duži AB.", "Apscisa je polovina zbira 2 i 8, dakle 5."],
+]);
