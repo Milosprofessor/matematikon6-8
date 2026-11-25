@@ -22,6 +22,10 @@ function area(id:string,title:string,lessons:Lesson[],previous:string):Area {
     reviewPoints:lessons.map(l=>l.rules.at(-1)!),
     lessons:lessons.map((l,i)=>({...l,prerequisites:[i?lessons[i-1].id:previous]}))};
 }
+// The figure supplies the measurements for this task in both scripts.
+const measuredPlot=sinteza.tasks[6];
+measuredPlot.prompt="Parcela na slici je pravougaonik. Kolika je dužina njegove dijagonale u metrima?";
+measuredPlot.diagram={type:"pythagoras",variant:"rectangle",labels:{a:"3 m",b:"4 m",d:"?"}};
 export const spring7Areas=[
   area("geometrija","Mnogougao i značajne tačke",[uglovi,pravilni,povrsina,centri],"dijagonale-mnogougla"),
   area("algebra","Celi algebarski izrazi",[monomi,polinomi,proizvod,identiteti,cinioci,jednacine],"stepen-proizvoda"),

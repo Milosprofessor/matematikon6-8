@@ -1,5 +1,6 @@
 "use client";
-import {CircleDerivation,DifferenceModel} from "./seventh-models";
+import {GroupTerms,IntervalModel,FactorModel} from "./seventh-algebra";
+import {CircleDerivation,DifferenceModel,CompassConstruction,RingModel} from "./seventh-models";
 import {useState,type ReactNode} from "react";
 
 type Point=[number,number];
@@ -38,6 +39,6 @@ function Data(){
  return <><Slider label="Peto merenje" v={v} min={1} max={9} set={set}/><Figure name="Pet merenja">{a.map((n,i)=><g key={i}><rect x={28+i*52} y={163-n*15} width="30" height={n*15} fill="#5882b0"/><text x={43+i*52} y={156-n*15} textAnchor="middle">{n}</text></g>)}</Figure><table><tbody><tr><th>Uređeno</th>{ordered.map((n,i)=><td key={i}>{n}</td>)}</tr></tbody></table><p>Sredina je {fmt((16+v)/5)}, medijana {ordered[2]}, a najčešće vrednosti su {Array.from(new Set(ordered)).filter(n=>a.filter(x=>x===n).length===Math.max(...a.map(m=>a.filter(x=>x===m).length))).join(" i ")}.</p></>;
 }
 export function SeventhLab({id}:{id:string}){
- const lab=id==="s7-centri"?<Centers/>:["s7-uglovi","s7-pravilni","s7-povrsina"].includes(id)?<Polygon/>:["s7-kruznica","s7-luk","s7-isecci","s7-rotacija"].includes(id)?<Circle id={id}/>:id==="s7-podaci"?<Data/>:["s7-procena","s7-sinteza"].includes(id)?null:<Algebra/>;
- return lab&&<section className="content-card spring-lab"><h2>Istraži na crtežu</h2>{lab}{(id==="s7-luk"||id==="s7-isecci")&&<CircleDerivation area={id==="s7-isecci"}/>} {["s7-identiteti","s7-cinioci"].includes(id)&&<DifferenceModel/>}</section>;
+ const lab=id==="s7-centri"?<Centers/>:["s7-uglovi","s7-pravilni","s7-povrsina"].includes(id)?<Polygon/>:["s7-kruznica","s7-luk","s7-isecci","s7-rotacija"].includes(id)?<Circle id={id}/>:id==="s7-podaci"?<Data/>:id==="s7-cinioci"?<FactorModel/>:id==="s7-procena"?<IntervalModel/>:id==="s7-sinteza"?<Data/>:["s7-monomi","s7-polinomi","s7-proizvod"].includes(id)?<GroupTerms product={id==="s7-proizvod"}/>:<Algebra/>;
+ return lab&&<section className="content-card spring-lab"><h2>Istraži na crtežu</h2>{lab}{id==="s7-isecci"&&<RingModel/>}{id==="s7-pravilni"&&<CompassConstruction/>}{(id==="s7-luk"||id==="s7-isecci")&&<CircleDerivation area={id==="s7-isecci"}/>} {["s7-identiteti","s7-cinioci"].includes(id)&&<DifferenceModel/>}</section>;
 }

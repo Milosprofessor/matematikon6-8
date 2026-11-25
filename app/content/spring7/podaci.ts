@@ -8,7 +8,7 @@ export default springLesson({
   intro: "Izmeri koliko minuta traje put do škole tokom pet dana. Beleži istu veličinu u istoj jedinici. U tabeli svakoj različitoj vrednosti pridruži broj pojavljivanja, a na dijagramu tu učestalost predstavi visinom stupca.",
   rules: ["Aritmetička sredina odgovara jednakoj raspodeli ukupnog zbira. Za medijanu poređaj podatke: kod neparnog broja uzmi srednji, kod parnog izračunaj prosek dva srednja.", "Mod je najčešća vrednost. Dve vrednosti mogu deliti najveću učestalost. Jedno veoma dugo putovanje snažno utiče na prosek, dok srednji položaj uređenog niza može ostati isti.", "Ne računaj prosek različitih vrednosti samo jednom ako se neke od njih javljaju više puta. Zbir i delilac moraju obuhvatiti sva merenja."],
   formulas: ["m=[[frac:zbir merenja|broj merenja]]"],
-  skills: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "4"],
+  skills: ["sredina", "medijana", "mod", "učestalost", "parni-uzorak", "nedostaje", "grafikon", "ponderisanje", "promena", "objedinjavanje", "parni-uzorak"],
   worked: [{"question": "Nađi medijanu brojeva 11, 5, 6.", "steps": ["Poređaj vrednosti rastuće.", "Redosled je 5, 6, 11. Srednji član je 6."]}, {"question": "Na stubičastom dijagramu 5 učenika bira fudbal, a dvostruko više košarku. Za koliko je drugi stubac viši, u učenicima?", "steps": ["Prvo odredi obe frekvencije.", "Razlika je 10−5=5 učenika."]}, {"question": "Četiri učenika imaju prosek 5, a druga dva 11. Koliki je prosek svih šest?", "steps": ["Vrati zbir svake grupe pa ih objedini.", "Zbirovi su 20 i 22. Podeli njihov zbir sa šest i dobijaš 7."]}],
 }, [
   ["Uzorak je 3, 5, 7. Koliki je prosek?", "5", "Saberi pa podeli brojem merenja.", "Zbir je 15, pa je sredina 5."],

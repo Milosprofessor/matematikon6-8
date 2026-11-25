@@ -8,7 +8,7 @@ export default springLesson({
   intro: "Lenjir sa milimetarskim podeocima ne pokazuje proizvoljan broj decimala. Zapis merenja treba da saopšti i njegovu preciznost.",
   rules: ["Apsolutna greška je rastojanje tačne i približne vrednosti na brojevnoj pravoj. Kod zaokruživanja na najbliži podeok greška je najviše polovina koraka.", "Za broj između dve moguće vrednosti izračunaj obe razlike po apsolutnoj vrednosti. Izaberi bližu vrednost; u zadatku koji traži broj decimala zadrži traženi zapis.", "Ne zaokružuj svaki međurezultat ako možeš računati sa tačnim vrednostima do poslednjeg koraka."],
   formulas: ["Δ=|x−a|", "a−Δ≤x≤a+Δ"],
-  skills: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "4"],
+  skills: ["desetine", "rastojanje", "granice", "isti-broj", "stote", "polukorak", "donja-granica", "poređenje", "zbir-grešaka", "proizvod-greške", "stote"],
   worked: [{"question": "Kolika je apsolutna greška kada 6,18 zamenimo sa 6,2?", "steps": ["Na brojevnoj pravoj izmeri razmak.", "6,20−6,18=0,02. Greška je nenegativna."]}, {"question": "Merenje 6,5 m ima grešku najviše 0,2 m. Najmanja moguća dužina u m?", "steps": ["Oduzmi dozvoljenu grešku.", "6,5−0,2=6,3 m."]}, {"question": "Približan obim dobija se kada za π uzmemo 3,14. Ako je prečnik tačno 30 cm i greška aproksimacije π manja je od 0,002, koja se gornja granica greške obima u cm dobija množenjem?", "steps": ["Kad se broj pomnoži prečnikom, istim faktorom množi se njegova greška.", "Greška obima je manja od 30·0,002=0,06 cm."]}],
 }, [
   ["Zaokruži 4,37 na desetine.", "4,4", "Uporedi sa dve najbliže desetine.", "Cifra stotih je 7, pa je bliža naredna desetina."],

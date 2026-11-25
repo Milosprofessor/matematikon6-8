@@ -8,7 +8,7 @@ export default springLesson({
   intro: "Kazaljka sata se okreće oko osovine. Svaka njena tačka opisuje kružnicu čiji je centar u osovini.",
   rules: ["Rotaciju određuju centar, ugao i smer. Rastojanje svake tačke do centra ostaje isto, a zrak od centra do slike zaklapa zadati orijentisani ugao sa prvobitnim zrakom.", "Za svako teme nacrtaj kružnicu oko centra kroz to teme. Prenesi ugao u zadatom smeru i označi presek novog zraka sa kružnicom. Spoji slike temena istim redosledom.", "Smer menja sliku. Kod koordinata prvo posmatraj položaj u odnosu na centar rotacije."],
   formulas: ["OA=OA′", "∠AOA′=α"],
-  skills: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "4"],
+  skills: ["četvrt-okreta", "rastojanje", "centar", "poluokret", "smer", "sastavljanje", "pomeren-centar", "podudarnost", "pravilnost", "sredina", "smer"],
   worked: [{"question": "Posle rotacije tačke oko O početno rastojanje od O iznosilo je 7 cm. Novo rastojanje u cm?", "steps": ["Šestar zadržava isti otvor.", "Slika leži na istoj kružnici poluprečnika 7 cm."]}, {"question": "Centar je (3,1), a A=(7,1). Posle 90° suprotno kazaljci nova ordinata?", "steps": ["Odredi pomeraj u odnosu na centar.", "Četiri koraka udesno postaju četiri nagore iz centra (3,1). Ordinata je 5."]}, {"question": "Rotacija za 180° preslikava A(3,2) u B(9,8). Kolika je apscisa centra?", "steps": ["Centar je sredina duži AB.", "Apscisa je polovina zbira 3 i 9, dakle 6."]}],
 }, [
   ["Rotiraj tačku (3,0) oko početka za 90° suprotno kazaljci. Nova ordinata?", "3", "Pozitivna poluosa x prelazi u pozitivnu poluosu y.", "Slika je (0,3)."],
