@@ -1,4 +1,5 @@
 "use client";
+import { eighthAnswer } from "./eighth-answer";
 import { useState } from "react";
 
 export type Line=[number,number,number];
@@ -21,7 +22,7 @@ export function Slider({name,value,set,min,max,step=1}:{name:string;value:number
 }
 const side=272,mid=136,scale=14;
 const pos=(x:number,y:number)=>[mid+x*scale,mid-y*scale];
-function Graph({lines,points=[]}:{lines:Line[];points?:number[][]}){
+export function Graph({lines,points=[]}:{lines:Line[];points?:number[][]}){
   const colors=["#3157a6","#b33f22"];
   return <svg viewBox={`0 0 ${side} ${side}`} role="img" aria-label="Koordinatna mreža, jedan kvadratić predstavlja jednu jedinicu">
     <rect width={side} height={side} fill="#fff"/>
@@ -35,12 +36,13 @@ function Graph({lines,points=[]}:{lines:Line[];points?:number[][]}){
       return <path key={i} d={"M"+ends[0].join(" ")+"L"+ends[1].join(" ")} fill="none" stroke={colors[i]} strokeWidth="3" strokeDasharray={i?"7 3":undefined}/>;
     })}
     {points.filter(([x,y])=>Math.abs(x)<=9&&Math.abs(y)<=9).map(([x,y],i)=><circle key={i} cx={pos(x,y)[0]} cy={pos(x,y)[1]} r="4.5" fill="#25334a" stroke="white"/>)}
-    <g fill="#27374f" fontSize="12"><text x="256" y="130">x</text><text x="143" y="13">y</text><text x="124" y="151">0</text><text x="204" y="151">5</text><text x="143" y="68">5</text></g>
+    <g fill="#27374f" fontSize="12"><text x="249" y="126">x</text><text x="143" y="26">y</text><text x="124" y="151">0</text><text x="204" y="151">5</text><text x="143" y="68">5</text></g>
   </svg>;
 }
 const equation=(k:number,n:number)=>"y = "+(k===0?"":k===1?"x":k===-1?"−x":format(k)+"x")+(k&&n?(n>0?" + ":" − ")+Math.abs(n):k?"":String(n));
 export function FunctionLab(){
   const [k,setK]=useState(2),[n,setN]=useState(1),[challenge,setChallenge]=useState(0),[feedback,setFeedback]=useState("");
+  const [guessK,setGuessK]=useState(""),[guessN,setGuessN]=useState(""),[guess,setGuess]=useState("");
   const root=k?frac(-n,k):undefined;
   return <section className="spring-lab e8-lab"><h3>Grafik i tabela</h3><Graph lines={[[-k,1,n]]} points={[[0,n],[1,k+n]]}/>
     <Slider name="Nagib k" min={-4} max={4} value={k} set={setK}/><Slider name="Odsečak n" min={-6} max={6} value={n} set={setN}/>
@@ -50,6 +52,9 @@ export function FunctionLab(){
     <p>{challenge%2?"Nacrtaj grafik funkcije y = 3 − x pomoću klizača.":"Namesti pravu kroz tačke (0; −2) i (2; 4)."}</p>
     <button onClick={()=>setFeedback((challenge%2?k===-1&&n===3:k===3&&n===-2)?"Oba uslova su ispunjena.":"Proveri prvo odsečak, pa promenu y za jedan korak udesno.")}>Proveri grafik</button>
     <button onClick={()=>{setChallenge(challenge+1);setFeedback("")}}>Promeni zadatak</button><p role="status">{feedback}</p>
+    <details><summary>Odredi pravilo sa crteža</summary><Graph lines={[[2,1,3]]} points={[[0,3],[2,-1]]}/><p>Očitaj dve označene tačke. Koji koeficijenti daju ovu pravu?</p>
+      <label>Nagib <input inputMode="text" value={guessK} onChange={e=>setGuessK(e.target.value)}/></label><label>Odsečak <input inputMode="text" value={guessN} onChange={e=>setGuessN(e.target.value)}/></label>
+      <button onClick={()=>setGuess(eighthAnswer(guessK,"-2")&&eighthAnswer(guessN,"3")?"Tačno. Pravilo je y = −2x + 3.":"Pogledaj ordinatu za x=0. Od prve do druge tačke x poraste za 2, a y opadne za 4.")}>Proveri pravilo</button><p role="status">{guess}</p></details>
   </section>;
 }
 const presets:Line[][]=[[[1,1,4],[1,-1,2]],[[1,1,2],[2,2,5]],[[1,1,2],[2,2,4]],[[1,0,3],[0,1,-2]],[[0,0,0],[1,2,4]],[[0,0,1],[1,2,4]]];
@@ -69,10 +74,10 @@ export function SystemsLab(){
   const [lines,setLines]=useState<Line[]>(presets[0]),[step,setStep]=useState(1),[method,setMethod]=useState("zamena");
   const result=intersection(lines[0],lines[1]),steps=explain(lines[0],lines[1],method);
   return <section className="spring-lab e8-lab"><h3>Dve jednačine u ravni</h3><Graph lines={lines} points={result.kind==="point"?[[result.x,result.y]]:[]}/>
-    <label>Primer <select defaultValue="0" onChange={e=>{setLines(presets[+e.target.value]);setStep(1)}}>{["Presek","Paralelne","Poklapanje","Vertikala","Identitet","Nemogući uslov"].map((s,i)=><option key={s} value={i}>{s}</option>)}</select></label>
+    <label>Primer <select aria-label="Primer" defaultValue="0" onChange={e=>{setLines(presets[+e.target.value]);setStep(1)}}>{["Presek","Paralelne","Poklapanje","Vertikala","Identitet","Nemogući uslov"].map((s,i)=><option key={s} value={i}>{s}</option>)}</select></label>
     {lines.map((line,i)=><fieldset key={i}><legend>{i+1}. prava · {line[0]}x + ({line[1]})y = {line[2]}</legend>{line.map((v,j)=><Slider key={j} name={["a","b","c"][j]+(i+1)} min={-6} max={6} value={v} set={n=>{setLines(lines.map((l,r)=>r===i?l.map((p,s)=>s===j?n:p) as Line:l));setStep(1)}}/>)}</fieldset>)}
     <p>{result.kind==="point"?"Jedinstven presek. Očitavanje sa mreže proveri računom.":result.kind==="none"?"Nema zajedničkih rešenja.":"Beskonačno mnogo rešenja."}</p>
-    <label>Metoda <select value={method} onChange={e=>{setMethod(e.target.value);setStep(1)}}><option value="zamena">Zamena</option><option value="eliminacija">Suprotni koeficijenti</option></select></label>
+    <label>Metoda <select aria-label="Metoda" value={method} onChange={e=>{setMethod(e.target.value);setStep(1)}}><option value="zamena">Zamena</option><option value="eliminacija">Suprotni koeficijenti</option></select></label>
     <ol>{steps.slice(0,step).map(s=><li key={s}>{s}</li>)}</ol><button onClick={()=>setStep(step>=steps.length?1:step+1)}>{step>=steps.length?"Ponovi postupak":"Sledeći korak"}</button>
   </section>;
 }

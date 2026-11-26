@@ -96,7 +96,7 @@ test("meseci, redosled i adaptivni fond svih novih lekcija",()=>{
     assert.ok(pool.some(t=>t.lessonId===lesson.id)&&pool.every(t=>unlocked.includes(t.lessonId)));
     assert.ok(pool.every(t=>!lesson.mini.some(m=>m.id===t.id)));
   }
-  assert.deepEqual(grades.slice(1).map(g=>g.areas.flatMap(a=>a.lessons).length),[49,27]);
+  assert.deepEqual(grades.slice(1).map(g=>g.areas.flatMap(a=>a.lessons).length),[49,39]);
 });
 
 test("tačno poređenje razlomaka, decimala, negativnih i graničnih zapisa",()=>{

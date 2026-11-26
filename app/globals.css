@@ -192,13 +192,13 @@ footer{display:flex;align-items:center;justify-content:space-between;min-height:
 }
 
 .spring-lab svg { display:block; width:100%; max-width:34rem; height:auto; margin:1rem auto; background:#f7faff; border:1px solid #c5d2e2; border-radius:.75rem; }
-.spring-lab svg line, .spring-lab svg path { stroke:#263d59; stroke-width:2; fill:none; }
+.spring-lab:not(.e8-lab) svg line, .spring-lab:not(.e8-lab) svg path { stroke:#263d59; stroke-width:2; fill:none; }
 .spring-lab svg .lab-shape { fill:#b7dbef; fill-opacity:.72; stroke:#214a68; stroke-width:2; }
 .spring-lab svg .second { fill:#f9ce79; stroke:#845714; }
 .spring-lab svg .guide { fill:none; stroke:#3563aa; stroke-width:2; stroke-dasharray:5 3; }
 .spring-lab svg .cut { stroke:#9c4b00; stroke-width:3; }
 .spring-lab svg .grid-line { stroke:#c8d5e3; stroke-width:1; }
-.spring-lab svg circle { fill:#214a68; }
+.spring-lab:not(.e8-lab) svg circle { fill:#214a68; }
 .spring-lab svg .active-dot { fill:#a9400d; stroke:white; stroke-width:2; }
 .spring-lab svg text { font:600 14px system-ui,sans-serif; fill:#152c44; }
 .spring-lab .lab-grid { touch-action:none; }
@@ -228,3 +228,9 @@ footer{display:flex;align-items:center;justify-content:space-between;min-height:
 .e8-exam input {display:block;margin:4px 0;min-height:44px}
 .e8-exam .content-card {margin:14px 0}
 .e8-exam a {text-decoration:underline}
+.e8-figure {max-width:420px;margin:12px auto;color:#344c61}
+.e8-figure svg {width:100%;height:auto;max-height:270px;background:#fafcfe;border-radius:10px}
+.e8-figure figcaption {font-size:.88rem;line-height:1.45}
+.e8-lab svg text,.e8-figure svg text {font:12px system-ui,sans-serif;stroke:none}
+.e8-exam input[type="radio"] {display:inline;min-height:0;width:1.2em;height:1.2em;margin:.6em;vertical-align:middle}
+.e8-exam td,.e8-exam th {border:1px solid #bdc9d6;padding:.4rem .65rem}

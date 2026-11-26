@@ -1,22 +1,51 @@
 // Exact products of rational factors, square roots of integers and π.
 // Squaring the magnitude avoids rounding and makes √12 equivalent to 2√3.
 type Product = {sign:number; top:bigint; bottom:bigint; pi:number};
+const zero=BigInt(0), one=BigInt(1);
+function gcd(a:bigint,b:bigint):bigint {return b===zero?a:gcd(b,a%b)}
+function squareRoot(n:bigint){
+  if(n<one+one)return n;
+  let x=n,y=(x+one)/(one+one);
+  while(y<x){x=y;y=(x+n/x)/(one+one)}
+  return x;
+}
+function sum(x:Product,y:Product):Product|undefined{
+  if(x.top===zero)return y;
+  if(y.top===zero)return x;
+  if(x.pi!==y.pi)return;
+  const nt=y.top*x.bottom,dt=y.bottom*x.top,g=gcd(nt,dt);
+  const n=squareRoot(nt/g),d=squareRoot(dt/g);
+  if(n*n!==nt/g||d*d!==dt/g)return;
+  const signed=BigInt(x.sign)*d+BigInt(y.sign)*n;
+  return {sign:signed<zero?-1:1,top:x.top*signed*signed,bottom:x.bottom*d*d,pi:x.pi};
+}
 function product(value:string):Product|undefined {
+  if(/\d\s+\d/u.test(value))return;
   const s=value.trim().toLowerCase().replace(/\s/g,"").replace(/−/g,"-").replace(/,/g,".").replace(/pi/g,"π").replace(/sqrt/g,"√").replace(/[·×]/g,"*");
   if(!s || s.length>90)return;
   let index=0;
+  function expression():Product|undefined{
+    let result=sequence();
+    while(result && (s[index]==="+"||s[index]==="-")){
+      const sign=s[index++]==="-"?-1:1, next=sequence();
+      if(!next)return;
+      result=sum(result,{...next,sign:next.sign*sign});
+    }
+    return result;
+  }
   function sequence():Product|undefined {
     let current:Product={sign:1,top:BigInt(1),bottom:BigInt(1),pi:0};
     let count=0;
     while(index<s.length && s[index]!==")"){
+      if(count&&(s[index]==="+"||s[index]==="-"))break;
       let divide=false;
       if(count && "*/:".includes(s[index])){divide=s[index]!=="*";index++;}
       else if(count && /[\d.]/.test(s[index]))return;
       let sign=1;
-      if(s[index]==="-"){sign=-1;index++;}
+      if(s[index]==="-"||s[index]==="+"){sign=s[index++]==="-"?-1:1;}
       let factor:Product;
       if(s[index]==="("){
-        index++;const nested=sequence();if(!nested||s[index++]!==")")return;
+        index++;const nested=expression();if(!nested||s[index++]!==")")return;
         factor={...nested,sign:sign*nested.sign};
       }else if(s[index]==="π"){
         index++;factor={sign,top:BigInt(1),bottom:BigInt(1),pi:1};
@@ -24,7 +53,7 @@ function product(value:string):Product|undefined {
         const root=s[index]==="√";
         if(root)index++;
         const wrapped=root&&s[index]==="(";if(wrapped)index++;
-        const number=/^\d+(?:\.\d+)?/.exec(s.slice(index))?.[0];if(!number)return;
+        const number=/^(?:\d+(?:\.\d+)?|\.\d+)/.exec(s.slice(index))?.[0];if(!number)return;
         index+=number.length;if(wrapped&&s[index++]!==")")return;
         const denominator=BigInt(10)**BigInt(number.split(".")[1]?.length??0);
         const numerator=BigInt(number.replace(".",""));
@@ -37,7 +66,7 @@ function product(value:string):Product|undefined {
     }
     if(count)return current;
   }
-  const result=sequence();return index===s.length?result:undefined;
+  const result=expression();return index===s.length?result:undefined;
 }
 function scalar(a:string,b:string){
   const x=product(a),y=product(b);

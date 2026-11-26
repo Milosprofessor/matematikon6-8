@@ -42,7 +42,7 @@ export default unit({
     }
   ]
 }, [
-  ["Za y=3x+7 odredi početnu vrednost.","7","Postavi x=0.","y=3·0+7=7."],
+  ["Očitaj sa grafika početnu vrednost funkcije.","7","Nađi gde prava seče y-osu.","Presek sa y-osom nalazi se sedam jedinica iznad početka, u tački (0; 7)."],
   ["Za y=−4x+1, za koliko se y promeni kada x poraste za 1? Unesi promenu sa znakom.","-4","Pročitaj koeficijent uz x.","Porast ulaza za 1 daje promenu izlaza od −4."],
   ["U tabeli za y=5−2x popuni y za x=3.","-1","Uvrsti 3 umesto x.","y=5−2·3=−1."],
   ["Koja veličina je nezavisna ako je cena izražena kao funkcija mase?",["Masa","Cena","Zbir mase i cene"],"Koju vrednost bira kupac?","Kupac bira masu, a tarifa joj pridružuje cenu."],
@@ -51,7 +51,7 @@ export default unit({
   ["Prava ima k=−2 i sadrži (3; 1). Koliki je n?","7","Uvrsti obe koordinate.","1=−6+n, pa je n=7."],
   ["Ugovor ima fiksnih 180 dinara i još 12 po pozivu. Cena za 15 poziva u dinarima?","360","Odvoji početnu cenu i promenljiv deo.","C=180+12·15=360 dinara."],
   ["Cena za dva sata iznosi 460 dinara, za pet sati 850 dinara. Ako je zavisnost linearna, početna cena u dinarima?","200","Prvo odredi doplatu po satu.","k=(850−460):3=130. Iz 460=2·130+n dobijaš n=200 dinara."],
-  ["Koji opis važi za pravu x=−2?",["Ne daje funkciju y od x","Ima nagib nula","Ima jednu tačku"],"Poredi ordinате njenih tačaka.","Sve tačke imaju istu apscisu, a različite ordinate."],
+  ["Koji opis važi za pravu x=−2?",["Ne daje funkciju y od x","Ima nagib nula","Ima jednu tačku"],"Poredi ordinate njenih tačaka.","Sve tačke imaju istu apscisu, a različite ordinate."],
   ["Na kojoj osi leži tačka (0; n)?",["Na y-osi","Samo na x-osi za svako n","Van obe ose"],"Prva koordinata je nula.","Sve tačke sa x=0 leže na y-osi."],
   ["Ako y opadne za 10 kada x poraste za 4, koliki je nagib?","−2,5","Promene imaju različite znake.","k=−10:4=−2,5."],
   ["Baterija je na 82% posle jednog sata i na 70% posle tri sata. Uz stalnu potrošnju koliki je početni procenat?","88","Računaj promenu po satu.","Za dva sata gubi 12 procentnih poena, odnosno 6 na sat. Sat pre prvog podatka imala je 88%."],
