@@ -29,3 +29,49 @@ Svaka nova jedinica dobija cilj, uvod, pravila, česte greške, tri rešena prim
 ## Evidencija
 
 Početno poređenje grana i matrica završeni. Konačni inventar i rezultati provera evidentiraju se u izveštaju i godišnjem auditu.
+
+## Matrica godišnjih ishoda i način provere
+
+| Učenik na kraju godine može da… | Mesto u platformi (ID) | Dokaz koji se traži od učenika |
+|---|---|---|
+| postavi razmeru odgovarajućih duži i primeni Talesovu teoremu | razmera-duzi, proporcionalnost, talesova-teorema | Račun dužine pri paralelnom presecanju krakova ugla |
+| prepozna slične trouglove i upotrebi sličnost u realnom problemu | stavovi-slicnosti, primene-slicnosti, slicnost-pravougli | Izbor parova stranica, visina dobijena poređenjem senki |
+| opiše uzajamni položaj tačaka, pravih i ravni i odredi ortogonalnu projekciju | odnosi-pravih-ravni, dve-ravni, ortogonalnost, ortogonalna-projekcija | Prepoznavanje odnosa i projekcije na crtežu |
+| reši jednačinu i obrazloži ekvivalentnu transformaciju | ekvivalentne-transformacije, svodjenje-jednacina, primena-linearnih-jednacina | Jednačina dobijena iz teksta i provera njenog rešenja |
+| reši nejednačinu i protumači ograničenje | linearne-nejednacine, slozene-nejednacine, s8-znak | Promena smera pri deljenju negativnim brojem i izbor dozvoljene celobrojne vrednosti |
+| skicira prizmu i njenu mrežu, razlikuje karakteristične duži i odredi površinu i zapreminu | prizma-elementi, prizma-mreza, prizma-zapremina, s8-prizma | Kocka, kvadar i druge osnove, pravougaonik dijagonalnog preseka kada postoji |
+| razlikuje visinu piramide, bočnu visinu i bočnu ivicu, izabere presek | piramida-elementi, s8-piramida | Obeležavanje elemenata, izbor hipotenuze, račun bočne visine |
+| koristi površinu i zapreminu piramide u odgovarajućim uslovima | s8-piramida, s8-zapremina | Trougaona, četvorougaona i šestougaona osnova, pravougaoni krov sa dve različite bočne visine |
+| uskladi funkcijsko pravilo, tabelu i grafik u oba smera | s8-funkcija | Očitavanje koeficijenata i nameštanje prave kroz zadate tačke |
+| odredi znak, nule i monotonost i prevede implicitni oblik kada je to moguće | s8-znak | Posebni slučajevi horizontalne i vertikalne prave, poređenje tarifa |
+| reši sistem grafički i računski, razlikuje broj rešenja | s8-sistemi | Zamena, eliminacija, provera para, identitet ili protivrečnost |
+| formira i protumači model sa dve nepoznate | s8-model | Provera oba uslova i odbacivanje necelog broja predmeta |
+| poveže rotaciju pravougaonika sa valjkom i koristi njegovu mrežu | s8-valjak | Osni presek, pravougaoni omotač, površina i kapacitet |
+| poveže kupu sa rotacijom trougla, objasni dužinu luka mreže | s8-kupa | Razlika između visine i izvodnice, veza luka i obima osnove, površina i zapremina |
+| razlikuje sferu i loptu, odredi ravan presek, površinu i zapreminu | s8-lopta | Krug ili kružnica, veliki krug, slučaj dodirne ravni |
+| odabere model tela u situaciji merenja i pretvori jedinice | s8-tela, s8-godina | Kapacitet, površina materijala, odnos zapremina i složena tela |
+| učestvuje u izboru istraživačkog pitanja i načina rada, predstavi i objasni rezultat | s8-godina | Skica i tabela merenja ambalaže, poređenje deklaracije i proračuna, zaključak i izlaganje |
+
+Digitalni primer i zadatak dokazuju prisustvo ishoda u sadržaju. Za izvođenje konstrukcije priborom, usmeno obrazloženje i rad u grupi nastavnik posmatra učenički rad. [Mesečni inventar sa svih 39 lekcija osmog razreda](AUDIT_KOMPLETNOG_MATEMATIKON6_8_2026_27.md).
+
+## Dopuna izvora i primena na ispit
+
+Program je objavljen u Prosvetnom glasniku 11/2019. Registar identifikuje propis, a javni školski program iz gornje tabele prikazuje sadržaje matematike po oblastima. [Pravilnik VIII, PIS](https://pravno-informacioni-sistem.rs/eli/rep/pg/ministarstva/pravilnik/2019/11/2/reg) · [ZUOV, pregled propisa](https://zuov.gov.rs/zakoni-i-pravilnici/).
+
+Pravilnik o standardima 104/2024 grupiše kompetencije iz matematike za kraj osnovnog obrazovanja u tri šire oblasti. Učenički izveštaj daje pet dijagnostičkih grupa iz prethodnih specifikacija testa. Brojevi i algebra obuhvataju prve dve grupe, geometrija i merenje sledeće dve, a obrada podataka pripada trećoj široj oblasti koja uključuje i slučajnost. [Pravilnik o standardima, deo za kraj osnovnog obrazovanja](https://ceo.edu.rs/wp-content/uploads/2024/12/Правилник-о-стандардима-образовних-постигнућа-за-крај-првог-циклуса-основног-образовања-и-за-крај-основног-образовања_-104_2024-16.pdf).
+
+Ministarstvo je objavilo test i ključ iz juna 2026. Sadrže različite oblike odgovora, po jedan bod za zadatak i mogućnost delimičnog bodovanja pojedinih višedelnih zadataka. Digitalne simulacije koriste 20 zadataka, 120 minuta i maksimum 20 bodova. Delovi poslednjeg zadatka vrede po pola boda. Učenik vodi postupak u svesci i poredi ga sa prikazanim rešenjem nakon predaje. Dodela bodova u aplikaciji obuhvata upisane odgovore. [Ministarstvo, test 2026](https://prosveta.gov.rs/vesti/resenja-testa-iz-matematike-7/) · [Uputstvo za pregledanje](https://prosveta.gov.rs/wp-content/uploads/2026/06/2026_ZI_Matematika_Uputstvo-za-pregledanje.pdf).
+
+U javnom katalogu digitalnih izdanja Zavoda za udžbenike za osmi razred deo sadržaja dostupan je uz prijavu ili uplatu. Pregled izdavača ograničen je na javne kataloge, naslove i materijale dostupne bez kupovine. [Zavod za udžbenike, VIII razred](https://www.eudzbenici.zavod.co.rs/course/index.php?categoryid=5).
+
+## Realizacija
+
+| Faza | Ishod |
+|---|---|
+| Izbor osnove | Objedinjeni main sa prva tri razvojna PR-a. Zatečenih 121 lekcija. |
+| Redovne lekcije i provere | Dvanaest novih jedinica, 12 mini-provera, osam provera oblasti i tri završne nastavne provere. |
+| Priprema ispita | Dijagnostika sa preporukama, podsetnik V–VIII i tri autorske simulacije. |
+| Matematička revizija | Zaseban računski ključ za svih 298 novih zadataka, provera preseka i modela. |
+| Tehnička provera | 105 automatizovanih testova, TypeScript, lint, produkcijski i Pages build. Otvorene sve 133 lekcije. |
+
+[Završni izveštaj i ograničenja](IZVESTAJ_DRUGO_POLUGODISTE_8_RAZRED_2026_27.md) · [Godišnji audit](AUDIT_KOMPLETNOG_MATEMATIKON6_8_2026_27.md).
