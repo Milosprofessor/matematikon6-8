@@ -48,6 +48,9 @@ try {
      },set.id);
      await page.reload();await page.getByRole("heading",{name:"Rezultat 0 / 20"}).waitFor();
      assert.ok(await page.getByRole("textbox").first().isDisabled());
+     await page.getByRole("button",{name:"Vežbaj bez tajmera"}).click();
+     await page.getByText("Nagoveštaj",{exact:true}).first().waitFor();
+     assert.equal(await page.getByRole("timer").count(),0);
    }
    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),set.id);
  }
@@ -67,6 +70,14 @@ try {
      assert.ok(await svg.boundingBox());
    }
  }
+ await lab.getByLabel("Telo",{exact:true}).selectOption("valjak");
+ await lab.getByLabel("Prikaz",{exact:true}).selectOption("rotacija");
+ const phase=lab.getByRole("slider",{name:"Tok animacije (%)",exact:true});
+ await lab.getByRole("button",{name:"Ponovi animaciju"}).click();
+ await page.waitForTimeout(180);assert.equal(await phase.inputValue(),"0");
+ await page.emulateMedia({reducedMotion:"no-preference"});
+ await lab.getByRole("button",{name:"Ponovi animaciju"}).click();
+ await page.waitForFunction(()=>document.querySelector('input[aria-label="Tok animacije (%)"]')?.value==="100");
  await page.goto(base+"#/lekcija/8/s8-sistem/s8-sistemi");
  for(const kind of ["Vertikala","Poklapanje","Paralelne","Identitet","Nemogući uslov"]){
    await lab.getByLabel("Primer",{exact:true}).selectOption({label:kind});

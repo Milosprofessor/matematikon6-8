@@ -16,6 +16,12 @@ function frac(n:number,d:number):string {
   const g=gcd(Math.abs(n),d);
   return (n/g)+" : "+(d/g);
 }
+function WithFractions({value}:{value:string}){
+  return <span className="math">{value.split(/(-?\d+ : \d+)/).map((part,i)=>{
+    const terms=part.split(" : ");
+    return terms.length===2&&/^-?\d+$/.test(terms[0])?<span key={i} className="frac" aria-label={terms.join(" kroz ")}><span>{terms[0]}</span><span>{terms[1]}</span></span>:part;
+  })}</span>;
+}
 const format=(n:number)=>n.toLocaleString("sr-Latn-RS",{maximumFractionDigits:2});
 export function Slider({name,value,set,min,max,step=1}:{name:string;value:number;set:(n:number)=>void;min:number;max:number;step?:number}){
   return <label className="e8-slider"><span>{name} <b>{format(value)}</b></span><input aria-label={name} type="range" min={min} max={max} step={step} value={value} onChange={e=>set(Number(e.target.value))}/></label>;
@@ -47,7 +53,7 @@ export function FunctionLab(){
   return <section className="spring-lab e8-lab"><h3>Grafik i tabela</h3><Graph lines={[[-k,1,n]]} points={[[0,n],[1,k+n]]}/>
     <Slider name="Nagib k" min={-4} max={4} value={k} set={setK}/><Slider name="Odsečak n" min={-6} max={6} value={n} set={setN}/>
     <p><b>{equation(k,n)}</b> · Presek sa y-osom (0; {n}). {k>0?"Raste.":k<0?"Opada.":"Konstantna."}</p>
-    <p>{k?`Nula je x = ${root}. Levo od nule vrednosti su ${k>0?"negativne":"pozitivne"}, desno ${k>0?"pozitivne":"negativne"}.`:n?`Nema nulu. Svuda je ${n>0?"pozitivna":"negativna"}.`:"Za svako x vrednost je nula."}</p>
+    <p>{k?<WithFractions value={`Nula je x = ${root}. Levo od nule vrednosti su ${k>0?"negativne":"pozitivne"}, desno ${k>0?"pozitivne":"negativne"}.`}/>:n?`Nema nulu. Svuda je ${n>0?"pozitivna":"negativna"}.`:"Za svako x vrednost je nula."}</p>
     <table><caption>Vrednosti funkcije</caption><tbody><tr><th>x</th>{[-2,-1,0,1,2].map(x=><td key={x}>{x}</td>)}</tr><tr><th>y</th>{[-2,-1,0,1,2].map(x=><td key={x}>{k*x+n}</td>)}</tr></tbody></table>
     <p>{challenge%2?"Nacrtaj grafik funkcije y = 3 − x pomoću klizača.":"Namesti pravu kroz tačke (0; −2) i (2; 4)."}</p>
     <button onClick={()=>setFeedback((challenge%2?k===-1&&n===3:k===3&&n===-2)?"Oba uslova su ispunjena.":"Proveri prvo odsečak, pa promenu y za jedan korak udesno.")}>Proveri grafik</button>
@@ -78,6 +84,6 @@ export function SystemsLab(){
     {lines.map((line,i)=><fieldset key={i}><legend>{i+1}. prava · {line[0]}x + ({line[1]})y = {line[2]}</legend>{line.map((v,j)=><Slider key={j} name={["a","b","c"][j]+(i+1)} min={-6} max={6} value={v} set={n=>{setLines(lines.map((l,r)=>r===i?l.map((p,s)=>s===j?n:p) as Line:l));setStep(1)}}/>)}</fieldset>)}
     <p>{result.kind==="point"?"Jedinstven presek. Očitavanje sa mreže proveri računom.":result.kind==="none"?"Nema zajedničkih rešenja.":"Beskonačno mnogo rešenja."}</p>
     <label>Metoda <select aria-label="Metoda" value={method} onChange={e=>{setMethod(e.target.value);setStep(1)}}><option value="zamena">Zamena</option><option value="eliminacija">Suprotni koeficijenti</option></select></label>
-    <ol>{steps.slice(0,step).map(s=><li key={s}>{s}</li>)}</ol><button onClick={()=>setStep(step>=steps.length?1:step+1)}>{step>=steps.length?"Ponovi postupak":"Sledeći korak"}</button>
+    <ol>{steps.slice(0,step).map(s=><li key={s}><WithFractions value={s}/></li>)}</ol><button onClick={()=>setStep(step>=steps.length?1:step+1)}>{step>=steps.length?"Ponovi postupak":"Sledeći korak"}</button>
   </section>;
 }
