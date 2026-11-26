@@ -1636,6 +1636,6 @@ for(const lesson of grades.flatMap(g=>g.areas.flatMap(a=>a.lessons))){
   learningByLesson[lesson.id]={
     aim:lesson.aim??lesson.title, idea:[lesson.intro,lesson.rules[0]], steps:[lesson.rules[1]],
     why:lesson.rules[0], caution:lesson.rules.at(-1)!, extraFormulas:lesson.formulas,
-    example:lesson.solved.steps.join(" "), sourcePages:lesson.id.startsWith("s7-")?"Program VII razreda, januar–jun 2027.":lesson.aim?"Program VI razreda i predlog rasporeda, januar–jun 2027.":"Operativni plan 2026/27.", visuals:[],
+    example:lesson.solved.steps.join(" "), sourcePages:lesson.id.startsWith("s8-")?"Program VIII razreda, januar–maj 2027.":lesson.id.startsWith("s7-")?"Program VII razreda, januar–jun 2027.":lesson.aim?"Program VI razreda i predlog rasporeda, januar–jun 2027.":"Operativni plan 2026/27.", visuals:[],
   };
 }

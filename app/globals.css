@@ -192,13 +192,13 @@ footer{display:flex;align-items:center;justify-content:space-between;min-height:
 }
 
 .spring-lab svg { display:block; width:100%; max-width:34rem; height:auto; margin:1rem auto; background:#f7faff; border:1px solid #c5d2e2; border-radius:.75rem; }
-.spring-lab svg line, .spring-lab svg path { stroke:#263d59; stroke-width:2; fill:none; }
+.spring-lab:not(.e8-lab) svg line, .spring-lab:not(.e8-lab) svg path { stroke:#263d59; stroke-width:2; fill:none; }
 .spring-lab svg .lab-shape { fill:#b7dbef; fill-opacity:.72; stroke:#214a68; stroke-width:2; }
 .spring-lab svg .second { fill:#f9ce79; stroke:#845714; }
 .spring-lab svg .guide { fill:none; stroke:#3563aa; stroke-width:2; stroke-dasharray:5 3; }
 .spring-lab svg .cut { stroke:#9c4b00; stroke-width:3; }
 .spring-lab svg .grid-line { stroke:#c8d5e3; stroke-width:1; }
-.spring-lab svg circle { fill:#214a68; }
+.spring-lab:not(.e8-lab) svg circle { fill:#214a68; }
 .spring-lab svg .active-dot { fill:#a9400d; stroke:white; stroke-width:2; }
 .spring-lab svg text { font:600 14px system-ui,sans-serif; fill:#152c44; }
 .spring-lab .lab-grid { touch-action:none; }
@@ -213,3 +213,24 @@ footer{display:flex;align-items:center;justify-content:space-between;min-height:
 
 .math-vector { display:inline-block; position:relative; padding-top:.45em; line-height:1.05; }
 .math-vector::before { content:"→"; position:absolute; top:-.28em; left:0; right:0; text-align:center; }
+
+.e8-lab, .e8-exam {min-width:0;overflow-wrap:anywhere}
+.e8-lab svg {display:block;width:min(100%,400px);height:auto;max-height:320px;margin:12px auto}
+.e8-lab select,.e8-exam input {max-width:100%;padding:8px;border:1px solid #8795aa;border-radius:8px;background:white;color:#182841}
+.e8-lab label,.e8-exam label {display:block;margin:8px 0}
+.e8-lab select {margin-inline:8px}
+.e8-controls {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,145px),1fr));gap:8px}
+.e8-slider input {display:block;width:100%;min-height:38px}
+.e8-slider span {display:flex;justify-content:space-between;gap:8px}
+.e8-lab fieldset {min-width:0;padding:10px;border:1px solid #a1afbc}
+.e8-lab button,.e8-exam button {padding:10px 14px;margin:4px;min-height:44px;border:1px solid #54728a;border-radius:8px;background:#f4f8fc;color:#1f3751;cursor:pointer}
+.e8-lab td,.e8-lab th {padding:4px 8px;text-align:center;border:1px solid #a9b3c2}
+.e8-exam input {display:block;margin:4px 0;min-height:44px}
+.e8-exam .content-card {margin:14px 0}
+.e8-exam a {text-decoration:underline}
+.e8-figure {max-width:420px;margin:12px auto;color:#344c61}
+.e8-figure svg {width:100%;height:auto;max-height:270px;background:#fafcfe;border-radius:10px}
+.e8-figure figcaption {font-size:.88rem;line-height:1.45}
+.e8-lab svg text,.e8-figure svg text {font:12px system-ui,sans-serif;stroke:none}
+.e8-exam input[type="radio"] {display:inline;min-height:0;width:1.2em;height:1.2em;margin:.6em;vertical-align:middle}
+.e8-exam td,.e8-exam th {border:1px solid #bdc9d6;padding:.4rem .65rem}
