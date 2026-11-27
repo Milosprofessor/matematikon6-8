@@ -2218,11 +2218,11 @@
    "prerequisites": [
     "zbir-uglova-trougla"
    ],
-   "intro": "Spoljašnji ugao trougla nastaje kada produžimo jednu stranicu. Jednak je zbiru dva njemu nesusedna unutrašnja ugla.",
+   "intro": "Spoljašnji ugao trougla je ugao između produžetka jedne stranice preko temena i poluprave druge stranice iz tog temena. Jednak je zbiru dva njemu nesusedna unutrašnja ugla.",
    "rules": [
     "Spoljašnji i njemu susedni unutrašnji ugao imaju zbir 180°.",
-    "Spoljašnji ugao jednak je zbiru dva nesusedna unutrašnja ugla.",
-    "Trougao ima po dva spoljašnja ugla kod svakog temena; oni su međusobno jednaki."
+    "Spoljašnji ugao jednak je zbiru dva njemu nesusedna unutrašnja ugla.",
+    "Trougao ima po dva spoljašnja ugla kod svakog temena; oni su međusobno jednaki jer su unakrsni. Zbir po jednog spoljašnjeg ugla kod svakog temena je 360°."
    ],
    "formulas": [
     "α+α_1=180°",
@@ -2232,7 +2232,7 @@
    "examples": [
     "Ako je α=68°, tada je α₁=112°.",
     "Ako su β=47° i γ=63°, tada je α₁=110°.",
-    "Spoljašnji uglovi 100°, 120° i 140° imaju zbir 360°."
+    "Po jedan spoljašnji ugao kod svakog temena: 100°, 120° i 140°, zbir 360°."
    ],
    "solved": {
     "question": "Odredi spoljašnji ugao kod temena A ako su β=56° i γ=71°.",
@@ -2242,6 +2242,31 @@
      "α₁=127°."
     ]
    },
+   "worked": [
+    {
+     "question": "Odredi spoljašnji ugao kod temena A ako su β=56° i γ=71°.",
+     "steps": [
+      "α₁=β+γ.",
+      "α₁=56°+71°=127°.",
+      "Provera: α=180°−127°=53°; 53°+56°+71°=180°."
+     ]
+    },
+    {
+     "question": "Unutrašnji ugao α je 74°. Odredi α₁.",
+     "steps": [
+      "α+α₁=180°.",
+      "74°+α₁=180°.",
+      "α₁=106°."
+     ]
+    },
+    {
+     "question": "Dva spoljašnja ugla kod različitih temena su 100° i 110°. Odredi treći.",
+     "steps": [
+      "α₁+β₁+γ₁=360°.",
+      "γ₁=360°−100°−110°=150°."
+     ]
+    }
+   ],
    "diagram": "triangle",
    "area": "trougao",
    "areaTitle": "Trougao",
@@ -14571,7 +14596,7 @@
    ],
    "answer": "α_1=β+γ",
    "hint": "Traži uglove koji nisu susedni spoljašnjem uglu.",
-   "solution": "Važi α₁=β+γ.",
+   "solution": "α+β+γ=180° i α+α₁=180°. Odatle sledi α₁=β+γ.",
    "level": "medium",
    "skill": "Spoljašnji ugao",
    "taskType": "izbor-pravila",
@@ -14599,7 +14624,7 @@
    ],
    "answer": "Tačno",
    "hint": "Seti se pravila za spoljašnji ugao.",
-   "solution": "Tvrdnja je tačna.",
+   "solution": "Iz α+β+γ=180° i α+α₁=180° sledi α₁=β+γ.",
    "level": "basic",
    "skill": "Spoljašnji ugao",
    "practiceOnly": true,
@@ -14624,7 +14649,7 @@
    "kind": "input",
    "answer": "139",
    "hint": "Naporedni uglovi imaju zbir 180°.",
-   "solution": "180°−41°=139°.",
+   "solution": "α+α₁=180°. α₁=180°−41°=139°.",
    "level": "medium",
    "skill": "Spoljašnji ugao",
    "practiceOnly": true,
@@ -14680,7 +14705,7 @@
   },
   {
    "id": "o6-ut-7",
-   "prompt": "Odredi x.",
+   "prompt": "Odredi drugi nesusedni unutrašnji ugao x.",
    "math": "Spoljašnji ugao je 128°, a jedan nesusedni unutrašnji 53°.",
    "kind": "input",
    "answer": "75",
@@ -14709,11 +14734,11 @@
   {
    "id": "ow-external-sum-0",
    "prompt": "Odredi treći spoljašnji ugao.",
-   "math": "Dva spoljašnja ugla su 100° i 110°.",
+   "math": "Spoljašnji uglovi kod dva različita temena su 100° i 110°.",
    "kind": "input",
    "answer": "150",
    "hint": "Svaki spoljašnji ugao dopunjuje unutrašnji do 180°.",
-   "solution": "Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je 150°.",
+   "solution": "Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je 360°−100°−110°=150°.",
    "level": "medium",
    "skill": "Spoljašnji ugao",
    "taskType": "external-sum",
@@ -14732,11 +14757,11 @@
   {
    "id": "ow-external-sum-1",
    "prompt": "Odredi treći spoljašnji ugao.",
-   "math": "Dva spoljašnja ugla su 105° i 112°.",
+   "math": "Spoljašnji uglovi kod dva različita temena su 105° i 112°.",
    "kind": "input",
    "answer": "143",
    "hint": "Svaki spoljašnji ugao dopunjuje unutrašnji do 180°.",
-   "solution": "Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je 143°.",
+   "solution": "Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je 360°−105°−112°=143°.",
    "level": "medium",
    "skill": "Spoljašnji ugao",
    "taskType": "external-sum",
@@ -14754,11 +14779,11 @@
   {
    "id": "ow-external-sum-2",
    "prompt": "Odredi treći spoljašnji ugao.",
-   "math": "Dva spoljašnja ugla su 110° i 114°.",
+   "math": "Spoljašnji uglovi kod dva različita temena su 110° i 114°.",
    "kind": "input",
    "answer": "136",
    "hint": "Svaki spoljašnji ugao dopunjuje unutrašnji do 180°.",
-   "solution": "Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je 136°.",
+   "solution": "Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je 360°−110°−114°=136°.",
    "level": "medium",
    "skill": "Spoljašnji ugao",
    "taskType": "external-sum",
@@ -14776,11 +14801,11 @@
   {
    "id": "ow-external-sum-3",
    "prompt": "Odredi treći spoljašnji ugao.",
-   "math": "Dva spoljašnja ugla su 115° i 116°.",
+   "math": "Spoljašnji uglovi kod dva različita temena su 115° i 116°.",
    "kind": "input",
    "answer": "129",
    "hint": "Svaki spoljašnji ugao dopunjuje unutrašnji do 180°.",
-   "solution": "Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je 129°.",
+   "solution": "Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je 360°−115°−116°=129°.",
    "level": "medium",
    "skill": "Spoljašnji ugao",
    "taskType": "external-sum",
@@ -14798,11 +14823,11 @@
   {
    "id": "ow-external-sum-4",
    "prompt": "Odredi treći spoljašnji ugao.",
-   "math": "Dva spoljašnja ugla su 120° i 118°.",
+   "math": "Spoljašnji uglovi kod dva različita temena su 120° i 118°.",
    "kind": "input",
    "answer": "122",
    "hint": "Svaki spoljašnji ugao dopunjuje unutrašnji do 180°.",
-   "solution": "Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je 122°.",
+   "solution": "Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je 360°−120°−118°=122°.",
    "level": "medium",
    "skill": "Spoljašnji ugao",
    "taskType": "external-sum",
@@ -14820,11 +14845,11 @@
   {
    "id": "ow-external-sum-5",
    "prompt": "Odredi treći spoljašnji ugao.",
-   "math": "Dva spoljašnja ugla su 125° i 120°.",
+   "math": "Spoljašnji uglovi kod dva različita temena su 125° i 120°.",
    "kind": "input",
    "answer": "115",
    "hint": "Svaki spoljašnji ugao dopunjuje unutrašnji do 180°.",
-   "solution": "Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je 115°.",
+   "solution": "Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je 360°−125°−120°=115°.",
    "level": "medium",
    "skill": "Spoljašnji ugao",
    "taskType": "external-sum",
@@ -14846,7 +14871,7 @@
    "kind": "input",
    "answer": "50",
    "hint": "Njihov zbir je spoljašnji ugao.",
-   "solution": "Svaki je 100°:2=50°.",
+   "solution": "Ako je β=γ=x, onda je 2x=100°, pa je svaki x=100°:2=50°.",
    "level": "advanced",
    "skill": "Spoljašnji ugao",
    "taskType": "external-equal",
@@ -14856,7 +14881,8 @@
     "type": "triangle",
     "variant": "external",
     "labels": {
-     "external": "100°"
+     "external": "100°",
+     "shapeBeta": "50°"
     }
    },
    "prerequisites": [
@@ -14876,7 +14902,7 @@
    "kind": "input",
    "answer": "52",
    "hint": "Njihov zbir je spoljašnji ugao.",
-   "solution": "Svaki je 104°:2=52°.",
+   "solution": "Ako je β=γ=x, onda je 2x=104°, pa je svaki x=104°:2=52°.",
    "level": "advanced",
    "skill": "Spoljašnji ugao",
    "taskType": "external-equal",
@@ -14886,7 +14912,8 @@
     "type": "triangle",
     "variant": "external",
     "labels": {
-     "external": "104°"
+     "external": "104°",
+     "shapeBeta": "52°"
     }
    },
    "prerequisites": [
@@ -14905,7 +14932,7 @@
    "kind": "input",
    "answer": "54",
    "hint": "Njihov zbir je spoljašnji ugao.",
-   "solution": "Svaki je 108°:2=54°.",
+   "solution": "Ako je β=γ=x, onda je 2x=108°, pa je svaki x=108°:2=54°.",
    "level": "advanced",
    "skill": "Spoljašnji ugao",
    "taskType": "external-equal",
@@ -14915,7 +14942,8 @@
     "type": "triangle",
     "variant": "external",
     "labels": {
-     "external": "108°"
+     "external": "108°",
+     "shapeBeta": "54°"
     }
    },
    "prerequisites": [
@@ -14934,7 +14962,7 @@
    "kind": "input",
    "answer": "56",
    "hint": "Njihov zbir je spoljašnji ugao.",
-   "solution": "Svaki je 112°:2=56°.",
+   "solution": "Ako je β=γ=x, onda je 2x=112°, pa je svaki x=112°:2=56°.",
    "level": "advanced",
    "skill": "Spoljašnji ugao",
    "taskType": "external-equal",
@@ -14944,7 +14972,8 @@
     "type": "triangle",
     "variant": "external",
     "labels": {
-     "external": "112°"
+     "external": "112°",
+     "shapeBeta": "56°"
     }
    },
    "prerequisites": [
@@ -14963,7 +14992,7 @@
    "kind": "input",
    "answer": "58",
    "hint": "Njihov zbir je spoljašnji ugao.",
-   "solution": "Svaki je 116°:2=58°.",
+   "solution": "Ako je β=γ=x, onda je 2x=116°, pa je svaki x=116°:2=58°.",
    "level": "advanced",
    "skill": "Spoljašnji ugao",
    "taskType": "external-equal",
@@ -14973,7 +15002,8 @@
     "type": "triangle",
     "variant": "external",
     "labels": {
-     "external": "116°"
+     "external": "116°",
+     "shapeBeta": "58°"
     }
    },
    "prerequisites": [
@@ -14992,7 +15022,7 @@
    "kind": "input",
    "answer": "60",
    "hint": "Njihov zbir je spoljašnji ugao.",
-   "solution": "Svaki je 120°:2=60°.",
+   "solution": "Ako je β=γ=x, onda je 2x=120°, pa je svaki x=120°:2=60°.",
    "level": "advanced",
    "skill": "Spoljašnji ugao",
    "taskType": "external-equal",
@@ -15002,7 +15032,8 @@
     "type": "triangle",
     "variant": "external",
     "labels": {
-     "external": "120°"
+     "external": "120°",
+     "shapeBeta": "60°"
     }
    },
    "prerequisites": [
@@ -15021,7 +15052,7 @@
    "kind": "input",
    "answer": "70",
    "hint": "Upotrebi α₁=β+γ.",
-   "solution": "β=110°−40°=70°.",
+   "solution": "α₁=β+γ. β=110°−40°=70°.",
    "level": "advanced",
    "skill": "Spoljašnji ugao",
    "taskType": "external-third",
@@ -15054,7 +15085,7 @@
    "kind": "input",
    "answer": "72",
    "hint": "Upotrebi α₁=β+γ.",
-   "solution": "β=113°−41°=72°.",
+   "solution": "α₁=β+γ. β=113°−41°=72°.",
    "level": "advanced",
    "skill": "Spoljašnji ugao",
    "taskType": "external-third",
@@ -15086,7 +15117,7 @@
    "kind": "input",
    "answer": "74",
    "hint": "Upotrebi α₁=β+γ.",
-   "solution": "β=116°−42°=74°.",
+   "solution": "α₁=β+γ. β=116°−42°=74°.",
    "level": "advanced",
    "skill": "Spoljašnji ugao",
    "taskType": "external-third",
@@ -15118,7 +15149,7 @@
    "kind": "input",
    "answer": "76",
    "hint": "Upotrebi α₁=β+γ.",
-   "solution": "β=119°−43°=76°.",
+   "solution": "α₁=β+γ. β=119°−43°=76°.",
    "level": "advanced",
    "skill": "Spoljašnji ugao",
    "taskType": "external-third",
@@ -15150,7 +15181,7 @@
    "kind": "input",
    "answer": "78",
    "hint": "Upotrebi α₁=β+γ.",
-   "solution": "β=122°−44°=78°.",
+   "solution": "α₁=β+γ. β=122°−44°=78°.",
    "level": "advanced",
    "skill": "Spoljašnji ugao",
    "taskType": "external-third",
@@ -15182,7 +15213,7 @@
    "kind": "input",
    "answer": "80",
    "hint": "Upotrebi α₁=β+γ.",
-   "solution": "β=125°−45°=80°.",
+   "solution": "α₁=β+γ. β=125°−45°=80°.",
    "level": "advanced",
    "skill": "Spoljašnji ugao",
    "taskType": "external-third",

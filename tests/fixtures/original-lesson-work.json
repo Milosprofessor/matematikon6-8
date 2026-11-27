@@ -1852,7 +1852,7 @@
         ],
         "answer": "Tačno",
         "hint": "Seti se pravila za spoljašnji ugao.",
-        "solution": "Tvrdnja je tačna.",
+        "solution": "Iz α+β+γ=180° i α+α₁=180° sledi α₁=β+γ.",
         "level": "basic",
         "skill": "Spoljašnji ugao"
       },
@@ -1867,7 +1867,7 @@
         ],
         "answer": "α_1=β+γ",
         "hint": "Traži uglove koji nisu susedni spoljašnjem uglu.",
-        "solution": "Važi α₁=β+γ.",
+        "solution": "α+β+γ=180° i α+α₁=180°. Odatle sledi α₁=β+γ.",
         "level": "medium",
         "skill": "Spoljašnji ugao"
       },
@@ -1877,7 +1877,7 @@
         "math": "Susedni unutrašnji ugao je 41°.",
         "answer": "139",
         "hint": "Naporedni uglovi imaju zbir 180°.",
-        "solution": "180°−41°=139°.",
+        "solution": "α+α₁=180°. α₁=180°−41°=139°.",
         "level": "medium",
         "skill": "Spoljašnji ugao"
       },
@@ -1899,16 +1899,16 @@
       {
         "id": "ow-external-sum-0",
         "prompt": "Odredi treći spoljašnji ugao.",
-        "math": "Dva spoljašnja ugla su 100° i 110°.",
+        "math": "Spoljašnji uglovi kod dva različita temena su 100° i 110°.",
         "answer": "150",
         "hint": "Svaki spoljašnji ugao dopunjuje unutrašnji do 180°.",
-        "solution": "Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je 150°.",
+        "solution": "Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je 360°−100°−110°=150°.",
         "level": "medium",
         "skill": "Spoljašnji ugao"
       },
       {
         "id": "o6-ut-7",
-        "prompt": "Odredi x.",
+        "prompt": "Odredi drugi nesusedni unutrašnji ugao x.",
         "math": "Spoljašnji ugao je 128°, a jedan nesusedni unutrašnji 53°.",
         "answer": "75",
         "hint": "Spoljašnji ugao je zbir dva nesusedna unutrašnja ugla.",
@@ -1922,7 +1922,7 @@
         "math": "Spoljašnji je 100°, a dva nesusedna unutrašnja su jednaka.",
         "answer": "50",
         "hint": "Njihov zbir je spoljašnji ugao.",
-        "solution": "Svaki je 100°:2=50°.",
+        "solution": "Ako je β=γ=x, onda je 2x=100°, pa je svaki x=100°:2=50°.",
         "level": "advanced",
         "skill": "Spoljašnji ugao"
       },
@@ -1932,7 +1932,7 @@
         "math": "α_1=110°, γ=40°",
         "answer": "70",
         "hint": "Upotrebi α₁=β+γ.",
-        "solution": "β=110°−40°=70°.",
+        "solution": "α₁=β+γ. β=110°−40°=70°.",
         "level": "advanced",
         "skill": "Spoljašnji ugao"
       }

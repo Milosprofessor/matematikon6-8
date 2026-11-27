@@ -16,27 +16,28 @@ const spoljasnjiUglovi: Lesson = {
   title: "Spoljašnji uglovi trougla",
   month: "october",
   prerequisites: ["zbir-uglova-trougla"],
-  intro: "Spoljašnji ugao trougla nastaje kada produžimo jednu stranicu. Jednak je zbiru dva njemu nesusedna unutrašnja ugla.",
+  intro: "Spoljašnji ugao trougla je ugao između produžetka jedne stranice preko temena i poluprave druge stranice iz tog temena. Jednak je zbiru dva njemu nesusedna unutrašnja ugla.",
   rules: [
     "Spoljašnji i njemu susedni unutrašnji ugao imaju zbir 180°.",
-    "Spoljašnji ugao jednak je zbiru dva nesusedna unutrašnja ugla.",
-    "Trougao ima po dva spoljašnja ugla kod svakog temena; oni su međusobno jednaki.",
+    "Spoljašnji ugao jednak je zbiru dva njemu nesusedna unutrašnja ugla.",
+    "Trougao ima po dva spoljašnja ugla kod svakog temena; oni su međusobno jednaki jer su unakrsni. Zbir po jednog spoljašnjeg ugla kod svakog temena je 360°.",
   ],
   formulas: ["α+α_1=180°", "α_1=β+γ", "α_1+β_1+γ_1=360°"],
   examples: [
     "Ako je α=68°, tada je α₁=112°.",
     "Ako su β=47° i γ=63°, tada je α₁=110°.",
-    "Spoljašnji uglovi 100°, 120° i 140° imaju zbir 360°.",
+    "Po jedan spoljašnji ugao kod svakog temena: 100°, 120° i 140°, zbir 360°.",
   ],
   solved: {
     question: "Odredi spoljašnji ugao kod temena A ako su β=56° i γ=71°.",
     steps: ["Spoljašnji ugao jednak je zbiru dva nesusedna unutrašnja ugla.", "α₁=56°+71°.", "α₁=127°."],
   },
+  worked: [{question:"Odredi spoljašnji ugao kod temena A ako su β=56° i γ=71°.",steps:["α₁=β+γ.","α₁=56°+71°=127°.","Provera: α=180°−127°=53°; 53°+56°+71°=180°."]},{question:"Unutrašnji ugao α je 74°. Odredi α₁.",steps:["α+α₁=180°.","74°+α₁=180°.","α₁=106°."]},{question:"Dva spoljašnja ugla kod različitih temena su 100° i 110°. Odredi treći.",steps:["α₁+β₁+γ₁=360°.","γ₁=360°−100°−110°=150°."]}],
   diagram: "triangle",
   tasks: [
     I("o6-su-1", "Odredi α_1.", "α=74°", "106", "Naporedni uglovi imaju zbir 180°.", "α₁=180°−74°=106°.", "basic", "Spoljašnji ugao", { taskType: "susedni-uglovi", errorCategory: "calculation" }),
     I("o6-su-2", "Odredi α_1.", "β=48°, γ=69°", "117", "Saberi nesusedne unutrašnje uglove.", "α₁=48°+69°=117°.", "basic", "Spoljašnji ugao", { taskType: "zbir-nesusednih", errorCategory: "rule" }),
-    C("o6-su-3", "Izaberi tačnu jednakost.", "Spoljašnji ugao kod temena A", ["α_1=β+γ", "α_1=α+β", "α_1=180°+α"], "α_1=β+γ", "Traži uglove koji nisu susedni spoljašnjem uglu.", "Važi α₁=β+γ.", "medium", "Spoljašnji ugao", { taskType: "izbor-pravila", errorCategory: "rule" }),
+    C("o6-su-3", "Izaberi tačnu jednakost.", "Spoljašnji ugao kod temena A", ["α_1=β+γ", "α_1=α+β", "α_1=180°+α"], "α_1=β+γ", "Traži uglove koji nisu susedni spoljašnjem uglu.", "α+β+γ=180° i α+α₁=180°. Odatle sledi α₁=β+γ.", "medium", "Spoljašnji ugao", { taskType: "izbor-pravila", errorCategory: "rule" }),
   ],
 };
 

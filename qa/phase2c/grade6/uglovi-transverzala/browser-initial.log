@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/474364823af7/external/qa/phase2c/grade6/browser-external.py", line 51, in <module>
+    assert 'α+α₁=180°' in page.locator('.learn-column').inner_text().replace(' ','')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

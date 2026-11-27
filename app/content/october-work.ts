@@ -81,9 +81,9 @@ register("zbir-uglova-trougla",[
  v=>{const a=30+2*v;return N("angles","difference",v,"Odredi najveći ugao.","Najmanji ugao je "+a+"°, a jedan od preostalih je za 10° veći od njega.",170-2*a,"Odredi drugi ugao, pa primeni zbir uglova.","Drugi je "+(a+10)+"°. Treći je 180°−"+a+"°−"+(a+10)+"°="+(170-2*a)+"°. Uporedi: "+a+"°<"+(a+10)+"°<"+(170-2*a)+"°, pa je treći najveći.","advanced","Zbir uglova")}
 ]);
 register("uglovi-transverzala",[
- v=>{const a=100+5*v,b=110+2*v;return N("external","sum",v,"Odredi treći spoljašnji ugao.","Dva spoljašnja ugla su "+a+"° i "+b+"°.",360-a-b,"Svaki spoljašnji ugao dopunjuje unutrašnji do 180°.","Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je "+(360-a-b)+"°.","medium","Spoljašnji ugao")},
- v=>{const a=100+4*v;return N("external","equal",v,"Odredi svaki nesusedni unutrašnji ugao.","Spoljašnji je "+a+"°, a dva nesusedna unutrašnja su jednaka.",a/2,"Njihov zbir je spoljašnji ugao.","Svaki je "+a+"°:2="+a/2+"°.","advanced","Spoljašnji ugao")},
- v=>{const a=110+3*v,b=40+v;return N("external","third",v,"Odredi β.","α_1="+a+"°, γ="+b+"°",a-b,"Upotrebi α₁=β+γ.","β="+a+"°−"+b+"°="+(a-b)+"°.","advanced","Spoljašnji ugao")}
+ v=>{const a=100+5*v,b=110+2*v;return N("external","sum",v,"Odredi treći spoljašnji ugao.","Spoljašnji uglovi kod dva različita temena su "+a+"° i "+b+"°.",360-a-b,"Svaki spoljašnji ugao dopunjuje unutrašnji do 180°.","Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je 360°−"+a+"°−"+b+"°="+(360-a-b)+"°.","medium","Spoljašnji ugao")},
+ v=>{const a=100+4*v;return N("external","equal",v,"Odredi svaki nesusedni unutrašnji ugao.","Spoljašnji je "+a+"°, a dva nesusedna unutrašnja su jednaka.",a/2,"Njihov zbir je spoljašnji ugao.","Ako je β=γ=x, onda je 2x="+a+"°, pa je svaki x="+a+"°:2="+a/2+"°.","advanced","Spoljašnji ugao")},
+ v=>{const a=110+3*v,b=40+v;return N("external","third",v,"Odredi β.","α_1="+a+"°, γ="+b+"°",a-b,"Upotrebi α₁=β+γ.","α₁=β+γ. β="+a+"°−"+b+"°="+(a-b)+"°.","advanced","Spoljašnji ugao")}
 ]);
 register("odnos-stranica-uglova",[
  v=>Q("sideangle","opposite",v,"Koja stranica je naspram ugla β?","△ABC",["AB","AC","BC"],"AC","Ugao β je kod B.","Naspram B je AC, odnosno b.","basic","Odnos stranica i uglova"),

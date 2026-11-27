@@ -1,3 +1,19 @@
+# Checkpoint 13 — Spoljašnji uglovi trougla
+
+Datum: 27.11.2026. Polazni GitHub commit ebad060. Nalazi G6C-032–033.
+
+- 398/919 zadataka; 15/45 lekcija. Trougao: 69/131 zadataka, 3/6 lekcija. 26/26 zadataka, 3 osnovna, 11 srednjih i 12 naprednih; tri rešena primera.
+- Definicija spoljašnjeg ugla dopunjena; razjašnjeno da se za zbir 360° uzima po jedan ugao kod svakog od tri temena. Precizirani međukoraci i zahtev.
+- Šest prikaza jednakih nesusednih uglova ima oblik jednakokrakog trougla; oznaka spoljašnjeg ugla odmaknuta u smer simetrale. Očuvani ključevi odgovora, ID-jevi i redosled.
+- 126/126 programskih testova, Worker i Pages build, TypeScript, lint, 22 browser zapisa na desktop i mobilnoj touch emulaciji sa očuvanjem napretka posle osvežavanja. Jedinice proverene u units.json, LOG-06 ostaje za fazu 3.
+- Nisu testirani fizički uređaji ni sve pojedinačne adaptivne varijante kroz UI.
+
+**Sledeće:** uglovi-na-transverzali, prvi ID o6-utn-1. Oblast Trougao nije završena. Bez spajanja i objave.
+
+Dokazi: qa/phase2c/grade6/uglovi-transverzala.
+
+---
+
 # Checkpoint 12 — Zbir uglova trougla
 
 Datum: 27.11.2026. Polazni commit ec2bb3f. Nalaz G6C-031.

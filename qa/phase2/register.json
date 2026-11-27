@@ -3073,5 +3073,39 @@
     "status": "Ispravljeno i potvrđeno",
     "fix_commit": "",
     "phase2_evidence": "qa/phase2c/grade6/zbir-uglova-trougla/tasks.json; lesson.json; browser.json; tests.log"
+  },
+  {
+    "id": "G6C-032",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Trougao",
+    "lesson": "uglovi-transverzala",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Metodička preciznost",
+    "description": "Nedovoljno precizna definicija i uslov zbira spoljašnjih uglova kod različitih temena.",
+    "evidence": "qa/phase2c/grade6/uglovi-transverzala/tasks.json; lesson.json; browser.json; tests.log",
+    "location": "app/content/october-curriculum.ts; october-expansion.ts; october-work.ts",
+    "fix": "Produžetak i poluprava; po jedan ugao kod različitih temena; kompletni postupci i primeri.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "",
+    "phase2_evidence": "qa/phase2c/grade6/uglovi-transverzala/tasks.json; lesson.json; browser.json; tests.log"
+  },
+  {
+    "id": "G6C-033",
+    "priority": "P1",
+    "grade": "6",
+    "term": "I",
+    "area": "Trougao",
+    "lesson": "uglovi-transverzala",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Matematički netačan crtež",
+    "description": "Šest skica jednakih nesusednih uglova nema geometrijski jednake uglove; oznaka spoljašnjeg ugla preblizu temenu.",
+    "evidence": "qa/phase2c/grade6/uglovi-transverzala/tasks.json; lesson.json; browser.json; tests.log",
+    "location": "app/content/task-visuals.ts; app/math-diagrams.tsx",
+    "fix": "Izračunat oblik jednakokrakog trougla, oznaka duž simetrale spoljašnjeg ugla; produžetak vidljiv.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "",
+    "phase2_evidence": "qa/phase2c/grade6/uglovi-transverzala/tasks.json; lesson.json; browser.json; tests.log"
   }
 ]

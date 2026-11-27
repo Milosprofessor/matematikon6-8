@@ -1,0 +1,186 @@
+[
+  {
+    "id": "o6-su-1",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "106°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "o6-su-2",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "117°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "o6-ut-5",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "139°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "o6-ut-7",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "75°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-sum-0",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "150°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-sum-1",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "143°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-sum-2",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "136°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-sum-3",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "129°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-sum-4",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "122°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-sum-5",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "115°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-equal-0",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "50°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-equal-1",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "52°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-equal-2",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "54°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-equal-3",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "56°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-equal-4",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "58°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-equal-5",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "60°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-third-0",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "70°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-third-1",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "72°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-third-2",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "74°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-third-3",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "76°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-third-4",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "78°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-external-third-5",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "80°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ot6-4",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "115°",
+    "phase3": "LOG-06"
+  }
+]

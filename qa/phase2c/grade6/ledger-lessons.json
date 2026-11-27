@@ -539,7 +539,41 @@
   {
     "id": "uglovi-transverzala",
     "area": "trougao",
-    "status": "nepregledana u fazi 2C"
+    "status": "potpuno recenzirana",
+    "theory": "Spoljašnji ugao, naporedni, nesusedni i zbir po jednog kod svakog temena.",
+    "sequence": "Definicija → suplement → zbir nesusednih → zbir 360°.",
+    "examples": [
+      {
+        "question": "Odredi spoljašnji ugao kod temena A ako su β=56° i γ=71°.",
+        "steps": [
+          "α₁=β+γ.",
+          "α₁=56°+71°=127°.",
+          "Provera: α=180°−127°=53°; 53°+56°+71°=180°."
+        ],
+        "verification": "127°"
+      },
+      {
+        "question": "Unutrašnji ugao α je 74°. Odredi α₁.",
+        "steps": [
+          "α+α₁=180°.",
+          "74°+α₁=180°.",
+          "α₁=106°."
+        ],
+        "verification": "106°"
+      },
+      {
+        "question": "Dva spoljašnja ugla kod različitih temena su 100° i 110°. Odredi treći.",
+        "steps": [
+          "α₁+β₁+γ₁=360°.",
+          "γ₁=360°−100°−110°=150°."
+        ],
+        "verification": "150°"
+      }
+    ],
+    "illustration": "Produžetak stranice i odgovarajući luk; šest jednakokrakih slučajeva geometrijski prilagođeno.",
+    "misconceptions": "360° važi samo za po jedan spoljašnji ugao kod svakog temena.",
+    "assessment": "26 zadataka uključujući ot6-4.",
+    "limits": "Ne potvrđuje čitav godišnji ishod."
   },
   {
     "id": "uglovi-na-transverzali",
