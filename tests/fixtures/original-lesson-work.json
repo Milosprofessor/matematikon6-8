@@ -4169,7 +4169,7 @@
         "math": "Merdevine su 5 m. Vrh je na visini 4 m; zid je normalan na tlo.",
         "answer": "3",
         "hint": "Merdevine su hipotenuza.",
-        "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+4²=5². x²+16=25; x²=9. Pozitivna udaljenost x=3 m.",
+        "solution": "Katete su udaljenost x i visina h, hipotenuza c je dužina merdevina. x²+h²=c². x²+4²=5². x²+16=25; x²=9. Pozitivna udaljenost x=3 m.",
         "level": "advanced",
         "skill": "Nepoznata kateta"
       }

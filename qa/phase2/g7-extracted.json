@@ -16235,7 +16235,7 @@
    "kind": "input",
    "answer": "3",
    "hint": "Merdevine su hipotenuza.",
-   "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+4²=5². x²+16=25; x²=9. Pozitivna udaljenost x=3 m.",
+   "solution": "Katete su udaljenost x i visina h, hipotenuza c je dužina merdevina. x²+h²=c². x²+4²=5². x²+16=25; x²=9. Pozitivna udaljenost x=3 m.",
    "level": "advanced",
    "skill": "Nepoznata kateta",
    "taskType": "leg-ladder",
@@ -16244,7 +16244,11 @@
    "diagram": {
     "type": "pythagoras",
     "variant": "right",
-    "labels": {}
+    "labels": {
+     "a": "x",
+     "b": "4",
+     "c": "5"
+    }
    },
    "prerequisites": [
     "nepoznata-stranica-pravougli"
@@ -16263,7 +16267,7 @@
    "kind": "input",
    "answer": "5",
    "hint": "Merdevine su hipotenuza.",
-   "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+12²=13². x²+144=169; x²=25. Pozitivna udaljenost x=5 m.",
+   "solution": "Katete su udaljenost x i visina h, hipotenuza c je dužina merdevina. x²+h²=c². x²+12²=13². x²+144=169; x²=25. Pozitivna udaljenost x=5 m.",
    "level": "advanced",
    "skill": "Nepoznata kateta",
    "taskType": "leg-ladder",
@@ -16272,7 +16276,11 @@
    "diagram": {
     "type": "pythagoras",
     "variant": "right",
-    "labels": {}
+    "labels": {
+     "a": "x",
+     "b": "12",
+     "c": "13"
+    }
    },
    "prerequisites": [
     "nepoznata-stranica-pravougli"
@@ -16290,7 +16298,7 @@
    "kind": "input",
    "answer": "8",
    "hint": "Merdevine su hipotenuza.",
-   "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+15²=17². x²+225=289; x²=64. Pozitivna udaljenost x=8 m.",
+   "solution": "Katete su udaljenost x i visina h, hipotenuza c je dužina merdevina. x²+h²=c². x²+15²=17². x²+225=289; x²=64. Pozitivna udaljenost x=8 m.",
    "level": "advanced",
    "skill": "Nepoznata kateta",
    "taskType": "leg-ladder",
@@ -16299,7 +16307,11 @@
    "diagram": {
     "type": "pythagoras",
     "variant": "right",
-    "labels": {}
+    "labels": {
+     "a": "x",
+     "b": "15",
+     "c": "17"
+    }
    },
    "prerequisites": [
     "nepoznata-stranica-pravougli"
@@ -16317,7 +16329,7 @@
    "kind": "input",
    "answer": "7",
    "hint": "Merdevine su hipotenuza.",
-   "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+24²=25². x²+576=625; x²=49. Pozitivna udaljenost x=7 m.",
+   "solution": "Katete su udaljenost x i visina h, hipotenuza c je dužina merdevina. x²+h²=c². x²+24²=25². x²+576=625; x²=49. Pozitivna udaljenost x=7 m.",
    "level": "advanced",
    "skill": "Nepoznata kateta",
    "taskType": "leg-ladder",
@@ -16326,7 +16338,11 @@
    "diagram": {
     "type": "pythagoras",
     "variant": "right",
-    "labels": {}
+    "labels": {
+     "a": "x",
+     "b": "24",
+     "c": "25"
+    }
    },
    "prerequisites": [
     "nepoznata-stranica-pravougli"
@@ -16344,7 +16360,7 @@
    "kind": "input",
    "answer": "9",
    "hint": "Merdevine su hipotenuza.",
-   "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+12²=15². x²+144=225; x²=81. Pozitivna udaljenost x=9 m.",
+   "solution": "Katete su udaljenost x i visina h, hipotenuza c je dužina merdevina. x²+h²=c². x²+12²=15². x²+144=225; x²=81. Pozitivna udaljenost x=9 m.",
    "level": "advanced",
    "skill": "Nepoznata kateta",
    "taskType": "leg-ladder",
@@ -16353,7 +16369,11 @@
    "diagram": {
     "type": "pythagoras",
     "variant": "right",
-    "labels": {}
+    "labels": {
+     "a": "x",
+     "b": "12",
+     "c": "15"
+    }
    },
    "prerequisites": [
     "nepoznata-stranica-pravougli"
@@ -16371,7 +16391,7 @@
    "kind": "input",
    "answer": "12",
    "hint": "Merdevine su hipotenuza.",
-   "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+16²=20². x²+256=400; x²=144. Pozitivna udaljenost x=12 m.",
+   "solution": "Katete su udaljenost x i visina h, hipotenuza c je dužina merdevina. x²+h²=c². x²+16²=20². x²+256=400; x²=144. Pozitivna udaljenost x=12 m.",
    "level": "advanced",
    "skill": "Nepoznata kateta",
    "taskType": "leg-ladder",
@@ -16380,7 +16400,11 @@
    "diagram": {
     "type": "pythagoras",
     "variant": "right",
-    "labels": {}
+    "labels": {
+     "a": "x",
+     "b": "16",
+     "c": "20"
+    }
    },
    "prerequisites": [
     "nepoznata-stranica-pravougli"

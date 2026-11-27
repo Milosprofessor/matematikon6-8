@@ -55,6 +55,7 @@ export function taskWithVisual(lessonId:string,original:Task):Task{
   if(l.d1)l.d1=l.d1;if(l.d2)l.d2=l.d2;
   if(variant==='right-altitude'){for(const key of ['p','q','h','c']){const m=task.math.match(new RegExp(key+'=('+numeric+')'));if(m)l[key]=m[1];}}
   const diff=task.math.match(/a−b=(\d+)/);if(diff)l.diff=diff[1];
+  if(task.id.startsWith('ow-leg-ladder-')){const given=task.math.match(/Merdevine su (\d+) m\. Vrh je na visini (\d+) m/);if(given)Object.assign(l,{a:'x',b:given[2],c:given[1]});}
   if(/Grešk|grešk|Proveri rezultat|mogu opisati|Da li/.test(task.prompt))diagram=undefined;
   else diagram={type:'pythagoras',variant,labels:l};
  }else if(lessonId==='funkcija-ykx'||lessonId==='direktna-proporcionalnost'){

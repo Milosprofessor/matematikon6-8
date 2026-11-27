@@ -108,7 +108,7 @@ register("pitagorina-teorema",[
 register("nepoznata-stranica-pravougli",[
  v=>Q("leg","identify",v,"Izaberi izraz za nepoznatu katetu b.","Hipotenuza c, kateta a",["[[sqrt:c^2−a^2]]","[[sqrt:c^2+a^2]]","c−a"],"[[sqrt:c^2−a^2]]","Iz c²=a²+b² izdvoji b².","a²+b²=c². Oduzmi a² sa obe strane: b²=c²−a². Kako je b>0, b=[[sqrt:c^2−a^2]].","basic","Nepoznata kateta","rule"),
  v=>{const [a,b,c]=triples[v];return Q("leg","compare",v,"Uporedi katete.","c="+c+", a="+a+"; nepoznata je b.",["a<b","a>b","a=b"],"a<b","Odredi b pa uporedi.","a²+b²=c². "+a+"²+b²="+c+"²; "+a*a+"+b²="+c*c+"; b²="+(c*c-a*a)+". Pozitivna kateta b="+b+", pa je a<b.","medium","Nepoznata kateta","method")},
- v=>{const [a,b,c]=triples[v];return N("leg","ladder",v,"Odredi udaljenost podnožja od zida.","Merdevine su "+c+" m. Vrh je na visini "+b+" m; zid je normalan na tlo.",a,"Merdevine su hipotenuza.","Katete su udaljenost x i visina, hipotenuza su merdevine. x²+"+b+"²="+c+"². x²+"+b*b+"="+c*c+"; x²="+(c*c-b*b)+". Pozitivna udaljenost x="+a+" m.","advanced","Nepoznata kateta")}
+ v=>{const [a,b,c]=triples[v];return N("leg","ladder",v,"Odredi udaljenost podnožja od zida.","Merdevine su "+c+" m. Vrh je na visini "+b+" m; zid je normalan na tlo.",a,"Merdevine su hipotenuza.","Katete su udaljenost x i visina h, hipotenuza c je dužina merdevina. x²+h²=c². x²+"+b+"²="+c+"². x²+"+b*b+"="+c*c+"; x²="+(c*c-b*b)+". Pozitivna udaljenost x="+a+" m.","advanced","Nepoznata kateta")}
 ]);
 register("pitagora-pravougaonik-kvadrat",[
  v=>Q("rect","identify",v,"Koja duž je hipotenuza pomoćnog trougla?","Pravougaonik ABCD sa dijagonalom AC",["AC","AB","BC"],"AC","Pogledaj trougao ABC.","Ugao B je prav, pa je AC hipotenuza.","basic","Pitagora u pravougaoniku","diagram"),

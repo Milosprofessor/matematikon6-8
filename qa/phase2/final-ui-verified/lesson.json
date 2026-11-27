@@ -1,0 +1,234 @@
+[
+  {
+    "id": "o7-ns-1",
+    "finding": "G7-012",
+    "route": "/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "o7-ns-2",
+    "finding": "G7-013",
+    "route": "/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "o7-ns-4",
+    "finding": "G7-014",
+    "route": "/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "o7-ns-6",
+    "finding": "G7-015",
+    "route": "/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "o7-ns-7",
+    "finding": "G7-016",
+    "route": "/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "o7-pk-3",
+    "finding": "G7-018",
+    "route": "/lekcija/7/pitagorina-teorema/pitagora-pravougaonik-kvadrat",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "o7-pk-4",
+    "finding": "G7-019",
+    "route": "/lekcija/7/pitagorina-teorema/pitagora-pravougaonik-kvadrat",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "o7-pk-6",
+    "finding": "G7-020",
+    "route": "/lekcija/7/pitagorina-teorema/pitagora-pravougaonik-kvadrat",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "o7-pk-7",
+    "finding": "G7-021",
+    "route": "/lekcija/7/pitagorina-teorema/pitagora-pravougaonik-kvadrat",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "o7-jk-1",
+    "finding": "G7-022",
+    "route": "/lekcija/7/pitagorina-teorema/pitagora-jednakokraki",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "o7-jk-2",
+    "finding": "G7-023",
+    "route": "/lekcija/7/pitagorina-teorema/pitagora-jednakokraki",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "o7-jk-3",
+    "finding": "G7-024",
+    "route": "/lekcija/7/pitagorina-teorema/pitagora-jednakokraki",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "o7-jk-7",
+    "finding": "G7-025",
+    "route": "/lekcija/7/pitagorina-teorema/pitagora-jednakokraki",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "o7-ro-3",
+    "finding": "G7-026",
+    "route": "/lekcija/7/pitagorina-teorema/pitagora-romb",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "o7-ro-7",
+    "finding": "G7-027",
+    "route": "/lekcija/7/pitagorina-teorema/pitagora-romb",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "o7-tr-4",
+    "finding": "G7-028",
+    "route": "/lekcija/7/pitagorina-teorema/pitagora-trapez",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "o7-tr-6",
+    "finding": "G7-029",
+    "route": "/lekcija/7/pitagorina-teorema/pitagora-trapez",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "ow-leg-identify-0",
+    "finding": "G7-032",
+    "route": "/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "ow-leg-compare-0",
+    "finding": "G7-033",
+    "route": "/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "ow-leg-ladder-0",
+    "finding": "G7-039",
+    "route": "/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "ow-trap-reverse-0",
+    "finding": "G7-045",
+    "route": "/lekcija/7/pitagorina-teorema/pitagora-trapez",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "ow-quad-reverse-0",
+    "finding": "G7-051",
+    "route": "/lekcija/7/pitagorina-teorema/pitagora-cetvorougao",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "sw-r7-triangle-0",
+    "finding": "G8-005",
+    "route": "/lekcija/8/obnavljanje-7/kratko-obnavljanje-7",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "sw-r7-perimeter-0",
+    "finding": "G8-006",
+    "route": "/lekcija/8/obnavljanje-7/kratko-obnavljanje-7",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "s8-valjak-9",
+    "finding": "G8-007",
+    "route": "/lekcija/8/s8-valjci/s8-valjak",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "s8-kupa-5",
+    "finding": "G8-007",
+    "route": "/lekcija/8/s8-kupe/s8-kupa",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "s8-lopta-8",
+    "finding": "G8-007",
+    "route": "/lekcija/8/s8-lopte/s8-lopta",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "s8-lopta-9",
+    "finding": "G8-007",
+    "route": "/lekcija/8/s8-lopte/s8-lopta",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  },
+  {
+    "id": "s8-prizma-7",
+    "finding": "G8-007",
+    "route": "/lekcija/8/s8-preseci/s8-prizma",
+    "status": "pass",
+    "first_correct": true,
+    "reload_retained": true
+  }
+]

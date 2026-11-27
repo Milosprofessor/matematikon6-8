@@ -64,7 +64,7 @@ test('nove lekcije ostaju na 10 zadataka, a podaci učenika i algoritam znanja o
 });
 test('baza čuva redosled i crteže uz nezavisno testirane ispravke audita faze 1',()=>{
  const protectedData=all.filter(({lesson:l})=>["september","october"].includes(l.month)).map(({grade:g,area:a,lesson:l})=>({grade:g.id,area:a.id,month:l.month??a.month??'september',id:l.id,pool:tasksForLesson(l.id,l.tasks).filter(t=>!t.id.startsWith('dop-')),work:lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)),visuals:lessonVisuals(l.id)}));
- assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'5e0ff2524536b9cbcb40d722cd41c552b6d7f5f4139381157d44d706a23e10c5');
+ assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'2f9b063502a20d52b5db1d48c4f8c4a7314b96b4095130c581797e9abfdf8d23');
 });
 test('glavno objašnjenje je kratko, ima jednu napomenu i čuva svaki izbor geometrijskog prikaza',()=>{
  const counts=[];let figures=0;
@@ -77,4 +77,17 @@ test('glavno objašnjenje je kratko, ima jednu napomenu i čuva svaki izbor geom
 test('sažeti tekst zadržava ključne uslove i oba pisma bez prevođenja matematičkih oznaka',()=>{
  const source=id=>JSON.stringify(learningByLesson[id]);assert.match(source('talesova-teorema'),/MN∥BC/);assert.match(source('stavovi-slicnosti'),/zahvaćen/);assert.match(source('jednacine-kvadrat'),/dva suprotna/);assert.match(source('poliedar'),/konveks/);assert.match(source('deljenje'),/b≠0/);assert.match(source('svojstva-korena'),/nenegativ/);
  const lesson=all.find(x=>x.lesson.id==='tacka-prava-ravan-osnove').lesson;const html=render(LessonLearningContent,{lesson},'cyrl');assert.match(html,/Шта треба да знаш/);assert.match(html,/A∈p/);assert.doesNotMatch(html,/А∈п/);
+});
+
+test('svih šest zadataka o merdevinama označava poznatu visinu, hipotenuzu i nepoznato x',()=>{
+ const {lesson:l}=all.find(x=>x.lesson.id==='nepoznata-stranica-pravougli');
+ const tasks=tasksForLesson(l.id,l.tasks).filter(t=>t.id.startsWith('ow-leg-ladder-'));
+ assert.equal(tasks.length,6);
+ for(const t of tasks){
+  const [,c,h]=t.math.match(/Merdevine su (\d+) m\. Vrh je na visini (\d+) m/);
+  assert.deepEqual(t.diagram.labels,{a:'x',b:h,c});
+  assert.match(t.solution,/x²\+h²=c²/);
+  const html=drawing(t.diagram);
+  assert.ok(Math.abs(distance(point(html,'A'),point(html,'C'))/distance(point(html,'A'),point(html,'B'))-Number(h)/Number(c))<1e-7);
+ }
 });
