@@ -1330,8 +1330,8 @@
         "prompt": "Izračunaj.",
         "math": "(−7) · (−6) : 14",
         "answer": "3",
-        "hint": "Prvo množenje.",
-        "solution": "42:14=3.",
+        "hint": "Operacije su istog prioriteta; množenje je prvo sleva.",
+        "solution": "(−7)·(−6)=42, zatim 42:14=3.",
         "level": "medium",
         "skill": "Množenje i deljenje"
       },
@@ -1346,7 +1346,7 @@
         ],
         "answer": "Mora se računati sleva nadesno; rezultat je −16.",
         "hint": "Množenje i deljenje imaju isti prioritet.",
-        "solution": "48:(−6)=−8, zatim −8·2=−16.",
+        "solution": "48:(−6)=−8, zatim (−8)·2=−16. Zapis 48:((−6)·2) bio bi drugi izraz, vrednosti −4.",
         "level": "medium",
         "skill": "Redosled operacija"
       },
@@ -1361,7 +1361,7 @@
         ],
         "answer": "−24:(−6)·3",
         "hint": "Prati samo znake.",
-        "solution": "−24:(−6) je pozitivno, a množenje sa 3 čuva pozitivan znak.",
+        "solution": "Prvi i treći izraz daju negativan količnik, pa negativan proizvod. Drugi izraz ima pozitivan količnik, a množenje sa 3 čuva pozitivan znak.",
         "level": "medium",
         "skill": "Znak proizvoda i količnika"
       },
@@ -1386,7 +1386,7 @@
         ],
         "answer": "−7",
         "hint": "Podeli obe strane sa −4.",
-        "solution": "x = 28:(−4)=−7.",
+        "solution": "Podeli obe strane jednačine sa −4: x·(−4):(−4)=28:(−4), pa x=−7. Provera: (−7)·(−4)=28.",
         "level": "medium",
         "skill": "Nepoznati činilac"
       },
@@ -1396,18 +1396,18 @@
         "math": "__:(−5)·2=12",
         "answer": "-30",
         "hint": "Računaj unazad od rezultata.",
-        "solution": "x:(−5)=6, pa je x=−30.",
-        "level": "advanced",
+        "solution": "Podeli obe strane sa 2: x:(−5)=6. Pomnoži obe strane sa −5: x=−30. Provera: (−30):(−5)·2=6·2=12.",
+        "level": "medium",
         "skill": "Množenje i deljenje"
       },
       {
         "id": "ow-md-context-0",
-        "prompt": "Odredi prosečnu promenu na sat.",
+        "prompt": "Odredi prosečnu promenu temperature u °C na sat, sa predznakom.",
         "math": "Tokom 3 sata temperatura prvo opadne za 12 °C, pa poraste za 3 °C.",
         "answer": "-3",
         "hint": "Prvo odredi ukupnu promenu.",
         "solution": "Ukupna promena je −12+3=−9 °C. Deljenjem sa 3 dobijamo −3 °C na sat.",
-        "level": "advanced",
+        "level": "medium",
         "skill": "Množenje i deljenje"
       }
     ]

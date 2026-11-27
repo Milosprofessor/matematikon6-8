@@ -76,9 +76,9 @@ export const septemberTasks:Record<string,Task[]>={
   ],
   "mnozenje-deljenje":[
     P(C("6-10f","Odredi znak rezultata.","(−6)·(−4):(−3)",["+","−","0"],"−","Odredi znak redom ili prebroj negativne brojeve.","Pozitivan proizvod podeljen negativnim brojem daje negativan rezultat.","basic","Znak proizvoda i količnika"),"znak-bez-racunanja","sign"),
-    P(I("6-10g","Dopuni.","__:(−5)·2=12","-30","Računaj unazad od rezultata.","x:(−5)=6, pa je x=−30.","advanced","Množenje i deljenje"),"dopunjavanje","method"),
-    P(C("6-10h","Pronađi grešku.","48:(−6)·2=48:(−12)=−4",["Nema greške.","Mora se računati sleva nadesno; rezultat je −16.","Rezultat je 16."],"Mora se računati sleva nadesno; rezultat je −16.","Množenje i deljenje imaju isti prioritet.","48:(−6)=−8, zatim −8·2=−16.","medium","Redosled operacija"),"pronadji-gresku","rule"),
-    P(C("6-10i","Izaberi izraz čija je vrednost pozitivna.","",["−24:6·3","−24:(−6)·3","24:(−6)·3"],"−24:(−6)·3","Prati samo znake.","−24:(−6) je pozitivno, a množenje sa 3 čuva pozitivan znak.","medium","Znak proizvoda i količnika"),"izbor-po-znaku","sign"),
+    P(I("6-10g","Dopuni.","__:(−5)·2=12","-30","Računaj unazad od rezultata.","Podeli obe strane sa 2: x:(−5)=6. Pomnoži obe strane sa −5: x=−30. Provera: (−30):(−5)·2=6·2=12.","advanced","Množenje i deljenje"),"dopunjavanje","method"),
+    P(C("6-10h","Pronađi grešku.","48:(−6)·2=48:(−12)=−4",["Nema greške.","Mora se računati sleva nadesno; rezultat je −16.","Rezultat je 16."],"Mora se računati sleva nadesno; rezultat je −16.","Množenje i deljenje imaju isti prioritet.","48:(−6)=−8, zatim (−8)·2=−16. Zapis 48:((−6)·2) bio bi drugi izraz, vrednosti −4.","medium","Redosled operacija"),"pronadji-gresku","rule"),
+    P(C("6-10i","Izaberi izraz čija je vrednost pozitivna.","",["−24:6·3","−24:(−6)·3","24:(−6)·3"],"−24:(−6)·3","Prati samo znake.","Prvi i treći izraz daju negativan količnik, pa negativan proizvod. Drugi izraz ima pozitivan količnik, a množenje sa 3 čuva pozitivan znak.","medium","Znak proizvoda i količnika"),"izbor-po-znaku","sign"),
     P(I("6-10j","Izračunaj.","(−96):8:(−4)","3","Računaj sleva nadesno.","−96:8=−12, zatim −12:(−4)=3.","advanced","Množenje i deljenje"),"lanac-operacija","calculation"),
   ],
   "brojevni-izrazi":[

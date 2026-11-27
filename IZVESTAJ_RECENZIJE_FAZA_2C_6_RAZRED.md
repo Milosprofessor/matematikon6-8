@@ -1,3 +1,26 @@
+# Checkpoint 9 — Množenje i deljenje celih brojeva
+
+Datum: 27.11.2026. Polazni GitHub commit ceefc1b; lokalni sadržajni commit ef73ba5. Nalazi G6C-023–024.
+
+| Stavka | Stanje |
+|---|---:|
+| Potpuno matematički i metodički recenzirani zadaci | 300/919 |
+| Delimično | 0 |
+| Nepregledani | 619 |
+| Lekcije matematički recenzirane | 11/45 |
+| Postojeći rešeni primeri | 11/81 |
+| Novi rešeni primeri | 22/22 |
+
+- 28/28 zadataka; 8 osnovnih, 20 srednjih; 9 promena nivoa, 13 izmenjenih zadataka. Tri nezavisno proverena primera. ID-jevi, redosled i odgovori očuvani.
+- Precizirani jednaki prioritet množenja i deljenja, redosled sleva nadesno, zagrade, nenulti delioci, transformacije i provere.
+- 124/124 programska testa, oba build-a, TypeScript, lint, 22 browser zapisa. Emulirani desktop i mobilni touch, ne fizički uređaji.
+- LOG-06: šest varijanti ow-md-context, −3 prihvaćen, −3 °C na sat odbijen. Validator ostaje za fazu 3.
+- Korekcija zbirne statistike: jedan ranije pregledan zadatak s6-godisnja-1 pripada oblasti s6-zavrsnica, a ne Celi brojevi. Ukupni brojevi recenziranih zadataka su tačni; u ovoj oblasti je sada 254/283, preostalo 29. Prethodni checkpoint 8 trebalo je da ima 226/283.
+
+**Tačka nastavka:** brojevni-izrazi, prvi ID 6-11a. Faza 2C nije završena.
+
+---
+
 # Checkpoint 8 — Deljenje celih brojeva
 
 Datum: 27.11.2026. Polazni GitHub commit d8b8e53; lokalni sadržajni commit cdf7f7b. Nalazi G6C-021–022.

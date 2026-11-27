@@ -1623,12 +1623,14 @@
    "title": "Množenje i deljenje celih brojeva",
    "intro": "Množenje i deljenje imaju isti prioritet, pa računamo sleva nadesno.",
    "rules": [
-    "Najpre odredi znak rezultata.",
-    "Zatim računaj apsolutne vrednosti.",
+    "Prvo izračunaj izraz u zagradi ako postoji; proveri da nijedan delilac nije nula.",
+    "U svakom koraku odredi predznak i izračunaj apsolutne vrednosti. Nula u deljeniku daje nulu samo uz nenulti delilac.",
     "Operacije istog prioriteta izvodi sleva nadesno."
    ],
    "formulas": [
-    "a·b:c = (a·b):c"
+    "a·b:c=(a·b):c, c≠0",
+    "a:b·c=(a:b)·c, b≠0",
+    "a:b:c=(a:b):c, b≠0, c≠0"
    ],
    "examples": [
     "−3·4:2=−6",
@@ -1643,6 +1645,31 @@
      "Isti znaci daju 12."
     ]
    },
+   "worked": [
+    {
+     "question": "Izračunaj −36:6·(−2).",
+     "steps": [
+      "Množenje i deljenje imaju isti prioritet. Prvo −36:6=−6.",
+      "Zatim (−6)·(−2)=12."
+     ]
+    },
+    {
+     "question": "Uporedi 48:(−6)·2 i 48:((−6)·2).",
+     "steps": [
+      "Prvi izraz: 48:(−6)·2=(−8)·2=−16.",
+      "Drugi izraz: (−6)·2=−12, zatim 48:(−12)=−4.",
+      "−16≠−4; zagrade menjaju redosled i vrednost."
+     ]
+    },
+    {
+     "question": "Odredi x ako je x:(−4)·3=15.",
+     "steps": [
+      "Podeli obe strane sa 3: x:(−4)=5.",
+      "Pomnoži obe strane sa −4: x=−20.",
+      "Provera: (−20):(−4)·3=5·3=15."
+     ]
+    }
+   ],
    "month": "october",
    "prerequisites": [
     "deljenje"
@@ -1665,7 +1692,7 @@
      "text": "Najpre odredi predznak svake operacije, pa računaj sa apsolutnim vrednostima. Zagrade menjaju redosled i mogu promeniti rezultat. Delilac ni u jednom koraku ne sme biti 0.",
      "definition": false,
      "formulas": [
-      "(a:b)·c ≠ a:(b·c), u opštem slučaju",
+      "48:(−6)·2=−16; 48:((−6)·2)=−4",
       "a·0=0; delilac ≠0"
      ],
      "visualIndexes": [],
@@ -11862,8 +11889,8 @@
    "math": "(−7) · (−6) : 14",
    "kind": "input",
    "answer": "3",
-   "hint": "Prvo množenje.",
-   "solution": "42:14=3.",
+   "hint": "Operacije su istog prioriteta; množenje je prvo sleva.",
+   "solution": "(−7)·(−6)=42, zatim 42:14=3.",
    "level": "medium",
    "skill": "Množenje i deljenje",
    "lesson": "mnozenje-deljenje",
@@ -11885,7 +11912,7 @@
    ],
    "answer": "−7",
    "hint": "Podeli obe strane sa −4.",
-   "solution": "x = 28:(−4)=−7.",
+   "solution": "Podeli obe strane jednačine sa −4: x·(−4):(−4)=28:(−4), pa x=−7. Provera: (−7)·(−4)=28.",
    "level": "medium",
    "skill": "Nepoznati činilac",
    "lesson": "mnozenje-deljenje",
@@ -11919,7 +11946,7 @@
    "answer": "3",
    "hint": "Računaj sleva nadesno.",
    "solution": "72:(−8)=−9, zatim −9:(−3)=3.",
-   "level": "advanced",
+   "level": "medium",
    "skill": "Množenje i deljenje",
    "lesson": "mnozenje-deljenje",
    "area": "celi-brojevi",
@@ -11959,8 +11986,8 @@
    "kind": "input",
    "answer": "-30",
    "hint": "Računaj unazad od rezultata.",
-   "solution": "x:(−5)=6, pa je x=−30.",
-   "level": "advanced",
+   "solution": "Podeli obe strane sa 2: x:(−5)=6. Pomnoži obe strane sa −5: x=−30. Provera: (−30):(−5)·2=6·2=12.",
+   "level": "medium",
    "skill": "Množenje i deljenje",
    "taskType": "dopunjavanje",
    "errorCategory": "method",
@@ -11984,7 +12011,7 @@
    ],
    "answer": "Mora se računati sleva nadesno; rezultat je −16.",
    "hint": "Množenje i deljenje imaju isti prioritet.",
-   "solution": "48:(−6)=−8, zatim −8·2=−16.",
+   "solution": "48:(−6)=−8, zatim (−8)·2=−16. Zapis 48:((−6)·2) bio bi drugi izraz, vrednosti −4.",
    "level": "medium",
    "skill": "Redosled operacija",
    "taskType": "pronadji-gresku",
@@ -12009,7 +12036,7 @@
    ],
    "answer": "−24:(−6)·3",
    "hint": "Prati samo znake.",
-   "solution": "−24:(−6) je pozitivno, a množenje sa 3 čuva pozitivan znak.",
+   "solution": "Prvi i treći izraz daju negativan količnik, pa negativan proizvod. Drugi izraz ima pozitivan količnik, a množenje sa 3 čuva pozitivan znak.",
    "level": "medium",
    "skill": "Znak proizvoda i količnika",
    "taskType": "izbor-po-znaku",
@@ -12030,7 +12057,7 @@
    "answer": "3",
    "hint": "Računaj sleva nadesno.",
    "solution": "−96:8=−12, zatim −12:(−4)=3.",
-   "level": "advanced",
+   "level": "medium",
    "skill": "Množenje i deljenje",
    "taskType": "lanac-operacija",
    "errorCategory": "calculation",
@@ -12339,13 +12366,13 @@
   },
   {
    "id": "ow-md-context-0",
-   "prompt": "Odredi prosečnu promenu na sat.",
+   "prompt": "Odredi prosečnu promenu temperature u °C na sat, sa predznakom.",
    "math": "Tokom 3 sata temperatura prvo opadne za 12 °C, pa poraste za 3 °C.",
    "kind": "input",
    "answer": "-3",
    "hint": "Prvo odredi ukupnu promenu.",
    "solution": "Ukupna promena je −12+3=−9 °C. Deljenjem sa 3 dobijamo −3 °C na sat.",
-   "level": "advanced",
+   "level": "medium",
    "skill": "Množenje i deljenje",
    "taskType": "md-context",
    "errorCategory": "method",
@@ -12362,13 +12389,13 @@
   },
   {
    "id": "ow-md-context-1",
-   "prompt": "Odredi prosečnu promenu na sat.",
+   "prompt": "Odredi prosečnu promenu temperature u °C na sat, sa predznakom.",
    "math": "Tokom 4 sata temperatura prvo opadne za 16 °C, pa poraste za 4 °C.",
    "kind": "input",
    "answer": "-3",
    "hint": "Prvo odredi ukupnu promenu.",
    "solution": "Ukupna promena je −16+4=−12 °C. Deljenjem sa 4 dobijamo −3 °C na sat.",
-   "level": "advanced",
+   "level": "medium",
    "skill": "Množenje i deljenje",
    "taskType": "md-context",
    "errorCategory": "method",
@@ -12384,13 +12411,13 @@
   },
   {
    "id": "ow-md-context-2",
-   "prompt": "Odredi prosečnu promenu na sat.",
-   "math": "Tokom 5 sata temperatura prvo opadne za 20 °C, pa poraste za 5 °C.",
+   "prompt": "Odredi prosečnu promenu temperature u °C na sat, sa predznakom.",
+   "math": "Tokom 5 sati temperatura prvo opadne za 20 °C, pa poraste za 5 °C.",
    "kind": "input",
    "answer": "-3",
    "hint": "Prvo odredi ukupnu promenu.",
    "solution": "Ukupna promena je −20+5=−15 °C. Deljenjem sa 5 dobijamo −3 °C na sat.",
-   "level": "advanced",
+   "level": "medium",
    "skill": "Množenje i deljenje",
    "taskType": "md-context",
    "errorCategory": "method",
@@ -12406,13 +12433,13 @@
   },
   {
    "id": "ow-md-context-3",
-   "prompt": "Odredi prosečnu promenu na sat.",
-   "math": "Tokom 6 sata temperatura prvo opadne za 24 °C, pa poraste za 6 °C.",
+   "prompt": "Odredi prosečnu promenu temperature u °C na sat, sa predznakom.",
+   "math": "Tokom 6 sati temperatura prvo opadne za 24 °C, pa poraste za 6 °C.",
    "kind": "input",
    "answer": "-3",
    "hint": "Prvo odredi ukupnu promenu.",
    "solution": "Ukupna promena je −24+6=−18 °C. Deljenjem sa 6 dobijamo −3 °C na sat.",
-   "level": "advanced",
+   "level": "medium",
    "skill": "Množenje i deljenje",
    "taskType": "md-context",
    "errorCategory": "method",
@@ -12428,13 +12455,13 @@
   },
   {
    "id": "ow-md-context-4",
-   "prompt": "Odredi prosečnu promenu na sat.",
-   "math": "Tokom 7 sata temperatura prvo opadne za 28 °C, pa poraste za 7 °C.",
+   "prompt": "Odredi prosečnu promenu temperature u °C na sat, sa predznakom.",
+   "math": "Tokom 7 sati temperatura prvo opadne za 28 °C, pa poraste za 7 °C.",
    "kind": "input",
    "answer": "-3",
    "hint": "Prvo odredi ukupnu promenu.",
    "solution": "Ukupna promena je −28+7=−21 °C. Deljenjem sa 7 dobijamo −3 °C na sat.",
-   "level": "advanced",
+   "level": "medium",
    "skill": "Množenje i deljenje",
    "taskType": "md-context",
    "errorCategory": "method",
@@ -12450,13 +12477,13 @@
   },
   {
    "id": "ow-md-context-5",
-   "prompt": "Odredi prosečnu promenu na sat.",
-   "math": "Tokom 8 sata temperatura prvo opadne za 32 °C, pa poraste za 8 °C.",
+   "prompt": "Odredi prosečnu promenu temperature u °C na sat, sa predznakom.",
+   "math": "Tokom 8 sati temperatura prvo opadne za 32 °C, pa poraste za 8 °C.",
    "kind": "input",
    "answer": "-3",
    "hint": "Prvo odredi ukupnu promenu.",
    "solution": "Ukupna promena je −32+8=−24 °C. Deljenjem sa 8 dobijamo −3 °C na sat.",
-   "level": "advanced",
+   "level": "medium",
    "skill": "Množenje i deljenje",
    "taskType": "md-context",
    "errorCategory": "method",

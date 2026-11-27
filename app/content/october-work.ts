@@ -62,7 +62,7 @@ register("deljenje",[
 register("mnozenje-deljenje",[
  v=>Q("md","order",v,"Šta prvo računaš?","−"+(v+3)*8+":"+(v+3)+"·(−2)",["Deljenje sleva","Proizvod desno","Oba istovremeno"],"Deljenje sleva","Operacije su istog reda.","Množenje i deljenje računamo sleva nadesno.","basic","Redosled operacija","rule"),
  v=>{const a=v+3;return N("md","table",v,"Dopuni kraj lanca.","−"+4*a+" → :"+a+" → −4 → ·(−3) → ?",12,"Računaj svaki korak redom.","−"+4*a+":"+a+"=−4; (−4)·(−3)=12.","medium","Množenje i deljenje","calculation")},
- v=>{const a=v+3;return N("md","context",v,"Odredi prosečnu promenu na sat.","Tokom "+a+" sata temperatura prvo opadne za "+4*a+" °C, pa poraste za "+a+" °C.",-3,"Prvo odredi ukupnu promenu.","Ukupna promena je −"+4*a+"+"+a+"=−"+3*a+" °C. Deljenjem sa "+a+" dobijamo −3 °C na sat.","advanced","Množenje i deljenje")}
+ v=>{const a=v+3;return N("md","context",v,"Odredi prosečnu promenu temperature u °C na sat, sa predznakom.","Tokom "+a+(a===3||a===4?" sata":" sati")+" temperatura prvo opadne za "+4*a+" °C, pa poraste za "+a+" °C.",-3,"Prvo odredi ukupnu promenu.","Ukupna promena je −"+4*a+"+"+a+"=−"+3*a+" °C. Deljenjem sa "+a+" dobijamo −3 °C na sat.","advanced","Množenje i deljenje")}
 ]);
 register("brojevni-izrazi",[
  v=>{const a=v+3;return Q("expr","model",v,"Izaberi izraz.","Od "+4*a+" oduzmi proizvod "+a+" i −3.",[4*a+"−"+a+"·(−3)","("+4*a+"−"+a+")·(−3)",4*a+"+"+a+"·(−3)"],4*a+"−"+a+"·(−3)","Prvo prepoznaj proizvod.","Oduzima se ceo proizvod: "+4*a+"−"+a+"·(−3).","basic","Brojevni izrazi")},
@@ -203,6 +203,7 @@ export function lessonWorkTasks(lessonId:string,pool:Task[]):Task[]{
  return plan.map(id=>{const task=pool.find(item=>item.id===id);if(!task)throw new Error("Missing lesson work task: "+id);return task});
 }
 export function applyOctoberWorkLevels(lessonId:string,tasks:Task[]):Task[]{
+ if(lessonId==="mnozenje-deljenje")return tasks.map(task=>({...task,level:["6-10a","6-10f"].includes(task.id)||task.id.startsWith("ow-md-order-")?"basic":"medium"}));
  if(lessonId==="deljenje")return tasks.map(task=>({...task,level:["6-9a","6-9b","6-9c","6-9d","6-9f"].includes(task.id)?"basic":"medium"}));
  if(lessonId==="mnozenje")return tasks.map(task=>({...task,level:["6-8a","6-8b","6-8c","6-8d","6-8f"].includes(task.id)||task.id.startsWith("ow-mul-sum-")?"basic":"medium"}));
  const plan=octoberWorkPlans[lessonId];if(!plan)return tasks;

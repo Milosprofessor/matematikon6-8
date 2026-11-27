@@ -246,10 +246,10 @@ export const learningByLesson:Record<string,LessonLearning> = {
       "Izračunaj zagrade, a zatim prati zapis sleva nadesno.",
       "Nepoznati broj pronađi poništavanjem operacija obrnutim redom; proveri ga u izvornom izrazu."
     ],
-    "why": "U lancu operacija ne deliš samo poslednji broj: svaki sledeći korak obrađuje dotadašnji rezultat.",
+    "why": "Svaki sledeći korak obrađuje dotadašnji rezultat; deljenje nije asocijativno, pa ne pregrupišemo proizvoljno.",
     "caution": "Ne radi sva množenja pre deljenja; njihov prioritet je isti.",
     "extraFormulas": [
-      "(a:b)·c ≠ a:(b·c), u opštem slučaju",
+      "48:(−6)·2=−16; 48:((−6)·2)=−4",
       "a·0=0; delilac ≠0"
     ],
     "sourcePages": "Udžbenik 6, str. 35–38, posebno računanje mešovitog lanca na str. 36; operativni plan za oktobar, čas 19.",

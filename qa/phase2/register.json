@@ -1739,7 +1739,7 @@
     ],
     "test_result": "112/112 unit/integracionih; ciljane regresije; browser rezultati u final/",
     "phase2c_evidence": "12 konkretnih ID-jeva: sw-r5-angle-0…5 (°), sw-r5-rectangle-0…5 (cm); broj prihvaćen, sa jedinicom odbijen. qa/phase2c/grade6/obnavljanje-5/units.json; faza 3; status nepromenjen.; 6-4i: °C, 4 prihvaćen, 4 °C odbijen; qa/phase2c/grade6/sabiranje/units.json.; 6-6g: 12 prihvaćen, 12 °C odbijen; qa/phase2c/grade6/rastojanje/units.json.",
-    "phase2_evidence": "; qa/phase2c/grade6/mnozenje/units.json: 6-8j −12 prihvaćen, −12 °C odbijen; qa/phase2c/grade6/deljenje/units.json: 6-9j −6 prihvaćen, −6 dinara dnevno odbijen"
+    "phase2_evidence": "; qa/phase2c/grade6/mnozenje/units.json: 6-8j −12 prihvaćen, −12 °C odbijen; qa/phase2c/grade6/deljenje/units.json: 6-9j −6 prihvaćen, −6 dinara dnevno odbijen; qa/phase2c/grade6/mnozenje-deljenje/units.json: šest varijanti ow-md-context, −3 prihvaćen, −3 °C na sat odbijen"
   },
   {
     "id": "LOG-07",
@@ -2920,5 +2920,39 @@
     "status": "Ispravljeno i potvrđeno",
     "fix_commit": "cdf7f7b7004750308c1eff67e1e5eaf6c5f1ae4b",
     "phase2_evidence": "qa/phase2c/grade6/deljenje/tasks.json; lesson.json; tests.log; browser.json"
+  },
+  {
+    "id": "G6C-023",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Celi brojevi",
+    "lesson": "mnozenje-deljenje",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Matematička preciznost i postupak",
+    "description": "Nedovoljno precizni uslovi delioca, redosled i izostavljene provere nepoznatog broja.",
+    "evidence": "qa/phase2c/grade6/mnozenje-deljenje/tasks.json; lesson.json; tests.log; browser.json",
+    "location": "app/content/grade6.ts; learning.ts; october-work.ts; september-expansion.ts",
+    "fix": "Tri primera, jasna veza zagrada i redosleda, nenulti delioci, transformacije i provere.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "ef73ba5840eaa3e1008292b0fa86343ec4fdbf02",
+    "phase2_evidence": "qa/phase2c/grade6/mnozenje-deljenje/tasks.json; lesson.json; tests.log; browser.json"
+  },
+  {
+    "id": "G6C-024",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Celi brojevi",
+    "lesson": "mnozenje-deljenje",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Nivoi težine",
+    "description": "9 neadekvatno klasifikovanih zadataka.",
+    "evidence": "qa/phase2c/grade6/mnozenje-deljenje/tasks.json; lesson.json; tests.log; browser.json",
+    "location": "app/content/grade6.ts; learning.ts; october-work.ts; september-expansion.ts",
+    "fix": "8 osnovnih, 20 srednjih.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "ef73ba5840eaa3e1008292b0fa86343ec4fdbf02",
+    "phase2_evidence": "qa/phase2c/grade6/mnozenje-deljenje/tasks.json; lesson.json; tests.log; browser.json"
   }
 ]

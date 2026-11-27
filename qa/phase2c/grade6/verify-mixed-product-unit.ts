@@ -1,0 +1,8 @@
+import fs from "node:fs";
+import {grades} from "../../../app/content";
+import {tasksForLesson} from "../../../app/content/enhancements";
+import {emptyTask,submitTask} from "../../../app/lesson-work";
+const l=grades.find(g=>g.id===6)!.areas.flatMap(a=>a.lessons).find(l=>l.id==="mnozenje-deljenje")!;
+const rows=tasksForLesson(l.id,l.tasks).filter(t=>t.id.startsWith("ow-md-context-")).map(t=>({id:t.id,requiredUnit:"°C na sat",numericAccepted:!!submitTask({...emptyTask(),value:"-3"},t).result,unitAccepted:!!submitTask({...emptyTask(),value:"-3 °C na sat"},t).result,example:"-3 °C na sat",phase3:"LOG-06"}));
+fs.writeFileSync("qa/phase2c/grade6/mnozenje-deljenje/units.json",JSON.stringify(rows,null,2)+"\n");
+console.log(rows);
