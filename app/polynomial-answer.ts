@@ -17,7 +17,7 @@ function combine(a:Poly,b:Poly,product:boolean,sign=BigInt(1)){
  return out;
 }
 function parse(source:string):Expr {
- const s=source.toLowerCase().replace(/pi/g,"π").replace(/−/g,"-").replace(/²/g,"^2").replace(/³/g,"^3").replace(/⁴/g,"^4").replace(/⁵/g,"^5").replace(/\s/g,"").replace(/·/g,"*");
+ const s=source.toLowerCase().replace(/х/g,"x").replace(/pi/g,"π").replace(/−/g,"-").replace(/²/g,"^2").replace(/³/g,"^3").replace(/⁴/g,"^4").replace(/⁵/g,"^5").replace(/\s/g,"").replace(/·/g,"*");
  if(!s||s.length>100||/[^0-9xπ()+*^-]/.test(s))throw Error();
  let i=0;
  const atom=(p:Poly):Expr=>({p,parts:[p],power:1});
@@ -47,7 +47,22 @@ export function algebraAnswer(value:string,expected:string,form:"value"|"product
   const a=parse(value),b=parse(expected);
   if(keyOf(a.p)!==keyOf(b.p))return false;
   if(form==="square")return a.power===2&&!!a.base&&a.base.size===2;
-  if(form==="expanded")return !/[()]/.test(value);
+  if(form==="expanded"){
+   if(/[()]/.test(value))return false;
+   // Expanded form has exactly one nonzero term per monomial.
+   const terms=value.replace(/−/g,"-").replace(/\s/g,"").split(/(?=[+-])/);
+   const monomials=new Set<number>();
+   for(const term of terms){
+    const normalized=term.toLowerCase().replace(/х/g,"x").replace(/²/g,"^2").replace(/³/g,"^3").replace(/·/g,"*");
+    if(!/^[+-]?(?:\d+|(?:\d+\*?)?[xπ](?:\^(?:[2-9]|10))?|[xπ](?:\^(?:[2-9]|10))?\*\d+)$/.test(normalized))return false;
+    const parsed=parse(term).p;
+    if(parsed.size!==1)return false;
+    const degree=[...parsed.keys()][0];
+    if(monomials.has(degree))return false;
+    monomials.add(degree);
+   }
+   return true;
+  }
   if(form==="product"){
    const factors=(e:Expr)=>e.parts.filter(p=>[...p.keys()].some(k=>k!==0));
    const fa=factors(a),fb=factors(b);

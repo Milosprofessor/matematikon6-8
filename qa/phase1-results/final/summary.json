@@ -1,0 +1,28 @@
+{
+  "unit_tests": {
+    "pass": 112,
+    "fail": 0
+  },
+  "browser_scripts": {
+    "semester-browser-smoke": 0,
+    "spring6-browser": 0,
+    "spring7-browser": 0,
+    "spring8-browser": 0,
+    "spring8-exam-browser": 0
+  },
+  "targeted_variants": {
+    "passed": 21,
+    "total": 21
+  },
+  "math_references": {
+    "numeric_tasks": 13,
+    "inputs_per_task": 3,
+    "triangle_variants": 6,
+    "plane_intersection": 1
+  },
+  "critical_advisories": 0,
+  "remaining_advisory_packages": 31,
+  "physical_devices": "not tested",
+  "source_commit": "08ebb50b35cdab3fa1558420f48a543607ae83eb",
+  "supplement": "Cyrillic x normalization tested in the same unit suite"
+}

@@ -27,6 +27,14 @@ export function resumeLessonWork(lessonId:string,tasks:Task[],attempts:Knowledge
 export const normalizeAnswer=(v:string)=>v.trim().replace(/[−–—]/g,"-").replace(/\s+/g,"").replace(/,/g,".").toLowerCase();
 // Exact rational comparison accepts decimal commas and unreduced fractions.
 function rational(value:string): [bigint,bigint] | undefined {
+ const scientific=/^([+-]?(?:\d+(?:\.\d+)?|\.\d+))[eE]([+-]?\d{1,3})$/.exec(value);
+ if(scientific){
+  const exponent=Number(scientific[2]);
+  if(Math.abs(exponent)>100)return;
+  const base=rational(scientific[1]);if(!base)return;
+  const scale=BigInt(10)**BigInt(Math.abs(exponent));
+  return exponent>=0?[base[0]*scale,base[1]]:[base[0],base[1]*scale];
+ }
  const match = /^([+-]?)(\d*)(?:\.(\d+))?(?:\/([+-]?\d+))?$/.exec(value);
  if (!match || value.length > 80 || (!match[2] && !match[3])) return;
  const digits = match[2] + (match[3] ?? "");
@@ -36,25 +44,42 @@ function rational(value:string): [bigint,bigint] | undefined {
  if (denominator !== BigInt(0)) return [numerator, denominator];
 }
 export function sameAnswer(entered:string,answer:string){
+ if(entered.length>100||answer.length>100)return false;
+ // A space between digits is significant in mixed numbers and invalid otherwise.
+ const mixed=/^([+-]?)(\d+)\s+(\d+)\/(\d+)$/.exec(entered.trim().replace(/−/g,"-"));
+ if(mixed){
+  const [,sign,whole,part,bottom]=mixed;
+  if(BigInt(bottom)===BigInt(0)||BigInt(part)>=BigInt(bottom))return false;
+  entered=(sign==="-"?"-":"")+(BigInt(whole)*BigInt(bottom)+BigInt(part))+"/"+bottom;
+ }else if(/\d\s+\d/.test(entered))return false;
  const a=normalizeAnswer(entered), b=normalizeAnswer(answer);
  if (!a || !b) return false;
  if (a===b) return true;
  const left=rational(a), right=rational(b);
  if(left && right) return left[0]*right[1]===right[0]*left[1];
- // Keep scientific notation accepted by legacy numeric input.
- if(!a.includes("/")&&!b.includes("/")&&(!left||!right)){
-   const x=Number(a), y=Number(b);
-   return Number.isFinite(x)&&Number.isFinite(y)&&x===y;
- }
  return false;
 }
-export function submitTask(state:TaskSnapshot,task:Pick<Task,"answer"> & Partial<Pick<Task,"kind"|"id"|"prompt">>):TaskSnapshot{
+export function submitTask(state:TaskSnapshot,task:Pick<Task,"answer"> & Partial<Pick<Task,"kind"|"id"|"prompt"|"answerUnit">>):TaskSnapshot{
  if(state.result||!state.value.trim())return state;
  const attempts=state.attempts+1;
+ let value=state.value;
+ if(task.answerUnit&&task.kind==="input"){
+  const unit=/\s+([a-zA-Z]+(?:[²³]|\^[23])?)\s*$/.exec(value);
+  if(unit){
+   value=value.slice(0,unit.index);
+   if(unit[1]!==task.answerUnit){
+    const scales:Record<string,bigint>={mm:BigInt(1),cm:BigInt(10),dm:BigInt(100),m:BigInt(1000),km:BigInt(1000000)};
+    const from=scales[unit[1]],to=scales[task.answerUnit];
+    const number=rational(normalizeAnswer(value));
+    if(!from||!to||!number)return {...state,attempts,feedback:"wrong"};
+    value=(number[0]*from)+"/"+(number[1]*to);
+   }
+  }
+ }
  const symbolic=task.id?.startsWith("s7-")&&task.kind==="input"&&/[xπ]/.test(task.answer);
  const form=task.answer.includes("(")?(task.answer.endsWith("^2")?"square":"product"):/razvij|sredi|sređen/i.test(task.prompt??"")?"expanded":"value";
  const eighth = task.id?.startsWith("s8-") && task.kind==="input";
- if(!(eighth?eighthAnswer(state.value,task.answer):symbolic?algebraAnswer(state.value,task.answer,form):sameAnswer(state.value,task.answer)))return {...state,attempts,feedback:"wrong"};
+ if(!(eighth?eighthAnswer(value,task.answer):symbolic?algebraAnswer(value,task.answer,form):sameAnswer(value,task.answer)))return {...state,attempts,feedback:"wrong"};
  return {...state,attempts,feedback:"correct",result:{firstCorrect:state.attempts===0&&!state.solution,usedSolution:state.solution,attemptCount:attempts,finalCorrect:true}};
 }
 export function acceptProcedure(state:TaskSnapshot):TaskSnapshot{

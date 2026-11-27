@@ -1,0 +1,13 @@
+{
+  "value": "6х",
+  "attempts": 1,
+  "hint": false,
+  "solution": false,
+  "feedback": "correct",
+  "result": {
+    "firstCorrect": true,
+    "usedSolution": false,
+    "attemptCount": 1,
+    "finalCorrect": true
+  }
+}

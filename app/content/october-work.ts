@@ -91,7 +91,7 @@ register("odnos-stranica-uglova",[
  v=>{const a=38+2*v;return Q("sideangle","combine",v,"Odredi najdužu stranicu.","α="+a+"°, β je za 15° veći od α.",["a","b","c"],"c","Najpre odredi β i γ.","β="+(a+15)+"°, γ="+(165-2*a)+"°. Najveći je γ, pa je najduža c.","advanced","Odnos stranica i uglova","method")}
 ]);
 register("nejednakost-trougla",[
- v=>{const a=v+4;return Q("ineqtri","strict",v,"Koji uslov mora važiti?","Stranice su "+a+", "+(a+1)+" i c.",["c<"+(2*a+1),"c≤"+(2*a+1),"c="+(2*a+1)],"c<"+(2*a+1),"Najduža ne sme biti jednaka zbiru drugih dveju.","Neophodno je c<"+(2*a+1)+". To je samo jedna od nejednakosti.","basic","Nejednakost trougla","rule")},
+ v=>{const a=v+4;return Q("ineqtri","strict",v,"Koji uslov mora važiti?","Stranice su "+a+", "+(a+1)+" i c.",["c<"+(2*a+1),"c≥"+(2*a+1),"c="+(2*a+1)],"c<"+(2*a+1),"Najduža ne sme biti jednaka zbiru drugih dveju.","Neophodno je c<"+(2*a+1)+". To je samo jedna od nejednakosti.","basic","Nejednakost trougla","rule")},
  v=>{const a=v+4;return N("ineqtri","isosceles",v,"Odredi dužinu kraka.","Jednakokraki trougao ima dve različite dužine: "+a+" cm i "+(2*a+1)+" cm.",2*a+1,"Proveri koja dužina može da se ponovi.","Dva kraka od "+a+" daju zbir "+2*a+", manji od "+(2*a+1)+". Zato krak mora biti "+(2*a+1)+" cm.","medium","Nejednakost trougla")},
  v=>{const a=v+4;return N("ineqtri","perimeter",v,"Odredi najveći ceo obim.","Dve stranice su "+a+" cm i "+(a+3)+" cm; treća je ceo broj cm.",4*a+5,"Odredi najveću dozvoljenu treću stranicu.","Treća mora biti manja od "+(2*a+3)+", pa je najviše "+(2*a+2)+". Obim je "+(4*a+5)+" cm.","advanced","Nejednakost trougla")}
 ]);

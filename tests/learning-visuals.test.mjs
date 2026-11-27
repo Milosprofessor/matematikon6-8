@@ -18,7 +18,7 @@ const parallel=(a,b,c,d)=>Math.abs((b[0]-a[0])*(d[1]-c[1])-(b[1]-a[1])*(d[0]-c[0
 test('svih 86 aktivnih lekcija imaju objašnjen cilj, postupak, razlog i čestu grešku u oba pisma',()=>{
  assert.equal(all.filter(x=>!/^s[678]-/.test(x.lesson.id)).length,86);for(const {lesson:l} of all){const content=learningByLesson[l.id];assert.ok(content?.idea.length&&content.steps.length&&content.why&&content.caution,l.id);for(const script of ['latn','cyrl']){const html=render(LessonLearningContent,{lesson:l},script);assert.doesNotMatch(html,/\[\[(?:frac|sqrt):|NaN|undefined/);assert.doesNotMatch(html,/sourcePages|Udžbenik|Operativni plan/);assert.match(html,/learning-compact/);}}
 });
-test('svaki postojeći aktivni zadatak čuva ID, pitanje, odgovor, nivo i tok rada; izuzetak je preciziranje kose duži',()=>{
+test('zadaci čuvaju ID, nivo i tok rada uz dokumentovane matematičke ispravke audita',()=>{
  let count=0;for(const original of fixture){const current=all.find(x=>x.grade.id===original.grade&&x.lesson.id===original.lessonId);if(!current)continue;const tasks=lessonWorkTasks(current.lesson.id,tasksForLesson(current.lesson.id,current.lesson.tasks));assert.deepEqual(tasks.map(t=>t.id),original.tasks.map(t=>t.id));for(let i=0;i<10;i++){const expected=original.tasks[i],actual=tasks[i];for(const key of Object.keys(expected)){if(expected.id==='o8-pro-3'&&['math','hint','solution'].includes(key))continue;assert.deepEqual(actual[key],expected[key],expected.id+'/'+key);}count++;}}assert.equal(count,590);
 });
 test('objašnjenja i vizuelizacije 7. razreda ne uvode koren pre lekcije o korenu',()=>{
@@ -62,9 +62,9 @@ test('nove lekcije ostaju na 10 zadataka, a podaci učenika i algoritam znanja o
  for(const {lesson:l} of all)assert.equal(lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)).length,10,l.id);
  const p=await readFile(new URL('../app/page.tsx',import.meta.url),'utf8');assert.match(p,/matematikon68-progress-v1-\$\{gradeId\}/);assert.doesNotMatch(p,/localStorage\.clear|localStorage\.removeItem/);
 });
-test('sažimanje čuva kompletnu bazu zadataka, crteže, redosled i nivoe iz objavljene verzije 16',()=>{
+test('baza čuva redosled i crteže uz nezavisno testirane ispravke audita faze 1',()=>{
  const protectedData=all.filter(({lesson:l})=>["september","october"].includes(l.month)).map(({grade:g,area:a,lesson:l})=>({grade:g.id,area:a.id,month:l.month??a.month??'september',id:l.id,pool:tasksForLesson(l.id,l.tasks).filter(t=>!t.id.startsWith('dop-')),work:lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)),visuals:lessonVisuals(l.id)}));
- assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'58bafe12e9aea9f98100bbf37e22b403d392be31f3f434d4731565b5dcf39966');
+ assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'d4606e6b1a272bda975be0df517721daa86efccfa59695adf3c4fc228b8e6a1a');
 });
 test('glavno objašnjenje je kratko, ima jednu napomenu i čuva svaki izbor geometrijskog prikaza',()=>{
  const counts=[];let figures=0;

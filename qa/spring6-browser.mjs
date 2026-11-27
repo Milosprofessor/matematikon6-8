@@ -98,25 +98,26 @@ try {
       const first=lesson.tasks[0];
       await submit(first,"-150");
       await page.locator(".feedback.bad").waitFor();
-      await page.reload();
+      await page.locator(".storage-pending").waitFor({state:"detached"});await page.reload();
       await page.locator(".feedback.bad").waitFor();
       for(const [i, task] of lesson.tasks.slice(0,10).entries()){
         await submit(task);
         await page.getByRole("button",{name:i===9?"Pogledaj rezultat":"Sledeći zadatak",exact:true}).click();
       }
       assert.ok((await page.locator(".work-result").textContent()).includes("9/10"));
-      await page.reload();await page.locator(".work-result").waitFor();
+      await page.locator(".storage-pending").waitFor({state:"detached"});await page.reload();await page.locator(".work-result").waitFor();
       // Every new assessment is run to completion; verify persisted scoring and solutions.
       for(const check of springChecks.values()){
         await page.goto(base+"#/test/6/"+check.id);
         await page.getByRole("button",{name:"Počni proveru",exact:true}).click();
         for(const [i,task] of check.items.entries()){
-          if(i===1&&check.id==="s6-godisnja"){await page.reload();}
+          if(i===1&&check.id==="s6-godisnja"){await page.locator(".storage-pending").waitFor({state:"detached"});await page.reload();}
           await submit(task,task.answer==="56/3"?"112/6":task.answer);
           await page.getByRole("button",{name:i+1===check.items.length?"Pogledaj rezultat":"Sledeći zadatak",exact:true}).click();
         }
         await page.getByRole("heading",{name:"Rezultat: "+check.items.length+"/"+check.items.length,exact:true}).waitFor();
         assert.equal(await page.locator("details.lesson-explore").count(),check.items.length);
+        await page.locator(".storage-pending").waitFor({state:"detached"});
         const record=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)),progressKey);
         assert.equal(record.tests[check.id].last,check.items.length);
         assert.ok(record.completed.includes(lesson.id));

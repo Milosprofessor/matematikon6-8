@@ -1,0 +1,3 @@
+MONO_WASM: WebAssembly resource does not have the expected content type "application/wasm", so falling back to slower ArrayBuffer instantiation.
+Inspect result written to file: /workspace/scratch/cf54a9156317/repo/MATEMATIKON6_8_REGISTAR_GRESAKA.xlsx.inspect.ndjson
+{"kind":"sheet","id":"ws/yazf8q","name":"Registar","index":0,"range":"A1:T101","address":"A1:T101"}

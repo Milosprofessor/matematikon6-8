@@ -28,7 +28,7 @@ export const noteLayouts:Record<string,PointLayout[]>={
   p('Koji brojevi pripadaju skupu Z?','i0',{f:[0],definition:true}),
   p('Koordinata na brojnoj pravoj','i1.0 i1.1 s0'),
   p('Prethodnik i sledbenik','s1',{f:[1]}),
-  p('Suprotan broj','why',{f:[2],v:[0],note:true,text:'Suprotan broj dobijaš promenom predznaka. Suprotni brojevi su sa različitih strana nule, na jednakom rastojanju od nje.'}),
+  p('Suprotan broj','why',{f:[2],v:[0],note:true,text:'Suprotan broj dobijaš promenom predznaka. Nenulti suprotni brojevi su sa različitih strana nule, na jednakom rastojanju od nje.'}),
  ],
  'apsolutna-vrednost':[
   p('Rastojanje od nule','i0',{f:[0,1],v:[0],definition:true}),

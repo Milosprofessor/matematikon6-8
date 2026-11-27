@@ -1,0 +1,288 @@
+[
+  {
+    "id": "6-4i",
+    "question": "Odredi konačnu temperaturu. Ujutru je bilo −6 °C, a zatim je temperatura porasla za 10 °C.",
+    "independent": "4",
+    "checks": [
+      {
+        "value": "4",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "400/100",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "5",
+        "expected": false,
+        "actual": false
+      }
+    ]
+  },
+  {
+    "id": "6-11j",
+    "question": "Izračunaj konačno stanje. Početno stanje je −12. Zatim se tri puta doda 5 i jednom oduzme 4.",
+    "independent": "-1",
+    "checks": [
+      {
+        "value": "-1",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "-100/100",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "0",
+        "expected": false,
+        "actual": false
+      }
+    ]
+  },
+  {
+    "id": "6-9j",
+    "question": "Odredi prosečnu dnevnu promenu stanja. Stanje je zbog duga umanjeno ukupno za 36 dinara tokom 6 dana.",
+    "independent": "-6",
+    "checks": [
+      {
+        "value": "-6",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "-600/100",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "-5",
+        "expected": false,
+        "actual": false
+      }
+    ]
+  },
+  {
+    "id": "s6-merenje-16",
+    "question": "Paralelogram ima osnovicu 9 cm i visinu 5 cm. Pri nepromenjenoj osnovici visina poraste za 2 cm. Koliki je prirast površine u cm²? ",
+    "independent": "18",
+    "checks": [
+      {
+        "value": "18",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "1800/100",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "19",
+        "expected": false,
+        "actual": false
+      }
+    ]
+  },
+  {
+    "id": "8r-3",
+    "question": "Odredi površinu trougla. a=8 cm, h_a=5 cm",
+    "independent": "20",
+    "checks": [
+      {
+        "value": "20",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "2000/100",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "21",
+        "expected": false,
+        "actual": false
+      }
+    ]
+  },
+  {
+    "id": "o7-pp-3",
+    "question": "Odredi najveći ugao. Unutrašnji uglovi istog trougla: α:β:γ=3:4:5",
+    "independent": "75",
+    "checks": [
+      {
+        "value": "75",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "7500/100",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "76",
+        "expected": false,
+        "actual": false
+      }
+    ]
+  },
+  {
+    "id": "o7-pp-6",
+    "question": "Odredi najmanji ugao. Unutrašnji uglovi istog trougla: α:β:γ=2:3:7",
+    "independent": "30",
+    "checks": [
+      {
+        "value": "30",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "3000/100",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "31",
+        "expected": false,
+        "actual": false
+      }
+    ]
+  },
+  {
+    "id": "8-7a",
+    "question": "Odredi stvarnu dužinu u metrima. Razmera 1:200, na planu 4 cm",
+    "independent": "8",
+    "checks": [
+      {
+        "value": "8",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "800/100",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "9",
+        "expected": false,
+        "actual": false
+      }
+    ]
+  },
+  {
+    "id": "8-7d",
+    "question": "Odredi stvarnu dužinu u metrima. Razmera 1:250, na planu 6 cm",
+    "independent": "15",
+    "checks": [
+      {
+        "value": "15",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "1500/100",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "16",
+        "expected": false,
+        "actual": false
+      }
+    ]
+  },
+  {
+    "id": "8-7h",
+    "question": "Odredi dužinu na planu u centimetrima. Stvarna dužina je 24 m, razmera 1:600.",
+    "independent": "4",
+    "checks": [
+      {
+        "value": "4",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "400/100",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "5",
+        "expected": false,
+        "actual": false
+      }
+    ]
+  },
+  {
+    "id": "8-7i",
+    "question": "Odredi stvarnu visinu modela u metrima. Model je visok 18 cm u razmeri 1:50.",
+    "independent": "9",
+    "checks": [
+      {
+        "value": "9",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "900/100",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "10",
+        "expected": false,
+        "actual": false
+      }
+    ]
+  },
+  {
+    "id": "t8-10",
+    "question": "Odredi stvarnu dužinu u metrima. Razmera 1:400, na planu 7 cm",
+    "independent": "28",
+    "checks": [
+      {
+        "value": "28",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "2800/100",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "29",
+        "expected": false,
+        "actual": false
+      }
+    ]
+  },
+  {
+    "id": "t8-9",
+    "question": "Odredi visinu drveta. Štap 1,5 m, senka 2 m; senka drveta 10 m",
+    "independent": "7.5",
+    "checks": [
+      {
+        "value": "7.5",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "750/100",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "value": "8.5",
+        "expected": false,
+        "actual": false
+      }
+    ]
+  }
+]

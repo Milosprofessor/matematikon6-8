@@ -26,5 +26,5 @@ export default springLesson({
   ["Pravougaonik površine 0,24 m² ima širinu 4 dm. Koliko dm je dužina?","6","Rad u decimetrima traži dm².","0,24 m²=24 dm². Dužina je 24:4=6 dm."],
   ["Kvadrat i pravougaonik 2 cm sa 8 cm imaju jednake površine. Koliko cm ima stranica kvadrata?","4","Potraži pozitivan broj čiji je kvadrat jednak površini.","P=16 cm², a 4·4=16."],
   ["Bašta ima površinu 3 ara. Za travu treba 20 g semena po m². Koliko kg treba?","6","Ar ima sto kvadratnih metara.","300·20=6000 g, odnosno 6 kg."],
-  ["Osnovica je 9 cm i visina 5 cm. Pri nepromenjenoj osnovici visina poraste za 2 cm. Koliki je prirast površine u cm²?","18","Uporedi proizvode pre i posle.","9·7−9·5=9·2=18 cm²."]
+  ["Paralelogram ima osnovicu 9 cm i visinu 5 cm. Pri nepromenjenoj osnovici visina poraste za 2 cm. Koliki je prirast površine u cm²?","18","Uporedi proizvode pre i posle.","9·7−9·5=9·2=18 cm²."]
 ]);

@@ -20,8 +20,14 @@ function sum(x:Product,y:Product):Product|undefined{
   return {sign:signed<zero?-1:1,top:x.top*signed*signed,bottom:x.bottom*d*d,pi:x.pi};
 }
 function product(value:string):Product|undefined {
-  if(/\d\s+\d/u.test(value))return;
-  const s=value.trim().toLowerCase().replace(/\s/g,"").replace(/−/g,"-").replace(/,/g,".").replace(/pi/g,"π").replace(/sqrt/g,"√").replace(/[·×]/g,"*");
+  if(value.length>90)return;
+  const mixed=/^([+-]?)(\d+)\s+(\d+)\/(\d+)$/.exec(value.trim().replace(/−/g,"-"));
+  if(mixed){
+    const [,sign,whole,part,denominator]=mixed;
+    if(BigInt(denominator)===BigInt(0)||BigInt(part)>=BigInt(denominator))return;
+    value=(sign==="-"?"-":"")+(BigInt(whole)*BigInt(denominator)+BigInt(part))+"/"+denominator;
+  }else if(/\d\s+\d/u.test(value))return;
+  const s=value.trim().toLowerCase().replace(/\s/g,"").replace(/−/g,"-").replace(/²/g,"^2").replace(/³/g,"^3").replace(/,/g,".").replace(/pi/g,"π").replace(/sqrt/g,"√").replace(/[·×]/g,"*");
   if(!s || s.length>90)return;
   let index=0;
   function expression():Product|undefined{
@@ -58,6 +64,15 @@ function product(value:string):Product|undefined {
         const denominator=BigInt(10)**BigInt(number.split(".")[1]?.length??0);
         const numerator=BigInt(number.replace(".",""));
         factor={sign,top:root?numerator:numerator**BigInt(2),bottom:root?denominator:denominator**BigInt(2),pi:0};
+      }
+      if(s[index]==="^"){
+        index++;
+        const power=/^\d{1,2}/.exec(s.slice(index))?.[0];
+        if(!power||Number(power)>10)return;
+        index+=power.length;
+        const exponent=BigInt(power);
+        if(factor.top===BigInt(0)&&exponent===BigInt(0))return;
+        factor={sign:sign*(Number(power)%2?factor.sign*sign:1),top:factor.top**exponent,bottom:factor.bottom**exponent,pi:factor.pi*Number(power)};
       }
       if(divide&&factor.top===BigInt(0))return;
       current={sign:current.sign*factor.sign,top:current.top*(divide?factor.bottom:factor.top),

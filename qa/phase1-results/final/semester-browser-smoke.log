@@ -1,0 +1,42 @@
+PASS Android 360x800 — kalendar po razredu
+PASS Android 360x800 — 6. november / q-zapisi
+PASS Android 360x800 — 6. december / q-deljenje-izrazi
+PASS Android 360x800 — 7. november / pitagora-obrat
+PASS Android 360x800 — 7. december / stepen-proizvoda
+PASS Android 360x800 — 8. november / svodjenje-jednacina
+PASS Android 360x800 — 8. december / prizma-zapremina
+PASS Android 360x800 — nema neuhvaćenih JavaScript grešaka
+PASS desktop 1366x768 — kalendar po razredu
+PASS desktop 1366x768 — 6. november / q-zapisi
+PASS desktop 1366x768 — 6. december / q-deljenje-izrazi
+PASS desktop 1366x768 — 7. november / pitagora-obrat
+PASS desktop 1366x768 — 7. december / stepen-proizvoda
+PASS desktop 1366x768 — 8. november / svodjenje-jednacina
+PASS desktop 1366x768 — 8. december / prizma-zapremina
+PASS desktop 1366x768 — nema neuhvaćenih JavaScript grešaka
+PASS 6. razred — deset zadataka, pogrešni odgovori, pomoć, osvežavanje i napredak
+{
+  "total": 17,
+  "passed": 17,
+  "failed": 0,
+  "results": [
+    "PASS Android 360x800 — kalendar po razredu",
+    "PASS Android 360x800 — 6. november / q-zapisi",
+    "PASS Android 360x800 — 6. december / q-deljenje-izrazi",
+    "PASS Android 360x800 — 7. november / pitagora-obrat",
+    "PASS Android 360x800 — 7. december / stepen-proizvoda",
+    "PASS Android 360x800 — 8. november / svodjenje-jednacina",
+    "PASS Android 360x800 — 8. december / prizma-zapremina",
+    "PASS Android 360x800 — nema neuhvaćenih JavaScript grešaka",
+    "PASS desktop 1366x768 — kalendar po razredu",
+    "PASS desktop 1366x768 — 6. november / q-zapisi",
+    "PASS desktop 1366x768 — 6. december / q-deljenje-izrazi",
+    "PASS desktop 1366x768 — 7. november / pitagora-obrat",
+    "PASS desktop 1366x768 — 7. december / stepen-proizvoda",
+    "PASS desktop 1366x768 — 8. november / svodjenje-jednacina",
+    "PASS desktop 1366x768 — 8. december / prizma-zapremina",
+    "PASS desktop 1366x768 — nema neuhvaćenih JavaScript grešaka",
+    "PASS 6. razred — deset zadataka, pogrešni odgovori, pomoć, osvežavanje i napredak"
+  ],
+  "failures": []
+}

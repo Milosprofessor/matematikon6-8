@@ -1,0 +1,45 @@
+{
+  "refresh": true,
+  "restart": true,
+  "twoTabs": {
+    "before": [
+      "apsolutna-vrednost",
+      "sabiranje"
+    ],
+    "after": [
+      "apsolutna-vrednost"
+    ],
+    "lost": [
+      "sabiranje"
+    ]
+  },
+  "afterGradeChange": true,
+  "examActive": {
+    "timer": "Preostalo vreme 120 min 0 s",
+    "hints": 0
+  },
+  "examRestart": 1,
+  "expiry": "Rezultat 1 / 20",
+  "corrupt": "apsolutna-vrednost",
+  "blockedRead": {
+    "headings": [],
+    "errors": [
+      "Blocked"
+    ],
+    "body": ""
+  },
+  "quota": {
+    "headings": [],
+    "errors": [
+      "Full"
+    ],
+    "body": ""
+  },
+  "wrongShape": {
+    "headings": [],
+    "errors": [
+      "Cannot read properties of null (reading 'lessonId')"
+    ],
+    "body": ""
+  }
+}

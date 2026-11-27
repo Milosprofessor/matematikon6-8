@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { ArrowLeft, ArrowRight, BookOpen, Brain, Check, ChevronRight, GraduationCap, Lightbulb, Menu, Presentation, RotateCcw, Target, Trophy, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -28,6 +28,8 @@ import { PreciseDiagram } from "./math-diagrams";
 import { PythagorasDiagram } from "./pythagoras-diagram";
 import { adaptiveMessage, appendKnowledgeAttempt, areaMastery, AttemptSource, KnowledgeAttempt, knowledgeRecommendation, lessonMastery, MasteryBand, recommendedLevel, skillMasteries } from "./knowledge";
 import { pickAdaptiveTask, practiceAreas, practiceGroupKey, practiceLessons, SessionResult, sessionPool, SessionTask, unlockedPracticeLessonIds, withTaskMetadata } from "./practice-engine";
+
+import {readStored,writeStored,warnStorage,subscribeStorage,storageWarning,storagePending,beginStorageWrite,endStorageWrite} from "./storage";
 
 type Route = { kind:"home" } | {kind:"grade"; gradeId:GradeId} | {kind:"area"; gradeId:GradeId; areaId:string; month?:Month} | {kind:"lesson";gradeId:GradeId;areaId:string;lessonId:string} | {kind:"smart";gradeId:GradeId;areaId:string} | {kind:"focus";gradeId:GradeId;lessonId:string;skill?:string} | {kind:"test";gradeId:GradeId;areaId:string};
 type TestScore={best:number;last:number;total?:number};
@@ -66,15 +68,70 @@ function routeHash(r:Route){
   return `#/test/${r.gradeId}/${r.areaId}`;
 }
 
+function readProgress(key:string):GradeProgress{
+ const raw=readStored(key);
+ if(!raw)return {...emptyProgress};
+ try{
+  const parsed=JSON.parse(raw);
+  if(!parsed||typeof parsed!=="object"||Array.isArray(parsed))throw Error();
+  const strings=(v:unknown)=>Array.isArray(v)?v.filter((x):x is string=>typeof x==="string"):[];
+  const attempts=Array.isArray(parsed.knowledgeAttempts)?parsed.knowledgeAttempts.filter((x:unknown)=>{
+   if(!x||typeof x!=="object")return false;
+   const a=x as Partial<KnowledgeAttempt>;
+   return typeof a.lessonId==="string"&&typeof a.taskId==="string"&&typeof a.skill==="string"&&Number.isFinite(a.at)&&typeof a.firstCorrect==="boolean";
+  }):[];
+  if(attempts.length!==(parsed.knowledgeAttempts?.length??0))warnStorage("Neki istorijski zapisi su nevažeći. Izvorna kopija je zadržana u skladištu.");
+  return {...emptyProgress,...parsed,completed:strings(parsed.completed),recentTaskIds:strings(parsed.recentTaskIds),
+   lastLesson:typeof parsed.lastLesson==="string"?parsed.lastLesson:null,
+   weak:parsed.weak&&typeof parsed.weak==="object"?parsed.weak:{},tests:parsed.tests&&typeof parsed.tests==="object"?parsed.tests:{},
+   knowledgeAttempts:attempts,recommendationCursor:Number.isFinite(parsed.recommendationCursor)?parsed.recommendationCursor:0,practiceByArea:normalizePracticeByArea(parsed.practiceByArea),lessonWork:normalizeLessonWork(parsed.lessonWork)};
+ }catch{warnStorage("Sačuvani podaci nisu čitljivi. Izvorni zapis nije zamenjen.");return {...emptyProgress}}
+}
+function StorageNotice(){
+ const message=useSyncExternalStore(subscribeStorage,storageWarning,()=>"");
+ const writing=useSyncExternalStore(subscribeStorage,storagePending,()=>0);
+ if(writing)return <p role="status" className="content-card storage-pending">Čuvanje napretka…</p>;
+ return message?<p role="alert" className="content-card">{message}</p>:null;
+}
 function useGradeProgress(gradeId:GradeId){
-  const key=`matematikon68-progress-v1-${gradeId}`;
-  const [progress,setProgress]=useState<GradeProgress>(emptyProgress);
-  const [loaded,setLoaded]=useState(false);
-  // Reading saved progress after hydration keeps the server and first client render identical.
+ const key=`matematikon68-progress-v1-${gradeId}`;
+ const [progress,setProgress]=useState<GradeProgress>(emptyProgress);
+ const current=useRef(progress);
+ const [loaded,setLoaded]=useState(false);
+ const revision=useRef(0);
+ const pending=useRef(0);
+ useEffect(()=>{
+  const refresh=()=>{const next=readProgress(key);current.current=next;setProgress(next)};
+  // Loading persisted state after hydration is required for SSR parity.
   // eslint-disable-next-line react-hooks/set-state-in-effect
-  useEffect(()=>{try{const raw=localStorage.getItem(key);const parsed=raw?JSON.parse(raw):{};setProgress({...emptyProgress,...parsed,completed:Array.isArray(parsed.completed)?parsed.completed:[],recentTaskIds:Array.isArray(parsed.recentTaskIds)?parsed.recentTaskIds:[],weak:parsed.weak??{},tests:parsed.tests??{},knowledgeAttempts:Array.isArray(parsed.knowledgeAttempts)?parsed.knowledgeAttempts:[],recommendationCursor:Number.isFinite(parsed.recommendationCursor)?parsed.recommendationCursor:0,practiceByArea:normalizePracticeByArea(parsed.practiceByArea),lessonWork:normalizeLessonWork(parsed.lessonWork)})}catch{setProgress(emptyProgress)}finally{setLoaded(true)}},[key]);
-  const save=useCallback((update:GradeProgress|((previous:GradeProgress)=>GradeProgress))=>{setProgress(previous=>{const next=typeof update==="function"?update(previous):update;localStorage.setItem(key,JSON.stringify(next));return next})},[key]);
-  return [progress,save,loaded] as const;
+  refresh();setLoaded(true);
+  const onStorage=(e:StorageEvent)=>{if(e.key===key&&pending.current===0)refresh()};
+  window.addEventListener("storage",onStorage);
+  return ()=>window.removeEventListener("storage",onStorage);
+ },[key]);
+ const save=useCallback((update:GradeProgress|((previous:GradeProgress)=>GradeProgress))=>{
+  const before=current.current;
+  const serial=++revision.current;
+  const optimistic=typeof update==="function"?update(before):update;
+  current.current=optimistic;setProgress(optimistic);
+  pending.current++;beginStorageWrite();
+  const apply=(persist=true)=>{
+   const raw=readStored(key);
+   try{if(raw)JSON.parse(raw)}catch{warnStorage("Nečitljiv napredak je zadržan. Novi rad ostaje u otvorenoj kartici.");persist=false}
+   const previous=persist?(raw?readProgress(key):emptyProgress):before;
+   if(persist&&raw&&JSON.stringify(previous)!==raw){
+    // Preserve an exact source copy before any normalization or schema repair.
+    const backup=key+"-recovery-"+Date.now();
+    if(!writeStored(backup,raw)){warnStorage("Izvorni podaci nisu bezbedno kopirani. Čuvanje je odloženo.");persist=false}
+   }
+   const next=typeof update==="function"?update(previous):update;
+   if(serial===revision.current){current.current=next;setProgress(next)}
+   if(persist)writeStored(key,JSON.stringify(next));
+  };
+  if(navigator.locks)void navigator.locks.request(key,()=>apply()).catch(()=>warnStorage("Čuvanje nije uspelo. Rad ostaje u ovoj kartici.")).finally(()=>{pending.current--;endStorageWrite()});
+  else {apply(false);pending.current--;endStorageWrite();warnStorage("Ovaj pregledač ne podržava bezbedno čuvanje u više kartica. Novi rad ostaje samo u ovoj kartici.")}
+ },[key]);
+ return [progress,save,loaded] as const;
 }
 
 function Logo({go}:{go:(r:Route)=>void}){return <button data-no-transliterate className="brand" onClick={()=>go({kind:"home"})}><span>∑</span><b>Matematik<span>ON</span></b><small>6–8</small></button>}
@@ -82,10 +139,10 @@ function Logo({go}:{go:(r:Route)=>void}){return <button data-no-transliterate cl
 function Header({route,go,script,setScript}:{route:Route;go:(r:Route)=>void;script:ScriptChoice;setScript:(s:ScriptChoice)=>void}){
   const [open,setOpen]=useState(false);
   const item=(label:string,r:Route,active:boolean)=><button key={label} className={active?"active":""} onClick={()=>{go(r);setOpen(false)}}>{label}</button>;
-  return <header className="site-header"><div className="nav-wrap"><Logo go={go}/><nav className={open?"open":""} aria-label="Glavna navigacija">
+  return <><StorageNotice/><header className="site-header"><div className="nav-wrap"><Logo go={go}/><nav className={open?"open":""} aria-label="Glavna navigacija">
     {item("Početna",{kind:"home"},route.kind==="home")}
     {[6,7,8].map(id=>item(`${id}. razred`,{kind:"grade",gradeId:id as GradeId},"gradeId" in route&&route.gradeId===id))}
-  </nav><button className="menu-toggle" aria-label={open?"Zatvori meni":"Otvori meni"} onClick={()=>setOpen(v=>!v)}>{open?<X/>:<Menu/>}</button><div data-no-transliterate className="script-switch" aria-label="Избор писма"><button className={script==="cyrl"?"active":""} onClick={()=>setScript("cyrl")} aria-pressed={script==="cyrl"}>Ћир</button><span>|</span><button className={script==="latn"?"active":""} onClick={()=>setScript("latn")} aria-pressed={script==="latn"}>Lat</button></div></div></header>
+  </nav><button className="menu-toggle" aria-label={open?"Zatvori meni":"Otvori meni"} onClick={()=>setOpen(v=>!v)}>{open?<X/>:<Menu/>}</button><div data-no-transliterate className="script-switch" aria-label="Избор писма"><button className={script==="cyrl"?"active":""} onClick={()=>setScript("cyrl")} aria-pressed={script==="cyrl"}>Ћир</button><span>|</span><button className={script==="latn"?"active":""} onClick={()=>setScript("latn")} aria-pressed={script==="latn"}>Lat</button></div></div></header></>
 }
 
 function HomePage({go}:{go:(r:Route)=>void}){return <main>
@@ -207,6 +264,7 @@ function TaskCard({task,onDone,number,total,snapshot,onSnapshot}:{task:Task;onDo
 }
 
 function LessonWorkSequence({lesson,tasks,progress,save,loaded}:{lesson:Lesson;tasks:Task[];progress:GradeProgress;save:(update:(previous:GradeProgress)=>GradeProgress)=>void;loaded:boolean}){
+ const writing=useSyncExternalStore(subscribeStorage,storagePending,()=>0);
   const ids=tasks.map(task=>task.id);const work=resumeLessonWork(lesson.id,tasks,progress.knowledgeAttempts,progress.lessonWork[lesson.id]);const at=Math.min(work.current,tasks.length);const totals=workTotals(work,ids);
   const move=(current:number)=>save(previous=>({...previous,lessonWork:{...previous.lessonWork,[lesson.id]:{...resumeLessonWork(lesson.id,tasks,previous.knowledgeAttempts,previous.lessonWork[lesson.id]),taskIds:ids,current}}}));
   const snapshot=(task:Task,next:TaskSnapshot)=>save(previous=>{
@@ -216,7 +274,7 @@ function LessonWorkSequence({lesson,tasks,progress,save,loaded}:{lesson:Lesson;t
   });
   if(!loaded)return <div className="content-card">Učitavanje sačuvanog rada…</div>;
   return <div className="lesson-work"><div className="work-progress"><span>Rešeno: {totals.final}/{totals.total}</span><Progress value={totals.final/totals.total*100}/></div>
-    {at<tasks.length?<><TaskCard key={tasks[at].id} task={tasks[at]} number={at+1} total={tasks.length} snapshot={work.tasks[tasks[at].id]??emptyTask()} onSnapshot={next=>snapshot(tasks[at],next)} onDone={()=>{}}/><div className="work-navigation"><Button variant="outline" disabled={at===0} onClick={()=>move(at-1)}><ArrowLeft/>Prethodni zadatak</Button><Button disabled={!work.tasks[tasks[at].id]?.result} onClick={()=>move(at+1)}>{at===tasks.length-1?"Pogledaj rezultat":"Sledeći zadatak"}<ArrowRight/></Button></div></>:<div className="content-card work-result"><Check/><h2>Odlično, završio si rad!</h2><p>Iz prvog pokušaja: <strong>{totals.first}/{totals.total}</strong></p><p>Konačno rešeno: <strong>{totals.final}/{totals.total}</strong></p><p>Napredak je sačuvan. Preporuku za vežbanje pogledaj u „Moje znanje“.</p><Button variant="outline" onClick={()=>move(0)}>Pregledaj odgovore</Button><Button onClick={()=>save(previous=>({...previous,lessonWork:{...previous.lessonWork,[lesson.id]:emptyLessonWork(ids,(previous.lessonWork[lesson.id]?.run??0)+1)}}))}><RotateCcw/>Pokušaj ponovo</Button></div>}
+    {at<tasks.length?<><TaskCard key={tasks[at].id} task={tasks[at]} number={at+1} total={tasks.length} snapshot={work.tasks[tasks[at].id]??emptyTask()} onSnapshot={next=>snapshot(tasks[at],next)} onDone={()=>{}}/><div className="work-navigation"><Button variant="outline" disabled={at===0} onClick={()=>move(at-1)}><ArrowLeft/>Prethodni zadatak</Button><Button disabled={!work.tasks[tasks[at].id]?.result} onClick={()=>move(at+1)}>{at===tasks.length-1?"Pogledaj rezultat":"Sledeći zadatak"}<ArrowRight/></Button></div></>:writing?<p role="status">Čuvanje rezultata…</p>:<div className="content-card work-result"><Check/><h2>Odlično, završio si rad!</h2><p>Iz prvog pokušaja: <strong>{totals.first}/{totals.total}</strong></p><p>Konačno rešeno: <strong>{totals.final}/{totals.total}</strong></p><p>Preporuku za vežbanje pogledaj u „Moje znanje“.</p><Button variant="outline" onClick={()=>move(0)}>Pregledaj odgovore</Button><Button onClick={()=>save(previous=>({...previous,lessonWork:{...previous.lessonWork,[lesson.id]:emptyLessonWork(ids,(previous.lessonWork[lesson.id]?.run??0)+1)}}))}><RotateCcw/>Pokušaj ponovo</Button></div>}
   </div>;
 }
 

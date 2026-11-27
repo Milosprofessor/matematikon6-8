@@ -1,4 +1,5 @@
 "use client";
+import {readStored,writeStored} from "./storage";
 import { useEffect, useState, type ComponentType } from "react";
 import { EighthFigure } from "./eighth-figures";
 import { examSets } from "./content/spring8/exams";
@@ -26,7 +27,7 @@ const extras:Record<string,Extra>={
 };
 type Session={mode:"rad"|"ispit";end:number;done:boolean;answers:Record<string,string>};
 function readSession(key:string):Session|null{
-  try{const s=JSON.parse(localStorage.getItem(key)||"null");
+  try{const s=JSON.parse(readStored(key)||"null");
     if(!s||!["rad","ispit"].includes(s.mode)||!Number.isFinite(s.end)||typeof s.answers!=="object"||s.answers===null)return null;
     return {...s,done:s.done===true||(s.mode==="ispit"&&s.end<=Date.now())};
   }catch{return null;}
@@ -53,7 +54,7 @@ export function ExamPage({id,MathText}:{id:string;MathText:MathView}){
   const [session,setSession]=useState(()=>readSession(key));
   const [now,setNow]=useState(Date.now);
   const [confirm,setConfirm]=useState(false);
-  useEffect(()=>{if(session)localStorage.setItem(key,JSON.stringify(session));},[key,session]);
+  useEffect(()=>{if(session)writeStored(key,JSON.stringify(session));},[key,session]);
   const deadline=session?.mode==="ispit"&&!session.done?session.end:0;
   useEffect(()=>{
     if(!deadline)return;

@@ -105,7 +105,7 @@ try {
       }
       await page.getByRole("button",{name:i===9?"Pogledaj rezultat":"Sledeći zadatak"}).click();
       if(i===4){
-        await page.reload({waitUntil:"domcontentloaded"});
+        await page.locator(".storage-pending").waitFor({state:"detached"});await page.reload({waitUntil:"domcontentloaded"});
         await waitFor(".october-work-aside .task-card");
         assert.equal(await page.locator(".october-work-aside .task-card").getAttribute("data-task-id"),"q-zapisi-6");
       }
@@ -115,7 +115,7 @@ try {
     assert.ok(stored.completed.includes("q-zapisi"));
     assert.equal(stored.lessonWork["q-zapisi"].current,10);
     assert.ok(stored.lessonWork["q-zapisi"].tasks["q-zapisi-2"].attempts>=2);
-    await page.reload({waitUntil:"domcontentloaded"});
+    await page.locator(".storage-pending").waitFor({state:"detached"});await page.reload({waitUntil:"domcontentloaded"});
     await waitFor(".work-result");
     assert.equal(await page.locator(".work-result").count(),1);
   });
