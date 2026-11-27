@@ -315,14 +315,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "c=10 cm, a=8 cm | b²=100−64=36, pa je b=6 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-012; Katete su a i b, hipotenuza c. a²+b²=c². 8²+b²=10²; 64+b²=100; b²=100−64=36. Pošto je b>0, b=6 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: o7-ns-1); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-013",
@@ -339,14 +340,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Traži se kateta a. | Prebacivanjem dobijamo a²=c²−b².",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-013; a²+b²=c². Oduzmi b² sa obe strane: a²=c²−b²."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: o7-ns-2); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-014",
@@ -363,14 +365,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "c=25 cm, b=24 cm | a²=625−576=49, pa je a=7 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-014; a²+b²=c². a²+24²=25²; a²+576=625; a²=49. Pozitivna kateta a=7 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: o7-ns-4); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-015",
@@ -387,14 +390,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "c=13 cm, a=5 cm | b=12, pa je P=5·12/2=30 cm².",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-015; a²+b²=c². 5²+b²=13²; 25+b²=169; b²=144; b=12 cm jer je pozitivna. P=5·12/2=30 cm²."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: o7-ns-6); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-016",
@@ -411,14 +415,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "b²=15²−9²=144, pa je b=144. | b=√144=12.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-016; a²+b²=c². 9²+b²=15²; 81+b²=225; b²=144. Pozitivna kateta b=12."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: o7-ns-7); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-017",
@@ -435,14 +440,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "c=17 cm, a=15 cm | b²=289−225=64, pa je b=8 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-017; a²+b²=c². 15²+b²=17²; 225+b²=289; b²=64; b=8 cm jer je pozitivna."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ot7p-3); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-018",
@@ -459,14 +465,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-pravougaonik-kvadrat",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "d=17 cm, a=8 cm | b²=289−64=225, b=15, pa je O=2·(8+15)=46 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-018; a²+b²=d². 8²+b²=17²; 64+b²=289; b²=225. Pozitivna dužina b=15 cm. O=2·(8+15)=46 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: o7-pk-3); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-019",
@@ -483,14 +490,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-pravougaonik-kvadrat",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "d=10√2 cm | a=10 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-019; a²+a²=d². 2a²=(10√2)²=200; a²=100; a=10 cm jer je pozitivna."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: o7-pk-4); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-020",
@@ -507,14 +515,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-pravougaonik-kvadrat",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "d=25 cm, a=15 cm | b²=625−225=400, pa je b=20 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-020; a²+b²=d². 15²+b²=25²; 225+b²=625; b²=400. Pozitivna stranica b=20 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: o7-pk-6); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-021",
@@ -531,14 +540,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-pravougaonik-kvadrat",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Kvadrat ima dijagonalu 8√2 m. | a=8 m, O=32 m, pa je 50 m dovoljno.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-021; a²+a²=d². 2a²=(8√2)²=128; a²=64; a=8 m jer je pozitivna. O=32 m, pa je 50 m dovoljno."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: o7-pk-7); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-022",
@@ -555,14 +565,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-jednakokraki",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "s=13 cm, a=10 cm | h²=169−25=144, pa je h=12 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-022; Katete su h i a/2, hipotenuza s. h²+(a/2)²=s²; h²+5²=13²; h²+25=169; h²=144. h=12 cm jer je pozitivna."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: o7-jk-1); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-023",
@@ -579,14 +590,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-jednakokraki",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "a=8 cm | h=8√3/2=4√3 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-023; h²+(a/2)²=a². h²+4²=8²; h²+16=64; h²=48. Pozitivna visina h=4√3 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: o7-jk-2); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-024",
@@ -603,14 +615,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-jednakokraki",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "s=17 cm, h=15 cm | (a/2)²=289−225=64, a/2=8, pa je a=16 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-024; (a/2)²+h²=s². (a/2)²+15²=17²; (a/2)²+225=289; (a/2)²=64. Pozitivna polovina je 8 cm, pa je a=16 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: o7-jk-3); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-025",
@@ -627,14 +640,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-jednakokraki",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "s=10 cm, h=8 cm | a=12 cm, pa je O=10+10+12=32 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-025; (a/2)²+h²=s². (a/2)²+8²=10²; (a/2)²+64=100; (a/2)²=36. Pozitivna polovina je 6 cm, a=12 cm. O=10+10+12=32 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: o7-jk-7); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-026",
@@ -651,14 +665,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-romb",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "a=13 cm, d_1=10 cm | (d₂/2)²=169−25=144, d₂/2=12, pa je d₂=24 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-026; (d₁/2)²+(d₂/2)²=a². 5²+(d₂/2)²=13²; 25+(d₂/2)²=169; (d₂/2)²=144. Pozitivna polovina je 12 cm, d₂=24 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: o7-ro-3); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-027",
@@ -675,14 +690,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-romb",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "a=17 cm, d_2=30 cm | (d₁/2)²=289−225=64, pa je d₁=16 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-027; (d₁/2)²+(d₂/2)²=a². (d₁/2)²+15²=17²; (d₁/2)²+225=289; (d₁/2)²=64. Pozitivna polovina je 8 cm, pa je d₁=16 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: o7-ro-7); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-028",
@@ -699,14 +715,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-trapez",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "c=13 cm, a−b=5 cm | h²=169−25=144, pa je h=12 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-028; h²+(a−b)²=c². h²+5²=13²; h²+25=169; h²=144. Pozitivna visina h=12 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: o7-tr-4); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-029",
@@ -723,14 +740,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-trapez",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "a=18 cm, b=8 cm, c=26 cm | h²=26²−10²=576, h=24; P=(18+8)·24/2=312 cm².",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-029; h²+(a−b)²=c². h²+10²=26²; h²+100=676; h²=576; h=24 cm jer je pozitivna. P=(18+8)·24/2=312 cm²."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: o7-tr-6); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-030",
@@ -747,14 +765,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-jednakokraki",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "a=10 cm | h²=10²−5²=75, pa je h=5√3 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-030; h²+(a/2)²=a². h²+5²=10²; h²+25=100; h²=75; h=5√3 cm jer je pozitivna."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ot7p-5); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-031",
@@ -771,14 +790,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-obrat",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": " | 841−400=441=21².",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-031; a²+b²=c². 20²+b²=29²; 400+b²=841; b²=441; pozitivna kateta b=21."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: pitagora-obrat-14); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-032",
@@ -795,14 +815,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Hipotenuza c, kateta a | b²=c²−a², pa je b=[[sqrt:c^2−a^2]].",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-032; a²+b²=c². Oduzmi a² sa obe strane: b²=c²−a². Kako je b>0, b=[[sqrt:c^2−a^2]]."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-leg-identify-0); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-033",
@@ -819,14 +840,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "c=5, a=3; nepoznata je b. | b=[[sqrt:16]]=4, pa je a<b.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-033; a²+b²=c². 3²+b²=5²; 9+b²=25; b²=16. Pozitivna kateta b=4, pa je a<b."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-leg-compare-0); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-034",
@@ -843,14 +865,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "c=13, a=5; nepoznata je b. | b=[[sqrt:144]]=12, pa je a<b.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-034; a²+b²=c². 5²+b²=13²; 25+b²=169; b²=144. Pozitivna kateta b=12, pa je a<b."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-leg-compare-1); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-035",
@@ -867,14 +890,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "c=17, a=8; nepoznata je b. | b=[[sqrt:225]]=15, pa je a<b.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-035; a²+b²=c². 8²+b²=17²; 64+b²=289; b²=225. Pozitivna kateta b=15, pa je a<b."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-leg-compare-2); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-036",
@@ -891,14 +915,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "c=25, a=7; nepoznata je b. | b=[[sqrt:576]]=24, pa je a<b.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-036; a²+b²=c². 7²+b²=25²; 49+b²=625; b²=576. Pozitivna kateta b=24, pa je a<b."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-leg-compare-3); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-037",
@@ -915,14 +940,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "c=15, a=9; nepoznata je b. | b=[[sqrt:144]]=12, pa je a<b.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-037; a²+b²=c². 9²+b²=15²; 81+b²=225; b²=144. Pozitivna kateta b=12, pa je a<b."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-leg-compare-4); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-038",
@@ -939,14 +965,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "c=20, a=12; nepoznata je b. | b=[[sqrt:256]]=16, pa je a<b.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-038; a²+b²=c². 12²+b²=20²; 144+b²=400; b²=256. Pozitivna kateta b=16, pa je a<b."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-leg-compare-5); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-039",
@@ -963,14 +990,19 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Merdevine su 5 m. Vrh je na visini 4 m; zid je normalan na tlo. | Udaljenost je [[sqrt:5^2−4^2]]=3 m.",
-    "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
-    "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-039; Katete su udaljenost x i visina, hipotenuza su merdevine. x²+4²=5². x²+16=25; x²=9. Pozitivna udaljenost x=3 m."
+    "fix_commit": "8e122bc75afab17ad5e9708971efd79146ebb066",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
+    "changed_files": [
+      "app/content/october-work.ts",
+      "app/content/task-visuals.ts"
+    ],
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-leg-ladder-0); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md; ispravljen dijagram i opšta relacija merdevina.",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066",
+    "previous_fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2"
   },
   {
     "id": "G7-040",
@@ -987,14 +1019,19 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Merdevine su 13 m. Vrh je na visini 12 m; zid je normalan na tlo. | Udaljenost je [[sqrt:13^2−12^2]]=5 m.",
-    "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
-    "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-040; Katete su udaljenost x i visina, hipotenuza su merdevine. x²+12²=13². x²+144=169; x²=25. Pozitivna udaljenost x=5 m."
+    "fix_commit": "8e122bc75afab17ad5e9708971efd79146ebb066",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
+    "changed_files": [
+      "app/content/october-work.ts",
+      "app/content/task-visuals.ts"
+    ],
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-leg-ladder-1); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md; ispravljen dijagram i opšta relacija merdevina.",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066",
+    "previous_fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2"
   },
   {
     "id": "G7-041",
@@ -1011,14 +1048,19 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Merdevine su 17 m. Vrh je na visini 15 m; zid je normalan na tlo. | Udaljenost je [[sqrt:17^2−15^2]]=8 m.",
-    "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
-    "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-041; Katete su udaljenost x i visina, hipotenuza su merdevine. x²+15²=17². x²+225=289; x²=64. Pozitivna udaljenost x=8 m."
+    "fix_commit": "8e122bc75afab17ad5e9708971efd79146ebb066",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
+    "changed_files": [
+      "app/content/october-work.ts",
+      "app/content/task-visuals.ts"
+    ],
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-leg-ladder-2); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md; ispravljen dijagram i opšta relacija merdevina.",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066",
+    "previous_fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2"
   },
   {
     "id": "G7-042",
@@ -1035,14 +1077,19 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Merdevine su 25 m. Vrh je na visini 24 m; zid je normalan na tlo. | Udaljenost je [[sqrt:25^2−24^2]]=7 m.",
-    "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
-    "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-042; Katete su udaljenost x i visina, hipotenuza su merdevine. x²+24²=25². x²+576=625; x²=49. Pozitivna udaljenost x=7 m."
+    "fix_commit": "8e122bc75afab17ad5e9708971efd79146ebb066",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
+    "changed_files": [
+      "app/content/october-work.ts",
+      "app/content/task-visuals.ts"
+    ],
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-leg-ladder-3); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md; ispravljen dijagram i opšta relacija merdevina.",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066",
+    "previous_fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2"
   },
   {
     "id": "G7-043",
@@ -1059,14 +1106,19 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Merdevine su 15 m. Vrh je na visini 12 m; zid je normalan na tlo. | Udaljenost je [[sqrt:15^2−12^2]]=9 m.",
-    "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
-    "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-043; Katete su udaljenost x i visina, hipotenuza su merdevine. x²+12²=15². x²+144=225; x²=81. Pozitivna udaljenost x=9 m."
+    "fix_commit": "8e122bc75afab17ad5e9708971efd79146ebb066",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
+    "changed_files": [
+      "app/content/october-work.ts",
+      "app/content/task-visuals.ts"
+    ],
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-leg-ladder-4); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md; ispravljen dijagram i opšta relacija merdevina.",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066",
+    "previous_fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2"
   },
   {
     "id": "G7-044",
@@ -1083,14 +1135,19 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/nepoznata-stranica-pravougli",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Merdevine su 20 m. Vrh je na visini 16 m; zid je normalan na tlo. | Udaljenost je [[sqrt:20^2−16^2]]=12 m.",
-    "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
-    "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-044; Katete su udaljenost x i visina, hipotenuza su merdevine. x²+16²=20². x²+256=400; x²=144. Pozitivna udaljenost x=12 m."
+    "fix_commit": "8e122bc75afab17ad5e9708971efd79146ebb066",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
+    "changed_files": [
+      "app/content/october-work.ts",
+      "app/content/task-visuals.ts"
+    ],
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-leg-ladder-5); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md; ispravljen dijagram i opšta relacija merdevina.",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066",
+    "previous_fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2"
   },
   {
     "id": "G7-045",
@@ -1107,14 +1164,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-trapez",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Jednakokraki trapez: b=6 cm, h=4 cm, c=5 cm | Polovina razlike je 3 cm. Zato a=6+2·3=12 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-045; Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+4²=5²; x²+16=25; x²=9. Pozitivna dužina x=3 cm. Zato a=6+2·3=12 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-trap-reverse-0); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-046",
@@ -1131,14 +1189,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-trapez",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Jednakokraki trapez: b=12 cm, h=8 cm, c=10 cm | Polovina razlike je 6 cm. Zato a=12+2·6=24 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-046; Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+8²=10²; x²+64=100; x²=36. Pozitivna dužina x=6 cm. Zato a=12+2·6=24 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-trap-reverse-1); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-047",
@@ -1155,14 +1214,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-trapez",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Jednakokraki trapez: b=18 cm, h=12 cm, c=15 cm | Polovina razlike je 9 cm. Zato a=18+2·9=36 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-047; Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+12²=15²; x²+144=225; x²=81. Pozitivna dužina x=9 cm. Zato a=18+2·9=36 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-trap-reverse-2); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-048",
@@ -1179,14 +1239,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-trapez",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Jednakokraki trapez: b=24 cm, h=16 cm, c=20 cm | Polovina razlike je 12 cm. Zato a=24+2·12=48 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-048; Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+16²=20²; x²+256=400; x²=144. Pozitivna dužina x=12 cm. Zato a=24+2·12=48 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-trap-reverse-3); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-049",
@@ -1203,14 +1264,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-trapez",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Jednakokraki trapez: b=30 cm, h=20 cm, c=25 cm | Polovina razlike je 15 cm. Zato a=30+2·15=60 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-049; Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+20²=25²; x²+400=625; x²=225. Pozitivna dužina x=15 cm. Zato a=30+2·15=60 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-trap-reverse-4); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-050",
@@ -1227,14 +1289,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-trapez",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Jednakokraki trapez: b=36 cm, h=24 cm, c=30 cm | Polovina razlike je 18 cm. Zato a=36+2·18=72 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-050; Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+24²=30²; x²+576=900; x²=324. Pozitivna dužina x=18 cm. Zato a=36+2·18=72 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-trap-reverse-5); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-051",
@@ -1251,14 +1314,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-cetvorougao",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "∠ACD=90°, AD=5 cm, AC=3 cm | CD²=5²−3²=16, pa je CD=4 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-051; AC²+CD²=AD². 3²+CD²=5²; 9+CD²=25; CD²=16. Pozitivna dužina CD=4 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-quad-reverse-0); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-052",
@@ -1275,14 +1339,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-cetvorougao",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "∠ACD=90°, AD=13 cm, AC=5 cm | CD²=13²−5²=144, pa je CD=12 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-052; AC²+CD²=AD². 5²+CD²=13²; 25+CD²=169; CD²=144. Pozitivna dužina CD=12 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-quad-reverse-1); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-053",
@@ -1299,14 +1364,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-cetvorougao",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "∠ACD=90°, AD=17 cm, AC=8 cm | CD²=17²−8²=225, pa je CD=15 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-053; AC²+CD²=AD². 8²+CD²=17²; 64+CD²=289; CD²=225. Pozitivna dužina CD=15 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-quad-reverse-2); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-054",
@@ -1323,14 +1389,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-cetvorougao",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "∠ACD=90°, AD=25 cm, AC=7 cm | CD²=25²−7²=576, pa je CD=24 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-054; AC²+CD²=AD². 7²+CD²=25²; 49+CD²=625; CD²=576. Pozitivna dužina CD=24 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-quad-reverse-3); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-055",
@@ -1347,14 +1414,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-cetvorougao",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "∠ACD=90°, AD=15 cm, AC=9 cm | CD²=15²−9²=144, pa je CD=12 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-055; AC²+CD²=AD². 9²+CD²=15²; 81+CD²=225; CD²=144. Pozitivna dužina CD=12 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-quad-reverse-4); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G7-056",
@@ -1371,14 +1439,15 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/pitagorina-teorema/pitagora-cetvorougao",
     "fix": "Prvo a²+b²=c², označiti strane na crtežu, uvrstiti vrednosti, izračunati kvadrate, rešiti za nepoznatu i uzeti pozitivnu dužinu sa jedinicom.",
     "effort": "srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI zadatka nije potvrđen",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "∠ACD=90°, AD=20 cm, AC=12 cm | CD²=20²−12²=256, pa je CD=16 cm.",
     "fix_commit": "3ff0bed6c1f4746d116005436310ce88c1ac3cf2",
-    "regression": "qa/phase2/verify-g7-pythagoras.py; g7-pythagoras-verification.json",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [],
-    "test_result": "Referentni rezultat i koraci potvrđeni; 112/112 testova; 14 provera prikaza lekcija",
-    "phase2_evidence": "qa/phase2/g7-pythagoras-verification.json: G7-056; AC²+CD²=AD². 12²+CD²=20²; 144+CD²=400; CD²=256. Pozitivna dužina CD=16 cm."
+    "test_result": "1/1 desktop i 1/1 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (1 ID: ow-quad-reverse-5); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G8-001",
@@ -1499,16 +1568,17 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/8/obnavljanje-7/kratko-obnavljanje-7",
     "fix": "Generisati taj niz koraka sa stvarnim merama svake varijante i jedinicom. Kod obima tek potom računati O.",
     "effort": "Mala",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI nije proveravan za svaki ID",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u izvoru i izvezenoj verziji sadržaja",
     "reproduction": "b²=16; b=4 cm. Za c=5 cm i a=3 cm učenik treba da vidi a²+b²=c², 3²+b²=5², 9+b²=25, b²=16, b=4 cm jer je dužina pozitivna.",
     "fix_commit": "b7f3938064ebd4995ccb1d0bf0e0635f94a2e88f",
-    "regression": "qa/phase2/verify-g8-pythagoras.py; qa/phase2/g8-browser.py",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [
       "app/content/september-work.ts"
     ],
-    "test_result": "6/6 egzaktnih provera; 112/112 testova; 16/16 browser provera; TypeScript, lint, oba build-a uspešni",
-    "phase2_evidence": "qa/phase2/g8-results/math.json (6 zadataka); browser.json; IZVESTAJ_VERIFIKACIJE_FAZA_2B_G8.md"
+    "test_result": "6/6 desktop i 6/6 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (6 ID: sw-r7-triangle-0, sw-r7-triangle-1, sw-r7-triangle-2, sw-r7-triangle-3, sw-r7-triangle-4, sw-r7-triangle-5); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G8-006",
@@ -1525,16 +1595,17 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/8/obnavljanje-7/kratko-obnavljanje-7",
     "fix": "Generisati taj niz koraka sa stvarnim merama svake varijante i jedinicom. Kod obima tek potom računati O.",
     "effort": "Mala",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI nije proveravan za svaki ID",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u izvoru i izvezenoj verziji sadržaja",
     "reproduction": "b=4 cm; O=2(a+b)=14 cm. Za c=5 cm i a=3 cm učenik treba da vidi a²+b²=c², 3²+b²=5², 9+b²=25, b²=16, b=4 cm jer je dužina pozitivna.",
     "fix_commit": "b7f3938064ebd4995ccb1d0bf0e0635f94a2e88f",
-    "regression": "qa/phase2/verify-g8-pythagoras.py; qa/phase2/g8-browser.py",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [
       "app/content/september-work.ts"
     ],
-    "test_result": "6/6 egzaktnih provera; 112/112 testova; 16/16 browser provera; TypeScript, lint, oba build-a uspešni",
-    "phase2_evidence": "qa/phase2/g8-results/math.json (6 zadataka); browser.json; IZVESTAJ_VERIFIKACIJE_FAZA_2B_G8.md"
+    "test_result": "6/6 desktop i 6/6 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (6 ID: sw-r7-perimeter-0, sw-r7-perimeter-1, sw-r7-perimeter-2, sw-r7-perimeter-3, sw-r7-perimeter-4, sw-r7-perimeter-5); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "LOG-02",
@@ -2237,11 +2308,11 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/8/s8-zavrsnica/s8-zapremina",
     "fix": "Razdvojiti identifikaciju kateta, zamenu, kvadriranje, rešavanje i izbor pozitivne dužine.",
     "effort": "Srednja",
-    "status": "Matematički i metodički potvrđeno; pojedinačni UI nije proveravan za svaki ID",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika, metodika i pojedinačni UI)",
     "audit_status": "Potvrđeno u izvoru i izvezenoj verziji sadržaja",
     "reproduction": "U s8-kupa-5 posle a²+b²=c² odmah dolazi 36+H²=100. Traženi međukorak je 6²+H²=10². U s8-simB-13 prva primena odmah glasi d²+576=676.",
     "fix_commit": "b7f3938064ebd4995ccb1d0bf0e0635f94a2e88f",
-    "regression": "qa/phase2/verify-g8-pythagoras.py; qa/phase2/g8-browser.py",
+    "regression": "qa/phase2/final-ui-browser.py; qa/phase2/final-ui-lesson.py; qa/critical-storage.py; tests/learning-visuals.test.mjs",
     "changed_files": [
       "app/content/spring8/prizma.ts",
       "app/content/spring8/piramida.ts",
@@ -2252,8 +2323,9 @@
       "app/content/spring8/exams.ts",
       "app/eighth-figures.tsx"
     ],
-    "test_result": "11/11 egzaktnih provera; 112/112 testova; 16/16 browser provera; TypeScript, lint, oba build-a uspešni",
-    "phase2_evidence": "qa/phase2/g8-results/math.json (11 zadataka); browser.json; IZVESTAJ_VERIFIKACIJE_FAZA_2B_G8.md"
+    "test_result": "11/11 desktop i 11/11 mobilni touch; 113/113 unit/integracionih; TypeScript, lint, oba build-a, storage regresija uspešni",
+    "phase2_evidence": "qa/phase2/final-ui-verified/per-task-summary.json (11 ID: s8-simA-13, s8-simB-13, s8-piramida-vezba, s8-valjak-9, s8-kupa-5, s8-lopta-8, s8-lopta-9, s8-piramida-13, s8-polugodiste-7, s8-polugodiste-8, s8-prizma-7); UI commit 8e122bc75afab17ad5e9708971efd79146ebb066; IZVESTAJ_ZAVRSNE_UI_VERIFIKACIJE_FAZA_2B.md",
+    "verification_commit": "8e122bc75afab17ad5e9708971efd79146ebb066"
   },
   {
     "id": "G8-008",
