@@ -5343,8 +5343,8 @@
         "prompt": "Odredi katetu pravouglog trougla.",
         "math": "c=5 cm, a=3 cm",
         "answer": "4",
-        "hint": "Oduzmi kvadrat poznate katete od kvadrata hipotenuze.",
-        "solution": "a²+b²=c². 3²+b²=5²; 9+b²=25; b²=16; b=4 cm jer je pozitivna.",
+        "hint": "Prepoznaj hipotenuzu i postavi Pitagorinu teoremu.",
+        "solution": "Katete su a i b, hipotenuza c. a²+b²=c². 3²+b²=5²; 9+b²=25; b²=25−9=16; b=4 cm jer je pozitivna.",
         "level": "advanced",
         "skill": "Pitagorina teorema"
       },
@@ -5369,7 +5369,7 @@
         "math": "d=5 cm, a=3 cm",
         "answer": "14",
         "hint": "Prvo Pitagorinom teoremom odredi drugu stranicu.",
-        "solution": "a²+b²=d². 3²+b²=5²; 9+b²=25; b²=16; b=4 cm jer je pozitivna. O=2(a+b)=14 cm.",
+        "solution": "Katete su stranice a i b, hipotenuza je dijagonala d. a²+b²=d². 3²+b²=5²; 9+b²=25; b²=25−9=16; b=4 cm jer je pozitivna. O=2(a+b)=2·(3+4)=14 cm.",
         "level": "advanced",
         "skill": "Pitagorina teorema"
       }

@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import type {Task} from '../../app/content/types';
 import {grades} from '../../app/content/index';
 import {tasksForLesson} from '../../app/content/enhancements';
 import {lessonWorkTasks} from '../../app/content/october-work';
@@ -11,8 +12,8 @@ import {checks8} from '../../app/content/spring8/checks';
 import {examSets} from '../../app/content/spring8/exams';
 for (const grade of grades) {
 const sets=[springChecks,checks7,checks8][grade.id-6];
-const bank=new Map(),lessons=[];
-function add(task,lesson,area,source) {const key=task.id; if(!bank.has(key)) bank.set(key,{...task,lesson,area,sources:[]});const arr=bank.get(key).sources;if(!arr.includes(source))arr.push(source)}
+const bank=new Map<string,Task & {lesson:string|undefined;area:string; sources:string[]}>(),lessons=[];
+function add(task:Task,lesson:string|undefined,area:string,source:string) {const key=task.id; if(!bank.has(key)) bank.set(key,{...task,lesson,area,sources:[]});const arr=bank.get(key)!.sources;if(!arr.includes(source))arr.push(source)}
 for(const a of grade.areas) {
  for(const l of a.lessons) {
  const pool=tasksForLesson(l.id,l.tasks),work=lessonWorkTasks(l.id,pool); for(const t of pool)add(t,l.id,a.id,'practice'); for(const t of work)add(t,l.id,a.id,'work');
