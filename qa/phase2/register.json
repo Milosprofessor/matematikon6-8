@@ -1826,14 +1826,16 @@
     "url": "https://github.com/Milosprofessor/matematikon6-8/blob/7019cab9ca86d42d9c2f10eeb49fc9fde21a7a85/app/content/spring6/podaci.ts",
     "fix": "Dodati tabelu iz koje učenik crta stubičasti, linijski i tačkasti prikaz, uz kriterijume za izbor osa, razmere i položaja tačaka.",
     "effort": "Srednja",
-    "status": "Izmena implementirana; konačna nezavisna potvrda u toku",
+    "status": "Ispravljeno i potvrđeno: dostupnost aktivnosti i kriterijumi; ostvarenje ishoda nije provereno",
     "audit_status": "Potvrđeno",
     "reproduction": "Traže se promena temperature, imenilac proseka i poređenje udela. Nijedno od tri pitanja ne prihvata učenikov prikaz.",
-    "fix_commit": "",
-    "regression": "",
-    "changed_files": [],
-    "test_result": "Nije predmet ovog skupa ispravki",
-    "phase2_evidence": "qa/phase2; izvorna lokacija iz audita"
+    "fix_commit": "a01732e430a9d7e5465027c3839516020abb2907",
+    "regression": "qa/phase2/verify-remaining.py; qa/phase2/remaining-browser.py",
+    "changed_files": [
+      "app/content/practical-activities.ts"
+    ],
+    "test_result": "112/112 testova; TypeScript, lint, oba build-a uspešni; 29 browser zapisa",
+    "phase2_evidence": "qa/phase2/remaining-results/browser.json; IZVESTAJ_VERIFIKACIJE_FAZA_2B_PREOSTALI_NALAZI.md; 3 uputstva i 3 kriterijuma prikazani na obe rezolucije; bez učeničkog rada"
   },
   {
     "id": "CUR-02",
@@ -1850,14 +1852,16 @@
     "url": "https://github.com/Milosprofessor/matematikon6-8/blob/7019cab9ca86d42d9c2f10eeb49fc9fde21a7a85/app/content/spring7/centri.ts",
     "fix": "Dati nepravilan tupougli trougao. Učenik označava sredine, dve težišne duži i podnožja visina. Nastavnik ili interaktivni model ocenjuje odnose.",
     "effort": "Srednja",
-    "status": "Izmena implementirana; konačna nezavisna potvrda u toku",
+    "status": "Ispravljeno i potvrđeno: dostupnost aktivnosti i kriterijumi; ostvarenje ishoda nije provereno",
     "audit_status": "Potvrđeno",
     "reproduction": "Tri pitanja proveravaju delove težišne duži ili opšti položaj ortocentra. Pravila lekcije opisuju konstrukciju.",
-    "fix_commit": "",
-    "regression": "",
-    "changed_files": [],
-    "test_result": "Nije predmet ovog skupa ispravki",
-    "phase2_evidence": "qa/phase2; izvorna lokacija iz audita"
+    "fix_commit": "a01732e430a9d7e5465027c3839516020abb2907",
+    "regression": "qa/phase2/verify-remaining.py; qa/phase2/remaining-browser.py",
+    "changed_files": [
+      "app/content/practical-activities.ts"
+    ],
+    "test_result": "112/112 testova; TypeScript, lint, oba build-a uspešni; 29 browser zapisa",
+    "phase2_evidence": "qa/phase2/remaining-results/browser.json; IZVESTAJ_VERIFIKACIJE_FAZA_2B_PREOSTALI_NALAZI.md; 3 uputstva i 3 kriterijuma prikazani na obe rezolucije; bez učeničkog rada"
   },
   {
     "id": "CUR-03",
@@ -1874,14 +1878,16 @@
     "url": "https://github.com/Milosprofessor/matematikon6-8/blob/7019cab9ca86d42d9c2f10eeb49fc9fde21a7a85/app/content/spring8/godina.ts",
     "fix": "Zadržati pitanja za matematiku i dodati rubriku za dogovor o pitanju, plan merenja, tabelu, zaključak i obrazloženje izbora.",
     "effort": "Srednja",
-    "status": "Izmena implementirana; konačna nezavisna potvrda u toku",
+    "status": "Ispravljeno i potvrđeno: dostupnost aktivnosti i kriterijumi; ostvarenje ishoda nije provereno",
     "audit_status": "Potvrđeno",
     "reproduction": "Uvod jasno nudi istraživanje, ali pitanja traže vrstu mera limenke, promenu zapremine i linearnu cenu.",
-    "fix_commit": "",
-    "regression": "",
-    "changed_files": [],
-    "test_result": "Nije predmet ovog skupa ispravki",
-    "phase2_evidence": "qa/phase2; izvorna lokacija iz audita"
+    "fix_commit": "a01732e430a9d7e5465027c3839516020abb2907",
+    "regression": "qa/phase2/verify-remaining.py; qa/phase2/remaining-browser.py",
+    "changed_files": [
+      "app/content/practical-activities.ts"
+    ],
+    "test_result": "112/112 testova; TypeScript, lint, oba build-a uspešni; 29 browser zapisa",
+    "phase2_evidence": "qa/phase2/remaining-results/browser.json; IZVESTAJ_VERIFIKACIJE_FAZA_2B_PREOSTALI_NALAZI.md; 3 uputstva i 3 kriterijuma prikazani na obe rezolucije; bez učeničkog rada"
   },
   {
     "id": "G6-006",
@@ -1948,14 +1954,16 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/6/s6-cetvorouglovi/s6-trapez",
     "fix": "Imenovati figuru uz svaku formulu i dodati legendu za stranice.",
     "effort": "Mala",
-    "status": "Izmena implementirana; konačna nezavisna potvrda u toku",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika/metodika i UI)",
     "audit_status": "Potvrđeno u izvoru",
     "reproduction": "U istom bloku m=(a+b):2 označava a,b kao osnovice trapeza, zatim O=2(a+b) implicitno menja značenje a,b. Npr. trapez osnovica 7,13 i krakova po 5 ima obim 30, a 2(7+13)=40. Primer za deltoid kasnije razjašnjava formulu.",
-    "fix_commit": "",
-    "regression": "",
-    "changed_files": [],
-    "test_result": "Nije predmet ovog skupa ispravki",
-    "phase2_evidence": "qa/phase2; izvorna lokacija iz audita"
+    "fix_commit": "a01732e430a9d7e5465027c3839516020abb2907",
+    "regression": "qa/phase2/verify-remaining.py; qa/phase2/remaining-browser.py",
+    "changed_files": [
+      "app/content/spring6/trapez.ts"
+    ],
+    "test_result": "112/112 testova; TypeScript, lint, oba build-a uspešni; 29 browser zapisa",
+    "phase2_evidence": "qa/phase2/remaining-results/browser.json; IZVESTAJ_VERIFIKACIJE_FAZA_2B_PREOSTALI_NALAZI.md; m=10 cm; O trapeza=30 cm (nije 40); O deltoida=22 cm"
   },
   {
     "id": "G6-009",
@@ -1997,14 +2005,16 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/6/racionalni-brojevi/q-zapisi",
     "fix": "Za proširivanje navesti proizvoljan nenulti ceo broj, a za skraćivanje zajednički delilac.",
     "effort": "Mala",
-    "status": "Izmena implementirana; konačna nezavisna potvrda u toku",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika/metodika i UI)",
     "audit_status": "Potvrđeno u izvoru",
     "reproduction": "Deljenje članova 3/5 brojem 2 čuva količnik, ali daje 1,5/2,5 i nije skraćivanje razlomka celobrojnim činiocem.",
-    "fix_commit": "",
-    "regression": "",
-    "changed_files": [],
-    "test_result": "Nije predmet ovog skupa ispravki",
-    "phase2_evidence": "qa/phase2; izvorna lokacija iz audita"
+    "fix_commit": "a01732e430a9d7e5465027c3839516020abb2907",
+    "regression": "qa/phase2/verify-remaining.py; qa/phase2/remaining-browser.py",
+    "changed_files": [
+      "app/content/semester6.ts"
+    ],
+    "test_result": "112/112 testova; TypeScript, lint, oba build-a uspešni; 29 browser zapisa",
+    "phase2_evidence": "qa/phase2/remaining-results/browser.json; IZVESTAJ_VERIFIKACIJE_FAZA_2B_PREOSTALI_NALAZI.md; 12/18 : zajednički delilac 6 → 2/3; 3 i 5 nisu deljivi sa 2; količnik jeste isti, ali nije skraćivanje celobrojnim deliocem."
   },
   {
     "id": "G7-004",
@@ -2021,14 +2031,16 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/s7-krug/s7-luk",
     "fix": "Ispisati 10·6π=60π dm i 6π+12 dm. Dati učeniku zaseban primer za pokušaj.",
     "effort": "mala",
-    "status": "Izmena implementirana; konačna nezavisna potvrda u toku",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika/metodika i UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Točak prečnika 6 dm sa 10 obrtaja završava sa „Pomnoži brojem okreta“. Kod polukružnog prozora od r=6 dm poslednje je „Saberi njihove dužine“.",
-    "fix_commit": "",
-    "regression": "",
-    "changed_files": [],
-    "test_result": "Nije predmet ovog skupa ispravki",
-    "phase2_evidence": "qa/phase2; izvorna lokacija iz audita"
+    "fix_commit": "a01732e430a9d7e5465027c3839516020abb2907",
+    "regression": "qa/phase2/verify-remaining.py; qa/phase2/remaining-browser.py",
+    "changed_files": [
+      "app/content/spring7/luk.ts"
+    ],
+    "test_result": "112/112 testova; TypeScript, lint, oba build-a uspešni; 29 browser zapisa",
+    "phase2_evidence": "qa/phase2/remaining-results/browser.json; IZVESTAJ_VERIFIKACIJE_FAZA_2B_PREOSTALI_NALAZI.md; 10 obrtaja × 6π = 60π dm; polukružni luk πr=6π dm, prečnik 12 dm"
   },
   {
     "id": "G7-005",
@@ -2045,14 +2057,16 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/s7-krug/s7-isecci",
     "fix": "Zaključiti sa (256−64π) cm² i proveriti da je rezultat pozitivan i manji od kvadrata.",
     "effort": "mala",
-    "status": "Izmena implementirana; konačna nezavisna potvrda u toku",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika/metodika i UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Za a=16 cm rešenje se završava sa „Kvadrat ima 256 cm², krug ima 64π cm². Oduzmi.“",
-    "fix_commit": "",
-    "regression": "",
-    "changed_files": [],
-    "test_result": "Nije predmet ovog skupa ispravki",
-    "phase2_evidence": "qa/phase2; izvorna lokacija iz audita"
+    "fix_commit": "a01732e430a9d7e5465027c3839516020abb2907",
+    "regression": "qa/phase2/verify-remaining.py; qa/phase2/remaining-browser.py",
+    "changed_files": [
+      "app/content/spring7/isecci.ts"
+    ],
+    "test_result": "112/112 testova; TypeScript, lint, oba build-a uspešni; 29 browser zapisa",
+    "phase2_evidence": "qa/phase2/remaining-results/browser.json; IZVESTAJ_VERIFIKACIJE_FAZA_2B_PREOSTALI_NALAZI.md; 256−64π ≈ 54,94 cm², između 0 i 256"
   },
   {
     "id": "G7-006",
@@ -2069,16 +2083,16 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/s7-geometrija/s7-povrsina",
     "fix": "Dodati usklađen crtež kućice sa označenim visinama ili ukloniti upućivanje na njega.",
     "effort": "mala",
-    "status": "Izmena implementirana; konačna nezavisna potvrda u toku",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika/metodika i UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Svi potrebni brojevi su u tekstu: 8·5+8·3/2=52 cm². Bez slike učenik ne može da prepozna delove sa najavljenog crteža.",
-    "fix_commit": "08ebb50b35cdab3fa1558420f48a543607ae83eb",
-    "regression": "tests/critical-audit-phase1.test.mjs; qa/critical-storage.py; qa/phase1-results/final",
+    "fix_commit": "a01732e430a9d7e5465027c3839516020abb2907",
+    "regression": "qa/phase2/verify-remaining.py; qa/phase2/remaining-browser.py",
     "changed_files": [
       "app/content/spring7/povrsina.ts"
     ],
-    "test_result": "112/112 unit/integracionih; ciljane regresije; browser rezultati u final/",
-    "phase2_evidence": "qa/phase2; izvorna lokacija iz audita"
+    "test_result": "112/112 testova; TypeScript, lint, oba build-a uspešni; 29 browser zapisa",
+    "phase2_evidence": "qa/phase2/remaining-results/browser.json; IZVESTAJ_VERIFIKACIJE_FAZA_2B_PREOSTALI_NALAZI.md; 40+12=52 cm²; unutrašnjosti se ne preklapaju i dele samo zajedničku stranicu"
   },
   {
     "id": "G7-007",
@@ -2145,14 +2159,16 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/s7-krug/s7-rotacija",
     "fix": "Navesti kada promena smera menja sliku i pitati učenika da objasni poluokret.",
     "effort": "mala",
-    "status": "Izmena implementirana; konačna nezavisna potvrda u toku",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika/metodika i UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Rotacije za +180° i −180° daju istu sliku svake tačke; sam centar ostaje nepomičan za svaki ugao.",
-    "fix_commit": "",
-    "regression": "",
-    "changed_files": [],
-    "test_result": "Nije predmet ovog skupa ispravki",
-    "phase2_evidence": "qa/phase2; izvorna lokacija iz audita"
+    "fix_commit": "a01732e430a9d7e5465027c3839516020abb2907",
+    "regression": "qa/phase2/verify-remaining.py; qa/phase2/remaining-browser.py",
+    "changed_files": [
+      "app/content/spring7/rotacija.ts"
+    ],
+    "test_result": "112/112 testova; TypeScript, lint, oba build-a uspešni; 29 browser zapisa",
+    "phase2_evidence": "qa/phase2/remaining-results/browser.json; IZVESTAJ_VERIFIKACIJE_FAZA_2B_PREOSTALI_NALAZI.md; R(α)p=R(−α)p za p≠0 iff sin α=0; centar fiksan; simetrija figure odvojena"
   },
   {
     "id": "G7-010",
@@ -2169,14 +2185,16 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/s7-krug/s7-rotacija",
     "fix": "Prebaciti na osnovni ili srednji nivo. Za napredni tražiti sve rotacije koje čuvaju naizmenično obojenu figuru, uz obrazloženje.",
     "effort": "mala",
-    "status": "Izmena implementirana; konačna nezavisna potvrda u toku",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika/metodika i UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Isti zahtev s drugim brojem temena označen je kao napredan i na izlaznoj proveri (s7-rotacija-14).",
-    "fix_commit": "",
-    "regression": "",
-    "changed_files": [],
-    "test_result": "Nije predmet ovog skupa ispravki",
-    "phase2_evidence": "qa/phase2; izvorna lokacija iz audita"
+    "fix_commit": "a01732e430a9d7e5465027c3839516020abb2907",
+    "regression": "qa/phase2/verify-remaining.py; qa/phase2/remaining-browser.py",
+    "changed_files": [
+      "app/content/spring7/rotacija.ts"
+    ],
+    "test_result": "112/112 testova; TypeScript, lint, oba build-a uspešni; 29 browser zapisa",
+    "phase2_evidence": "qa/phase2/remaining-results/browser.json; IZVESTAJ_VERIFIKACIJE_FAZA_2B_PREOSTALI_NALAZI.md; 360/8=45°, 360/12=30°; direktna primena jedne formule, osnovni nivo"
   },
   {
     "id": "G7-011",
@@ -2193,14 +2211,16 @@
     "url": "https://matematikon6-8.milos-python.workers.dev/#/lekcija/7/s7-geometrija/s7-centri",
     "fix": "Izračunati projekcije B i C na naspramne prave, povezati sa podnožjima, označiti 90° i produžiti isprekidano do ortocentra kad je izvan.",
     "effort": "mala",
-    "status": "Izmena implementirana; konačna nezavisna potvrda u toku",
+    "status": "Ispravljeno i nezavisno potvrđeno (matematika/metodika i UI)",
     "audit_status": "Potvrđeno u kodu",
     "reproduction": "Za x=130 dobija se H(130,96,42). BH i CH staju unutar trougla; učenik ne vidi podnožja niti prave uglove uz naspramne stranice.",
-    "fix_commit": "",
-    "regression": "",
-    "changed_files": [],
-    "test_result": "Nije predmet ovog skupa ispravki",
-    "phase2_evidence": "qa/phase2; izvorna lokacija iz audita"
+    "fix_commit": "a01732e430a9d7e5465027c3839516020abb2907",
+    "regression": "qa/phase2/verify-remaining.py; qa/phase2/remaining-browser.py",
+    "changed_files": [
+      "app/seventh-lab.tsx"
+    ],
+    "test_result": "112/112 testova; TypeScript, lint, oba build-a uspešni; 29 browser zapisa",
+    "phase2_evidence": "qa/phase2/remaining-results/browser.json; IZVESTAJ_VERIFIKACIJE_FAZA_2B_PREOSTALI_NALAZI.md; 171 celobrojnih položaja A, tri normalnosti i konkurentnost po položaju; SVG zasebno"
   },
   {
     "id": "G8-007",
