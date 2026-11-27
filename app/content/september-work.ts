@@ -261,6 +261,7 @@ const basicLater=new Set(["6-1k","6-2i","6-3j","sw-absolute-table-0","sw-r5-orde
 export function applySeptemberWorkLevels(lessonId:string,tasks:Task[]):Task[]{
  const plan=septemberWorkPlans[lessonId];if(!plan)return tasks;
  return tasks.map(task=>{
+  if(lessonId==="apsolutna-vrednost")return {...task,level:["6-2b","6-2c","6-2d","6-2h","6-2j"].includes(task.id)?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
   if(lessonId==="skup-celih-brojeva")return {...task,level:task.id.startsWith("sw-integer-reverse-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
   if(lessonId==="kratko-obnavljanje-5")return {...task,taskType:retainedTypes[task.id]??task.taskType};
   const at=plan.indexOf(task.id);

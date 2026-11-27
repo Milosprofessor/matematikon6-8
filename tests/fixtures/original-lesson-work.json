@@ -270,7 +270,7 @@
         "prompt": "Izračunaj.",
         "math": "|−18|",
         "answer": "18",
-        "hint": "Rastojanje od nule je pozitivno.",
+        "hint": "Rastojanje od nule je nenegativno; za nenulti broj je pozitivno.",
         "solution": "|−18| = 18.",
         "level": "basic",
         "skill": "Apsolutna vrednost"
@@ -310,7 +310,7 @@
         ],
         "answer": "8",
         "hint": "Odredi svaku apsolutnu vrednost.",
-        "solution": "6 + 2 = 8.",
+        "solution": "|−6|+|−2|=6+2=8.",
         "level": "medium",
         "skill": "Apsolutna vrednost"
       },
@@ -341,7 +341,7 @@
         "answer": "x=−11 ili x=11",
         "hint": "Brojevi sa istim rastojanjem od nule su suprotni.",
         "solution": "Rešenja su −11 i 11.",
-        "level": "medium",
+        "level": "basic",
         "skill": "Jednačina sa apsolutnom vrednošću"
       },
       {
@@ -351,7 +351,7 @@
         "answer": "2",
         "hint": "Apsolutna vrednost pozitivnog broja je taj broj.",
         "solution": "|2|=2.",
-        "level": "medium",
+        "level": "basic",
         "skill": "Apsolutna vrednost"
       },
       {
@@ -361,7 +361,7 @@
         "answer": "-9",
         "hint": "Traži se negativno rešenje.",
         "solution": "Brojevi sa apsolutnom vrednošću 9 su −9 i 9, a x < 0, pa je x = −9.",
-        "level": "advanced",
+        "level": "medium",
         "skill": "Jednačina sa apsolutnom vrednošću"
       },
       {
@@ -375,7 +375,7 @@
         "answer": "Ne",
         "hint": "Rastojanje od nule ne može biti negativno.",
         "solution": "Apsolutna vrednost je uvek nenegativna, zato nema rešenja.",
-        "level": "medium",
+        "level": "basic",
         "skill": "Jednačina sa apsolutnom vrednošću"
       },
       {
@@ -384,8 +384,8 @@
         "math": "|−10|+|−3|−|5|",
         "answer": "8",
         "hint": "Zameni svaku apsolutnu vrednost nenegativnim brojem.",
-        "solution": "10+3−5=8.",
-        "level": "advanced",
+        "solution": "|−10|+|−3|−|5|=10+3−5=13−5=8.",
+        "level": "medium",
         "skill": "Apsolutna vrednost"
       }
     ]

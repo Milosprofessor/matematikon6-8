@@ -23,7 +23,7 @@ export const septemberTasks:Record<string,Task[]>={
     P(C("6-2g","Izaberi tačnu tvrdnju.","|−7|=−7",["Tačno","Netačno"],"Netačno","Apsolutna vrednost nije negativna.","|−7|=7, pa je tvrdnja netačna.","basic","Apsolutna vrednost"),"pronadji-gresku","concept"),
     P(C("6-2h","Uporedi.","|−13| __ |9|",["<",">","="],">","Najpre odredi obe apsolutne vrednosti.","13>9, pa je |−13|>|9|.","medium","Apsolutna vrednost"),"poredjenje-apsolutnih","method"),
     P(C("6-2i","Da li postoji ceo broj x?","|x|=−4",["Da","Ne"],"Ne","Rastojanje od nule ne može biti negativno.","Apsolutna vrednost je uvek nenegativna, zato nema rešenja.","advanced","Jednačina sa apsolutnom vrednošću"),"nemoguc-uslov","concept"),
-    P(I("6-2j","Izračunaj.","|−10|+|−3|−|5|","8","Zameni svaku apsolutnu vrednost nenegativnim brojem.","10+3−5=8.","advanced","Apsolutna vrednost"),"izraz-sa-apsolutnim","calculation"),
+    P(I("6-2j","Izračunaj.","|−10|+|−3|−|5|","8","Zameni svaku apsolutnu vrednost nenegativnim brojem.","|−10|+|−3|−|5|=10+3−5=13−5=8.","advanced","Apsolutna vrednost"),"izraz-sa-apsolutnim","calculation"),
   ],
   "uporedjivanje":[
     P(C("6-3f","Koja tačka je najviše desno?","",["A","B","C"],"C","Najviše desno je najveća koordinata.","C(2) je najviše desno.","basic","Brojna prava"),"citanje-polozaja","diagram",{type:"number-line",min:-4,max:3,points:[{value:-3,label:"A"},{value:-1,label:"B"},{value:2,label:"C"}]}),

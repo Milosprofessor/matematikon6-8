@@ -1,0 +1,38 @@
+{
+  "id": "apsolutna-vrednost",
+  "area": "celi-brojevi",
+  "status": "potpuno recenzirana",
+  "theory": "Rastojanje je nenegativno, nula ima apsolutnu vrednost 0; pozitivan, negativan i nemoguć desni član jednačine razdvojeni.",
+  "sequence": "Brojna prava → definicija → računanje → jednačina sa dodatnim uslovom.",
+  "examples": [
+    {
+      "question": "Izračunaj |−7| + |3|.",
+      "steps": [
+        "|−7|=7, a |3|=3 jer su to rastojanja od nule.",
+        "|−7|+|3|=7+3=10."
+      ],
+      "verification": "|−7|+|3|=10"
+    },
+    {
+      "question": "Reši |x|=5 uz uslov x<0.",
+      "steps": [
+        "Na rastojanju 5 od nule su −5 i 5.",
+        "Uslov x<0 isključuje 5; rešenje je x=−5.",
+        "Provera: |−5|=5 i −5<0."
+      ],
+      "verification": "|−5|=5 i −5<0"
+    },
+    {
+      "question": "Reši |x|=0 i |x|=−2.",
+      "steps": [
+        "Jedino je 0 na rastojanju 0 od nule, pa prvo ima rešenje x=0.",
+        "Rastojanje ne može biti negativno; drugo nema rešenja."
+      ],
+      "verification": "|x|=0 ⇒ x=0; |x|=−2 nema rešenja"
+    }
+  ],
+  "illustration": "Simetrične tačke na istoj udaljenosti od nule; šest konkretnih dijagrama sa A.",
+  "misconceptions": "Nula nije pozitivna; apsolutna vrednost nije uvek suprotan broj niti je negativna.",
+  "assessment": "22 zadatka u fondu i dva u proverama; 19 osnovnih, 5 srednjih.",
+  "limits": "Delovi ishoda 6.02 i 6.03; racionalni brojevi i ostali tipovi jednačina još nisu pregledani."
+}

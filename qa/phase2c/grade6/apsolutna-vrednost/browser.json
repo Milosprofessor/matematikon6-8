@@ -1,0 +1,138 @@
+[
+  {
+    "id": "6-2a",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "6-2g",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "sw-absolute-diagram-0",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "6-2b",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "6-2h",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "6-2f",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "sw-absolute-table-0",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "6-2c",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "6-2i",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "6-2j",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "width": 1366,
+    "lesson": "apsolutna-vrednost",
+    "examples": 3,
+    "progress_reload": true,
+    "cyrillic": true,
+    "status": "pass"
+  },
+  {
+    "id": "6-2a",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "6-2g",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "sw-absolute-diagram-0",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "6-2b",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "6-2h",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "6-2f",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "sw-absolute-table-0",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "6-2c",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "6-2i",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "6-2j",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "width": 390,
+    "lesson": "apsolutna-vrednost",
+    "examples": 3,
+    "progress_reload": true,
+    "cyrillic": true,
+    "status": "pass"
+  }
+]
