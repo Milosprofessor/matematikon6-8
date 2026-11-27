@@ -64,7 +64,7 @@ test('nove lekcije ostaju na 10 zadataka, a podaci učenika i algoritam znanja o
 });
 test('baza čuva redosled i crteže uz nezavisno testirane ispravke audita faze 1',()=>{
  const protectedData=all.filter(({lesson:l})=>["september","october"].includes(l.month)).map(({grade:g,area:a,lesson:l})=>({grade:g.id,area:a.id,month:l.month??a.month??'september',id:l.id,pool:tasksForLesson(l.id,l.tasks).filter(t=>!t.id.startsWith('dop-')),work:lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)),visuals:lessonVisuals(l.id)}));
- assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'7fa2ae077d028903e0c2b35b9742fc4a5e9972642d5d2e4565b32c7f837bc802');
+ assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'609474889f706a532075672cd41f018ecc6633d4d3a8740039fd2f23cf24d43c');
 });
 test('glavno objašnjenje je kratko, ima jednu napomenu i čuva svaki izbor geometrijskog prikaza',()=>{
  const counts=[];let figures=0;
@@ -101,4 +101,12 @@ test('recenzija 6. razreda: obnavljanje ima 45 stabilnih ID-jeva, tri raznovrsna
  assert.match(l.worked[2].steps.join(' '),/30=2\(6\+b\).*b=15−6=9 cm/);
  for(const t of tasks.filter(t=>t.id.startsWith('sw-r5-rectangle-')))assert.match(t.solution,/O=2\(a\+b\).*Delimo obe strane/);
  for(const t of tasks.filter(t=>t.id.startsWith('sw-r5-angle-')))assert.match(t.solution,/α\+β=180°/);
+});
+
+test('recenzija skup celih brojeva: stabilnih 17 zadataka, tri primera, opravdani nivoi',()=>{
+ const l=all.find(x=>x.lesson.id==='skup-celih-brojeva').lesson;
+ const tasks=tasksForLesson(l.id,l.tasks);
+ assert.equal(tasks.length,17);assert.equal(tasks.filter(t=>t.level==='basic').length,11);assert.equal(tasks.filter(t=>t.level==='medium').length,6);
+ assert.equal(l.worked.length,3);
+ for(const t of tasks.filter(t=>t.id.startsWith('sw-integer-reverse-')))assert.match(t.solution,/x−1=.*dodajemo 1.*−x=/);
 });

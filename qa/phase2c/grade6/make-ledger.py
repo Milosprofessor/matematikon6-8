@@ -6,18 +6,19 @@ from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.table import Table,TableStyleInfo
 root=Path(__file__).resolve().parents[3]
 d=json.loads((root/'qa/phase2/g6-extracted.json').read_text())
-review=json.loads((root/'qa/phase2c/grade6/obnavljanje-5/tasks.json').read_text())
+base=root/'qa/phase2c/grade6'
+review=[r for f in sorted(base.glob('*/tasks.json')) for r in json.loads(f.read_text())]
 by={r['id']:r for r in review}
-lesson_evidence=json.loads((root/'qa/phase2c/grade6/obnavljanje-5/lesson.json').read_text())
+lesson_evidence={r['id']:r for f in sorted(base.glob('*/lesson.json')) for r in [json.loads(f.read_text())]}
 cols=['id','area','lesson','requirement','answer','alternatives','hint','procedure','old_level','level','level_reason','illustration','notation','issue','fix','technical_issue','method','status']
 rows=[]
 for task in d['bank']:
  if task['id'] in by:rows.append(by[task['id']])
  else:rows.append(dict(id=task['id'],area=task['area'],lesson=task.get('lesson'),level=task['level'],status='nepregledan u fazi 2C'))
-assert len(rows)==919 and len(by)==45
+assert len(rows)==919 and len(by)==len(review)
 (base:=root/'qa/phase2c/grade6').mkdir(exist_ok=True)
 (base/'ledger-tasks.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n')
-lessons=[lesson_evidence if l['id']==lesson_evidence['id'] else dict(id=l['id'],area=l['area'],status='nepregledana u fazi 2C') for l in d['lessons']]
+lessons=[lesson_evidence[l['id']] if l['id'] in lesson_evidence else dict(id=l['id'],area=l['area'],status='nepregledana u fazi 2C') for l in d['lessons']]
 (base/'ledger-lessons.json').write_text(json.dumps(lessons,ensure_ascii=False,indent=2)+'\n')
 wb=openpyxl.Workbook();wb.remove(wb.active)
 def sheet(name,columns,data,widths=None):
@@ -30,17 +31,18 @@ def sheet(name,columns,data,widths=None):
   for c in row:c.alignment=Alignment(vertical='top',wrap_text=True)
   if 'potpuno' in str(row[-1].value):row[-1].fill=PatternFill('solid',fgColor='D8F3DC')
  tbl=Table(displayName='T'+str(len(wb.worksheets)),ref=ws.dimensions);tbl.tableStyleInfo=TableStyleInfo(name='TableStyleMedium2',showRowStripes=True);ws.add_table(tbl)
+next_task=next(r for r in rows if r['status'].startswith('nepregledan'))
 sheet('Sažetak',['Stavka','Broj','Napomena'],[
- ['Ukupno zadataka',919,'Aktuelni izvozni inventar'],['Potpuno recenzirani',45,'Semantički i matematički, 12 tehničkih nalaza LOG-06 ostaju'],['Delimično recenzirani',0,'Ne preuzimaju se prethodne provere kao nova recenzija'],['Nepregledani',874,'Faza 2C'],['Lekcije',45,'1 pregledana, 44 nepregledane'],['Glavni postojeći primeri',81,'1 pregledan; 80 nepregledanih'],['Novi primeri',2,'Oba pregledana'],['Godišnji ishodi',17,'Prva oblast je predznanje; formalni ishodi nisu nezavisno pregledani u ovom prolazu'],['Sledeći sadržaj','skup-celih-brojeva','Prvi zadatak 6-1a']])
+ ['Ukupno zadataka',len(rows),'Aktuelni izvozni inventar'],['Potpuno recenzirani',len(by),'Semantički i matematički; tehnički nalazi LOG-06 ostaju'],['Delimično recenzirani',0,'Ne preuzimaju se prethodne provere kao nova recenzija'],['Nepregledani',len(rows)-len(by),'Faza 2C'],['Lekcije',len(lessons),f'{len(lesson_evidence)} pregledane'],['Glavni postojeći primeri',81,f'{len(lesson_evidence)} pregledana u dosadašnjim lekcijama'],['Novi primeri',sum(len(l['examples'])-1 for l in lesson_evidence.values()),'Pregledani'],['Godišnji ishodi',17,'Delovi 6.01 i 6.02 pregledani; ishodi kao celine još nisu potvrđeni'],['Sledeći sadržaj',next_task['lesson'],next_task['id']]])
 sheet('Zadaci',cols,[[r.get(k,'') for k in cols] for r in rows],{'id':25,'area':24,'lesson':30,'status':30,'old_level':16,'level':16})
 lc=['id','area','theory','sequence','illustration','misconceptions','assessment','limits','status']
 sheet('Lekcije',lc,[[r.get(k,'') for k in lc] for r in lessons])
 examples=[]
 for l in d['lessons']:
  for i,e in enumerate(l.get('worked') or [l['solved']]):
-  reviewed=l['id']==lesson_evidence['id']
+  reviewed=l['id'] in lesson_evidence
   examples.append([l['id'],i+1,e['question'],' | '.join(e['steps']),'nov' if reviewed and i>0 else 'postojeći','potpuno recenziran' if reviewed else 'nepregledan u fazi 2C'])
-assert len(examples)==83
+assert len(examples)>=81
 sheet('Rešeni primeri',['Lekcija','Broj','Zahtev','Postupak','Poreklo','Status'],examples)
 u=json.loads((base/'obnavljanje-5/units.json').read_text());sheet('Jedinice faza 3',['ID','Jedinica','Broj prihvaćen','Sa jedinicom prihvaćen','Primer','Nalaz'],[[x['id'],x['requiredUnit'],x['numericAccepted'],x['unitAccepted'],x['example'],x['phase3']] for x in u])
 wb.save(root/'MATEMATIKON6_EVIDENCIJA_MATEMATICKE_RECENZIJE.xlsx')

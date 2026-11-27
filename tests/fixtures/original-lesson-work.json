@@ -145,7 +145,7 @@
         ],
         "answer": "−4",
         "hint": "Ceo broj nema razlomljeni deo.",
-        "solution": "−4 pripada skupu Z.",
+        "solution": "−4 je ceo broj. [[frac:2|3]] nije ceo broj, a 1,5 nije ceo broj.",
         "level": "basic",
         "skill": "Skup celih brojeva"
       },
@@ -230,7 +230,7 @@
         ],
         "answer": "[[frac:5|2]]",
         "hint": "Celi brojevi nemaju razlomljeni deo.",
-        "solution": "Razlomak 5/2 nije ceo broj.",
+        "solution": "[[frac:5|2]]=2,5 nije ceo broj, dok −18 i 0 pripadaju Z.",
         "level": "basic",
         "skill": "Skup celih brojeva"
       },
@@ -246,7 +246,7 @@
         "answer": "−3",
         "hint": "Uzastopni brojevi razlikuju se za 1.",
         "solution": "Između −4 i −2 je −3.",
-        "level": "medium",
+        "level": "basic",
         "skill": "Prethodnik i sledbenik"
       },
       {
@@ -255,8 +255,8 @@
         "math": "Prethodnik broja x je −5.",
         "answer": "4",
         "hint": "Najpre pronađi sledbenik datog prethodnika.",
-        "solution": "x=−4. Suprotan broj je 4.",
-        "level": "advanced",
+        "solution": "x−1=−5; dodajemo 1 na obe strane: x=−4. Suprotan broj je −x=4.",
+        "level": "medium",
         "skill": "Prethodnik i sledbenik"
       }
     ]

@@ -36,7 +36,7 @@ export const learningByLesson:Record<string,LessonLearning> = {
       "Pre čitanja tačke pronađi nulu i vrednost jednog razmaka.",
       "Uzastopni celi brojevi razlikuju se za 1; ako znaš prethodnik, traženi broj je njegov sledbenik."
     ],
-    "why": "Suprotni brojevi leže sa različitih strana nule, na jednakom rastojanju od nje.",
+    "why": "Nenulti suprotni brojevi leže sa različitih strana nule, na jednakom rastojanju od nje; nula je sama sebi suprotna.",
     "caution": "Suprotan broj nije sledbenik. Broju 0 suprotan je ponovo 0.",
     "extraFormulas": [
       "Z={…,−2,−1,0,1,2,…}",

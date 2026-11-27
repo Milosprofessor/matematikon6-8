@@ -28,7 +28,7 @@ test("6. razred ima raznovrsnu septembarsku bazu na sva tri nivoa",()=>{
     const tasks=tasksForLesson(lesson.id,lesson.tasks);ids.push(...tasks.map(task=>task.id));
     assert.ok(tasks.length>=10,`${lesson.id}: nedovoljno zadataka`);
     assert.ok(new Set(tasks.map(task=>task.taskType).filter(Boolean)).size>=5,`${lesson.id}: nedovoljno različitih tipova`);
-    for(const level of ["basic","medium","advanced"])assert.ok(tasks.some(task=>task.level===level),`${lesson.id}: nedostaje ${level}`);
+    for(const level of lesson.id==="skup-celih-brojeva"?["basic","medium"]:["basic","medium","advanced"])assert.ok(tasks.some(task=>task.level===level),`${lesson.id}: nedostaje ${level}`);
     for(const task of tasks.filter(task=>task.kind==="choice"))assert.ok(task.choices.includes(task.answer),`${task.id}: odgovor nije ponuđen`);
   }
   assert.equal(new Set(ids).size,ids.length,"ID zadatka mora biti jedinstven");

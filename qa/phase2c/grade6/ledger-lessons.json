@@ -42,7 +42,42 @@
   {
     "id": "skup-celih-brojeva",
     "area": "celi-brojevi",
-    "status": "nepregledana u fazi 2C"
+    "status": "potpuno recenzirana",
+    "theory": "Precizirana definicija Z i izuzetak nule kod suprotnih brojeva; vrednost, a ne zapis određuje pripadnost.",
+    "sequence": "Z, brojna prava, prethodnik/sledbenik, suprotni brojevi.",
+    "examples": [
+      {
+        "question": "Odredi suprotan broj broju 8.",
+        "steps": [
+          "Na brojnoj pravoj 8 je osam jedinica desno od nule.",
+          "Suprotan broj je osam jedinica levo od nule: −8.",
+          "Suprotan broj broju 0 je 0."
+        ],
+        "verification": "8+(−8)=0; 0 je sama sebi suprotna"
+      },
+      {
+        "question": "Odredi prethodnik i sledbenik broja −1.",
+        "steps": [
+          "Prethodnik je za 1 manji: −1−1=−2.",
+          "Sledbenik je za 1 veći: −1+1=0.",
+          "Dakle, −2, −1, 0 su uzastopni celi brojevi."
+        ],
+        "verification": "−1−1=−2; −1+1=0"
+      },
+      {
+        "question": "Da li 6/3 i 5/2 pripadaju skupu Z?",
+        "steps": [
+          "[[frac:6|3]]=2, pa je to ceo broj.",
+          "[[frac:5|2]]=2,5, pa to nije ceo broj.",
+          "Pripadnost zavisi od vrednosti, ne od zapisa broja."
+        ],
+        "verification": "6/3=2∈Z; 5/2=2,5∉Z"
+      }
+    ],
+    "illustration": "Brojna prava: A(−3), O(0), B(3) simetrično; zadatak 6-1h tačno označava −3.",
+    "misconceptions": "Zapis razlomkom ne isključuje ceo broj; nula ni pozitivna ni negativna; suprotan nije prethodnik.",
+    "assessment": "17 zadataka u fondu i jedan zadatak tematske provere; 12 osnovnih, 6 srednjih.",
+    "limits": "Prisutnost dela ishoda 6.01/6.02; racionalni brojevi i apsolutna vrednost ostaju nepregledani."
   },
   {
     "id": "apsolutna-vrednost",

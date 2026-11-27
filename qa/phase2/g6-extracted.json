@@ -173,7 +173,7 @@
   {
    "id": "skup-celih-brojeva",
    "title": "Skup celih brojeva",
-   "intro": "Celi brojevi su pozitivni brojevi, negativni brojevi i nula. Obeležavamo ih slovom Z.",
+   "intro": "Celi brojevi su pozitivni celi brojevi, negativni celi brojevi i nula. Obeležavamo ih slovom Z.",
    "rules": [
     "Pozitivni brojevi su desno od nule.",
     "Negativni brojevi su levo od nule.",
@@ -200,6 +200,32 @@
      "Suprotan broj je −8."
     ]
    },
+   "worked": [
+    {
+     "question": "Odredi suprotan broj broju 8.",
+     "steps": [
+      "Na brojnoj pravoj 8 je osam jedinica desno od nule.",
+      "Suprotan broj je osam jedinica levo od nule: −8.",
+      "Suprotan broj broju 0 je 0."
+     ]
+    },
+    {
+     "question": "Odredi prethodnik i sledbenik broja −1.",
+     "steps": [
+      "Prethodnik je za 1 manji: −1−1=−2.",
+      "Sledbenik je za 1 veći: −1+1=0.",
+      "Dakle, −2, −1, 0 su uzastopni celi brojevi."
+     ]
+    },
+    {
+     "question": "Da li 6/3 i 5/2 pripadaju skupu Z?",
+     "steps": [
+      "[[frac:6|3]]=2, pa je to ceo broj.",
+      "[[frac:5|2]]=2,5, pa to nije ceo broj.",
+      "Pripadnost zavisi od vrednosti, ne od zapisa broja."
+     ]
+    }
+   ],
    "month": "september",
    "prerequisites": [],
    "area": "celi-brojevi",
@@ -6532,7 +6558,7 @@
    ],
    "answer": "−4",
    "hint": "Ceo broj nema razlomljeni deo.",
-   "solution": "−4 pripada skupu Z.",
+   "solution": "−4 je ceo broj. [[frac:2|3]] nije ceo broj, a 1,5 nije ceo broj.",
    "level": "basic",
    "skill": "Skup celih brojeva",
    "taskType": "pripadnost-celih",
@@ -6612,7 +6638,7 @@
    ],
    "answer": "[[frac:5|2]]",
    "hint": "Celi brojevi nemaju razlomljeni deo.",
-   "solution": "Razlomak 5/2 nije ceo broj.",
+   "solution": "[[frac:5|2]]=2,5 nije ceo broj, dok −18 i 0 pripadaju Z.",
    "level": "basic",
    "skill": "Skup celih brojeva",
    "taskType": "pripadnost-Z",
@@ -6731,7 +6757,7 @@
    "answer": "Tačno",
    "hint": "Sledbenik je za 1 veći.",
    "solution": "−6+1=−5, pa je tvrdnja tačna.",
-   "level": "advanced",
+   "level": "basic",
    "skill": "Prethodnik i sledbenik",
    "taskType": "tacno-netacno",
    "errorCategory": "concept",
@@ -6755,7 +6781,7 @@
    "answer": "−3",
    "hint": "Uzastopni brojevi razlikuju se za 1.",
    "solution": "Između −4 i −2 je −3.",
-   "level": "medium",
+   "level": "basic",
    "skill": "Prethodnik i sledbenik",
    "taskType": "dopunjavanje-niza",
    "errorCategory": "method",
@@ -6774,8 +6800,8 @@
    "kind": "input",
    "answer": "4",
    "hint": "Najpre pronađi sledbenik datog prethodnika.",
-   "solution": "x=−4. Suprotan broj je 4.",
-   "level": "advanced",
+   "solution": "x−1=−5; dodajemo 1 na obe strane: x=−4. Suprotan broj je −x=4.",
+   "level": "medium",
    "skill": "Prethodnik i sledbenik",
    "taskType": "integer-reverse",
    "errorCategory": "method",
@@ -6797,8 +6823,8 @@
    "kind": "input",
    "answer": "5",
    "hint": "Najpre pronađi sledbenik datog prethodnika.",
-   "solution": "x=−5. Suprotan broj je 5.",
-   "level": "advanced",
+   "solution": "x−1=−6; dodajemo 1 na obe strane: x=−5. Suprotan broj je −x=5.",
+   "level": "medium",
    "skill": "Prethodnik i sledbenik",
    "taskType": "integer-reverse",
    "errorCategory": "method",
@@ -6819,8 +6845,8 @@
    "kind": "input",
    "answer": "6",
    "hint": "Najpre pronađi sledbenik datog prethodnika.",
-   "solution": "x=−6. Suprotan broj je 6.",
-   "level": "advanced",
+   "solution": "x−1=−7; dodajemo 1 na obe strane: x=−6. Suprotan broj je −x=6.",
+   "level": "medium",
    "skill": "Prethodnik i sledbenik",
    "taskType": "integer-reverse",
    "errorCategory": "method",
@@ -6841,8 +6867,8 @@
    "kind": "input",
    "answer": "7",
    "hint": "Najpre pronađi sledbenik datog prethodnika.",
-   "solution": "x=−7. Suprotan broj je 7.",
-   "level": "advanced",
+   "solution": "x−1=−8; dodajemo 1 na obe strane: x=−7. Suprotan broj je −x=7.",
+   "level": "medium",
    "skill": "Prethodnik i sledbenik",
    "taskType": "integer-reverse",
    "errorCategory": "method",
@@ -6863,8 +6889,8 @@
    "kind": "input",
    "answer": "8",
    "hint": "Najpre pronađi sledbenik datog prethodnika.",
-   "solution": "x=−8. Suprotan broj je 8.",
-   "level": "advanced",
+   "solution": "x−1=−9; dodajemo 1 na obe strane: x=−8. Suprotan broj je −x=8.",
+   "level": "medium",
    "skill": "Prethodnik i sledbenik",
    "taskType": "integer-reverse",
    "errorCategory": "method",
@@ -6885,8 +6911,8 @@
    "kind": "input",
    "answer": "9",
    "hint": "Najpre pronađi sledbenik datog prethodnika.",
-   "solution": "x=−9. Suprotan broj je 9.",
-   "level": "advanced",
+   "solution": "x−1=−10; dodajemo 1 na obe strane: x=−9. Suprotan broj je −x=9.",
+   "level": "medium",
    "skill": "Prethodnik i sledbenik",
    "taskType": "integer-reverse",
    "errorCategory": "method",

@@ -63,7 +63,7 @@ register("kratko-obnavljanje-5",[
  v=>N("r5-rectangle",v,"Odredi drugu stranicu pravougaonika u cm.",`O=${4*(v+4)+6} cm, a=${v+4} cm`,v+7,"Polovina obima je zbir dve susedne stranice.",`O=2(a+b). ${4*(v+4)+6}=2(${v+4}+b). Delimo obe strane sa 2: ${2*(v+4)+3}=${v+4}+b. Oduzimamo ${v+4}: b=${2*(v+4)+3}−${v+4}=${v+7} cm.`,"medium","Osnovni pojmovi geometrije")
 ]);
 register("skup-celih-brojeva",[
- v=>N("integer-reverse",v,"Odredi broj suprotan broju x.",`Prethodnik broja x je −${v+5}.`,v+4,"Najpre pronađi sledbenik datog prethodnika.",`x=−${v+4}. Suprotan broj je ${v+4}.`,"advanced","Prethodnik i sledbenik")
+ v=>N("integer-reverse",v,"Odredi broj suprotan broju x.",`Prethodnik broja x je −${v+5}.`,v+4,"Najpre pronađi sledbenik datog prethodnika.",`x−1=−${v+5}; dodajemo 1 na obe strane: x=−${v+4}. Suprotan broj je −x=${v+4}.`,"advanced","Prethodnik i sledbenik")
 ]);
 register("apsolutna-vrednost",[
  v=>N("absolute-diagram",v,"Odredi apsolutnu vrednost koordinate A.","",v+2,"Prebroj jedinične duži do nule.",`A(−${v+2}), pa je |−${v+2}|=${v+2}.`,"basic","Apsolutna vrednost","diagram",{type:"number-line",min:-v-3,max:2,points:[{value:-v-2,label:"A"}]}),
@@ -261,6 +261,7 @@ const basicLater=new Set(["6-1k","6-2i","6-3j","sw-absolute-table-0","sw-r5-orde
 export function applySeptemberWorkLevels(lessonId:string,tasks:Task[]):Task[]{
  const plan=septemberWorkPlans[lessonId];if(!plan)return tasks;
  return tasks.map(task=>{
+  if(lessonId==="skup-celih-brojeva")return {...task,level:task.id.startsWith("sw-integer-reverse-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
   if(lessonId==="kratko-obnavljanje-5")return {...task,taskType:retainedTypes[task.id]??task.taskType};
   const at=plan.indexOf(task.id);
   const level:Level=at<0?task.level:at<3||basicOverrides.has(task.id)?"basic":at<7||basicLater.has(task.id)?"medium":"advanced";

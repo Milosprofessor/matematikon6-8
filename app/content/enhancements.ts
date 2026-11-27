@@ -38,7 +38,7 @@ export const extraExamples: Record<string,string[]> = {
 };
 
 export const extraTasks: Record<string,Task[]> = {
-  "skup-celih-brojeva":[I("6-1d","Odredi suprotan broj.","27","-27","Promeni znak broja.","Suprotan broj broju 27 je −27.","basic","Skup celih brojeva"),C("6-1e","Koji broj ne pripada skupu Z?","",["−18","0","[[frac:5|2]]"],"[[frac:5|2]]","Celi brojevi nemaju razlomljeni deo.","Razlomak 5/2 nije ceo broj.","medium","Skup celih brojeva")],
+  "skup-celih-brojeva":[I("6-1d","Odredi suprotan broj.","27","-27","Promeni znak broja.","Suprotan broj broju 27 je −27.","basic","Skup celih brojeva"),C("6-1e","Koji broj ne pripada skupu Z?","",["−18","0","[[frac:5|2]]"],"[[frac:5|2]]","Celi brojevi nemaju razlomljeni deo.","[[frac:5|2]]=2,5 nije ceo broj, dok −18 i 0 pripadaju Z.","medium","Skup celih brojeva")],
   "apsolutna-vrednost":[I("6-2d","Izračunaj.","|−24| − |−9|","15","Odredi obe apsolutne vrednosti.","24−9=15.","basic","Apsolutna vrednost"),C("6-2e","Odredi x.","|x|=6",["Samo 6","Samo −6","−6 ili 6"],"−6 ili 6","Dva suprotna broja imaju isto rastojanje od nule.","Rešenja su −6 i 6.","medium","Apsolutna vrednost")],
   "uporedjivanje":[C("6-3d","Uporedi.","−21 __ −19",["<",">","="],"<","Na brojnoj pravoj −21 je levo.","−21<−19.","basic","Poređenje"),C("6-3e","Odredi najveći broj.","−2, −11, 0, 5",["0","5","−2"],"5","Najveći je broj najviše desno.","Najveći broj je 5.","basic","Poredak")],
   "sabiranje":[I("6-4d","Izračunaj.","−23 + 17","-6","Oduzmi apsolutne vrednosti.","23−17=6, a znak je negativan.","medium","Sabiranje"),I("6-4e","Odredi x.","−12 + x = 5","17","Dodaj 12 na obe strane.","x=5+12=17.","advanced","Nepoznati sabirak")],
