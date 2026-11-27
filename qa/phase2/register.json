@@ -3071,7 +3071,7 @@
     "location": "app/content/october-curriculum.ts; october.ts; october-expansion.ts; october-work.ts; learning.ts; october-tests.ts",
     "fix": "Uslov ako i samo ako, formula i postupci, granični primer nultog ugla, provera svih alternativa i poređenje.",
     "status": "Ispravljeno i potvrđeno",
-    "fix_commit": "",
+    "fix_commit": "ebad060eccf9da5d9265018e15bd85b0923235e0",
     "phase2_evidence": "qa/phase2c/grade6/zbir-uglova-trougla/tasks.json; lesson.json; browser.json; tests.log"
   },
   {
@@ -3088,7 +3088,7 @@
     "location": "app/content/october-curriculum.ts; october-expansion.ts; october-work.ts",
     "fix": "Produžetak i poluprava; po jedan ugao kod različitih temena; kompletni postupci i primeri.",
     "status": "Ispravljeno i potvrđeno",
-    "fix_commit": "",
+    "fix_commit": "222bb2f3c4ab7749e82457804b4fe6a9cd26c0aa",
     "phase2_evidence": "qa/phase2c/grade6/uglovi-transverzala/tasks.json; lesson.json; browser.json; tests.log"
   },
   {
@@ -3105,7 +3105,7 @@
     "location": "app/content/task-visuals.ts; app/math-diagrams.tsx",
     "fix": "Izračunat oblik jednakokrakog trougla, oznaka duž simetrale spoljašnjeg ugla; produžetak vidljiv.",
     "status": "Ispravljeno i potvrđeno",
-    "fix_commit": "",
+    "fix_commit": "222bb2f3c4ab7749e82457804b4fe6a9cd26c0aa",
     "phase2_evidence": "qa/phase2c/grade6/uglovi-transverzala/tasks.json; lesson.json; browser.json; tests.log"
   },
   {
@@ -3122,7 +3122,7 @@
     "location": "app/content/plan-additions.ts; october-practice-supplement.ts",
     "fix": "Uslov paralelnosti, jednačina, međukoraci i provera u primerima.",
     "status": "Ispravljeno i potvrđeno",
-    "fix_commit": "",
+    "fix_commit": "0104a037005777100297904b31eaa5130e7ec722",
     "phase2_evidence": "qa/phase2c/grade6/uglovi-na-transverzali/tasks.json; lesson.json; browser.json; tests.log"
   },
   {
@@ -3139,7 +3139,7 @@
     "location": "app/content/task-visuals.ts",
     "fix": "Unutrašnja geometrija usklađena sa zadatim vrednostima; oznake β i γ uz jednaka ugla, generator koristi β=α+15°.",
     "status": "Ispravljeno i potvrđeno",
-    "fix_commit": "",
+    "fix_commit": "ffb19d6d19e8ad78ca920d884600b6f090f12ef2",
     "phase2_evidence": "qa/phase2c/grade6/odnos-stranica-uglova/tasks.json; lesson.json; browser.json"
   },
   {
@@ -3156,7 +3156,7 @@
     "location": "app/content/october.ts; october-work.ts; october-expansion.ts",
     "fix": "Obrat teorema, tri primera, potpuni računski postupak.",
     "status": "Ispravljeno i potvrđeno",
-    "fix_commit": "",
+    "fix_commit": "ffb19d6d19e8ad78ca920d884600b6f090f12ef2",
     "phase2_evidence": "qa/phase2c/grade6/odnos-stranica-uglova/tasks.json; lesson.json; browser.json"
   },
   {
@@ -3173,7 +3173,7 @@
     "location": "app/content/october.ts; october-work.ts; october-expansion.ts; task-visuals.ts",
     "fix": "Neophodan i dovoljan uslov, otvoren interval, provera obe mogućnosti za krak, maksimum obima. Uklonjena skica treće nepoznate dužine.",
     "status": "Ispravljeno i potvrđeno",
-    "fix_commit": "",
+    "fix_commit": "ffb19d6d19e8ad78ca920d884600b6f090f12ef2",
     "phase2_evidence": "qa/phase2c/grade6/nejednakost-trougla/tasks.json; lesson.json; browser.json"
   }
 ]

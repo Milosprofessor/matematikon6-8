@@ -1,6 +1,6 @@
 # Checkpoint 15 — Oblast Trougao završena
 
-Datum: 27.11.2026. Polazni GitHub commit 0104a03. Nalazi G6C-035–037.
+Datum: 27.11.2026. Polazni GitHub commit 0104a03. Sadržajni GitHub commit ffb19d6d19e8ad78ca920d884600b6f090f12ef2. Nalazi G6C-035–037.
 
 | Stavka | Stanje |
 |---|---:|
@@ -16,6 +16,7 @@ Datum: 27.11.2026. Polazni GitHub commit 0104a03. Nalazi G6C-035–037.
 - Nejednakost trougla: 27/27, 8 osnovnih, 9 srednjih, 10 naprednih; strogi neophodan i dovoljan uslov, obe granice, obe mogućnosti za jednakokraki trougao, maksimum obima i prikaz duži koje ne grade trougao. Tri proverena primera. Uklonjena skica nepoznate treće stranice, jer bi pokazivala proizvoljnu dužinu.
 - ID-jevi, redosled i ključevi odgovora očuvani. Zbirno za oblast: 30 osnovnih, 53 srednjih, 48 naprednih.
 - Programski testovi: 127/127 (dodat ciljani test geometrije), Pages i Worker build, TypeScript, lint. Dve lekcije: 44 browser zapisa na desktop i mobilnoj touch emulaciji. Završna provera oblasti: 7/7 na oba prikaza; ukupno 14 odgovora, sačuvan prioritetni sintetički napredak i najbolji rezultat nakon osvežavanja.
+- Dodatna storage regresija (critical-storage.py): osvežavanje i ponovno pokretanje, dve kartice bez gubitka, promena razreda, obnova simulacije i obrada oštećenih/blokiranih zapisa uspešni. Dokazi u qa/phase2c/grade6/triangle-storage.
 - LOG-06: jedinice evidentirane, zajednički validator ostaje za fazu 3. Nisu testirani fizički uređaji niti sve generisane varijante pojedinačno u UI.
 - Obuhvat oblasti iz aktuelnog nastavnog inventara: trougao-vrste, zbir-uglova-trougla, uglovi-transverzala, uglovi-na-transverzali, odnos-stranica-uglova, nejednakost-trougla. Podudarnost i konstrukcije su u zasebnoj oblasti s6-trouglovi, nisu preuzete kao završene u 2C. Godišnji ishodi vezani za njih ne označavaju se kao ostvareni.
 
