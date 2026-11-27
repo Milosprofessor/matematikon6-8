@@ -80,7 +80,8 @@ export const noteLayouts:Record<string,PointLayout[]>={
   p('Nepoznati početni broj','s1'),
  ],
  'brojevni-izrazi':[
-  p('Redosled računanja','i0',{f:[0],note:true}),
+  p('Redosled računanja','i0.0 i0.1 i0.2',{f:[0],note:true}),
+  p('Dozvoljeno deljenje','i0.3'),
   p('Prevođenje teksta u izraz','i1'),
   p('Poređenje i nulti proizvod','s1',{f:[1]}),
  ],

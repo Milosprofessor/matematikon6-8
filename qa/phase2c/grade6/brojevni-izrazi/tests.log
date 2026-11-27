@@ -1,0 +1,167 @@
+WebSocket server error: Port 24678 is already in use
+✔ LOG-04 mixed numbers preserve addition, sign and token boundaries (1.46617ms)
+✔ LOG-05 expanded form rejects uncancelled terms (1.355164ms)
+WebSocket server error: Port 24678 is already in use
+✔ LOG-07 exact powers and π preserve mathematical value (65.509698ms)
+✔ LOG-09 scientific notation is compared as exact rationals (1.482985ms)
+WebSocket server error: Port 24678 is already in use
+✔ LOG-06 explicitly declared units are checked, never discarded blindly (539.14974ms)
+WebSocket server error: Port 24678 is already in use
+✔ audited mathematical corrections retain IDs and remove ambiguity (5604.47813ms)
+✔ expanded form rejects uncomputed products as well as like terms (0.688688ms)
+WebSocket server error: Port 24678 is already in use
+✔ svih 86 lekcija imaju 2–5 smislenih, kratkih tačaka i samo jednu napomenu (4.170468ms)
+✔ sve postojeće formule ostaju tačne i pojavljuju se tačno jednom (0.932844ms)
+✔ svih 93 crteža je vidljivo unutar odgovarajuće nastavne tačke u oba pisma (775.038283ms)
+✔ prikazane beleške čuvaju uslove teorema i ne uvode koren unapred (25.989174ms)
+✔ različiti geometrijski modeli stoje uz svoje pravilo (0.407028ms)
+WebSocket server error: Port 24678 is already in use
+10:04:50 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+✔ svih 86 aktivnih lekcija imaju objašnjen cilj, postupak, razlog i čestu grešku u oba pisma (855.784807ms)
+✔ zadaci čuvaju ID, nivo i tok rada uz dokumentovane matematičke ispravke audita (38.763712ms)
+✔ objašnjenja i vizuelizacije 7. razreda ne uvode koren pre lekcije o korenu (0.324965ms)
+✔ SVG za svaku lekciju i sve varijante ima konačne koordinate i čitljive matematičke oznake (318.603556ms)
+✔ Tales u više brojnih varijanti čuva paralelnost, dati odnos i sve poznate dužine (3.13358ms)
+✔ rotacija i ogledanje sličnih trouglova čuvaju sve tri razmere i redosled temena (1.287954ms)
+✔ crtež zavisi od poznatih podataka, nikad od upisanog odgovora ili rešenja (19.595104ms)
+✔ oznaka obima i razlika osnovica ne postaju lažne poznate dužine (1.3865ms)
+✔ visina na hipotenuzu prati zadate h,p i a,c bez otkrivanja nepoznate oznake (0.672164ms)
+✔ obrnuti zadatak o senkama čuva odnos poznatih visina i paralelnost zraka (0.364444ms)
+✔ prostorni zadaci razlikuju koplanarne tačke, paralelne normale i zaklonjeno teme (54.415928ms)
+✔ nove lekcije ostaju na 10 zadataka, a podaci učenika i algoritam znanja ostaju kompatibilni (48.191312ms)
+✔ baza čuva redosled i crteže uz nezavisno testirane ispravke audita faze 1 (30.930544ms)
+✔ glavno objašnjenje je kratko, ima jednu napomenu i čuva svaki izbor geometrijskog prikaza (42.669615ms)
+✔ sažeti tekst zadržava ključne uslove i oba pisma bez prevođenja matematičkih oznaka (3.509241ms)
+✔ svih šest zadataka o merdevinama označava poznatu visinu, hipotenuzu i nepoznato x (0.866695ms)
+✔ recenzija 6. razreda: obnavljanje ima 45 stabilnih ID-jeva, tri raznovrsna primera i opravdane nivoe (0.437142ms)
+✔ recenzija skup celih brojeva: stabilnih 17 zadataka, tri primera, opravdani nivoi (0.204957ms)
+✔ recenzija apsolutne vrednosti: 22 ID-ja, tri primera i odgovarajući nivoi (0.141551ms)
+✔ recenzija poređenja: 22 ID-ja, tri primera i pravilni nivoi (0.119639ms)
+✔ recenzija sabiranja: 28 ID-ja, tri primera, predznak i ekvivalentne transformacije (0.13418ms)
+✔ recenzija oduzimanja: 22 ID-ja, tri primera i ekvivalentne transformacije (0.258716ms)
+✔ recenzija rastojanja: 22 ID-ja, tri primera, dva smera i sredina (0.228982ms)
+✔ recenzija sabiranja i oduzimanja: zagrade, povratno stanje i nivoi (0.129624ms)
+✔ recenzija množenja: znak, nula, svojstva i nivoi (0.492856ms)
+✔ recenzija deljenja: nula, nepoznati delilac i nivoi (0.262742ms)
+✔ recenzija množenja i deljenja: redosled i provera (0.191396ms)
+✔ recenzija brojevnih izraza: prioritet, nulti proizvod i nivoi (0.331054ms)
+WebSocket server error: Port 24678 is already in use
+10:04:50 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+10:04:52 PM [vite] (client) [optimizer] scanning dependencies...
+10:04:55 PM [vite] (client) [optimizer] bundling dependencies...
+✔ direktne adrese svih lekcija i pregled oblasti čuvaju kontekst razreda (3.701378ms)
+✔ fragment sekcije nije ruta lekcije i dugme ga ne sme koristiti za navigaciju (598.740533ms)
+✔ oba meseca renderuju isti pojedinačni zadatak, povratak i sledeći korak (485.553825ms)
+✔ rezultat prikazuje 8/10 iz prvog pokušaja i 10/10 konačno u oba meseca (51.911558ms)
+✔ svaka stranica oba meseca ima sažeto objašnjenje i brz prelaz na zadatke (343.1229ms)
+✔ geometrijske slike prikazuju paralelnost i projekciju bez odgovora u natpisu zadatka (1.298459ms)
+WebSocket server error: Port 24678 is already in use
+10:04:50 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+10:04:52 PM [vite] (client) [optimizer] bundling dependencies...
+✔ oktobarske oblasti prate operativne planove bez novembarskih tema (5.08208ms)
+✔ preduslovi otključavaju oktobarske veštine redom (12.975959ms)
+✔ svaka oktobarska lekcija ima jasan balans i raznovrsnu bazu (9.22073ms)
+✔ oktobarske mini-provere pokrivaju više lekcija i sva tri nivoa (5.438733ms)
+✔ novi matematički zapisi se renderuju i pismo čuva oznake (125.294001ms)
+✔ ciljano vežbanje bira različite oktobarske tipove (5.789587ms)
+✔ postojeći localStorage ključevi ostaju nepromenjeni, a pokušaji su prošireni kompatibilno (27.770093ms)
+✔ Pametno vežbanje oblasti ostaje prilagođeno telefonu (2.329199ms)
+WebSocket server error: Port 24678 is already in use
+10:04:50 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+10:04:52 PM [vite] (client) [optimizer] bundling dependencies...
+✔ aktivni oktobarski raspored prati 29 lekcija sa Drive-a (1.298169ms)
+✔ 29 oktobarskih lekcija ima po 10 izabranih interaktivnih zadataka (31.682437ms)
+✔ šira baza ima 82 nova tipa i deduplikovane varijante, a ne samo izabranih 10 (3.164957ms)
+✔ odgovori svih numeričkih generatora provereni nezavisnim formulama (6.262673ms)
+✔ ponuđeni odgovori imaju tačno jedan zapis tačnog odgovora (9.93673ms)
+✔ nove notacije rade na ćirilici i latinici bez sirovih tokena (107.988006ms)
+✔ mobilni numerički unos prihvata negativne i decimalne zapise (0.211345ms)
+✔ pogrešno → izlazak → povratak → tačno čuva prvi pokušaj i broj odgovora (1.097719ms)
+✔ 10 zadataka → nagoveštaj/postupak → konačni rezultat → obnova stanja (8.621306ms)
+✔ procena znanja razlikuje ponovljeni od tačnog prvog pokušaja (3.78354ms)
+✔ nova baza ne prelazi oblast ni redosled učenja, za sva tri profila (76.86829ms)
+✔ geometrijski crteži čuvaju odnos stranica kvadrata i normalnost dijagonala romba (20.543951ms)
+✔ stari ključevi i touch mete ostaju očuvani uz zajednički tok oba meseca (8.927262ms)
+✔ renders public homepage without temporary development preview metadata (124.651661ms)
+✔ operativni planovi daju četiri meseca i povezuju ponovljene časove bez duplih lekcija (3.574208ms)
+✔ svaka od 86 lekcija ima 10 zadataka, dodatni fond, tri nivoa, pomoć, postupak i valjane izbore (496.928523ms)
+✔ nezavisno računanje svih upisnih odgovora 18 novih lekcija (0.611633ms)
+✔ svih 81 varijanti u ranije praznim fondovima ima nezavisno izračunat rezultat (0.593386ms)
+✔ adaptivni fond i provera znanja se šire tek do dostignute lekcije (32.773806ms)
+✔ promena meseca ne prepisuje stari započeti rad (1.088946ms)
+✔ promenljive u proizvodima, složeni izložioci i razlomci ostaju matematički u oba pisma (0.546847ms)
+✔ površina i zapremina pravilnih trostranih i šestostranih prizmi ostaju matematički tačne (1.348794ms)
+WebSocket server error: Port 24678 is already in use
+10:04:52 PM [vite] (client) [optimizer] scanning dependencies...
+10:04:54 PM [vite] (client) [optimizer] bundling dependencies...
+✔ 6. razred ima raznovrsnu septembarsku bazu na sva tri nivoa (6.836791ms)
+✔ 7. razred proverava različite veštine realnih brojeva na sva tri nivoa (10.85408ms)
+✔ 7. razred ne koristi kvadratni koren pre odgovarajuće lekcije (8.306376ms)
+✔ 7. razred poštuje granice između kvadrata, određivanja korena i svojstava (1.022106ms)
+✔ ciljano vežbanje Realnih brojeva ostaje bez korena (8.012286ms)
+✔ 8. razred ima različite geometrijske tipove i crteže (12.544525ms)
+✔ 8. razred ne koristi proporcije i stavove sličnosti pre njihove lekcije (1.063738ms)
+✔ tekst i crtež zadatka o indirektnom merenju koriste iste oznake (0.456922ms)
+✔ prvi pokušaj ostaje ključan, a novi dobri rezultati popravljaju procenu (0.492886ms)
+✔ ponavljanje samo jednog tipa ne daje prerano zelenu procenu (0.244996ms)
+✔ težina se menja tek posle niza rezultata (0.130384ms)
+✔ više simuliranih pametnih sesija po oblasti ne meša oblasti i ne ponavlja isti zadatak (560.33027ms)
+✔ slabiji učenik dobija lakše i tipološki različite zadatke (37.371162ms)
+✔ ciljano Talesovo vežbanje menja konstrukciju zadatka (1.260442ms)
+✔ oblast otključava lekcije redom i ne uvodi buduće gradivo (2.414166ms)
+✔ oblast koja traje u septembru i oktobru deli jedno Pametno vežbanje (0.205897ms)
+✔ anti-repeat istorija se primenjuje unutar izabrane oblasti (4.48623ms)
+✔ ćirilica ne menja matematičke oznake, promenljive ni jedinice (3.518365ms)
+✔ svaki septembarski matematički zapis se renderuje bez sirovih oznaka (39.016809ms)
+✔ završni testovi ostaju potpuni i matematički povezani sa lekcijama (1.454583ms)
+✔ Pokreni čas je izolovan prikaz lekcije prilagođen dodiru (0.859323ms)
+WebSocket server error: Port 24678 is already in use
+10:04:57 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+✔ svih 34 septembarskih lekcija, uključujući obnavljanje, ima tačno 10 različitih zadataka (36.258781ms)
+✔ šira septembarska baza ima 86 novih tipova sa 516 varijanti koje se generišu jednom po lekciji (5.323931ms)
+✔ svi numerički generatori provereni nezavisnim matematičkim izrazima u svih šest varijanti (1.032272ms)
+✔ izbori nemaju duplikate, a kritične tvrdnje ostaju tačne u graničnim varijantama (4.505028ms)
+✔ novo gradivo poštuje svaki septembarski prag: bez budućih korena, operacija i proporcija (2.967461ms)
+✔ čist učenik u svakoj lekciji prolazi 1/10–10/10, greši, koristi postupak i nastavlja posle izlaska (8.499403ms)
+✔ stari pojedinačni rezultati se obnavljaju bez brisanja ili ponovnog brojanja statistike (0.774397ms)
+✔ više sesija na svakom obrađenom pragu: različiti tipovi, bez prelaska u drugu oblast ili buduću lekciju (352.288273ms)
+✔ notacija i odgovori novih zadataka rade u oba pisma, uključujući negativne decimale i indekse (61.730207ms)
+✔ visina i odsečci hipotenuze imaju matematički tačan crtež u datoj razmeri (7.408835ms)
+✔ jedna zajednička komponenta čuva kratku teoriju, rezultate i velike touch tastere (6.090165ms)
+WebSocket server error: Port 24678 is already in use
+✔ sve jedinice, posebni zadaci, jedinstveni identifikatori i nezavisan matematički ključ (53.781591ms)
+✔ provere po oblastima i tri različite završne provere (30.212271ms)
+✔ meseci, redosled i adaptivni fond svih novih lekcija (8.468227ms)
+✔ tačno poređenje razlomaka, decimala, negativnih i graničnih zapisa (0.379828ms)
+WebSocket server error: Port 24678 is already in use
+(!) Failed to run dependency scan. Skipping dependency pre-bundling. Error: The following dependencies are imported but could not be resolved:
+
+  @/components/ui/progress (imported by /workspace/scratch/55ec39cb1e23/expressions/app/page.tsx)
+  @/components/ui/button (imported by /workspace/scratch/55ec39cb1e23/expressions/app/page.tsx)
+
+Are they installed?
+    at file:///workspace/scratch/55ec39cb1e23/repo/node_modules/vite/dist/node/chunks/node.js:31510:33
+    at async file:///workspace/scratch/55ec39cb1e23/repo/node_modules/vite/dist/node/chunks/node.js:23242:15
+✔ Svih 17 lekcija i 25 provera imaju prihvatljiv ključ i različite ID-jeve (5.013087ms)
+✔ Ekvivalentni oblici, potpun proizvod i tačan broj π (0.491594ms)
+✔ Nezavisna provera računskih i modelskih odgovora (0.617722ms)
+✔ Radne jedinice, vidljive provere i ciljevi preporuka (4.805537ms)
+✔ Tačni izrazi, razlomci, uređeni parovi i nevažeći zapisi (0.580377ms)
+✔ Nezavisni računski i pojmovni ključ za sve lekcije, mini-provere, provere oblasti i dopunske zadatke (0.550392ms)
+✔ Nezavisni ključ većih provera i sva tri probna testa (0.172608ms)
+✔ Preseci pravih rešavaju originalne jednačine, uključujući identitete i vertikale (8.584571ms)
+✔ Sve dozvoljene dimenzije daju iste rezultate nezavisnim formulama, ravna mreža i razvijanje čuvaju dužine (28.747403ms)
+WebSocket server error: Port 24678 is already in use
+✔ emits the catalog's animation and scrolling utilities (46.130544ms)
+✔ forwards progress semantics to the primitive (946.789481ms)
+10:04:59 PM [vite] (client) [optimizer] scanning dependencies...
+✔ emits chart themes for the starter's media dark mode (436.004424ms)
+✔ renders sidebar skeletons deterministically (247.898908ms)
+ℹ tests 125
+ℹ suites 0
+ℹ pass 125
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9578.149733

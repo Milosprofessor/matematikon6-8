@@ -22,7 +22,7 @@ export const areaTests: Record<GradeId,Record<string,AreaTestTask[]>> = {
     L(I("t6-7","Izračunaj.","−12+7−(−6)","1","Prvo ukloni zagradu.","−12+7+6=−5+6=1.","medium","Sabiranje i oduzimanje"),"sabiranje-oduzimanje"),
     L(I("t6-8","Izračunaj.","(−9)·(−8)","72","Dva negativna činioca daju pozitivan proizvod.","(−9)·(−8)=9·8=72.","basic","Množenje"),"mnozenje"),
     L(I("t6-9","Izračunaj.","84:(−7)","-12","Različiti znaci daju minus.","84:7=12, pa je rezultat −12.","basic","Deljenje"),"deljenje"),
-    L(I("t6-10","Izračunaj.","18:(−3)−2·(−5)","4","Deljenje i množenje imaju prednost.","−6−(−10)=4.","advanced","Brojevni izrazi"),"brojevni-izrazi")
+    L(I("t6-10","Izračunaj.","18:(−3)−2·(−5)","4","Deljenje i množenje imaju prednost.","18:(−3)=−6 i 2·(−5)=−10, pa −6−(−10)=−6+10=4.","medium","Brojevni izrazi"),"brojevni-izrazi")
   ],...octoberAreaTests[6]},
   7:{"realni-brojevi":[
     L(C("t7-1","Izaberi tačan zapis.","[[frac:9|20]]",["0,45","0,9","0,18"],"0,45","Proširi do imenioca 100.","9/20=45/100=0,45.","basic","Decimalni zapis"),"decimalni-zapis"),

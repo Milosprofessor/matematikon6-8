@@ -1756,8 +1756,8 @@
    "title": "Brojevni izrazi sa celim brojevima",
    "intro": "U složenom izrazu poštujemo redosled računskih operacija i pažljivo pratimo znakove.",
    "rules": [
-    "Prvo zagrade.",
-    "Zatim množenje i deljenje.",
+    "Najpre računaj sadržaj zagrada, počevši od unutrašnjih. Proveri da nijedan delilac nije nula.",
+    "Zatim množenje i deljenje istog prioriteta računaj sleva nadesno.",
     "Na kraju sabiranje i oduzimanje sleva nadesno."
    ],
    "formulas": [
@@ -1776,6 +1776,31 @@
      "Oduzimanje: 6 − 4 = 2."
     ]
    },
+   "worked": [
+    {
+     "question": "Izračunaj 6−2·(−3+5).",
+     "steps": [
+      "Zagrada: −3+5=2.",
+      "Množenje: 2·2=4.",
+      "Zatim 6−4=2."
+     ]
+    },
+    {
+     "question": "Izračunaj 36:(−3·2)−(−4).",
+     "steps": [
+      "U zagradi je (−3)·2=−6; delilac nije nula.",
+      "36:(−6)=−6, zatim −6−(−4)=−6+4=−2."
+     ]
+    },
+    {
+     "question": "Od 24 oduzmi proizvod 6 i −3.",
+     "steps": [
+      "Zapiši ceo izraz: 24−6·(−3).",
+      "Prvo proizvod: 6·(−3)=−18.",
+      "Zatim 24−(−18)=24+18=42."
+     ]
+    }
+   ],
    "month": "october",
    "prerequisites": [
     "mnozenje-deljenje"
@@ -1786,7 +1811,7 @@
    "notes": [
     {
      "title": "Redosled računanja",
-     "text": "Brojevni izraz povezuje više računskih operacija. Redosled je: zagrade, množenje i deljenje, pa sabiranje i oduzimanje. Operacije istog prioriteta računaj sleva nadesno.",
+     "text": "Brojevni izraz povezuje više računskih operacija. Redosled je: sadržaj zagrada od unutrašnjih ka spoljašnjim, množenje i deljenje, pa sabiranje i oduzimanje. Operacije istog prioriteta računaj sleva nadesno.",
      "definition": false,
      "formulas": [
       "( ) → ·, : → +, −"
@@ -1794,6 +1819,14 @@
      "visualIndexes": [],
      "table": false,
      "note": "Ne računaj uvek sleva nadesno: prvo proveri prioritete."
+    },
+    {
+     "title": "Dozvoljeno deljenje",
+     "text": "Proveri da svaki delilac ima vrednost različitu od nule.",
+     "definition": false,
+     "formulas": [],
+     "visualIndexes": [],
+     "table": false
     },
     {
      "title": "Prevođenje teksta u izraz",
@@ -12544,7 +12577,7 @@
    "answer": "2",
    "hint": "Posebno izračunaj deljenje i množenje.",
    "solution": "24:(−6)=−4 i 2·(−3)=−6, pa je −4−(−6)=2.",
-   "level": "advanced",
+   "level": "medium",
    "skill": "Brojevni izrazi",
    "lesson": "brojevni-izrazi",
    "area": "celi-brojevi",
@@ -12559,7 +12592,7 @@
    "kind": "input",
    "answer": "-13",
    "hint": "Prvo zagrada, zatim množenje.",
-   "solution": "−2+6=4, −5·4+7=−13.",
+   "solution": "−2+6=4, zatim (−5)·4=−20, pa −20+7=−13.",
    "level": "medium",
    "skill": "Brojevni izrazi",
    "lesson": "brojevni-izrazi",
@@ -12575,8 +12608,8 @@
    "kind": "input",
    "answer": "-2",
    "hint": "Najpre izračunaj izraz u zagradi.",
-   "solution": "−3·2=−6, 36:(−6)=−6, a −6+4=−2.",
-   "level": "advanced",
+   "solution": "(−3)·2=−6. Delilac nije nula: 36:(−6)=−6, pa −6−(−4)=−6+4=−2.",
+   "level": "medium",
    "skill": "Brojevni izrazi",
    "lesson": "brojevni-izrazi",
    "area": "celi-brojevi",
@@ -12637,11 +12670,11 @@
    "choices": [
     "Nema greške.",
     "Množenje se radi pre oduzimanja.",
-    "Treba prvo podeliti."
+    "Rezultat treba da bude 8."
    ],
    "answer": "Množenje se radi pre oduzimanja.",
    "hint": "Množenje ima prednost nad oduzimanjem.",
-   "solution": "4·(−3)=−12, pa je 20−(−12)=32.",
+   "solution": "Najpre 4·(−3)=−12; zatim 20−(−12)=20+12=32, ne −48.",
    "level": "medium",
    "skill": "Redosled operacija",
    "taskType": "pronadji-gresku",
@@ -12666,8 +12699,8 @@
    ],
    "answer": "A<B",
    "hint": "Izračunaj oba izraza posebno.",
-   "solution": "A=−12+5=−7, B=−6, pa je A<B.",
-   "level": "advanced",
+   "solution": "A=(−3)·4+5=−12+5=−7. B=18:(−3)=−6. Pošto je −7<−6, sledi A<B.",
+   "level": "medium",
    "skill": "Brojevni izrazi",
    "taskType": "poredjenje-izraza",
    "errorCategory": "method",
@@ -12686,8 +12719,8 @@
    "kind": "input",
    "answer": "-1",
    "hint": "Zapiši jedan izraz.",
-   "solution": "−12+3·5−4=−12+15−4=−1.",
-   "level": "advanced",
+   "solution": "−12+3·5−4=−12+15−4=3−4=−1.",
+   "level": "medium",
    "skill": "Brojevni izrazi",
    "taskType": "problem-vise-koraka",
    "errorCategory": "method",
@@ -12869,7 +12902,7 @@
    "kind": "input",
    "answer": "3",
    "hint": "Činilac u zagradi mora biti 0.",
-   "solution": "3−3=0, pa nedostaje 3.",
+   "solution": "Prvi činilac je 3, nije nula. Zato x−3=0, pa x=3. Provera: 3·(3−3)=0.",
    "level": "medium",
    "skill": "Brojevni izrazi",
    "taskType": "expr-missing",
@@ -12892,7 +12925,7 @@
    "kind": "input",
    "answer": "3",
    "hint": "Činilac u zagradi mora biti 0.",
-   "solution": "3−3=0, pa nedostaje 3.",
+   "solution": "Prvi činilac je 4, nije nula. Zato x−3=0, pa x=3. Provera: 4·(3−3)=0.",
    "level": "medium",
    "skill": "Brojevni izrazi",
    "taskType": "expr-missing",
@@ -12914,7 +12947,7 @@
    "kind": "input",
    "answer": "3",
    "hint": "Činilac u zagradi mora biti 0.",
-   "solution": "3−3=0, pa nedostaje 3.",
+   "solution": "Prvi činilac je 5, nije nula. Zato x−3=0, pa x=3. Provera: 5·(3−3)=0.",
    "level": "medium",
    "skill": "Brojevni izrazi",
    "taskType": "expr-missing",
@@ -12936,7 +12969,7 @@
    "kind": "input",
    "answer": "3",
    "hint": "Činilac u zagradi mora biti 0.",
-   "solution": "3−3=0, pa nedostaje 3.",
+   "solution": "Prvi činilac je 6, nije nula. Zato x−3=0, pa x=3. Provera: 6·(3−3)=0.",
    "level": "medium",
    "skill": "Brojevni izrazi",
    "taskType": "expr-missing",
@@ -12958,7 +12991,7 @@
    "kind": "input",
    "answer": "3",
    "hint": "Činilac u zagradi mora biti 0.",
-   "solution": "3−3=0, pa nedostaje 3.",
+   "solution": "Prvi činilac je 7, nije nula. Zato x−3=0, pa x=3. Provera: 7·(3−3)=0.",
    "level": "medium",
    "skill": "Brojevni izrazi",
    "taskType": "expr-missing",
@@ -12980,7 +13013,7 @@
    "kind": "input",
    "answer": "3",
    "hint": "Činilac u zagradi mora biti 0.",
-   "solution": "3−3=0, pa nedostaje 3.",
+   "solution": "Prvi činilac je 8, nije nula. Zato x−3=0, pa x=3. Provera: 8·(3−3)=0.",
    "level": "medium",
    "skill": "Brojevni izrazi",
    "taskType": "expr-missing",
@@ -12997,18 +13030,18 @@
   },
   {
    "id": "ow-expr-brackets-0",
-   "prompt": "Koji raspored zagrada daje nulu?",
+   "prompt": "Koji izraz ima vrednost nula?",
    "math": "",
    "kind": "choice",
    "choices": [
     "(3−3)·4",
     "3−(3·4)",
-    "3−3·4"
+    "3·4−3"
    ],
    "answer": "(3−3)·4",
    "hint": "Proveri kako zagrade menjaju redosled.",
-   "solution": "Razlika jednakih brojeva je 0; 0·4=0. Druga dva izraza daju −9.",
-   "level": "advanced",
+   "solution": "Razlika jednakih brojeva je 0; 0·4=0. Drugi izraz daje −9, a treći 9.",
+   "level": "medium",
    "skill": "Redosled operacija",
    "taskType": "expr-brackets",
    "errorCategory": "method",
@@ -13025,18 +13058,18 @@
   },
   {
    "id": "ow-expr-brackets-1",
-   "prompt": "Koji raspored zagrada daje nulu?",
+   "prompt": "Koji izraz ima vrednost nula?",
    "math": "",
    "kind": "choice",
    "choices": [
     "(4−4)·4",
     "4−(4·4)",
-    "4−4·4"
+    "4·4−4"
    ],
    "answer": "(4−4)·4",
    "hint": "Proveri kako zagrade menjaju redosled.",
-   "solution": "Razlika jednakih brojeva je 0; 0·4=0. Druga dva izraza daju −12.",
-   "level": "advanced",
+   "solution": "Razlika jednakih brojeva je 0; 0·4=0. Drugi izraz daje −12, a treći 12.",
+   "level": "medium",
    "skill": "Redosled operacija",
    "taskType": "expr-brackets",
    "errorCategory": "method",
@@ -13052,18 +13085,18 @@
   },
   {
    "id": "ow-expr-brackets-2",
-   "prompt": "Koji raspored zagrada daje nulu?",
+   "prompt": "Koji izraz ima vrednost nula?",
    "math": "",
    "kind": "choice",
    "choices": [
     "(5−5)·4",
     "5−(5·4)",
-    "5−5·4"
+    "5·4−5"
    ],
    "answer": "(5−5)·4",
    "hint": "Proveri kako zagrade menjaju redosled.",
-   "solution": "Razlika jednakih brojeva je 0; 0·4=0. Druga dva izraza daju −15.",
-   "level": "advanced",
+   "solution": "Razlika jednakih brojeva je 0; 0·4=0. Drugi izraz daje −15, a treći 15.",
+   "level": "medium",
    "skill": "Redosled operacija",
    "taskType": "expr-brackets",
    "errorCategory": "method",
@@ -13079,18 +13112,18 @@
   },
   {
    "id": "ow-expr-brackets-3",
-   "prompt": "Koji raspored zagrada daje nulu?",
+   "prompt": "Koji izraz ima vrednost nula?",
    "math": "",
    "kind": "choice",
    "choices": [
     "(6−6)·4",
     "6−(6·4)",
-    "6−6·4"
+    "6·4−6"
    ],
    "answer": "(6−6)·4",
    "hint": "Proveri kako zagrade menjaju redosled.",
-   "solution": "Razlika jednakih brojeva je 0; 0·4=0. Druga dva izraza daju −18.",
-   "level": "advanced",
+   "solution": "Razlika jednakih brojeva je 0; 0·4=0. Drugi izraz daje −18, a treći 18.",
+   "level": "medium",
    "skill": "Redosled operacija",
    "taskType": "expr-brackets",
    "errorCategory": "method",
@@ -13106,18 +13139,18 @@
   },
   {
    "id": "ow-expr-brackets-4",
-   "prompt": "Koji raspored zagrada daje nulu?",
+   "prompt": "Koji izraz ima vrednost nula?",
    "math": "",
    "kind": "choice",
    "choices": [
     "(7−7)·4",
     "7−(7·4)",
-    "7−7·4"
+    "7·4−7"
    ],
    "answer": "(7−7)·4",
    "hint": "Proveri kako zagrade menjaju redosled.",
-   "solution": "Razlika jednakih brojeva je 0; 0·4=0. Druga dva izraza daju −21.",
-   "level": "advanced",
+   "solution": "Razlika jednakih brojeva je 0; 0·4=0. Drugi izraz daje −21, a treći 21.",
+   "level": "medium",
    "skill": "Redosled operacija",
    "taskType": "expr-brackets",
    "errorCategory": "method",
@@ -13133,18 +13166,18 @@
   },
   {
    "id": "ow-expr-brackets-5",
-   "prompt": "Koji raspored zagrada daje nulu?",
+   "prompt": "Koji izraz ima vrednost nula?",
    "math": "",
    "kind": "choice",
    "choices": [
     "(8−8)·4",
     "8−(8·4)",
-    "8−8·4"
+    "8·4−8"
    ],
    "answer": "(8−8)·4",
    "hint": "Proveri kako zagrade menjaju redosled.",
-   "solution": "Razlika jednakih brojeva je 0; 0·4=0. Druga dva izraza daju −24.",
-   "level": "advanced",
+   "solution": "Razlika jednakih brojeva je 0; 0·4=0. Drugi izraz daje −24, a treći 24.",
+   "level": "medium",
    "skill": "Redosled operacija",
    "taskType": "expr-brackets",
    "errorCategory": "method",
@@ -13347,8 +13380,8 @@
    "kind": "input",
    "answer": "4",
    "hint": "Deljenje i množenje imaju prednost.",
-   "solution": "−6−(−10)=4.",
-   "level": "advanced",
+   "solution": "18:(−3)=−6 i 2·(−5)=−10, pa −6−(−10)=−6+10=4.",
+   "level": "medium",
    "skill": "Brojevni izrazi",
    "lessonId": "brojevni-izrazi",
    "lesson": "brojevni-izrazi",

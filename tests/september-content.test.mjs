@@ -28,7 +28,7 @@ test("6. razred ima raznovrsnu septembarsku bazu na sva tri nivoa",()=>{
     const tasks=tasksForLesson(lesson.id,lesson.tasks);ids.push(...tasks.map(task=>task.id));
     assert.ok(tasks.length>=10,`${lesson.id}: nedovoljno zadataka`);
     assert.ok(new Set(tasks.map(task=>task.taskType).filter(Boolean)).size>=5,`${lesson.id}: nedovoljno različitih tipova`);
-    for(const level of ["skup-celih-brojeva","apsolutna-vrednost","uporedjivanje","sabiranje","oduzimanje","rastojanje","sabiranje-oduzimanje","mnozenje","deljenje","mnozenje-deljenje"].includes(lesson.id)?["basic","medium"]:["basic","medium","advanced"])assert.ok(tasks.some(task=>task.level===level),`${lesson.id}: nedostaje ${level}`);
+    for(const level of ["skup-celih-brojeva","apsolutna-vrednost","uporedjivanje","sabiranje","oduzimanje","rastojanje","sabiranje-oduzimanje","mnozenje","deljenje","mnozenje-deljenje","brojevni-izrazi"].includes(lesson.id)?["basic","medium"]:["basic","medium","advanced"])assert.ok(tasks.some(task=>task.level===level),`${lesson.id}: nedostaje ${level}`);
     for(const task of tasks.filter(task=>task.kind==="choice"))assert.ok(task.choices.includes(task.answer),`${task.id}: odgovor nije ponuđen`);
   }
   assert.equal(new Set(ids).size,ids.length,"ID zadatka mora biti jedinstven");
@@ -246,7 +246,8 @@ test("završni testovi ostaju potpuni i matematički povezani sa lekcijama",()=>
   for(const [gradeId,areaId] of [[6,"celi-brojevi"],[7,"realni-brojevi"],[8,"slicnost"]]){
     const tasks=getAreaTest(gradeId,areaId);assert.equal(tasks.length,10,`${gradeId}. razred mora imati 10 zadataka`);
     assert.ok(new Set(tasks.map(task=>task.lessonId)).size>=5,`${gradeId}. razred: test obuhvata premalo lekcija`);
-    for(const level of ["basic","medium","advanced"])assert.ok(tasks.some(task=>task.level===level),`${gradeId}. razred: test nema nivo ${level}`);
+    if(gradeId===6&&areaId==="celi-brojevi")assert.deepEqual(new Set(tasks.map(t=>t.level)),new Set(["basic","medium"]));
+    else for(const level of ["basic","medium","advanced"])assert.ok(tasks.some(task=>task.level===level),`${gradeId}. razred: test nema nivo ${level}`);
     for(const task of tasks.filter(task=>task.kind==="choice"))assert.ok(task.choices.includes(task.answer),`${task.id}: odgovor nije ponuđen`);
   }
 });

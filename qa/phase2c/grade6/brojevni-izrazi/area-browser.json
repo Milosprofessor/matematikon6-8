@@ -1,0 +1,40 @@
+[
+  {
+    "width": 1366,
+    "ids": [
+      "t6-8",
+      "t6-5",
+      "t6-9",
+      "t6-10",
+      "t6-1",
+      "t6-4",
+      "t6-2",
+      "t6-7",
+      "t6-6",
+      "t6-3"
+    ],
+    "score": "10/10",
+    "progress_preserved": true,
+    "best_after_reload": true,
+    "status": "pass"
+  },
+  {
+    "width": 390,
+    "ids": [
+      "t6-7",
+      "t6-6",
+      "t6-10",
+      "t6-8",
+      "t6-4",
+      "t6-3",
+      "t6-9",
+      "t6-1",
+      "t6-5",
+      "t6-2"
+    ],
+    "score": "10/10",
+    "progress_preserved": true,
+    "best_after_reload": true,
+    "status": "pass"
+  }
+]

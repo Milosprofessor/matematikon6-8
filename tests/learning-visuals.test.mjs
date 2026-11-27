@@ -64,7 +64,7 @@ test('nove lekcije ostaju na 10 zadataka, a podaci učenika i algoritam znanja o
 });
 test('baza čuva redosled i crteže uz nezavisno testirane ispravke audita faze 1',()=>{
  const protectedData=all.filter(({lesson:l})=>["september","october"].includes(l.month)).map(({grade:g,area:a,lesson:l})=>({grade:g.id,area:a.id,month:l.month??a.month??'september',id:l.id,pool:tasksForLesson(l.id,l.tasks).filter(t=>!t.id.startsWith('dop-')),work:lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)),visuals:lessonVisuals(l.id)}));
- assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'76bf3ad3db792b494afe45487f1008d5f54f75568eea694093d8c6b0702cc8d2');
+ assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'00eb49a3bf779d9e8dff0cb07817666a673337f6b44312559f41778bc19847ee');
 });
 test('glavno objašnjenje je kratko, ima jednu napomenu i čuva svaki izbor geometrijskog prikaza',()=>{
  const counts=[];let figures=0;
@@ -180,4 +180,12 @@ test('recenzija množenja i deljenja: redosled i provera',()=>{
  assert.equal(tasks.length,28);assert.equal(tasks.filter(t=>t.level==='basic').length,8);assert.equal(tasks.filter(t=>t.level==='medium').length,20);
  assert.equal(l.worked.length,3);assert.match(l.worked[1].steps.join(' '),/−16≠−4/);
  for(const t of tasks.filter(t=>['6-10c','6-10g'].includes(t.id)))assert.match(t.solution,/Provera:/);
+});
+
+test('recenzija brojevnih izraza: prioritet, nulti proizvod i nivoi',()=>{
+ const l=all.find(x=>x.lesson.id==='brojevni-izrazi').lesson,tasks=tasksForLesson(l.id,l.tasks);
+ assert.equal(tasks.length,28);assert.equal(tasks.filter(t=>t.level==='basic').length,8);assert.equal(tasks.filter(t=>t.level==='medium').length,20);
+ assert.equal(l.worked.length,3);
+ for(const t of tasks.filter(t=>t.id.startsWith('ow-expr-missing-')))assert.match(t.solution,/Provera:/);
+ for(const t of tasks.filter(t=>t.id.startsWith('ow-expr-brackets-')))assert.match(t.solution,/Drugi izraz daje −\d+, a treći \d+/);
 });

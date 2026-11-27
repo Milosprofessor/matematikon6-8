@@ -261,7 +261,7 @@ export const learningByLesson:Record<string,LessonLearning> = {
   "brojevni-izrazi": {
     "aim": "Prevedi tekst u izraz, primeni redosled operacija i proveri kako zagrade menjaju vrednost.",
     "idea": [
-      "Brojevni izraz povezuje više računskih operacija. Redosled je: zagrade, množenje i deljenje, pa sabiranje i oduzimanje. Operacije istog prioriteta računaj sleva nadesno.",
+      "Brojevni izraz povezuje više računskih operacija. Redosled je: sadržaj zagrada od unutrašnjih ka spoljašnjim, množenje i deljenje, pa sabiranje i oduzimanje. Operacije istog prioriteta računaj sleva nadesno. Proveri da svaki delilac ima vrednost različitu od nule.",
       "Tekst prevedi deo po deo: proizvod označava množenje, količnik deljenje, a rečenica određuje šta se od čega oduzima. U zadatku sa stanjem odvoji početnu vrednost, ponovljene promene i završnu promenu."
     ],
     "steps": [

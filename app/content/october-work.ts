@@ -66,8 +66,8 @@ register("mnozenje-deljenje",[
 ]);
 register("brojevni-izrazi",[
  v=>{const a=v+3;return Q("expr","model",v,"Izaberi izraz.","Od "+4*a+" oduzmi proizvod "+a+" i −3.",[4*a+"−"+a+"·(−3)","("+4*a+"−"+a+")·(−3)",4*a+"+"+a+"·(−3)"],4*a+"−"+a+"·(−3)","Prvo prepoznaj proizvod.","Oduzima se ceo proizvod: "+4*a+"−"+a+"·(−3).","basic","Brojevni izrazi")},
- v=>{const a=v+3;return N("expr","missing",v,"Dopuni.",a+"·(__−3)=0",3,"Činilac u zagradi mora biti 0.","3−3=0, pa nedostaje 3.","medium","Brojevni izrazi","rule")},
- v=>{const a=v+3;return Q("expr","brackets",v,"Koji raspored zagrada daje nulu?","",["("+a+"−"+a+")·4",a+"−("+a+"·4)",a+"−"+a+"·4"],"("+a+"−"+a+")·4","Proveri kako zagrade menjaju redosled.","Razlika jednakih brojeva je 0; 0·4=0. Druga dva izraza daju −"+3*a+".","advanced","Redosled operacija","method")}
+ v=>{const a=v+3;return N("expr","missing",v,"Dopuni.",a+"·(__−3)=0",3,"Činilac u zagradi mora biti 0.","Prvi činilac je "+a+", nije nula. Zato x−3=0, pa x=3. Provera: "+a+"·(3−3)=0.","medium","Brojevni izrazi","rule")},
+ v=>{const a=v+3;return Q("expr","brackets",v,"Koji izraz ima vrednost nula?","",["("+a+"−"+a+")·4",a+"−("+a+"·4)",a+"·4−"+a],"("+a+"−"+a+")·4","Proveri kako zagrade menjaju redosled.","Razlika jednakih brojeva je 0; 0·4=0. Drugi izraz daje −"+3*a+", a treći "+3*a+".","advanced","Redosled operacija","method")}
 ]);
 
 register("trougao-vrste",[
@@ -203,6 +203,7 @@ export function lessonWorkTasks(lessonId:string,pool:Task[]):Task[]{
  return plan.map(id=>{const task=pool.find(item=>item.id===id);if(!task)throw new Error("Missing lesson work task: "+id);return task});
 }
 export function applyOctoberWorkLevels(lessonId:string,tasks:Task[]):Task[]{
+ if(lessonId==="brojevni-izrazi")return tasks.map(task=>({...task,level:["6-11a","6-11f"].includes(task.id)||task.id.startsWith("ow-expr-model-")?"basic":"medium"}));
  if(lessonId==="mnozenje-deljenje")return tasks.map(task=>({...task,level:["6-10a","6-10f"].includes(task.id)||task.id.startsWith("ow-md-order-")?"basic":"medium"}));
  if(lessonId==="deljenje")return tasks.map(task=>({...task,level:["6-9a","6-9b","6-9c","6-9d","6-9f"].includes(task.id)?"basic":"medium"}));
  if(lessonId==="mnozenje")return tasks.map(task=>({...task,level:["6-8a","6-8b","6-8c","6-8d","6-8f"].includes(task.id)||task.id.startsWith("ow-mul-sum-")?"basic":"medium"}));

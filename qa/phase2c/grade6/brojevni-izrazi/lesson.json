@@ -1,0 +1,39 @@
+{
+  "id": "brojevni-izrazi",
+  "area": "celi-brojevi",
+  "status": "potpuno recenzirana",
+  "theory": "Prioritet zagrada, množenja/deljenja i sabiranja/oduzimanja; nenulti delioci i nulti proizvod.",
+  "sequence": "Redosled → ugnježdene i negativne vrednosti → prevod teksta u izraz.",
+  "examples": [
+    {
+      "question": "Izračunaj 6−2·(−3+5).",
+      "steps": [
+        "Zagrada: −3+5=2.",
+        "Množenje: 2·2=4.",
+        "Zatim 6−4=2."
+      ],
+      "verification": "2"
+    },
+    {
+      "question": "Izračunaj 36:(−3·2)−(−4).",
+      "steps": [
+        "U zagradi je (−3)·2=−6; delilac nije nula.",
+        "36:(−6)=−6, zatim −6−(−4)=−6+4=−2."
+      ],
+      "verification": "−2"
+    },
+    {
+      "question": "Od 24 oduzmi proizvod 6 i −3.",
+      "steps": [
+        "Zapiši ceo izraz: 24−6·(−3).",
+        "Prvo proizvod: 6·(−3)=−18.",
+        "Zatim 24−(−18)=24+18=42."
+      ],
+      "verification": "42"
+    }
+  ],
+  "illustration": "Računski zapis i objašnjenje redosleda dovoljni.",
+  "misconceptions": "Ne računamo uvek sleva nadesno; zagrade menjaju redosled; nula u proizvodu ne znači da su oba činioca nula.",
+  "assessment": "29 sa tematskom proverom; 8 osnovnih i 21 srednji.",
+  "limits": "Celobrojni izrazi pregledani, ne potvrđuje ishode u Q."
+}

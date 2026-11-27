@@ -1,3 +1,30 @@
+# Checkpoint 10 — Brojevni izrazi; oblast Celi brojevi završena
+
+Datum: 27.11.2026. Polazni GitHub commit ba91058; lokalni sadržajni commit 538662e. Nalazi G6C-025–027.
+
+| Stavka | Stanje |
+|---|---:|
+| Potpuno matematički i metodički recenzirani zadaci | 329/919 |
+| Delimično | 0 |
+| Nepregledani | 590 |
+| Lekcije matematički recenzirane | 12/45 |
+| Postojeći rešeni primeri | 12/81 |
+| Novi rešeni primeri | 24/24 |
+| Celi brojevi | 283/283 zadataka; 11/11 lekcija |
+
+- Brojevni izrazi: 29/29, uključujući t6-10; 8 osnovnih, 21 srednji; 11 promena nivoa, 19 izmenjenih zadataka. Tri nezavisno proverena primera. Svi ID-jevi, redosled i ključevi odgovora sačuvani.
+- Preciziran prioritet unutrašnjih zagrada, nenulti delioci, međukoraci pri negativnim vrednostima, nulti proizvod i provera; šest parova numerički ekvivalentnih distraktora zamena je razlikovala po vrednosti (ključ ostaje isti).
+- Početna tri neuspeha programskih testova (sačuvan log): preduga nastavna tačka i dva ranija očekivanja obaveznih naprednih zadataka na završnoj proveri. Nastavna tačka razdvojena; testovi zastupljenosti nivoa suženi samo za pregledanu oblast, uz proveru tačno osnovnog i srednjeg nivoa. Natpis u UI sada prikazuje stvarne nivoe.
+- 125/125 programskih testova, Pages i Worker build, TypeScript i lint (0 grešaka, 6 upozorenja). Browser lekcija 22 zapisa. Dodatno puna završna provera na desktop i mobilnom touch prikazu: 20 odgovora, 10/10 na oba prikaza, sačuvani najbolji rezultat i raniji sintetički napredak. Emulacija, ne fizički uređaji; sve adaptivne varijante matematički pregledane, nisu pojedinačno birane u UI.
+- Završna provera ima 8 osnovnih i 2 srednja zadatka; nema naprednih. Ne predstavlja iscrpan dokaz svake veštine (npr. nema direktnog pitanja o nedozvoljenom deljenju nulom ili složenoj distributivnosti). U ovoj recenziji nije proširivan inventar.
+- Ispravna zbirna statistika: 283 zadatka Celi brojevi, 45 Obnavljanje gradiva 5. razreda i jedan s6-godisnja-1 u godišnjoj završnici. Godišnji ishodi 6.01–6.04 ostaju delimično pregledani jer nisu recenzirane i sve primene u Q.
+
+**Tačka nastavka:** oblast trougao, lekcija trougao-vrste, prvi ID o6-tv-1. Faza 2C nije završena; bez spajanja i javne objave.
+
+Dokazi: qa/phase2c/grade6/brojevni-izrazi, ledger-tasks.json, ledger-lessons.json i Excel evidencija.
+
+---
+
 # Checkpoint 9 — Množenje i deljenje celih brojeva
 
 Datum: 27.11.2026. Polazni GitHub commit ceefc1b; lokalni sadržajni commit ef73ba5. Nalazi G6C-023–024.

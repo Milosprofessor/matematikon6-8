@@ -84,9 +84,9 @@ export const septemberTasks:Record<string,Task[]>={
   "brojevni-izrazi":[
     P(C("6-11f","Koju operaciju izvodiš prvu?","7−3·(−2+6)",["Sabiranje u zagradi","Množenje","Oduzimanje"],"Sabiranje u zagradi","Najpre rešavamo zagrade.","Prvo računamo −2+6.","basic","Redosled operacija"),"izbor-prvog-koraka","rule"),
     P(I("6-11g","Izračunaj.","18−(−2)·(5−8)","12","Prvo zagrada, zatim množenje.","5−8=−3; (−2)·(−3)=6; 18−6=12.","medium","Brojevni izrazi"),"ugnjezdene-operacije","calculation"),
-    P(C("6-11h","Pronađi grešku.","20−4·(−3)=16·(−3)=−48",["Nema greške.","Množenje se radi pre oduzimanja.","Treba prvo podeliti."],"Množenje se radi pre oduzimanja.","Množenje ima prednost nad oduzimanjem.","4·(−3)=−12, pa je 20−(−12)=32.","medium","Redosled operacija"),"pronadji-gresku","rule"),
-    P(C("6-11i","Uporedi vrednosti izraza.","A=(−3)·4+5; B=18:(−3)",["A<B","A>B","A=B"],"A<B","Izračunaj oba izraza posebno.","A=−12+5=−7, B=−6, pa je A<B.","advanced","Brojevni izrazi"),"poredjenje-izraza","method"),
-    P(I("6-11j","Izračunaj konačno stanje.","Početno stanje je −12. Zatim se tri puta doda 5 i jednom oduzme 4.","-1","Zapiši jedan izraz.","−12+3·5−4=−12+15−4=−1.","advanced","Brojevni izrazi"),"problem-vise-koraka","method"),
+    P(C("6-11h","Pronađi grešku.","20−4·(−3)=16·(−3)=−48",["Nema greške.","Množenje se radi pre oduzimanja.","Rezultat treba da bude 8."],"Množenje se radi pre oduzimanja.","Množenje ima prednost nad oduzimanjem.","Najpre 4·(−3)=−12; zatim 20−(−12)=20+12=32, ne −48.","medium","Redosled operacija"),"pronadji-gresku","rule"),
+    P(C("6-11i","Uporedi vrednosti izraza.","A=(−3)·4+5; B=18:(−3)",["A<B","A>B","A=B"],"A<B","Izračunaj oba izraza posebno.","A=(−3)·4+5=−12+5=−7. B=18:(−3)=−6. Pošto je −7<−6, sledi A<B.","advanced","Brojevni izrazi"),"poredjenje-izraza","method"),
+    P(I("6-11j","Izračunaj konačno stanje.","Početno stanje je −12. Zatim se tri puta doda 5 i jednom oduzme 4.","-1","Zapiši jedan izraz.","−12+3·5−4=−12+15−4=3−4=−1.","advanced","Brojevni izrazi"),"problem-vise-koraka","method"),
   ],
 
   // 7. razred — Realni brojevi
