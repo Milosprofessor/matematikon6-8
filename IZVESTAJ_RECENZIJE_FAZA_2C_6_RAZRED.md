@@ -1,3 +1,30 @@
+# Checkpoint 2 — oblast Celi brojevi (delimično)
+
+Datum: 27.11.2026. Polazni commit a56c6ee. Sadržajni commitovi 76eed5e i 809565d. Četiri nova grupisana nalaza G6C-005–008 zatvorena. Prethodni checkpoint ostaje u nastavku kao istorijski zapis.
+
+| Stavka | Stanje |
+|---|---:|
+| Potpuno matematički i metodički recenzirani zadaci | 87/919 |
+| Delimično recenzirani | 0 |
+| Nepregledani | 832 |
+| Lekcije | 3/45 |
+| Postojeći rešeni primeri | 3/81 |
+| Novi rešeni primeri | 6/6 |
+| Godišnji ishodi | 0 potpuno; 3 delimično (6.01, 6.02, 6.03) |
+
+## Novi rad
+- Skup celih brojeva: 18/18, uključujući t6-1; 12 osnovnih i 6 srednjih. Precizirana definicija skupa Z, izuzetak nule kod suprotnih brojeva, obrazloženje alternativa i jednačine prethodnika. Promenjeno 8 nivoa i 10 zadataka; 3 različita primera. 115/115 unit/integracionih, 22 browser zapisa, oba build-a, TypeScript i lint uspešni.
+- Apsolutna vrednost: 24/24, uključujući t6-2 i s6-godisnja-1; 19 osnovnih i 5 srednjih. Razlikovanje nenegativnog i pozitivnog rastojanja, dopunjeni računski koraci, primeri sa uslovom x<0, nulom i nemogućom jednačinom. Promenjeno 12 nivoa i 14 zadataka. 116/116 unit/integracionih, 22 browser zapisa, oba build-a, TypeScript, lint i storage regresija uspešni.
+- Matematički pregled svih 42 nova konkretna zadatka i šest rešenih primera, po tri u svakoj lekciji. Nije ponavljana završena oblast obnavljanja. ID-jevi i ključevi odgovora očuvani.
+- Browser provere redovnog toka: oba uređaja po 10 zadataka u svakoj lekciji, otvaranje primera, ćirilica, odbijanje pogrešnog odgovora, postupak i očuvanje posle osvežavanja. Fizički uređaji i pojedinačni UI svih adaptivnih varijanti nisu testirani.
+- Usklađena dva postojeća testa zastupljenosti nivoa samo za pregledane lekcije: nema opravdanog naprednog zadatka po izvornom zahtevu; dodate stroge regresije sa konkretnim brojem nivoa. Snapshot izmene ciljne.
+
+**Tačka nastavka:** Celi brojevi, lekcija uporedjivanje, prvi ID 6-3a. Cela oblast još nije završena; 42/283 zadatka oblasti recenzirana.
+
+Dokazi: qa/phase2c/grade6/skup-celih-brojeva i apsolutna-vrednost, ledger-tasks.json, ledger-lessons.json, Excel evidencija.
+
+---
+
 # MatematikON6–8 — faza 2C, recenzija šestog razreda (checkpoint 1)
 
 Datum: 27.11.2026. Polazni GitHub commit edb40b96dad2583657e46115f686ce68c595c691. Sadržajni commit: 0a8c2145da4b505cca5645a08b629bb0475d7e4f. Grana fix/matematikon6-8-math-methodology-phase-2; PR #6. Bez spajanja i objave.
