@@ -3107,5 +3107,22 @@
     "status": "Ispravljeno i potvrđeno",
     "fix_commit": "",
     "phase2_evidence": "qa/phase2c/grade6/uglovi-transverzala/tasks.json; lesson.json; browser.json; tests.log"
+  },
+  {
+    "id": "G6C-034",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Trougao",
+    "lesson": "uglovi-na-transverzali",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Metodička preciznost",
+    "description": "Generisani zadaci iz zbira i razlike preskaču postavljanje jednačine.",
+    "evidence": "qa/phase2c/grade6/uglovi-na-transverzali/tasks.json; lesson.json; browser.json; tests.log",
+    "location": "app/content/plan-additions.ts; october-practice-supplement.ts",
+    "fix": "Uslov paralelnosti, jednačina, međukoraci i provera u primerima.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "",
+    "phase2_evidence": "qa/phase2c/grade6/uglovi-na-transverzali/tasks.json; lesson.json; browser.json; tests.log"
   }
 ]

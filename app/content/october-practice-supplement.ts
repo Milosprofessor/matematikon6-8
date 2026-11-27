@@ -6,9 +6,9 @@ type Problem = [prompt:string, math:string, answer:number, hint:string, solution
 type Family = [skill:string, level:Level, make:(n:number)=>Problem];
 const families:Record<string,Family[]> = {
   "uglovi-na-transverzali":[
-    ["Odgovarajući uglovi","basic",n=>["Koliki je odgovarajući ugao u stepenima na drugoj paraleli?",`α=${40+n}°`,40+n,"Prave su paralelne.","Odgovarajući uglovi su jednaki."]],
+    ["Odgovarajući uglovi","basic",n=>["Koliki je odgovarajući ugao u stepenima na drugoj paraleli?",`α=${40+n}°`,40+n,"Prave su paralelne.",`Pošto su prave paralelne, saglasni uglovi su jednaki: β=α=${40+n}°.`]],
     ["Unutrašnji uglovi","medium",n=>["Na paralelama pronađi unutrašnji ugao sa iste strane sečice, u stepenima.",`α=${60+n}°`,120-n,"Zbir je opružen ugao.",`180°−${60+n}°=${120-n}°.`]],
-    ["Odnos uglova","advanced",n=>["Unutrašnji uglovi sa iste strane sečice paralelnih pravih razlikuju se za navedeni iznos. Koliki je manji u stepenima?",`Razlika je ${2*n}°.`,90-n,"Od 180° oduzmi razliku pa prepolovi.",`Manji ugao je (180°−${2*n}°):2=${90-n}°.`]],
+    ["Odnos uglova","advanced",n=>["Unutrašnji uglovi sa iste strane sečice paralelnih pravih razlikuju se za navedeni iznos. Koliki je manji u stepenima?",`Razlika je ${2*n}°.`,90-n,"Od 180° oduzmi razliku pa prepolovi.",`Neka je manji ugao x°, veći (x+${2*n})°. x+x+${2*n}=180, pa 2x=${180-2*n} i x=${90-n}. Manji ugao je ${90-n}°.`]],
   ],
   "skup-racionalnih-brojeva":[
     ["Zapis celog broja","basic",n=>["Dopuni brojilac.",`[[frac:x|4]]=−${n}`,-4*n,"Pomnoži obe strane sa 4.",`x=4·(−${n})=${-4*n}.`]],

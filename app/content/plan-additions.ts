@@ -470,6 +470,11 @@ export const grade6PlanAdditions:Lesson[] = [
       "question": "Transverzala seče dve paralelne prave. Jedan unutrašnji ugao je 68°. Koliki je unutrašnji ugao sa iste strane?",
       "steps": ["Zbir ova dva ugla je 180°.", "Drugi ugao je 180°−68°=112°."]
     },
+    "worked": [
+      {"question":"Transverzala seče dve paralelne prave. Jedan unutrašnji ugao je 68°. Koliki je unutrašnji ugao sa iste strane?","steps":["Pošto je p∥q, α+β=180°.","68°+β=180°.","β=180°−68°=112°."]},
+      {"question":"Dva naizmenična unutrašnja ugla paralelnih pravih su (x+20)° i (3x−30)°. Odredi x.","steps":["Pošto je p∥q, x+20=3x−30.","50=2x, x=25.","Oba ugla imaju 45°."]},
+      {"question":"Dva unutrašnja ugla paralelnih pravih sa iste strane transverzale razlikuju se za 8°. Odredi ih.","steps":["Neka je manji ugao x°, veći (x+8)°.","x+x+8=180.","2x=172, x=86.","Uglovi su 86° i 94°; zbir je 180°."]}
+    ],
     "tasks": [
       {
         "id": "o6-utn-1",
@@ -642,7 +647,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "input",
         "answer": "95",
         "hint": "Prenesi ugao od 37° preko paralelnih pravih na teme B, pa primeni zbir uglova trougla.",
-        "solution": "Ugao između PB i poluprave p nadesno jednak je naizmeničnom unutrašnjem uglu PBA, pa ∠PBA=37°. Zatim ∠APB=180°−48°−37°=95°.",
+        "solution": "Pošto je p∥q, ugao između PB i poluprave p nadesno jednak je naizmeničnom unutrašnjem uglu PBA, pa ∠PBA=37°. U trouglu APB: ∠PAB+∠PBA+∠APB=180°. Zato ∠APB=180°−48°−37°=95°.",
         "level": "advanced",
         "skill": "Transverzala i uglovi trougla",
         "taskType": "transverzala-u-trouglu",

@@ -1,3 +1,16 @@
+# Checkpoint 14 — Uglovi na transverzali
+
+Datum: 27.11.2026. Polazni GitHub commit 222bb2f. Nalaz G6C-034.
+
+- 417/919 zadataka, 16/45 lekcija; Trougao 88/131, 4/6 lekcija. 19/19 zadataka, 6 osnovnih, 7 srednjih i 6 naprednih, tri primera.
+- Dodatno obrazložen uslov paralelnosti, jednačine i provera. Geometrijski položaji saglasnih, naizmeničnih, jednostranih i unakrsnih uglova provereni.
+- 22 browser zapisa desktop i mobilne touch emulacije; očuvanje napretka. 126 programskih testova, oba build-a, TypeScript, lint. Nisu testirani fizički uređaji ni sve adaptivne varijante pojedinačno u UI.
+- LOG-06 evidentiran u units.json.
+
+**Sledeće:** odnos-stranica-uglova, prvi ID o6-osu-1. Bez spajanja i objave.
+
+---
+
 # Checkpoint 13 — Spoljašnji uglovi trougla
 
 Datum: 27.11.2026. Polazni GitHub commit ebad060. Nalazi G6C-032–033.

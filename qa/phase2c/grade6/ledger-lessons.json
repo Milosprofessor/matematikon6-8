@@ -578,7 +578,43 @@
   {
     "id": "uglovi-na-transverzali",
     "area": "trougao",
-    "status": "nepregledana u fazi 2C"
+    "status": "potpuno recenzirana",
+    "theory": "Transverzala, saglasni, naizmenični, jednostrani i unakrsni uglovi.",
+    "sequence": "Položaj → paralelnost → odnosi → jednačina i trougao.",
+    "examples": [
+      {
+        "question": "Transverzala seče dve paralelne prave. Jedan unutrašnji ugao je 68°. Koliki je unutrašnji ugao sa iste strane?",
+        "steps": [
+          "Pošto je p∥q, α+β=180°.",
+          "68°+β=180°.",
+          "β=180°−68°=112°."
+        ],
+        "verification": "112°"
+      },
+      {
+        "question": "Dva naizmenična unutrašnja ugla paralelnih pravih su (x+20)° i (3x−30)°. Odredi x.",
+        "steps": [
+          "Pošto je p∥q, x+20=3x−30.",
+          "50=2x, x=25.",
+          "Oba ugla imaju 45°."
+        ],
+        "verification": "x=25"
+      },
+      {
+        "question": "Dva unutrašnja ugla paralelnih pravih sa iste strane transverzale razlikuju se za 8°. Odredi ih.",
+        "steps": [
+          "Neka je manji ugao x°, veći (x+8)°.",
+          "x+x+8=180.",
+          "2x=172, x=86.",
+          "Uglovi su 86° i 94°; zbir je 180°."
+        ],
+        "verification": "86° i 94°"
+      }
+    ],
+    "illustration": "Položaj sektora kod preseka i dve paralelne prave.",
+    "misconceptions": "Jednakost unakrsnih ne zahteva paralelnost; između preseka mora važiti p∥q.",
+    "assessment": "19 zadataka.",
+    "limits": "Ne potvrđuje čitav godišnji ishod."
   },
   {
     "id": "odnos-stranica-uglova",
