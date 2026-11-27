@@ -120,7 +120,40 @@
   {
     "id": "uporedjivanje",
     "area": "celi-brojevi",
-    "status": "nepregledana u fazi 2C"
+    "status": "potpuno recenzirana",
+    "theory": "Poredak na brojnoj pravoj, negativni brojevi i apsolutna vrednost, nula, stroge i uključene granice.",
+    "sequence": "Poređenje → poredak → skup celih brojeva sa uslovom.",
+    "examples": [
+      {
+        "question": "Uporedi −11 i −6.",
+        "steps": [
+          "Oba broja su negativna. −6 je bliže nuli i nalazi se desno od −11.",
+          "Zato je −11<−6; veća apsolutna vrednost negativnog broja ne znači veći broj."
+        ],
+        "verification": "−11<−6"
+      },
+      {
+        "question": "Poređaj 4, −2, 0, −7 od najmanjeg.",
+        "steps": [
+          "Negativni brojevi su levo od nule, pozitivni desno. Među negativnim brojevima −7 je levo od −2.",
+          "Poredak sleva nadesno je −7<−2<0<4."
+        ],
+        "verification": "−7<−2<0<4"
+      },
+      {
+        "question": "Navedi sve cele brojeve x za koje važi −4<x≤1.",
+        "steps": [
+          "Strogi znak isključuje −4, a ≤ uključuje 1.",
+          "Počinjemo od −3 i idemo do 1: −3, −2, −1, 0, 1.",
+          "Ukupno je 5 celih brojeva."
+        ],
+        "verification": "−4<x≤1 daje −3,−2,−1,0,1"
+      }
+    ],
+    "illustration": "Brojna prava i zadatak 6-3f; koordinate i redosled provereni.",
+    "misconceptions": "Veća apsolutna vrednost negativnog broja ne znači veći broj; stroga granica nije uključena.",
+    "assessment": "22 zadatka u fondu, jedan tematski; osam osnovnih i 15 srednjih.",
+    "limits": "Deo ishoda 6.01 i 6.03; Q i ostale jednačine ostaju nepregledani."
   },
   {
     "id": "sabiranje",

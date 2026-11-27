@@ -70,8 +70,8 @@ register("apsolutna-vrednost",[
  v=>N("absolute-table",v,"Dopuni poslednju vrednost.",`x: −${v+4}, 0, ${v+2}; |x|: ${v+4}, 0, ?`,v+2,"Apsolutna vrednost pozitivnog broja je taj broj.",`|${v+2}|=${v+2}.`,"medium","Apsolutna vrednost")
 ]);
 register("uporedjivanje",[
- v=>N("order-count",v,"Koliko celih brojeva ispunjava uslov?",`−${v+5}<x<−${v+1}`,3,"Granice nisu uključene.",`Brojevi su −${v+4}, −${v+3}, −${v+2}: ukupno 3.`,"advanced","Poredak"),
- v=>N("order-digit",v,"Odredi najveću cifru □.",`−${v+2}□>−${v+2}5`,4,"Negativan broj sa manjom apsolutnom vrednošću je veći.",`Potrebno je □<5. Najveća moguća cifra je 4.`,"advanced","Poređenje")
+ v=>N("order-count",v,"Koliko celih brojeva ispunjava uslov?",`−${v+5}<x<−${v+1}`,3,"Granice nisu uključene.",`Pošto su granice stroge, isključujemo −${v+5} i −${v+1}. Brojevi su −${v+4}, −${v+3}, −${v+2}: ukupno 3.`,"advanced","Poredak"),
+ v=>N("order-digit",v,"Odredi najveću cifru □.",`−${v+2}□>−${v+2}5`,4,"Negativan broj sa manjom apsolutnom vrednošću je veći.",`Uporedi apsolutne vrednosti: ${v+2}□<${v+2}5. Desetice su jednake, zato □<5. Dozvoljene cifre su 0, 1, 2, 3, 4; najveća je 4. Provera: −${v+2}4>−${v+2}5.`,"advanced","Poređenje")
 ]);
 register("sabiranje",[
  v=>N("add-table",v,"Dopuni poslednji zbir.",`a: −${v+5}, ${v+2}; b: ${v+1}, −${v+7}; a+b: −4, ?`,-5,"Saberi drugi par brojeva.",`${v+2}+(−${v+7})=−5.`,"medium","Sabiranje različitih znakova","sign"),
@@ -261,6 +261,7 @@ const basicLater=new Set(["6-1k","6-2i","6-3j","sw-absolute-table-0","sw-r5-orde
 export function applySeptemberWorkLevels(lessonId:string,tasks:Task[]):Task[]{
  const plan=septemberWorkPlans[lessonId];if(!plan)return tasks;
  return tasks.map(task=>{
+  if(lessonId==="uporedjivanje")return {...task,level:["6-3b","6-3g","6-3i"].includes(task.id)||task.id.startsWith("sw-order-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
   if(lessonId==="apsolutna-vrednost")return {...task,level:["6-2b","6-2c","6-2d","6-2h","6-2j"].includes(task.id)?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
   if(lessonId==="skup-celih-brojeva")return {...task,level:task.id.startsWith("sw-integer-reverse-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
   if(lessonId==="kratko-obnavljanje-5")return {...task,taskType:retainedTypes[task.id]??task.taskType};

@@ -37,7 +37,7 @@ test("svaka od 86 lekcija ima 10 zadataka, dodatni fond, tri nivoa, pomoć, post
     assert.equal(work.length,10,l.id);assert.ok(pool.length>10,l.id);
     // Review of fifth-grade prerequisites has only direct/multi-step calculations.
     // Phase 2C: do not invent advanced labels for these existing tasks.
-    assert.deepEqual(new Set(pool.map(t=>t.level)),new Set(["kratko-obnavljanje-5","skup-celih-brojeva","apsolutna-vrednost"].includes(l.id)?["basic","medium"]:["basic","medium","advanced"]),l.id);
+    assert.deepEqual(new Set(pool.map(t=>t.level)),new Set(["kratko-obnavljanje-5","skup-celih-brojeva","apsolutna-vrednost","uporedjivanje"].includes(l.id)?["basic","medium"]:["basic","medium","advanced"]),l.id);
     assert.ok(l.intro&&l.solved.question&&l.solved.steps.length>=2&&l.formulas.length,l.id);
     for(const t of pool){
       assert.ok(!ids.has(t.id),t.id);ids.add(t.id);

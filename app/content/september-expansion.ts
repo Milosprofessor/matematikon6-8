@@ -28,8 +28,8 @@ export const septemberTasks:Record<string,Task[]>={
   "uporedjivanje":[
     P(C("6-3f","Koja tačka je najviše desno?","",["A","B","C"],"C","Najviše desno je najveća koordinata.","C(2) je najviše desno.","basic","Brojna prava"),"citanje-polozaja","diagram",{type:"number-line",min:-4,max:3,points:[{value:-3,label:"A"},{value:-1,label:"B"},{value:2,label:"C"}]}),
     P(C("6-3g","Poređaj od najvećeg.","−6, 4, −1, 0",["4, 0, −1, −6","−6, −1, 0, 4","4, −1, 0, −6"],"4, 0, −1, −6","Kreni od broja najviše desno.","4>0>−1>−6.","medium","Poredak"),"opadajuci-poredak","method"),
-    P(I("6-3h","Odredi najveći ceo broj x.","x<−2","-3","Najveći ceo broj levo od −2 je njegov prethodnik.","Najveći ceo broj manji od −2 je −3.","advanced","Poređenje"),"granica-nejednakosti","concept"),
-    P(C("6-3i","Pronađi grešku.","−12>−7 jer je 12>7.",["Poređenje je tačno.","Znak treba da bude <.","Brojevi su jednaki."],"Znak treba da bude <.","Kod negativnih brojeva bliži nuli je veći.","−12 je levo od −7, zato je −12<−7.","medium","Poređenje"),"pronadji-gresku","concept"),
+    P(I("6-3h","Odredi najveći ceo broj x.","x<−2","-3","Najveći ceo broj levo od −2 je njegov prethodnik.","Strogi znak < isključuje −2. Njegov neposredni prethodnik je −2−1=−3, pa je najveći mogući x=−3.","advanced","Poređenje"),"granica-nejednakosti","concept"),
+    P(C("6-3i","Pronađi grešku.","−12>−7 jer je 12>7.",["Poređenje je tačno.","Znak treba da bude <.","Brojevi su jednaki."],"Znak treba da bude <.","Kod negativnih brojeva bliži nuli je veći.","Iako je 12>7, tačke −12 i −7 su na levoj strani nule. −12 je dalje od nule i levo od −7, zato je −12<−7.","medium","Poređenje"),"pronadji-gresku","concept"),
     P(C("6-3j","Izaberi nižu temperaturu.","−5 °C ili −9 °C",["−5 °C","−9 °C","Jednake su"],"−9 °C","Niža temperatura odgovara manjem broju.","−9<−5, zato je −9 °C niža temperatura.","basic","Poređenje"),"kratak-kontekst","method"),
   ],
   "sabiranje":[
