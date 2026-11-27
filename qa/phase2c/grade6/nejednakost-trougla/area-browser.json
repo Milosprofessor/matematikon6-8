@@ -1,0 +1,34 @@
+[
+  {
+    "width": 1366,
+    "ids": [
+      "ot6-2",
+      "ot6-3",
+      "ot6-7",
+      "ot6-6",
+      "ot6-5",
+      "ot6-4",
+      "ot6-1"
+    ],
+    "score": "7/7",
+    "progress_preserved": true,
+    "best_after_reload": true,
+    "status": "pass"
+  },
+  {
+    "width": 390,
+    "ids": [
+      "ot6-4",
+      "ot6-5",
+      "ot6-3",
+      "ot6-6",
+      "ot6-1",
+      "ot6-2",
+      "ot6-7"
+    ],
+    "score": "7/7",
+    "progress_preserved": true,
+    "best_after_reload": true,
+    "status": "pass"
+  }
+]

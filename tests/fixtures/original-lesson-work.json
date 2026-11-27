@@ -2012,7 +2012,7 @@
         ],
         "answer": "Tačno",
         "hint": "Jednake stranice imaju jednake naspramne uglove.",
-        "solution": "Tvrdnja je tačna.",
+        "solution": "AB=c i AC=b. Iz b=c sledi β=γ, odnosno ∠B=∠C. Tvrdnja je tačna.",
         "level": "medium",
         "skill": "Jednakokraki trougao"
       },
@@ -2027,7 +2027,7 @@
         ],
         "answer": "a=b",
         "hint": "Jednaki uglovi imaju jednake naspramne stranice.",
-        "solution": "Važi a=b.",
+        "solution": "Iz α=β sledi jednakost naspramnih stranica a=b.",
         "level": "medium",
         "skill": "Jednakokraki trougao"
       },
@@ -2067,7 +2067,7 @@
         "math": "Jednakokraki trougao ima ugao na osnovici 68°.",
         "answer": "44",
         "hint": "Uglovi na osnovici su jednaki.",
-        "solution": "180°−2·68°=44°.",
+        "solution": "Uglovi na osnovici su po 68°. α+68°+68°=180°, pa α=180°−136°=44°.",
         "level": "advanced",
         "skill": "Jednakokraki trougao"
       },
@@ -2082,7 +2082,7 @@
         ],
         "answer": "c",
         "hint": "Najpre odredi β i γ.",
-        "solution": "β=53°, γ=89°. Najveći je γ, pa je najduža c.",
+        "solution": "β=38°+15°=53°. γ=180°−38°−53°=89°. Najveći je γ, pa je najduža c.",
         "level": "advanced",
         "skill": "Odnos stranica i uglova"
       }
@@ -2117,7 +2117,7 @@
         ],
         "answer": "11 cm",
         "hint": "Uporedi najdužu sa zbirom drugih.",
-        "solution": "11>4+6, pa je problem najduža duž.",
+        "solution": "Najduža duž je 11 cm; 4+6=10<11, pa ne mogu zatvoriti trougao.",
         "level": "basic",
         "skill": "Nejednakost trougla"
       },
@@ -2132,7 +2132,7 @@
         ],
         "answer": "c<9",
         "hint": "Najduža ne sme biti jednaka zbiru drugih dveju.",
-        "solution": "Neophodno je c<9. To je samo jedna od nejednakosti.",
+        "solution": "Neophodno je c<9. Za postojanje trougla mora važiti i c>1, pa 1<c<9.",
         "level": "basic",
         "skill": "Nejednakost trougla"
       },
@@ -2147,7 +2147,7 @@
         ],
         "answer": "8 cm",
         "hint": "Treća stranica je između 4 i 16.",
-        "solution": "4<c<16, pa odgovara 8 cm.",
+        "solution": "|6−10|<c<6+10, odnosno 4<c<16. Samo 8 cm zadovoljava obe granice.",
         "level": "medium",
         "skill": "Nejednakost trougla"
       },
@@ -2157,7 +2157,7 @@
         "math": "7 cm, 12 cm, x cm",
         "answer": "6",
         "hint": "Važi |12−7|<x.",
-        "solution": "5<x<19, pa je najmanji prirodan broj x=6.",
+        "solution": "|12−7|<x<12+7, odnosno 5<x<19. Najmanja prirodna vrednost x je 6.",
         "level": "medium",
         "skill": "Nejednakost trougla"
       },
@@ -2181,7 +2181,7 @@
         "math": "Jednakokraki trougao ima dve različite dužine: 4 cm i 9 cm.",
         "answer": "9",
         "hint": "Proveri koja dužina može da se ponovi.",
-        "solution": "Dva kraka od 4 daju zbir 8, manji od 9. Zato krak mora biti 9 cm.",
+        "solution": "Dva kraka od 4 daju zbir 8, manji od 9. Ako je krak 9 cm, najduža je manja od zbira druge dve, pa je taj trougao moguć. Zato krak mora biti 9 cm.",
         "level": "medium",
         "skill": "Nejednakost trougla"
       },
@@ -2196,7 +2196,7 @@
         ],
         "answer": "7",
         "hint": "Važi 5<x<13.",
-        "solution": "Moguće su 6,7,8,9,10,11,12: ukupno 7.",
+        "solution": "|9−4|<x<9+4, pa 5<x<13. Moguće su 6, 7, 8, 9, 10, 11, 12: ukupno 7.",
         "level": "advanced",
         "skill": "Nejednakost trougla"
       },
@@ -2206,7 +2206,7 @@
         "math": "Stranice 8, 13 i x",
         "answer": "20",
         "hint": "Važi x<21.",
-        "solution": "5<x<21, pa je najveći prirodan x=20.",
+        "solution": "|13−8|<x<13+8, pa 5<x<21. Najveći prirodan x=20.",
         "level": "advanced",
         "skill": "Nejednakost trougla"
       },
@@ -2216,7 +2216,7 @@
         "math": "Dve stranice su 4 cm i 7 cm; treća je ceo broj cm.",
         "answer": "21",
         "hint": "Odredi najveću dozvoljenu treću stranicu.",
-        "solution": "Treća mora biti manja od 11, pa je najviše 10. Obim je 21 cm.",
+        "solution": "Za treću stranicu x važi 3<x<11. Najveći ceo x=10. O=4+7+10=21 cm.",
         "level": "advanced",
         "skill": "Nejednakost trougla"
       }

@@ -619,12 +619,80 @@
   {
     "id": "odnos-stranica-uglova",
     "area": "trougao",
-    "status": "nepregledana u fazi 2C"
+    "status": "potpuno recenzirana",
+    "theory": "Naspramni elementi i poredak, jednakokraki trougao.",
+    "sequence": "Teorema → primena → provera.",
+    "examples": [
+      {
+        "question": "U trouglu je α=80°, β=60°, γ=40°. Poređaj stranice.",
+        "steps": [
+          "α>β>γ.",
+          "Naspram većeg ugla je veća stranica, pa a>b>c."
+        ],
+        "verification": "a>b>c"
+      },
+      {
+        "question": "U trouglu ABC je AB=AC. Šta važi za uglove?",
+        "steps": [
+          "AB=c, AC=b; b=c.",
+          "Naspram jednakih stranica su jednaki uglovi, zato β=γ."
+        ],
+        "verification": "β=γ"
+      },
+      {
+        "question": "U jednakokrakom trouglu ugao na osnovici je 68°. Odredi ugao pri vrhu.",
+        "steps": [
+          "Drugi ugao na osnovici je takođe 68°.",
+          "α+68°+68°=180°.",
+          "α=180°−136°=44°."
+        ],
+        "verification": "44°"
+      }
+    ],
+    "illustration": "Oznake, oblik i prikaz nemogućih dužina provereni.",
+    "misconceptions": "Naspramna, ne susedna stranica.",
+    "assessment": "16 zadataka uključujući tematsku proveru.",
+    "limits": "Ne potvrđuje čitav godišnji ishod."
   },
   {
     "id": "nejednakost-trougla",
     "area": "trougao",
-    "status": "nepregledana u fazi 2C"
+    "status": "potpuno recenzirana",
+    "theory": "Neophodan i dovoljan uslov, strogi interval treće stranice.",
+    "sequence": "Teorema → primena → provera.",
+    "examples": [
+      {
+        "question": "Može li trougao imati stranice 4 cm, 7 cm i 12 cm?",
+        "steps": [
+          "Najduža duž je 12 cm.",
+          "4+7=11 cm.",
+          "12>11, pa trougao ne postoji."
+        ],
+        "verification": "ne postoji"
+      },
+      {
+        "question": "Dve stranice su 6 cm i 10 cm. Odredi sve moguće cele dužine treće stranice u cm.",
+        "steps": [
+          "|a−b|<c<a+b.",
+          "4<c<16.",
+          "c može biti 5, 6, …, 15; ukupno 11 mogućnosti."
+        ],
+        "verification": "5–15; 11 mogućnosti"
+      },
+      {
+        "question": "Jednakokraki trougao ima različite dužine stranica 4 cm i 9 cm. Odredi krak.",
+        "steps": [
+          "Ako je krak 4 cm, onda je 4+4<9; trougao ne postoji.",
+          "Ako je krak 9 cm, najduža duž 9 je manja od 9+4.",
+          "Krak je 9 cm, osnovica 4 cm."
+        ],
+        "verification": "9 cm"
+      }
+    ],
+    "illustration": "Oznake, oblik i prikaz nemogućih dužina provereni.",
+    "misconceptions": "Jednakost nije dovoljna; otvorene granice.",
+    "assessment": "27 zadataka uključujući tematsku proveru.",
+    "limits": "Ne potvrđuje čitav godišnji ishod."
   },
   {
     "id": "skup-racionalnih-brojeva",

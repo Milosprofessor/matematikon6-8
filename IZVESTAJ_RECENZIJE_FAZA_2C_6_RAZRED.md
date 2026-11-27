@@ -1,3 +1,32 @@
+# Checkpoint 15 — Oblast Trougao završena
+
+Datum: 27.11.2026. Polazni GitHub commit 0104a03. Nalazi G6C-035–037.
+
+| Stavka | Stanje |
+|---|---:|
+| Potpuno matematički i metodički recenzirani zadaci | 460/919 |
+| Delimično | 0 |
+| Nepregledani | 459 |
+| Lekcije matematički recenzirane | 18/45 |
+| Postojeći rešeni primeri | 18/81 |
+| Novi rešeni primeri | 36/36 |
+| Trougao | 131/131; 6/6 lekcija |
+
+- Odnos stranica i uglova: 16/16, 3 osnovna, 6 srednjih, 7 naprednih; ispravan poredak naspramnih elemenata, obrat teoreme i tačne oznake. Ispravljeno sedam geometrijskih skica i dopunjeni postupci; tri proverena primera.
+- Nejednakost trougla: 27/27, 8 osnovnih, 9 srednjih, 10 naprednih; strogi neophodan i dovoljan uslov, obe granice, obe mogućnosti za jednakokraki trougao, maksimum obima i prikaz duži koje ne grade trougao. Tri proverena primera. Uklonjena skica nepoznate treće stranice, jer bi pokazivala proizvoljnu dužinu.
+- ID-jevi, redosled i ključevi odgovora očuvani. Zbirno za oblast: 30 osnovnih, 53 srednjih, 48 naprednih.
+- Programski testovi: 127/127 (dodat ciljani test geometrije), Pages i Worker build, TypeScript, lint. Dve lekcije: 44 browser zapisa na desktop i mobilnoj touch emulaciji. Završna provera oblasti: 7/7 na oba prikaza; ukupno 14 odgovora, sačuvan prioritetni sintetički napredak i najbolji rezultat nakon osvežavanja.
+- LOG-06: jedinice evidentirane, zajednički validator ostaje za fazu 3. Nisu testirani fizički uređaji niti sve generisane varijante pojedinačno u UI.
+- Obuhvat oblasti iz aktuelnog nastavnog inventara: trougao-vrste, zbir-uglova-trougla, uglovi-transverzala, uglovi-na-transverzali, odnos-stranica-uglova, nejednakost-trougla. Podudarnost i konstrukcije su u zasebnoj oblasti s6-trouglovi, nisu preuzete kao završene u 2C. Godišnji ishodi vezani za njih ne označavaju se kao ostvareni.
+
+**Sledeća nepregledana lekcija:** skup-racionalnih-brojeva, prvi ID o6-rq-1.
+
+Faza 2C nije završena; bez spajanja i objave.
+
+Dokazi: qa/phase2c/grade6/odnos-stranica-uglova, nejednakost-trougla, ledger-tasks.json, ledger-lessons.json, Excel evidencija i registar.
+
+---
+
 # Checkpoint 14 — Uglovi na transverzali
 
 Datum: 27.11.2026. Polazni GitHub commit 222bb2f. Nalaz G6C-034.

@@ -34,10 +34,12 @@ export function taskWithVisual(lessonId:string,original:Task):Task{
   if(lessonId==='trougao-vrste'&&/^\d+ cm, \d+ cm, \d+ cm$/.test(task.math)){const ns=task.math.match(/\d+/g)!.map(Number);Object.assign(l,{a:String(ns[0]),b:String(ns[1]),c:String(ns[2])});}
   if(lessonId==='nejednakost-trougla'){const ns=task.math.match(/\d+(?=\s*cm)/g)?.map(Number);if(ns?.length===3)Object.assign(l,{a:String(ns[0]),b:String(ns[1]),c:String(ns[2])});}
   if(l['α'])l.alpha=l['α'];if(l['β'])l.beta=l['β'];if(l['γ'])l.gamma=l['γ'];if(l['α1'])l.external=l['α1'];
-  if(/AB=AC/.test(task.math))Object.assign(l,{a:'a',b:'b',c:'b',alpha:'α',beta:'β',gamma:'β'});
+  if(/AB=AC/.test(task.math))Object.assign(l,{a:'a',b:'b',c:'c',alpha:'α',beta:'β',gamma:'γ',shapeAlpha:'50°',shapeBeta:'65°',shapeGamma:'65°'});
+  if(lessonId==='odnos-stranica-uglova'&&task.id.startsWith('ow-sideangle-combine-')){const alpha=Number(l.alpha?.replace('°',''));l.shapeBeta=String(alpha+15)+'°';}
   if(lessonId==='uglovi-transverzala'){const adjacent=task.math.match(/Susedni unutrašnji ugao je (\d+)°/);if(adjacent)l.alpha=adjacent[1]+'°';const ext=task.math.match(/Spoljašnji (?:ugao )?je (\d+)°/);if(ext)l.external=ext[1]+'°';const other=task.math.match(/jedan nesusedni unutrašnji (\d+)°/);if(other)l.beta=other[1]+'°';if(task.id.startsWith("ow-external-equal-")&&ext)l.shapeBeta=String(Number(ext[1])/2)+"°";diagram=/Dva spoljašnja|Spoljašnji uglovi kod dva različita/.test(task.math)?undefined:{type:'triangle',variant:'external',labels:l};}
   else if(Object.keys(l).some(key=>['a','b','c','alpha','beta','gamma'].includes(key))||/△ABC/.test(task.math))diagram={type:'triangle',variant:['trougao-vrste','nejednakost-trougla','odnos-stranica-uglova'].includes(lessonId)?'sides':'angles',labels:l};
   else if(task.diagram?.type==='triangle')diagram={...task.diagram,labels:l};
+  if(lessonId==='nejednakost-trougla'&&task.id==='o6-nt-2')diagram=undefined;
  }else if(lessonId==='uglovi-na-transverzali'){
   const id=task.id,angle=Number(task.math.match(/(\d+)°/)?.[1]??65);const mark=(at:'upper'|'lower',sector:'top-right'|'top-left'|'bottom-right'|'bottom-left',label:string)=>({at,sector,label});
   if(['o6-utn-1','o6-utn-2','o6-utn-3','o6-utn-4','o6-utn-5','o6-utn-8','o6-utn-9'].includes(id)){

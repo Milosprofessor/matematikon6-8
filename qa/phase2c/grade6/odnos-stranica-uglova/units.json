@@ -1,0 +1,10 @@
+[
+  {
+    "id": "o6-osu-7",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "44°",
+    "phase3": "LOG-06"
+  }
+]

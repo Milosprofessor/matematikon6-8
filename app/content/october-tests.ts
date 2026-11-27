@@ -11,7 +11,7 @@ export const octoberAreaTests = {
     L(I("ot6-4","Odredi spoljašnji ugao kod temena A.","β=46°, γ=69°","115","Saberi nesusedne unutrašnje uglove.","α₁=46°+69°=115°.","medium","Spoljašnji ugao",{taskType:"zbir-nesusednih"}),"uglovi-transverzala"),
     L(C("ot6-5","Odredi najveću stranicu.","α=72°, β=81°, γ=27°",["a","b","c"],"b","Najveća je naspram najvećeg ugla.","Najveći je β, pa je stranica b najveća.","medium","Odnos stranica i uglova",{taskType:"najveca-stranica"}),"odnos-stranica-uglova"),
     L(C("ot6-6","Da li duži grade trougao?","4 cm, 9 cm, 14 cm",["Da","Ne"],"Ne","Uporedi 14 sa 4+9.","14>13, pa trougao ne postoji.","advanced","Nejednakost trougla",{taskType:"provera-duzi"}),"nejednakost-trougla"),
-    L(I("ot6-7","Odredi najmanji prirodan x.","Stranice 9, 15 i x","7","Važi 6<x<24.","Najmanji prirodan broj veći od 6 je 7.","advanced","Nejednakost trougla",{taskType:"granice-stranice"}),"nejednakost-trougla"),
+    L(I("ot6-7","Odredi najmanji prirodan x.","Stranice 9, 15 i x","7","Važi 6<x<24.","|15−9|<x<15+9, pa 6<x<24. Najmanji prirodan broj veći od 6 je 7.","advanced","Nejednakost trougla",{taskType:"granice-stranice"}),"nejednakost-trougla"),
     L(C("ot6-8","Izaberi postupak za konstrukciju ugla od 15°.","",["Dvaput prepolovi 60°.","Prepolovi 90°.","Saberi 60° i 30°."],"Dvaput prepolovi 60°.","60°→30°→15°.","Dve simetrale daju 15°.","advanced","Konstrukcije uglova",{taskType:"redosled-konstrukcije"}),"konstrukcije-uglova")
   ]},
   7:{

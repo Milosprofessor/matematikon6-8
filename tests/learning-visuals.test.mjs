@@ -64,7 +64,7 @@ test('nove lekcije ostaju na 10 zadataka, a podaci učenika i algoritam znanja o
 });
 test('baza čuva redosled i crteže uz nezavisno testirane ispravke audita faze 1',()=>{
  const protectedData=all.filter(({lesson:l})=>["september","october"].includes(l.month)).map(({grade:g,area:a,lesson:l})=>({grade:g.id,area:a.id,month:l.month??a.month??'september',id:l.id,pool:tasksForLesson(l.id,l.tasks).filter(t=>!t.id.startsWith('dop-')),work:lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)),visuals:lessonVisuals(l.id)}));
- assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'e98e31f7434fc0838dda4aae24b82cd5234c5f159856fa5d6389da3c1e194ca0');
+ assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'e415165233aad98e80e03e44d7e409c8ae3505a1c30bf86b7ab734f427922c6f');
 });
 test('glavno objašnjenje je kratko, ima jednu napomenu i čuva svaki izbor geometrijskog prikaza',()=>{
  const counts=[];let figures=0;
@@ -196,4 +196,20 @@ test('recenzija vrsta trougla: zbir parova nije dužina stranice',()=>{
  assert.equal(l.worked.length,3);
  for(const t of tasks.filter(t=>t.id.startsWith('ow-tv-pairs-')))assert.deepEqual(t.diagram.labels,{a:'a',b:'b',c:'c'});
  assert.deepEqual(tasks.find(t=>t.id==='o6-tv-6').diagram.labels,{a:'8',b:'11',c:'?'});
+});
+
+test('recenzija Trougla: geometrijska podudarnost oznaka i oblika, stroge granice',()=>{
+ const lesson=id=>all.find(x=>x.grade.id===6&&x.lesson.id===id).lesson;
+ const angle=(a,b,c)=>{const u=[a[0]-b[0],a[1]-b[1]],v=[c[0]-b[0],c[1]-b[1]];return Math.acos((u[0]*v[0]+u[1]*v[1])/(Math.hypot(...u)*Math.hypot(...v)))*180/Math.PI};
+ const measured=t=>{const h=drawing(t.diagram),A=point(h,'A'),B=point(h,'B'),C=point(h,'C');return [angle(B,A,C),angle(A,B,C),angle(A,C,B)]};
+ const close=(a,b)=>assert.ok(Math.abs(a-b)<1e-7,`${a} != ${b}`);
+ for(const id of ['zbir-uglova-trougla','uglovi-transverzala','uglovi-na-transverzali','odnos-stranica-uglova','nejednakost-trougla'])assert.equal(lesson(id).worked.length,3);
+ const interior=lesson('zbir-uglova-trougla');assert.match(interior.rules.join(' '),/ako i samo ako/);
+ const ext=lesson('uglovi-transverzala');for(const t of tasksForLesson(ext.id,ext.tasks).filter(t=>t.id.startsWith('ow-external-equal-'))){
+  const [a,b,c]=measured(t);close(b,c);close(180-a,2*Number(t.answer));
+ }
+ const side=lesson('odnos-stranica-uglova'),pool=tasksForLesson(side.id,side.tasks);
+ const iso=pool.find(t=>t.id==='o6-osu-3');assert.equal(iso.diagram.labels.c,'c');const [,b,c]=measured(iso);close(b,c);
+ for(const t of pool.filter(t=>t.id.startsWith('ow-sideangle-combine-'))){const [a,b,c]=measured(t);close(b-a,15);assert.ok(c>b&&b>a);}
+ const ineq=lesson('nejednakost-trougla');assert.match(ineq.intro,/ako i samo ako/);assert.equal(tasksForLesson(ineq.id,ineq.tasks).find(t=>t.id==='o6-nt-2').diagram,undefined);
 });
