@@ -1738,7 +1738,7 @@
       "app/content/area-tests.ts"
     ],
     "test_result": "112/112 unit/integracionih; ciljane regresije; browser rezultati u final/",
-    "phase2c_evidence": "12 konkretnih ID-jeva: sw-r5-angle-0…5 (°), sw-r5-rectangle-0…5 (cm); broj prihvaćen, sa jedinicom odbijen. qa/phase2c/grade6/obnavljanje-5/units.json; faza 3; status nepromenjen."
+    "phase2c_evidence": "12 konkretnih ID-jeva: sw-r5-angle-0…5 (°), sw-r5-rectangle-0…5 (cm); broj prihvaćen, sa jedinicom odbijen. qa/phase2c/grade6/obnavljanje-5/units.json; faza 3; status nepromenjen.; 6-4i: °C, 4 prihvaćen, 4 °C odbijen; qa/phase2c/grade6/sabiranje/units.json."
   },
   {
     "id": "LOG-07",
@@ -2681,5 +2681,73 @@
     "status": "Ispravljeno i potvrđeno",
     "fix_commit": "809565d84fe87c35922c5e2cfe1f51603fc21e56",
     "phase2_evidence": "qa/phase2c/grade6/apsolutna-vrednost/tasks.json; lesson.json; browser.json; tests.log"
+  },
+  {
+    "id": "G6C-009",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Celi brojevi",
+    "lesson": "uporedjivanje",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Nivoi težine",
+    "description": "14 previsokih nivoa u zadacima poređenja, granica i cifara.",
+    "evidence": "qa/phase2c/grade6/uporedjivanje/tasks.json; lesson.json; browser.json; tests.log",
+    "location": "app/content/grade6.ts; app/content/september-work.ts; app/content/september-expansion.ts; app/content/area-tests.ts; app/content/enhancements.ts",
+    "fix": "8 osnovnih i 15 srednjih uključujući proveru.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "6df4d240bd9858e13c0926c8c8e0acbb6983fbea",
+    "phase2_evidence": "qa/phase2c/grade6/uporedjivanje/tasks.json; lesson.json; browser.json; tests.log"
+  },
+  {
+    "id": "G6C-010",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Celi brojevi",
+    "lesson": "uporedjivanje",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Potpunost postupka",
+    "description": "Preskočeno objašnjenje strogih granica, mesne vrednosti i negativnog poretka.",
+    "evidence": "qa/phase2c/grade6/uporedjivanje/tasks.json; lesson.json; browser.json; tests.log",
+    "location": "app/content/grade6.ts; app/content/september-work.ts; app/content/september-expansion.ts; app/content/area-tests.ts; app/content/enhancements.ts",
+    "fix": "Dopunjeni postupci i tri potpuno rešena primera.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "6df4d240bd9858e13c0926c8c8e0acbb6983fbea",
+    "phase2_evidence": "qa/phase2c/grade6/uporedjivanje/tasks.json; lesson.json; browser.json; tests.log"
+  },
+  {
+    "id": "G6C-011",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Celi brojevi",
+    "lesson": "sabiranje",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Matematička preciznost",
+    "description": "Hint 6-4h navodi znak većeg broja umesto sabirka veće apsolutne vrednosti; kratki postupci.",
+    "evidence": "qa/phase2c/grade6/sabiranje/tasks.json; lesson.json; browser.json; tests.log",
+    "location": "app/content/grade6.ts; app/content/september-work.ts; app/content/september-expansion.ts; app/content/area-tests.ts; app/content/enhancements.ts",
+    "fix": "Ispravljen hint, eksplicitna transformacija, grupisanje, promena i krajnja vrednost.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "4bbf7ff2c1c2ed29aa8751d64523fa3e10c80a5e",
+    "phase2_evidence": "qa/phase2c/grade6/sabiranje/tasks.json; lesson.json; browser.json; tests.log"
+  },
+  {
+    "id": "G6C-012",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Celi brojevi",
+    "lesson": "sabiranje",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Nivoi težine",
+    "description": "24 neadekvatno klasifikovana zadatka.",
+    "evidence": "qa/phase2c/grade6/sabiranje/tasks.json; lesson.json; browser.json; tests.log",
+    "location": "app/content/grade6.ts; app/content/september-work.ts; app/content/september-expansion.ts; app/content/area-tests.ts; app/content/enhancements.ts",
+    "fix": "13 osnovnih,16 srednjih uključujući proveru; ID-jevi očuvani.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "4bbf7ff2c1c2ed29aa8751d64523fa3e10c80a5e",
+    "phase2_evidence": "qa/phase2c/grade6/sabiranje/tasks.json; lesson.json; browser.json; tests.log"
   }
 ]

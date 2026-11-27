@@ -1,3 +1,31 @@
+# Checkpoint 3 — poređenje i sabiranje celih brojeva
+
+Datum: 27.11.2026. Polazni commit 48da58f. Sadržajni commitovi 6df4d24 i 4bbf7ff. Četiri nova grupisana nalaza G6C-009–012 zatvorena. Prethodni checkpointi su istorijski zapis.
+
+| Stavka | Stanje |
+|---|---:|
+| Potpuno matematički i metodički recenzirani zadaci | 139/919 |
+| Delimično recenzirani | 0 |
+| Nepregledani | 780 |
+| Lekcije | 5/45 |
+| Postojeći rešeni primeri | 5/81 |
+| Novi rešeni primeri | 10/10 |
+| Godišnji ishodi | 0 potpuno; 4 delimično (6.01–6.04) |
+
+## Novi rad
+- Poređenje celih brojeva: 23/23 uključujući t6-3; 8 osnovnih i 15 srednjih. U 14 slučajeva kalibrisan nivo, ukupno 15 izmenjenih zadataka. Dopunjeno obrazloženje strogih granica, poređenja negativnih brojeva i svih šest zadataka sa nepoznatom cifrom; tri primera. 117/117 testova, oba build-a, TypeScript, lint, 22 browser zapisa.
+- Sabiranje: 29/29 uključujući t6-4; 13 osnovnih i 16 srednjih. U 24 slučaja kalibrisan nivo, ukupno 28 izmenjenih zadataka. Ispravljen hint „znak većeg broja“ u pravilo predznaka sabirka veće apsolutne vrednosti, eksplicitne ekvivalentne transformacije, grupisanje, promena i konačna temperatura, tri primera. 118/118 testova, oba build-a, TypeScript, lint, 22 browser zapisa i storage regresija.
+- 52 nova pojedinačno pregledana zadatka, 52 nagoveštaja i postupka, šest pregledanih primera (četiri novododata). Nisu ponavljane završene lekcije. ID-jevi i ključevi odgovora očuvani.
+- LOG-06: 6-4i, ciljna jedinica °C, broj 4 prihvaćen, „4 °C“ odbijen. Precizna evidencija za fazu 3, validator neizmenjen.
+- Browser: dva prikaza po 10 redovnih zadataka svake lekcije, primeri, ćirilica i osvežavanje; emulacija, ne fizički uređaji. Prvobitna greška QA skripte posle reload-a očekivala je tekst zatvorenog trećeg primera; ispravljen kriterijum na vidljivu formulu a+0=a, ceo prolaz ponovljen. Nisu pojedinačno birane sve adaptivne varijante. Upozorenja o veličini paketa i Vite portu ostaju.
+- Testovi zastupljenosti nivoa precizirani samo za dve pregledane lekcije, novi testovi proveravaju konkretne raspodele; očuvani snapshot ID-jevi i redosled.
+
+**Tačka nastavka:** Celi brojevi, lekcija oduzimanje, prvi ID 6-5a. 94/283 zadatka oblasti recenzirana; preostalo 189. Faza 2C nije završena.
+
+Dokazi: qa/phase2c/grade6/uporedjivanje i sabiranje, ledger-tasks.json, ledger-lessons.json, Excel evidencija.
+
+---
+
 # Checkpoint 2 — oblast Celi brojevi (delimično)
 
 Datum: 27.11.2026. Polazni commit a56c6ee. Sadržajni commitovi 76eed5e i 809565d. Četiri nova grupisana nalaza G6C-005–008 zatvorena. Prethodni checkpoint ostaje u nastavku kao istorijski zapis.
