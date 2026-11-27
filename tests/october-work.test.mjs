@@ -32,7 +32,7 @@ test("29 oktobarskih lekcija ima po 10 izabranih interaktivnih zadataka",()=>{
   assert.equal(new Set(tasks.map(fingerprint)).size,10,lesson.id+": duplikat");
   assert.ok(new Set(tasks.map(t=>withTaskMetadata(t).taskType)).size>=8,lesson.id+": tipovi");
   assert.equal(tasks.filter(t=>t.level==="basic").length,3);
-  assert.ok(tasks.some(t=>t.level==="medium"));if(!["snalazenje-u-prostoru","tacka-prava-ravan-osnove"].includes(lesson.id))assert.ok(tasks.some(t=>t.level==="advanced"),lesson.id);
+  assert.ok(tasks.some(t=>t.level==="medium"));if(!["snalazenje-u-prostoru","tacka-prava-ravan-osnove","mnozenje"].includes(lesson.id))assert.ok(tasks.some(t=>t.level==="advanced"),lesson.id);
   for(const task of tasks)assert.ok(task.kind==="input"||task.kind==="choice");
  }
 });

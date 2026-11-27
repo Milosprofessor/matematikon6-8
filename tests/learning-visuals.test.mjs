@@ -64,7 +64,7 @@ test('nove lekcije ostaju na 10 zadataka, a podaci učenika i algoritam znanja o
 });
 test('baza čuva redosled i crteže uz nezavisno testirane ispravke audita faze 1',()=>{
  const protectedData=all.filter(({lesson:l})=>["september","october"].includes(l.month)).map(({grade:g,area:a,lesson:l})=>({grade:g.id,area:a.id,month:l.month??a.month??'september',id:l.id,pool:tasksForLesson(l.id,l.tasks).filter(t=>!t.id.startsWith('dop-')),work:lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)),visuals:lessonVisuals(l.id)}));
- assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'623e127e9c077dd61f4522f25f030272a2b90f0e09382165658bec57c58dad5c');
+ assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'b186811a3bfb910da71426c4a02a315f048ac9f221604bce0fce942dc00e4947');
 });
 test('glavno objašnjenje je kratko, ima jednu napomenu i čuva svaki izbor geometrijskog prikaza',()=>{
  const counts=[];let figures=0;
@@ -155,4 +155,13 @@ test('recenzija sabiranja i oduzimanja: zagrade, povratno stanje i nivoi',()=>{
  assert.equal(tasks.length,22);assert.equal(tasks.filter(t=>t.level==='basic').length,12);assert.equal(tasks.filter(t=>t.level==='medium').length,10);
  assert.equal(l.worked.length,3);
  for(const t of tasks.filter(t=>['6-7c','6-7e'].includes(t.id)||t.id.startsWith('sw-signed-reverse-')))assert.match(t.solution,/Provera:/);
+});
+
+test('recenzija množenja: znak, nula, svojstva i nivoi',()=>{
+ const l=all.find(x=>x.lesson.id==='mnozenje').lesson,tasks=tasksForLesson(l.id,l.tasks);
+ assert.equal(tasks.length,34);assert.equal(tasks.filter(t=>t.level==='basic').length,11);assert.equal(tasks.filter(t=>t.level==='medium').length,23);
+ assert.equal(l.worked.length,3);
+ assert.ok(l.formulas.includes('a·0=0'));assert.ok(l.formulas.includes('a·b=b·a'));assert.ok(l.formulas.includes('(a·b)·c=a·(b·c)'));assert.ok(l.formulas.includes('a·(b−c)=a·b−a·c'));
+ for(const t of tasks.filter(t=>['6-8e','6-8g'].includes(t.id)))assert.match(t.solution,/Provera:/);
+ for(const t of tasks.filter(t=>t.id.startsWith('ow-mul-distribute-')))assert.match(t.solution,/·20=/);
 });

@@ -1738,7 +1738,8 @@
       "app/content/area-tests.ts"
     ],
     "test_result": "112/112 unit/integracionih; ciljane regresije; browser rezultati u final/",
-    "phase2c_evidence": "12 konkretnih ID-jeva: sw-r5-angle-0…5 (°), sw-r5-rectangle-0…5 (cm); broj prihvaćen, sa jedinicom odbijen. qa/phase2c/grade6/obnavljanje-5/units.json; faza 3; status nepromenjen.; 6-4i: °C, 4 prihvaćen, 4 °C odbijen; qa/phase2c/grade6/sabiranje/units.json.; 6-6g: 12 prihvaćen, 12 °C odbijen; qa/phase2c/grade6/rastojanje/units.json."
+    "phase2c_evidence": "12 konkretnih ID-jeva: sw-r5-angle-0…5 (°), sw-r5-rectangle-0…5 (cm); broj prihvaćen, sa jedinicom odbijen. qa/phase2c/grade6/obnavljanje-5/units.json; faza 3; status nepromenjen.; 6-4i: °C, 4 prihvaćen, 4 °C odbijen; qa/phase2c/grade6/sabiranje/units.json.; 6-6g: 12 prihvaćen, 12 °C odbijen; qa/phase2c/grade6/rastojanje/units.json.",
+    "phase2_evidence": "; qa/phase2c/grade6/mnozenje/units.json: 6-8j −12 prihvaćen, −12 °C odbijen"
   },
   {
     "id": "LOG-07",
@@ -2831,9 +2832,9 @@
     "evidence": "qa/phase2c/grade6/sabiranje-oduzimanje/tasks.json; lesson.json; tests.log",
     "location": "app/content/grade6.ts; learning.ts; lesson-visuals.ts; september-work.ts; september-expansion.ts; enhancements.ts; area-tests.ts",
     "fix": "Precizirana pravila, tri primera, eksplicitne transformacije i provere, smislen prikaz na brojnoj pravoj.",
-    "status": "Ispravljeno i programski potvrđeno; browser provera blokirana",
+    "status": "Ispravljeno i potvrđeno; browser ponovljen uspešno",
     "fix_commit": "57fd078ac395cc34677c84eea2a0bc5d64b6926b",
-    "phase2_evidence": "qa/phase2c/grade6/sabiranje-oduzimanje/tasks.json; lesson.json; tests.log"
+    "phase2_evidence": "qa/phase2c/grade6/sabiranje-oduzimanje/tasks.json; lesson.json; tests.log; browser-retry.log; browser.json; storage/browser.json"
   },
   {
     "id": "G6C-018",
@@ -2848,8 +2849,42 @@
     "evidence": "qa/phase2c/grade6/sabiranje-oduzimanje/tasks.json; lesson.json; tests.log",
     "location": "app/content/grade6.ts; learning.ts; lesson-visuals.ts; september-work.ts; september-expansion.ts; enhancements.ts; area-tests.ts",
     "fix": "12 osnovnih, 11 srednjih sa tematskim testom.",
-    "status": "Ispravljeno i programski potvrđeno; browser provera blokirana",
+    "status": "Ispravljeno i potvrđeno; browser ponovljen uspešno",
     "fix_commit": "57fd078ac395cc34677c84eea2a0bc5d64b6926b",
-    "phase2_evidence": "qa/phase2c/grade6/sabiranje-oduzimanje/tasks.json; lesson.json; tests.log"
+    "phase2_evidence": "qa/phase2c/grade6/sabiranje-oduzimanje/tasks.json; lesson.json; tests.log; browser-retry.log; browser.json; storage/browser.json"
+  },
+  {
+    "id": "G6C-019",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Celi brojevi",
+    "lesson": "mnozenje",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Matematička preciznost i postupak",
+    "description": "Pravila predznaka bez eksplicitne nenultosti, izostavljena svojstva množenja i nepotpuni postupci za nepoznati činilac, poređenje i distributivnost.",
+    "evidence": "qa/phase2c/grade6/mnozenje/tasks.json; lesson.json; tests.log; browser.json",
+    "location": "app/content/grade6.ts; learning.ts; learning-notes.ts; october-work.ts; enhancements.ts; september-expansion.ts; area-tests.ts",
+    "fix": "Precizirana nenultost i nula, parnost negativnih činilaca, jedinica, komutativnost, asocijativnost i distributivnost; tri primera, provere i potpuni postupci.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "e81ff6b5ac668f3abc3d0f912cc1db8eac404277",
+    "phase2_evidence": "qa/phase2c/grade6/mnozenje/tasks.json; lesson.json; tests.log; browser.json"
+  },
+  {
+    "id": "G6C-020",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Celi brojevi",
+    "lesson": "mnozenje",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Nivoi težine",
+    "description": "9 neadekvatno klasifikovanih zadataka.",
+    "evidence": "qa/phase2c/grade6/mnozenje/tasks.json; lesson.json; tests.log; browser.json",
+    "location": "app/content/grade6.ts; learning.ts; learning-notes.ts; october-work.ts; enhancements.ts; september-expansion.ts; area-tests.ts",
+    "fix": "12 osnovnih, 23 srednja uključujući tematski test.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "e81ff6b5ac668f3abc3d0f912cc1db8eac404277",
+    "phase2_evidence": "qa/phase2c/grade6/mnozenje/tasks.json; lesson.json; tests.log; browser.json"
   }
 ]

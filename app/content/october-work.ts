@@ -51,8 +51,8 @@ const triples=[[3,4,5],[5,12,13],[8,15,17],[7,24,25],[9,12,15],[12,16,20]];
 register("mnozenje",[
  v=>{const a=v+3;return Q("mul","sum",v,"Izaberi proizvod.","(−"+a+")+(−"+a+")+(−"+a+")",["3·(−"+a+")","3·"+a,"−"+a+"·(−"+a+")"],"3·(−"+a+")","Prebroj jednake sabirke.","Tri jednaka sabirka zapisujemo kao 3·(−"+a+").","basic","Množenje")},
  v=>{const a=v+3;return N("mul","table",v,"Dopuni poslednju vrednost.","y=(−"+a+")·x; x: −2, 0, 3; y: "+2*a+", 0, ?",-3*a,"Uvrsti x=3.","(−"+a+")·3=−"+3*a+".","medium","Množenje","calculation")},
- v=>{const a=v+3;return Q("mul","compare",v,"Uporedi bez računanja.","(−"+a+")·5 __ (−"+a+")·7",["<",">","="],">","Oba proizvoda su negativna.","Prvi ima manju apsolutnu vrednost, pa je veći.","medium","Znak proizvoda","sign")},
- v=>{const a=v+3;return N("mul","distribute",v,"Izračunaj najkraćim putem.","(−"+a+")·9+(−"+a+")·11",-20*a,"Uoči zajednički činilac.","(−"+a+")·(9+11)=−"+20*a+".","advanced","Množenje","rule")}
+ v=>{const a=v+3;return Q("mul","compare",v,"Uporedi bez računanja.","(−"+a+")·5 __ (−"+a+")·7",["<",">","="],">","Oba proizvoda su negativna.","Pošto je 5<7, prvi proizvod ima manju apsolutnu vrednost. Oba su negativna, pa je prvi veći.","medium","Znak proizvoda","sign")},
+ v=>{const a=v+3;return N("mul","distribute",v,"Izračunaj najkraćim putem.","(−"+a+")·9+(−"+a+")·11",-20*a,"Uoči zajednički činilac.","(−"+a+")·(9+11)=(−"+a+")·20=−"+20*a+".","advanced","Množenje","rule")}
 ]);
 register("deljenje",[
  v=>{const a=v+3;return N("div","table",v,"Dopuni poslednju vrednost.","x: −"+4*a+", 0, "+6*a+"; x:(−"+a+"): 4, 0, ?",-6,"Podeli poslednji x sa negativnim brojem.",6*a+":(−"+a+")=−6.","medium","Deljenje","sign")},
@@ -203,6 +203,7 @@ export function lessonWorkTasks(lessonId:string,pool:Task[]):Task[]{
  return plan.map(id=>{const task=pool.find(item=>item.id===id);if(!task)throw new Error("Missing lesson work task: "+id);return task});
 }
 export function applyOctoberWorkLevels(lessonId:string,tasks:Task[]):Task[]{
+ if(lessonId==="mnozenje")return tasks.map(task=>({...task,level:["6-8a","6-8b","6-8c","6-8d","6-8f"].includes(task.id)||task.id.startsWith("ow-mul-sum-")?"basic":"medium"}));
  const plan=octoberWorkPlans[lessonId];if(!plan)return tasks;
  return tasks.map(task=>{
   const at=plan.indexOf(task.id);if(at<0)return task;

@@ -1,3 +1,30 @@
+# Checkpoint 7 — Množenje celih brojeva i zaostala browser regresija
+
+Datum: 27.11.2026. Polazni commit 93642e7; sadržajni commit e81ff6b. Nalazi G6C-019–020.
+
+| Stavka | Stanje |
+|---|---:|
+| Potpuno matematički i metodički recenzirani zadaci | 243/919 |
+| Delimično | 0 |
+| Nepregledani | 676 |
+| Lekcije matematički recenzirane | 9/45 |
+| Postojeći rešeni primeri | 9/81 |
+| Novi rešeni primeri | 18/18 |
+
+- Zaostala provera sabiranje-oduzimanje: browser-combined.py, izlaz 0, 22 browser zapisa (20 zadataka, dva prikaza primera i napretka nakon reload-a). Dodatno critical-storage.py, izlaz 0: osvežavanje, ponovno pokretanje, dve kartice bez gubitka, promena razreda, stanje simulacije, nečitljiv zapis i blokirano skladište. Prvobitni neuspeh sa nedostajućim Chromiumom sačuvan u browser.log/browser.exit, novi dokaz u browser-retry.log/browser-retry.exit i storage/.
+- Chromium 158.0.8127.0 obezbeđen iz npm paketa @sparticuz/chromium@158.0.0 (chromium.br raspakovan Brotli dekompresijom u /tmp/qa-chromium). Standardni Playwright download bio blokiran; nezavisni lokalni headless browser uspešno pokrenut, bez dodavanja zavisnosti projektu.
+- Množenje: 35/35 pojedinačnih zadataka, uključujući t6-8; 12 osnovnih, 23 srednja; 9 promena nivoa, 22 izmenjena zadatka. ID-jevi, redosled i odgovori očuvani. Nezavisno proverene sve konkretne varijante i tri rešena primera.
+- Precizirani predznaci nenultih činilaca, nula i više negativnih činilaca; dodati jedinica, komutativnost, asocijativnost i distributivnost prema zbiru i razlici. Dopunjene provere nepoznatog činioca, poređenje i postupci distributivnosti. Brojna prava: tri pomeranja po −2. Nema dovoljno različitih zadataka o svim svojstvima za potvrdu celog godišnjeg ishoda.
+- LOG-06: 6-8j, −12 prihvaćen, −12 °C odbijen. Validator ostaje za fazu 3.
+- Množenje: 122/122 programska testa, Worker i Pages build, TypeScript i lint (0 grešaka, 6 upozorenja), 22 browser zapisa. Testirani emulirani desktop i mobilni touch prikaz, ne fizički uređaji; nisu pojedinačno birane sve adaptivne varijante.
+- Godišnji ishodi 6.01–6.04 i dalje delimični.
+
+**Tačka nastavka:** deljenje, prvi ID 6-9a. 198/283 zadatka oblasti Celi brojevi recenzirana. Faza 2C nije završena.
+
+Dokazi: qa/phase2c/grade6/mnozenje, sabiranje-oduzimanje, ledger-tasks.json, ledger-lessons.json i Excel evidencija.
+
+---
+
 # Checkpoint 6 — Sabiranje i oduzimanje celih brojeva
 
 Datum: 27.11.2026. Polazni commit da039de; sadržajni commit 57fd078ac395cc34677c84eea2a0bc5d64b6926b. Nalazi G6C-017–018.

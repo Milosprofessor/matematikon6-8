@@ -62,10 +62,10 @@ export const septemberTasks:Record<string,Task[]>={
   ],
   "mnozenje":[
     P(C("6-8f","Odredi znak proizvoda.","(−8)·15",["+","−","0"],"−","Činioci imaju različite znake.","Proizvod brojeva različitih znakova je negativan.","basic","Znak proizvoda"),"znak-bez-racunanja","sign"),
-    P(I("6-8g","Dopuni.","(−7)·__=42","-6","Proizvod treba da bude pozitivan.","(−7)·(−6)=42.","medium","Nepoznati činilac"),"dopunjavanje","method"),
-    P(C("6-8h","Pronađi grešku.","(−9)·(−4)=−36",["Nema greške.","Rezultat treba da bude 36.","Rezultat treba da bude −13."],"Rezultat treba da bude 36.","Dva negativna činioca daju pozitivan proizvod.","(−9)·(−4)=36.","medium","Znak proizvoda"),"pronadji-gresku","sign"),
-    P(C("6-8i","Odredi znak proizvoda.","(−2)·(−3)·(−5)",["+","−","0"],"−","Prebroj negativne činioce.","Tri negativna činioca daju negativan proizvod.","advanced","Znak proizvoda"),"vise-cinilaca","rule"),
-    P(I("6-8j","Izračunaj promenu.","Temperatura opada 3 °C na sat tokom 4 sata.","-12","Svaki sat donosi promenu −3.","4·(−3)=−12 °C.","advanced","Množenje"),"kratak-kontekst","method"),
+    P(I("6-8g","Dopuni.","(−7)·__=42","-6","Koji predznak i apsolutnu vrednost mora imati nepoznati činilac?","7·6=42. Nepoznati činilac mora biti negativan, jer je −7 negativan, a 42 pozitivan. Traženi broj je −6. Provera: (−7)·(−6)=42.","medium","Nepoznati činilac"),"dopunjavanje","method"),
+    P(C("6-8h","Pronađi grešku.","(−9)·(−4)=−36",["Nema greške.","Rezultat treba da bude 36.","Rezultat treba da bude −13."],"Rezultat treba da bude 36.","Dva negativna činioca daju pozitivan proizvod.","Oba činioca su negativna; 9·4=36, pa (−9)·(−4)=36, ne −36.","medium","Znak proizvoda"),"pronadji-gresku","sign"),
+    P(C("6-8i","Odredi znak proizvoda.","(−2)·(−3)·(−5)",["+","−","0"],"−","Proveri da nema nule, zatim prebroj negativne činioce.","Nema nule i broj negativnih činilaca je 3, neparan; zato je proizvod negativan.","advanced","Znak proizvoda"),"vise-cinilaca","rule"),
+    P(I("6-8j","Izračunaj ukupnu promenu temperature u °C, sa predznakom.","Temperatura opada 3 °C na sat tokom 4 sata.","-12","Svaki sat donosi promenu −3.","4·(−3)=−12 °C.","advanced","Množenje"),"kratak-kontekst","method"),
   ],
   "deljenje":[
     P(C("6-9f","Odredi znak količnika.","−84:(−7)",["+","−","0"],"+","Deljenik i delilac imaju iste znake.","Količnik brojeva istih znakova je pozitivan.","basic","Znak količnika"),"znak-bez-racunanja","sign"),

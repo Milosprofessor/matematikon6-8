@@ -1286,16 +1286,21 @@
   {
    "id": "mnozenje",
    "title": "Množenje celih brojeva",
-   "intro": "Proizvod brojeva istih znakova je pozitivan, a različitih znakova negativan.",
+   "intro": "Proizvod dva nenulta cela broja je pozitivan ako su istog predznaka, a negativan ako su različitih predznaka. Ako je bilo koji činilac nula, proizvod je nula.",
    "rules": [
-    "Isti znaci daju +.",
-    "Različiti znaci daju −.",
-    "Svaki broj pomnožen nulom daje nulu."
+    "Dva nenulta činioca istog predznaka daju pozitivan proizvod.",
+    "Dva nenulta činioca različitih predznaka daju negativan proizvod.",
+    "Svaki broj pomnožen nulom daje nulu, a jedinicom ostaje isti. Kod više nenultih činilaca, paran broj negativnih daje pozitivan, a neparan negativan proizvod."
    ],
    "formulas": [
-    "(−a)·(−b)=ab",
-    "(−a)·b=−ab",
-    "a·0=0"
+    "(−a)·(−b)=a·b",
+    "(−a)·b=−(a·b)",
+    "a·0=0",
+    "a·1=a",
+    "a·b=b·a",
+    "(a·b)·c=a·(b·c)",
+    "a·(b+c)=a·b+a·c",
+    "a·(b−c)=a·b−a·c"
    ],
    "examples": [
     "(−4)·3 = −12",
@@ -1310,6 +1315,29 @@
      "Rezultat je 56."
     ]
    },
+   "worked": [
+    {
+     "question": "Izračunaj (−8)·(−7).",
+     "steps": [
+      "Oba činioca su negativna, pa je proizvod pozitivan.",
+      "8·7=56, zato je (−8)·(−7)=56."
+     ]
+    },
+    {
+     "question": "Izračunaj (−2)·3·(−4)·(−1).",
+     "steps": [
+      "Nema nule; tri negativna činioca daju negativan proizvod.",
+      "2·3·4·1=24, zato je proizvod −24. Ako bi bilo koji činilac bio nula, proizvod bi bio 0."
+     ]
+    },
+    {
+     "question": "Izračunaj (−6)·8+(−6)·12 koristeći distributivnost.",
+     "steps": [
+      "Izdvoji zajednički činilac: (−6)·(8+12).",
+      "(−6)·20=−120. Provera: −48+(−72)=−120."
+     ]
+    }
+   ],
    "month": "september",
    "prerequisites": [
     "sabiranje-oduzimanje"
@@ -1352,11 +1380,24 @@
      "text": "Nepoznati činilac proveri množenjem. Zajednički činilac možeš izdvojiti pre računanja zbira proizvoda.",
      "definition": false,
      "formulas": [
-      "a·b+a·c=a·(b+c)"
+      "a·b+a·c=a·(b+c)",
+      "a·(b−c)=a·b−a·c"
      ],
      "visualIndexes": [],
      "table": false,
      "note": "Ukupna promena temperature nije konačna temperatura ako početno stanje nije poznato."
+    },
+    {
+     "title": "Svojstva množenja",
+     "text": "Jedinica je neutralni element. Komutativnost znači zamenu mesta činilaca; asocijativnost znači drugačije grupisanje činilaca.",
+     "definition": false,
+     "formulas": [
+      "a·1=a",
+      "a·b=b·a",
+      "(a·b)·c=a·(b·c)"
+     ],
+     "visualIndexes": [],
+     "table": false
     }
    ],
    "visuals": [
@@ -10356,7 +10397,7 @@
    "math": "(−9) · 4",
    "kind": "input",
    "answer": "-36",
-   "hint": "Različiti znaci daju minus.",
+   "hint": "Činioci su nenulti i različitih predznaka.",
    "solution": "9 · 4 = 36, pa je rezultat −36.",
    "level": "basic",
    "skill": "Množenje",
@@ -10373,9 +10414,9 @@
    "math": "(−6) · (−8)",
    "kind": "input",
    "answer": "48",
-   "hint": "Isti znaci daju plus.",
-   "solution": "6 · 8 = 48.",
-   "level": "medium",
+   "hint": "Dva negativna činioca daju pozitivan proizvod.",
+   "solution": "(−6)·(−8)=6·8=48.",
+   "level": "basic",
    "skill": "Množenje",
    "lesson": "mnozenje",
    "area": "celi-brojevi",
@@ -10394,9 +10435,9 @@
     "(−2)·0"
    ],
    "answer": "4·(−7)",
-   "hint": "Negativan je proizvod različitih znakova.",
-   "solution": "4·(−7)=−28.",
-   "level": "medium",
+   "hint": "Prvo izdvoji proizvod koji ima činilac nula; zatim uporedi predznake ostalih činilaca.",
+   "solution": "(−3)·(−5)=15, 4·(−7)=−28, (−2)·0=0; samo drugi proizvod je negativan.",
+   "level": "basic",
    "skill": "Znak proizvoda",
    "lesson": "mnozenje",
    "area": "celi-brojevi",
@@ -10410,8 +10451,8 @@
    "math": "(−11)·(−7)",
    "kind": "input",
    "answer": "77",
-   "hint": "Isti znaci daju plus.",
-   "solution": "11·7=77.",
+   "hint": "Dva negativna činioca daju pozitivan proizvod.",
+   "solution": "(−11)·(−7)=11·7=77.",
    "level": "basic",
    "skill": "Množenje",
    "lesson": "mnozenje",
@@ -10427,8 +10468,8 @@
    "kind": "input",
    "answer": "-9",
    "hint": "Koji negativan broj pomnožen sa 6 daje −54?",
-   "solution": "Pošto je 6·9=54, važi 6·(−9)=−54. Zato je x=−9.",
-   "level": "advanced",
+   "solution": "Pošto je 54=6·9, traženi činilac ima apsolutnu vrednost 9 i negativan je. x=−9. Provera: 6·(−9)=−54.",
+   "level": "medium",
    "skill": "Množenje",
    "lesson": "mnozenje",
    "area": "celi-brojevi",
@@ -10467,8 +10508,8 @@
    "math": "(−7)·__=42",
    "kind": "input",
    "answer": "-6",
-   "hint": "Proizvod treba da bude pozitivan.",
-   "solution": "(−7)·(−6)=42.",
+   "hint": "Koji predznak i apsolutnu vrednost mora imati nepoznati činilac?",
+   "solution": "7·6=42. Nepoznati činilac mora biti negativan, jer je −7 negativan, a 42 pozitivan. Traženi broj je −6. Provera: (−7)·(−6)=42.",
    "level": "medium",
    "skill": "Nepoznati činilac",
    "taskType": "dopunjavanje",
@@ -10493,7 +10534,7 @@
    ],
    "answer": "Rezultat treba da bude 36.",
    "hint": "Dva negativna činioca daju pozitivan proizvod.",
-   "solution": "(−9)·(−4)=36.",
+   "solution": "Oba činioca su negativna; 9·4=36, pa (−9)·(−4)=36, ne −36.",
    "level": "medium",
    "skill": "Znak proizvoda",
    "taskType": "pronadji-gresku",
@@ -10517,8 +10558,8 @@
     "0"
    ],
    "answer": "−",
-   "hint": "Prebroj negativne činioce.",
-   "solution": "Tri negativna činioca daju negativan proizvod.",
+   "hint": "Proveri da nema nule, zatim prebroj negativne činioce.",
+   "solution": "Nema nule i broj negativnih činilaca je 3, neparan; zato je proizvod negativan.",
    "level": "medium",
    "skill": "Znak proizvoda",
    "taskType": "vise-cinilaca",
@@ -10533,7 +10574,7 @@
   },
   {
    "id": "6-8j",
-   "prompt": "Izračunaj promenu.",
+   "prompt": "Izračunaj ukupnu promenu temperature u °C, sa predznakom.",
    "math": "Temperatura opada 3 °C na sat tokom 4 sata.",
    "kind": "input",
    "answer": "-12",
@@ -10859,7 +10900,7 @@
    ],
    "answer": ">",
    "hint": "Oba proizvoda su negativna.",
-   "solution": "Prvi ima manju apsolutnu vrednost, pa je veći.",
+   "solution": "Pošto je 5<7, prvi proizvod ima manju apsolutnu vrednost. Oba su negativna, pa je prvi veći.",
    "level": "medium",
    "skill": "Znak proizvoda",
    "taskType": "mul-compare",
@@ -10887,7 +10928,7 @@
    ],
    "answer": ">",
    "hint": "Oba proizvoda su negativna.",
-   "solution": "Prvi ima manju apsolutnu vrednost, pa je veći.",
+   "solution": "Pošto je 5<7, prvi proizvod ima manju apsolutnu vrednost. Oba su negativna, pa je prvi veći.",
    "level": "medium",
    "skill": "Znak proizvoda",
    "taskType": "mul-compare",
@@ -10914,7 +10955,7 @@
    ],
    "answer": ">",
    "hint": "Oba proizvoda su negativna.",
-   "solution": "Prvi ima manju apsolutnu vrednost, pa je veći.",
+   "solution": "Pošto je 5<7, prvi proizvod ima manju apsolutnu vrednost. Oba su negativna, pa je prvi veći.",
    "level": "medium",
    "skill": "Znak proizvoda",
    "taskType": "mul-compare",
@@ -10941,7 +10982,7 @@
    ],
    "answer": ">",
    "hint": "Oba proizvoda su negativna.",
-   "solution": "Prvi ima manju apsolutnu vrednost, pa je veći.",
+   "solution": "Pošto je 5<7, prvi proizvod ima manju apsolutnu vrednost. Oba su negativna, pa je prvi veći.",
    "level": "medium",
    "skill": "Znak proizvoda",
    "taskType": "mul-compare",
@@ -10968,7 +11009,7 @@
    ],
    "answer": ">",
    "hint": "Oba proizvoda su negativna.",
-   "solution": "Prvi ima manju apsolutnu vrednost, pa je veći.",
+   "solution": "Pošto je 5<7, prvi proizvod ima manju apsolutnu vrednost. Oba su negativna, pa je prvi veći.",
    "level": "medium",
    "skill": "Znak proizvoda",
    "taskType": "mul-compare",
@@ -10995,7 +11036,7 @@
    ],
    "answer": ">",
    "hint": "Oba proizvoda su negativna.",
-   "solution": "Prvi ima manju apsolutnu vrednost, pa je veći.",
+   "solution": "Pošto je 5<7, prvi proizvod ima manju apsolutnu vrednost. Oba su negativna, pa je prvi veći.",
    "level": "medium",
    "skill": "Znak proizvoda",
    "taskType": "mul-compare",
@@ -11017,8 +11058,8 @@
    "kind": "input",
    "answer": "-60",
    "hint": "Uoči zajednički činilac.",
-   "solution": "(−3)·(9+11)=−60.",
-   "level": "advanced",
+   "solution": "(−3)·(9+11)=(−3)·20=−60.",
+   "level": "medium",
    "skill": "Množenje",
    "taskType": "mul-distribute",
    "errorCategory": "rule",
@@ -11040,8 +11081,8 @@
    "kind": "input",
    "answer": "-80",
    "hint": "Uoči zajednički činilac.",
-   "solution": "(−4)·(9+11)=−80.",
-   "level": "advanced",
+   "solution": "(−4)·(9+11)=(−4)·20=−80.",
+   "level": "medium",
    "skill": "Množenje",
    "taskType": "mul-distribute",
    "errorCategory": "rule",
@@ -11062,8 +11103,8 @@
    "kind": "input",
    "answer": "-100",
    "hint": "Uoči zajednički činilac.",
-   "solution": "(−5)·(9+11)=−100.",
-   "level": "advanced",
+   "solution": "(−5)·(9+11)=(−5)·20=−100.",
+   "level": "medium",
    "skill": "Množenje",
    "taskType": "mul-distribute",
    "errorCategory": "rule",
@@ -11084,8 +11125,8 @@
    "kind": "input",
    "answer": "-120",
    "hint": "Uoči zajednički činilac.",
-   "solution": "(−6)·(9+11)=−120.",
-   "level": "advanced",
+   "solution": "(−6)·(9+11)=(−6)·20=−120.",
+   "level": "medium",
    "skill": "Množenje",
    "taskType": "mul-distribute",
    "errorCategory": "rule",
@@ -11106,8 +11147,8 @@
    "kind": "input",
    "answer": "-140",
    "hint": "Uoči zajednički činilac.",
-   "solution": "(−7)·(9+11)=−140.",
-   "level": "advanced",
+   "solution": "(−7)·(9+11)=(−7)·20=−140.",
+   "level": "medium",
    "skill": "Množenje",
    "taskType": "mul-distribute",
    "errorCategory": "rule",
@@ -11128,8 +11169,8 @@
    "kind": "input",
    "answer": "-160",
    "hint": "Uoči zajednički činilac.",
-   "solution": "(−8)·(9+11)=−160.",
-   "level": "advanced",
+   "solution": "(−8)·(9+11)=(−8)·20=−160.",
+   "level": "medium",
    "skill": "Množenje",
    "taskType": "mul-distribute",
    "errorCategory": "rule",
@@ -13218,8 +13259,8 @@
    "math": "(−9)·(−8)",
    "kind": "input",
    "answer": "72",
-   "hint": "Isti znaci daju plus.",
-   "solution": "9·8=72.",
+   "hint": "Dva negativna činioca daju pozitivan proizvod.",
+   "solution": "(−9)·(−8)=9·8=72.",
    "level": "basic",
    "skill": "Množenje",
    "lessonId": "mnozenje",

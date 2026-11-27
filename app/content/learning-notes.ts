@@ -66,7 +66,8 @@ export const noteLayouts:Record<string,PointLayout[]>={
   p('Ponovljeno sabiranje i znak proizvoda','i0',{v:[0],table:true,definition:true}),
   p('Nula i broj −1','i1.0 i1.1',{f:[0,1]}),
   p('Više negativnih činilaca','i1.2'),
-  p('Zajednički činilac i provera','s1',{f:[2],note:true}),
+  p('Zajednički činilac i provera','s1',{f:[2,6],note:true}),
+  p('Svojstva množenja','',{f:[3,4,5],text:'Jedinica je neutralni element. Komutativnost znači zamenu mesta činilaca; asocijativnost znači drugačije grupisanje činilaca.'}),
  ],
  'deljenje':[
   p('Veza deljenja i množenja','i0',{f:[0],definition:true,note:true}),

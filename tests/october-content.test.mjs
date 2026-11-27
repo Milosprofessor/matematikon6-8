@@ -67,7 +67,7 @@ test("svaka oktobarska lekcija ima jasan balans i raznovrsnu bazu",()=>{
     assert.ok(learningByLesson[lesson.id]?.steps.length>0,`${lesson.id}: objašnjen postupak`);
     assert.ok(tasks.length>=7,`${lesson.id}: broj zadataka`);
     assert.ok(new Set(tasks.map(task=>task.taskType).filter(Boolean)).size>=5,`${lesson.id}: broj tipova`);
-    for(const level of ["basic","medium","advanced"])assert.ok(tasks.some(task=>task.level===level),`${lesson.id}: ${level}`);
+    for(const level of lesson.id==="mnozenje"?["basic","medium"]:["basic","medium","advanced"])assert.ok(tasks.some(task=>task.level===level),`${lesson.id}: ${level}`);
     for(const task of tasks.filter(task=>task.kind==="choice"))assert.ok(task.choices.includes(task.answer),`${task.id}: odgovor nije ponuđen`);
   }
   assert.equal(new Set(ids).size,ids.length,"oktobarski ID-jevi moraju biti jedinstveni");

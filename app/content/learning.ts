@@ -196,12 +196,16 @@ export const learningByLesson:Record<string,LessonLearning> = {
       "Pre računanja proveri nulu i prebroj negativne činioce.",
       "Nepoznati činilac proveri množenjem. Zajednički činilac možeš izdvojiti pre računanja zbira proizvoda."
     ],
-    "why": "Svaki negativni činilac menja predznak; dva takva menjanja međusobno se poništavaju.",
+    "why": "Za nenulti proizvod svaki negativni činilac menja predznak; dva takva menjanja međusobno se poništavaju.",
     "caution": "Ukupna promena temperature nije konačna temperatura ako početno stanje nije poznato.",
     "extraFormulas": [
       "a·0=0",
       "a·(−1)=−a",
-      "a·b+a·c=a·(b+c)"
+      "a·b+a·c=a·(b+c)",
+      "a·1=a",
+      "a·b=b·a",
+      "(a·b)·c=a·(b·c)",
+      "a·(b−c)=a·b−a·c"
     ],
     "sourcePages": "Udžbenik 6, str. 30–34; u planu za septembar čas 16; postojeća lekcija sajta zadržava oktobarski mesec.",
     "visuals": [

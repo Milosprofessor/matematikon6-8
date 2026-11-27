@@ -1,0 +1,37 @@
+{
+  "id": "mnozenje",
+  "area": "celi-brojevi",
+  "status": "potpuno recenzirana",
+  "theory": "Predznak nenultih činilaca, nula, jedinica, −1, komutativnost, asocijativnost i distributivnost prema zbiru i razlici.",
+  "sequence": "Ponovljeno sabiranje → znak i nula → više činilaca → svojstva i provera.",
+  "examples": [
+    {
+      "question": "Izračunaj (−8)·(−7).",
+      "steps": [
+        "Oba činioca su negativna, pa je proizvod pozitivan.",
+        "8·7=56, zato je (−8)·(−7)=56."
+      ],
+      "verification": "56"
+    },
+    {
+      "question": "Izračunaj (−2)·3·(−4)·(−1).",
+      "steps": [
+        "Nema nule; tri negativna činioca daju negativan proizvod.",
+        "2·3·4·1=24, zato je proizvod −24. Ako bi bilo koji činilac bio nula, proizvod bi bio 0."
+      ],
+      "verification": "−24"
+    },
+    {
+      "question": "Izračunaj (−6)·8+(−6)·12 koristeći distributivnost.",
+      "steps": [
+        "Izdvoji zajednički činilac: (−6)·(8+12).",
+        "(−6)·20=−120. Provera: −48+(−72)=−120."
+      ],
+      "verification": "−120"
+    }
+  ],
+  "illustration": "Brojna prava 0 → −2 → −4 → −6; tri jednaka pomeranja.",
+  "misconceptions": "Nula nije ni pozitivna ni negativna; parnost negativnih činilaca važi samo bez nule; promena temperature nije konačno stanje.",
+  "assessment": "35 sa tematskom proverom; 12 osnovnih, 23 srednja.",
+  "limits": "Svojstva pokrivena teorijom; nema dovoljno različitih zadataka za potvrdu celog godišnjeg ishoda."
+}

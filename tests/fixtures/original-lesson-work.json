@@ -1028,7 +1028,7 @@
         "prompt": "Izračunaj.",
         "math": "(−9) · 4",
         "answer": "-36",
-        "hint": "Različiti znaci daju minus.",
+        "hint": "Činioci su nenulti i različitih predznaka.",
         "solution": "9 · 4 = 36, pa je rezultat −36.",
         "level": "basic",
         "skill": "Množenje"
@@ -1074,7 +1074,7 @@
         ],
         "answer": "Rezultat treba da bude 36.",
         "hint": "Dva negativna činioca daju pozitivan proizvod.",
-        "solution": "(−9)·(−4)=36.",
+        "solution": "Oba činioca su negativna; 9·4=36, pa (−9)·(−4)=36, ne −36.",
         "level": "medium",
         "skill": "Znak proizvoda"
       },
@@ -1083,8 +1083,8 @@
         "prompt": "Dopuni.",
         "math": "(−7)·__=42",
         "answer": "-6",
-        "hint": "Proizvod treba da bude pozitivan.",
-        "solution": "(−7)·(−6)=42.",
+        "hint": "Koji predznak i apsolutnu vrednost mora imati nepoznati činilac?",
+        "solution": "7·6=42. Nepoznati činilac mora biti negativan, jer je −7 negativan, a 42 pozitivan. Traženi broj je −6. Provera: (−7)·(−6)=42.",
         "level": "medium",
         "skill": "Nepoznati činilac"
       },
@@ -1109,7 +1109,7 @@
         ],
         "answer": ">",
         "hint": "Oba proizvoda su negativna.",
-        "solution": "Prvi ima manju apsolutnu vrednost, pa je veći.",
+        "solution": "Pošto je 5<7, prvi proizvod ima manju apsolutnu vrednost. Oba su negativna, pa je prvi veći.",
         "level": "medium",
         "skill": "Znak proizvoda"
       },
@@ -1123,14 +1123,14 @@
           "0"
         ],
         "answer": "−",
-        "hint": "Prebroj negativne činioce.",
-        "solution": "Tri negativna činioca daju negativan proizvod.",
+        "hint": "Proveri da nema nule, zatim prebroj negativne činioce.",
+        "solution": "Nema nule i broj negativnih činilaca je 3, neparan; zato je proizvod negativan.",
         "level": "medium",
         "skill": "Znak proizvoda"
       },
       {
         "id": "6-8j",
-        "prompt": "Izračunaj promenu.",
+        "prompt": "Izračunaj ukupnu promenu temperature u °C, sa predznakom.",
         "math": "Temperatura opada 3 °C na sat tokom 4 sata.",
         "answer": "-12",
         "hint": "Svaki sat donosi promenu −3.",
@@ -1144,8 +1144,8 @@
         "math": "(−3)·9+(−3)·11",
         "answer": "-60",
         "hint": "Uoči zajednički činilac.",
-        "solution": "(−3)·(9+11)=−60.",
-        "level": "advanced",
+        "solution": "(−3)·(9+11)=(−3)·20=−60.",
+        "level": "medium",
         "skill": "Množenje"
       }
     ]
