@@ -2292,7 +2292,7 @@
        "c": "13"
       }
      },
-     "note": "Za katetu: a²=c²−b²; za hipotenuzu: c²=a²+b². Tek zatim uzmi pozitivan koren."
+     "note": "Počni od a²+b²=c². Kada je nepoznata kateta a, oduzmi b² sa obe strane, pa uzmi pozitivan koren."
     }
    ],
    "work": [
@@ -2473,9 +2473,9 @@
    "solved": {
     "question": "Jednakokraki trougao ima krak 10 cm i osnovicu 12 cm. Odredi visinu.",
     "steps": [
-     "Polovina osnovice je 6 cm.",
-     "6²+h²=10². Sledi 36+h²=100, h²=100−36=64.",
-     "h=8 cm."
+     "Visina h deli osnovicu na polovine. Katete su a/2 i h, a krak s je hipotenuza. a/2=12/2=6 cm.",
+     "(a/2)²+h²=s². 6²+h²=10². Sledi 36+h²=100, h²=100−36=64.",
+     "Kako je h>0, h=8 cm."
     ]
    },
    "month": "october",
@@ -15797,7 +15797,7 @@
    "math": "c=10 cm, a=8 cm",
    "kind": "input",
    "answer": "6",
-   "hint": "Oduzmi kvadrate.",
+   "hint": "Prepoznaj hipotenuzu i postavi Pitagorinu teoremu.",
    "solution": "Katete su a i b, hipotenuza c. a²+b²=c². 8²+b²=10²; 64+b²=100; b²=100−64=36. Pošto je b>0, b=6 cm.",
    "level": "basic",
    "skill": "Nepoznata kateta",
@@ -15883,7 +15883,7 @@
    "math": "c=25 cm, b=24 cm",
    "kind": "input",
    "answer": "7",
-   "hint": "Oduzmi kvadrate.",
+   "hint": "Prepoznaj hipotenuzu i postavi Pitagorinu teoremu.",
    "solution": "a²+b²=c². a²+24²=25²; a²+576=625; a²=49. Pozitivna kateta a=7 cm.",
    "level": "medium",
    "skill": "Nepoznata kateta",
@@ -15932,7 +15932,7 @@
   },
   {
    "id": "o7-ns-6",
-   "prompt": "Odredi površinu.",
+   "prompt": "Odredi površinu pravouglog trougla.",
    "math": "c=13 cm, a=5 cm",
    "kind": "input",
    "answer": "30",
@@ -16487,7 +16487,7 @@
    "math": "d=10√2 cm",
    "kind": "input",
    "answer": "10",
-   "hint": "Iz d=a√2 sledi a=d/√2.",
+   "hint": "Dijagonala je hipotenuza, a obe katete su jednake.",
    "solution": "a²+a²=d². 2a²=(10√2)²=200; a²=100; a=10 cm jer je pozitivna.",
    "level": "medium",
    "skill": "Pitagora u kvadratu",
@@ -16993,7 +16993,7 @@
   },
   {
    "id": "o7-jk-1",
-   "prompt": "Odredi visinu.",
+   "prompt": "Odredi visinu na osnovicu jednakokrakog trougla.",
    "math": "s=13 cm, a=10 cm",
    "kind": "input",
    "answer": "12",
@@ -17056,7 +17056,7 @@
   },
   {
    "id": "o7-jk-3",
-   "prompt": "Odredi osnovicu.",
+   "prompt": "Odredi osnovicu jednakokrakog trougla.",
    "math": "s=17 cm, h=15 cm",
    "kind": "input",
    "answer": "16",
@@ -17173,11 +17173,11 @@
   },
   {
    "id": "o7-jk-7",
-   "prompt": "Odredi obim.",
+   "prompt": "Odredi obim jednakokrakog trougla.",
    "math": "s=10 cm, h=8 cm",
    "kind": "input",
    "answer": "32",
-   "hint": "Polovina osnovice je 6 cm.",
+   "hint": "Visina i polovina osnovice čine katete.",
    "solution": "(a/2)²+h²=s². (a/2)²+8²=10²; (a/2)²+64=100; (a/2)²=36. Pozitivna polovina je 6 cm, a=12 cm. O=10+10+12=32 cm.",
    "level": "advanced",
    "skill": "Pitagora u jednakokrakom trouglu",
@@ -20765,7 +20765,7 @@
    "math": "c=17 cm, a=15 cm",
    "kind": "input",
    "answer": "8",
-   "hint": "Oduzmi kvadrate.",
+   "hint": "Postavi Pitagorinu teoremu i izdvoji nepoznatu katetu.",
    "solution": "a²+b²=c². 15²+b²=17²; 225+b²=289; b²=64; b=8 cm jer je pozitivna.",
    "level": "medium",
    "skill": "Nepoznata kateta",
