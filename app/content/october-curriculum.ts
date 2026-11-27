@@ -34,7 +34,7 @@ const spoljasnjiUglovi: Lesson = {
   },
   diagram: "triangle",
   tasks: [
-    I("o6-su-1", "Odredi α_1.", "α=74°", "106", "Susedni uglovi imaju zbir 180°.", "α₁=180°−74°=106°.", "basic", "Spoljašnji ugao", { taskType: "susedni-uglovi", errorCategory: "calculation" }),
+    I("o6-su-1", "Odredi α_1.", "α=74°", "106", "Naporedni uglovi imaju zbir 180°.", "α₁=180°−74°=106°.", "basic", "Spoljašnji ugao", { taskType: "susedni-uglovi", errorCategory: "calculation" }),
     I("o6-su-2", "Odredi α_1.", "β=48°, γ=69°", "117", "Saberi nesusedne unutrašnje uglove.", "α₁=48°+69°=117°.", "basic", "Spoljašnji ugao", { taskType: "zbir-nesusednih", errorCategory: "rule" }),
     C("o6-su-3", "Izaberi tačnu jednakost.", "Spoljašnji ugao kod temena A", ["α_1=β+γ", "α_1=α+β", "α_1=180°+α"], "α_1=β+γ", "Traži uglove koji nisu susedni spoljašnjem uglu.", "Važi α₁=β+γ.", "medium", "Spoljašnji ugao", { taskType: "izbor-pravila", errorCategory: "rule" }),
   ],

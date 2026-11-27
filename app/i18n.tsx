@@ -1,4 +1,5 @@
 "use client";
+import {readStored,writeStored} from "./storage";
 
 import { createContext, ReactNode, RefObject, useContext, useLayoutEffect, useRef, useSyncExternalStore } from "react";
 import { localize } from "./transliteration";
@@ -13,12 +14,12 @@ export function ScriptProvider({script,children}:{script:ScriptChoice;children:R
 export function useCurrentScript(){return useContext(ScriptContext)}
 
 const scriptEvent="matematikon68-script-change";
-const getScriptSnapshot=():ScriptChoice=>localStorage.getItem(scriptKey)==="latn"?"latn":"cyrl";
+const getScriptSnapshot=():ScriptChoice=>readStored(scriptKey)==="latn"?"latn":"cyrl";
 const getServerScriptSnapshot=():ScriptChoice=>"cyrl";
 const subscribeToScript=(notify:()=>void)=>{const onChange=()=>notify();window.addEventListener("storage",onChange);window.addEventListener(scriptEvent,onChange);return()=>{window.removeEventListener("storage",onChange);window.removeEventListener(scriptEvent,onChange)}};
 export function useScriptPreference(){
   const script=useSyncExternalStore(subscribeToScript,getScriptSnapshot,getServerScriptSnapshot);
-  const setScript=(next:ScriptChoice)=>{localStorage.setItem(scriptKey,next);window.dispatchEvent(new Event(scriptEvent))};
+  const setScript=(next:ScriptChoice)=>{writeStored(scriptKey,next);window.dispatchEvent(new Event(scriptEvent))};
   return {script,setScript};
 }
 

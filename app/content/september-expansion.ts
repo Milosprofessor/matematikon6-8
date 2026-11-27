@@ -36,7 +36,7 @@ export const septemberTasks:Record<string,Task[]>={
     P(C("6-4f","Odredi znak zbira bez računanja.","−28+11",["+","−","0"],"−","Veću apsolutnu vrednost ima negativan sabirak.","|−28|>|11|, zato je zbir negativan.","medium","Znak zbira"),"znak-bez-racunanja","sign"),
     P(I("6-4g","Dopuni.","−9+__=0","9","Broj i njegov suprotan daju nulu.","−9+9=0.","basic","Suprotni sabirci"),"dopunjavanje","concept"),
     P(C("6-4h","Pronađi grešku.","−16+7=9",["Nema greške.","Rezultat treba da bude −9.","Rezultat treba da bude −23."],"Rezultat treba da bude −9.","Oduzmi apsolutne vrednosti i uzmi znak većeg broja.","16−7=9, a veći po apsolutnoj vrednosti je −16, zato je zbir −9.","medium","Sabiranje različitih znakova"),"pronadji-gresku","sign"),
-    P(I("6-4i","Izračunaj promenu temperature.","Ujutru je bilo −6 °C, a zatim je temperatura porasla za 10 °C.","4","Porast zapisujemo sabiranjem pozitivnog broja.","−6+10=4 °C.","advanced","Sabiranje različitih znakova"),"kratak-kontekst","method"),
+    P(I("6-4i","Odredi konačnu temperaturu.","Ujutru je bilo −6 °C, a zatim je temperatura porasla za 10 °C.","4","Porast zapisujemo sabiranjem pozitivnog broja.","−6+10=4 °C.","advanced","Sabiranje različitih znakova"),"kratak-kontekst","method"),
     P(I("6-4j","Odredi x.","x+(−14)=−3","11","Dodaj 14 na obe strane.","x=−3+14=11.","advanced","Nepoznati sabirak"),"jednacina","method"),
   ],
   "oduzimanje":[
@@ -72,7 +72,7 @@ export const septemberTasks:Record<string,Task[]>={
     P(I("6-9g","Odredi x.","−63:x=9","-7","Delilac mora biti negativan.","x=−63:9=−7.","advanced","Nepoznati delilac"),"jednacina","method"),
     P(C("6-9h","Pronađi grešku.","−48:(−6)=−8",["Nema greške.","Rezultat treba da bude 8.","Rezultat treba da bude −42."],"Rezultat treba da bude 8.","Isti znaci daju pozitivan količnik.","−48:(−6)=8.","medium","Znak količnika"),"pronadji-gresku","sign"),
     P(C("6-9i","Koji izraz je dozvoljen?","",["15:0","0:0","0:(−5)"],"0:(−5)","Nulom se ne deli.","0:(−5)=0, dok izrazi sa deliocem 0 nisu definisani.","medium","Deljenje nulom"),"izbor-dozvoljenog","concept"),
-    P(I("6-9j","Odredi dnevnu promenu stanja.","Stanje je zbog duga umanjeno ukupno za 36 dinara tokom 6 dana.","-6","Umanjenje stanja zapisujemo negativnim brojem.","−36:6=−6 dinara dnevno.","advanced","Deljenje"),"kratak-kontekst","method"),
+    P(I("6-9j","Odredi prosečnu dnevnu promenu stanja.","Stanje je zbog duga umanjeno ukupno za 36 dinara tokom 6 dana.","-6","Umanjenje stanja zapisujemo negativnim brojem.","−36:6=−6 dinara dnevno.","advanced","Deljenje"),"kratak-kontekst","method"),
   ],
   "mnozenje-deljenje":[
     P(C("6-10f","Odredi znak rezultata.","(−6)·(−4):(−3)",["+","−","0"],"−","Odredi znak redom ili prebroj negativne brojeve.","Pozitivan proizvod podeljen negativnim brojem daje negativan rezultat.","basic","Znak proizvoda i količnika"),"znak-bez-racunanja","sign"),
@@ -86,7 +86,7 @@ export const septemberTasks:Record<string,Task[]>={
     P(I("6-11g","Izračunaj.","18−(−2)·(5−8)","12","Prvo zagrada, zatim množenje.","5−8=−3; (−2)·(−3)=6; 18−6=12.","medium","Brojevni izrazi"),"ugnjezdene-operacije","calculation"),
     P(C("6-11h","Pronađi grešku.","20−4·(−3)=16·(−3)=−48",["Nema greške.","Množenje se radi pre oduzimanja.","Treba prvo podeliti."],"Množenje se radi pre oduzimanja.","Množenje ima prednost nad oduzimanjem.","4·(−3)=−12, pa je 20−(−12)=32.","medium","Redosled operacija"),"pronadji-gresku","rule"),
     P(C("6-11i","Uporedi vrednosti izraza.","A=(−3)·4+5; B=18:(−3)",["A<B","A>B","A=B"],"A<B","Izračunaj oba izraza posebno.","A=−12+5=−7, B=−6, pa je A<B.","advanced","Brojevni izrazi"),"poredjenje-izraza","method"),
-    P(I("6-11j","Izračunaj promenu stanja.","Početno stanje je −12. Zatim se tri puta doda 5 i jednom oduzme 4.","-1","Zapiši jedan izraz.","−12+3·5−4=−12+15−4=−1.","advanced","Brojevni izrazi"),"problem-vise-koraka","method"),
+    P(I("6-11j","Izračunaj konačno stanje.","Početno stanje je −12. Zatim se tri puta doda 5 i jednom oduzme 4.","-1","Zapiši jedan izraz.","−12+3·5−4=−12+15−4=−1.","advanced","Brojevni izrazi"),"problem-vise-koraka","method"),
   ],
 
   // 7. razred — Realni brojevi
@@ -119,8 +119,8 @@ export const septemberTasks:Record<string,Task[]>={
     P(C("7-4j","Izaberi broj čiji je kvadrat između 100 i 144.","",["9","11","13"],"11","Uporedi kvadrate ponuđenih brojeva.","11²=121, a 100<121<144.","advanced","Poređenje kvadrata"),"izbor-po-uslovu","method"),
   ],
   "realni-brojevi":[
-    P(C("7-5f","Odredi vrstu broja.","0,1010010001…",["Racionalan","Iracionalan"],"Iracionalan","Zapis se ne završava i nema period.","Beskonačan neperiodičan decimalni zapis predstavlja iracionalan broj.","advanced","Vrste brojeva"),"decimalni-zapis-klasifikacija","concept"),
-    P(C("7-5g","Izaberi racionalan broj.","",["π","0,(27)","2,020020002…"],"0,(27)","Periodičan decimalni zapis je racionalan.","0,(27) je racionalan broj.","basic","Vrste brojeva"),"izbor-po-vrsti","concept"),
+    P(C("7-5f","Odredi vrstu broja.","0,1010010001… (broj nula između uzastopnih jedinica raste za 1)",["Racionalan","Iracionalan"],"Iracionalan","Zapis se ne završava i nema period.","Beskonačan neperiodičan decimalni zapis predstavlja iracionalan broj.","advanced","Vrste brojeva"),"decimalni-zapis-klasifikacija","concept"),
+    P(C("7-5g","Izaberi racionalan broj.","",["π","0,(27)","2,020020002… (broj nula između uzastopnih dvojki raste za 1)"],"0,(27)","Periodičan decimalni zapis je racionalan.","0,(27) je racionalan broj.","basic","Vrste brojeva"),"izbor-po-vrsti","concept"),
     P(C("7-5h","Odredi pripadnost.","−1,25",["∈ Q i ∈ R","∉ Q i ∈ R","∉ R"],"∈ Q i ∈ R","Konačan decimalni zapis je racionalan.","Broj −1,25 pripada i Q i R.","medium","Skupovi brojeva"),"pripadnost-skupovima","concept"),
     P(C("7-5i","Pronađi grešku.","π=[[frac:22|7]]",["Jednakost je tačna.","[[frac:22|7]] je samo približna vrednost broja π.","Broj π pripada racionalnim brojevima."],"[[frac:22|7]] je samo približna vrednost broja π.","Uporedi tačnu i približnu vrednost.","Broj π pripada iracionalnim brojevima; [[frac:22|7]] je racionalna približna vrednost.","advanced","Iracionalni brojevi"),"pronadji-gresku","concept"),
     P(C("7-5j","Koji niz je tačno uređen po uključenosti?","",["Z⊂Q⊂R","R⊂Q⊂Z","Q⊂Z⊂R"],"Z⊂Q⊂R","Svaki ceo broj je racionalan, a svaki racionalan je realan.","Tačno je Z⊂Q⊂R.","medium","Skupovi brojeva"),"hijerarhija-skupova","rule"),
@@ -182,7 +182,7 @@ export const septemberTasks:Record<string,Task[]>={
   "proporcionalnost":[
     P(I("8-3f","Odredi x.","14:21=x:9","6","Primeni unakrsni proizvod.","21x=14·9, pa je x=6.","basic","Proporcija"),"nepoznat-brojilac","calculation"),
     P(I("8-3g","Odredi x.","8:x=12:18","12","Unakrsno pomnoži.","8·18=12x, pa je x=12.","medium","Proporcija"),"nepoznat-imenilac","method"),
-    P(C("8-3h","Koji red tabele je proporcionalan prvom?","a: 2, 4, 6; b: 3, 6, 9",["a i b","a i a","Nijedan"],"a i b","Proveri razmere b:a.","3:2=6:4=9:6, pa su redovi proporcionalni.","medium","Proporcionalnost"),"tabela-proporcionalnosti","method"),
+    P(C("8-3h","Koji red tabele je proporcionalan prvom?","a: 2, 4, 6; b: 3, 6, 9",["a i b","a i b+1","Nijedan"],"a i b","Proveri razmere b:a.","3:2=6:4=9:6, pa su redovi proporcionalni.","medium","Proporcionalnost"),"tabela-proporcionalnosti","method"),
     P(C("8-3i","Pronađi grešku.","5:8=15:20 jer je 5·20=8·15",["Nema greške.","Proizvodi 100 i 120 nisu jednaki.","Treba sabrati članove."],"Proizvodi 100 i 120 nisu jednaki.","Izračunaj oba unakrsna proizvoda.","5·20=100, a 8·15=120, zato to nije proporcija.","medium","Proporcionalnost"),"pronadji-gresku","rule"),
     P(I("8-3j","Odredi pozitivan broj x.","4:x=x:9","6","Srednji član se pojavljuje dva puta.","x²=4·9=36, pa je x=6.","advanced","Proporcija"),"srednja-proporcionala","method"),
     P(C("8-3k","Izaberi odgovarajuću proporciju.","a:b=2:7 i c=10 odgovara duži a.",["10:x=2:7","10:x=7:2","x:10=2:7"],"10:x=2:7","Zadrži redosled odgovarajućih duži.","Pošto c odgovara a, zapisujemo c:x=a:b, odnosno 10:x=2:7.","advanced","Postavljanje proporcije"),"izbor-proporcije","method"),
@@ -215,8 +215,8 @@ export const septemberTasks:Record<string,Task[]>={
   "primene-slicnosti":[
     P(I("8-7f","Odredi visinu drveta.","Štap 1,5 m baca senku 2 m; senka drveta je 10 m.","7,5","Postavi odnos visina i senki.","1,5:2=h:10, pa je h=7,5 m.","basic","Senke"),"senka-sa-crtezom","diagram",{type:"shadow",objectLabel:"štap",objectHeight:"1,5 m",objectShadow:"2 m",targetShadow:"10 m",targetLabel:"h"}),
     P(I("8-7g","Odredi širinu reke EF.","△ABC∼△DEF, AB=3 m, DE=12 m, BC=5 m, EF=x","20","Upari AB sa DE, a BC sa EF.","3:12=5:x, pa je x=20 m.","medium","Indirektno merenje"),"nedostupno-rastojanje","method",{type:"similarity",variant:"rotated"}),
-    P(I("8-7h","Odredi dužinu na planu.","Stvarna dužina je 24 m, razmera 1:600.","4","Pretvori metre u centimetre.","24 m=2400 cm; 2400:600=4 cm.","medium","Razmera plana"),"stvarno-u-plan","method"),
-    P(I("8-7i","Odredi stvarnu visinu modela.","Model je visok 18 cm u razmeri 1:50.","9","Pomnoži sa 50, zatim pretvori centimetre u metre.","18·50=900 cm=9 m.","medium","Modeli i razmera"),"model-u-stvarnost","method"),
+    P(I("8-7h","Odredi dužinu na planu u centimetrima.","Stvarna dužina je 24 m, razmera 1:600.","4","Pretvori metre u centimetre.","24 m=2400 cm; 2400:600=4 cm.","medium","Razmera plana"),"stvarno-u-plan","method"),
+    P(I("8-7i","Odredi stvarnu visinu modela u metrima.","Model je visok 18 cm u razmeri 1:50.","9","Pomnoži sa 50, zatim pretvori centimetre u metre.","18·50=900 cm=9 m.","medium","Modeli i razmera"),"model-u-stvarnost","method"),
     P(C("8-7j","Pronađi grešku.","Na planu 5 cm, razmera 1:200, pa je stvarna dužina 1000 m.",["Nema greške.","1000 cm je 10 m.","Stvarna dužina je 2,5 m."],"1000 cm je 10 m.","Pazi na pretvaranje centimetara u metre.","5·200=1000 cm=10 m.","advanced","Razmera plana"),"pronadji-gresku-u-jedinicama","rule"),
     P(I("8-7k","Odredi visinu zgrade.","Osoba visoka 1,8 m ima senku 1,2 m; senka zgrade je 14 m.","21","Odnos visine i senke je isti.","1,8:1,2=h:14; 1,5=h:14, pa je h=21 m.","advanced","Senke"),"senka-vise-koraka","method",{type:"shadow",objectLabel:"osoba",objectHeight:"1,8 m",objectShadow:"1,2 m",targetShadow:"14 m",targetLabel:"h"}),
     P(C("8-7l","Izaberi odgovarajući postupak.","Treba odrediti visinu bandere pomoću njene senke.",["Uporedi visinu i senku poznatog štapa sa senkom bandere.","Saberi obe senke.","Primeni samo Pitagorinu teoremu bez merenja."],"Uporedi visinu i senku poznatog štapa sa senkom bandere.","Sunčevi zraci daju slične pravougle trouglove.","Postavlja se proporcija visina i odgovarajućih senki.","advanced","Izbor postupka"),"izbor-metode","method",{type:"shadow",objectLabel:"štap",objectHeight:"poznato",objectShadow:"s₁",targetShadow:"s₂",targetLabel:"h"}),

@@ -62,9 +62,9 @@ test('nove lekcije ostaju na 10 zadataka, a podaci učenika i algoritam znanja o
  for(const {lesson:l} of all)assert.equal(lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)).length,10,l.id);
  const p=await readFile(new URL('../app/page.tsx',import.meta.url),'utf8');assert.match(p,/matematikon68-progress-v1-\$\{gradeId\}/);assert.doesNotMatch(p,/localStorage\.clear|localStorage\.removeItem/);
 });
-test('sažimanje čuva kompletnu bazu zadataka, crteže, redosled i nivoe iz objavljene verzije 16',()=>{
+test('baza čuva redosled i crteže uz nezavisno testirane ispravke audita faze 1',()=>{
  const protectedData=all.filter(({lesson:l})=>["september","october"].includes(l.month)).map(({grade:g,area:a,lesson:l})=>({grade:g.id,area:a.id,month:l.month??a.month??'september',id:l.id,pool:tasksForLesson(l.id,l.tasks).filter(t=>!t.id.startsWith('dop-')),work:lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)),visuals:lessonVisuals(l.id)}));
- assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'58bafe12e9aea9f98100bbf37e22b403d392be31f3f434d4731565b5dcf39966');
+ assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'d4606e6b1a272bda975be0df517721daa86efccfa59695adf3c4fc228b8e6a1a');
 });
 test('glavno objašnjenje je kratko, ima jednu napomenu i čuva svaki izbor geometrijskog prikaza',()=>{
  const counts=[];let figures=0;

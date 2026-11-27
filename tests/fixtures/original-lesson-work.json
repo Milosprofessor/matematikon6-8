@@ -597,7 +597,7 @@
       },
       {
         "id": "6-4i",
-        "prompt": "Izračunaj promenu temperature.",
+        "prompt": "Odredi konačnu temperaturu.",
         "math": "Ujutru je bilo −6 °C, a zatim je temperatura porasla za 10 °C.",
         "answer": "4",
         "hint": "Porast zapisujemo sabiranjem pozitivnog broja.",
@@ -1261,7 +1261,7 @@
       },
       {
         "id": "6-9j",
-        "prompt": "Odredi dnevnu promenu stanja.",
+        "prompt": "Odredi prosečnu dnevnu promenu stanja.",
         "math": "Stanje je zbog duga umanjeno ukupno za 36 dinara tokom 6 dana.",
         "answer": "-6",
         "hint": "Umanjenje stanja zapisujemo negativnim brojem.",
@@ -1518,7 +1518,7 @@
       },
       {
         "id": "6-11j",
-        "prompt": "Izračunaj promenu stanja.",
+        "prompt": "Izračunaj konačno stanje.",
         "math": "Početno stanje je −12. Zatim se tri puta doda 5 i jednom oduzme 4.",
         "answer": "-1",
         "hint": "Zapiši jedan izraz.",
@@ -1827,7 +1827,7 @@
         "prompt": "Odredi α_1.",
         "math": "α=74°",
         "answer": "106",
-        "hint": "Susedni uglovi imaju zbir 180°.",
+        "hint": "Naporedni uglovi imaju zbir 180°.",
         "solution": "α₁=180°−74°=106°.",
         "level": "basic",
         "skill": "Spoljašnji ugao"
@@ -1876,7 +1876,7 @@
         "prompt": "Odredi spoljašnji ugao.",
         "math": "Susedni unutrašnji ugao je 41°.",
         "answer": "139",
-        "hint": "Susedni uglovi daju 180°.",
+        "hint": "Naporedni uglovi imaju zbir 180°.",
         "solution": "180°−41°=139°.",
         "level": "medium",
         "skill": "Spoljašnji ugao"
@@ -2127,7 +2127,7 @@
         "math": "Stranice su 4, 5 i c.",
         "choices": [
           "c<9",
-          "c≤9",
+          "c≥9",
           "c=9"
         ],
         "answer": "c<9",
@@ -3085,7 +3085,7 @@
         "prompt": "Izaberi racionalan broj.",
         "math": "",
         "choices": [
-          "1,001000100001…",
+          "1,001000100001… (broj nula između uzastopnih jedinica raste za 1)",
           "π",
           "−2,75"
         ],
@@ -3102,7 +3102,7 @@
         "choices": [
           "π",
           "0,(27)",
-          "2,020020002…"
+          "2,020020002… (broj nula između uzastopnih dvojki raste za 1)"
         ],
         "answer": "0,(27)",
         "hint": "Periodičan decimalni zapis je racionalan.",
@@ -3173,7 +3173,7 @@
       {
         "id": "7-5f",
         "prompt": "Odredi vrstu broja.",
-        "math": "0,1010010001…",
+        "math": "0,1010010001… (broj nula između uzastopnih jedinica raste za 1)",
         "choices": [
           "Racionalan",
           "Iracionalan"
@@ -5295,7 +5295,7 @@
       },
       {
         "id": "8r-3",
-        "prompt": "Odredi površinu.",
+        "prompt": "Odredi površinu trougla.",
         "math": "a=8 cm, h_a=5 cm",
         "answer": "20",
         "hint": "P=(a·h_a)/2.",
@@ -5720,7 +5720,7 @@
         "math": "a: 2, 4, 6; b: 3, 6, 9",
         "choices": [
           "a i b",
-          "a i a",
+          "a i b+1",
           "Nijedan"
         ],
         "answer": "a i b",
@@ -6210,7 +6210,7 @@
     "tasks": [
       {
         "id": "8-7a",
-        "prompt": "Odredi stvarnu dužinu.",
+        "prompt": "Odredi stvarnu dužinu u metrima.",
         "math": "Razmera 1:200, na planu 4 cm",
         "answer": "8",
         "hint": "4·200=800 cm.",
@@ -6230,7 +6230,7 @@
       },
       {
         "id": "8-7h",
-        "prompt": "Odredi dužinu na planu.",
+        "prompt": "Odredi dužinu na planu u centimetrima.",
         "math": "Stvarna dužina je 24 m, razmera 1:600.",
         "answer": "4",
         "hint": "Pretvori metre u centimetre.",
@@ -6250,7 +6250,7 @@
       },
       {
         "id": "8-7i",
-        "prompt": "Odredi stvarnu visinu modela.",
+        "prompt": "Odredi stvarnu visinu modela u metrima.",
         "math": "Model je visok 18 cm u razmeri 1:50.",
         "answer": "9",
         "hint": "Pomnoži sa 50, zatim pretvori centimetre u metre.",
@@ -6951,11 +6951,11 @@
         "prompt": "Odredi presek ravni.",
         "math": "Ravni susednih strana kvadra",
         "choices": [
-          "Zajednička ivica",
+          "Prava koja sadrži zajedničku ivicu",
           "Jedno teme",
           "Prazan skup"
         ],
-        "answer": "Zajednička ivica",
+        "answer": "Prava koja sadrži zajedničku ivicu",
         "hint": "Susedne strane dele ivicu.",
         "solution": "Presek je prava određena zajedničkom ivicom.",
         "level": "medium",

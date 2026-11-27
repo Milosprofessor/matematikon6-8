@@ -1655,7 +1655,7 @@ export const grade7PlanAdditions:Lesson[] = [
       {
         "id": "o7-pp-3",
         "prompt": "Odredi najveći ugao.",
-        "math": "α:β:γ=3:4:5",
+        "math": "Unutrašnji uglovi istog trougla: α:β:γ=3:4:5",
         "kind": "input",
         "answer": "75",
         "hint": "Zbir uglova je 180°.",
@@ -1710,7 +1710,7 @@ export const grade7PlanAdditions:Lesson[] = [
       {
         "id": "o7-pp-6",
         "prompt": "Odredi najmanji ugao.",
-        "math": "α:β:γ=2:3:7",
+        "math": "Unutrašnji uglovi istog trougla: α:β:γ=2:3:7",
         "kind": "input",
         "answer": "30",
         "hint": "Ukupno je 12 delova.",

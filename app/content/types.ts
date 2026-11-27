@@ -25,6 +25,7 @@ export type Task = {
   kind: "choice" | "input";
   choices?: string[];
   answer: string;
+  answerUnit?: string;
   hint: string;
   solution: string;
   level: Level;
@@ -97,7 +98,7 @@ export type Grade = {
   areas: Area[];
 };
 
-type TaskMeta = Partial<Pick<Task,"taskType"|"errorCategory"|"practiceOnly"|"prerequisites"|"diagram">>;
+type TaskMeta = Partial<Pick<Task,"answerUnit"|"taskType"|"errorCategory"|"practiceOnly"|"prerequisites"|"diagram">>;
 export const C = (id:string,prompt:string,math:string,choices:string[],answer:string,hint:string,solution:string,level:Level,skill:string,meta:TaskMeta={}):Task =>
   ({id,prompt,math,kind:"choice",choices,answer,hint,solution,level,skill,...meta});
 export const I = (id:string,prompt:string,math:string,answer:string,hint:string,solution:string,level:Level,skill:string,meta:TaskMeta={}):Task =>

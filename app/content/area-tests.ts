@@ -45,8 +45,8 @@ export const areaTests: Record<GradeId,Record<string,AreaTestTask[]>> = {
     L(I("t8-6","Odredi x.","△ABC∼△DEF, AB=5, DE=15, BC=7, EF=x","21","Koeficijent je 3.","x=7·3=21.","medium","Slični trouglovi"),"slicni-trouglovi"),
     L(C("t8-7","Koji stav primenjujemo?","Dve proporcionalne stranice i jednak zahvaćeni ugao.",["UU","SUS","SSS"],"SUS","Prati date elemente.","Stav je SUS.","basic","Stavovi sličnosti"),"stavovi-slicnosti"),
     L(C("t8-8","Da li je dovoljan stav SSS?","Stranice: 3, 6, 8 i 6, 12, 16",["Da","Ne","Samo za pravougle trouglove"],"Da","Proveri tri razmere.","3/6=6/12=8/16=1/2.","advanced","Stavovi sličnosti"),"stavovi-slicnosti"),
-    L(I("t8-9","Odredi visinu drveta.","Štap 1,5 m, senka 2 m; senka drveta 10 m","7,5","Visina/senka je ista.","1,5/2=h/10, pa je h=7,5 m.","medium","Primene sličnosti"),"primene-slicnosti"),
-    L(I("t8-10","Odredi stvarnu dužinu.","Razmera 1:400, na planu 7 cm","28","7·400=2800 cm.","2800 cm=28 m.","advanced","Primene sličnosti"),"primene-slicnosti")
+    L(I("t8-9","Odredi visinu drveta.","Štap 1,5 m, senka 2 m; senka drveta 10 m","7,5","Visina/senka je ista.","1,5/2=h/10, pa je h=7,5 m.","medium","Primene sličnosti",{answerUnit:"m"}),"primene-slicnosti"),
+    L(I("t8-10","Odredi stvarnu dužinu u metrima.","Razmera 1:400, na planu 7 cm","28","7·400=2800 cm.","2800 cm=28 m.","advanced","Primene sličnosti"),"primene-slicnosti")
   ],...octoberAreaTests[8]}
 };
 
