@@ -1,0 +1,5 @@
+semester-browser-smoke 0
+spring6-browser 0
+spring7-browser 0
+spring8-browser 0
+spring8-exam-browser 0

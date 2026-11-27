@@ -1,0 +1,44 @@
+{
+  "refresh": true,
+  "restart": true,
+  "twoTabs": {
+    "before": [
+      "apsolutna-vrednost",
+      "sabiranje"
+    ],
+    "after": [
+      "apsolutna-vrednost",
+      "sabiranje"
+    ],
+    "lost": []
+  },
+  "afterGradeChange": true,
+  "examActive": {
+    "timer": "Preostalo vreme 120 min 0 s",
+    "hints": 0
+  },
+  "examRestart": 1,
+  "expiry": "Rezultat 1 / 20",
+  "corrupt": "{bad",
+  "blockedRead": {
+    "headings": [
+      "Апсолутна вредност целог броја"
+    ],
+    "errors": [],
+    "body": "Чување није доступно. Рад остаје само у овој отвореној картици.\n\n∑\nMatematikON\n6–8\nПочетна\n6. разред\n7. разред\n8. разред\nЋир\n|\nLat\nПретходна лекција\nПреглед области\nСледећа лекција"
+  },
+  "quota": {
+    "headings": [
+      "Apsolutna vrednost celog broja"
+    ],
+    "errors": [],
+    "body": "Napredak nije sačuvan na uređaju. Sačuvaj ovu karticu otvorenom i oslobodi prostor ili omogući lokalno skladište.\n\n∑\nMatematikON\n6–8\nPočetna\n6. razred\n7. razred\n8. razred\nЋир\n|\nLat"
+  },
+  "wrongShape": {
+    "headings": [
+      "6. razred"
+    ],
+    "errors": [],
+    "body": "Neki istorijski zapisi su nevažeći. Izvorna kopija je zadržana u skladištu.\n\n∑\nMatematikON\n6–8\nPočetna\n6. razred\n7. razred\n8. razred\nЋир\n|\nLat\n\nPRVO I DRUGO POLUGODIŠTE · 6. RAZRED"
+  }
+}

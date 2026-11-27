@@ -18,7 +18,7 @@ const parallel=(a,b,c,d)=>Math.abs((b[0]-a[0])*(d[1]-c[1])-(b[1]-a[1])*(d[0]-c[0
 test('svih 86 aktivnih lekcija imaju objašnjen cilj, postupak, razlog i čestu grešku u oba pisma',()=>{
  assert.equal(all.filter(x=>!/^s[678]-/.test(x.lesson.id)).length,86);for(const {lesson:l} of all){const content=learningByLesson[l.id];assert.ok(content?.idea.length&&content.steps.length&&content.why&&content.caution,l.id);for(const script of ['latn','cyrl']){const html=render(LessonLearningContent,{lesson:l},script);assert.doesNotMatch(html,/\[\[(?:frac|sqrt):|NaN|undefined/);assert.doesNotMatch(html,/sourcePages|Udžbenik|Operativni plan/);assert.match(html,/learning-compact/);}}
 });
-test('svaki postojeći aktivni zadatak čuva ID, pitanje, odgovor, nivo i tok rada; izuzetak je preciziranje kose duži',()=>{
+test('zadaci čuvaju ID, nivo i tok rada uz dokumentovane matematičke ispravke audita',()=>{
  let count=0;for(const original of fixture){const current=all.find(x=>x.grade.id===original.grade&&x.lesson.id===original.lessonId);if(!current)continue;const tasks=lessonWorkTasks(current.lesson.id,tasksForLesson(current.lesson.id,current.lesson.tasks));assert.deepEqual(tasks.map(t=>t.id),original.tasks.map(t=>t.id));for(let i=0;i<10;i++){const expected=original.tasks[i],actual=tasks[i];for(const key of Object.keys(expected)){if(expected.id==='o8-pro-3'&&['math','hint','solution'].includes(key))continue;assert.deepEqual(actual[key],expected[key],expected.id+'/'+key);}count++;}}assert.equal(count,590);
 });
 test('objašnjenja i vizuelizacije 7. razreda ne uvode koren pre lekcije o korenu',()=>{

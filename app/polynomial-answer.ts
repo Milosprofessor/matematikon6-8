@@ -17,7 +17,7 @@ function combine(a:Poly,b:Poly,product:boolean,sign=BigInt(1)){
  return out;
 }
 function parse(source:string):Expr {
- const s=source.toLowerCase().replace(/pi/g,"π").replace(/−/g,"-").replace(/²/g,"^2").replace(/³/g,"^3").replace(/⁴/g,"^4").replace(/⁵/g,"^5").replace(/\s/g,"").replace(/·/g,"*");
+ const s=source.toLowerCase().replace(/х/g,"x").replace(/pi/g,"π").replace(/−/g,"-").replace(/²/g,"^2").replace(/³/g,"^3").replace(/⁴/g,"^4").replace(/⁵/g,"^5").replace(/\s/g,"").replace(/·/g,"*");
  if(!s||s.length>100||/[^0-9xπ()+*^-]/.test(s))throw Error();
  let i=0;
  const atom=(p:Poly):Expr=>({p,parts:[p],power:1});
@@ -53,7 +53,7 @@ export function algebraAnswer(value:string,expected:string,form:"value"|"product
    const terms=value.replace(/−/g,"-").replace(/\s/g,"").split(/(?=[+-])/);
    const monomials=new Set<number>();
    for(const term of terms){
-    const normalized=term.replace(/²/g,"^2").replace(/³/g,"^3").replace(/·/g,"*");
+    const normalized=term.toLowerCase().replace(/х/g,"x").replace(/²/g,"^2").replace(/³/g,"^3").replace(/·/g,"*");
     if(!/^[+-]?(?:\d+|(?:\d+\*?)?[xπ](?:\^(?:[2-9]|10))?|[xπ](?:\^(?:[2-9]|10))?\*\d+)$/.test(normalized))return false;
     const parsed=parse(term).p;
     if(parsed.size!==1)return false;

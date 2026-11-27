@@ -63,4 +63,6 @@ test('expanded form rejects uncomputed products as well as like terms',()=>{
  assert.equal(algebraAnswer('x*x','x^2','expanded'),false);
  assert.equal(algebraAnswer('2*3x','6x','expanded'),false);
  assert.equal(algebraAnswer('6*x','6x','expanded'),true);
+ assert.equal(algebraAnswer('6х','6x','expanded'),true);
+ assert.equal(algebraAnswer('6х+х-х','6x','expanded'),false);
 });
