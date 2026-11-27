@@ -41,9 +41,9 @@ export const septemberTasks:Record<string,Task[]>={
   ],
   "oduzimanje":[
     P(C("6-5f","Izaberi jednak izraz.","−8−(−5)",["−8+5","−8−5","8−5"],"−8+5","Oduzimanje pretvori u sabiranje suprotnog.","−8−(−5)=−8+5.","basic","Oduzimanje negativnog broja"),"preoblikovanje","rule"),
-    P(C("6-5g","Pronađi grešku.","−5−(−8)=−13",["Nema greške.","Drugi znak treba promeniti: rezultat je 3.","Rezultat je 13."],"Drugi znak treba promeniti: rezultat je 3.","Minus ispred negativnog broja postaje plus.","−5−(−8)=−5+8=3.","medium","Oduzimanje negativnog broja"),"pronadji-gresku","sign"),
-    P(I("6-5h","Odredi sprat.","Lift je na 2. spratu i spušta se 5 spratova.","-3","Spuštanje zapisujemo oduzimanjem.","2−5=−3, pa lift stiže na 3. podzemni nivo.","medium","Oduzimanje"),"kratak-kontekst","method"),
-    P(I("6-5i","Odredi x.","−7−x=−12","5","Koji broj treba oduzeti od −7 da se dobije −12?","−7−5=−12, pa je x=5.","advanced","Nepoznati umanjilac"),"jednacina","method"),
+    P(C("6-5g","Pronađi grešku.","−5−(−8)=−13",["Nema greške.","Drugi znak treba promeniti: rezultat je 3.","Rezultat je 13."],"Drugi znak treba promeniti: rezultat je 3.","Zadrži umanjenik −5; oduzimanje broja −8 zameni sabiranjem broja 8.","−5−(−8)=−5+8=3. U pogrešnom računu sabran je −8 umesto 8.","medium","Oduzimanje negativnog broja"),"pronadji-gresku","sign"),
+    P(I("6-5h","Odredi sprat.","Lift je na 2. spratu i spušta se 5 nivoa (prizemlje je 0, podzemni nivoi su negativni).","-3","Spuštanje zapisujemo oduzimanjem.","2−5=−3, pa lift stiže na 3. podzemni nivo.","medium","Oduzimanje"),"kratak-kontekst","method"),
+    P(I("6-5i","Odredi x.","−7−x=−12","5","Dodaj x na obe strane, zatim dodaj 12 na obe strane.","−7−x=−12. Dodavanjem x na obe strane: −7=−12+x. Dodavanjem 12 na obe strane: 5=x, pa x=5. Provera: −7−5=−12.","advanced","Nepoznati umanjilac"),"jednacina","method"),
     P(C("6-5j","Odredi znak rezultata.","−3−15",["+","−","0"],"−","Oduzimanje 15 znači sabiranje broja −15.","−3+(−15) je negativan broj.","basic","Oduzimanje"),"znak-bez-racunanja","sign"),
   ],
   "rastojanje":[

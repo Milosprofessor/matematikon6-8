@@ -196,7 +196,40 @@
   {
     "id": "oduzimanje",
     "area": "celi-brojevi",
-    "status": "nepregledana u fazi 2C"
+    "status": "potpuno recenzirana",
+    "theory": "Oduzimanje se svodi na sabiranje suprotnog umanjioca; nula ne menja broj.",
+    "sequence": "Umanjenik i umanjilac → suprotni broj → brojna prava → nepoznati član.",
+    "examples": [
+      {
+        "question": "Izračunaj −6−(−10).",
+        "steps": [
+          "Umanjenik −6 ostaje isti, a suprotan broj umanjioca −10 je 10.",
+          "−6−(−10)=−6+10=4. Veću apsolutnu vrednost ima pozitivan sabirak."
+        ],
+        "verification": "−6−(−10)=4"
+      },
+      {
+        "question": "Izračunaj 3−8 i −4−0.",
+        "steps": [
+          "3−8=3+(−8)=−5, jer je 8>3.",
+          "−4−0=−4+0=−4; nula je sama sebi suprotan broj."
+        ],
+        "verification": "3−8=−5; −4−0=−4"
+      },
+      {
+        "question": "Reši 2−x=−3.",
+        "steps": [
+          "Dodaj x na obe strane: 2=−3+x.",
+          "Dodaj 3 na obe strane: 5=x, pa je x=5.",
+          "Provera: 2−5=−3."
+        ],
+        "verification": "2−5=−3"
+      }
+    ],
+    "illustration": "Brojna prava: od −1 pomeranje za +3 do 2 pri oduzimanju −3.",
+    "misconceptions": "Predznak nije operacija; umanjenik ostaje isti; oduzimanje nije komutativno.",
+    "assessment": "22 zadatka u fondu i jedan tematski; 13 osnovnih i 10 srednjih.",
+    "limits": "Deo ishoda 6.03 i 6.04; ostale operacije nisu recenzirane."
   },
   {
     "id": "rastojanje",

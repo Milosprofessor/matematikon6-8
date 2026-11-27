@@ -1,3 +1,27 @@
+# Checkpoint 4 — Oduzimanje celih brojeva
+
+Datum: 27.11.2026. Polazni commit 727ef99; sadržajni commit c8d855c. Nalazi G6C-013–014.
+
+| Stavka | Stanje |
+|---|---:|
+| Potpuno recenzirani zadaci | 162/919 |
+| Delimično | 0 |
+| Nepregledani | 757 |
+| Lekcije | 6/45 |
+| Postojeći rešeni primeri | 6/81 |
+| Novi rešeni primeri | 12/12 |
+
+- 23/23 pojedinačna zadatka, uključujući t6-5. 13 osnovnih, 10 srednjih; 17 promena nivoa, 21 izmenjenih zadataka; svi ID-jevi i odgovori očuvani.
+- Oduzimanje negativnog, uloga zagrada i razlika između predznaka i računske operacije; oduzimanje nule; ekvivalentne transformacije i provera dve jednačine. Konvencija prizemlja precizirana. Tri rešena primera i brojna prava provereni.
+- 119/119 testova, Worker i Pages build, TypeScript i lint uspešni. 22 browser zapisa (10 redovnih zadataka na oba prikaza, primeri, ćirilica i očuvanje napretka nakon osvežavanja). Emulacija, ne fizički uređaji; nisu pojedinačno kroz UI birane sve adaptivne varijante. Upozorenja o veličini paketa i Vite portu ostaju.
+- Godišnji ishodi 6.01–6.04 i dalje delimično pregledani; nema tvrdnje o potpunom ostvarenju.
+
+**Tačka nastavka:** Celi brojevi, rastojanje, prvi ID 6-6a. 117/283 zadatka oblasti recenzirano. Faza 2C nije završena.
+
+Dokazi: qa/phase2c/grade6/oduzimanje, ledger-tasks.json, ledger-lessons.json i Excel evidencija.
+
+---
+
 # Checkpoint 3 — poređenje i sabiranje celih brojeva
 
 Datum: 27.11.2026. Polazni commit 48da58f. Sadržajni commitovi 6df4d24 i 4bbf7ff. Četiri nova grupisana nalaza G6C-009–012 zatvorena. Prethodni checkpointi su istorijski zapis.

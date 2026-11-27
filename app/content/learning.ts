@@ -121,14 +121,14 @@ export const learningByLesson:Record<string,LessonLearning> = {
     "aim": "Prevedi oduzimanje u sabiranje suprotnog broja i razlikuj nepoznati umanjenik od nepoznatog umanjioca.",
     "idea": [
       "U izrazu a−b, a je umanjenik, b umanjilac, a rezultat razlika. Oduzeti broj znači sabrati njegov suprotan broj: prvi broj ostaje isti, a drugi menja predznak.",
-      "Oduzimanje pozitivnog broja pomera ulevo, a negativnog udesno. U zadacima sa liftom ili promenom stanja najpre zapiši početno stanje i smer promene."
+      "Oduzimanje pozitivnog broja pomera ulevo, negativnog udesno, a oduzimanje nule ne menja položaj. U zadacima sa liftom ili promenom stanja najpre zapiši početno stanje i smer promene."
     ],
     "steps": [
       "Prevedi oduzimanje u sabiranje i primeni poznato pravilo zbira.",
       "Nepoznati umanjenik je zbir razlike i umanjioca; nepoznati umanjilac je umanjenik minus razlika."
     ],
     "why": "Razlika sabrana sa umanjiocem mora vratiti umanjenik; time proveravamo račun.",
-    "caution": "Ne menjaj prvi broj. Oduzimanje uglavnom ne dozvoljava zamenu mesta.",
+    "caution": "Ne menjaj umanjenik. Znak računske operacije − nije isto što i predznak negativnog umanjioca u zagradi. Oduzimanje nije komutativno.",
     "extraFormulas": [
       "a−b=a+(−b)",
       "a−(−b)=a+b",

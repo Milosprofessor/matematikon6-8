@@ -666,8 +666,8 @@
         "prompt": "Izračunaj.",
         "math": "−9 − (−4)",
         "answer": "-5",
-        "hint": "Promeni znak drugog broja.",
-        "solution": "−9 + 4 = −5.",
+        "hint": "Umesto oduzimanja broja −4 saberi njegov suprotan broj 4.",
+        "solution": "−9 − (−4) = −9 + 4 = −5. Veću apsolutnu vrednost ima −9.",
         "level": "basic",
         "skill": "Oduzimanje"
       },
@@ -696,15 +696,15 @@
           "Rezultat je 13."
         ],
         "answer": "Drugi znak treba promeniti: rezultat je 3.",
-        "hint": "Minus ispred negativnog broja postaje plus.",
-        "solution": "−5−(−8)=−5+8=3.",
+        "hint": "Zadrži umanjenik −5; oduzimanje broja −8 zameni sabiranjem broja 8.",
+        "solution": "−5−(−8)=−5+8=3. U pogrešnom računu sabran je −8 umesto 8.",
         "level": "medium",
         "skill": "Oduzimanje negativnog broja"
       },
       {
         "id": "6-5h",
         "prompt": "Odredi sprat.",
-        "math": "Lift je na 2. spratu i spušta se 5 spratova.",
+        "math": "Lift je na 2. spratu i spušta se 5 nivoa (prizemlje je 0, podzemni nivoi su negativni).",
         "answer": "-3",
         "hint": "Spuštanje zapisujemo oduzimanjem.",
         "solution": "2−5=−3, pa lift stiže na 3. podzemni nivo.",
@@ -723,7 +723,7 @@
         "answer": "−",
         "hint": "Oduzimanje 15 znači sabiranje broja −15.",
         "solution": "−3+(−15) je negativan broj.",
-        "level": "medium",
+        "level": "basic",
         "skill": "Oduzimanje"
       },
       {
@@ -732,8 +732,8 @@
         "math": "a: −3, 4; b: −5, −2; a−b: 2, ?",
         "answer": "6",
         "hint": "Oduzimanje −2 je sabiranje 2.",
-        "solution": "4−(−2)=6.",
-        "level": "medium",
+        "solution": "4−(−2)=4+2=6.",
+        "level": "basic",
         "skill": "Oduzimanje negativnog broja"
       },
       {
@@ -741,9 +741,9 @@
         "prompt": "Odredi x.",
         "math": "x − (−9) = 4",
         "answer": "-5",
-        "hint": "Jednačina je x+9=4.",
-        "solution": "x=4−9=−5.",
-        "level": "advanced",
+        "hint": "Oduzimanje broja −9 zameni sabiranjem broja 9, pa oduzmi 9 od obe strane.",
+        "solution": "x−(−9)=4, pa x+9=4. Oduzimanjem 9 od obe strane: x+9−9=4−9, x=−5. Provera: −5−(−9)=−5+9=4.",
+        "level": "medium",
         "skill": "Oduzimanje"
       },
       {
@@ -751,9 +751,9 @@
         "prompt": "Odredi x.",
         "math": "−7−x=−12",
         "answer": "5",
-        "hint": "Koji broj treba oduzeti od −7 da se dobije −12?",
-        "solution": "−7−5=−12, pa je x=5.",
-        "level": "advanced",
+        "hint": "Dodaj x na obe strane, zatim dodaj 12 na obe strane.",
+        "solution": "−7−x=−12. Dodavanjem x na obe strane: −7=−12+x. Dodavanjem 12 na obe strane: 5=x, pa x=5. Provera: −7−5=−12.",
+        "level": "medium",
         "skill": "Nepoznati umanjilac"
       },
       {
@@ -767,8 +767,8 @@
         ],
         "answer": ">",
         "hint": "Levo dodajemo pozitivan broj, desno ga oduzimamo.",
-        "solution": "Levi rezultat je veći od početnog broja, a desni manji.",
-        "level": "advanced",
+        "solution": "Levi rezultat je veći od početnog broja (dodajemo pozitivan broj), a desni je manji (oduzimamo isti pozitivan broj). Zato je levi izraz veći od desnog.",
+        "level": "medium",
         "skill": "Oduzimanje negativnog broja"
       }
     ]

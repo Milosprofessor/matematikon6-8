@@ -2749,5 +2749,39 @@
     "status": "Ispravljeno i potvrđeno",
     "fix_commit": "4bbf7ff2c1c2ed29aa8751d64523fa3e10c80a5e",
     "phase2_evidence": "qa/phase2c/grade6/sabiranje/tasks.json; lesson.json; browser.json; tests.log"
+  },
+  {
+    "id": "G6C-013",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Celi brojevi",
+    "lesson": "oduzimanje",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Potpunost postupka",
+    "description": "Skraćeni postupci jednačina i neprecizno razlikovanje predznaka i operacije; konvencija spratova implicitna.",
+    "evidence": "qa/phase2c/grade6/oduzimanje/tasks.json; lesson.json; browser.json; tests.log",
+    "location": "app/content/grade6.ts; learning.ts; september-work.ts; september-expansion.ts; enhancements.ts; area-tests.ts",
+    "fix": "Eksplicitne ekvivalentne transformacije, provere, zagrade, tri rešena primera i konvencija prizemlja.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "c8d855c3b4df54284359b01cf376ceb9411008e4",
+    "phase2_evidence": "qa/phase2c/grade6/oduzimanje/tasks.json; lesson.json; browser.json; tests.log"
+  },
+  {
+    "id": "G6C-014",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Celi brojevi",
+    "lesson": "oduzimanje",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Nivoi težine",
+    "description": "17 neadekvatno klasifikovanih zadataka.",
+    "evidence": "qa/phase2c/grade6/oduzimanje/tasks.json; lesson.json; browser.json; tests.log",
+    "location": "app/content/grade6.ts; learning.ts; september-work.ts; september-expansion.ts; enhancements.ts; area-tests.ts",
+    "fix": "13 osnovnih, 10 srednjih uključujući tematski test.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "c8d855c3b4df54284359b01cf376ceb9411008e4",
+    "phase2_evidence": "qa/phase2c/grade6/oduzimanje/tasks.json; lesson.json; browser.json; tests.log"
   }
 ]

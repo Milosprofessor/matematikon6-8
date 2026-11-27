@@ -79,8 +79,8 @@ register("sabiranje",[
  v=>N("add-signcondition",v,"Odredi najmanji ceo broj x.",`−${v+5}+x>0`,v+6,"Zbir je pozitivan kada je pozitivan sabirak veći po apsolutnoj vrednosti.",`Dodajemo ${v+5} na obe strane: x>${v+5}. Granica je stroga, pa je najmanji ceo broj x=${v+6}.`,"advanced","Znak zbira","sign")
 ]);
 register("oduzimanje",[
- v=>N("subtract-table",v,"Dopuni poslednju razliku.",`a: −${v+3}, ${v+4}; b: −${v+5}, −2; a−b: 2, ?`,v+6,"Oduzimanje −2 je sabiranje 2.",`${v+4}−(−2)=${v+6}.`,"medium","Oduzimanje negativnog broja","sign"),
- v=>Q("subtract-compare",v,"Uporedi bez računanja.",`−${v+4}−(−${v+2}) __ −${v+4}−${v+2}`,comparisons,">","Levo dodajemo pozitivan broj, desno ga oduzimamo.","Levi rezultat je veći od početnog broja, a desni manji.","advanced","Oduzimanje negativnog broja","sign")
+ v=>N("subtract-table",v,"Dopuni poslednju razliku.",`a: −${v+3}, ${v+4}; b: −${v+5}, −2; a−b: 2, ?`,v+6,"Oduzimanje −2 je sabiranje 2.",`${v+4}−(−2)=${v+4}+2=${v+6}.`,"medium","Oduzimanje negativnog broja","sign"),
+ v=>Q("subtract-compare",v,"Uporedi bez računanja.",`−${v+4}−(−${v+2}) __ −${v+4}−${v+2}`,comparisons,">","Levo dodajemo pozitivan broj, desno ga oduzimamo.","Levi rezultat je veći od početnog broja (dodajemo pozitivan broj), a desni je manji (oduzimamo isti pozitivan broj). Zato je levi izraz veći od desnog.","advanced","Oduzimanje negativnog broja","sign")
 ]);
 register("rastojanje",[
  v=>N("distance-midpoint",v,"Odredi koordinatu sredine duži AB.",`A(−${v+6}), B(${v+2})`,-2,"Potraži tačku jednako udaljenu od A i B.",`Tačka −2 je od oba kraja udaljena ${v+4} jedinice.`,"medium","Rastojanje"),
@@ -261,6 +261,7 @@ const basicLater=new Set(["6-1k","6-2i","6-3j","sw-absolute-table-0","sw-r5-orde
 export function applySeptemberWorkLevels(lessonId:string,tasks:Task[]):Task[]{
  const plan=septemberWorkPlans[lessonId];if(!plan)return tasks;
  return tasks.map(task=>{
+  if(lessonId==="oduzimanje")return {...task,level:["6-5e","6-5g","6-5h","6-5i"].includes(task.id)||task.id.startsWith("sw-subtract-compare-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
   if(lessonId==="sabiranje")return {...task,level:["6-4e","6-4h","6-4i","6-4j"].includes(task.id)||task.id.startsWith("sw-add-cancel-")||task.id.startsWith("sw-add-signcondition-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
   if(lessonId==="uporedjivanje")return {...task,level:["6-3b","6-3g","6-3i"].includes(task.id)||task.id.startsWith("sw-order-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
   if(lessonId==="apsolutna-vrednost")return {...task,level:["6-2b","6-2c","6-2d","6-2h","6-2j"].includes(task.id)?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
