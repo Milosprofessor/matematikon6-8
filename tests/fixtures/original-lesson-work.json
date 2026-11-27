@@ -1189,8 +1189,8 @@
           "−8:2"
         ],
         "answer": "9:0",
-        "hint": "Nulom se ne deli.",
-        "solution": "Izraz 9:0 nije definisan.",
+        "hint": "Ako je deljenik nula, a delilac nije nula, količnik je nula. Deljenje nulom, uključujući 0:0, nije definisano.",
+        "solution": "0:(−4)=0 i −8:2=−4. Izraz 9:0 nije definisan jer nijedan broj pomnožen nulom ne daje 9.",
         "level": "basic",
         "skill": "Deljenje nulom"
       },
@@ -1205,7 +1205,7 @@
         ],
         "answer": "Rezultat treba da bude 8.",
         "hint": "Isti znaci daju pozitivan količnik.",
-        "solution": "−48:(−6)=8.",
+        "solution": "Nenulti brojevi su istog predznaka, pa je količnik pozitivan: (−48):(−6)=48:6=8.",
         "level": "medium",
         "skill": "Znak količnika"
       },
@@ -1220,7 +1220,7 @@
         ],
         "answer": "0:(−5)",
         "hint": "Nulom se ne deli.",
-        "solution": "0:(−5)=0, dok izrazi sa deliocem 0 nisu definisani.",
+        "solution": "0:(−5)=0 jer (−5)·0=0. Izrazi 15:0 i 0:0 nisu definisani; delilac mora biti nenulti.",
         "level": "medium",
         "skill": "Deljenje nulom"
       },
@@ -1254,14 +1254,14 @@
         "prompt": "Odredi x.",
         "math": "−63:x=9",
         "answer": "-7",
-        "hint": "Delilac mora biti negativan.",
-        "solution": "x=−63:9=−7.",
+        "hint": "Uslov je x≠0. Poveži deljenje i množenje.",
+        "solution": "Uslov: x≠0. Iz −63:x=9 sledi 9·x=−63, pa x=−63:9=−7. Provera: (−63):(−7)=9; x≠0.",
         "level": "medium",
         "skill": "Nepoznati delilac"
       },
       {
         "id": "6-9j",
-        "prompt": "Odredi prosečnu dnevnu promenu stanja.",
+        "prompt": "Odredi prosečnu dnevnu promenu stanja u dinarima, sa predznakom.",
         "math": "Stanje je zbog duga umanjeno ukupno za 36 dinara tokom 6 dana.",
         "answer": "-6",
         "hint": "Umanjenje stanja zapisujemo negativnim brojem.",
@@ -1275,8 +1275,8 @@
         "math": "x:3<0 i |x|=9",
         "answer": "-9",
         "hint": "Prvi uslov određuje znak.",
-        "solution": "Pošto je delilac pozitivan, x je negativan: x=−9.",
-        "level": "advanced",
+        "solution": "Iz |x|=9 sledi x=−9 ili x=9. Pošto je delilac pozitivan i količnik negativan, x=−9. Provera: (−9):3=−3 i |−9|=9.",
+        "level": "medium",
         "skill": "Deljenje"
       }
     ]

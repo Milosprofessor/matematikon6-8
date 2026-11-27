@@ -345,7 +345,40 @@
   {
     "id": "deljenje",
     "area": "celi-brojevi",
-    "status": "nepregledana u fazi 2C"
+    "status": "potpuno recenzirana",
+    "theory": "Veza sa množenjem, znak nenultog količnika, slučajevi nule i uslov nenultog delioca; Z nije zatvoren za deljenje.",
+    "sequence": "Definicija → znak i nula → provera množenjem → nepoznati delilac.",
+    "examples": [
+      {
+        "question": "Izračunaj 48:(−6).",
+        "steps": [
+          "Deljenik i delilac su nenulti i različitih predznaka; količnik je negativan.",
+          "48:6=8, pa 48:(−6)=−8. Provera: (−8)·(−6)=48."
+        ],
+        "verification": "−8"
+      },
+      {
+        "question": "Objasni 0:(−5), 15:0 i 0:0.",
+        "steps": [
+          "0:(−5)=0, jer (−5)·0=0.",
+          "15:0 nije definisano: ne postoji broj koji pomnožen nulom daje 15.",
+          "0:0 nije definisano: svaki broj pomnožen nulom daje 0, pa nema jedinstvenog količnika."
+        ],
+        "verification": "0; nedefinisano; nedefinisano"
+      },
+      {
+        "question": "Odredi x ako je −42:x=7.",
+        "steps": [
+          "Uslov je x≠0. Iz definicije količnika sledi 7·x=−42.",
+          "x=−42:7=−6. Provera: (−42):(−6)=7; uslov x≠0 je ispunjen."
+        ],
+        "verification": "−6"
+      }
+    ],
+    "illustration": "Tabela znakova; poseban dijagram nije nužan.",
+    "misconceptions": "Nula u deljeniku nije isto što i nula u deliocu; 0:0 nema jedinstvenu vrednost; deljenje nije zatvoreno u Z.",
+    "assessment": "29 sa tematskom proverom; 6 osnovnih i 23 srednja.",
+    "limits": "Deo godišnjeg ishoda u Z, ne potvrđuje Q."
   },
   {
     "id": "mnozenje-deljenje",

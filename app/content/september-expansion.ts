@@ -69,10 +69,10 @@ export const septemberTasks:Record<string,Task[]>={
   ],
   "deljenje":[
     P(C("6-9f","Odredi znak količnika.","−84:(−7)",["+","−","0"],"+","Deljenik i delilac imaju iste znake.","Količnik brojeva istih znakova je pozitivan.","basic","Znak količnika"),"znak-bez-racunanja","sign"),
-    P(I("6-9g","Odredi x.","−63:x=9","-7","Delilac mora biti negativan.","x=−63:9=−7.","advanced","Nepoznati delilac"),"jednacina","method"),
-    P(C("6-9h","Pronađi grešku.","−48:(−6)=−8",["Nema greške.","Rezultat treba da bude 8.","Rezultat treba da bude −42."],"Rezultat treba da bude 8.","Isti znaci daju pozitivan količnik.","−48:(−6)=8.","medium","Znak količnika"),"pronadji-gresku","sign"),
-    P(C("6-9i","Koji izraz je dozvoljen?","",["15:0","0:0","0:(−5)"],"0:(−5)","Nulom se ne deli.","0:(−5)=0, dok izrazi sa deliocem 0 nisu definisani.","medium","Deljenje nulom"),"izbor-dozvoljenog","concept"),
-    P(I("6-9j","Odredi prosečnu dnevnu promenu stanja.","Stanje je zbog duga umanjeno ukupno za 36 dinara tokom 6 dana.","-6","Umanjenje stanja zapisujemo negativnim brojem.","−36:6=−6 dinara dnevno.","advanced","Deljenje"),"kratak-kontekst","method"),
+    P(I("6-9g","Odredi x.","−63:x=9","-7","Uslov je x≠0. Poveži deljenje i množenje.","Uslov: x≠0. Iz −63:x=9 sledi 9·x=−63, pa x=−63:9=−7. Provera: (−63):(−7)=9; x≠0.","advanced","Nepoznati delilac"),"jednacina","method"),
+    P(C("6-9h","Pronađi grešku.","−48:(−6)=−8",["Nema greške.","Rezultat treba da bude 8.","Rezultat treba da bude −42."],"Rezultat treba da bude 8.","Isti znaci daju pozitivan količnik.","Nenulti brojevi su istog predznaka, pa je količnik pozitivan: (−48):(−6)=48:6=8.","medium","Znak količnika"),"pronadji-gresku","sign"),
+    P(C("6-9i","Koji izraz je dozvoljen?","",["15:0","0:0","0:(−5)"],"0:(−5)","Nulom se ne deli.","0:(−5)=0 jer (−5)·0=0. Izrazi 15:0 i 0:0 nisu definisani; delilac mora biti nenulti.","medium","Deljenje nulom"),"izbor-dozvoljenog","concept"),
+    P(I("6-9j","Odredi prosečnu dnevnu promenu stanja u dinarima, sa predznakom.","Stanje je zbog duga umanjeno ukupno za 36 dinara tokom 6 dana.","-6","Umanjenje stanja zapisujemo negativnim brojem.","−36:6=−6 dinara dnevno.","advanced","Deljenje"),"kratak-kontekst","method"),
   ],
   "mnozenje-deljenje":[
     P(C("6-10f","Odredi znak rezultata.","(−6)·(−4):(−3)",["+","−","0"],"−","Odredi znak redom ili prebroj negativne brojeve.","Pozitivan proizvod podeljen negativnim brojem daje negativan rezultat.","basic","Znak proizvoda i količnika"),"znak-bez-racunanja","sign"),

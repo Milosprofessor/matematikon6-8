@@ -1,3 +1,28 @@
+# Checkpoint 8 — Deljenje celih brojeva
+
+Datum: 27.11.2026. Polazni GitHub commit d8b8e53; lokalni sadržajni commit cdf7f7b. Nalazi G6C-021–022.
+
+| Stavka | Stanje |
+|---|---:|
+| Potpuno matematički i metodički recenzirani zadaci | 272/919 |
+| Delimično | 0 |
+| Nepregledani | 647 |
+| Lekcije matematički recenzirane | 10/45 |
+| Postojeći rešeni primeri | 10/81 |
+| Novi rešeni primeri | 20/20 |
+
+- 29/29 pojedinačnih zadataka, uključujući t6-9; 6 osnovnih, 23 srednja; 9 promena nivoa, 14 izmenjenih zadataka. Svi ID-jevi, redosled i ključevi odgovora očuvani.
+- Precizirani uslovi znaka količnika, nula u deljeniku i nedozvoljeno deljenje nulom; za 0:0 nema jedinstvenog količnika. Dopunjeni ekvivalentni postupci za nepoznati deljenik i delilac (x≠0), oba kandidata kod apsolutne vrednosti i provere. Tri nezavisno proverena rešena primera.
+- 123/123 programska testa, Worker i Pages build, TypeScript i lint (0 grešaka i 6 upozorenja), 22 browser zapisa. Emulirani desktop i mobilni touch prikaz, ne fizički uređaji; nisu pojedinačno birane sve adaptivne varijante.
+- LOG-06: 6-9j, −6 prihvaćen, −6 dinara dnevno odbijen. Validator ostaje za fazu 3.
+- Godišnji ishodi 6.01–6.04 i dalje delimični.
+
+**Tačka nastavka:** mnozenje-deljenje, prvi ID 6-10a. 227/283 zadatka oblasti Celi brojevi recenzirano. Faza 2C nije završena.
+
+Dokazi: qa/phase2c/grade6/deljenje, ledger-tasks.json, ledger-lessons.json i Excel evidencija.
+
+---
+
 # Checkpoint 7 — Množenje celih brojeva i zaostala browser regresija
 
 Datum: 27.11.2026. Polazni commit 93642e7; sadržajni commit e81ff6b. Nalazi G6C-019–020.

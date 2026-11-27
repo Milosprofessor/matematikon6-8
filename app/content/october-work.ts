@@ -57,7 +57,7 @@ register("mnozenje",[
 register("deljenje",[
  v=>{const a=v+3;return N("div","table",v,"Dopuni poslednju vrednost.","x: −"+4*a+", 0, "+6*a+"; x:(−"+a+"): 4, 0, ?",-6,"Podeli poslednji x sa negativnim brojem.",6*a+":(−"+a+")=−6.","medium","Deljenje","sign")},
  v=>{const a=v+3;return Q("div","compare",v,"Uporedi.","(−"+6*a+"):(−"+a+") __ (−"+6*a+"):"+a,["<",">","="],">","Odredi znak oba količnika.","Levi je 6, a desni −6.","medium","Znak količnika","sign")},
- v=>{const a=v+3;return N("div","both",v,"Odredi x.","x:"+a+"<0 i |x|="+3*a,-3*a,"Prvi uslov određuje znak.","Pošto je delilac pozitivan, x je negativan: x=−"+3*a+".","advanced","Deljenje","method")}
+ v=>{const a=v+3;return N("div","both",v,"Odredi x.","x:"+a+"<0 i |x|="+3*a,-3*a,"Prvi uslov određuje znak.","Iz |x|="+3*a+" sledi x=−"+3*a+" ili x="+3*a+". Pošto je delilac pozitivan i količnik negativan, x=−"+3*a+". Provera: (−"+3*a+"):"+a+"=−3 i |−"+3*a+"|="+3*a+".","advanced","Deljenje","method")}
 ]);
 register("mnozenje-deljenje",[
  v=>Q("md","order",v,"Šta prvo računaš?","−"+(v+3)*8+":"+(v+3)+"·(−2)",["Deljenje sleva","Proizvod desno","Oba istovremeno"],"Deljenje sleva","Operacije su istog reda.","Množenje i deljenje računamo sleva nadesno.","basic","Redosled operacija","rule"),
@@ -203,6 +203,7 @@ export function lessonWorkTasks(lessonId:string,pool:Task[]):Task[]{
  return plan.map(id=>{const task=pool.find(item=>item.id===id);if(!task)throw new Error("Missing lesson work task: "+id);return task});
 }
 export function applyOctoberWorkLevels(lessonId:string,tasks:Task[]):Task[]{
+ if(lessonId==="deljenje")return tasks.map(task=>({...task,level:["6-9a","6-9b","6-9c","6-9d","6-9f"].includes(task.id)?"basic":"medium"}));
  if(lessonId==="mnozenje")return tasks.map(task=>({...task,level:["6-8a","6-8b","6-8c","6-8d","6-8f"].includes(task.id)||task.id.startsWith("ow-mul-sum-")?"basic":"medium"}));
  const plan=octoberWorkPlans[lessonId];if(!plan)return tasks;
  return tasks.map(task=>{

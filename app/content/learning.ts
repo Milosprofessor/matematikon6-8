@@ -224,7 +224,7 @@ export const learningByLesson:Record<string,LessonLearning> = {
       "Nepoznati delilac pronađi iz veze množenja; u tekstualnom zadatku ukupnu ravnomernu promenu podeli brojem perioda."
     ],
     "why": "Količnik puta delilac mora dati deljenik: to je provera deljenja.",
-    "caution": "Deljenje nulom, uključujući 0:0, nije dozvoljeno.",
+    "caution": "Deljenje nulom nije dozvoljeno: za nenulti deljenik ne postoji odgovarajući činilac, a za 0:0 nema jedinstvenog količnika.",
     "extraFormulas": [
       "a:b=c ⇔ b·c=a, b≠0",
       "0:a=0, a≠0",

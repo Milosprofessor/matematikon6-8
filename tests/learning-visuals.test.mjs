@@ -64,7 +64,7 @@ test('nove lekcije ostaju na 10 zadataka, a podaci učenika i algoritam znanja o
 });
 test('baza čuva redosled i crteže uz nezavisno testirane ispravke audita faze 1',()=>{
  const protectedData=all.filter(({lesson:l})=>["september","october"].includes(l.month)).map(({grade:g,area:a,lesson:l})=>({grade:g.id,area:a.id,month:l.month??a.month??'september',id:l.id,pool:tasksForLesson(l.id,l.tasks).filter(t=>!t.id.startsWith('dop-')),work:lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)),visuals:lessonVisuals(l.id)}));
- assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'b186811a3bfb910da71426c4a02a315f048ac9f221604bce0fce942dc00e4947');
+ assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'ea2aac9431f8f79d7fef693d2cd847eac8e4a6ebe29bfe3478208a2a0e92de3b');
 });
 test('glavno objašnjenje je kratko, ima jednu napomenu i čuva svaki izbor geometrijskog prikaza',()=>{
  const counts=[];let figures=0;
@@ -164,4 +164,13 @@ test('recenzija množenja: znak, nula, svojstva i nivoi',()=>{
  assert.ok(l.formulas.includes('a·0=0'));assert.ok(l.formulas.includes('a·b=b·a'));assert.ok(l.formulas.includes('(a·b)·c=a·(b·c)'));assert.ok(l.formulas.includes('a·(b−c)=a·b−a·c'));
  for(const t of tasks.filter(t=>['6-8e','6-8g'].includes(t.id)))assert.match(t.solution,/Provera:/);
  for(const t of tasks.filter(t=>t.id.startsWith('ow-mul-distribute-')))assert.match(t.solution,/·20=/);
+});
+
+test('recenzija deljenja: nula, nepoznati delilac i nivoi',()=>{
+ const l=all.find(x=>x.lesson.id==='deljenje').lesson,tasks=tasksForLesson(l.id,l.tasks);
+ assert.equal(tasks.length,28);assert.equal(tasks.filter(t=>t.level==='basic').length,5);assert.equal(tasks.filter(t=>t.level==='medium').length,23);
+ assert.equal(l.worked.length,3);
+ assert.match(l.worked[1].steps.join(' '),/nema jedinstvenog količnika/);
+ for(const t of tasks.filter(t=>['6-9e','6-9g'].includes(t.id)||t.id.startsWith('ow-div-both-')))assert.match(t.solution,/Provera:/);
+ assert.match(tasks.find(t=>t.id==='6-9g').solution,/x≠0/);
 });
