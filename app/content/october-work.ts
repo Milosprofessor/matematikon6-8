@@ -77,8 +77,8 @@ register("trougao-vrste",[
 ]);
 register("zbir-uglova-trougla",[
  v=>Q("angles","rule",v,"Dopuni.","α+β+γ=__",["90°","180°","360°"],"180°","Seti se zbira unutrašnjih uglova.","Zbir je 180°.","basic","Zbir uglova","rule"),
- v=>{const a=28+3*v;return N("angles","bisect",v,"Odredi drugi oštar ugao.","Pravougli trougao: jedan oštar ugao je "+a+"°.",90-a,"Dva oštra ugla zajedno daju 90°.","90°−"+a+"°="+(90-a)+"°.","medium","Zbir uglova")},
- v=>{const a=30+2*v;return N("angles","difference",v,"Odredi najveći ugao.","Najmanji je "+a+"°, a drugi je za 10° veći.",170-2*a,"Odredi drugi ugao, pa primeni zbir uglova.","Drugi je "+(a+10)+"°. Treći je 180°−"+a+"°−"+(a+10)+"°="+(170-2*a)+"° i najveći je.","advanced","Zbir uglova")}
+ v=>{const a=28+3*v;return N("angles","bisect",v,"Odredi drugi oštar ugao.","Pravougli trougao: jedan oštar ugao je "+a+"°.",90-a,"Dva oštra ugla zajedno daju 90°.","90°+"+a+"°+β=180°. β=90°−"+a+"°="+(90-a)+"°.","medium","Zbir uglova")},
+ v=>{const a=30+2*v;return N("angles","difference",v,"Odredi najveći ugao.","Najmanji ugao je "+a+"°, a jedan od preostalih je za 10° veći od njega.",170-2*a,"Odredi drugi ugao, pa primeni zbir uglova.","Drugi je "+(a+10)+"°. Treći je 180°−"+a+"°−"+(a+10)+"°="+(170-2*a)+"°. Uporedi: "+a+"°<"+(a+10)+"°<"+(170-2*a)+"°, pa je treći najveći.","advanced","Zbir uglova")}
 ]);
 register("uglovi-transverzala",[
  v=>{const a=100+5*v,b=110+2*v;return N("external","sum",v,"Odredi treći spoljašnji ugao.","Dva spoljašnja ugla su "+a+"° i "+b+"°.",360-a-b,"Svaki spoljašnji ugao dopunjuje unutrašnji do 180°.","Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je "+(360-a-b)+"°.","medium","Spoljašnji ugao")},

@@ -305,15 +305,15 @@ export const learningByLesson:Record<string,LessonLearning> = {
   "zbir-uglova-trougla": {
     "aim": "Odredi nepoznati unutrašnji ugao i proveri da li zadate vrednosti mogu biti uglovi trougla.",
     "idea": [
-      "Zbir tri unutrašnja ugla svakog trougla iznosi 180°. Svaki ugao mora biti pozitivan. U pravouglom trouglu pravi ugao zauzima 90°, pa preostala dva oštra ugla zajedno daju 90°.",
+      "Zbir tri unutrašnja ugla svakog trougla iznosi 180°. Tri pozitivna ugla sa zbirom 180° određuju oblik trougla. U pravouglom trouglu pravi ugao zauzima 90°, pa preostala dva oštra ugla zajedno daju 90°.",
       "Za jedan nepoznati ugao oduzmi zbir poznatih od 180°. Ako su uglovi opisani pomoću x, njihove opise saberi u jednu jednakost, a potom izračunaj svaki ugao."
     ],
     "steps": [
       "Za proveru trougla proveri pozitivnost svih uglova i njihov zbir.",
       "Ako se traži najveći ugao, prvo pronađi sve uglove i tek onda ih uporedi."
     ],
-    "why": "Tri unutrašnja ugla mogu se složiti jedan do drugog u opružen ugao.",
-    "caution": "Trougao ne može imati dva prava ili dva tupa ugla.",
+    "why": "Paralela kroz C sa AB pokazuje da α, β i γ zajedno čine opružen ugao od 180°.",
+    "caution": "Trougao ne može imati dva prava ugla, dva tupa ugla niti jedan prav i jedan tup ugao.",
     "extraFormulas": [
       "α+β+γ=180°",
       "γ=180°−α−β"

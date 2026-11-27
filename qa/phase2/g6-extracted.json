@@ -2066,7 +2066,7 @@
    "rules": [
     "Zbir tri unutrašnja ugla je 180°.",
     "Za nepoznati ugao oduzmi zbir poznatih uglova od 180°.",
-    "Sva tri unutrašnja ugla moraju biti pozitivna."
+    "Tri ugla mogu graditi trougao ako i samo ako su svi pozitivni i zbir im je 180°."
    ],
    "formulas": [
     "α+β+γ=180°",
@@ -2080,12 +2080,39 @@
    "solved": {
     "question": "Odredi treći ugao ako su dva ugla 47° i 68°.",
     "steps": [
-     "Zbir poznatih uglova je 47°+68°=115°.",
-     "Treći ugao je 180°−115°.",
-     "Treći ugao je 65°."
+     "α+β+γ=180°.",
+     "47°+68°+γ=180°.",
+     "γ=180°−115°=65°.",
+     "Provera: 47°+68°+65°=180°."
     ]
    },
    "interactive": "triangle-angles",
+   "worked": [
+    {
+     "question": "Odredi treći ugao ako su dva ugla 47° i 68°.",
+     "steps": [
+      "α+β+γ=180°.",
+      "47°+68°+γ=180°.",
+      "γ=180°−115°=65°.",
+      "Provera: 47°+68°+65°=180°."
+     ]
+    },
+    {
+     "question": "Da li 0°, 80° i 100° mogu biti unutrašnji uglovi trougla?",
+     "steps": [
+      "0°+80°+100°=180°.",
+      "Ugao 0° nije pozitivan, pa takav trougao ne postoji."
+     ]
+    },
+    {
+     "question": "Uglovi su x, 2x i 3x. Odredi ih.",
+     "steps": [
+      "x+2x+3x=180°.",
+      "6x=180°, x=30°.",
+      "Uglovi su 30°, 60° i 90°; svi su pozitivni i zbir je 180°."
+     ]
+    }
+   ],
    "month": "october",
    "prerequisites": [
     "trougao-vrste"
@@ -2096,7 +2123,7 @@
    "notes": [
     {
      "title": "Zbir unutrašnjih uglova",
-     "text": "Zbir tri unutrašnja ugla svakog trougla iznosi 180°. Svaki ugao mora biti pozitivan. Tri unutrašnja ugla mogu se složiti jedan do drugog u opružen ugao.",
+     "text": "Zbir tri unutrašnja ugla svakog trougla iznosi 180°. Tri pozitivna ugla sa zbirom 180° određuju oblik trougla. Paralela kroz C sa AB pokazuje da α, β i γ zajedno čine opružen ugao od 180°.",
      "definition": false,
      "formulas": [
       "α+β+γ=180°"
@@ -2115,7 +2142,7 @@
       1
      ],
      "table": false,
-     "note": "Trougao ne može imati dva prava ili dva tupa ugla."
+     "note": "Trougao ne može imati dva prava ugla, dva tupa ugla niti jedan prav i jedan tup ugao."
     },
     {
      "title": "Nepoznati ugao",
@@ -14006,7 +14033,7 @@
    "kind": "input",
    "answer": "60",
    "hint": "Oduzmi zbir poznatih uglova od 180°.",
-   "solution": "γ=180°−50°−70°=60°.",
+   "solution": "α+β+γ=180°. 50°+70°+γ=180°. γ=180°−120°=60°.",
    "level": "basic",
    "skill": "Zbir uglova",
    "taskType": "nepoznati-ugao",
@@ -14041,8 +14068,8 @@
     "Ne"
    ],
    "answer": "Da",
-   "hint": "Proveri zbir.",
-   "solution": "35°+75°+70°=180°, pa grade trougao.",
+   "hint": "Proveri pozitivnost i zbir.",
+   "solution": "Svi uglovi su pozitivni; 35°+75°+70°=180°, pa grade trougao.",
    "level": "medium",
    "skill": "Zbir uglova",
    "taskType": "provera-postojanja-po-uglovima",
@@ -14066,7 +14093,7 @@
    ],
    "answer": "35°, 65°, 80°",
    "hint": "Proveri zbir svakog skupa.",
-   "solution": "35°+65°+80°=180°.",
+   "solution": "35°+65°+80°=180°; svi su pozitivni. Ostali zbirovi su 190° i 190°.",
    "level": "medium",
    "skill": "Zbir uglova",
    "taskType": "izbor-skupa-uglova",
@@ -14080,7 +14107,7 @@
   },
   {
    "id": "o6-zu-4",
-   "prompt": "Dopuni tabelu uglova.",
+   "prompt": "Odredi nedostajući ugao.",
    "math": "α=32°, β=79°",
    "kind": "choice",
    "choices": [
@@ -14090,7 +14117,7 @@
    ],
    "answer": "γ=69°",
    "hint": "Zbir je 180°.",
-   "solution": "γ=180°−111°=69°.",
+   "solution": "α+β+γ=180°. γ=180°−32°−79°=69°.",
    "level": "basic",
    "skill": "Zbir uglova",
    "practiceOnly": true,
@@ -14124,7 +14151,7 @@
    ],
    "answer": "Netačno",
    "hint": "Dva tupa ugla već imaju zbir veći od 180°.",
-   "solution": "Takav trougao ne postoji.",
+   "solution": "Svaki tup ugao je veći od 90°, pa bi zbir dva tupa ugla bio veći od 180°. Takav trougao ne postoji.",
    "level": "medium",
    "skill": "Zbir uglova",
    "practiceOnly": true,
@@ -14144,7 +14171,7 @@
    "kind": "input",
    "answer": "30",
    "hint": "Njihov zbir je 6x.",
-   "solution": "6x=180°, pa je x=30°.",
+   "solution": "x+2x+3x=180°. 6x=180°, x=30°. Uglovi su 30°, 60° i 90°.",
    "level": "advanced",
    "skill": "Zbir uglova",
    "practiceOnly": true,
@@ -14169,7 +14196,7 @@
    ],
    "answer": "15°, 75°, 100°",
    "hint": "Proveri zbir svakog skupa.",
-   "solution": "15°+75°+100°=190°.",
+   "solution": "Prva dva skupa imaju pozitivne uglove i zbir 180°. Treći ima zbir 15°+75°+100°=190°, pa ne može graditi trougao.",
    "level": "medium",
    "skill": "Zbir uglova",
    "practiceOnly": true,
@@ -14217,7 +14244,7 @@
    "kind": "input",
    "answer": "62",
    "hint": "Dva oštra ugla zajedno daju 90°.",
-   "solution": "90°−28°=62°.",
+   "solution": "90°+28°+β=180°. β=90°−28°=62°.",
    "level": "medium",
    "skill": "Zbir uglova",
    "taskType": "angles-bisect",
@@ -14240,7 +14267,7 @@
    "kind": "input",
    "answer": "59",
    "hint": "Dva oštra ugla zajedno daju 90°.",
-   "solution": "90°−31°=59°.",
+   "solution": "90°+31°+β=180°. β=90°−31°=59°.",
    "level": "medium",
    "skill": "Zbir uglova",
    "taskType": "angles-bisect",
@@ -14262,7 +14289,7 @@
    "kind": "input",
    "answer": "56",
    "hint": "Dva oštra ugla zajedno daju 90°.",
-   "solution": "90°−34°=56°.",
+   "solution": "90°+34°+β=180°. β=90°−34°=56°.",
    "level": "medium",
    "skill": "Zbir uglova",
    "taskType": "angles-bisect",
@@ -14284,7 +14311,7 @@
    "kind": "input",
    "answer": "53",
    "hint": "Dva oštra ugla zajedno daju 90°.",
-   "solution": "90°−37°=53°.",
+   "solution": "90°+37°+β=180°. β=90°−37°=53°.",
    "level": "medium",
    "skill": "Zbir uglova",
    "taskType": "angles-bisect",
@@ -14306,7 +14333,7 @@
    "kind": "input",
    "answer": "50",
    "hint": "Dva oštra ugla zajedno daju 90°.",
-   "solution": "90°−40°=50°.",
+   "solution": "90°+40°+β=180°. β=90°−40°=50°.",
    "level": "medium",
    "skill": "Zbir uglova",
    "taskType": "angles-bisect",
@@ -14328,7 +14355,7 @@
    "kind": "input",
    "answer": "47",
    "hint": "Dva oštra ugla zajedno daju 90°.",
-   "solution": "90°−43°=47°.",
+   "solution": "90°+43°+β=180°. β=90°−43°=47°.",
    "level": "medium",
    "skill": "Zbir uglova",
    "taskType": "angles-bisect",
@@ -14346,11 +14373,11 @@
   {
    "id": "ow-angles-difference-0",
    "prompt": "Odredi najveći ugao.",
-   "math": "Najmanji je 30°, a drugi je za 10° veći.",
+   "math": "Najmanji ugao je 30°, a jedan od preostalih je za 10° veći od njega.",
    "kind": "input",
    "answer": "110",
    "hint": "Odredi drugi ugao, pa primeni zbir uglova.",
-   "solution": "Drugi je 40°. Treći je 180°−30°−40°=110° i najveći je.",
+   "solution": "Drugi je 40°. Treći je 180°−30°−40°=110°. Uporedi: 30°<40°<110°, pa je treći najveći.",
    "level": "advanced",
    "skill": "Zbir uglova",
    "taskType": "angles-difference",
@@ -14369,11 +14396,11 @@
   {
    "id": "ow-angles-difference-1",
    "prompt": "Odredi najveći ugao.",
-   "math": "Najmanji je 32°, a drugi je za 10° veći.",
+   "math": "Najmanji ugao je 32°, a jedan od preostalih je za 10° veći od njega.",
    "kind": "input",
    "answer": "106",
    "hint": "Odredi drugi ugao, pa primeni zbir uglova.",
-   "solution": "Drugi je 42°. Treći je 180°−32°−42°=106° i najveći je.",
+   "solution": "Drugi je 42°. Treći je 180°−32°−42°=106°. Uporedi: 32°<42°<106°, pa je treći najveći.",
    "level": "advanced",
    "skill": "Zbir uglova",
    "taskType": "angles-difference",
@@ -14391,11 +14418,11 @@
   {
    "id": "ow-angles-difference-2",
    "prompt": "Odredi najveći ugao.",
-   "math": "Najmanji je 34°, a drugi je za 10° veći.",
+   "math": "Najmanji ugao je 34°, a jedan od preostalih je za 10° veći od njega.",
    "kind": "input",
    "answer": "102",
    "hint": "Odredi drugi ugao, pa primeni zbir uglova.",
-   "solution": "Drugi je 44°. Treći je 180°−34°−44°=102° i najveći je.",
+   "solution": "Drugi je 44°. Treći je 180°−34°−44°=102°. Uporedi: 34°<44°<102°, pa je treći najveći.",
    "level": "advanced",
    "skill": "Zbir uglova",
    "taskType": "angles-difference",
@@ -14413,11 +14440,11 @@
   {
    "id": "ow-angles-difference-3",
    "prompt": "Odredi najveći ugao.",
-   "math": "Najmanji je 36°, a drugi je za 10° veći.",
+   "math": "Najmanji ugao je 36°, a jedan od preostalih je za 10° veći od njega.",
    "kind": "input",
    "answer": "98",
    "hint": "Odredi drugi ugao, pa primeni zbir uglova.",
-   "solution": "Drugi je 46°. Treći je 180°−36°−46°=98° i najveći je.",
+   "solution": "Drugi je 46°. Treći je 180°−36°−46°=98°. Uporedi: 36°<46°<98°, pa je treći najveći.",
    "level": "advanced",
    "skill": "Zbir uglova",
    "taskType": "angles-difference",
@@ -14435,11 +14462,11 @@
   {
    "id": "ow-angles-difference-4",
    "prompt": "Odredi najveći ugao.",
-   "math": "Najmanji je 38°, a drugi je za 10° veći.",
+   "math": "Najmanji ugao je 38°, a jedan od preostalih je za 10° veći od njega.",
    "kind": "input",
    "answer": "94",
    "hint": "Odredi drugi ugao, pa primeni zbir uglova.",
-   "solution": "Drugi je 48°. Treći je 180°−38°−48°=94° i najveći je.",
+   "solution": "Drugi je 48°. Treći je 180°−38°−48°=94°. Uporedi: 38°<48°<94°, pa je treći najveći.",
    "level": "advanced",
    "skill": "Zbir uglova",
    "taskType": "angles-difference",
@@ -14457,11 +14484,11 @@
   {
    "id": "ow-angles-difference-5",
    "prompt": "Odredi najveći ugao.",
-   "math": "Najmanji je 40°, a drugi je za 10° veći.",
+   "math": "Najmanji ugao je 40°, a jedan od preostalih je za 10° veći od njega.",
    "kind": "input",
    "answer": "90",
    "hint": "Odredi drugi ugao, pa primeni zbir uglova.",
-   "solution": "Drugi je 50°. Treći je 180°−40°−50°=90° i najveći je.",
+   "solution": "Drugi je 50°. Treći je 180°−40°−50°=90°. Uporedi: 40°<50°<90°, pa je treći najveći.",
    "level": "advanced",
    "skill": "Zbir uglova",
    "taskType": "angles-difference",
@@ -16930,7 +16957,7 @@
    "kind": "input",
    "answer": "55",
    "hint": "Zbir unutrašnjih uglova je 180°.",
-   "solution": "γ=180°−48°−77°=55°.",
+   "solution": "α+β+γ=180°. γ=180°−48°−77°=55°.",
    "level": "medium",
    "skill": "Zbir uglova",
    "taskType": "nepoznati-ugao",

@@ -78,12 +78,14 @@ const legacyInteriorAngles = grade6Triangle.lessons.find(lesson => lesson.id ===
 const unutrasnjiUglovi: Lesson = {
   ...legacyInteriorAngles,
   intro: "Zbir unutrašnjih uglova svakog trougla je 180°. To pravilo koristimo da odredimo nepoznati ugao i proverimo da li tri data ugla mogu graditi trougao.",
-  rules: ["Zbir tri unutrašnja ugla je 180°.", "Za nepoznati ugao oduzmi zbir poznatih uglova od 180°.", "Sva tri unutrašnja ugla moraju biti pozitivna."],
+  rules: ["Zbir tri unutrašnja ugla je 180°.", "Za nepoznati ugao oduzmi zbir poznatih uglova od 180°.", "Tri ugla mogu graditi trougao ako i samo ako su svi pozitivni i zbir im je 180°."],
   formulas: ["α+β+γ=180°", "γ=180°−α−β"],
   examples: ["40°+60°+80°=180°", "α=180°−72°−48°=60°", "Uglovi 30°, 70° i 80° mogu graditi trougao."],
+  solved: {question:"Odredi treći ugao ako su dva ugla 47° i 68°.",steps:["α+β+γ=180°.","47°+68°+γ=180°.","γ=180°−115°=65°.","Provera: 47°+68°+65°=180°."]},
+  worked: [{question:"Odredi treći ugao ako su dva ugla 47° i 68°.",steps:["α+β+γ=180°.","47°+68°+γ=180°.","γ=180°−115°=65°.","Provera: 47°+68°+65°=180°."]},{question:"Da li 0°, 80° i 100° mogu biti unutrašnji uglovi trougla?",steps:["0°+80°+100°=180°.","Ugao 0° nije pozitivan, pa takav trougao ne postoji."]},{question:"Uglovi su x, 2x i 3x. Odredi ih.",steps:["x+2x+3x=180°.","6x=180°, x=30°.","Uglovi su 30°, 60° i 90°; svi su pozitivni i zbir je 180°."]}],
   tasks: [
     ...legacyInteriorAngles.tasks.filter(task => task.id !== "o6-zu-3"),
-    C("o6-zu-3", "Koji skup uglova može graditi trougao?", "", ["35°, 65°, 80°", "45°, 75°, 70°", "20°, 80°, 90°"], "35°, 65°, 80°", "Proveri zbir svakog skupa.", "35°+65°+80°=180°.", "advanced", "Zbir uglova", { taskType: "izbor-skupa-uglova", errorCategory: "method" }),
+    C("o6-zu-3", "Koji skup uglova može graditi trougao?", "", ["35°, 65°, 80°", "45°, 75°, 70°", "20°, 80°, 90°"], "35°, 65°, 80°", "Proveri zbir svakog skupa.", "35°+65°+80°=180°; svi su pozitivni. Ostali zbirovi su 190° i 190°.", "advanced", "Zbir uglova", { taskType: "izbor-skupa-uglova", errorCategory: "method" }),
   ],
 };
 export const grade6OctoberAreas: Area[] = [sequence({

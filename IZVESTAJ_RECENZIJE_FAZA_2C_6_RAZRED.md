@@ -1,3 +1,19 @@
+# Checkpoint 12 — Zbir uglova trougla
+
+Datum: 27.11.2026. Polazni commit ec2bb3f. Nalaz G6C-031.
+
+- 372/919 matematički i metodički recenzirana zadatka; 547 nepregledanih; 14/45 lekcija.
+- Trougao: 43/131, 2/6 lekcija. Zbir uglova: 21/21, uključujući sve varijante i ot6-3; 3 osnovna, 11 srednjih, 7 naprednih. ID-jevi, odgovori, redosled i ostali zadaci nepromenjeni.
+- Preciziran neophodan i dovoljan uslov: tri pozitivna ugla sa zbirom 180°. Dopunjene formule, međukoraci, verifikacija alternativa i tri rešena primera, uključujući granični primer sa uglom 0°.
+- 126/126 programskih testova, oba build-a, TypeScript i lint. 22 uspešna browser zapisa na desktop i mobilnoj touch emulaciji, uključujući proveru prikaza, pogrešnog i tačnog odgovora i očuvanja napretka posle reload-a. Sistemski Chromium nije radio; alternativni Chromium je uspešno korišćen. Nisu testirani fizički uređaji ni svaka adaptivna varijanta u UI.
+- Jedinice proverene u units.json; zajednički validator ostaje u fazi 3.
+
+**Tačka nastavka:** uglovi-transverzala (Spoljašnji uglovi trougla), prvi ID o6-su-1. Oblast nije završena; bez merge-a i objave.
+
+Dokazi: qa/phase2c/grade6/zbir-uglova-trougla, ledger-tasks.json, ledger-lessons.json i Excel evidencija.
+
+---
+
 # Checkpoint 11 — Trougao i njegove vrste
 
 Datum: 27.11.2026. Polazni GitHub commit a0e1948; lokalni sadržajni commit 9aca9a4. Nalazi G6C-028–030.

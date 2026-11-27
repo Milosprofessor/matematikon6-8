@@ -1,0 +1,138 @@
+[
+  {
+    "id": "o6-zu-1",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o6-zu-4",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "ow-angles-rule-0",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o6-zu-2",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o6-zu-5",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o6-zu-3",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "ow-angles-bisect-0",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o6-zu-6",
+    "width": 1366,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "id": "o6-zu-7",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "ow-angles-difference-0",
+    "width": 1366,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "width": 1366,
+    "lesson": "zbir-uglova-trougla",
+    "examples": 3,
+    "progress_reload": true,
+    "cyrillic": true,
+    "status": "pass"
+  },
+  {
+    "id": "o6-zu-1",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o6-zu-4",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "ow-angles-rule-0",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o6-zu-2",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o6-zu-5",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o6-zu-3",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "ow-angles-bisect-0",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o6-zu-6",
+    "width": 390,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "id": "o6-zu-7",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "ow-angles-difference-0",
+    "width": 390,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "width": 390,
+    "lesson": "zbir-uglova-trougla",
+    "examples": 3,
+    "progress_reload": true,
+    "cyrillic": true,
+    "status": "pass"
+  }
+]

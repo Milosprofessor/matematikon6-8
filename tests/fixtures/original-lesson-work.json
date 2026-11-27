@@ -1694,13 +1694,13 @@
         "math": "α=50°, β=70°",
         "answer": "60",
         "hint": "Oduzmi zbir poznatih uglova od 180°.",
-        "solution": "γ=180°−50°−70°=60°.",
+        "solution": "α+β+γ=180°. 50°+70°+γ=180°. γ=180°−120°=60°.",
         "level": "basic",
         "skill": "Zbir uglova"
       },
       {
         "id": "o6-zu-4",
-        "prompt": "Dopuni tabelu uglova.",
+        "prompt": "Odredi nedostajući ugao.",
         "math": "α=32°, β=79°",
         "choices": [
           "γ=69°",
@@ -1709,7 +1709,7 @@
         ],
         "answer": "γ=69°",
         "hint": "Zbir je 180°.",
-        "solution": "γ=180°−111°=69°.",
+        "solution": "α+β+γ=180°. γ=180°−32°−79°=69°.",
         "level": "basic",
         "skill": "Zbir uglova"
       },
@@ -1737,8 +1737,8 @@
           "Ne"
         ],
         "answer": "Da",
-        "hint": "Proveri zbir.",
-        "solution": "35°+75°+70°=180°, pa grade trougao.",
+        "hint": "Proveri pozitivnost i zbir.",
+        "solution": "Svi uglovi su pozitivni; 35°+75°+70°=180°, pa grade trougao.",
         "level": "medium",
         "skill": "Zbir uglova"
       },
@@ -1752,7 +1752,7 @@
         ],
         "answer": "Netačno",
         "hint": "Dva tupa ugla već imaju zbir veći od 180°.",
-        "solution": "Takav trougao ne postoji.",
+        "solution": "Svaki tup ugao je veći od 90°, pa bi zbir dva tupa ugla bio veći od 180°. Takav trougao ne postoji.",
         "level": "medium",
         "skill": "Zbir uglova"
       },
@@ -1767,7 +1767,7 @@
         ],
         "answer": "35°, 65°, 80°",
         "hint": "Proveri zbir svakog skupa.",
-        "solution": "35°+65°+80°=180°.",
+        "solution": "35°+65°+80°=180°; svi su pozitivni. Ostali zbirovi su 190° i 190°.",
         "level": "medium",
         "skill": "Zbir uglova"
       },
@@ -1777,7 +1777,7 @@
         "math": "Pravougli trougao: jedan oštar ugao je 28°.",
         "answer": "62",
         "hint": "Dva oštra ugla zajedno daju 90°.",
-        "solution": "90°−28°=62°.",
+        "solution": "90°+28°+β=180°. β=90°−28°=62°.",
         "level": "medium",
         "skill": "Zbir uglova"
       },
@@ -1787,7 +1787,7 @@
         "math": "Uglovi su x, 2x i 3x.",
         "answer": "30",
         "hint": "Njihov zbir je 6x.",
-        "solution": "6x=180°, pa je x=30°.",
+        "solution": "x+2x+3x=180°. 6x=180°, x=30°. Uglovi su 30°, 60° i 90°.",
         "level": "advanced",
         "skill": "Zbir uglova"
       },
@@ -1802,17 +1802,17 @@
         ],
         "answer": "15°, 75°, 100°",
         "hint": "Proveri zbir svakog skupa.",
-        "solution": "15°+75°+100°=190°.",
+        "solution": "Prva dva skupa imaju pozitivne uglove i zbir 180°. Treći ima zbir 15°+75°+100°=190°, pa ne može graditi trougao.",
         "level": "medium",
         "skill": "Zbir uglova"
       },
       {
         "id": "ow-angles-difference-0",
         "prompt": "Odredi najveći ugao.",
-        "math": "Najmanji je 30°, a drugi je za 10° veći.",
+        "math": "Najmanji ugao je 30°, a jedan od preostalih je za 10° veći od njega.",
         "answer": "110",
         "hint": "Odredi drugi ugao, pa primeni zbir uglova.",
-        "solution": "Drugi je 40°. Treći je 180°−30°−40°=110° i najveći je.",
+        "solution": "Drugi je 40°. Treći je 180°−30°−40°=110°. Uporedi: 30°<40°<110°, pa je treći najveći.",
         "level": "advanced",
         "skill": "Zbir uglova"
       }

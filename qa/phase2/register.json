@@ -3056,5 +3056,22 @@
     "status": "Ispravljeno i potvrđeno",
     "fix_commit": "9aca9a412e88df640a1a0b8cec41b16df2100a3d",
     "phase2_evidence": "qa/phase2c/grade6/trougao-vrste/tasks.json; lesson.json; tests.log; browser.json"
+  },
+  {
+    "id": "G6C-031",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Trougao",
+    "lesson": "zbir-uglova-trougla",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Metodička preciznost",
+    "description": "Uslov postojanja prema uglovima i pojedini međukoraci i obrazloženja nedovoljno eksplicitni.",
+    "evidence": "qa/phase2c/grade6/zbir-uglova-trougla/tasks.json; lesson.json; browser.json; tests.log",
+    "location": "app/content/october-curriculum.ts; october.ts; october-expansion.ts; october-work.ts; learning.ts; october-tests.ts",
+    "fix": "Uslov ako i samo ako, formula i postupci, granični primer nultog ugla, provera svih alternativa i poređenje.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "",
+    "phase2_evidence": "qa/phase2c/grade6/zbir-uglova-trougla/tasks.json; lesson.json; browser.json; tests.log"
   }
 ]
