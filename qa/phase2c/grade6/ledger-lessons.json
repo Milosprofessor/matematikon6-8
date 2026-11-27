@@ -271,7 +271,39 @@
   {
     "id": "sabiranje-oduzimanje",
     "area": "celi-brojevi",
-    "status": "nepregledana u fazi 2C"
+    "status": "potpuno recenzirana",
+    "theory": "Pretvaranje razlike u zbir, uklanjanje zagrada u zbirovima i razlikama, redosled i grupisanje.",
+    "sequence": "Predznak i operacija → zagrade → svojstva zbira → obrnute promene.",
+    "examples": [
+      {
+        "question": "Izračunaj −7+12−(−4).",
+        "steps": [
+          "Oduzimanje −4 zameni sabiranjem 4: −7+12+4.",
+          "Računaj sleva nadesno: 5+4=9."
+        ],
+        "verification": "9"
+      },
+      {
+        "question": "Izračunaj 8−(3−5).",
+        "steps": [
+          "Prvo u zagradi: 3−5=−2, pa 8−(−2)=10.",
+          "Drugi način: 8−3+5=5+5=10. Minus ispred zagrade menja predznak oba sabirka."
+        ],
+        "verification": "10"
+      },
+      {
+        "question": "Izračunaj −9+6+9−4.",
+        "steps": [
+          "Pretvori oduzimanje u sabiranje: (−9)+6+9+(−4).",
+          "Zameni mesta i grupiši suprotne sabirke: ((−9)+9)+(6+(−4))=0+2=2."
+        ],
+        "verification": "2"
+      }
+    ],
+    "illustration": "Brojna prava −3 → 2 → 0; +5 i −2.",
+    "misconceptions": "Oduzimanje nije komutativno; predznak nije operacija; minus ispred zbira menja oba sabirka.",
+    "assessment": "23 sa tematskom proverom; 12 osnovnih i 11 srednjih.",
+    "limits": "Delovi godišnjih ishoda; ne potvrđuje cele ishode."
   },
   {
     "id": "mnozenje",

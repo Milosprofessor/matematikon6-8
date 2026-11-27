@@ -167,7 +167,7 @@ export const learningByLesson:Record<string,LessonLearning> = {
     "aim": "Uredi izraz sa više sabiranja i oduzimanja i vrati se od završnog do početnog stanja.",
     "idea": [
       "Izraz sa sabiranjem i oduzimanjem možeš pretvoriti u zbir brojeva sa predznacima. Potom računaj sleva nadesno ili grupiši pogodne sabirke, naročito suprotne parove.",
-      "Zagrade određuju šta prvo računamo. Kada ispred cele zagrade stoji minus, svaki njen član menja predznak. U tekstualnom zadatku dug ili pad stanja zapiši negativno, a vraćanje duga ili porast pozitivno."
+      "Zagrade određuju šta prvo računamo. Ako zagrada sadrži zbir ili razliku, plus ispred nje zadržava predznake sabiraka, a minus ih menja u suprotne. U tekstualnom zadatku dug ili pad stanja zapiši negativno, a vraćanje duga ili porast pozitivno."
     ],
     "steps": [
       "Sredi zagrade i sačuvaj predznak uz svaki broj.",

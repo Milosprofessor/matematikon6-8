@@ -19,7 +19,7 @@ export const areaTests: Record<GradeId,Record<string,AreaTestTask[]>> = {
     L(I("t6-4","Izračunaj.","−16+23","7","Znaci su različiti.","−16+23=23−16=7 jer pozitivan sabirak ima veću apsolutnu vrednost.","basic","Sabiranje"),"sabiranje"),
     L(I("t6-5","Izračunaj.","−8−(−13)","5","Suprotan broj broju −13 je 13.","−8−(−13)=−8+13=5.","basic","Oduzimanje"),"oduzimanje"),
     L(I("t6-6","Odredi rastojanje.","A(−11), B(4)","15","Koristi apsolutnu vrednost razlike.","|−11−4|=|−15|=15.","basic","Rastojanje"),"rastojanje"),
-    L(I("t6-7","Izračunaj.","−12+7−(−6)","1","Prvo ukloni zagradu.","−12+7+6=1.","medium","Sabiranje i oduzimanje"),"sabiranje-oduzimanje"),
+    L(I("t6-7","Izračunaj.","−12+7−(−6)","1","Prvo ukloni zagradu.","−12+7+6=−5+6=1.","medium","Sabiranje i oduzimanje"),"sabiranje-oduzimanje"),
     L(I("t6-8","Izračunaj.","(−9)·(−8)","72","Isti znaci daju plus.","9·8=72.","basic","Množenje"),"mnozenje"),
     L(I("t6-9","Izračunaj.","84:(−7)","-12","Različiti znaci daju minus.","84:7=12, pa je rezultat −12.","medium","Deljenje"),"deljenje"),
     L(I("t6-10","Izračunaj.","18:(−3)−2·(−5)","4","Deljenje i množenje imaju prednost.","−6−(−10)=4.","advanced","Brojevni izrazi"),"brojevni-izrazi")

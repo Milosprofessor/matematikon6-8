@@ -942,9 +942,9 @@
         "prompt": "Izračunaj.",
         "math": "14 − (−6) + (−25)",
         "answer": "-5",
-        "hint": "Prvo ukloni zagrade.",
+        "hint": "Oduzimanje −6 zameni sabiranjem 6, a sabiranje −25 oduzimanjem 25.",
         "solution": "14 + 6 − 25 = 20 − 25 = −5.",
-        "level": "medium",
+        "level": "basic",
         "skill": "Sabiranje i oduzimanje"
       },
       {
@@ -959,7 +959,7 @@
         "answer": "Zamena mesta sabiraka",
         "hint": "Promenjen je samo redosled sabiraka.",
         "solution": "Zbir se ne menja kada sabirci zamene mesta.",
-        "level": "medium",
+        "level": "basic",
         "skill": "Svojstva sabiranja"
       },
       {
@@ -973,7 +973,7 @@
         ],
         "answer": "−(−9) treba da bude +9.",
         "hint": "Oduzimanje negativnog broja postaje sabiranje.",
-        "solution": "Tačno je 4+9−3.",
+        "solution": "Tačno je 4+9−3=13−3=10; sabiranje −3 ostaje oduzimanje 3.",
         "level": "medium",
         "skill": "Uklanjanje zagrada"
       },
@@ -983,8 +983,8 @@
         "math": "x: −2, 0, 3; x−(−4): 2, 4, ?",
         "answer": "7",
         "hint": "Oduzimanje −4 znači sabiranje 4.",
-        "solution": "3−(−4)=7.",
-        "level": "medium",
+        "solution": "3−(−4)=3+4=7.",
+        "level": "basic",
         "skill": "Sabiranje i oduzimanje"
       },
       {
@@ -992,19 +992,19 @@
         "prompt": "Dopuni.",
         "math": "−8 − x = −13",
         "answer": "5",
-        "hint": "Koji broj oduzet od −8 daje −13?",
-        "solution": "x=5.",
-        "level": "advanced",
+        "hint": "Dodaj x na obe strane, zatim dodaj 13.",
+        "solution": "−8=−13+x, pa 5=x. Provera: −8−5=−13.",
+        "level": "medium",
         "skill": "Sabiranje i oduzimanje"
       },
       {
         "id": "6-7j",
-        "prompt": "Izračunaj stanje.",
+        "prompt": "Izračunaj završno stanje u dinarima (dug označi negativnim brojem).",
         "math": "Dug je 18 dinara. Vraćeno je 7 dinara, a zatim je napravljen novi dug od 5 dinara.",
         "answer": "-16",
         "hint": "Dug zapiši negativnim brojem.",
-        "solution": "−18+7−5=−16 dinara.",
-        "level": "advanced",
+        "solution": "−18+7−5=−11−5=−16 dinara; dug je 16 dinara.",
+        "level": "medium",
         "skill": "Sabiranje i oduzimanje"
       },
       {
@@ -1013,8 +1013,8 @@
         "math": "Dodato je 5, zatim oduzeto 8. Konačno stanje je −6.",
         "answer": "-3",
         "hint": "Rešavaj unazad: vrati oduzeto, pa ukloni dodato.",
-        "solution": "−6+8−5=−3.",
-        "level": "advanced",
+        "solution": "−6+8−5=2−5=−3. Provera: −3+5−8=−6.",
+        "level": "medium",
         "skill": "Sabiranje i oduzimanje"
       }
     ]

@@ -1,3 +1,27 @@
+# Checkpoint 6 — Sabiranje i oduzimanje celih brojeva
+
+Datum: 27.11.2026. Polazni commit da039de; sadržajni commit 57fd078ac395cc34677c84eea2a0bc5d64b6926b. Nalazi G6C-017–018.
+
+| Stavka | Stanje |
+|---|---:|
+| Potpuno matematički i metodički recenzirani zadaci | 208/919 |
+| Delimično | 0 |
+| Nepregledani | 711 |
+| Lekcije matematički recenzirane | 8/45 |
+| Postojeći rešeni primeri | 8/81 |
+| Novi rešeni primeri | 16/16 |
+
+- 23/23 pojedinačna zadatka uključujući t6-7; 12 osnovnih, 11 srednjih; 18 promena nivoa, 20 izmenjenih zadataka. Očuvani ID-jevi i odgovori.
+- Precizirana razlika predznaka i operacije, pravila uklanjanja zagrada, redosled, promena mesta sabiraka tek nakon pretvaranja u zbir, ekvivalentne transformacije i provera početnog stanja. Tri rešena primera i brojna prava nezavisno provereni.
+- 121/121 programski test, Worker i Pages build, TypeScript i lint uspešni. Browser nije potvrđen: izvršna datoteka Chromium nedostaje (browser.exit=1). Skripta pripremljena za ponavljanje; nisu potvrđeni prikaz na uređajima i storage regresija u ovoj lekciji.
+- Godišnji ishodi 6.01–6.04 i dalje delimični.
+
+**Tačka nastavka sadržaja:** mnozenje, prvi ID 6-8a. 163/283 zadatka oblasti recenzirano. Pre završne tehničke potvrde ponoviti browser-combined.py u ispravnom Chromium okruženju. Faza 2C nije završena.
+
+Dokazi: qa/phase2c/grade6/sabiranje-oduzimanje, ledger-tasks.json, ledger-lessons.json i Excel evidencija.
+
+---
+
 # Checkpoint 5 — Rastojanje tačaka na brojnoj pravoj
 
 Datum: 27.11.2026. Polazni GitHub commit b0d402d; lokalni sadržajni commit 8604cad. Nalazi G6C-015–016.

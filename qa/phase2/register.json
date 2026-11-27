@@ -2817,5 +2817,39 @@
     "status": "Ispravljeno i potvrđeno",
     "fix_commit": "8604cad13c043d0f0b808de281a4d9cc55ef936f",
     "phase2_evidence": "qa/phase2c/grade6/rastojanje/tasks.json; lesson.json; browser.json; tests.log"
+  },
+  {
+    "id": "G6C-017",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Celi brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Potpunost postupka",
+    "description": "Nedovoljno precizna pravila za zagrade, izostavljene transformacije jednačina i provere početnog stanja.",
+    "evidence": "qa/phase2c/grade6/sabiranje-oduzimanje/tasks.json; lesson.json; tests.log",
+    "location": "app/content/grade6.ts; learning.ts; lesson-visuals.ts; september-work.ts; september-expansion.ts; enhancements.ts; area-tests.ts",
+    "fix": "Precizirana pravila, tri primera, eksplicitne transformacije i provere, smislen prikaz na brojnoj pravoj.",
+    "status": "Ispravljeno i programski potvrđeno; browser provera blokirana",
+    "fix_commit": "57fd078ac395cc34677c84eea2a0bc5d64b6926b",
+    "phase2_evidence": "qa/phase2c/grade6/sabiranje-oduzimanje/tasks.json; lesson.json; tests.log"
+  },
+  {
+    "id": "G6C-018",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Celi brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Nivoi težine",
+    "description": "18 neadekvatno klasifikovanih zadataka.",
+    "evidence": "qa/phase2c/grade6/sabiranje-oduzimanje/tasks.json; lesson.json; tests.log",
+    "location": "app/content/grade6.ts; learning.ts; lesson-visuals.ts; september-work.ts; september-expansion.ts; enhancements.ts; area-tests.ts",
+    "fix": "12 osnovnih, 11 srednjih sa tematskim testom.",
+    "status": "Ispravljeno i programski potvrđeno; browser provera blokirana",
+    "fix_commit": "57fd078ac395cc34677c84eea2a0bc5d64b6926b",
+    "phase2_evidence": "qa/phase2c/grade6/sabiranje-oduzimanje/tasks.json; lesson.json; tests.log"
   }
 ]

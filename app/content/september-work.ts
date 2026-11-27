@@ -87,8 +87,8 @@ register("rastojanje",[
  v=>N("distance-two",v,"Odredi x.",`d(x,−${v+4})=3 i d(x,${num(2-v)})=3`,-v-1,"Prvi uslov daje dve mogućnosti. Proveri drugi.",`Prvi uslov daje x=−${v+7} ili x=−${v+1}. Proverom drugog uslova, rastojanja od ${num(2-v)} su 9 i 3, redom. Samo x=−${v+1} zadovoljava oba uslova.`,"advanced","Rastojanje")
 ]);
 register("sabiranje-oduzimanje",[
- v=>N("signed-table",v,"Dopuni poslednju vrednost.",`x: −${v+2}, 0, ${v+3}; x−(−4): ${2-v}, 4, ?`,v+7,"Oduzimanje −4 znači sabiranje 4.",`${v+3}−(−4)=${v+7}.`,"medium","Sabiranje i oduzimanje","sign"),
- v=>N("signed-reverse",v,"Odredi početno stanje.",`Dodato je ${v+5}, zatim oduzeto ${v+8}. Konačno stanje je −${v+6}.`,-v-3,"Rešavaj unazad: vrati oduzeto, pa ukloni dodato.",`−${v+6}+${v+8}−${v+5}=−${v+3}.`,"advanced","Sabiranje i oduzimanje")
+ v=>N("signed-table",v,"Dopuni poslednju vrednost.",`x: −${v+2}, 0, ${v+3}; x−(−4): ${String(2-v).replace("-", "−")}, 4, ?`,v+7,"Oduzimanje −4 znači sabiranje 4.",`${v+3}−(−4)=${v+3}+4=${v+7}.`,"medium","Sabiranje i oduzimanje","sign"),
+ v=>N("signed-reverse",v,"Odredi početno stanje.",`Dodato je ${v+5}, zatim oduzeto ${v+8}. Konačno stanje je −${v+6}.`,-v-3,"Rešavaj unazad: vrati oduzeto, pa ukloni dodato.",`−${v+6}+${v+8}−${v+5}=2−${v+5}=−${v+3}. Provera: −${v+3}+${v+5}−${v+8}=−${v+6}.`,"medium","Sabiranje i oduzimanje")
 ]);
 
 // Grade 7: no roots before their lesson; no x²=a before Kvadrati brojeva.
@@ -261,6 +261,7 @@ const basicLater=new Set(["6-1k","6-2i","6-3j","sw-absolute-table-0","sw-r5-orde
 export function applySeptemberWorkLevels(lessonId:string,tasks:Task[]):Task[]{
  const plan=septemberWorkPlans[lessonId];if(!plan)return tasks;
  return tasks.map(task=>{
+  if(lessonId==="sabiranje-oduzimanje")return {...task,level:["6-7c","6-7e","6-7i","6-7j"].includes(task.id)||task.id.startsWith("sw-signed-reverse-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
   if(lessonId==="rastojanje")return {...task,level:["6-6c","6-6e","6-6g","6-6h","6-6j"].includes(task.id)||task.id.startsWith("sw-distance-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
   if(lessonId==="oduzimanje")return {...task,level:["6-5e","6-5g","6-5h","6-5i"].includes(task.id)||task.id.startsWith("sw-subtract-compare-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
   if(lessonId==="sabiranje")return {...task,level:["6-4e","6-4h","6-4i","6-4j"].includes(task.id)||task.id.startsWith("sw-add-cancel-")||task.id.startsWith("sw-add-signcondition-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};

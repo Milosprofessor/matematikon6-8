@@ -24,7 +24,7 @@ const visuals:Record<string,LessonVisual[]>={
  'sabiranje':[v({type:'number-line',min:-5,max:3,points:[{value:-2,label:'Početak'},{value:1,label:'Kraj'}],arrows:[{from:-2,to:1,label:'+3'}]},'Dodavanje pozitivnog broja pomera nas udesno; dodavanje negativnog ulevo.')],
  'oduzimanje':[v({type:'number-line',min:-4,max:4,points:[{value:-1,label:'A'},{value:2,label:'B'}],arrows:[{from:-1,to:2,label:'−(−3)=+3'}]},'Oduzimanje negativnog broja jednako je dodavanju njegovog suprotnog broja.')],
  'rastojanje':[v({type:'number-line',min:-5,max:4,points:[{value:-3,label:'A'},{value:2,label:'B'}],arrows:[{from:-3,to:2,label:'5 jedinica'}]},'Rastojanje je nenegativno: d(A,B)=|2−(−3)|=5.')],
- 'sabiranje-oduzimanje':[line],
+ 'sabiranje-oduzimanje':[v({type:'number-line',min:-5,max:5,points:[{value:-3,label:'A'},{value:2,label:'B'},{value:0,label:'C'}],arrows:[{from:-3,to:2,label:'+5'},{from:2,to:0,label:'−2'}]},'−3+5−2=0: prvo pet jedinica udesno, zatim dve ulevo.')],
  'mnozenje':[v({type:'number-line',min:-6,max:1,points:[{value:0,label:'O'},{value:-6,label:'Kraj'}],arrows:[{from:0,to:-2},{from:-2,to:-4},{from:-4,to:-6}]},'Tri pomeranja po −2 daju 3·(−2)=−6.')],
  'skup-racionalnih-brojeva':[v({type:'number-line',min:-2,max:2,divisions:4,points:[{value:-.75,label:'−3/4'},{value:.75,label:'3/4'}]},'Razlomak −3/4 pripada istom jediničnom segmentu kao −1 i 0; smer rasta ostaje udesno.')],
  'apsolutna-vrednost-racionalnog':[v({type:'number-line',min:-2,max:2,points:[{value:-1.5,label:'−1,5'},{value:1.5,label:'1,5'}]},'Dva suprotna racionalna broja imaju jednaku apsolutnu vrednost: |−1,5|=|1,5|=1,5.')],
