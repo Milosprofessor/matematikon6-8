@@ -48,7 +48,7 @@ export default unit({
   ["Koji element opisuje hipotenuza rotirajućeg trougla dok obilazi osu?",["Omotač","Osnovu","Visinu"],"Prati krajeve hipotenuze.","Jedan kraj miruje u vrhu, a drugi opisuje kružnicu osnove. Duž između njih prelazi preko omotača."],
   ["Ako je r=6 cm, dužina luka u mreži u cm, tačno?","12π","Luk prati celu ivicu osnove.","O=2πr=12π cm."],
   ["Kupa sa r=2 cm i s=7 cm ima omotač u cm², tačno?","14π","Pomnoži r, s i π.","M=πrs=14π cm²."],
-  ["Izvodnica je 10 cm, r=6 cm. Nađi H u cm.","8","Prepolovi osni presek.","a²+b²=c². Iz 36+H²=100 dobijaš H²=64 i H=8 cm."],
+  ["Izvodnica je 10 cm, r=6 cm. Nađi H u cm.","8","Prepolovi osni presek.","a²+b²=c². Iz r²+H²=s², 6²+H²=10², odnosno 36+H²=100 dobijaš H²=64 i H=8 cm."],
   ["Prečnik je 10 dm, visina 12 dm. Tačna zapremina kupe u litrima?","100π","Najpre prepolovi prečnik.","V=πr²H:3=25π·12:3=100π dm³=100π l."],
   ["Omotač je 45π cm² i r=5 cm. Kolika je ukupna površina u cm², tačno?","70π","Dodaj jednu osnovu.","P=B+M=25π+45π=70π cm²."],
   ["Kupa i valjak imaju istu osnovu i visinu. Valjak ima 27 l. Koliko litara ima kupa?","9","Uporedi V sa B·H.","Zapremina kupe je trećina zapremine valjka, pa je 27:3=9 l."],

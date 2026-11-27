@@ -56,9 +56,9 @@ export default unit({
   ["Pravougaoni pod meri 6 m puta 8 m. Vrh je 4 m iznad centra. Tačna visina strane uz ivicu 6 m u metrima?","4√2","Izmeri rastojanje centra do ivice duge 6 m.","a²+b²=c². Katete su 4 i 4, s²=32 pa je s=4√2 m."],
   ["Šta spaja bočna ivica?",["Vrh i teme osnove","Vrh i centar osnove","Sredine dve ivice"],"Prati granicu dve bočne strane.","Njihova zajednička ivica završava se u temenu osnovnog mnogougla."],
   ["Pravilna trostrana piramida ima obim osnove 30 cm i s=8 cm. Omotač u cm²?","120","Zajednička visina omogućava sabiranje osnovica.","M=O·s:2=30·8:2=120 cm²."],
-  ["Pravilna četvorostrana piramida ima s=13 cm i H=12 cm. Kolika je osnovna ivica u cm?","10","Traži polovinu osnovne ivice.","a²+b²=c². Za polovinu t važi t²+144=169. t²=25 i t=5 cm. Ivica je 10 cm."],
+  ["Pravilna četvorostrana piramida ima s=13 cm i H=12 cm. Kolika je osnovna ivica u cm?","10","Traži polovinu osnovne ivice.","a²+b²=c². Za polovinu t važi t²+H²=s²; t²+12²=13²; t²+144=169. t²=25 i t=5 cm. Ivica je 10 cm."],
   ["Koji deo mreže pravilne četvorostrane piramide je kvadrat?",["Osnova","Omotač","Bočna strana"],"Razlikuj centralni mnogougao od trouglova.","Osnovu okružuju četiri podudarna trougla."],
   ["Pravilna šestostrana piramida ima omotač 90 cm² i osnovnu ivicu 5 cm. Bočna visina u cm?","6","Obim osnove je 30 cm.","90=30·s:2. Množenje sa 2 i deljenje sa 30 daje s=6 cm."],
   ["Krov nad kvadratom stranice 12 m ima visinu 8 m iznad centra. Kolika je površina krova bez poda u m²?","240","Najpre odredi bočnu visinu.","a²+b²=c². Iz 6²+8²=s² dobija se s=10 m. M=48·10:2=240 m²."]
 ], ["strane","visina","obim","trougao","omotač","šator","presek","ivica","mreža","pravougaonik"],
-  ["Bočna strana ima krake od 13 cm i osnovicu 24 cm. Visina na osnovicu u cm?","5","Visina prepolovljava osnovicu.","a²+b²=c². Katete su 12 i s, hipotenuza 13. Iz 144+s²=169 sledi s²=25 i s=5 cm."]);
+  ["Bočna strana ima krake od 13 cm i osnovicu 24 cm. Visina na osnovicu u cm?","5","Visina prepolovljava osnovicu.","a²+b²=c². Katete su 12 i s, hipotenuza 13. Iz 12²+s²=13², odnosno 144+s²=169 sledi s²=25 i s=5 cm."]);

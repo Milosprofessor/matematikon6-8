@@ -1,0 +1,15 @@
+✔ LOG-04 mixed numbers preserve addition, sign and token boundaries (0.980502ms)
+✔ LOG-05 expanded form rejects uncancelled terms (0.862195ms)
+✔ LOG-07 exact powers and π preserve mathematical value (60.527504ms)
+✔ LOG-09 scientific notation is compared as exact rationals (0.358394ms)
+✔ LOG-06 explicitly declared units are checked, never discarded blindly (273.886757ms)
+✔ audited mathematical corrections retain IDs and remove ambiguity (976.46498ms)
+✔ expanded form rejects uncomputed products as well as like terms (0.750038ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1838.937591

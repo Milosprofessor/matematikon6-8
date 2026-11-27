@@ -106,9 +106,9 @@ register("pitagorina-teorema",[
  v=>{const [a,b,c]=triples[v];return N("pyth","path",v,"Za koliko metara je prečica kraća?","Put ima dva normalna dela: "+a+" m i "+b+" m. Prečica spaja početak i kraj.",a+b-c,"Prečica je hipotenuza.","Prečica je "+c+" m, a put "+(a+b)+" m. Razlika je "+(a+b-c)+" m.","advanced","Pitagorina teorema")}
 ]);
 register("nepoznata-stranica-pravougli",[
- v=>Q("leg","identify",v,"Izaberi izraz za nepoznatu katetu b.","Hipotenuza c, kateta a",["[[sqrt:c^2−a^2]]","[[sqrt:c^2+a^2]]","c−a"],"[[sqrt:c^2−a^2]]","Iz c²=a²+b² izdvoji b².","b²=c²−a², pa je b=[[sqrt:c^2−a^2]].","basic","Nepoznata kateta","rule"),
- v=>{const [a,b,c]=triples[v];return Q("leg","compare",v,"Uporedi katete.","c="+c+", a="+a+"; nepoznata je b.",["a<b","a>b","a=b"],"a<b","Odredi b pa uporedi.","b=[[sqrt:"+(c*c-a*a)+"]]="+b+", pa je a<b.","medium","Nepoznata kateta","method")},
- v=>{const [a,b,c]=triples[v];return N("leg","ladder",v,"Odredi udaljenost podnožja od zida.","Merdevine su "+c+" m. Vrh je na visini "+b+" m; zid je normalan na tlo.",a,"Merdevine su hipotenuza.","Udaljenost je [[sqrt:"+c+"^2−"+b+"^2]]="+a+" m.","advanced","Nepoznata kateta")}
+ v=>Q("leg","identify",v,"Izaberi izraz za nepoznatu katetu b.","Hipotenuza c, kateta a",["[[sqrt:c^2−a^2]]","[[sqrt:c^2+a^2]]","c−a"],"[[sqrt:c^2−a^2]]","Iz c²=a²+b² izdvoji b².","a²+b²=c². Oduzmi a² sa obe strane: b²=c²−a². Kako je b>0, b=[[sqrt:c^2−a^2]].","basic","Nepoznata kateta","rule"),
+ v=>{const [a,b,c]=triples[v];return Q("leg","compare",v,"Uporedi katete.","c="+c+", a="+a+"; nepoznata je b.",["a<b","a>b","a=b"],"a<b","Odredi b pa uporedi.","a²+b²=c². "+a+"²+b²="+c+"²; "+a*a+"+b²="+c*c+"; b²="+(c*c-a*a)+". Pozitivna kateta b="+b+", pa je a<b.","medium","Nepoznata kateta","method")},
+ v=>{const [a,b,c]=triples[v];return N("leg","ladder",v,"Odredi udaljenost podnožja od zida.","Merdevine su "+c+" m. Vrh je na visini "+b+" m; zid je normalan na tlo.",a,"Merdevine su hipotenuza.","Katete su udaljenost x i visina, hipotenuza su merdevine. x²+"+b+"²="+c+"². x²+"+b*b+"="+c*c+"; x²="+(c*c-b*b)+". Pozitivna udaljenost x="+a+" m.","advanced","Nepoznata kateta")}
 ]);
 register("pitagora-pravougaonik-kvadrat",[
  v=>Q("rect","identify",v,"Koja duž je hipotenuza pomoćnog trougla?","Pravougaonik ABCD sa dijagonalom AC",["AC","AB","BC"],"AC","Pogledaj trougao ABC.","Ugao B je prav, pa je AC hipotenuza.","basic","Pitagora u pravougaoniku","diagram"),
@@ -122,7 +122,7 @@ register("pitagora-jednakokraki",[
 ]);
 register("pitagora-cetvorougao",[
  v=>Q("quad","opposite",v,"Koja duž je hipotenuza trougla ACD?","∠ACD=90°",["AC","AD","CD"],"AD","Hipotenuza je naspram pravog ugla.","Naspram C je AD.","basic","Pitagora u četvorouglu","diagram"),
- v=>{const [a,b,c]=triples[v];return N("quad","reverse",v,"Odredi CD.","∠ACD=90°, AD="+c+" cm, AC="+a+" cm",b,"AD je hipotenuza.","CD²="+c+"²−"+a+"²="+b*b+", pa je CD="+b+" cm.","medium","Pitagora u četvorouglu")},
+ v=>{const [a,b,c]=triples[v];return N("quad","reverse",v,"Odredi CD.","∠ACD=90°, AD="+c+" cm, AC="+a+" cm",b,"AD je hipotenuza.","AC²+CD²=AD². "+a+"²+CD²="+c+"²; "+a*a+"+CD²="+c*c+"; CD²="+b*b+". Pozitivna dužina CD="+b+" cm.","medium","Pitagora u četvorouglu")},
  v=>{const k=v+1;return N("quad","area",v,"Odredi površinu četvorougla ABCD.","∠ABC=∠ACD=90°; AB="+3*k+", BC="+4*k+", CD="+12*k,36*k*k,"Odredi AC, pa saberi površine dva pravougla trougla.","AC="+5*k+". P₁="+6*k*k+", P₂="+30*k*k+", ukupno P="+36*k*k+".","advanced","Pitagora u četvorouglu","method",{type:"pythagoras",variant:"quadrilateral",labels:{AB:String(3*k),BC:String(4*k),CD:String(12*k),AC:"?",AD:""}})}
 ]);
 register("pitagora-romb",[
@@ -133,7 +133,7 @@ register("pitagora-romb",[
 register("pitagora-trapez",[
  v=>Q("trap","identify",v,"Koja duž je hipotenuza pomoćnog trougla?","Pravougli trapez",["Kosi krak","Visina","Razlika osnovica"],"Kosi krak","Visina je normalna na osnovice.","Kosi krak je naspram pravog ugla.","basic","Pitagora u trapezu","diagram"),
  v=>{const k=v+1;return N("trap","perimeter",v,"Odredi obim jednakokrakog trapeza.","a="+16*k+" cm, b="+4*k+" cm, h="+8*k+" cm",40*k,"Polovina razlike osnovica je kateta.","Pomoćna kateta je "+6*k+", krak je "+10*k+". O="+16*k+"+"+4*k+"+2·"+10*k+"="+40*k+" cm.","medium","Pitagora u trapezu")},
- v=>{const k=v+1;return N("trap","reverse",v,"Odredi dužu osnovicu.","Jednakokraki trapez: b="+6*k+" cm, h="+4*k+" cm, c="+5*k+" cm",12*k,"Iz kraka i visine odredi polovinu razlike osnovica.","Polovina razlike je "+3*k+" cm. Zato a="+6*k+"+2·"+3*k+"="+12*k+" cm.","advanced","Pitagora u trapezu")}
+ v=>{const k=v+1;return N("trap","reverse",v,"Odredi dužu osnovicu.","Jednakokraki trapez: b="+6*k+" cm, h="+4*k+" cm, c="+5*k+" cm",12*k,"Iz kraka i visine odredi polovinu razlike osnovica.","Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+"+4*k+"²="+5*k+"²; x²+"+16*k*k+"="+25*k*k+"; x²="+9*k*k+". Pozitivna dužina x="+3*k+" cm. Zato a="+6*k+"+2·"+3*k+"="+12*k+" cm.","advanced","Pitagora u trapezu")}
 ]);
 register("specijalni-pravougli-trouglovi",[
  v=>{const a=v+3;return N("special","area45",v,"Odredi površinu.","Trougao 45°–45°–90° ima katetu "+2*a+" cm.",2*a*a,"Katete su jednake.","P="+2*a+"·"+2*a+":2="+2*a*a+" cm².","medium","Posebni pravougli trouglovi")},
