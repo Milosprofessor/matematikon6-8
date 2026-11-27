@@ -5223,7 +5223,7 @@
    "rules": [
     "Proizvod polovine obima i poluprečnika daje πr². Isečak omeđuju dva poluprečnika i njihov luk. Njegova površina ima isti udeo u površini kruga kao njegov ugao u punom uglu.",
     "Kod prstena oduzmi površine dva koncentrična kruga. Kod složene figure najpre označi svaki deo, uskladi jedinice i odluči šta treba sabrati ili oduzeti.",
-    "Kvadriraj svaki poluprečnik posebno. Kvadrat razlike poluprečnika daje površinu drugog kruga."
+    "Kvadriraj svaki poluprečnik posebno. Površina prstena je π(R²−r²), a ne π(R−r)²."
    ],
    "formulas": [
     "P=πr²",
@@ -5242,7 +5242,7 @@
      "question": "U kvadrat stranice 16 cm upisan je krug. Tačna površina uglova izvan kruga u cm²?",
      "steps": [
       "Prečnik je jednak stranici kvadrata.",
-      "Kvadrat ima 256 cm², krug ima 64π cm². Preostala površina je (256−64π) cm²."
+      "Kvadrat ima 256 cm², krug ima 64π cm². Preostala površina je (256−64π) cm². Pošto je 0<π<4, rezultat je pozitivan i manji od 256 cm²."
      ]
     },
     {
@@ -5304,7 +5304,7 @@
      "formulas": [],
      "visualIndexes": [],
      "table": false,
-     "note": "Kvadriraj svaki poluprečnik posebno. Kvadrat razlike poluprečnika daje površinu drugog kruga."
+     "note": "Kvadriraj svaki poluprečnik posebno. Površina prstena je π(R²−r²), a ne π(R−r)²."
     }
    ],
    "visuals": [],
@@ -5343,7 +5343,7 @@
    "rules": [
     "Rotaciju određuju centar, ugao i smer. Rastojanje svake tačke do centra ostaje isto, a zrak od centra do slike zaklapa zadati orijentisani ugao sa prvobitnim zrakom.",
     "Za svako teme nacrtaj kružnicu oko centra kroz to teme. Prenesi ugao u zadatom smeru i označi presek novog zraka sa kružnicom. Spoji slike temena istim redosledom.",
-    "Smer u opštem slučaju menja sliku; za poluokret ili pun okret slike se poklapaju, a centar ostaje nepomičan. Kod koordinata prvo posmatraj položaj u odnosu na centar rotacije."
+    "Za tačku van centra, suprotni smerovi daju istu sliku tačno kada je ugao višekratnik 180° (uključujući 0°). Centar je nepomičan za svaki ugao. Simetrična figura može se poklopiti sa sobom i pri drugim uglovima. Kod koordinata prvo posmatraj položaj u odnosu na centar rotacije."
    ],
    "formulas": [
     "OA=OA′",
@@ -5422,7 +5422,7 @@
      "formulas": [],
      "visualIndexes": [],
      "table": false,
-     "note": "Smer u opštem slučaju menja sliku; za poluokret ili pun okret slike se poklapaju, a centar ostaje nepomičan. Kod koordinata prvo posmatraj položaj u odnosu na centar rotacije."
+     "note": "Za tačku van centra, suprotni smerovi daju istu sliku tačno kada je ugao višekratnik 180° (uključujući 0°). Centar je nepomičan za svaki ugao. Simetrična figura može se poklopiti sa sobom i pri drugim uglovima. Kod koordinata prvo posmatraj položaj u odnosu na centar rotacije."
     }
    ],
    "visuals": [],
@@ -23428,7 +23428,7 @@
    "id": "s7-povrsina-7",
    "skill": "Obim i površina mnogougla",
    "level": "medium",
-   "prompt": "Figura oblika kućice sastoji se od pravougaonika 8 cm sa 5 cm i trougla iznad njega osnovice 8 cm i visine 3 cm. Površina u cm²?",
+   "prompt": "Figura oblika kućice sastoji se od pravougaonika 8 cm sa 5 cm i trougla osnovice 8 cm i visine 3 cm koji sa pravougaonikom deli celu gornju stranicu, bez preklapanja unutrašnjosti. Površina u cm²?",
    "math": "",
    "hint": "Saberi zid i krov.",
    "solution": "8·5+8·3:2=40+12=52 cm².",
@@ -25755,7 +25755,7 @@
    "prompt": "Točak prečnika 4 dm napravi 6 okreta bez klizanja. Tačan put u dm?",
    "math": "",
    "hint": "Za svaki pun okret pređe jedan obim.",
-   "solution": "Jedan obim je 4π dm. Pomnoži brojem okreta.",
+   "solution": "Jedan obim je 4π dm. Put je 6·4π=24π dm.",
    "kind": "input",
    "answer": "24π",
    "taskType": "okreti",
@@ -25812,7 +25812,7 @@
    "prompt": "Polukružni prozor ima poluprečnik 4 dm. Napiši tačnu ukupnu dužinu okvira u dm.",
    "math": "",
    "hint": "Obiđi i zakrivljeni i pravi deo.",
-   "solution": "Luk ima 4π dm, a prečnik 8 dm. Saberi njihove dužine.",
+   "solution": "Luk ima 4π dm, a prečnik 8 dm. Ukupno (4π+8) dm.",
    "kind": "input",
    "answer": "4π+8",
    "taskType": "granica",
@@ -26333,7 +26333,7 @@
    "prompt": "Polukružni prozor ima poluprečnik 5 dm. Napiši tačnu ukupnu dužinu okvira u dm.",
    "math": "",
    "hint": "Obiđi i zakrivljeni i pravi deo.",
-   "solution": "Luk ima 5π dm, a prečnik 10 dm. Saberi njihove dužine.",
+   "solution": "Luk ima 5π dm, a prečnik 10 dm. Ukupno (5π+10) dm.",
    "kind": "input",
    "answer": "5π+10",
    "lessonId": "s7-luk",
@@ -27889,7 +27889,7 @@
    "prompt": "Koliki je najmanji pozitivan ugao rotacije koji pravilni 12-ugao oko centra preslikava na sebe? Upiši u stepenima.",
    "math": "",
    "hint": "Prvo teme mora preći na sledeće teme.",
-   "solution": "Pun ugao se deli na 12 jednakih delova.",
+   "solution": "Pun ugao se deli na 12 jednakih delova: 360°:12=30°.",
    "kind": "input",
    "answer": "360/12",
    "lessonId": "s7-rotacija",

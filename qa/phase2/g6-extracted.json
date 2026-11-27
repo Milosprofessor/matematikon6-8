@@ -2609,7 +2609,7 @@
    "title": "Ekvivalentni razlomci i decimalni zapis",
    "intro": "Istu tačku na brojnoj pravoj možemo označiti različitim razlomcima ili decimalnim brojem.",
    "rules": [
-    "Brojilac i imenilac množimo istim nenultim celim brojem. Pri skraćivanju delimo ih zajedničkim nenultim celim deliocem. Imenilac mora biti različit od nule.",
+    "Brojilac i imenilac množimo istim nenultim celim brojem. Pri skraćivanju delimo ih istim nenultim celim brojem koji deli i brojilac i imenilac bez ostatka. Imenilac mora biti različit od nule.",
     "Za decimalni zapis podeli brojilac imeniocem. Konačan decimalni broj napiši preko desetice, stotine ili hiljade, pa skrati.",
     "Znak minus ispred razlomka odnosi se na ceo količnik. Dva minusa u količniku daju plus."
    ],
@@ -2645,7 +2645,7 @@
     },
     {
      "title": "Pravilo",
-     "text": "Brojilac i imenilac množimo istim nenultim celim brojem. Pri skraćivanju delimo ih zajedničkim nenultim celim deliocem. Imenilac mora biti različit od nule.",
+     "text": "Brojilac i imenilac množimo istim nenultim celim brojem. Pri skraćivanju delimo ih istim nenultim celim brojem koji deli i brojilac i imenilac bez ostatka. Imenilac mora biti različit od nule.",
      "definition": false,
      "formulas": [
       "[[frac:a|b]] = [[frac:k·a|k·b]], b≠0, k≠0"
@@ -4703,8 +4703,8 @@
     "Dijagonale deltoida jesu normalne, ali ne moraju se uzajamno poloviti. Kod pravouglog trapeza normalan krak je visina."
    ],
    "formulas": [
-    "Trapez: m=(a+b):2",
-    "Deltoid sa parovima stranica a i b: O=2(a+b)"
+    "Trapez (osnovice a i b): m=(a+b):2",
+    "Deltoid (stranice a,a,b,b): O=2(a+b)"
    ],
    "worked": [
     {
@@ -4766,8 +4766,8 @@
      "text": "Paralelne stranice trapeza zovemo osnovicama, a druge dve kracima. Kod jednakokrakog trapeza kraci su jednaki, jednaki su uglovi uz istu osnovicu i dijagonale. Srednja linija spaja sredine krakova i paralelna je osnovicama.",
      "definition": false,
      "formulas": [
-      "Trapez: m=(a+b):2",
-      "Deltoid sa parovima stranica a i b: O=2(a+b)"
+      "Trapez (osnovice a i b): m=(a+b):2",
+      "Deltoid (stranice a,a,b,b): O=2(a+b)"
      ],
      "visualIndexes": [],
      "table": false

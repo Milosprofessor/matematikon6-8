@@ -1,0 +1,96 @@
+{
+  "G6-008": "m=10 cm; O trapeza=30 cm (nije 40); O deltoida=22 cm",
+  "G6-010": "12/18 : zajednički delilac 6 → 2/3; 3 i 5 nisu deljivi sa 2; količnik jeste isti, ali nije skraćivanje celobrojnim deliocem.",
+  "G7-004": "10 obrtaja × 6π = 60π dm; polukružni luk πr=6π dm, prečnik 12 dm",
+  "G7-005": "256−64π ≈ 54,94 cm², između 0 i 256",
+  "G7-006": "40+12=52 cm²; unutrašnjosti se ne preklapaju i dele samo zajedničku stranicu",
+  "G7-009": "R(α)p=R(−α)p za p≠0 iff sin α=0; centar fiksan; simetrija figure odvojena",
+  "G7-010": "360/8=45°, 360/12=30°; direktna primena jedne formule, osnovni nivo",
+  "G7-011": "171 celobrojnih položaja A, tri normalnosti i konkurentnost po položaju; SVG zasebno",
+  "G7-011-cases": [
+    {
+      "x": 45,
+      "H": [
+        45.0,
+        188.5
+      ],
+      "feet": [
+        [
+          45.0,
+          156.0
+        ],
+        [
+          113.068669527897,
+          77.88841201716738
+        ],
+        [
+          69.72972972972973,
+          184.3783783783784
+        ]
+      ]
+    },
+    {
+      "x": 65,
+      "H": [
+        65.0,
+        156.0
+      ],
+      "feet": [
+        [
+          65.0,
+          156.0
+        ],
+        [
+          120.96890616324264,
+          74.3786785119378
+        ],
+        [
+          65.0,
+          156.0
+        ]
+      ]
+    },
+    {
+      "x": 130,
+      "H": [
+        130.0,
+        96.41666666666667
+      ],
+      "feet": [
+        [
+          130.0,
+          156.0
+        ],
+        [
+          160.0943396226415,
+          68.83018867924528
+        ],
+        [
+          104.69798657718121,
+          82.71140939597315
+        ]
+      ]
+    },
+    {
+      "x": 215,
+      "H": [
+        215.0,
+        124.75
+      ],
+      "feet": [
+        [
+          215.0,
+          156.0
+        ],
+        [
+          232.72046589018302,
+          121.05823627287853
+        ],
+        [
+          171.70731707317074,
+          70.63414634146342
+        ]
+      ]
+    }
+  ]
+}

@@ -5,7 +5,7 @@ export const semester6 = [
     id: "q-zapisi",
     title: "Ekvivalentni razlomci i decimalni zapis",
     intro: "Istu tačku na brojnoj pravoj možemo označiti različitim razlomcima ili decimalnim brojem.",
-    rules: ["Brojilac i imenilac množimo istim nenultim celim brojem. Pri skraćivanju delimo ih zajedničkim nenultim celim deliocem. Imenilac mora biti različit od nule.", "Za decimalni zapis podeli brojilac imeniocem. Konačan decimalni broj napiši preko desetice, stotine ili hiljade, pa skrati.", "Znak minus ispred razlomka odnosi se na ceo količnik. Dva minusa u količniku daju plus."],
+    rules: ["Brojilac i imenilac množimo istim nenultim celim brojem. Pri skraćivanju delimo ih istim nenultim celim brojem koji deli i brojilac i imenilac bez ostatka. Imenilac mora biti različit od nule.", "Za decimalni zapis podeli brojilac imeniocem. Konačan decimalni broj napiši preko desetice, stotine ili hiljade, pa skrati.", "Znak minus ispred razlomka odnosi se na ceo količnik. Dva minusa u količniku daju plus."],
     formulas: ["[[frac:a|b]] = [[frac:k·a|k·b]], b≠0, k≠0"],
     examples: ["−0,04=−[[frac:4|100]]=−[[frac:1|25]]."],
     solved: { question: "Kako zapisati −0,375 kao neskrativ razlomak?", steps: ["Tri decimale daju −[[frac:375|1000]].", "Podeli brojilac i imenilac sa 125.", "Dobijaš −[[frac:3|8]]."] },

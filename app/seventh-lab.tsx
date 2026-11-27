@@ -20,9 +20,24 @@ function Centers(){
  const [x,set]=useState(130),[median,toggle]=useState(true);
  const a:Point=[x,36],b:Point=[65,156],c:Point=[240,156];
  const h:Point=[x,156-(x-65)*(240-x)/120],t:Point=[(305+x)/3,116];
- const foot=(p:Point,u:Point,v:Point):Point=>{const dx=v[0]-u[0],dy=v[1]-u[1],k=((p[0]-u[0])*dx+(p[1]-u[1])*dy)/(dx*dx+dy*dy);return [u[0]+k*dx,u[1]+k*dy]};
  const center=median?t:h;
- return <><Slider label="Položaj vrha A" min={45} max={215} v={x} set={set}/><button onClick={()=>toggle(!median)}>{median?"Prikaži visine":"Prikaži težišne duži"}</button><Figure name="Promenljiv trougao"><polygon points={[a,b,c].join(" ")} className="lab-shape"/>{median?<>{stroke(a,[152.5,156])}{stroke(b,[(x+240)/2,96])}{stroke(c,[(x+65)/2,96])}</>:<>{stroke(a,[x,Math.max(156,h[1])])}{stroke(b,foot(b,a,c))}{stroke(c,foot(c,a,b))}{stroke(b,h)}{stroke(c,h)}</>}<circle cx={center[0]} cy={center[1]} r="4"/><text x={center[0]+6} y={center[1]-3}>{median?"T":"H"}</text></Figure><p>{median?"Tri težišne duži seku se unutar trougla.":"Pomeri vrh ulevo od leve osnovne tačke i prati kako ortocentar izlazi iz trougla."}</p></>;
+ const triangleKind=x===65?"pravougli":x<65?"tupougli":"oštrougli";
+ const altitude=(p:Point,u:Point,v:Point,name:string)=>{
+  const dx=v[0]-u[0],dy=v[1]-u[1],k=((p[0]-u[0])*dx+(p[1]-u[1])*dy)/(dx*dx+dy*dy);
+  const f:Point=[u[0]+k*dx,u[1]+k*dy];
+  const d=Math.hypot(dx,dy),n=Math.hypot(p[0]-f[0],p[1]-f[1]);
+  const side=k>0.5?-1:1,ex=side*dx/d*7,ey=side*dy/d*7,nx=(p[0]-f[0])/n*7,ny=(p[1]-f[1])/n*7;
+  // Mark the actual foot, extend the opposite side or altitude only when needed.
+  const q=((h[0]-f[0])*(p[0]-f[0])+(h[1]-f[1])*(p[1]-f[1]))/(n*n);
+  return <g key={name} data-altitude={name}>
+   {k<0&&stroke(u,f)}{k>1&&stroke(v,f)}
+   <line data-foot={name} x1={p[0]} y1={p[1]} x2={f[0]} y2={f[1]} className="cut"/>
+   {q< -1e-9&&stroke(f,h)}{q>1+1e-9&&stroke(p,h)}
+   <path data-right-angle={name} d={`M${f[0]+ex} ${f[1]+ey} L${f[0]+ex+nx} ${f[1]+ey+ny} L${f[0]+nx} ${f[1]+ny}`} fill="none" stroke="#263c57" strokeWidth="1.5"/>
+   <circle cx={f[0]} cy={f[1]} r="2.5" fill="#263c57"/>
+  </g>;
+ };
+ return <><Slider label="Položaj vrha A" min={45} max={215} v={x} set={set}/><button onClick={()=>toggle(!median)}>{median?"Prikaži visine":"Prikaži težišne duži"}</button><Figure name="Promenljiv trougao"><polygon points={[a,b,c].join(" ")} className="lab-shape"/>{median?<>{stroke(a,[152.5,156])}{stroke(b,[(x+240)/2,96])}{stroke(c,[(x+65)/2,96])}</>:<>{altitude(a,b,c,"A")}{altitude(b,a,c,"B")}{altitude(c,a,b,"C")}</>}<circle data-triangle-center={median?"T":"H"} cx={center[0]} cy={center[1]} r="4"/><text x={center[0]+6} y={center[1]-3}>{median?"T":"H"}</text><text x={a[0]} y={a[1]-8}>A</text><text x={b[0]+3} y={b[1]+17}>B</text><text x={c[0]+5} y={c[1]+5}>C</text></Figure><p>{median?"Tri težišne duži seku se unutar trougla.":`Trougao je ${triangleKind}. ${x===65?"Ortocentar je u temenu B (prav ugao).":x<65?"Ortocentar je izvan trougla; isprekidane linije su produžeci.":"Ortocentar je unutar trougla."} Kvadratići označavaju prave uglove kod podnožja visina.`}</p></>;
 }
 function Algebra(){
  const [v,set]=useState(4),[step,next]=useState(1);
