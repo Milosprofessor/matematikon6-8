@@ -8,8 +8,8 @@
         "prompt": "Izračunaj.",
         "math": "4 205 − 1 987",
         "answer": "2218",
-        "hint": "Oduzimaj po mestima.",
-        "solution": "4 205 − 1 987 = 2 218.",
+        "hint": "Poravnaj cifre iste mesne vrednosti; kada treba, pozajmi iz sledećeg mesta.",
+        "solution": "Pošto je 1 987=1 000+900+80+7, oduzimamo redom: 4 205−1 000=3 205; 3 205−900=2 305; 2 305−80=2 225; 2 225−7=2 218. Rezultat je 2 218.",
         "level": "basic",
         "skill": "Prirodni brojevi"
       },
@@ -19,8 +19,8 @@
         "math": "Tačke A, B i C pripadaju istoj pravoj.",
         "choices": [
           "Tačke su kolinearne.",
-          "Prave su paralelne.",
-          "Tačke su normalne."
+          "Tačke su nekolinearne.",
+          "Tačke moraju biti temena trougla."
         ],
         "answer": "Tačke su kolinearne.",
         "hint": "Kako nazivamo tačke na istoj pravoj?",
@@ -50,7 +50,7 @@
         "answer": "[[frac:5|8]]",
         "hint": "Imenioci su jednaki.",
         "solution": "Sabiramo brojioce: [[frac:3+2|8]] = [[frac:5|8]].",
-        "level": "medium",
+        "level": "basic",
         "skill": "Razlomci"
       },
       {
@@ -65,17 +65,17 @@
         "answer": "130, 301, 310",
         "hint": "Uporedi stotine, pa desetice.",
         "solution": "130<301<310.",
-        "level": "medium",
+        "level": "basic",
         "skill": "Prirodni brojevi"
       },
       {
         "id": "sw-r5-angle-0",
-        "prompt": "Odredi drugi ugao.",
+        "prompt": "Odredi drugi ugao u stepenima.",
         "math": "Dva ugla čine opružen ugao. Prvi je 40°.",
         "answer": "140",
         "hint": "Opružen ugao ima 180°.",
-        "solution": "180°−40°=140°.",
-        "level": "medium",
+        "solution": "α+β=180°. 40°+β=180°. β=180°−40°=140°.",
+        "level": "basic",
         "skill": "Osnovni pojmovi geometrije"
       },
       {
@@ -89,8 +89,8 @@
         ],
         "answer": "<",
         "hint": "Imenioci su jednaki.",
-        "solution": "Veći brojilac daje veći razlomak.",
-        "level": "medium",
+        "solution": "Pošto je 2<3, važi [[frac:2|5]]<[[frac:3|5]].",
+        "level": "basic",
         "skill": "Poredak razlomaka"
       },
       {
@@ -103,9 +103,9 @@
           "[[frac:2|8]]"
         ],
         "answer": "[[frac:2|4]]",
-        "hint": "Zadrži imenilac.",
-        "solution": "1+2=3, pa je x=[[frac:2|4]].",
-        "level": "advanced",
+        "hint": "Nepoznati sabirak dobijaš oduzimanjem poznatog sabirka od zbira.",
+        "solution": "x=[[frac:3|4]]−[[frac:1|4]]=[[frac:3−1|4]]=[[frac:2|4]].",
+        "level": "medium",
         "skill": "Razlomci"
       },
       {
@@ -114,18 +114,18 @@
         "math": "22−4·3+6",
         "answer": "16",
         "hint": "Množenje ima prednost.",
-        "solution": "22−12+6=16.",
-        "level": "advanced",
+        "solution": "22−4·3+6=22−12+6=10+6=16.",
+        "level": "medium",
         "skill": "Redosled operacija"
       },
       {
         "id": "sw-r5-rectangle-0",
-        "prompt": "Odredi drugu stranicu pravougaonika.",
+        "prompt": "Odredi drugu stranicu pravougaonika u cm.",
         "math": "O=22 cm, a=4 cm",
         "answer": "7",
         "hint": "Polovina obima je zbir dve susedne stranice.",
-        "solution": "b=11−4=7 cm.",
-        "level": "advanced",
+        "solution": "O=2(a+b). 22=2(4+b). Delimo obe strane sa 2: 11=4+b. Oduzimamo 4: b=11−4=7 cm.",
+        "level": "medium",
         "skill": "Osnovni pojmovi geometrije"
       }
     ]

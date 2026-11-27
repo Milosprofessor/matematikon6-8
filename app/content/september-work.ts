@@ -55,12 +55,12 @@ const comparisons=["<",">","="];
 // multiplication and division are deliberately absent from September additions.
 register("kratko-obnavljanje-5",[
  v=>N("r5-decimal",v,"Napiši decimalno.",f(v+2,10),(v+2)/10,"Deseti deo zapisujemo jednom decimalom.",`${f(v+2,10)}=${num((v+2)/10)}.`,"basic","Razlomci"),
- v=>Q("r5-order",v,"Poređaj od najmanjeg.",`${301+v}, ${310+v}, ${130+v}`,[`${130+v}, ${301+v}, ${310+v}`,`${301+v}, ${130+v}, ${310+v}`,`${310+v}, ${301+v}, ${130+v}`],`${130+v}, ${301+v}, ${310+v}`,"Uporedi stotine, pa desetice.",`${130+v}<${301+v}<${310+v}.`,"medium","Prirodni brojevi"),
- v=>N("r5-angle",v,"Odredi drugi ugao.",`Dva ugla čine opružen ugao. Prvi je ${40+5*v}°.`,140-5*v,"Opružen ugao ima 180°.",`180°−${40+5*v}°=${140-5*v}°.`,"medium","Osnovni pojmovi geometrije"),
- v=>Q("r5-compare",v,"Uporedi.",`${f(v+2,v+5)} __ ${f(v+3,v+5)}`,comparisons,"<","Imenioci su jednaki.","Veći brojilac daje veći razlomak.","medium","Poredak razlomaka"),
- v=>Q("r5-fractionmissing",v,"Dopuni.",`${f(1,v+4)}+x=${f(3,v+4)}`,[f(2,v+4),f(4,v+4),f(2,2*(v+4))],f(2,v+4),"Zadrži imenilac.",`1+2=3, pa je x=${f(2,v+4)}.`,"advanced","Razlomci"),
- v=>N("r5-expression",v,"Izračunaj.",`${4*(v+3)+10}−4·${v+3}+6`,16,"Množenje ima prednost.",`${4*(v+3)+10}−${4*(v+3)}+6=16.`,"advanced","Redosled operacija"),
- v=>N("r5-rectangle",v,"Odredi drugu stranicu pravougaonika.",`O=${4*(v+4)+6} cm, a=${v+4} cm`,v+7,"Polovina obima je zbir dve susedne stranice.",`b=${2*(v+4)+3}−${v+4}=${v+7} cm.`,"advanced","Osnovni pojmovi geometrije")
+ v=>Q("r5-order",v,"Poređaj od najmanjeg.",`${301+v}, ${310+v}, ${130+v}`,[`${130+v}, ${301+v}, ${310+v}`,`${301+v}, ${130+v}, ${310+v}`,`${310+v}, ${301+v}, ${130+v}`],`${130+v}, ${301+v}, ${310+v}`,"Uporedi stotine, pa desetice.",`${130+v}<${301+v}<${310+v}.`,"basic","Prirodni brojevi"),
+ v=>N("r5-angle",v,"Odredi drugi ugao u stepenima.",`Dva ugla čine opružen ugao. Prvi je ${40+5*v}°.`,140-5*v,"Opružen ugao ima 180°.",`α+β=180°. ${40+5*v}°+β=180°. β=180°−${40+5*v}°=${140-5*v}°.`,"basic","Osnovni pojmovi geometrije"),
+ v=>Q("r5-compare",v,"Uporedi.",`${f(v+2,v+5)} __ ${f(v+3,v+5)}`,comparisons,"<","Imenioci su jednaki.",`Pošto je ${v+2}<${v+3}, važi ${f(v+2,v+5)}<${f(v+3,v+5)}.`,"basic","Poredak razlomaka"),
+ v=>Q("r5-fractionmissing",v,"Dopuni.",`${f(1,v+4)}+x=${f(3,v+4)}`,[f(2,v+4),f(4,v+4),f(2,2*(v+4))],f(2,v+4),"Nepoznati sabirak dobijaš oduzimanjem poznatog sabirka od zbira.",`x=${f(3,v+4)}−${f(1,v+4)}=${f("3−1",v+4)}=${f(2,v+4)}.`,"medium","Razlomci"),
+ v=>N("r5-expression",v,"Izračunaj.",`${4*(v+3)+10}−4·${v+3}+6`,16,"Množenje ima prednost.",`${4*(v+3)+10}−4·${v+3}+6=${4*(v+3)+10}−${4*(v+3)}+6=10+6=16.`,"medium","Redosled operacija"),
+ v=>N("r5-rectangle",v,"Odredi drugu stranicu pravougaonika u cm.",`O=${4*(v+4)+6} cm, a=${v+4} cm`,v+7,"Polovina obima je zbir dve susedne stranice.",`O=2(a+b). ${4*(v+4)+6}=2(${v+4}+b). Delimo obe strane sa 2: ${2*(v+4)+3}=${v+4}+b. Oduzimamo ${v+4}: b=${2*(v+4)+3}−${v+4}=${v+7} cm.`,"medium","Osnovni pojmovi geometrije")
 ]);
 register("skup-celih-brojeva",[
  v=>N("integer-reverse",v,"Odredi broj suprotan broju x.",`Prethodnik broja x je −${v+5}.`,v+4,"Najpre pronađi sledbenik datog prethodnika.",`x=−${v+4}. Suprotan broj je ${v+4}.`,"advanced","Prethodnik i sledbenik")
@@ -261,6 +261,7 @@ const basicLater=new Set(["6-1k","6-2i","6-3j","sw-absolute-table-0","sw-r5-orde
 export function applySeptemberWorkLevels(lessonId:string,tasks:Task[]):Task[]{
  const plan=septemberWorkPlans[lessonId];if(!plan)return tasks;
  return tasks.map(task=>{
+  if(lessonId==="kratko-obnavljanje-5")return {...task,taskType:retainedTypes[task.id]??task.taskType};
   const at=plan.indexOf(task.id);
   const level:Level=at<0?task.level:at<3||basicOverrides.has(task.id)?"basic":at<7||basicLater.has(task.id)?"medium":"advanced";
   return {...task,level,taskType:retainedTypes[task.id]??task.taskType,

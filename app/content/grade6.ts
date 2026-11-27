@@ -6,14 +6,19 @@ const grade6SeptemberAreas: Area[] = [
     id:"obnavljanje-5", title:"Obnavljanje gradiva 5. razreda", short:"Kratko podsećanje na brojeve, razlomke i geometriju.", review:true,
     lessons:[{
       id:"kratko-obnavljanje-5", title:"Kratko obnavljanje", intro:"Podseti se poretka i računskih operacija sa prirodnim brojevima i razlomcima, kao i osnovnih geometrijskih pojmova.",
-      rules:["Računamo redom: zagrade, množenje i deljenje, sabiranje i oduzimanje.","Razlomke sabiramo tek kada imaju jednake imenioce.","Duž ima dve krajnje tačke, prava nema krajeve, a poluprava ima jednu početnu tačku."],
+      rules:["Računamo redom: zagrade, množenje i deljenje, sabiranje i oduzimanje. Operacije istog prioriteta računamo sleva nadesno.","Razlomke sabiramo tek kada imaju jednake imenioce.","Duž ima dve krajnje tačke, prava nema krajeve, a poluprava ima jednu početnu tačku."],
       formulas:["[[frac:a|c]] + [[frac:b|c]] = [[frac:a+b|c]]","O = 2 · (a + b)","O = 4a"],
       examples:["2 450 + 780 = 3 230","[[frac:2|7]] + [[frac:3|7]] = [[frac:5|7]]","Prave koje se seku pod pravim uglom su normalne."],
       solved:{question:"Izračunaj: 36 : 6 + 4 · 3",steps:["Prvo deljenje i množenje: 36 : 6 = 6 i 4 · 3 = 12.","Zatim sabiranje: 6 + 12 = 18.","Rezultat je 18."]},
+      worked:[
+        {question:"Izračunaj: 36 : 6 + 4 · 3",steps:["Prvo deljenje i množenje: 36 : 6 = 6 i 4 · 3 = 12.","Zatim sabiranje: 6 + 12 = 18.","Rezultat je 18."]},
+        {question:"Izračunaj [[frac:2|7]] + [[frac:3|7]].",steps:["Oba razlomka predstavljaju sedmine iste celine. Sabiramo brojioce, imenilac ostaje 7.","[[frac:2|7]]+[[frac:3|7]]=[[frac:2+3|7]]=[[frac:5|7]].","Rezultat je pet sedmina."]},
+        {question:"Obim pravougaonika je 30 cm, jedna stranica je 6 cm. Odredi drugu.",steps:["Obim je zbir svih stranica: O=2(a+b).","30=2(6+b). Podelimo obe strane sa 2: 15=6+b.","Oduzmimo 6 sa obe strane: b=15−6=9 cm. Provera: 2(6+9)=30 cm."]}
+      ],
       tasks:[
-        I("6r-1","Izračunaj.","4 205 − 1 987","2218","Oduzimaj po mestima.","4 205 − 1 987 = 2 218.","basic","Prirodni brojevi"),
-        C("6r-2","Izaberi tačan odgovor.","[[frac:3|8]] + [[frac:2|8]]",["[[frac:5|16]]","[[frac:5|8]]","[[frac:1|8]]"],"[[frac:5|8]]","Imenioci su jednaki.","Sabiramo brojioce: [[frac:3+2|8]] = [[frac:5|8]].","medium","Razlomci"),
-        C("6r-3","Koji odgovor je tačan?","Tačke A, B i C pripadaju istoj pravoj.",["Tačke su kolinearne.","Prave su paralelne.","Tačke su normalne."],"Tačke su kolinearne.","Kako nazivamo tačke na istoj pravoj?","Tačke koje pripadaju istoj pravoj su kolinearne.","basic","Geometrija")
+        I("6r-1","Izračunaj.","4 205 − 1 987","2218","Poravnaj cifre iste mesne vrednosti; kada treba, pozajmi iz sledećeg mesta.","Pošto je 1 987=1 000+900+80+7, oduzimamo redom: 4 205−1 000=3 205; 3 205−900=2 305; 2 305−80=2 225; 2 225−7=2 218. Rezultat je 2 218.","basic","Prirodni brojevi"),
+        C("6r-2","Izaberi tačan odgovor.","[[frac:3|8]] + [[frac:2|8]]",["[[frac:5|16]]","[[frac:5|8]]","[[frac:1|8]]"],"[[frac:5|8]]","Imenioci su jednaki.","Sabiramo brojioce: [[frac:3+2|8]] = [[frac:5|8]].","basic","Razlomci"),
+        C("6r-3","Koji odgovor je tačan?","Tačke A, B i C pripadaju istoj pravoj.",["Tačke su kolinearne.","Tačke su nekolinearne.","Tačke moraju biti temena trougla."],"Tačke su kolinearne.","Kako nazivamo tačke na istoj pravoj?","Tačke koje pripadaju istoj pravoj su kolinearne.","basic","Geometrija")
       ]
     }]
   },

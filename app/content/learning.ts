@@ -10,7 +10,7 @@ export const learningByLesson:Record<string,LessonLearning> = {
       "Imenilac određuje jednake delove celine, a brojilac njihov broj. Kod jednakih imenilaca poredi, sabiraj ili oduzimaj brojioce. Kolinearne tačke pripadaju istoj pravoj; dva ugla koja čine opružen ugao imaju zbir 180°."
     ],
     "steps": [
-      "U izrazu računaj zagrade, zatim množenje i deljenje, pa sabiranje i oduzimanje.",
+      "U izrazu računaj zagrade, zatim množenje i deljenje, pa sabiranje i oduzimanje. Operacije istog prioriteta računaj sleva nadesno.",
       "Nepoznati sabirak dobijaš oduzimanjem od zbira; nepoznatu stranicu pravougaonika oduzimanjem poznate od polovine obima."
     ],
     "why": "Obim pravougaonika obuhvata po dve jednake stranice; zato je njegova polovina zbir susednih stranica.",

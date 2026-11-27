@@ -64,7 +64,7 @@ test('nove lekcije ostaju na 10 zadataka, a podaci učenika i algoritam znanja o
 });
 test('baza čuva redosled i crteže uz nezavisno testirane ispravke audita faze 1',()=>{
  const protectedData=all.filter(({lesson:l})=>["september","october"].includes(l.month)).map(({grade:g,area:a,lesson:l})=>({grade:g.id,area:a.id,month:l.month??a.month??'september',id:l.id,pool:tasksForLesson(l.id,l.tasks).filter(t=>!t.id.startsWith('dop-')),work:lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)),visuals:lessonVisuals(l.id)}));
- assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'2f9b063502a20d52b5db1d48c4f8c4a7314b96b4095130c581797e9abfdf8d23');
+ assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'7fa2ae077d028903e0c2b35b9742fc4a5e9972642d5d2e4565b32c7f837bc802');
 });
 test('glavno objašnjenje je kratko, ima jednu napomenu i čuva svaki izbor geometrijskog prikaza',()=>{
  const counts=[];let figures=0;
@@ -90,4 +90,15 @@ test('svih šest zadataka o merdevinama označava poznatu visinu, hipotenuzu i n
   const html=drawing(t.diagram);
   assert.ok(Math.abs(distance(point(html,'A'),point(html,'C'))/distance(point(html,'A'),point(html,'B'))-Number(h)/Number(c))<1e-7);
  }
+});
+
+test('recenzija 6. razreda: obnavljanje ima 45 stabilnih ID-jeva, tri raznovrsna primera i opravdane nivoe',()=>{
+ const {lesson:l}=all.find(x=>x.lesson.id==='kratko-obnavljanje-5');
+ const tasks=tasksForLesson(l.id,l.tasks);
+ assert.equal(tasks.length,45);assert.equal(new Set(tasks.map(t=>t.id)).size,45);
+ assert.equal(tasks.filter(t=>t.level==='basic').length,27);assert.equal(tasks.filter(t=>t.level==='medium').length,18);
+ assert.equal(l.worked.length,3);
+ assert.match(l.worked[2].steps.join(' '),/30=2\(6\+b\).*b=15−6=9 cm/);
+ for(const t of tasks.filter(t=>t.id.startsWith('sw-r5-rectangle-')))assert.match(t.solution,/O=2\(a\+b\).*Delimo obe strane/);
+ for(const t of tasks.filter(t=>t.id.startsWith('sw-r5-angle-')))assert.match(t.solution,/α\+β=180°/);
 });
