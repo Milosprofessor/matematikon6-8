@@ -1,0 +1,10 @@
+[
+  {
+    "id": "6-6g",
+    "requiredUnit": "°C",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "12 °C",
+    "phase3": "LOG-06"
+  }
+]

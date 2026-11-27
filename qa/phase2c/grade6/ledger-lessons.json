@@ -234,7 +234,39 @@
   {
     "id": "rastojanje",
     "area": "celi-brojevi",
-    "status": "nepregledana u fazi 2C"
+    "status": "potpuno recenzirana",
+    "theory": "Apsolutna vrednost razlike koordinata; redosled nije važan; rastojanje 0 samo za iste tačke.",
+    "sequence": "Jedinične duži → formula → dva položaja → sredina.",
+    "examples": [
+      {
+        "question": "Odredi rastojanje između −5 i 3.",
+        "steps": [
+          "d=|−5−3|=|−8|=8. Redosled koordinata ne menja rastojanje."
+        ],
+        "verification": "|−5−3|=8"
+      },
+      {
+        "question": "Odredi sve tačke x za koje je d(x,−2)=3.",
+        "steps": [
+          "Od −2 idi 3 jedinice ulevo ili udesno: −2−3=−5, odnosno −2+3=1.",
+          "Provera: |−5−(−2)|=3 i |1−(−2)|=3."
+        ],
+        "verification": "x=−5 ili 1"
+      },
+      {
+        "question": "Odredi sredinu duži A(−4), B(6).",
+        "steps": [
+          "d(A,B)=6−(−4)=10.",
+          "Polovina rastojanja je 5, pa od −4 idemo 5 jedinica udesno: −4+5=1.",
+          "Provera: |1−(−4)|=5 i |6−1|=5."
+        ],
+        "verification": "sredina 1"
+      }
+    ],
+    "illustration": "A(−3), B(2), rastojanje 5 jediničnih duži.",
+    "misconceptions": "Negativna koordinata nije negativno rastojanje; dva položaja; koordinata nije oznaka tačke.",
+    "assessment": "23 sa tematskom proverom; 6 osnovnih i 17 srednjih.",
+    "limits": "Deo ishoda 6.02–6.04; ne potvrđuje cele ishode."
   },
   {
     "id": "sabiranje-oduzimanje",

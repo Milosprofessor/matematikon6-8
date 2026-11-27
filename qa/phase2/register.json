@@ -1738,7 +1738,7 @@
       "app/content/area-tests.ts"
     ],
     "test_result": "112/112 unit/integracionih; ciljane regresije; browser rezultati u final/",
-    "phase2c_evidence": "12 konkretnih ID-jeva: sw-r5-angle-0…5 (°), sw-r5-rectangle-0…5 (cm); broj prihvaćen, sa jedinicom odbijen. qa/phase2c/grade6/obnavljanje-5/units.json; faza 3; status nepromenjen.; 6-4i: °C, 4 prihvaćen, 4 °C odbijen; qa/phase2c/grade6/sabiranje/units.json."
+    "phase2c_evidence": "12 konkretnih ID-jeva: sw-r5-angle-0…5 (°), sw-r5-rectangle-0…5 (cm); broj prihvaćen, sa jedinicom odbijen. qa/phase2c/grade6/obnavljanje-5/units.json; faza 3; status nepromenjen.; 6-4i: °C, 4 prihvaćen, 4 °C odbijen; qa/phase2c/grade6/sabiranje/units.json.; 6-6g: 12 prihvaćen, 12 °C odbijen; qa/phase2c/grade6/rastojanje/units.json."
   },
   {
     "id": "LOG-07",
@@ -2783,5 +2783,39 @@
     "status": "Ispravljeno i potvrđeno",
     "fix_commit": "c8d855c3b4df54284359b01cf376ceb9411008e4",
     "phase2_evidence": "qa/phase2c/grade6/oduzimanje/tasks.json; lesson.json; browser.json; tests.log"
+  },
+  {
+    "id": "G6C-015",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Celi brojevi",
+    "lesson": "rastojanje",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Potpunost postupka",
+    "description": "Nedostajali postupci za sredinu duži, oba moguća položaja i uslovi; mešanje oznake tačke i koordinate.",
+    "evidence": "qa/phase2c/grade6/rastojanje/tasks.json; lesson.json; browser.json; tests.log",
+    "location": "app/content/grade6.ts; september-work.ts; september-expansion.ts; enhancements.ts; area-tests.ts",
+    "fix": "Potpune računice, oba kandidata, provera; tri rešena primera.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "8604cad13c043d0f0b808de281a4d9cc55ef936f",
+    "phase2_evidence": "qa/phase2c/grade6/rastojanje/tasks.json; lesson.json; browser.json; tests.log"
+  },
+  {
+    "id": "G6C-016",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Celi brojevi",
+    "lesson": "rastojanje",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Nivoi težine",
+    "description": "12 neadekvatno klasifikovanih zadataka.",
+    "evidence": "qa/phase2c/grade6/rastojanje/tasks.json; lesson.json; browser.json; tests.log",
+    "location": "app/content/grade6.ts; september-work.ts; september-expansion.ts; enhancements.ts; area-tests.ts",
+    "fix": "6 osnovnih, 17 srednjih sa tematskim testom.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "8604cad13c043d0f0b808de281a4d9cc55ef936f",
+    "phase2_evidence": "qa/phase2c/grade6/rastojanje/tasks.json; lesson.json; browser.json; tests.log"
   }
 ]

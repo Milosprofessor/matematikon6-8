@@ -971,9 +971,9 @@
    "title": "Rastojanje tačaka na brojnoj pravoj",
    "intro": "Rastojanje je apsolutna vrednost razlike koordinata i uvek je nenegativno.",
    "rules": [
-    "Od većeg broja možeš oduzeti manji.",
+    "Oduzmi manju koordinatu od veće ili uzmi apsolutnu vrednost razlike.",
     "Redosled tačaka nije važan.",
-    "Rastojanje nikada nije negativno."
+    "Rastojanje je nula samo kada se tačke poklapaju."
    ],
    "formulas": [
     "d(A,B) = |a − b|"
@@ -991,6 +991,29 @@
      "Rastojanje je 8."
     ]
    },
+   "worked": [
+    {
+     "question": "Odredi rastojanje između −5 i 3.",
+     "steps": [
+      "d=|−5−3|=|−8|=8. Redosled koordinata ne menja rastojanje."
+     ]
+    },
+    {
+     "question": "Odredi sve tačke x za koje je d(x,−2)=3.",
+     "steps": [
+      "Od −2 idi 3 jedinice ulevo ili udesno: −2−3=−5, odnosno −2+3=1.",
+      "Provera: |−5−(−2)|=3 i |1−(−2)|=3."
+     ]
+    },
+    {
+     "question": "Odredi sredinu duži A(−4), B(6).",
+     "steps": [
+      "d(A,B)=6−(−4)=10.",
+      "Polovina rastojanja je 5, pa od −4 idemo 5 jedinica udesno: −4+5=1.",
+      "Provera: |1−(−4)|=5 i |6−1|=5."
+     ]
+    }
+   ],
    "month": "september",
    "prerequisites": [
     "oduzimanje"
@@ -9222,9 +9245,9 @@
    "math": "M(−9), N(−3)",
    "kind": "input",
    "answer": "6",
-   "hint": "Tačke su sa iste strane nule.",
-   "solution": "|−9 − (−3)| = |−6| = 6.",
-   "level": "medium",
+   "hint": "Oduzimanje negativne koordinate pretvori u sabiranje suprotnog broja.",
+   "solution": "|−9−(−3)|=|−9+3|=|−6|=6.",
+   "level": "basic",
    "skill": "Rastojanje",
    "taskType": "rastojanje-istog-znaka",
    "diagram": {
@@ -9260,9 +9283,9 @@
     "2 i 9"
    ],
    "answer": "−4 i 6",
-   "hint": "Izračunaj razliku svakog para.",
-   "solution": "|−4 − 6| = 10.",
-   "level": "advanced",
+   "hint": "Izračunaj apsolutnu vrednost razlike svakog para.",
+   "solution": "|−4−6|=10; |−3−5|=8; |2−9|=7. Samo prvi par ima rastojanje 10.",
+   "level": "medium",
    "skill": "Rastojanje",
    "lesson": "rastojanje",
    "area": "celi-brojevi",
@@ -9278,7 +9301,7 @@
    "answer": "16",
    "hint": "Koristi apsolutnu vrednost razlike.",
    "solution": "|−14−2|=16.",
-   "level": "medium",
+   "level": "basic",
    "skill": "Rastojanje",
    "diagram": {
     "type": "number-line",
@@ -9312,9 +9335,9 @@
     "7"
    ],
    "answer": "−7",
-   "hint": "Traži se negativna tačka.",
-   "solution": "x=−7.",
-   "level": "advanced",
+   "hint": "Na rastojanju 7 od nule postoje dve tačke; izdvoji negativnu.",
+   "solution": "|x|=7 daje x=−7 ili x=7. Uslov x<0 isključuje 7, pa je x=−7.",
+   "level": "medium",
    "skill": "Rastojanje",
    "taskType": "rastojanje-i-znak",
    "lesson": "rastojanje",
@@ -9366,7 +9389,7 @@
   },
   {
    "id": "6-6g",
-   "prompt": "Odredi razliku temperatura.",
+   "prompt": "Za koliko stepeni Celzijusa se razlikuju temperature?",
    "math": "U jednom gradu je −7 °C, a u drugom 5 °C.",
    "kind": "input",
    "answer": "12",
@@ -9396,7 +9419,7 @@
    ],
    "answer": "x=−2 ili x=6",
    "hint": "Od tačke 2 kreni 4 mesta levo i desno.",
-   "solution": "Dobijamo 2−4=−2 i 2+4=6.",
+   "solution": "Od 2 pređi 4 jedinice u oba smera: 2−4=−2 i 2+4=6. Provera: |−2−2|=4 i |6−2|=4; druge tačke nisu na tom rastojanju.",
    "level": "medium",
    "skill": "Rastojanje",
    "taskType": "dve-tacke",
@@ -9436,12 +9459,12 @@
   {
    "id": "6-6j",
    "prompt": "Odredi koordinatu tačke B.",
-   "math": "A(−6), d(A,B)=9, B>0",
+   "math": "A(−6), B(b), d(A,B)=9, b>0",
    "kind": "input",
    "answer": "3",
-   "hint": "Od −6 kreni 9 jedinica udesno.",
-   "solution": "−6+9=3, pa je B(3).",
-   "level": "advanced",
+   "hint": "Razmotri oba smera od −6 i primeni uslov b>0.",
+   "solution": "b=−6−9=−15 ili b=−6+9=3. Pošto b>0, B(3). Provera: |−6−3|=9.",
+   "level": "medium",
    "skill": "Rastojanje",
    "taskType": "nepoznata-koordinata",
    "errorCategory": "method",
@@ -9471,7 +9494,7 @@
    "kind": "input",
    "answer": "-2",
    "hint": "Potraži tačku jednako udaljenu od A i B.",
-   "solution": "Tačka −2 je od oba kraja udaljena 4 jedinice.",
+   "solution": "d(A,B)=2−(−6)=8. Polovina je 4, pa je koordinata sredine −6+4=−2. Oba kraja su udaljena 4 jediničnih duži.",
    "level": "medium",
    "skill": "Rastojanje",
    "taskType": "distance-midpoint",
@@ -9509,7 +9532,7 @@
    "kind": "input",
    "answer": "-2",
    "hint": "Potraži tačku jednako udaljenu od A i B.",
-   "solution": "Tačka −2 je od oba kraja udaljena 5 jedinice.",
+   "solution": "d(A,B)=3−(−7)=10. Polovina je 5, pa je koordinata sredine −7+5=−2. Oba kraja su udaljena 5 jediničnih duži.",
    "level": "medium",
    "skill": "Rastojanje",
    "taskType": "distance-midpoint",
@@ -9546,7 +9569,7 @@
    "kind": "input",
    "answer": "-2",
    "hint": "Potraži tačku jednako udaljenu od A i B.",
-   "solution": "Tačka −2 je od oba kraja udaljena 6 jedinice.",
+   "solution": "d(A,B)=4−(−8)=12. Polovina je 6, pa je koordinata sredine −8+6=−2. Oba kraja su udaljena 6 jediničnih duži.",
    "level": "medium",
    "skill": "Rastojanje",
    "taskType": "distance-midpoint",
@@ -9583,7 +9606,7 @@
    "kind": "input",
    "answer": "-2",
    "hint": "Potraži tačku jednako udaljenu od A i B.",
-   "solution": "Tačka −2 je od oba kraja udaljena 7 jedinice.",
+   "solution": "d(A,B)=5−(−9)=14. Polovina je 7, pa je koordinata sredine −9+7=−2. Oba kraja su udaljena 7 jediničnih duži.",
    "level": "medium",
    "skill": "Rastojanje",
    "taskType": "distance-midpoint",
@@ -9620,7 +9643,7 @@
    "kind": "input",
    "answer": "-2",
    "hint": "Potraži tačku jednako udaljenu od A i B.",
-   "solution": "Tačka −2 je od oba kraja udaljena 8 jedinice.",
+   "solution": "d(A,B)=6−(−10)=16. Polovina je 8, pa je koordinata sredine −10+8=−2. Oba kraja su udaljena 8 jediničnih duži.",
    "level": "medium",
    "skill": "Rastojanje",
    "taskType": "distance-midpoint",
@@ -9657,7 +9680,7 @@
    "kind": "input",
    "answer": "-2",
    "hint": "Potraži tačku jednako udaljenu od A i B.",
-   "solution": "Tačka −2 je od oba kraja udaljena 9 jedinice.",
+   "solution": "d(A,B)=7−(−11)=18. Polovina je 9, pa je koordinata sredine −11+9=−2. Oba kraja su udaljena 9 jediničnih duži.",
    "level": "medium",
    "skill": "Rastojanje",
    "taskType": "distance-midpoint",
@@ -9694,8 +9717,8 @@
    "kind": "input",
    "answer": "-1",
    "hint": "Prvi uslov daje dve mogućnosti. Proveri drugi.",
-   "solution": "Prvi uslov daje x=−7 ili x=−1; samo x=−1 je i od 2 udaljen 3 jedinice.",
-   "level": "advanced",
+   "solution": "Prvi uslov daje x=−7 ili x=−1. Proverom drugog uslova, rastojanja od 2 su 9 i 3, redom. Samo x=−1 zadovoljava oba uslova.",
+   "level": "medium",
    "skill": "Rastojanje",
    "taskType": "distance-two",
    "errorCategory": "method",
@@ -9717,8 +9740,8 @@
    "kind": "input",
    "answer": "-2",
    "hint": "Prvi uslov daje dve mogućnosti. Proveri drugi.",
-   "solution": "Prvi uslov daje x=−8 ili x=−2; samo x=−2 je i od 1 udaljen 3 jedinice.",
-   "level": "advanced",
+   "solution": "Prvi uslov daje x=−8 ili x=−2. Proverom drugog uslova, rastojanja od 1 su 9 i 3, redom. Samo x=−2 zadovoljava oba uslova.",
+   "level": "medium",
    "skill": "Rastojanje",
    "taskType": "distance-two",
    "errorCategory": "method",
@@ -9739,8 +9762,8 @@
    "kind": "input",
    "answer": "-3",
    "hint": "Prvi uslov daje dve mogućnosti. Proveri drugi.",
-   "solution": "Prvi uslov daje x=−9 ili x=−3; samo x=−3 je i od 0 udaljen 3 jedinice.",
-   "level": "advanced",
+   "solution": "Prvi uslov daje x=−9 ili x=−3. Proverom drugog uslova, rastojanja od 0 su 9 i 3, redom. Samo x=−3 zadovoljava oba uslova.",
+   "level": "medium",
    "skill": "Rastojanje",
    "taskType": "distance-two",
    "errorCategory": "method",
@@ -9761,8 +9784,8 @@
    "kind": "input",
    "answer": "-4",
    "hint": "Prvi uslov daje dve mogućnosti. Proveri drugi.",
-   "solution": "Prvi uslov daje x=−10 ili x=−4; samo x=−4 je i od -1 udaljen 3 jedinice.",
-   "level": "advanced",
+   "solution": "Prvi uslov daje x=−10 ili x=−4. Proverom drugog uslova, rastojanja od -1 su 9 i 3, redom. Samo x=−4 zadovoljava oba uslova.",
+   "level": "medium",
    "skill": "Rastojanje",
    "taskType": "distance-two",
    "errorCategory": "method",
@@ -9783,8 +9806,8 @@
    "kind": "input",
    "answer": "-5",
    "hint": "Prvi uslov daje dve mogućnosti. Proveri drugi.",
-   "solution": "Prvi uslov daje x=−11 ili x=−5; samo x=−5 je i od -2 udaljen 3 jedinice.",
-   "level": "advanced",
+   "solution": "Prvi uslov daje x=−11 ili x=−5. Proverom drugog uslova, rastojanja od -2 su 9 i 3, redom. Samo x=−5 zadovoljava oba uslova.",
+   "level": "medium",
    "skill": "Rastojanje",
    "taskType": "distance-two",
    "errorCategory": "method",
@@ -9805,8 +9828,8 @@
    "kind": "input",
    "answer": "-6",
    "hint": "Prvi uslov daje dve mogućnosti. Proveri drugi.",
-   "solution": "Prvi uslov daje x=−12 ili x=−6; samo x=−6 je i od -3 udaljen 3 jedinice.",
-   "level": "advanced",
+   "solution": "Prvi uslov daje x=−12 ili x=−6. Proverom drugog uslova, rastojanja od -3 su 9 i 3, redom. Samo x=−6 zadovoljava oba uslova.",
+   "level": "medium",
    "skill": "Rastojanje",
    "taskType": "distance-two",
    "errorCategory": "method",
@@ -13110,8 +13133,8 @@
    "kind": "input",
    "answer": "15",
    "hint": "Koristi apsolutnu vrednost razlike.",
-   "solution": "|−11−4|=15.",
-   "level": "medium",
+   "solution": "|−11−4|=|−15|=15.",
+   "level": "basic",
    "skill": "Rastojanje",
    "lessonId": "rastojanje",
    "diagram": {

@@ -48,10 +48,10 @@ export const septemberTasks:Record<string,Task[]>={
   ],
   "rastojanje":[
     P(C("6-6f","Odredi rastojanje tačaka A i B.","",["3","5","7"],"5","Prebroj jedinične duži između tačaka.","Od −3 do 2 ima 5 jediničnih duži.","basic","Rastojanje"),"citanje-brojne-prave","diagram",{type:"number-line",min:-5,max:4,points:[{value:-3,label:"A"},{value:2,label:"B"}]}),
-    P(I("6-6g","Odredi razliku temperatura.","U jednom gradu je −7 °C, a u drugom 5 °C.","12","Razlika temperatura je rastojanje na brojnoj pravoj.","|−7−5|=12 °C.","medium","Rastojanje"),"kratak-kontekst","method"),
-    P(C("6-6h","Odredi sve moguće vrednosti x.","d(x,2)=4",["x=6","x=−2","x=−2 ili x=6"],"x=−2 ili x=6","Od tačke 2 kreni 4 mesta levo i desno.","Dobijamo 2−4=−2 i 2+4=6.","advanced","Rastojanje"),"dve-tacke","concept"),
+    P(I("6-6g","Za koliko stepeni Celzijusa se razlikuju temperature?","U jednom gradu je −7 °C, a u drugom 5 °C.","12","Razlika temperatura je rastojanje na brojnoj pravoj.","|−7−5|=12 °C.","medium","Rastojanje"),"kratak-kontekst","method"),
+    P(C("6-6h","Odredi sve moguće vrednosti x.","d(x,2)=4",["x=6","x=−2","x=−2 ili x=6"],"x=−2 ili x=6","Od tačke 2 kreni 4 mesta levo i desno.","Od 2 pređi 4 jedinice u oba smera: 2−4=−2 i 2+4=6. Provera: |−2−2|=4 i |6−2|=4; druge tačke nisu na tom rastojanju.","advanced","Rastojanje"),"dve-tacke","concept"),
     P(C("6-6i","Da li je tvrdnja tačna?","d(−4,3)=−7",["Tačno","Netačno"],"Netačno","Rastojanje ne može biti negativno.","d(−4,3)=|−4−3|=7.","medium","Rastojanje"),"tacno-netacno","concept"),
-    P(I("6-6j","Odredi koordinatu tačke B.","A(−6), d(A,B)=9, B>0","3","Od −6 kreni 9 jedinica udesno.","−6+9=3, pa je B(3).","advanced","Rastojanje"),"nepoznata-koordinata","method"),
+    P(I("6-6j","Odredi koordinatu tačke B.","A(−6), B(b), d(A,B)=9, b>0","3","Razmotri oba smera od −6 i primeni uslov b>0.","b=−6−9=−15 ili b=−6+9=3. Pošto b>0, B(3). Provera: |−6−3|=9.","advanced","Rastojanje"),"nepoznata-koordinata","method"),
   ],
   "sabiranje-oduzimanje":[
     P(I("6-7f","Izračunaj.","−12−(−7)−5","-10","Prvo pretvori oduzimanje negativnog broja u sabiranje.","−12+7−5=−5−5=−10.","basic","Sabiranje i oduzimanje"),"izraz-sa-zagradama","calculation"),

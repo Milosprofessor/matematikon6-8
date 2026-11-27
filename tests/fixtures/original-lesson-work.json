@@ -821,14 +821,14 @@
         "prompt": "Odredi rastojanje.",
         "math": "M(−9), N(−3)",
         "answer": "6",
-        "hint": "Tačke su sa iste strane nule.",
-        "solution": "|−9 − (−3)| = |−6| = 6.",
-        "level": "medium",
+        "hint": "Oduzimanje negativne koordinate pretvori u sabiranje suprotnog broja.",
+        "solution": "|−9−(−3)|=|−9+3|=|−6|=6.",
+        "level": "basic",
         "skill": "Rastojanje"
       },
       {
         "id": "6-6g",
-        "prompt": "Odredi razliku temperatura.",
+        "prompt": "Za koliko stepeni Celzijusa se razlikuju temperature?",
         "math": "U jednom gradu je −7 °C, a u drugom 5 °C.",
         "answer": "12",
         "hint": "Razlika temperatura je rastojanje na brojnoj pravoj.",
@@ -847,7 +847,7 @@
         ],
         "answer": "x=−2 ili x=6",
         "hint": "Od tačke 2 kreni 4 mesta levo i desno.",
-        "solution": "Dobijamo 2−4=−2 i 2+4=6.",
+        "solution": "Od 2 pređi 4 jedinice u oba smera: 2−4=−2 i 2+4=6. Provera: |−2−2|=4 i |6−2|=4; druge tačke nisu na tom rastojanju.",
         "level": "medium",
         "skill": "Rastojanje"
       },
@@ -857,7 +857,7 @@
         "math": "A(−6), B(2)",
         "answer": "-2",
         "hint": "Potraži tačku jednako udaljenu od A i B.",
-        "solution": "Tačka −2 je od oba kraja udaljena 4 jedinice.",
+        "solution": "d(A,B)=2−(−6)=8. Polovina je 4, pa je koordinata sredine −6+4=−2. Oba kraja su udaljena 4 jediničnih duži.",
         "level": "medium",
         "skill": "Rastojanje"
       },
@@ -871,19 +871,19 @@
           "7"
         ],
         "answer": "−7",
-        "hint": "Traži se negativna tačka.",
-        "solution": "x=−7.",
-        "level": "advanced",
+        "hint": "Na rastojanju 7 od nule postoje dve tačke; izdvoji negativnu.",
+        "solution": "|x|=7 daje x=−7 ili x=7. Uslov x<0 isključuje 7, pa je x=−7.",
+        "level": "medium",
         "skill": "Rastojanje"
       },
       {
         "id": "6-6j",
         "prompt": "Odredi koordinatu tačke B.",
-        "math": "A(−6), d(A,B)=9, B>0",
+        "math": "A(−6), B(b), d(A,B)=9, b>0",
         "answer": "3",
-        "hint": "Od −6 kreni 9 jedinica udesno.",
-        "solution": "−6+9=3, pa je B(3).",
-        "level": "advanced",
+        "hint": "Razmotri oba smera od −6 i primeni uslov b>0.",
+        "solution": "b=−6−9=−15 ili b=−6+9=3. Pošto b>0, B(3). Provera: |−6−3|=9.",
+        "level": "medium",
         "skill": "Rastojanje"
       },
       {
@@ -892,8 +892,8 @@
         "math": "d(x,−4)=3 i d(x,2)=3",
         "answer": "-1",
         "hint": "Prvi uslov daje dve mogućnosti. Proveri drugi.",
-        "solution": "Prvi uslov daje x=−7 ili x=−1; samo x=−1 je i od 2 udaljen 3 jedinice.",
-        "level": "advanced",
+        "solution": "Prvi uslov daje x=−7 ili x=−1. Proverom drugog uslova, rastojanja od 2 su 9 i 3, redom. Samo x=−1 zadovoljava oba uslova.",
+        "level": "medium",
         "skill": "Rastojanje"
       }
     ]

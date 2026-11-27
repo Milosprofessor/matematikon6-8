@@ -1,3 +1,28 @@
+# Checkpoint 5 — Rastojanje tačaka na brojnoj pravoj
+
+Datum: 27.11.2026. Polazni GitHub commit b0d402d; lokalni sadržajni commit 8604cad. Nalazi G6C-015–016.
+
+| Stavka | Stanje |
+|---|---:|
+| Potpuno recenzirani zadaci | 185/919 |
+| Delimično | 0 |
+| Nepregledani | 734 |
+| Lekcije | 7/45 |
+| Postojeći rešeni primeri | 7/81 |
+| Novi rešeni primeri | 14/14 |
+
+- 23/23 pojedinačna zadatka, uključujući t6-6. 6 osnovnih, 17 srednjih; 12 promena nivoa, 20 izmenjenih zadataka. Očuvani ID-jevi i odgovori.
+- Potpun postupak za sredinu duži, provera oba kandidata, oznaka koordinate b umesto tačke B u nejednakosti; precizirana nenegativna razlika temperatura. Sve broj­ne prave i tri rešena primera provereni.
+- 120/120 programskih testova, oba build-a, TypeScript i lint uspešni. 22 browser zapisa, uključujući prikaz tri primera, ćirilicu i očuvanje napretka. Emulacija, ne fizički uređaji; nisu pojedinačno kroz UI birane sve adaptivne varijante.
+- LOG-06: na 6-6g broj 12 prihvaćen, 12 °C odbijen; validator ostaje neizmenjen za fazu 3.
+- Godišnji ishodi 6.01–6.04 i dalje delimično pregledani.
+
+**Tačka nastavka:** Celi brojevi, sabiranje-oduzimanje, prvi ID 6-7a. 140/283 zadatka oblasti recenzirano. Faza 2C nije završena.
+
+Dokazi: qa/phase2c/grade6/rastojanje, ledger-tasks.json, ledger-lessons.json i Excel evidencija.
+
+---
+
 # Checkpoint 4 — Oduzimanje celih brojeva
 
 Datum: 27.11.2026. Polazni commit 727ef99; sadržajni commit c8d855c. Nalazi G6C-013–014.
