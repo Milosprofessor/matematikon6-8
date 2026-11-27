@@ -1,0 +1,262 @@
+[
+  {
+    "id": "kratko-obnavljanje-5",
+    "area": "obnavljanje-5",
+    "status": "potpuno recenzirana",
+    "theory": "Precizirani jednaki prioriteti; definicije pravih, uglova, kolinearnosti i formula razlomaka uz c>0 pregledane.",
+    "sequence": "Podsetnik predznanja: prirodni brojevi → razlomci → geometrija, bez uvođenja gradiva višeg razreda.",
+    "examples": [
+      {
+        "question": "Izračunaj: 36 : 6 + 4 · 3",
+        "steps": [
+          "Prvo deljenje i množenje: 36 : 6 = 6 i 4 · 3 = 12.",
+          "Zatim sabiranje: 6 + 12 = 18.",
+          "Rezultat je 18."
+        ],
+        "verification": "36/6+4·3=18"
+      },
+      {
+        "question": "Izračunaj [[frac:2|7]] + [[frac:3|7]].",
+        "steps": [
+          "Oba razlomka predstavljaju sedmine iste celine. Sabiramo brojioce, imenilac ostaje 7.",
+          "[[frac:2|7]]+[[frac:3|7]]=[[frac:2+3|7]]=[[frac:5|7]].",
+          "Rezultat je pet sedmina."
+        ],
+        "verification": "2/7+3/7=5/7"
+      },
+      {
+        "question": "Obim pravougaonika je 30 cm, jedna stranica je 6 cm. Odredi drugu.",
+        "steps": [
+          "Obim je zbir svih stranica: O=2(a+b).",
+          "30=2(6+b). Podelimo obe strane sa 2: 15=6+b.",
+          "Oduzmimo 6 sa obe strane: b=15−6=9 cm. Provera: 2(6+9)=30 cm."
+        ],
+        "verification": "2(6+9)=30 cm"
+      }
+    ],
+    "illustration": "Pravougaonik sa parovima jednakih stranica; dijagonala nije deo obima; oznake a,b odgovaraju formuli.",
+    "misconceptions": "Jednak prioritet sleva nadesno, ne sabirati imenioce, obim nije površina.",
+    "assessment": "10 zadataka u redovnom radu i 45 u bazenu; obnavljanje nema zasebnu godišnju proveru; 27 osnovnih i 18 srednjih; nema naprednih, jer postojeći zadaci ne zahtevaju izbor složene strategije.",
+    "limits": "Obnavljanje predznanja, ne dokaz godišnjeg ishoda šestog razreda; VAR ponavljaju iste konstrukcije, bez novih identifikatora."
+  },
+  {
+    "id": "skup-celih-brojeva",
+    "area": "celi-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "apsolutna-vrednost",
+    "area": "celi-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "uporedjivanje",
+    "area": "celi-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "sabiranje",
+    "area": "celi-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "oduzimanje",
+    "area": "celi-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "rastojanje",
+    "area": "celi-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "sabiranje-oduzimanje",
+    "area": "celi-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "mnozenje",
+    "area": "celi-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "deljenje",
+    "area": "celi-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "mnozenje-deljenje",
+    "area": "celi-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "brojevni-izrazi",
+    "area": "celi-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "trougao-vrste",
+    "area": "trougao",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "zbir-uglova-trougla",
+    "area": "trougao",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "uglovi-transverzala",
+    "area": "trougao",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "uglovi-na-transverzali",
+    "area": "trougao",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "odnos-stranica-uglova",
+    "area": "trougao",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "nejednakost-trougla",
+    "area": "trougao",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "skup-racionalnih-brojeva",
+    "area": "racionalni-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "apsolutna-vrednost-racionalnog",
+    "area": "racionalni-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "q-zapisi",
+    "area": "racionalni-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "q-poredak",
+    "area": "racionalni-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "q-zbir-razlika",
+    "area": "racionalni-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "q-proizvod",
+    "area": "racionalni-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "q-deljenje-izrazi",
+    "area": "racionalni-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "q-jednacine",
+    "area": "racionalni-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "q-nejednacine",
+    "area": "racionalni-brojevi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-model",
+    "area": "s6-primene",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-konstrukcije",
+    "area": "s6-trouglovi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-podudarnost",
+    "area": "s6-trouglovi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-koordinate",
+    "area": "s6-odnosi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-preslikavanja",
+    "area": "s6-odnosi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-podaci",
+    "area": "s6-odnosi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-razmera",
+    "area": "s6-odnosi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-zavisnost",
+    "area": "s6-odnosi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-procenti",
+    "area": "s6-odnosi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-uglovi",
+    "area": "s6-cetvorouglovi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-paralelogram",
+    "area": "s6-cetvorouglovi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-vektori",
+    "area": "s6-cetvorouglovi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-trapez",
+    "area": "s6-cetvorouglovi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-cetiri-stranice",
+    "area": "s6-cetvorouglovi",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-merenje",
+    "area": "s6-povrsine",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-trougao-trapez",
+    "area": "s6-povrsine",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-delovi",
+    "area": "s6-povrsine",
+    "status": "nepregledana u fazi 2C"
+  },
+  {
+    "id": "s6-sinteza",
+    "area": "s6-zavrsnica",
+    "status": "nepregledana u fazi 2C"
+  }
+]

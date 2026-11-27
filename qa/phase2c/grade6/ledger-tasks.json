@@ -1,0 +1,6987 @@
+[
+  {
+    "id": "6r-1",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 4205−1987=2218; četiri parcijalna oduzimanja",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Poravnaj cifre iste mesne vrednosti; kada treba, pozajmi iz sledećeg mesta.",
+    "procedure": "Potvrđeno: Pošto je 1 987=1 000+900+80+7, oduzimamo redom: 4 205−1 000=3 205; 3 205−900=2 305; 2 305−80=2 225; 2 225−7=2 218. Rezultat je 2 218.",
+    "level": "basic",
+    "level_reason": "Neposredno oduzimanje prirodnih brojeva.",
+    "old_level": "basic",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Nedovoljno razvijen postupak.",
+    "fix": "hint, solution",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "6r-2",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 3/8+2/8=5/8; 5/16 i 1/8 su netačni",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Imenioci su jednaki.",
+    "procedure": "Potvrđeno: Sabiramo brojioce: [[frac:3+2|8]] = [[frac:5|8]].",
+    "level": "basic",
+    "level_reason": "Isti imenilac, neposredna primena.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo.",
+    "fix": "level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "6r-3",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: Definicija: tačke na istoj pravoj su kolinearne; ne mogu biti temena nedegenerisanog trougla.",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Kako nazivamo tačke na istoj pravoj?",
+    "procedure": "Potvrđeno: Tačke koje pripadaju istoj pravoj su kolinearne.",
+    "level": "basic",
+    "level_reason": "Prepoznavanje definicije.",
+    "old_level": "basic",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Distraktori nisu ista matematička kategorija.",
+    "fix": "choices",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-decimal-0",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 1/5 = 0,2; desetine",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Deseti deo zapisujemo jednom decimalom.",
+    "procedure": "Potvrđeno: [[frac:2|10]]=0,2.",
+    "level": "basic",
+    "level_reason": "Neposredno čitanje desetina.",
+    "old_level": "basic",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "",
+    "fix": "Nije potrebna izmena",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-decimal-1",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 3/10 = 0,3; desetine",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Deseti deo zapisujemo jednom decimalom.",
+    "procedure": "Potvrđeno: [[frac:3|10]]=0,3.",
+    "level": "basic",
+    "level_reason": "Neposredno čitanje desetina.",
+    "old_level": "basic",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "",
+    "fix": "Nije potrebna izmena",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-decimal-2",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 2/5 = 0,4; desetine",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Deseti deo zapisujemo jednom decimalom.",
+    "procedure": "Potvrđeno: [[frac:4|10]]=0,4.",
+    "level": "basic",
+    "level_reason": "Neposredno čitanje desetina.",
+    "old_level": "basic",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "",
+    "fix": "Nije potrebna izmena",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-decimal-3",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 1/2 = 0,5; desetine",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Deseti deo zapisujemo jednom decimalom.",
+    "procedure": "Potvrđeno: [[frac:5|10]]=0,5.",
+    "level": "basic",
+    "level_reason": "Neposredno čitanje desetina.",
+    "old_level": "basic",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "",
+    "fix": "Nije potrebna izmena",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-decimal-4",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 3/5 = 0,6; desetine",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Deseti deo zapisujemo jednom decimalom.",
+    "procedure": "Potvrđeno: [[frac:6|10]]=0,6.",
+    "level": "basic",
+    "level_reason": "Neposredno čitanje desetina.",
+    "old_level": "basic",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "",
+    "fix": "Nije potrebna izmena",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-decimal-5",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 7/10 = 0,7; desetine",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Deseti deo zapisujemo jednom decimalom.",
+    "procedure": "Potvrđeno: [[frac:7|10]]=0,7.",
+    "level": "basic",
+    "level_reason": "Neposredno čitanje desetina.",
+    "old_level": "basic",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "",
+    "fix": "Nije potrebna izmena",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-order-0",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 130 < 301 < 310",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Uporedi stotine, pa desetice.",
+    "procedure": "Potvrđeno: 130<301<310.",
+    "level": "basic",
+    "level_reason": "Poređenje mesnih vrednosti tri broja.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo.",
+    "fix": "level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-order-1",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 131 < 302 < 311",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Uporedi stotine, pa desetice.",
+    "procedure": "Potvrđeno: 131<302<311.",
+    "level": "basic",
+    "level_reason": "Poređenje mesnih vrednosti tri broja.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo.",
+    "fix": "level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-order-2",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 132 < 303 < 312",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Uporedi stotine, pa desetice.",
+    "procedure": "Potvrđeno: 132<303<312.",
+    "level": "basic",
+    "level_reason": "Poređenje mesnih vrednosti tri broja.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo.",
+    "fix": "level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-order-3",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 133 < 304 < 313",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Uporedi stotine, pa desetice.",
+    "procedure": "Potvrđeno: 133<304<313.",
+    "level": "basic",
+    "level_reason": "Poređenje mesnih vrednosti tri broja.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo.",
+    "fix": "level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-order-4",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 134 < 305 < 314",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Uporedi stotine, pa desetice.",
+    "procedure": "Potvrđeno: 134<305<314.",
+    "level": "basic",
+    "level_reason": "Poređenje mesnih vrednosti tri broja.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo.",
+    "fix": "level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-order-5",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 135 < 306 < 315",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Uporedi stotine, pa desetice.",
+    "procedure": "Potvrđeno: 135<306<315.",
+    "level": "basic",
+    "level_reason": "Poređenje mesnih vrednosti tri broja.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo.",
+    "fix": "level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-angle-0",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: α+β=180°, β=140°",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Opružen ugao ima 180°.",
+    "procedure": "Potvrđeno: α+β=180°. 40°+β=180°. β=180°−40°=140°.",
+    "level": "basic",
+    "level_reason": "Jedna direktna primena zbira uglova.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo; implicitna jedinica i preskočena opšta relacija.",
+    "fix": "prompt, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran",
+    "technical_issue": "LOG-06: tačan broj prihvaćen, isti odgovor sa jedinicom odbijen (140°); faza 3."
+  },
+  {
+    "id": "sw-r5-angle-1",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: α+β=180°, β=135°",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Opružen ugao ima 180°.",
+    "procedure": "Potvrđeno: α+β=180°. 45°+β=180°. β=180°−45°=135°.",
+    "level": "basic",
+    "level_reason": "Jedna direktna primena zbira uglova.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo; implicitna jedinica i preskočena opšta relacija.",
+    "fix": "prompt, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran",
+    "technical_issue": "LOG-06: tačan broj prihvaćen, isti odgovor sa jedinicom odbijen (135°); faza 3."
+  },
+  {
+    "id": "sw-r5-angle-2",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: α+β=180°, β=130°",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Opružen ugao ima 180°.",
+    "procedure": "Potvrđeno: α+β=180°. 50°+β=180°. β=180°−50°=130°.",
+    "level": "basic",
+    "level_reason": "Jedna direktna primena zbira uglova.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo; implicitna jedinica i preskočena opšta relacija.",
+    "fix": "prompt, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran",
+    "technical_issue": "LOG-06: tačan broj prihvaćen, isti odgovor sa jedinicom odbijen (130°); faza 3."
+  },
+  {
+    "id": "sw-r5-angle-3",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: α+β=180°, β=125°",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Opružen ugao ima 180°.",
+    "procedure": "Potvrđeno: α+β=180°. 55°+β=180°. β=180°−55°=125°.",
+    "level": "basic",
+    "level_reason": "Jedna direktna primena zbira uglova.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo; implicitna jedinica i preskočena opšta relacija.",
+    "fix": "prompt, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran",
+    "technical_issue": "LOG-06: tačan broj prihvaćen, isti odgovor sa jedinicom odbijen (125°); faza 3."
+  },
+  {
+    "id": "sw-r5-angle-4",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: α+β=180°, β=120°",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Opružen ugao ima 180°.",
+    "procedure": "Potvrđeno: α+β=180°. 60°+β=180°. β=180°−60°=120°.",
+    "level": "basic",
+    "level_reason": "Jedna direktna primena zbira uglova.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo; implicitna jedinica i preskočena opšta relacija.",
+    "fix": "prompt, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran",
+    "technical_issue": "LOG-06: tačan broj prihvaćen, isti odgovor sa jedinicom odbijen (120°); faza 3."
+  },
+  {
+    "id": "sw-r5-angle-5",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: α+β=180°, β=115°",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Opružen ugao ima 180°.",
+    "procedure": "Potvrđeno: α+β=180°. 65°+β=180°. β=180°−65°=115°.",
+    "level": "basic",
+    "level_reason": "Jedna direktna primena zbira uglova.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo; implicitna jedinica i preskočena opšta relacija.",
+    "fix": "prompt, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran",
+    "technical_issue": "LOG-06: tačan broj prihvaćen, isti odgovor sa jedinicom odbijen (115°); faza 3."
+  },
+  {
+    "id": "sw-r5-compare-0",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 2/5 < 3/5",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Imenioci su jednaki.",
+    "procedure": "Potvrđeno: Pošto je 2<3, važi [[frac:2|5]]<[[frac:3|5]].",
+    "level": "basic",
+    "level_reason": "Jednaki pozitivni imenioci, poređenje brojilaca.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo; postupak nije prikazivao konkretan zaključak.",
+    "fix": "solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-compare-1",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 1/2 < 2/3",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Imenioci su jednaki.",
+    "procedure": "Potvrđeno: Pošto je 3<4, važi [[frac:3|6]]<[[frac:4|6]].",
+    "level": "basic",
+    "level_reason": "Jednaki pozitivni imenioci, poređenje brojilaca.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo; postupak nije prikazivao konkretan zaključak.",
+    "fix": "solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-compare-2",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 4/7 < 5/7",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Imenioci su jednaki.",
+    "procedure": "Potvrđeno: Pošto je 4<5, važi [[frac:4|7]]<[[frac:5|7]].",
+    "level": "basic",
+    "level_reason": "Jednaki pozitivni imenioci, poređenje brojilaca.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo; postupak nije prikazivao konkretan zaključak.",
+    "fix": "solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-compare-3",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 5/8 < 3/4",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Imenioci su jednaki.",
+    "procedure": "Potvrđeno: Pošto je 5<6, važi [[frac:5|8]]<[[frac:6|8]].",
+    "level": "basic",
+    "level_reason": "Jednaki pozitivni imenioci, poređenje brojilaca.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo; postupak nije prikazivao konkretan zaključak.",
+    "fix": "solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-compare-4",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 2/3 < 7/9",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Imenioci su jednaki.",
+    "procedure": "Potvrđeno: Pošto je 6<7, važi [[frac:6|9]]<[[frac:7|9]].",
+    "level": "basic",
+    "level_reason": "Jednaki pozitivni imenioci, poređenje brojilaca.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo; postupak nije prikazivao konkretan zaključak.",
+    "fix": "solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-compare-5",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 7/10 < 4/5",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Imenioci su jednaki.",
+    "procedure": "Potvrđeno: Pošto je 7<8, važi [[frac:7|10]]<[[frac:8|10]].",
+    "level": "basic",
+    "level_reason": "Jednaki pozitivni imenioci, poređenje brojilaca.",
+    "old_level": "medium",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Previsok nivo; postupak nije prikazivao konkretan zaključak.",
+    "fix": "solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-fractionmissing-0",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: x=3/4−1/4=1/2",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Nepoznati sabirak dobijaš oduzimanjem poznatog sabirka od zbira.",
+    "procedure": "Potvrđeno: x=[[frac:3|4]]−[[frac:1|4]]=[[frac:3−1|4]]=[[frac:2|4]].",
+    "level": "medium",
+    "level_reason": "Izbor inverzne operacije i račun sa razlomcima.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; skraćen postupak.",
+    "fix": "hint, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-fractionmissing-1",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: x=3/5−1/5=2/5",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Nepoznati sabirak dobijaš oduzimanjem poznatog sabirka od zbira.",
+    "procedure": "Potvrđeno: x=[[frac:3|5]]−[[frac:1|5]]=[[frac:3−1|5]]=[[frac:2|5]].",
+    "level": "medium",
+    "level_reason": "Izbor inverzne operacije i račun sa razlomcima.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; skraćen postupak.",
+    "fix": "hint, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-fractionmissing-2",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: x=1/2−1/6=1/3",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Nepoznati sabirak dobijaš oduzimanjem poznatog sabirka od zbira.",
+    "procedure": "Potvrđeno: x=[[frac:3|6]]−[[frac:1|6]]=[[frac:3−1|6]]=[[frac:2|6]].",
+    "level": "medium",
+    "level_reason": "Izbor inverzne operacije i račun sa razlomcima.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; skraćen postupak.",
+    "fix": "hint, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-fractionmissing-3",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: x=3/7−1/7=2/7",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Nepoznati sabirak dobijaš oduzimanjem poznatog sabirka od zbira.",
+    "procedure": "Potvrđeno: x=[[frac:3|7]]−[[frac:1|7]]=[[frac:3−1|7]]=[[frac:2|7]].",
+    "level": "medium",
+    "level_reason": "Izbor inverzne operacije i račun sa razlomcima.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; skraćen postupak.",
+    "fix": "hint, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-fractionmissing-4",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: x=3/8−1/8=1/4",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Nepoznati sabirak dobijaš oduzimanjem poznatog sabirka od zbira.",
+    "procedure": "Potvrđeno: x=[[frac:3|8]]−[[frac:1|8]]=[[frac:3−1|8]]=[[frac:2|8]].",
+    "level": "medium",
+    "level_reason": "Izbor inverzne operacije i račun sa razlomcima.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; skraćen postupak.",
+    "fix": "hint, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-fractionmissing-5",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: x=1/3−1/9=2/9",
+    "alternatives": "Tačno jedna matematički odgovarajuća alternativa; ostale netačne.",
+    "hint": "Primeren: Nepoznati sabirak dobijaš oduzimanjem poznatog sabirka od zbira.",
+    "procedure": "Potvrđeno: x=[[frac:3|9]]−[[frac:1|9]]=[[frac:3−1|9]]=[[frac:2|9]].",
+    "level": "medium",
+    "level_reason": "Izbor inverzne operacije i račun sa razlomcima.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; skraćen postupak.",
+    "fix": "hint, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-expression-0",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 22−4·3+6=10+6=16",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Množenje ima prednost.",
+    "procedure": "Potvrđeno: 22−4·3+6=22−12+6=10+6=16.",
+    "level": "medium",
+    "level_reason": "Više operacija i njihov prioritet.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; preskočeno oduzimanje.",
+    "fix": "solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-expression-1",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 26−4·4+6=10+6=16",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Množenje ima prednost.",
+    "procedure": "Potvrđeno: 26−4·4+6=26−16+6=10+6=16.",
+    "level": "medium",
+    "level_reason": "Više operacija i njihov prioritet.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; preskočeno oduzimanje.",
+    "fix": "solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-expression-2",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 30−4·5+6=10+6=16",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Množenje ima prednost.",
+    "procedure": "Potvrđeno: 30−4·5+6=30−20+6=10+6=16.",
+    "level": "medium",
+    "level_reason": "Više operacija i njihov prioritet.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; preskočeno oduzimanje.",
+    "fix": "solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-expression-3",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 34−4·6+6=10+6=16",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Množenje ima prednost.",
+    "procedure": "Potvrđeno: 34−4·6+6=34−24+6=10+6=16.",
+    "level": "medium",
+    "level_reason": "Više operacija i njihov prioritet.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; preskočeno oduzimanje.",
+    "fix": "solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-expression-4",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 38−4·7+6=10+6=16",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Množenje ima prednost.",
+    "procedure": "Potvrđeno: 38−4·7+6=38−28+6=10+6=16.",
+    "level": "medium",
+    "level_reason": "Više operacija i njihov prioritet.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; preskočeno oduzimanje.",
+    "fix": "solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-expression-5",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: 42−4·8+6=10+6=16",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Množenje ima prednost.",
+    "procedure": "Potvrđeno: 42−4·8+6=42−32+6=10+6=16.",
+    "level": "medium",
+    "level_reason": "Više operacija i njihov prioritet.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; preskočeno oduzimanje.",
+    "fix": "solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "sw-r5-rectangle-0",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: O=2(a+b), b=22/2−4=7 cm",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Polovina obima je zbir dve susedne stranice.",
+    "procedure": "Potvrđeno: O=2(a+b). 22=2(4+b). Delimo obe strane sa 2: 11=4+b. Oduzimamo 4: b=11−4=7 cm.",
+    "level": "medium",
+    "level_reason": "Izbor formule i dva inverzna koraka.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; nedostajala zamena i opšta formula, jedinica implicitna.",
+    "fix": "prompt, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran",
+    "technical_issue": "LOG-06: tačan broj prihvaćen, isti odgovor sa jedinicom odbijen (7 cm); faza 3."
+  },
+  {
+    "id": "sw-r5-rectangle-1",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: O=2(a+b), b=26/2−5=8 cm",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Polovina obima je zbir dve susedne stranice.",
+    "procedure": "Potvrđeno: O=2(a+b). 26=2(5+b). Delimo obe strane sa 2: 13=5+b. Oduzimamo 5: b=13−5=8 cm.",
+    "level": "medium",
+    "level_reason": "Izbor formule i dva inverzna koraka.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; nedostajala zamena i opšta formula, jedinica implicitna.",
+    "fix": "prompt, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran",
+    "technical_issue": "LOG-06: tačan broj prihvaćen, isti odgovor sa jedinicom odbijen (8 cm); faza 3."
+  },
+  {
+    "id": "sw-r5-rectangle-2",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: O=2(a+b), b=30/2−6=9 cm",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Polovina obima je zbir dve susedne stranice.",
+    "procedure": "Potvrđeno: O=2(a+b). 30=2(6+b). Delimo obe strane sa 2: 15=6+b. Oduzimamo 6: b=15−6=9 cm.",
+    "level": "medium",
+    "level_reason": "Izbor formule i dva inverzna koraka.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; nedostajala zamena i opšta formula, jedinica implicitna.",
+    "fix": "prompt, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran",
+    "technical_issue": "LOG-06: tačan broj prihvaćen, isti odgovor sa jedinicom odbijen (9 cm); faza 3."
+  },
+  {
+    "id": "sw-r5-rectangle-3",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: O=2(a+b), b=34/2−7=10 cm",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Polovina obima je zbir dve susedne stranice.",
+    "procedure": "Potvrđeno: O=2(a+b). 34=2(7+b). Delimo obe strane sa 2: 17=7+b. Oduzimamo 7: b=17−7=10 cm.",
+    "level": "medium",
+    "level_reason": "Izbor formule i dva inverzna koraka.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; nedostajala zamena i opšta formula, jedinica implicitna.",
+    "fix": "prompt, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran",
+    "technical_issue": "LOG-06: tačan broj prihvaćen, isti odgovor sa jedinicom odbijen (10 cm); faza 3."
+  },
+  {
+    "id": "sw-r5-rectangle-4",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: O=2(a+b), b=38/2−8=11 cm",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Polovina obima je zbir dve susedne stranice.",
+    "procedure": "Potvrđeno: O=2(a+b). 38=2(8+b). Delimo obe strane sa 2: 19=8+b. Oduzimamo 8: b=19−8=11 cm.",
+    "level": "medium",
+    "level_reason": "Izbor formule i dva inverzna koraka.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; nedostajala zamena i opšta formula, jedinica implicitna.",
+    "fix": "prompt, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran",
+    "technical_issue": "LOG-06: tačan broj prihvaćen, isti odgovor sa jedinicom odbijen (11 cm); faza 3."
+  },
+  {
+    "id": "sw-r5-rectangle-5",
+    "area": "obnavljanje-5",
+    "lesson": "kratko-obnavljanje-5",
+    "requirement": "Potpun i jednoznačan; konkretni parametri pregledani.",
+    "answer": "Potvrđeno: O=2(a+b), b=42/2−9=12 cm",
+    "alternatives": "Nije primenljivo (unos).",
+    "hint": "Primeren: Polovina obima je zbir dve susedne stranice.",
+    "procedure": "Potvrđeno: O=2(a+b). 42=2(9+b). Delimo obe strane sa 2: 21=9+b. Oduzimamo 9: b=21−9=12 cm.",
+    "level": "medium",
+    "level_reason": "Izbor formule i dva inverzna koraka.",
+    "old_level": "advanced",
+    "illustration": "Nema posebne ilustracije zadatka; tekst dovoljan.",
+    "notation": "Proveren matematički zapis; jedinica u zahtevu/postupku kada je primenljiva.",
+    "issue": "Napredni nivo neopravdan; nedostajala zamena i opšta formula, jedinica implicitna.",
+    "fix": "prompt, solution, level",
+    "method": "Pojedinačni semantički pregled i nezavisna egzaktna provera konkretnog parametra/alternative; generator pregledan.",
+    "status": "potpuno recenziran",
+    "technical_issue": "LOG-06: tačan broj prihvaćen, isti odgovor sa jedinicom odbijen (12 cm); faza 3."
+  },
+  {
+    "id": "6-1a",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-1b",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-1c",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-1d",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-1e",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-1f",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-1g",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-1h",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-1i",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-1j",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-1k",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-integer-reverse-0",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-integer-reverse-1",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-integer-reverse-2",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-integer-reverse-3",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-integer-reverse-4",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-integer-reverse-5",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-2a",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-2b",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-2c",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-2d",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-2e",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-2f",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-2g",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-2h",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-2i",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-2j",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-absolute-diagram-0",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-absolute-diagram-1",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-absolute-diagram-2",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-absolute-diagram-3",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-absolute-diagram-4",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-absolute-diagram-5",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-absolute-table-0",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-absolute-table-1",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-absolute-table-2",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-absolute-table-3",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-absolute-table-4",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-absolute-table-5",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-3a",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-3b",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-3c",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-3d",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-3e",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-3f",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-3g",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-3h",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-3i",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-3j",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-order-count-0",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-order-count-1",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-order-count-2",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-order-count-3",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-order-count-4",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-order-count-5",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-order-digit-0",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-order-digit-1",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-order-digit-2",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-order-digit-3",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-order-digit-4",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-order-digit-5",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-4a",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-4b",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-4c",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-4d",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-4e",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-4f",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-4g",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-4h",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-4i",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-4j",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-table-0",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-table-1",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-table-2",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-table-3",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-table-4",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-table-5",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-cancel-0",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-cancel-1",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-cancel-2",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-cancel-3",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-cancel-4",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-cancel-5",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-signcondition-0",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-signcondition-1",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-signcondition-2",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-signcondition-3",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-signcondition-4",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-add-signcondition-5",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-5a",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-5b",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-5c",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-5d",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-5e",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-5f",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-5g",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-5h",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-5i",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-5j",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-subtract-table-0",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-subtract-table-1",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-subtract-table-2",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-subtract-table-3",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-subtract-table-4",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-subtract-table-5",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-subtract-compare-0",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-subtract-compare-1",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-subtract-compare-2",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-subtract-compare-3",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-subtract-compare-4",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-subtract-compare-5",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-6a",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-6b",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-6c",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-6d",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-6e",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-6f",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-6g",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-6h",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-6i",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-6j",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-distance-midpoint-0",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-distance-midpoint-1",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-distance-midpoint-2",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-distance-midpoint-3",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-distance-midpoint-4",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-distance-midpoint-5",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-distance-two-0",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-distance-two-1",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-distance-two-2",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-distance-two-3",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-distance-two-4",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-distance-two-5",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-7a",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-7b",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-7c",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-7d",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-7e",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-7f",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-7g",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-7h",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-7i",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-7j",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-signed-table-0",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-signed-table-1",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-signed-table-2",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-signed-table-3",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-signed-table-4",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-signed-table-5",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-signed-reverse-0",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-signed-reverse-1",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-signed-reverse-2",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-signed-reverse-3",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-signed-reverse-4",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "sw-signed-reverse-5",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-8a",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-8b",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-8c",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-8d",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-8e",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-8f",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-8g",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-8h",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-8i",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-8j",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-sum-0",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-sum-1",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-sum-2",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-sum-3",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-sum-4",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-sum-5",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-table-0",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-table-1",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-table-2",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-table-3",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-table-4",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-table-5",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-compare-0",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-compare-1",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-compare-2",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-compare-3",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-compare-4",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-compare-5",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-distribute-0",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-distribute-1",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-distribute-2",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-distribute-3",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-distribute-4",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-mul-distribute-5",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-9a",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-9b",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-9c",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-9d",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-9e",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-9f",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-9g",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-9h",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-9i",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-9j",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-table-0",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-table-1",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-table-2",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-table-3",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-table-4",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-table-5",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-compare-0",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-compare-1",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-compare-2",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-compare-3",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-compare-4",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-compare-5",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-both-0",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-both-1",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-both-2",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-both-3",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-both-4",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-div-both-5",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-10a",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-10b",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-10c",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-10d",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-10e",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-10f",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-10g",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-10h",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-10i",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-10j",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-order-0",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-order-1",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-order-2",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-order-3",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-order-4",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-order-5",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-table-0",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-table-1",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-table-2",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-table-3",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-table-4",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-table-5",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-context-0",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-context-1",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-context-2",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-context-3",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-context-4",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-md-context-5",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje-deljenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-11a",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-11b",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-11c",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-11d",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-11e",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-11f",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-11g",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-11h",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-11i",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "6-11j",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-model-0",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-model-1",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-model-2",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-model-3",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-model-4",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-model-5",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-missing-0",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-missing-1",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-missing-2",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-missing-3",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-missing-4",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-missing-5",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-brackets-0",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-brackets-1",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-brackets-2",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-brackets-3",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-brackets-4",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-expr-brackets-5",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "t6-1",
+    "area": "celi-brojevi",
+    "lesson": "skup-celih-brojeva",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "t6-2",
+    "area": "celi-brojevi",
+    "lesson": "apsolutna-vrednost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "t6-3",
+    "area": "celi-brojevi",
+    "lesson": "uporedjivanje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "t6-4",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "t6-5",
+    "area": "celi-brojevi",
+    "lesson": "oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "t6-6",
+    "area": "celi-brojevi",
+    "lesson": "rastojanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "t6-7",
+    "area": "celi-brojevi",
+    "lesson": "sabiranje-oduzimanje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "t6-8",
+    "area": "celi-brojevi",
+    "lesson": "mnozenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "t6-9",
+    "area": "celi-brojevi",
+    "lesson": "deljenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "t6-10",
+    "area": "celi-brojevi",
+    "lesson": "brojevni-izrazi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-tv-1",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-tv-2",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-tv-3",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-tv-4",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-tv-5",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-tv-6",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-tv-7",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-tv-incidence-0",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-tv-table-0",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-tv-table-1",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-tv-table-2",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-tv-table-3",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-tv-table-4",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-tv-table-5",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-tv-pairs-0",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-tv-pairs-1",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-tv-pairs-2",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-tv-pairs-3",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-tv-pairs-4",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-tv-pairs-5",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-zu-1",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-zu-2",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-zu-3",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-zu-4",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-zu-5",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-zu-6",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-zu-7",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-angles-rule-0",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-angles-bisect-0",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-angles-bisect-1",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-angles-bisect-2",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-angles-bisect-3",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-angles-bisect-4",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-angles-bisect-5",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-angles-difference-0",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-angles-difference-1",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-angles-difference-2",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-angles-difference-3",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-angles-difference-4",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-angles-difference-5",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-su-1",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-su-2",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-su-3",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-ut-4",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-ut-5",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-ut-6",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-ut-7",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-sum-0",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-sum-1",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-sum-2",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-sum-3",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-sum-4",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-sum-5",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-equal-0",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-equal-1",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-equal-2",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-equal-3",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-equal-4",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-equal-5",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-third-0",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-third-1",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-third-2",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-third-3",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-third-4",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-external-third-5",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-utn-1",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-utn-2",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-utn-3",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-utn-4",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-utn-5",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-utn-6",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-utn-7",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-utn-8",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-utn-9",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-utn-10",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-1-2",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-1-3",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-1-4",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-2-2",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-2-3",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-2-4",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-3-2",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-3-3",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-3-4",
+    "area": "trougao",
+    "lesson": "uglovi-na-transverzali",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-osu-1",
+    "area": "trougao",
+    "lesson": "odnos-stranica-uglova",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-osu-2",
+    "area": "trougao",
+    "lesson": "odnos-stranica-uglova",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-osu-3",
+    "area": "trougao",
+    "lesson": "odnos-stranica-uglova",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-osu-4",
+    "area": "trougao",
+    "lesson": "odnos-stranica-uglova",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-osu-5",
+    "area": "trougao",
+    "lesson": "odnos-stranica-uglova",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-osu-6",
+    "area": "trougao",
+    "lesson": "odnos-stranica-uglova",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-osu-7",
+    "area": "trougao",
+    "lesson": "odnos-stranica-uglova",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-sideangle-opposite-0",
+    "area": "trougao",
+    "lesson": "odnos-stranica-uglova",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-sideangle-equals-0",
+    "area": "trougao",
+    "lesson": "odnos-stranica-uglova",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-sideangle-combine-0",
+    "area": "trougao",
+    "lesson": "odnos-stranica-uglova",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-sideangle-combine-1",
+    "area": "trougao",
+    "lesson": "odnos-stranica-uglova",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-sideangle-combine-2",
+    "area": "trougao",
+    "lesson": "odnos-stranica-uglova",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-sideangle-combine-3",
+    "area": "trougao",
+    "lesson": "odnos-stranica-uglova",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-sideangle-combine-4",
+    "area": "trougao",
+    "lesson": "odnos-stranica-uglova",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-sideangle-combine-5",
+    "area": "trougao",
+    "lesson": "odnos-stranica-uglova",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-nt-1",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-nt-2",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-nt-3",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-nt-4",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-nt-5",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-nt-6",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-nt-7",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-strict-0",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-strict-1",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-strict-2",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-strict-3",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-strict-4",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-strict-5",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-isosceles-0",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-isosceles-1",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-isosceles-2",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-isosceles-3",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-isosceles-4",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-isosceles-5",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-perimeter-0",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-perimeter-1",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-perimeter-2",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-perimeter-3",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-perimeter-4",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ow-ineqtri-perimeter-5",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ot6-1",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ot6-2",
+    "area": "trougao",
+    "lesson": "trougao-vrste",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ot6-3",
+    "area": "trougao",
+    "lesson": "zbir-uglova-trougla",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ot6-4",
+    "area": "trougao",
+    "lesson": "uglovi-transverzala",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ot6-5",
+    "area": "trougao",
+    "lesson": "odnos-stranica-uglova",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ot6-6",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "ot6-7",
+    "area": "trougao",
+    "lesson": "nejednakost-trougla",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-rq-1",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-rq-2",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-rq-3",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-rq-4",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-rq-5",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-rq-6",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-rq-7",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-rq-8",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-rq-9",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-rq-10",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-skup-racionalnih-brojeva-1-2",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-skup-racionalnih-brojeva-1-3",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-skup-racionalnih-brojeva-1-4",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-skup-racionalnih-brojeva-2-2",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-skup-racionalnih-brojeva-2-3",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-skup-racionalnih-brojeva-2-4",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-skup-racionalnih-brojeva-3-2",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-skup-racionalnih-brojeva-3-3",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-skup-racionalnih-brojeva-3-4",
+    "area": "racionalni-brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-ra-1",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-ra-2",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-ra-3",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-ra-4",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-ra-5",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-ra-6",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-ra-7",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-ra-8",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-ra-9",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "o6-ra-10",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-apsolutna-vrednost-racionalnog-1-2",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-apsolutna-vrednost-racionalnog-1-3",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-apsolutna-vrednost-racionalnog-1-4",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-apsolutna-vrednost-racionalnog-2-2",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-apsolutna-vrednost-racionalnog-2-3",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-apsolutna-vrednost-racionalnog-2-4",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-apsolutna-vrednost-racionalnog-3-2",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-apsolutna-vrednost-racionalnog-3-3",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "dop-apsolutna-vrednost-racionalnog-3-4",
+    "area": "racionalni-brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zapisi-1",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zapisi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zapisi-2",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zapisi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zapisi-3",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zapisi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zapisi-4",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zapisi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zapisi-5",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zapisi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zapisi-6",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zapisi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zapisi-7",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zapisi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zapisi-8",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zapisi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zapisi-9",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zapisi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zapisi-10",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zapisi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zapisi-11",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zapisi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zapisi-12",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zapisi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zapisi-13",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zapisi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zapisi-14",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zapisi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-poredak-1",
+    "area": "racionalni-brojevi",
+    "lesson": "q-poredak",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-poredak-2",
+    "area": "racionalni-brojevi",
+    "lesson": "q-poredak",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-poredak-3",
+    "area": "racionalni-brojevi",
+    "lesson": "q-poredak",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-poredak-4",
+    "area": "racionalni-brojevi",
+    "lesson": "q-poredak",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-poredak-5",
+    "area": "racionalni-brojevi",
+    "lesson": "q-poredak",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-poredak-6",
+    "area": "racionalni-brojevi",
+    "lesson": "q-poredak",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-poredak-7",
+    "area": "racionalni-brojevi",
+    "lesson": "q-poredak",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-poredak-8",
+    "area": "racionalni-brojevi",
+    "lesson": "q-poredak",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-poredak-9",
+    "area": "racionalni-brojevi",
+    "lesson": "q-poredak",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-poredak-10",
+    "area": "racionalni-brojevi",
+    "lesson": "q-poredak",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-poredak-11",
+    "area": "racionalni-brojevi",
+    "lesson": "q-poredak",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-poredak-12",
+    "area": "racionalni-brojevi",
+    "lesson": "q-poredak",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-poredak-13",
+    "area": "racionalni-brojevi",
+    "lesson": "q-poredak",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-poredak-14",
+    "area": "racionalni-brojevi",
+    "lesson": "q-poredak",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zbir-razlika-1",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zbir-razlika",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zbir-razlika-2",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zbir-razlika",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zbir-razlika-3",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zbir-razlika",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zbir-razlika-4",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zbir-razlika",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zbir-razlika-5",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zbir-razlika",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zbir-razlika-6",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zbir-razlika",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zbir-razlika-7",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zbir-razlika",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zbir-razlika-8",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zbir-razlika",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zbir-razlika-9",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zbir-razlika",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zbir-razlika-10",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zbir-razlika",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zbir-razlika-11",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zbir-razlika",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zbir-razlika-12",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zbir-razlika",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zbir-razlika-13",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zbir-razlika",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-zbir-razlika-14",
+    "area": "racionalni-brojevi",
+    "lesson": "q-zbir-razlika",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-proizvod-1",
+    "area": "racionalni-brojevi",
+    "lesson": "q-proizvod",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-proizvod-2",
+    "area": "racionalni-brojevi",
+    "lesson": "q-proizvod",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-proizvod-3",
+    "area": "racionalni-brojevi",
+    "lesson": "q-proizvod",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-proizvod-4",
+    "area": "racionalni-brojevi",
+    "lesson": "q-proizvod",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-proizvod-5",
+    "area": "racionalni-brojevi",
+    "lesson": "q-proizvod",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-proizvod-6",
+    "area": "racionalni-brojevi",
+    "lesson": "q-proizvod",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-proizvod-7",
+    "area": "racionalni-brojevi",
+    "lesson": "q-proizvod",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-proizvod-8",
+    "area": "racionalni-brojevi",
+    "lesson": "q-proizvod",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-proizvod-9",
+    "area": "racionalni-brojevi",
+    "lesson": "q-proizvod",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-proizvod-10",
+    "area": "racionalni-brojevi",
+    "lesson": "q-proizvod",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-proizvod-11",
+    "area": "racionalni-brojevi",
+    "lesson": "q-proizvod",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-proizvod-12",
+    "area": "racionalni-brojevi",
+    "lesson": "q-proizvod",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-proizvod-13",
+    "area": "racionalni-brojevi",
+    "lesson": "q-proizvod",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-proizvod-14",
+    "area": "racionalni-brojevi",
+    "lesson": "q-proizvod",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-deljenje-izrazi-1",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-deljenje-izrazi-2",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-deljenje-izrazi-3",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-deljenje-izrazi-4",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-deljenje-izrazi-5",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-deljenje-izrazi-6",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-deljenje-izrazi-7",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-deljenje-izrazi-8",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-deljenje-izrazi-9",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-deljenje-izrazi-10",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-deljenje-izrazi-11",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-deljenje-izrazi-12",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-deljenje-izrazi-13",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-deljenje-izrazi-14",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-jednacine-1",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-jednacine-2",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-jednacine-3",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-jednacine-4",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-jednacine-5",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-jednacine-6",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-jednacine-7",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-jednacine-8",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-jednacine-9",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-jednacine-10",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-jednacine-11",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-jednacine-12",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-jednacine-13",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-jednacine-14",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-nejednacine-1",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-nejednacine-2",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-nejednacine-3",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-nejednacine-4",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-nejednacine-5",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-nejednacine-6",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-nejednacine-7",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-nejednacine-8",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-nejednacine-9",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-nejednacine-10",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-nejednacine-11",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-nejednacine-12",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-nejednacine-13",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "q-nejednacine-14",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-model-1",
+    "area": "s6-primene",
+    "lesson": "s6-model",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-model-2",
+    "area": "s6-primene",
+    "lesson": "s6-model",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-model-3",
+    "area": "s6-primene",
+    "lesson": "s6-model",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-model-4",
+    "area": "s6-primene",
+    "lesson": "s6-model",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-model-5",
+    "area": "s6-primene",
+    "lesson": "s6-model",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-model-6",
+    "area": "s6-primene",
+    "lesson": "s6-model",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-model-7",
+    "area": "s6-primene",
+    "lesson": "s6-model",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-model-8",
+    "area": "s6-primene",
+    "lesson": "s6-model",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-model-9",
+    "area": "s6-primene",
+    "lesson": "s6-model",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-model-10",
+    "area": "s6-primene",
+    "lesson": "s6-model",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-model-11",
+    "area": "s6-primene",
+    "lesson": "s6-model",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-model-15",
+    "area": "s6-primene",
+    "lesson": "s6-model",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-primene-primena",
+    "area": "s6-primene",
+    "lesson": "s6-model",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-model-16",
+    "area": "s6-primene",
+    "lesson": "s6-model",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-konstrukcije-1",
+    "area": "s6-trouglovi",
+    "lesson": "s6-konstrukcije",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-konstrukcije-2",
+    "area": "s6-trouglovi",
+    "lesson": "s6-konstrukcije",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-konstrukcije-3",
+    "area": "s6-trouglovi",
+    "lesson": "s6-konstrukcije",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-konstrukcije-4",
+    "area": "s6-trouglovi",
+    "lesson": "s6-konstrukcije",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-konstrukcije-5",
+    "area": "s6-trouglovi",
+    "lesson": "s6-konstrukcije",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-konstrukcije-6",
+    "area": "s6-trouglovi",
+    "lesson": "s6-konstrukcije",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-konstrukcije-7",
+    "area": "s6-trouglovi",
+    "lesson": "s6-konstrukcije",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-konstrukcije-8",
+    "area": "s6-trouglovi",
+    "lesson": "s6-konstrukcije",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-konstrukcije-9",
+    "area": "s6-trouglovi",
+    "lesson": "s6-konstrukcije",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-konstrukcije-10",
+    "area": "s6-trouglovi",
+    "lesson": "s6-konstrukcije",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-konstrukcije-11",
+    "area": "s6-trouglovi",
+    "lesson": "s6-konstrukcije",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podudarnost-1",
+    "area": "s6-trouglovi",
+    "lesson": "s6-podudarnost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podudarnost-2",
+    "area": "s6-trouglovi",
+    "lesson": "s6-podudarnost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podudarnost-3",
+    "area": "s6-trouglovi",
+    "lesson": "s6-podudarnost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podudarnost-4",
+    "area": "s6-trouglovi",
+    "lesson": "s6-podudarnost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podudarnost-5",
+    "area": "s6-trouglovi",
+    "lesson": "s6-podudarnost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podudarnost-6",
+    "area": "s6-trouglovi",
+    "lesson": "s6-podudarnost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podudarnost-7",
+    "area": "s6-trouglovi",
+    "lesson": "s6-podudarnost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podudarnost-8",
+    "area": "s6-trouglovi",
+    "lesson": "s6-podudarnost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podudarnost-9",
+    "area": "s6-trouglovi",
+    "lesson": "s6-podudarnost",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podudarnost-10",
+    "area": "s6-trouglovi",
+    "lesson": "s6-podudarnost",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podudarnost-11",
+    "area": "s6-trouglovi",
+    "lesson": "s6-podudarnost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-konstrukcije-15",
+    "area": "s6-trouglovi",
+    "lesson": "s6-konstrukcije",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trouglovi-primena",
+    "area": "s6-trouglovi",
+    "lesson": "s6-podudarnost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-konstrukcije-16",
+    "area": "s6-trouglovi",
+    "lesson": "s6-konstrukcije",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podudarnost-15",
+    "area": "s6-trouglovi",
+    "lesson": "s6-podudarnost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podudarnost-16",
+    "area": "s6-trouglovi",
+    "lesson": "s6-podudarnost",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-koordinate-1",
+    "area": "s6-odnosi",
+    "lesson": "s6-koordinate",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-koordinate-2",
+    "area": "s6-odnosi",
+    "lesson": "s6-koordinate",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-koordinate-3",
+    "area": "s6-odnosi",
+    "lesson": "s6-koordinate",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-koordinate-4",
+    "area": "s6-odnosi",
+    "lesson": "s6-koordinate",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-koordinate-5",
+    "area": "s6-odnosi",
+    "lesson": "s6-koordinate",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-koordinate-6",
+    "area": "s6-odnosi",
+    "lesson": "s6-koordinate",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-koordinate-7",
+    "area": "s6-odnosi",
+    "lesson": "s6-koordinate",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-koordinate-8",
+    "area": "s6-odnosi",
+    "lesson": "s6-koordinate",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-koordinate-9",
+    "area": "s6-odnosi",
+    "lesson": "s6-koordinate",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-koordinate-10",
+    "area": "s6-odnosi",
+    "lesson": "s6-koordinate",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-koordinate-11",
+    "area": "s6-odnosi",
+    "lesson": "s6-koordinate",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-preslikavanja-1",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-preslikavanja-2",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-preslikavanja-3",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-preslikavanja-4",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-preslikavanja-5",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-preslikavanja-6",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-preslikavanja-7",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-preslikavanja-8",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-preslikavanja-9",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-preslikavanja-10",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-preslikavanja-11",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podaci-1",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podaci-2",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podaci-3",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podaci-4",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podaci-5",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podaci-6",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podaci-7",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podaci-8",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podaci-9",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podaci-10",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podaci-11",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-razmera-1",
+    "area": "s6-odnosi",
+    "lesson": "s6-razmera",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-razmera-2",
+    "area": "s6-odnosi",
+    "lesson": "s6-razmera",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-razmera-3",
+    "area": "s6-odnosi",
+    "lesson": "s6-razmera",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-razmera-4",
+    "area": "s6-odnosi",
+    "lesson": "s6-razmera",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-razmera-5",
+    "area": "s6-odnosi",
+    "lesson": "s6-razmera",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-razmera-6",
+    "area": "s6-odnosi",
+    "lesson": "s6-razmera",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-razmera-7",
+    "area": "s6-odnosi",
+    "lesson": "s6-razmera",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-razmera-8",
+    "area": "s6-odnosi",
+    "lesson": "s6-razmera",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-razmera-9",
+    "area": "s6-odnosi",
+    "lesson": "s6-razmera",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-razmera-10",
+    "area": "s6-odnosi",
+    "lesson": "s6-razmera",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-razmera-11",
+    "area": "s6-odnosi",
+    "lesson": "s6-razmera",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-zavisnost-1",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-zavisnost-2",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-zavisnost-3",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-zavisnost-4",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-zavisnost-5",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-zavisnost-6",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-zavisnost-7",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-zavisnost-8",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-zavisnost-9",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-zavisnost-10",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-zavisnost-11",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-procenti-1",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-procenti-2",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-procenti-3",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-procenti-4",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-procenti-5",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-procenti-6",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-procenti-7",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-procenti-8",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-procenti-9",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-procenti-10",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-procenti-11",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-koordinate-15",
+    "area": "s6-odnosi",
+    "lesson": "s6-koordinate",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-odnosi-primena",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-koordinate-16",
+    "area": "s6-odnosi",
+    "lesson": "s6-koordinate",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-preslikavanja-15",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-preslikavanja-16",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podaci-15",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podaci-16",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-razmera-15",
+    "area": "s6-odnosi",
+    "lesson": "s6-razmera",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-razmera-16",
+    "area": "s6-odnosi",
+    "lesson": "s6-razmera",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-zavisnost-15",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-zavisnost-16",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-procenti-15",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-procenti-16",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-uglovi-1",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-uglovi-2",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-uglovi-3",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-uglovi-4",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-uglovi-5",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-uglovi-6",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-uglovi-7",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-uglovi-8",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-uglovi-9",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-uglovi-10",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-uglovi-11",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-paralelogram-1",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-paralelogram-2",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-paralelogram-3",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-paralelogram-4",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-paralelogram-5",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-paralelogram-6",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-paralelogram-7",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-paralelogram-8",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-paralelogram-9",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-paralelogram-10",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-paralelogram-11",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-vektori-1",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-vektori-2",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-vektori-3",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-vektori-4",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-vektori-5",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-vektori-6",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-vektori-7",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-vektori-8",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-vektori-9",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-vektori-10",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-vektori-11",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trapez-1",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-trapez",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trapez-2",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-trapez",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trapez-3",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-trapez",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trapez-4",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-trapez",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trapez-5",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-trapez",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trapez-6",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-trapez",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trapez-7",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-trapez",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trapez-8",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-trapez",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trapez-9",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-trapez",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trapez-10",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-trapez",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trapez-11",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-trapez",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-cetiri-stranice-1",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-cetiri-stranice",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-cetiri-stranice-2",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-cetiri-stranice",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-cetiri-stranice-3",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-cetiri-stranice",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-cetiri-stranice-4",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-cetiri-stranice",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-cetiri-stranice-5",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-cetiri-stranice",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-cetiri-stranice-6",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-cetiri-stranice",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-cetiri-stranice-7",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-cetiri-stranice",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-cetiri-stranice-8",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-cetiri-stranice",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-cetiri-stranice-9",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-cetiri-stranice",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-cetiri-stranice-10",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-cetiri-stranice",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-cetiri-stranice-11",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-cetiri-stranice",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-uglovi-15",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-cetvorouglovi-primena",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-trapez",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-uglovi-16",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-paralelogram-15",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-paralelogram-16",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-vektori-15",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-vektori-16",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trapez-15",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-trapez",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trapez-16",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-trapez",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-cetiri-stranice-15",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-cetiri-stranice",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-cetiri-stranice-16",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-cetiri-stranice",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-merenje-1",
+    "area": "s6-povrsine",
+    "lesson": "s6-merenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-merenje-2",
+    "area": "s6-povrsine",
+    "lesson": "s6-merenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-merenje-3",
+    "area": "s6-povrsine",
+    "lesson": "s6-merenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-merenje-4",
+    "area": "s6-povrsine",
+    "lesson": "s6-merenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-merenje-5",
+    "area": "s6-povrsine",
+    "lesson": "s6-merenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-merenje-6",
+    "area": "s6-povrsine",
+    "lesson": "s6-merenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-merenje-7",
+    "area": "s6-povrsine",
+    "lesson": "s6-merenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-merenje-8",
+    "area": "s6-povrsine",
+    "lesson": "s6-merenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-merenje-9",
+    "area": "s6-povrsine",
+    "lesson": "s6-merenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-merenje-10",
+    "area": "s6-povrsine",
+    "lesson": "s6-merenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-merenje-11",
+    "area": "s6-povrsine",
+    "lesson": "s6-merenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trougao-trapez-1",
+    "area": "s6-povrsine",
+    "lesson": "s6-trougao-trapez",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trougao-trapez-2",
+    "area": "s6-povrsine",
+    "lesson": "s6-trougao-trapez",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trougao-trapez-3",
+    "area": "s6-povrsine",
+    "lesson": "s6-trougao-trapez",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trougao-trapez-4",
+    "area": "s6-povrsine",
+    "lesson": "s6-trougao-trapez",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trougao-trapez-5",
+    "area": "s6-povrsine",
+    "lesson": "s6-trougao-trapez",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trougao-trapez-6",
+    "area": "s6-povrsine",
+    "lesson": "s6-trougao-trapez",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trougao-trapez-7",
+    "area": "s6-povrsine",
+    "lesson": "s6-trougao-trapez",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trougao-trapez-8",
+    "area": "s6-povrsine",
+    "lesson": "s6-trougao-trapez",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trougao-trapez-9",
+    "area": "s6-povrsine",
+    "lesson": "s6-trougao-trapez",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trougao-trapez-10",
+    "area": "s6-povrsine",
+    "lesson": "s6-trougao-trapez",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trougao-trapez-11",
+    "area": "s6-povrsine",
+    "lesson": "s6-trougao-trapez",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-delovi-1",
+    "area": "s6-povrsine",
+    "lesson": "s6-delovi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-delovi-2",
+    "area": "s6-povrsine",
+    "lesson": "s6-delovi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-delovi-3",
+    "area": "s6-povrsine",
+    "lesson": "s6-delovi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-delovi-4",
+    "area": "s6-povrsine",
+    "lesson": "s6-delovi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-delovi-5",
+    "area": "s6-povrsine",
+    "lesson": "s6-delovi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-delovi-6",
+    "area": "s6-povrsine",
+    "lesson": "s6-delovi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-delovi-7",
+    "area": "s6-povrsine",
+    "lesson": "s6-delovi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-delovi-8",
+    "area": "s6-povrsine",
+    "lesson": "s6-delovi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-delovi-9",
+    "area": "s6-povrsine",
+    "lesson": "s6-delovi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-delovi-10",
+    "area": "s6-povrsine",
+    "lesson": "s6-delovi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-delovi-11",
+    "area": "s6-povrsine",
+    "lesson": "s6-delovi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-merenje-15",
+    "area": "s6-povrsine",
+    "lesson": "s6-merenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-povrsine-primena",
+    "area": "s6-povrsine",
+    "lesson": "s6-delovi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-merenje-16",
+    "area": "s6-povrsine",
+    "lesson": "s6-merenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trougao-trapez-15",
+    "area": "s6-povrsine",
+    "lesson": "s6-trougao-trapez",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trougao-trapez-16",
+    "area": "s6-povrsine",
+    "lesson": "s6-trougao-trapez",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-delovi-15",
+    "area": "s6-povrsine",
+    "lesson": "s6-delovi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-delovi-16",
+    "area": "s6-povrsine",
+    "lesson": "s6-delovi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-sinteza-1",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-sinteza-2",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-sinteza-3",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-sinteza-4",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-sinteza-5",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-sinteza-6",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-sinteza-7",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-sinteza-8",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-sinteza-9",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-sinteza-10",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-sinteza-11",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-sinteza-15",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-zavrsnica-primena",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-sinteza-16",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-model-12",
+    "area": "s6-primene",
+    "lesson": "s6-model",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-model-13",
+    "area": "s6-primene",
+    "lesson": "s6-model",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-model-14",
+    "area": "s6-primene",
+    "lesson": "s6-model",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-konstrukcije-12",
+    "area": "s6-trouglovi",
+    "lesson": "s6-konstrukcije",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-konstrukcije-13",
+    "area": "s6-trouglovi",
+    "lesson": "s6-konstrukcije",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-konstrukcije-14",
+    "area": "s6-trouglovi",
+    "lesson": "s6-konstrukcije",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podudarnost-12",
+    "area": "s6-trouglovi",
+    "lesson": "s6-podudarnost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podudarnost-13",
+    "area": "s6-trouglovi",
+    "lesson": "s6-podudarnost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podudarnost-14",
+    "area": "s6-trouglovi",
+    "lesson": "s6-podudarnost",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-koordinate-12",
+    "area": "s6-odnosi",
+    "lesson": "s6-koordinate",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-koordinate-13",
+    "area": "s6-odnosi",
+    "lesson": "s6-koordinate",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-koordinate-14",
+    "area": "s6-odnosi",
+    "lesson": "s6-koordinate",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-preslikavanja-12",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-preslikavanja-13",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-preslikavanja-14",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podaci-12",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podaci-13",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-podaci-14",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-razmera-12",
+    "area": "s6-odnosi",
+    "lesson": "s6-razmera",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-razmera-13",
+    "area": "s6-odnosi",
+    "lesson": "s6-razmera",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-razmera-14",
+    "area": "s6-odnosi",
+    "lesson": "s6-razmera",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-zavisnost-12",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-zavisnost-13",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-zavisnost-14",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-procenti-12",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-procenti-13",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-procenti-14",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-uglovi-12",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-uglovi-13",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-uglovi-14",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-paralelogram-12",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-paralelogram-13",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-paralelogram-14",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-vektori-12",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-vektori-13",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-vektori-14",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trapez-12",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-trapez",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trapez-13",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-trapez",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trapez-14",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-trapez",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-cetiri-stranice-12",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-cetiri-stranice",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-cetiri-stranice-13",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-cetiri-stranice",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-cetiri-stranice-14",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-cetiri-stranice",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-merenje-12",
+    "area": "s6-povrsine",
+    "lesson": "s6-merenje",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-merenje-13",
+    "area": "s6-povrsine",
+    "lesson": "s6-merenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-merenje-14",
+    "area": "s6-povrsine",
+    "lesson": "s6-merenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trougao-trapez-12",
+    "area": "s6-povrsine",
+    "lesson": "s6-trougao-trapez",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trougao-trapez-13",
+    "area": "s6-povrsine",
+    "lesson": "s6-trougao-trapez",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-trougao-trapez-14",
+    "area": "s6-povrsine",
+    "lesson": "s6-trougao-trapez",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-delovi-12",
+    "area": "s6-povrsine",
+    "lesson": "s6-delovi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-delovi-13",
+    "area": "s6-povrsine",
+    "lesson": "s6-delovi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-delovi-14",
+    "area": "s6-povrsine",
+    "lesson": "s6-delovi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-sinteza-12",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-sinteza-13",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-sinteza-14",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-polugodiste-1",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-koordinate",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-polugodiste-2",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-konstrukcije",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-polugodiste-3",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-paralelogram",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-polugodiste-4",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-zavisnost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-polugodiste-5",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-razmera",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-polugodiste-6",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-vektori",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-polugodiste-7",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-procenti",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-polugodiste-8",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-trougao-trapez",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-polugodiste-9",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-podudarnost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-polugodiste-10",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-delovi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-godisnja-1",
+    "area": "s6-zavrsnica",
+    "lesson": "apsolutna-vrednost",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-godisnja-2",
+    "area": "s6-zavrsnica",
+    "lesson": "q-proizvod",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-godisnja-3",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-uglovi",
+    "level": "basic",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-godisnja-4",
+    "area": "s6-zavrsnica",
+    "lesson": "q-deljenje-izrazi",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-godisnja-5",
+    "area": "s6-zavrsnica",
+    "lesson": "q-nejednacine",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-godisnja-6",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-podudarnost",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-godisnja-7",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-procenti",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-godisnja-8",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-merenje",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-godisnja-9",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-trapez",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-godisnja-10",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-koordinate",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-izazov-1",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-razmera",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-izazov-2",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-trapez",
+    "level": "medium",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-izazov-3",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-model",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-izazov-4",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-procenti",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-izazov-5",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-zavisnost",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-izazov-6",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-merenje",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-izazov-7",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-podudarnost",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-izazov-8",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-delovi",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-izazov-9",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-trougao-trapez",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  },
+  {
+    "id": "s6-izazov-10",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-koordinate",
+    "level": "advanced",
+    "status": "nepregledan u fazi 2C"
+  }
+]
