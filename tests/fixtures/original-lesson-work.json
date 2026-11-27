@@ -541,7 +541,7 @@
         "math": "−7 + (−6)",
         "answer": "-13",
         "hint": "Isti znaci: saberi apsolutne vrednosti.",
-        "solution": "−7 + (−6) = −13.",
+        "solution": "−7+(−6)=−(7+6)=−13.",
         "level": "basic",
         "skill": "Sabiranje"
       },
@@ -551,7 +551,7 @@
         "math": "15 + (−9)",
         "answer": "6",
         "hint": "Znaci su različiti.",
-        "solution": "15 − 9 = 6.",
+        "solution": "15+(−9)=15−9=6. Veću apsolutnu vrednost ima pozitivan sabirak.",
         "level": "basic",
         "skill": "Sabiranje"
       },
@@ -577,7 +577,7 @@
         "answer": "−",
         "hint": "Veću apsolutnu vrednost ima negativan sabirak.",
         "solution": "|−28|>|11|, zato je zbir negativan.",
-        "level": "medium",
+        "level": "basic",
         "skill": "Znak zbira"
       },
       {
@@ -590,18 +590,18 @@
           "Rezultat treba da bude −23."
         ],
         "answer": "Rezultat treba da bude −9.",
-        "hint": "Oduzmi apsolutne vrednosti i uzmi znak većeg broja.",
+        "hint": "Oduzmi manju apsolutnu vrednost od veće i uzmi predznak sabirka veće apsolutne vrednosti.",
         "solution": "16−7=9, a veći po apsolutnoj vrednosti je −16, zato je zbir −9.",
         "level": "medium",
         "skill": "Sabiranje različitih znakova"
       },
       {
         "id": "6-4i",
-        "prompt": "Odredi konačnu temperaturu.",
+        "prompt": "Odredi konačnu temperaturu u °C.",
         "math": "Ujutru je bilo −6 °C, a zatim je temperatura porasla za 10 °C.",
         "answer": "4",
         "hint": "Porast zapisujemo sabiranjem pozitivnog broja.",
-        "solution": "−6+10=4 °C.",
+        "solution": "Početna temperatura je −6 °C, promena je +10 °C. Konačna je −6+10=4 °C.",
         "level": "medium",
         "skill": "Sabiranje različitih znakova"
       },
@@ -612,7 +612,7 @@
         "answer": "-5",
         "hint": "Saberi drugi par brojeva.",
         "solution": "2+(−7)=−5.",
-        "level": "medium",
+        "level": "basic",
         "skill": "Sabiranje različitih znakova"
       },
       {
@@ -621,8 +621,8 @@
         "math": "x+(−14)=−3",
         "answer": "11",
         "hint": "Dodaj 14 na obe strane.",
-        "solution": "x=−3+14=11.",
-        "level": "advanced",
+        "solution": "x+(−14)+14=−3+14, pa x=11. Provera: 11+(−14)=−3.",
+        "level": "medium",
         "skill": "Nepoznati sabirak"
       },
       {
@@ -631,8 +631,8 @@
         "math": "−8+3+8+(−1)",
         "answer": "2",
         "hint": "Upari suprotne sabirke.",
-        "solution": "−8+8=0; 3+(−1)=2.",
-        "level": "advanced",
+        "solution": "Zamenom redosleda i grupisanjem sabiraka: (−8+8)+(3+(−1))=0+2=2.",
+        "level": "medium",
         "skill": "Suprotni sabirci"
       },
       {
@@ -641,8 +641,8 @@
         "math": "−5+x>0",
         "answer": "6",
         "hint": "Zbir je pozitivan kada je pozitivan sabirak veći po apsolutnoj vrednosti.",
-        "solution": "x mora biti veći od 5; najmanji ceo broj je 6.",
-        "level": "advanced",
+        "solution": "Dodajemo 5 na obe strane: x>5. Granica je stroga, pa je najmanji ceo broj x=6.",
+        "level": "medium",
         "skill": "Znak zbira"
       }
     ]

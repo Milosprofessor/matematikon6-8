@@ -75,8 +75,8 @@ register("uporedjivanje",[
 ]);
 register("sabiranje",[
  v=>N("add-table",v,"Dopuni poslednji zbir.",`a: −${v+5}, ${v+2}; b: ${v+1}, −${v+7}; a+b: −4, ?`,-5,"Saberi drugi par brojeva.",`${v+2}+(−${v+7})=−5.`,"medium","Sabiranje različitih znakova","sign"),
- v=>N("add-cancel",v,"Izračunaj najkraćim putem.",`−${v+8}+${v+3}+${v+8}+(−${v+1})`,2,"Upari suprotne sabirke.",`−${v+8}+${v+8}=0; ${v+3}+(−${v+1})=2.`,"advanced","Suprotni sabirci","rule"),
- v=>N("add-signcondition",v,"Odredi najmanji ceo broj x.",`−${v+5}+x>0`,v+6,"Zbir je pozitivan kada je pozitivan sabirak veći po apsolutnoj vrednosti.",`x mora biti veći od ${v+5}; najmanji ceo broj je ${v+6}.`,"advanced","Znak zbira","sign")
+ v=>N("add-cancel",v,"Izračunaj najkraćim putem.",`−${v+8}+${v+3}+${v+8}+(−${v+1})`,2,"Upari suprotne sabirke.",`Zamenom redosleda i grupisanjem sabiraka: (−${v+8}+${v+8})+(${v+3}+(−${v+1}))=0+2=2.`,"advanced","Suprotni sabirci","rule"),
+ v=>N("add-signcondition",v,"Odredi najmanji ceo broj x.",`−${v+5}+x>0`,v+6,"Zbir je pozitivan kada je pozitivan sabirak veći po apsolutnoj vrednosti.",`Dodajemo ${v+5} na obe strane: x>${v+5}. Granica je stroga, pa je najmanji ceo broj x=${v+6}.`,"advanced","Znak zbira","sign")
 ]);
 register("oduzimanje",[
  v=>N("subtract-table",v,"Dopuni poslednju razliku.",`a: −${v+3}, ${v+4}; b: −${v+5}, −2; a−b: 2, ?`,v+6,"Oduzimanje −2 je sabiranje 2.",`${v+4}−(−2)=${v+6}.`,"medium","Oduzimanje negativnog broja","sign"),
@@ -261,6 +261,7 @@ const basicLater=new Set(["6-1k","6-2i","6-3j","sw-absolute-table-0","sw-r5-orde
 export function applySeptemberWorkLevels(lessonId:string,tasks:Task[]):Task[]{
  const plan=septemberWorkPlans[lessonId];if(!plan)return tasks;
  return tasks.map(task=>{
+  if(lessonId==="sabiranje")return {...task,level:["6-4e","6-4h","6-4i","6-4j"].includes(task.id)||task.id.startsWith("sw-add-cancel-")||task.id.startsWith("sw-add-signcondition-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
   if(lessonId==="uporedjivanje")return {...task,level:["6-3b","6-3g","6-3i"].includes(task.id)||task.id.startsWith("sw-order-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
   if(lessonId==="apsolutna-vrednost")return {...task,level:["6-2b","6-2c","6-2d","6-2h","6-2j"].includes(task.id)?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
   if(lessonId==="skup-celih-brojeva")return {...task,level:task.id.startsWith("sw-integer-reverse-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};

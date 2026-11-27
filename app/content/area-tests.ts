@@ -16,7 +16,7 @@ export const areaTests: Record<GradeId,Record<string,AreaTestTask[]>> = {
     L(I("t6-1","Odredi suprotan broj.","−18","18","Promeni znak.","Suprotan broj broju −18 je 18.","basic","Skup celih brojeva"),"skup-celih-brojeva"),
     L(I("t6-2","Izračunaj.","|−27|","27","Apsolutna vrednost je rastojanje od nule.","|−27|=27.","basic","Apsolutna vrednost"),"apsolutna-vrednost"),
     L(C("t6-3","Uporedi.","−14 __ −9",["<",">","="],"<","−14 je levo od −9.","−14<−9.","basic","Poređenje"),"uporedjivanje"),
-    L(I("t6-4","Izračunaj.","−16+23","7","Znaci su različiti.","23−16=7.","medium","Sabiranje"),"sabiranje"),
+    L(I("t6-4","Izračunaj.","−16+23","7","Znaci su različiti.","−16+23=23−16=7 jer pozitivan sabirak ima veću apsolutnu vrednost.","basic","Sabiranje"),"sabiranje"),
     L(I("t6-5","Izračunaj.","−8−(−13)","5","Oduzimanje negativnog postaje sabiranje.","−8+13=5.","medium","Oduzimanje"),"oduzimanje"),
     L(I("t6-6","Odredi rastojanje.","A(−11), B(4)","15","Koristi apsolutnu vrednost razlike.","|−11−4|=15.","medium","Rastojanje"),"rastojanje"),
     L(I("t6-7","Izračunaj.","−12+7−(−6)","1","Prvo ukloni zagradu.","−12+7+6=1.","medium","Sabiranje i oduzimanje"),"sabiranje-oduzimanje"),

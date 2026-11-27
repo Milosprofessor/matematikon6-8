@@ -44,6 +44,6 @@ for l in d['lessons']:
   examples.append([l['id'],i+1,e['question'],' | '.join(e['steps']),'nov' if reviewed and i>0 else 'postojeći','potpuno recenziran' if reviewed else 'nepregledan u fazi 2C'])
 assert len(examples)>=81
 sheet('Rešeni primeri',['Lekcija','Broj','Zahtev','Postupak','Poreklo','Status'],examples)
-u=json.loads((base/'obnavljanje-5/units.json').read_text());sheet('Jedinice faza 3',['ID','Jedinica','Broj prihvaćen','Sa jedinicom prihvaćen','Primer','Nalaz'],[[x['id'],x['requiredUnit'],x['numericAccepted'],x['unitAccepted'],x['example'],x['phase3']] for x in u])
+u=[r for f in sorted(base.glob('*/units.json')) for r in json.loads(f.read_text())];sheet('Jedinice faza 3',['ID','Jedinica','Broj prihvaćen','Sa jedinicom prihvaćen','Primer','Nalaz'],[[x['id'],x['requiredUnit'],x['numericAccepted'],x['unitAccepted'],x['example'],x['phase3']] for x in u])
 wb.save(root/'MATEMATIKON6_EVIDENCIJA_MATEMATICKE_RECENZIJE.xlsx')
 print('ledger:',len(rows),'tasks;',len(lessons),'lessons;',len(examples),'examples')

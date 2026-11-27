@@ -35,9 +35,9 @@ export const septemberTasks:Record<string,Task[]>={
   "sabiranje":[
     P(C("6-4f","Odredi znak zbira bez računanja.","−28+11",["+","−","0"],"−","Veću apsolutnu vrednost ima negativan sabirak.","|−28|>|11|, zato je zbir negativan.","medium","Znak zbira"),"znak-bez-racunanja","sign"),
     P(I("6-4g","Dopuni.","−9+__=0","9","Broj i njegov suprotan daju nulu.","−9+9=0.","basic","Suprotni sabirci"),"dopunjavanje","concept"),
-    P(C("6-4h","Pronađi grešku.","−16+7=9",["Nema greške.","Rezultat treba da bude −9.","Rezultat treba da bude −23."],"Rezultat treba da bude −9.","Oduzmi apsolutne vrednosti i uzmi znak većeg broja.","16−7=9, a veći po apsolutnoj vrednosti je −16, zato je zbir −9.","medium","Sabiranje različitih znakova"),"pronadji-gresku","sign"),
-    P(I("6-4i","Odredi konačnu temperaturu.","Ujutru je bilo −6 °C, a zatim je temperatura porasla za 10 °C.","4","Porast zapisujemo sabiranjem pozitivnog broja.","−6+10=4 °C.","advanced","Sabiranje različitih znakova"),"kratak-kontekst","method"),
-    P(I("6-4j","Odredi x.","x+(−14)=−3","11","Dodaj 14 na obe strane.","x=−3+14=11.","advanced","Nepoznati sabirak"),"jednacina","method"),
+    P(C("6-4h","Pronađi grešku.","−16+7=9",["Nema greške.","Rezultat treba da bude −9.","Rezultat treba da bude −23."],"Rezultat treba da bude −9.","Oduzmi manju apsolutnu vrednost od veće i uzmi predznak sabirka veće apsolutne vrednosti.","16−7=9, a veći po apsolutnoj vrednosti je −16, zato je zbir −9.","medium","Sabiranje različitih znakova"),"pronadji-gresku","sign"),
+    P(I("6-4i","Odredi konačnu temperaturu u °C.","Ujutru je bilo −6 °C, a zatim je temperatura porasla za 10 °C.","4","Porast zapisujemo sabiranjem pozitivnog broja.","Početna temperatura je −6 °C, promena je +10 °C. Konačna je −6+10=4 °C.","advanced","Sabiranje različitih znakova"),"kratak-kontekst","method"),
+    P(I("6-4j","Odredi x.","x+(−14)=−3","11","Dodaj 14 na obe strane.","x+(−14)+14=−3+14, pa x=11. Provera: 11+(−14)=−3.","advanced","Nepoznati sabirak"),"jednacina","method"),
   ],
   "oduzimanje":[
     P(C("6-5f","Izaberi jednak izraz.","−8−(−5)",["−8+5","−8−5","8−5"],"−8+5","Oduzimanje pretvori u sabiranje suprotnog.","−8−(−5)=−8+5.","basic","Oduzimanje negativnog broja"),"preoblikovanje","rule"),

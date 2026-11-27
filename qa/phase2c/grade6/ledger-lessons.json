@@ -158,7 +158,40 @@
   {
     "id": "sabiranje",
     "area": "celi-brojevi",
-    "status": "nepregledana u fazi 2C"
+    "status": "potpuno recenzirana",
+    "theory": "Sabiranje kroz pomeranje i apsolutne vrednosti; suprotni sabirci daju nulu, različiti znaci nisu pravilo za množenje.",
+    "sequence": "Pomeranje → isti i različiti predznaci → svojstva → nepoznati sabirak.",
+    "examples": [
+      {
+        "question": "Izračunaj −12+7.",
+        "steps": [
+          "Počni od −12 i pomeri se 7 jedinica udesno.",
+          "12−7=5; ostaješ levo od nule, pa je −12+7=−5."
+        ],
+        "verification": "−12+7=−5"
+      },
+      {
+        "question": "Izračunaj −4+(−3).",
+        "steps": [
+          "Prvi sabirak je −4; drugi je −3, pa se pomeramo još 3 jedinice ulevo.",
+          "Sabiramo apsolutne vrednosti i zadržavamo negativan predznak: −(4+3)=−7."
+        ],
+        "verification": "−4+(−3)=−7"
+      },
+      {
+        "question": "Reši x+(−8)=3.",
+        "steps": [
+          "Dodaj 8 na obe strane: x+(−8)+8=3+8.",
+          "Suprotni sabirci daju nulu: x=11.",
+          "Provera: 11+(−8)=3."
+        ],
+        "verification": "11+(−8)=3"
+      }
+    ],
+    "illustration": "Brojna prava sa pomeranjima, smer odgovara predznaku sabirka.",
+    "misconceptions": "Znak većeg broja nije isto što i predznak sabirka veće apsolutne vrednosti; promena temperature nije konačna temperatura.",
+    "assessment": "28 zadataka u fondu i jedan tematski; 13 osnovnih, 16 srednjih.",
+    "limits": "Deo ishoda 6.03 i 6.04; ostale operacije i Q nisu recenzirani."
   },
   {
     "id": "oduzimanje",
