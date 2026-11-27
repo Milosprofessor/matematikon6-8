@@ -283,12 +283,12 @@ export const learningByLesson:Record<string,LessonLearning> = {
   "trougao-vrste": {
     "aim": "Prepoznaj elemente i vrste trougla i koristi obim za direktna i obrnuta pitanja.",
     "idea": [
-      "Trougao određuju tri nekolinearna temena i duži koje ih povezuju. U △ABC stranice a=BC, b=CA i c=AB leže naspram temena A, B i C; susedne stranice imaju zajedničko teme.",
-      "Prema stranicama trougao je raznostraničan, jednakokraki ili jednakostraničan. Prema najvećem uglu je oštrougli, pravougli ili tupougli. Isti trougao ima opis po oba kriterijuma; jednakim stranicama odgovaraju jednaki naspramni uglovi."
+      "Trougao je deo ravni ograničen trima dužima koje povezuju tri nekolinearna temena. U △ABC stranice a=BC, b=CA i c=AB leže naspram temena A, B i C; susedne stranice imaju zajedničko teme.",
+      "Prema stranicama razlikujemo raznostranični (sve različite), jednakokraki sa tačno dve jednake i jednakostranični (sve tri jednake stranice). Prema najvećem uglu je oštrougli, pravougli ili tupougli. Isti trougao ima opis po oba kriterijuma; jednakim stranicama odgovaraju jednaki naspramni uglovi i obrnuto."
     ],
     "steps": [
       "Uporedi dužine za podelu prema stranicama, a najveći ugao sa 90° za podelu prema uglovima.",
-      "Obim je zbir sve tri stranice; nepoznatu stranicu dobijaš oduzimanjem poznatih od obima."
+      "Obim je zbir dužina sve tri stranice; nepoznatu stranicu dobijaš oduzimanjem poznatih dužina od obima."
     ],
     "why": "Veze temena i naspramnih stranica ostaju iste kada se crtež okrene.",
     "caution": "Naspramna stranica ne sadrži slovo datog temena.",

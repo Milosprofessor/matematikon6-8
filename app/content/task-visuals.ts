@@ -73,6 +73,9 @@ export function taskWithVisual(lessonId:string,original:Task):Task{
   if(lessonId==='ortogonalnost')diagram=/kocke/.test(task.prompt)?{type:'space',variant:'polyhedron',labels:{case:task.id==='o8-or-6'?'adjacent-faces':'normal-edge'}}:task.id==='o8-or-4'?{type:'space',variant:'planes',labels:{relation:'orthogonal'}}:/grešk/.test(task.prompt)?undefined:{type:'space',variant:'orthogonal',labels:{case:task.id==='sw-normal-parallel-0'?'parallel-normals':task.id==='sw-normal-angle-0'?'angle':task.id==='sw-normal-two-0'?'foot-A':'standard'}};
   if(lessonId==='ortogonalna-projekcija'){const relation=/A∈α/.test(task.math)?'point':/normalne|najkraća|ista tačka/.test(task.prompt+' '+task.math)?'normal':/AB∥α/.test(task.math)?'parallel':/leži|AB⊂α/.test(task.prompt+' '+task.math)?'contained':'oblique';diagram={type:'space',variant:'projection',labels:{relation}};}
  }
+ // Pairwise sums are not side lengths; use an explicitly symbolic sketch.
+ if(task.id.startsWith('ow-tv-pairs-'))diagram={type:'triangle',variant:'sides',labels:{a:'a',b:'b',c:'c'}};
+ if(task.id==='o6-tv-6')diagram={type:'triangle',variant:'sides',labels:{a:'8',b:'11',c:'?'}};
  if(task.id==='o6-rq-5')diagram={type:'number-line',min:-2,max:1,divisions:4,points:[{value:-1.25,label:'A'}]};
  if(task.id==='o6-rq-10')diagram={type:'number-line',min:-1,max:1,divisions:10,points:[{value:-.4,label:'A'},{value:0,label:'O'},{value:.4,label:'B'},{value:.2,label:'C'}]};
  if(task.id==='o6-ra-9')diagram={type:'number-line',min:-1,max:0,divisions:8,points:[{value:-.875,label:'A'},{value:-.375,label:'B'}]};

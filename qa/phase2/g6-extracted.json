@@ -1894,11 +1894,11 @@
   {
    "id": "trougao-vrste",
    "title": "Trougao i njegove vrste",
-   "intro": "Trougao čine tri nekolinearne tačke i duži koje ih spajaju. Razvrstavamo ga prema stranicama i uglovima.",
+   "intro": "Trougao je deo ravni ograničen trima dužima koje spajaju tri nekolinearne tačke. Razvrstavamo ga prema stranicama i uglovima.",
    "rules": [
     "Temena označavamo velikim slovima, a naspramne stranice odgovarajućim malim slovima.",
-    "Prema stranicama trougao može biti raznostraničan, jednakokraki ili jednakostraničan.",
-    "Prema uglovima može biti oštrougli, pravougli ili tupougli."
+    "Prema stranicama razlikujemo raznostranični (sve različite), jednakokraki sa tačno dve jednake stranice i jednakostranični (sve tri jednake). U širem smislu i jednakostranični je jednakokraki; u zadacima biramo najprecizniji naziv.",
+    "Prema najvećem uglu razlikujemo oštrougli (manji od 90°), pravougli (90°) i tupougli (veći od 90°)."
    ],
    "formulas": [
     "△ABC",
@@ -1918,6 +1918,30 @@
      "Sva tri njegova ugla su po 60°."
     ]
    },
+   "worked": [
+    {
+     "question": "Odredi vrstu trougla sa stranicama 6 cm, 6 cm i 6 cm.",
+     "steps": [
+      "Sve tri stranice su jednake: a=b=c=6 cm.",
+      "Najprecizniji naziv prema stranicama je jednakostranični trougao."
+     ]
+    },
+    {
+     "question": "Odredi vrstu trougla sa uglovima 90°, 45° i 45°.",
+     "steps": [
+      "Najveći ugao je 90°, pa je trougao pravougli.",
+      "Dva ugla su jednaka, pa su njima naspramne stranice jednake. Trougao je i jednakokraki."
+     ]
+    },
+    {
+     "question": "Obim trougla je 31 cm, a=8 cm, b=11 cm. Odredi c.",
+     "steps": [
+      "O=a+b+c.",
+      "31=8+11+c, pa 31=19+c.",
+      "Oduzmi 19 na obe strane: c=12 cm. Provera: 8+11+12=31 cm."
+     ]
+    }
+   ],
    "diagram": "triangle",
    "month": "october",
    "prerequisites": [],
@@ -1927,7 +1951,7 @@
    "notes": [
     {
      "title": "Temena i naspramne stranice",
-     "text": "Trougao određuju tri nekolinearna temena i duži koje ih povezuju. U △ABC stranice a=BC, b=CA i c=AB leže naspram temena A, B i C; susedne stranice imaju zajedničko teme.",
+     "text": "Trougao je deo ravni ograničen trima dužima koje povezuju tri nekolinearna temena. U △ABC stranice a=BC, b=CA i c=AB leže naspram temena A, B i C; susedne stranice imaju zajedničko teme.",
      "definition": true,
      "formulas": [
       "a=BC, b=CA, c=AB"
@@ -1938,13 +1962,21 @@
     },
     {
      "title": "Vrste prema stranicama",
-     "text": "Prema stranicama trougao je raznostraničan, jednakokraki ili jednakostraničan. Isti trougao ima opis po oba kriterijuma; jednakim stranicama odgovaraju jednaki naspramni uglovi.",
+     "text": "Prema stranicama razlikujemo raznostranični (sve različite), jednakokraki sa tačno dve jednake i jednakostranični (sve tri jednake stranice). Isti trougao ima opis po oba kriterijuma; jednakim stranicama odgovaraju jednaki naspramni uglovi i obrnuto.",
      "definition": false,
      "formulas": [],
      "visualIndexes": [
       0,
       1
      ],
+     "table": false
+    },
+    {
+     "title": "Najprecizniji naziv",
+     "text": "U širem smislu jednakostranični trougao je takođe jednakokraki. Kada biramo jednu vrstu prema stranicama, koristimo najprecizniji naziv.",
+     "definition": false,
+     "formulas": [],
+     "visualIndexes": [],
      "table": false
     },
     {
@@ -1957,7 +1989,7 @@
     },
     {
      "title": "Obim i nepoznata stranica",
-     "text": "Obim je zbir sve tri stranice; nepoznatu stranicu dobijaš oduzimanjem poznatih od obima.",
+     "text": "Obim je zbir dužina sve tri stranice; nepoznatu stranicu dobijaš oduzimanjem poznatih dužina od obima.",
      "definition": false,
      "formulas": [
       "O=a+b+c"
@@ -13401,8 +13433,8 @@
     "Jednakostraničan"
    ],
    "answer": "Jednakokraki",
-   "hint": "Dve stranice su jednake.",
-   "solution": "Trougao je jednakokraki.",
+   "hint": "Tačno dve stranice imaju istu dužinu.",
+   "solution": "Dužine 4 cm i 4 cm su jednake, a 7 cm je različita; trougao je jednakokraki.",
    "level": "basic",
    "skill": "Vrste trouglova",
    "taskType": "prepoznavanje-vrste",
@@ -13435,8 +13467,8 @@
    ],
    "answer": "Oštrougli",
    "hint": "Sva tri ugla su manja od 90°.",
-   "solution": "Trougao je oštrougli.",
-   "level": "medium",
+   "solution": "Najveći ugao je 80°<90°, pa je trougao oštrougli.",
+   "level": "basic",
    "skill": "Vrste trouglova",
    "taskType": "klasifikacija-po-uglovima",
    "errorCategory": "concept",
@@ -13449,13 +13481,13 @@
   },
   {
    "id": "o6-tv-3",
-   "prompt": "Odredi obim.",
+   "prompt": "Odredi obim u cm.",
    "math": "a=7 cm, b=9 cm, c=11 cm",
    "kind": "input",
    "answer": "27",
    "hint": "Saberi sve tri stranice.",
    "solution": "O=7+9+11=27 cm.",
-   "level": "medium",
+   "level": "basic",
    "skill": "Elementi trougla",
    "taskType": "obim-trougla",
    "errorCategory": "calculation",
@@ -13507,7 +13539,7 @@
   },
   {
    "id": "o6-tv-5",
-   "prompt": "Izaberi sve tačne opise.",
+   "prompt": "Izaberi par tačnih opisa trougla prema uglovima i stranicama.",
    "math": "Uglovi su 90°, 45°, 45°.",
    "kind": "choice",
    "choices": [
@@ -13517,7 +13549,7 @@
    ],
    "answer": "Pravougli i jednakokraki",
    "hint": "Jedan ugao je prav, a dva su jednaka.",
-   "solution": "Trougao je pravougli i jednakokraki.",
+   "solution": "Ugao od 90° je prav, pa je trougao pravougli. Uglovi 45° i 45° su jednaki, pa su im naspramne stranice jednake; trougao je i jednakokraki.",
    "level": "medium",
    "skill": "Vrste trouglova",
    "practiceOnly": true,
@@ -13532,13 +13564,13 @@
   },
   {
    "id": "o6-tv-6",
-   "prompt": "Odredi nepoznatu stranicu.",
+   "prompt": "Odredi dužinu stranice c u cm.",
    "math": "O=31 cm, a=8 cm, b=11 cm",
    "kind": "input",
    "answer": "12",
    "hint": "Od obima oduzmi dve poznate stranice.",
-   "solution": "c=31−8−11=12 cm.",
-   "level": "advanced",
+   "solution": "O=a+b+c. Zato 31=8+11+c, odnosno 31=19+c. Oduzmi 19 na obe strane: c=12 cm. Provera: 8+11+12=31 cm.",
+   "level": "medium",
    "skill": "Elementi trougla",
    "practiceOnly": true,
    "taskType": "obim-unazad",
@@ -13548,7 +13580,8 @@
     "variant": "sides",
     "labels": {
      "a": "8",
-     "b": "11"
+     "b": "11",
+     "c": "?"
     }
    },
    "lesson": "trougao-vrste",
@@ -13570,7 +13603,7 @@
    ],
    "answer": "Ima prav ugao.",
    "hint": "Pogledaj najveći ugao.",
-   "solution": "Ugao od 90° čini trougao pravouglim.",
+   "solution": "30°+60°+90°=180°. Najveći ugao je 90°, pa je trougao pravougli, ne oštrougli.",
    "level": "medium",
    "skill": "Vrste trouglova",
    "practiceOnly": true,
@@ -13786,7 +13819,7 @@
    "kind": "input",
    "answer": "15",
    "hint": "Sabiranjem sva tri podatka svaka stranica se pojavljuje dvaput.",
-   "solution": "2O=30, pa je O=15.",
+   "solution": "O=a+b+c. Sabiranjem datih jednakosti: (a+b)+(b+c)+(c+a)=9+11+10. Zato 2O=30, pa O=30:2=15.",
    "level": "advanced",
    "skill": "Elementi trougla",
    "taskType": "tv-pairs",
@@ -13796,9 +13829,9 @@
     "type": "triangle",
     "variant": "sides",
     "labels": {
-     "b": "9",
-     "c": "11",
-     "a": "10"
+     "a": "a",
+     "b": "b",
+     "c": "c"
     }
    },
    "prerequisites": [
@@ -13818,7 +13851,7 @@
    "kind": "input",
    "answer": "18",
    "hint": "Sabiranjem sva tri podatka svaka stranica se pojavljuje dvaput.",
-   "solution": "2O=36, pa je O=18.",
+   "solution": "O=a+b+c. Sabiranjem datih jednakosti: (a+b)+(b+c)+(c+a)=11+13+12. Zato 2O=36, pa O=36:2=18.",
    "level": "advanced",
    "skill": "Elementi trougla",
    "taskType": "tv-pairs",
@@ -13828,9 +13861,9 @@
     "type": "triangle",
     "variant": "sides",
     "labels": {
-     "b": "11",
-     "c": "13",
-     "a": "12"
+     "a": "a",
+     "b": "b",
+     "c": "c"
     }
    },
    "prerequisites": [
@@ -13849,7 +13882,7 @@
    "kind": "input",
    "answer": "21",
    "hint": "Sabiranjem sva tri podatka svaka stranica se pojavljuje dvaput.",
-   "solution": "2O=42, pa je O=21.",
+   "solution": "O=a+b+c. Sabiranjem datih jednakosti: (a+b)+(b+c)+(c+a)=13+15+14. Zato 2O=42, pa O=42:2=21.",
    "level": "advanced",
    "skill": "Elementi trougla",
    "taskType": "tv-pairs",
@@ -13859,9 +13892,9 @@
     "type": "triangle",
     "variant": "sides",
     "labels": {
-     "b": "13",
-     "c": "15",
-     "a": "14"
+     "a": "a",
+     "b": "b",
+     "c": "c"
     }
    },
    "prerequisites": [
@@ -13880,7 +13913,7 @@
    "kind": "input",
    "answer": "24",
    "hint": "Sabiranjem sva tri podatka svaka stranica se pojavljuje dvaput.",
-   "solution": "2O=48, pa je O=24.",
+   "solution": "O=a+b+c. Sabiranjem datih jednakosti: (a+b)+(b+c)+(c+a)=15+17+16. Zato 2O=48, pa O=48:2=24.",
    "level": "advanced",
    "skill": "Elementi trougla",
    "taskType": "tv-pairs",
@@ -13890,9 +13923,9 @@
     "type": "triangle",
     "variant": "sides",
     "labels": {
-     "b": "15",
-     "c": "17",
-     "a": "16"
+     "a": "a",
+     "b": "b",
+     "c": "c"
     }
    },
    "prerequisites": [
@@ -13911,7 +13944,7 @@
    "kind": "input",
    "answer": "27",
    "hint": "Sabiranjem sva tri podatka svaka stranica se pojavljuje dvaput.",
-   "solution": "2O=54, pa je O=27.",
+   "solution": "O=a+b+c. Sabiranjem datih jednakosti: (a+b)+(b+c)+(c+a)=17+19+18. Zato 2O=54, pa O=54:2=27.",
    "level": "advanced",
    "skill": "Elementi trougla",
    "taskType": "tv-pairs",
@@ -13921,9 +13954,9 @@
     "type": "triangle",
     "variant": "sides",
     "labels": {
-     "b": "17",
-     "c": "19",
-     "a": "18"
+     "a": "a",
+     "b": "b",
+     "c": "c"
     }
    },
    "prerequisites": [
@@ -13942,7 +13975,7 @@
    "kind": "input",
    "answer": "30",
    "hint": "Sabiranjem sva tri podatka svaka stranica se pojavljuje dvaput.",
-   "solution": "2O=60, pa je O=30.",
+   "solution": "O=a+b+c. Sabiranjem datih jednakosti: (a+b)+(b+c)+(c+a)=19+21+20. Zato 2O=60, pa O=60:2=30.",
    "level": "advanced",
    "skill": "Elementi trougla",
    "taskType": "tv-pairs",
@@ -13952,9 +13985,9 @@
     "type": "triangle",
     "variant": "sides",
     "labels": {
-     "b": "19",
-     "c": "21",
-     "a": "20"
+     "a": "a",
+     "b": "b",
+     "c": "c"
     }
    },
    "prerequisites": [
@@ -16831,7 +16864,7 @@
   },
   {
    "id": "ot6-1",
-   "prompt": "Odredi vrstu trougla.",
+   "prompt": "Odredi vrstu trougla prema stranicama.",
    "math": "5 cm, 5 cm, 8 cm",
    "kind": "choice",
    "choices": [
@@ -16841,7 +16874,7 @@
    ],
    "answer": "Jednakokraki",
    "hint": "Dve stranice su jednake.",
-   "solution": "Trougao je jednakokraki.",
+   "solution": "Dve stranice imaju dužinu 5 cm, a treća 8 cm, pa je trougao jednakokraki.",
    "level": "basic",
    "skill": "Vrste trouglova",
    "taskType": "klasifikacija",
@@ -16864,7 +16897,7 @@
   },
   {
    "id": "ot6-2",
-   "prompt": "Odredi obim.",
+   "prompt": "Odredi obim u cm.",
    "math": "a=6 cm, b=8 cm, c=9 cm",
    "kind": "input",
    "answer": "23",

@@ -1739,7 +1739,7 @@
     ],
     "test_result": "112/112 unit/integracionih; ciljane regresije; browser rezultati u final/",
     "phase2c_evidence": "12 konkretnih ID-jeva: sw-r5-angle-0…5 (°), sw-r5-rectangle-0…5 (cm); broj prihvaćen, sa jedinicom odbijen. qa/phase2c/grade6/obnavljanje-5/units.json; faza 3; status nepromenjen.; 6-4i: °C, 4 prihvaćen, 4 °C odbijen; qa/phase2c/grade6/sabiranje/units.json.; 6-6g: 12 prihvaćen, 12 °C odbijen; qa/phase2c/grade6/rastojanje/units.json.",
-    "phase2_evidence": "; qa/phase2c/grade6/mnozenje/units.json: 6-8j −12 prihvaćen, −12 °C odbijen; qa/phase2c/grade6/deljenje/units.json: 6-9j −6 prihvaćen, −6 dinara dnevno odbijen; qa/phase2c/grade6/mnozenje-deljenje/units.json: šest varijanti ow-md-context, −3 prihvaćen, −3 °C na sat odbijen"
+    "phase2_evidence": "; qa/phase2c/grade6/mnozenje/units.json: 6-8j −12 prihvaćen, −12 °C odbijen; qa/phase2c/grade6/deljenje/units.json: 6-9j −6 prihvaćen, −6 dinara dnevno odbijen; qa/phase2c/grade6/mnozenje-deljenje/units.json: šest varijanti ow-md-context, −3 prihvaćen, −3 °C na sat odbijen; qa/phase2c/grade6/trougao-vrste/units.json: o6-tv-3, o6-tv-6 i ot6-2 sa cm odbijeni"
   },
   {
     "id": "LOG-07",
@@ -3005,5 +3005,56 @@
     "status": "Ispravljeno i potvrđeno",
     "fix_commit": "538662e1be3dd90982c80e1ba0c027b6e6d53fdc",
     "phase2_evidence": "qa/phase2c/grade6/brojevni-izrazi/tasks.json; lesson.json; tests.log; browser.json; area-browser.json"
+  },
+  {
+    "id": "G6C-028",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Trougao",
+    "lesson": "trougao-vrste",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Matematička preciznost i postupak",
+    "description": "Nejasna podela vrsta i nepotpuni postupci za obim i nepoznatu stranicu.",
+    "evidence": "qa/phase2c/grade6/trougao-vrste/tasks.json; lesson.json; tests.log; browser.json",
+    "location": "app/content/october.ts; learning.ts; learning-notes.ts; october-work.ts; october-expansion.ts; october-tests.ts; task-visuals.ts",
+    "fix": "Precizirana definicija, uključivost jednakokrakog i najprecizniji naziv, dvostruka klasifikacija, tri primera i provera.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "9aca9a412e88df640a1a0b8cec41b16df2100a3d",
+    "phase2_evidence": "qa/phase2c/grade6/trougao-vrste/tasks.json; lesson.json; tests.log; browser.json"
+  },
+  {
+    "id": "G6C-029",
+    "priority": "P1",
+    "grade": "6",
+    "term": "I",
+    "area": "Trougao",
+    "lesson": "trougao-vrste",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Matematički netačan crtež",
+    "description": "Šest ow-tv-pairs varijanti prikazuje zbir dve stranice kao brojnu dužinu jedne stranice.",
+    "evidence": "qa/phase2c/grade6/trougao-vrste/tasks.json; lesson.json; tests.log; browser.json",
+    "location": "app/content/october.ts; learning.ts; learning-notes.ts; october-work.ts; october-expansion.ts; october-tests.ts; task-visuals.ts",
+    "fix": "Simbolička skica a, b, c; brojne vrednosti ostaju samo u jednakostima. Kod o6-tv-6 nepoznata c označena ?.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "9aca9a412e88df640a1a0b8cec41b16df2100a3d",
+    "phase2_evidence": "qa/phase2c/grade6/trougao-vrste/tasks.json; lesson.json; tests.log; browser.json"
+  },
+  {
+    "id": "G6C-030",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Trougao",
+    "lesson": "trougao-vrste",
+    "task": "Videti pojedinačne ID-jeve u tasks.json",
+    "category": "Nivoi težine",
+    "description": "Tri neadekvatno klasifikovana zadatka.",
+    "evidence": "qa/phase2c/grade6/trougao-vrste/tasks.json; lesson.json; tests.log; browser.json",
+    "location": "app/content/october.ts; learning.ts; learning-notes.ts; october-work.ts; october-expansion.ts; october-tests.ts; task-visuals.ts",
+    "fix": "7 osnovnih, 9 srednjih, 6 naprednih uključujući tematske provere.",
+    "status": "Ispravljeno i potvrđeno",
+    "fix_commit": "9aca9a412e88df640a1a0b8cec41b16df2100a3d",
+    "phase2_evidence": "qa/phase2c/grade6/trougao-vrste/tasks.json; lesson.json; tests.log; browser.json"
   }
 ]

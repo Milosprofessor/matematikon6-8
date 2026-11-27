@@ -1,3 +1,29 @@
+# Checkpoint 11 — Trougao i njegove vrste
+
+Datum: 27.11.2026. Polazni GitHub commit a0e1948; lokalni sadržajni commit 9aca9a4. Nalazi G6C-028–030.
+
+| Stavka | Stanje |
+|---|---:|
+| Potpuno matematički i metodički recenzirani zadaci | 351/919 |
+| Delimično | 0 |
+| Nepregledani | 568 |
+| Lekcije matematički recenzirane | 13/45 |
+| Postojeći rešeni primeri | 13/81 |
+| Novi rešeni primeri | 26/26 |
+| Trougao | 22/131 zadatka; 1/6 lekcija |
+
+- 22/22 zadatka, uključujući ot6-1 i ot6-2; 7 osnovnih, 9 srednjih, 6 naprednih. 3 korekcije nivoa, 14 izmenjenih zadataka. Očuvani ID-jevi, redosled i ključevi odgovora. Tri nezavisno proverena primera. Svi zadati trojci stranica i uglova proverenih zadataka grade nedegenerisane trouglove.
+- Precizirana definicija, najprecizniji naziv kod jednakostraničnog i jednakokrakog trougla, dvostruka klasifikacija, formula obima, nepoznata stranica i kompletan postupak iz tri zbira parova.
+- P1 G6C-029: šest varijanti ow-tv-pairs pogrešno prikazivalo zbirove kao dužine pojedinačnih stranica. Ispravljeno simboličkim oznakama a,b,c; o6-tv-6 ima upitnik za nepoznatu c. Potvrđene oznake u SVG-u na oba prikaza i sačuvane slike.
+- 126/126 programskih testova, oba build-a, TypeScript, lint (0 grešaka, 6 upozorenja), 22 browser zapisa. Nalaz LOG-06: 27 cm, 12 cm i 23 cm odbijeni, odgovori bez jedinice prihvaćeni. Zajednički validator ostaje za fazu 3.
+- Godišnji ishodi 6.01–6.04, 6.08 i 6.13 delimično recenzirani; ne potvrđujemo učeničko ostvarenje ishoda.
+
+**Tačka nastavka:** zbir-uglova-trougla, prvi ID o6-zu-1. Faza 2C nije završena; bez spajanja i javne objave.
+
+Dokazi: qa/phase2c/grade6/trougao-vrste, ledger-tasks.json, ledger-lessons.json i Excel evidencija.
+
+---
+
 # Checkpoint 10 — Brojevni izrazi; oblast Celi brojevi završena
 
 Datum: 27.11.2026. Polazni GitHub commit ba91058; lokalni sadržajni commit 538662e. Nalazi G6C-025–027.

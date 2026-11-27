@@ -1557,8 +1557,8 @@
           "Jednakostraničan"
         ],
         "answer": "Jednakokraki",
-        "hint": "Dve stranice su jednake.",
-        "solution": "Trougao je jednakokraki.",
+        "hint": "Tačno dve stranice imaju istu dužinu.",
+        "solution": "Dužine 4 cm i 4 cm su jednake, a 7 cm je različita; trougao je jednakokraki.",
         "level": "basic",
         "skill": "Vrste trouglova"
       },
@@ -1603,23 +1603,23 @@
         ],
         "answer": "Oštrougli",
         "hint": "Sva tri ugla su manja od 90°.",
-        "solution": "Trougao je oštrougli.",
-        "level": "medium",
+        "solution": "Najveći ugao je 80°<90°, pa je trougao oštrougli.",
+        "level": "basic",
         "skill": "Vrste trouglova"
       },
       {
         "id": "o6-tv-3",
-        "prompt": "Odredi obim.",
+        "prompt": "Odredi obim u cm.",
         "math": "a=7 cm, b=9 cm, c=11 cm",
         "answer": "27",
         "hint": "Saberi sve tri stranice.",
         "solution": "O=7+9+11=27 cm.",
-        "level": "medium",
+        "level": "basic",
         "skill": "Elementi trougla"
       },
       {
         "id": "o6-tv-5",
-        "prompt": "Izaberi sve tačne opise.",
+        "prompt": "Izaberi par tačnih opisa trougla prema uglovima i stranicama.",
         "math": "Uglovi su 90°, 45°, 45°.",
         "choices": [
           "Pravougli i jednakokraki",
@@ -1628,7 +1628,7 @@
         ],
         "answer": "Pravougli i jednakokraki",
         "hint": "Jedan ugao je prav, a dva su jednaka.",
-        "solution": "Trougao je pravougli i jednakokraki.",
+        "solution": "Ugao od 90° je prav, pa je trougao pravougli. Uglovi 45° i 45° su jednaki, pa su im naspramne stranice jednake; trougao je i jednakokraki.",
         "level": "medium",
         "skill": "Vrste trouglova"
       },
@@ -1649,12 +1649,12 @@
       },
       {
         "id": "o6-tv-6",
-        "prompt": "Odredi nepoznatu stranicu.",
+        "prompt": "Odredi dužinu stranice c u cm.",
         "math": "O=31 cm, a=8 cm, b=11 cm",
         "answer": "12",
         "hint": "Od obima oduzmi dve poznate stranice.",
-        "solution": "c=31−8−11=12 cm.",
-        "level": "advanced",
+        "solution": "O=a+b+c. Zato 31=8+11+c, odnosno 31=19+c. Oduzmi 19 na obe strane: c=12 cm. Provera: 8+11+12=31 cm.",
+        "level": "medium",
         "skill": "Elementi trougla"
       },
       {
@@ -1668,7 +1668,7 @@
         ],
         "answer": "Ima prav ugao.",
         "hint": "Pogledaj najveći ugao.",
-        "solution": "Ugao od 90° čini trougao pravouglim.",
+        "solution": "30°+60°+90°=180°. Najveći ugao je 90°, pa je trougao pravougli, ne oštrougli.",
         "level": "medium",
         "skill": "Vrste trouglova"
       },
@@ -1678,7 +1678,7 @@
         "math": "a+b=9, b+c=11, c+a=10",
         "answer": "15",
         "hint": "Sabiranjem sva tri podatka svaka stranica se pojavljuje dvaput.",
-        "solution": "2O=30, pa je O=15.",
+        "solution": "O=a+b+c. Sabiranjem datih jednakosti: (a+b)+(b+c)+(c+a)=9+11+10. Zato 2O=30, pa O=30:2=15.",
         "level": "advanced",
         "skill": "Elementi trougla"
       }

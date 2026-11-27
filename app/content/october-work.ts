@@ -73,7 +73,7 @@ register("brojevni-izrazi",[
 register("trougao-vrste",[
  v=>Q("tv","incidence",v,"Koje teme je zajedničko stranicama AB i BC?","△ABC",["A","B","C"],"B","Pogledaj oba naziva duži.","Obe stranice sadrže B.","basic","Elementi trougla"),
  v=>{const a=v+4;return Q("tv","table",v,"Koji red tabele je pogrešno opisan?","I: "+a+", "+a+", "+a+" → jednakostraničan; II: "+a+", "+a+", "+(a+1)+" → raznostraničan; III: "+a+", "+(a+1)+", "+(a+2)+" → raznostraničan",["I","II","III"],"II","Uporedi stranice u svakom redu.","U redu II dve stranice su jednake. Trougao je jednakokraki, ne raznostraničan.","medium","Vrste trouglova")},
- v=>{const a=v+4;return N("tv","pairs",v,"Odredi obim trougla.","a+b="+(2*a+1)+", b+c="+(2*a+3)+", c+a="+(2*a+2),3*a+3,"Sabiranjem sva tri podatka svaka stranica se pojavljuje dvaput.","2O="+(6*a+6)+", pa je O="+(3*a+3)+".","advanced","Elementi trougla")}
+ v=>{const a=v+4;return N("tv","pairs",v,"Odredi obim trougla.","a+b="+(2*a+1)+", b+c="+(2*a+3)+", c+a="+(2*a+2),3*a+3,"Sabiranjem sva tri podatka svaka stranica se pojavljuje dvaput.","O=a+b+c. Sabiranjem datih jednakosti: (a+b)+(b+c)+(c+a)="+(2*a+1)+"+"+(2*a+3)+"+"+(2*a+2)+". Zato 2O="+(6*a+6)+", pa O="+(6*a+6)+":2="+(3*a+3)+".","advanced","Elementi trougla")}
 ]);
 register("zbir-uglova-trougla",[
  v=>Q("angles","rule",v,"Dopuni.","α+β+γ=__",["90°","180°","360°"],"180°","Seti se zbira unutrašnjih uglova.","Zbir je 180°.","basic","Zbir uglova","rule"),
@@ -203,6 +203,7 @@ export function lessonWorkTasks(lessonId:string,pool:Task[]):Task[]{
  return plan.map(id=>{const task=pool.find(item=>item.id===id);if(!task)throw new Error("Missing lesson work task: "+id);return task});
 }
 export function applyOctoberWorkLevels(lessonId:string,tasks:Task[]):Task[]{
+ if(lessonId==="trougao-vrste")return tasks.map(task=>({...task,level:task.id.startsWith("ow-tv-pairs-")?"advanced":["o6-tv-1","o6-tv-2","o6-tv-3","o6-tv-4","ow-tv-incidence-0"].includes(task.id)?"basic":"medium"}));
  if(lessonId==="brojevni-izrazi")return tasks.map(task=>({...task,level:["6-11a","6-11f"].includes(task.id)||task.id.startsWith("ow-expr-model-")?"basic":"medium"}));
  if(lessonId==="mnozenje-deljenje")return tasks.map(task=>({...task,level:["6-10a","6-10f"].includes(task.id)||task.id.startsWith("ow-md-order-")?"basic":"medium"}));
  if(lessonId==="deljenje")return tasks.map(task=>({...task,level:["6-9a","6-9b","6-9c","6-9d","6-9f"].includes(task.id)?"basic":"medium"}));

@@ -5,8 +5,8 @@ const L=(task:Task,lessonId:string):OctoberTestTask=>({...task,lessonId});
 
 export const octoberAreaTests = {
   6:{trougao:[
-    L(C("ot6-1","Odredi vrstu trougla.","5 cm, 5 cm, 8 cm",["Jednakokraki","Raznostraničan","Jednakostraničan"],"Jednakokraki","Dve stranice su jednake.","Trougao je jednakokraki.","basic","Vrste trouglova",{taskType:"klasifikacija"}),"trougao-vrste"),
-    L(I("ot6-2","Odredi obim.","a=6 cm, b=8 cm, c=9 cm","23","Saberi stranice.","O=6+8+9=23 cm.","basic","Elementi trougla",{taskType:"obim"}),"trougao-vrste"),
+    L(C("ot6-1","Odredi vrstu trougla prema stranicama.","5 cm, 5 cm, 8 cm",["Jednakokraki","Raznostraničan","Jednakostraničan"],"Jednakokraki","Dve stranice su jednake.","Dve stranice imaju dužinu 5 cm, a treća 8 cm, pa je trougao jednakokraki.","basic","Vrste trouglova",{taskType:"klasifikacija"}),"trougao-vrste"),
+    L(I("ot6-2","Odredi obim u cm.","a=6 cm, b=8 cm, c=9 cm","23","Saberi stranice.","O=6+8+9=23 cm.","basic","Elementi trougla",{taskType:"obim"}),"trougao-vrste"),
     L(I("ot6-3","Odredi γ.","α=48°, β=77°","55","Zbir unutrašnjih uglova je 180°.","γ=180°−48°−77°=55°.","medium","Zbir uglova",{taskType:"nepoznati-ugao"}),"zbir-uglova-trougla"),
     L(I("ot6-4","Odredi spoljašnji ugao kod temena A.","β=46°, γ=69°","115","Saberi nesusedne unutrašnje uglove.","α₁=46°+69°=115°.","medium","Spoljašnji ugao",{taskType:"zbir-nesusednih"}),"uglovi-transverzala"),
     L(C("ot6-5","Odredi najveću stranicu.","α=72°, β=81°, γ=27°",["a","b","c"],"b","Najveća je naspram najvećeg ugla.","Najveći je β, pa je stranica b najveća.","medium","Odnos stranica i uglova",{taskType:"najveca-stranica"}),"odnos-stranica-uglova"),

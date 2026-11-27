@@ -88,6 +88,7 @@ export const noteLayouts:Record<string,PointLayout[]>={
  'trougao-vrste':[
   p('Temena i naspramne stranice','i0',{f:[0],definition:true,note:true}),
   p('Vrste prema stranicama','i1.0 i1.2',{v:[0,1]}),
+  p('Najprecizniji naziv','',{text:'U širem smislu jednakostranični trougao je takođe jednakokraki. Kada biramo jednu vrstu prema stranicama, koristimo najprecizniji naziv.'}),
   p('Vrste prema uglovima','i1.1 s0'),
   p('Obim i nepoznata stranica','s1',{f:[1]}),
  ],
