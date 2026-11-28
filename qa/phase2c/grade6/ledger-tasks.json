@@ -9922,99 +9922,155 @@
     "id": "q-proizvod-1",
     "area": "racionalni-brojevi",
     "lesson": "q-proizvod",
+    "answer": "-3/5",
+    "hint": "Saberi tri puta po −0,2.",
+    "procedure": "Zbir je −0,6.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-proizvod-2",
     "area": "racionalni-brojevi",
     "lesson": "q-proizvod",
+    "answer": "Pozitivan",
+    "hint": "Prebroj negativne činioce.",
+    "procedure": "Dva negativna činioca daju pozitivan proizvod.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-proizvod-3",
     "area": "racionalni-brojevi",
     "lesson": "q-proizvod",
+    "answer": "0",
+    "hint": "Razmisli o ulozi nule.",
+    "procedure": "Nula puta bilo koji broj daje nulu.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-proizvod-4",
     "area": "racionalni-brojevi",
     "lesson": "q-proizvod",
+    "answer": "-1/6",
+    "hint": "Skrati 3 sa 9 i 4 sa 8.",
+    "procedure": "Ostaje −[[frac:1|2·3]], odnosno −[[frac:1|6]].",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-proizvod-5",
     "area": "racionalni-brojevi",
     "lesson": "q-proizvod",
+    "answer": "27/2",
+    "hint": "Deo količine dobijaš proizvodom.",
+    "procedure": "18·[[frac:3|4]]=[[frac:54|4]]=13,5 litara.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-proizvod-6",
     "area": "racionalni-brojevi",
     "lesson": "q-proizvod",
+    "answer": "-2",
+    "hint": "Koji broj pomnožen sa jednom polovinom daje 1? Zatim odredi potreban znak.",
+    "procedure": "(−0,5)·(−2)=1.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-proizvod-7",
     "area": "racionalni-brojevi",
     "lesson": "q-proizvod",
+    "answer": "-7",
+    "hint": "Najpre pomnoži −1,25 i 8.",
+    "procedure": "(−10)·0,7=−7.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-proizvod-8",
     "area": "racionalni-brojevi",
     "lesson": "q-proizvod",
+    "answer": "-5",
+    "hint": "Izdvoj 2,5.",
+    "procedure": "2,5·(−3,7+1,7)=2,5·(−2)=−5.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-proizvod-9",
     "area": "racionalni-brojevi",
     "lesson": "q-proizvod",
+    "answer": "189/2",
+    "hint": "Ostaju tri četvrtine stare cene.",
+    "procedure": "126·0,75=94,5 dinara.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-proizvod-10",
     "area": "racionalni-brojevi",
     "lesson": "q-proizvod",
+    "answer": "-6",
+    "hint": "Prebroj tri negativna činioca.",
+    "procedure": "Prva dva daju 2, a druga dva −3. Proizvod je −6.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-proizvod-11",
     "area": "racionalni-brojevi",
     "lesson": "q-proizvod",
+    "answer": "1/50",
+    "hint": "Množenje polovinom prepolovljava.",
+    "procedure": "Polovina od četiri stota dela su dva stota dela.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-proizvod-12",
     "area": "racionalni-brojevi",
     "lesson": "q-proizvod",
+    "answer": "(Fraction(-2, 5), Fraction(6, 5))",
+    "hint": "Pomnoži oba člana.",
+    "procedure": "Proizvod dva negativna broja je pozitivan.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-proizvod-13",
     "area": "racionalni-brojevi",
     "lesson": "q-proizvod",
+    "answer": "-12",
+    "hint": "Četiri četvrtine daju ceo broj.",
+    "procedure": "4·(−3)=−12.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-proizvod-14",
     "area": "racionalni-brojevi",
     "lesson": "q-proizvod",
+    "answer": "-15/8",
+    "hint": "Opadanje ima negativan znak.",
+    "procedure": "−0,75·2,5=−1,875 stepeni.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-deljenje-izrazi-1",
@@ -12461,8 +12517,12 @@
     "id": "s6-godisnja-2",
     "area": "s6-zavrsnica",
     "lesson": "q-proizvod",
+    "answer": "2",
+    "hint": "Najpre odredi znak.",
+    "procedure": "Dva negativna činioca daju pozitivan proizvod. 0,8·2,5=2.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-godisnja-3",

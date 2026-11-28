@@ -1,0 +1,19 @@
+{
+  "id": "q-proizvod",
+  "area": "racionalni-brojevi",
+  "sequence": "Znak i nula, skraćivanje, deo količine, distributivnost i promena.",
+  "examples": [
+    {
+      "question": "Kako bez dugog množenja izračunati −0,25·19,6?",
+      "steps": [
+        "Zapiši 19,6 kao 20−0,4.",
+        "−0,25·20−(−0,25·0,4)=−5+0,1.",
+        "Proizvod je −4,9."
+      ],
+      "verification": "−0,25·19,6=−4,9."
+    }
+  ],
+  "misconceptions": "Skraćuju se činioci; pri distributivnosti množe se oba člana.",
+  "assessment": "14 za vežbanje i jedan iz godišnje provere.",
+  "status": "potpuno recenzirana"
+}

@@ -1,3 +1,7 @@
+# Checkpoint 21 — Množenje racionalnih brojeva
+
+555/919 zadataka i 24/45 lekcija. G6C-043: pravilo obuhvata oba slučaja znaka, nagoveštaj se oslanja na polovinu pre uvođenja pojma recipročnog broja, a pitanje o četvrtini jasno imenuje celinu. Egzaktna provera obuhvata svih 15 pripadajućih zadataka i oba primera. 127/127 testova, Worker i Pages build, TypeScript, lint (6 upozorenja). Desktop i touch emulacija: po deset redovnih zadataka, povratna informacija, pomoć, prikaz matematike i ćirilice, napredak posle osvežavanja. Posebna regresija napretka prošla. Dodatni zadaci provereni računski. Sledeći zadatak q-deljenje-izrazi-1.
+
 # Checkpoint 20 — Sabiranje, oduzimanje i rastojanje
 
 540/919 zadataka i 23/45 lekcija. G6C-042: objašnjeni jednaki delovi, pozitivan smer ose kod ronioca i pojam suprotnog broja. Egzaktna provera obuhvata svih 14 pripadajućih zadataka i oba primera. 127/127 testova, Worker i Pages build, TypeScript, lint (6 upozorenja). Desktop i touch emulacija: po deset redovnih zadataka, povratna informacija, pomoć, prikaz matematike i ćirilice, napredak posle osvežavanja. Posebna regresija napretka prošla. Dodatni zadaci provereni računski. Sledeći zadatak q-proizvod-1.

@@ -3462,7 +3462,7 @@
    "title": "Množenje racionalnih brojeva",
    "intro": "Pri množenju razlomaka pomnoži brojioce međusobno i imenioce međusobno. Znak odredi posebno.",
    "rules": [
-    "Različiti znaci dva nenulta činioca daju negativan proizvod. Svaki broj pomnožen nulom daje nulu.",
+    "Dva nenulta činioca istog znaka daju pozitivan proizvod, a različitih znakova negativan. Svaki broj pomnožen nulom daje nulu.",
     "Zameni redosled činilaca ili skrati zajedničke činioce pre množenja.",
     "Pri skraćivanju deliš činioce brojioca i imenioca. Sabirke u zbiru ne smeš tako skraćivati."
    ],
@@ -3499,7 +3499,7 @@
     },
     {
      "title": "Pravilo",
-     "text": "Različiti znaci dva nenulta činioca daju negativan proizvod. Svaki broj pomnožen nulom daje nulu.",
+     "text": "Dva nenulta činioca istog znaka daju pozitivan proizvod, a različitih znakova negativan. Svaki broj pomnožen nulom daje nulu.",
      "definition": false,
      "formulas": [
       "[[frac:a|b]]·[[frac:c|d]]=[[frac:ac|bd]], b≠0, d≠0",
@@ -19213,7 +19213,7 @@
    "id": "q-proizvod-6",
    "prompt": "Koji činilac nedostaje?",
    "math": "−0,5·x=1",
-   "hint": "Potreban je recipročan broj.",
+   "hint": "Koji broj pomnožen sa jednom polovinom daje 1? Zatim odredi potreban znak.",
    "solution": "(−0,5)·(−2)=1.",
    "taskType": "nepoznati-činilac",
    "answer": "-2",
@@ -19349,7 +19349,7 @@
   },
   {
    "id": "q-proizvod-13",
-   "prompt": "Koliki je broj kad njegovih 0,25 iznosi −3?",
+   "prompt": "Četvrtina nekog broja iznosi −3. Koji je to broj?",
    "math": "",
    "hint": "Četiri četvrtine daju ceo broj.",
    "solution": "4·(−3)=−12.",
