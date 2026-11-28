@@ -885,7 +885,21 @@
   {
     "id": "q-nejednacine",
     "area": "racionalni-brojevi",
-    "status": "nepregledana u fazi 2C"
+    "sequence": "Pripadnost, smer i granica, presek uslova i celobrojna rešenja.",
+    "examples": [
+      {
+        "question": "Koji racionalni brojevi zadovoljavaju 0,5−x≥2?",
+        "steps": [
+          "Oduzmi 0,5 sa obe strane i dobijaš −x≥1,5.",
+          "Pomnoži sa −1 i obrni smer: x≤−1,5.",
+          "Granica −1,5 daje jednakost i pripada rešenju."
+        ],
+        "verification": "0,5−x≥2 daje x≤−1,5."
+      }
+    ],
+    "misconceptions": "Negativan činilac obrće smer; stroga nejednakost isključuje granicu.",
+    "assessment": "14 za vežbanje i jedan iz godišnje provere.",
+    "status": "potpuno recenzirana"
   },
   {
     "id": "s6-model",

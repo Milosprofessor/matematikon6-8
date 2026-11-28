@@ -1,0 +1,167 @@
+[
+  {
+    "id": "q-nejednacine-1",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "answer": "Ne",
+    "hint": "Pogledaj znak poređenja.",
+    "procedure": "Broj 1,25 nije manji od samog sebe.",
+    "level": "basic",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-nejednacine-2",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "answer": "x>0,5",
+    "hint": "Oduzmi polovinu.",
+    "procedure": "x>1−0,5=0,5.",
+    "level": "basic",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-nejednacine-3",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "answer": "−0,3",
+    "hint": "Proveri koji je broj levo od granice ili na samoj granici.",
+    "procedure": "−0,3<−0,25.",
+    "level": "basic",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-nejednacine-4",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "answer": "x>−1,5",
+    "hint": "Deliš negativnim brojem.",
+    "procedure": "Deljenjem sa −2 dobija se x>−1,5.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-nejednacine-5",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "answer": "2",
+    "hint": "Izoluj x.",
+    "procedure": "Iz x<2,3 sledi da je najveći ceo broj 2.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-nejednacine-6",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "answer": "x≥−0,5",
+    "hint": "Pomnoži pozitivnim deliocem.",
+    "procedure": "x≥−2·0,25=−0,5.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-nejednacine-7",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "answer": "Puna tačka i poluprava udesno",
+    "hint": "Odredi smer i uključenost granice.",
+    "procedure": "Rešenja sadrže −1,2 i sve veće racionalne brojeve.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-nejednacine-8",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "answer": "4",
+    "hint": "Nabroj cele brojeve u preseku.",
+    "procedure": "To su −1, 0, 1 i 2.",
+    "level": "advanced",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-nejednacine-9",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "answer": "7",
+    "hint": "Za kilometre ostaje 90 dinara.",
+    "procedure": "90:12,5=7,2 pa je moguće najviše 7 celih kilometara.",
+    "level": "advanced",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-nejednacine-10",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "answer": "2",
+    "hint": "Oduzmi 0,5, zatim podeli sa −2.",
+    "procedure": "Deljenjem sa −2 smer se obrće: x>1,5. Najmanji ceo broj veći od 1,5 jeste 2.",
+    "level": "advanced",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-nejednacine-11",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "answer": "≤",
+    "hint": "Uoči crticu jednakosti.",
+    "procedure": "Manje ili jednako dopušta jednakost.",
+    "level": "basic",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-nejednacine-12",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "answer": "x≥0,8",
+    "hint": "Pomnoži sa −1.",
+    "procedure": "Smer se menja u ≥.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-nejednacine-13",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "answer": "Beskonačno mnogo",
+    "hint": "Između svaka dva različita racionalna broja je i njihova sredina.",
+    "procedure": "Umetanje sredina možeš ponavljati bez kraja.",
+    "level": "advanced",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-nejednacine-14",
+    "area": "racionalni-brojevi",
+    "lesson": "q-nejednacine",
+    "answer": "Da",
+    "hint": "Izračunaj levu stranu.",
+    "procedure": "Nula je veća od −0,01.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-godisnja-5",
+    "area": "s6-zavrsnica",
+    "lesson": "q-nejednacine",
+    "answer": "4",
+    "hint": "Po deljenju negativnim brojem promeni smer.",
+    "procedure": "x<3,5. Odgovaraju 0, 1, 2 i 3.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  }
+]

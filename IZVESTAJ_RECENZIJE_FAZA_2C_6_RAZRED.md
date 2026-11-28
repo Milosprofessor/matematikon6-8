@@ -1,3 +1,7 @@
+# Checkpoint 24 — Nejednačine u skupu racionalnih brojeva
+
+599/919 zadataka i 27/45 lekcija. G6C-046: kod nestroge nejednakosti nagoveštaj uključuje samu granicu, a postupak za najmanji ceo broj povezuje otvorenu granicu sa odgovorom. Oblast Racionalni brojevi završena: završna provera 10/10 na desktopu i dodirnom prikazu, prethodni napredak i rezultat sačuvani. Egzaktna provera obuhvata svih 15 pripadajućih zadataka i oba primera. 127/127 testova, Worker i Pages build, TypeScript, lint (6 upozorenja). Desktop i touch emulacija: po deset redovnih zadataka, povratna informacija, pomoć, prikaz matematike i ćirilice, napredak posle osvežavanja. Posebna regresija napretka prošla. Dodatni zadaci provereni računski. Sledeći zadatak s6-model-1.
+
 # Checkpoint 23 — Jednačine u skupu racionalnih brojeva
 
 584/919 zadataka i 26/45 lekcija. G6C-045: razjašnjeni nulti koeficijent, poznata polovina i jednake mase punih boca. Egzaktna provera obuhvata svih 14 pripadajućih zadataka i oba primera. 127/127 testova, Worker i Pages build, TypeScript, lint (6 upozorenja). Desktop i touch emulacija: po deset redovnih zadataka, povratna informacija, pomoć, prikaz matematike i ćirilice, napredak posle osvežavanja. Posebna regresija napretka prošla. Dodatni zadaci provereni računski. Sledeći zadatak q-nejednacine-1.
