@@ -1070,7 +1070,35 @@
   {
     "id": "s6-podaci",
     "area": "s6-odnosi",
-    "status": "nepregledana u fazi 2C"
+    "sequence": "Tabela i skala, izbor prikaza, promene, a zatim običan i ponderisan prosek.",
+    "examples": [
+      {
+        "question": "U ponedeljak, utorak i sredu pozajmljeno je 8, 12 i 10 knjiga. Kako nacrtati stubove?",
+        "steps": [
+          "Na vodoravnoj osi napiši dane, a na uspravnoj broj knjiga sa jednakim korakom 2 od nule.",
+          "Stubovi su visoki 4, 6 i 5 podeoka. Najviše knjiga pozajmljeno je u utorak."
+        ],
+        "verification": "Stubovi visina 8, 12 i 10 na istoj skali."
+      },
+      {
+        "question": "U 8, 12 i 16 sati temperatura je bila 4, 10 i 7 °C. Na kom delu linija opada?",
+        "steps": [
+          "Na osi vremena sva tri merenja imaju jednak razmak od četiri sata. Ubeleži tačke (8, 4), (12, 10), (16, 7).",
+          "Od podneva do 16 sati promena je 7−10=−3 °C. Ne možemo utvrditi tačnu temperaturu u 14 sati bez dodatne pretpostavke."
+        ],
+        "verification": "Pad od 12 do 16 sati."
+      },
+      {
+        "question": "Za četiri dana pozajmljeno je 6, 0, 10 i 8 knjiga. Odredi prosek.",
+        "steps": [
+          "Ukupan broj je 6+0+10+8=24. Broj dana je četiri, jer i dan bez pozajmica pripada posmatranju.",
+          "24:4=6 knjiga dnevno u proseku. To ne znači da je svaki dan pozajmljeno baš šest."
+        ],
+        "verification": "24/4=6 knjiga."
+      }
+    ],
+    "assessment": "16 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
   },
   {
     "id": "s6-razmera",
