@@ -1400,7 +1400,35 @@
   {
     "id": "s6-trougao-trapez",
     "area": "s6-povrsine",
-    "status": "nepregledana u fazi 2C"
+    "sequence": "Od sastavljanja dve kopije do formule, obrnute primene i poređenja pri jednakoj visini.",
+    "examples": [
+      {
+        "question": "Trougao ima osnovicu 9 cm i visinu 4 cm. Kolika je površina?",
+        "steps": [
+          "Dve kopije daju paralelogram površine 9·4=36 cm².",
+          "Jedan trougao ima P=36:2=18 cm²."
+        ],
+        "verification": "18 cm²"
+      },
+      {
+        "question": "Trapez ima osnovice 6 i 10 cm i visinu 5 cm. Kolika je njegova površina?",
+        "steps": [
+          "Paralelogram od dve kopije ima osnovicu 16 cm i visinu 5 cm, pa je njegova površina 80 cm².",
+          "P=(6+10)·5:2=40 cm². Isti račun je m·h=8·5."
+        ],
+        "verification": "40 cm²"
+      },
+      {
+        "question": "Površina trougla je 30 cm², a visina 5 cm. Nađi osnovicu.",
+        "steps": [
+          "P=a·h:2 daje 30=a·5:2. Pomnoži obe strane sa 2.",
+          "60=5a, zato a=12 cm. Provera: 12·5:2=30."
+        ],
+        "verification": "12 cm"
+      }
+    ],
+    "assessment": "18 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
   },
   {
     "id": "s6-delovi",

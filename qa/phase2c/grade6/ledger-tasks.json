@@ -12705,78 +12705,122 @@
     "id": "s6-trougao-trapez-1",
     "area": "s6-povrsine",
     "lesson": "s6-trougao-trapez",
+    "answer": "12",
+    "hint": "Sastavi paralelogram od dve podudarne kopije i uporedi njihove površine.",
+    "procedure": "P=6·4:2=12 cm².",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trougao-trapez-2",
     "area": "s6-povrsine",
     "lesson": "s6-trougao-trapez",
+    "answer": "20",
+    "hint": "Katete su međusobno normalne.",
+    "procedure": "Jedna kateta je osnovica, druga visina. P=5·8:2=20 cm².",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trougao-trapez-3",
     "area": "s6-povrsine",
     "lesson": "s6-trougao-trapez",
+    "answer": "21",
+    "hint": "Srednja linija već sadrži polovinu zbira.",
+    "procedure": "P=m·h=7·3=21 cm².",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trougao-trapez-4",
     "area": "s6-povrsine",
     "lesson": "s6-trougao-trapez",
+    "answer": "1/2",
+    "hint": "Koliko podudarnih trouglova je u sastavljenoj figuri?",
+    "procedure": "Dva podudarna trougla daju ceo paralelogram. Jedan je polovina.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trougao-trapez-5",
     "area": "s6-povrsine",
     "lesson": "s6-trougao-trapez",
+    "answer": "7",
+    "hint": "Uvrsti podatke u P=a·h:2.",
+    "procedure": "42=12h:2, pa je h=84:12=7 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trougao-trapez-6",
     "area": "s6-povrsine",
     "lesson": "s6-trougao-trapez",
+    "answer": "32",
+    "hint": "Izjednači jedinice.",
+    "procedure": "1 dm=10 cm. P=(10+6)·4:2=32 cm².",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trougao-trapez-7",
     "area": "s6-povrsine",
     "lesson": "s6-trougao-trapez",
+    "answer": "9",
+    "hint": "Upotrebi P=m·h.",
+    "procedure": "45=5m daje m=9 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trougao-trapez-8",
     "area": "s6-povrsine",
     "lesson": "s6-trougao-trapez",
+    "answer": "Ostaje ista",
+    "hint": "Proveri šta ulazi u formulu.",
+    "procedure": "Osnovica i visina su ostale iste, pa je isti i proizvod podeljen sa 2.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trougao-trapez-9",
     "area": "s6-povrsine",
     "lesson": "s6-trougao-trapez",
+    "answer": "6",
+    "hint": "Iz površine vrati zbir osnovica.",
+    "procedure": "54=(12+b)·6:2 daje 18=12+b, pa b=6 cm.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trougao-trapez-10",
     "area": "s6-povrsine",
     "lesson": "s6-trougao-trapez",
+    "answer": "36",
+    "hint": "Isti činilac h:2 čuva odnos.",
+    "procedure": "Osam delova je 96, pa jedan ima 12. Manja ima 3·12=36 m².",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trougao-trapez-11",
     "area": "s6-povrsine",
     "lesson": "s6-trougao-trapez",
+    "answer": "72",
+    "hint": "Svaki činilac se udvostručio.",
+    "procedure": "Novi proizvod je četiri puta veći. 4·18=72 m².",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-delovi-1",
@@ -12888,15 +12932,23 @@
     "id": "s6-trougao-trapez-15",
     "area": "s6-povrsine",
     "lesson": "s6-trougao-trapez",
+    "answer": "12",
+    "hint": "Srednja linija ostaje ista.",
+    "procedure": "m=6 m, promena visine je 2 m. Prirast je 6·2=12 m².",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trougao-trapez-16",
     "area": "s6-povrsine",
     "lesson": "s6-trougao-trapez",
+    "answer": "25",
+    "hint": "Iz manjeg trougla odredi visinu.",
+    "procedure": "10=4h:2 daje h=5 cm. Ukupno P=(4+6)·5:2=25 cm².",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-delovi-15",
@@ -13509,22 +13561,34 @@
     "id": "s6-trougao-trapez-12",
     "area": "s6-povrsine",
     "lesson": "s6-trougao-trapez",
+    "answer": "30",
+    "hint": "Jednakost krakova ne menja formulu.",
+    "procedure": "P=(9+15)·2,5:2=30 cm².",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trougao-trapez-13",
     "area": "s6-povrsine",
     "lesson": "s6-trougao-trapez",
+    "answer": "4",
+    "hint": "Nađi površinu dvostruke figure.",
+    "procedure": "2P=30, pa a=30:7,5=4 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trougao-trapez-14",
     "area": "s6-povrsine",
     "lesson": "s6-trougao-trapez",
+    "answer": "Trougao osnovice 10 i trapez osnovica 3 i 7",
+    "hint": "Uporedi osnovice dvostrukih figura.",
+    "procedure": "Pri jednakim visinama površine su jednake ako je osnovica trougla jednaka zbiru osnovica trapeza. Važi 10=3+7.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-delovi-12",
@@ -13649,8 +13713,12 @@
     "id": "s6-polugodiste-8",
     "area": "s6-zavrsnica",
     "lesson": "s6-trougao-trapez",
+    "answer": "13",
+    "hint": "Iz površine nađi zbir osnovica.",
+    "procedure": "a+b=2·66:6=22. Veća je (22+4):2=13 cm.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-polugodiste-9",
@@ -13876,8 +13944,12 @@
     "id": "s6-izazov-9",
     "area": "s6-zavrsnica",
     "lesson": "s6-trougao-trapez",
+    "answer": "10",
+    "hint": "Trouglovi imaju istu visinu između osnovica.",
+    "procedure": "Manji daje h=2·24:6=8 cm. Duža osnovica je 2·40:8=10 cm.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-izazov-10",

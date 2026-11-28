@@ -5614,7 +5614,7 @@
      ]
     },
     {
-     "question": "Trapez ima osnovice 6 i 10 cm i visinu 5 cm.",
+     "question": "Trapez ima osnovice 6 i 10 cm i visinu 5 cm. Kolika je njegova površina?",
      "steps": [
       "Paralelogram od dve kopije ima osnovicu 16 cm i visinu 5 cm, pa je njegova površina 80 cm².",
       "P=(6+10)·5:2=40 cm². Isti račun je m·h=8·5."
@@ -24147,7 +24147,7 @@
    "level": "basic",
    "prompt": "Trougao ima osnovicu 6 cm i visinu 4 cm. Koliko cm² je P?",
    "math": "",
-   "hint": "Udvostručena figura ima površinu 24 cm².",
+   "hint": "Sastavi paralelogram od dve podudarne kopije i uporedi njihove površine.",
    "solution": "P=6·4:2=12 cm².",
    "kind": "input",
    "answer": "12",
@@ -25812,7 +25812,7 @@
    "prompt": "Koji par daje iste površine pri jednakoj visini?",
    "math": "",
    "hint": "Uporedi osnovice dvostrukih figura.",
-   "solution": "Za jednake visine uslov je osnovica trougla jednaka je zbiru osnovica trapeza. Važi 10=3+7.",
+   "solution": "Pri jednakim visinama površine su jednake ako je osnovica trougla jednaka zbiru osnovica trapeza. Važi 10=3+7.",
    "kind": "choice",
    "answer": "Trougao osnovice 10 i trapez osnovica 3 i 7",
    "choices": [

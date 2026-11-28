@@ -1,3 +1,9 @@
+# Checkpoint 40 — Površina trougla i trapeza
+
+883/919 zadataka i 43/45 lekcija. G6C-062: Dopunjen zahtev primera o trapezu i nagoveštaj za izvođenje površine trougla; preciziran uslov jednakih površina.
+
+Egzaktno pregledano 18 zadataka i tri rešena primera. 127/127 programskih testova, Worker i Pages build, TypeScript; lint bez grešaka. Na desktopu i touch emulaciji proveren je tok svih deset redovnih zadataka, pomoć, povratna informacija, tri primera, ćirilica i napredak posle osvežavanja. Posebna regresija napretka prošla. Ostali zadaci provereni su računski. Sledeći zadatak: s6-delovi-1.
+
 # Checkpoint 39 — Površina kvadrata, pravougaonika i paralelograma
 
 865/919 zadataka i 42/45 lekcija. G6C-061: Precizirani visina, pravougaoni oblik ćilima i pojam hektara kao jedinice površine.
