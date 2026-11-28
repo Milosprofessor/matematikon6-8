@@ -4576,7 +4576,7 @@
         "math": "d_1=12 cm, d_2=16 cm",
         "answer": "10",
         "hint": "Koristi polovine dijagonala.",
-        "solution": "a²=6²+8²=100, pa je a=10 cm.",
+        "solution": "a²+b²=c². Polovine dijagonala su katete od 6 i 8 cm, a stranica s je hipotenuza. Zato 6²+8²=s², pa 36+64=s² i s²=100. Pozitivna stranica je s=[[sqrt:100]]=10 cm.",
         "level": "basic",
         "skill": "Pitagora u rombu"
       },
@@ -4616,7 +4616,7 @@
         "math": "d_1=14 cm, d_2=20 cm",
         "answer": "140",
         "hint": "Koristi P=d₁d₂/2.",
-        "solution": "P=14·20/2=140 cm².",
+        "solution": "P=[[frac:14·20|2]]=140 cm².",
         "level": "medium",
         "skill": "Romb"
       },
@@ -4631,7 +4631,7 @@
         ],
         "answer": "Netačno, a=5",
         "hint": "Koristi polovine dijagonala 3 i 4.",
-        "solution": "a=√(3²+4²)=5.",
+        "solution": "a²+b²=c². Polovine dijagonala su katete od 3 i 4 jedinica dužine, a stranica s je hipotenuza. Zato 3²+4²=s², pa 9+16=s² i s²=25. Pozitivna stranica je s=[[sqrt:25]]=5 jedinica dužine.",
         "level": "medium",
         "skill": "Pitagora u rombu"
       },
@@ -4641,7 +4641,7 @@
         "math": "d_1=18 cm, d_2=24 cm",
         "answer": "60",
         "hint": "Najpre odredi stranicu.",
-        "solution": "a=√(9²+12²)=15, pa je O=60 cm.",
+        "solution": "a²+b²=c². Polovine dijagonala su katete od 9 i 12 cm, a stranica s je hipotenuza. Zato 9²+12²=s², pa 81+144=s² i s²=225. Pozitivna stranica je s=[[sqrt:225]]=15 cm. Obim je O=4·15=60 cm.",
         "level": "medium",
         "skill": "Pitagora u rombu"
       },
@@ -4661,7 +4661,7 @@
         "math": "a=13 cm, d_1=10 cm",
         "answer": "24",
         "hint": "Polovina prve dijagonale je 5 cm.",
-        "solution": "(d₁/2)²+(d₂/2)²=a². 5²+(d₂/2)²=13²; 25+(d₂/2)²=169; (d₂/2)²=144. Pozitivna polovina je 12 cm, d₂=24 cm.",
+        "solution": "a²+b²=c². U pomoćnom trouglu hipotenuza je stranica romba. (d₁/2)²+(d₂/2)²=a². 5²+(d₂/2)²=13²; 25+(d₂/2)²=169; (d₂/2)²=144. Pozitivna polovina je 12 cm, d₂=24 cm.",
         "level": "advanced",
         "skill": "Pitagora u rombu"
       },
@@ -4671,7 +4671,7 @@
         "math": "a=17 cm, d_2=30 cm",
         "answer": "16",
         "hint": "Polovina d₂ je 15 cm.",
-        "solution": "(d₁/2)²+(d₂/2)²=a². (d₁/2)²+15²=17²; (d₁/2)²+225=289; (d₁/2)²=64. Pozitivna polovina je 8 cm, pa je d₁=16 cm.",
+        "solution": "a²+b²=c². U pomoćnom trouglu hipotenuza je stranica romba. (d₁/2)²+(d₂/2)²=a². (d₁/2)²+15²=17²; (d₁/2)²+225=289; (d₁/2)²=64. Pozitivna polovina je 8 cm, pa je d₁=16 cm.",
         "level": "advanced",
         "skill": "Pitagora u rombu"
       },
@@ -4680,8 +4680,8 @@
         "prompt": "Odredi visinu romba.",
         "math": "d_1=6 cm, d_2=8 cm",
         "answer": "4,8",
-        "hint": "Odredi stranicu i površinu; zatim koristi P=ah.",
-        "solution": "a=5 cm, P=24 cm², h=P:a=4,8 cm.",
+        "hint": "Polovine dijagonala su katete. Odredi stranicu i površinu, pa koristi P=ah.",
+        "solution": "a²+b²=c². Dijagonale romba se polove pod pravim uglom. Katete pomoćnog pravouglog trougla imaju dužine 3 cm i 4 cm, a hipotenuza je stranica s. Zato 3²+4²=s², pa 9+16=s² i s²=25. Pozitivna stranica je s=5 cm. Površina je P=[[frac:6·8|2]]=24 cm². Iz P=sh sledi h=[[frac:24|5]]=4,8 cm.",
         "level": "advanced",
         "skill": "Pitagora u rombu"
       }

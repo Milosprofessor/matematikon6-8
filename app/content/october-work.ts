@@ -140,7 +140,14 @@ register("pitagora-cetvorougao",[
 register("pitagora-romb",[
  v=>Q("rhomb","angles",v,"Pod kojim uglom se seku dijagonale romba?","",["45°","60°","90°"],"90°","Dijagonale su normalne.","Grade pravi ugao.","basic","Pitagora u rombu","rule"),
  v=>{const k=v+1;return N("rhomb","missingarea",v,"Odredi d₂.","P="+24*k*k+" cm², d_1="+6*k+" cm",8*k,"Upotrebi P=d₁d₂/2.","d₂=2·"+24*k*k+":"+6*k+"="+8*k+" cm.","medium","Romb")},
- v=>{const k=v+1;return N("rhomb","height",v,"Odredi visinu romba.","d_1="+6*k+" cm, d_2="+8*k+" cm",4.8*k,"Odredi stranicu i površinu; zatim koristi P=ah.","a="+5*k+" cm, P="+24*k*k+" cm², h=P:a="+num(4.8*k)+" cm.","advanced","Pitagora u rombu")}
+ v=>{
+   const scale=v+1, halfFirst=3*scale, halfSecond=4*scale;
+   const side=5*scale, area=2*halfFirst*halfSecond, height=area/side;
+   return N("rhomb","height",v,"Odredi visinu romba.",`d_1=${2*halfFirst} cm, d_2=${2*halfSecond} cm`,height,
+     "Polovine dijagonala su katete. Odredi stranicu i površinu, pa koristi P=ah.",
+     `a²+b²=c². Dijagonale romba se polove pod pravim uglom. Katete pomoćnog pravouglog trougla imaju dužine ${halfFirst} cm i ${halfSecond} cm, a hipotenuza je stranica s. Zato ${halfFirst}²+${halfSecond}²=s², pa ${halfFirst**2}+${halfSecond**2}=s² i s²=${side**2}. Pozitivna stranica je s=${side} cm. Površina je P=[[frac:${2*halfFirst}·${2*halfSecond}|2]]=${area} cm². Iz P=sh sledi h=[[frac:${area}|${side}]]=${num(height)} cm.`,
+     "advanced","Pitagora u rombu");
+ }
 ]);
 register("pitagora-trapez",[
  v=>Q("trap","identify",v,"Koja duž je hipotenuza pomoćnog trougla?","Pravougli trapez",["Kosi krak","Visina","Razlika osnovica"],"Kosi krak","Visina je normalna na osnovice.","Kosi krak je naspram pravog ugla.","basic","Pitagora u trapezu","diagram"),

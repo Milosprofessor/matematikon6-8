@@ -28,4 +28,10 @@ Proveren je 21 zadatak i četiri primera. Objašnjenje podudarnosti koristi zaje
 
 Po 10 redovnih zadataka rešeno je na desktopu i emuliranom dodirnom ekranu. Provereni su prikaz razlomka, ćirilica i čuvanje napretka posle osvežavanja. Ostalih 11 zadataka provereno je iz banke. Poređenje sa prethodnom verzijom potvrdilo je iste identifikatore, redosled, opcije, ključeve i oznake crteža. Prošlo je 127 testova, Pages build, TypeScript i zasebna regresija skladišta sa sintetičkim podacima šestog razreda. Lint je završio sa šest upozorenja i bez grešaka.
 
-Ukupno 85/995 zadataka i 4/49 lekcija. Sledeća lekcija je pitagora-romb, prvi zadatak o7-ro-1.
+## Romb
+
+Proveren je 21 zadatak i četiri primera. Postupak iz pravog ugla između dijagonala i njihovog međusobnog polovljenja prepoznaje dve katete i stranicu romba kao hipotenuzu. U svih šest zadataka sa visinom učenik izvodi stranicu, računa površinu iz dijagonala i deli je stranicom. Za dijagonale 6 cm i 8 cm dobijaju se stranica 5 cm, površina 24 cm² i visina 4,8 cm. Svih šest visina provereno je nezavisno tačnim razlomcima. Poređenje cele banke potvrdilo je očuvanje identifikatora, redosleda, ključeva, opcija i oznaka crteža.
+
+Kroz učenički ekran rešeno je po 10 redovnih zadataka na desktopu i u emulaciji dodira. Provereni su horizontalni razlomci, prikaz 4,8 cm, ćirilica i napredak posle osvežavanja. Ostalih 11 zadataka provereno je u banci. Prošlo je 127 testova, Pages build, TypeScript i zasebna regresija skladišta sa sintetičkim podacima šestog razreda. Lint je završio sa šest upozorenja i bez grešaka.
+
+Ukupno 106/995 zadataka i 5/49 lekcija. Sledeća lekcija je pitagora-trapez, prvi zadatak o7-tr-1.
