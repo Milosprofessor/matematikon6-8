@@ -12826,78 +12826,122 @@
     "id": "s6-delovi-1",
     "area": "s6-povrsine",
     "lesson": "s6-delovi",
+    "answer": "24",
+    "hint": "Uslov normalnosti važi za romb.",
+    "procedure": "P=6·8:2=24 cm².",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-delovi-2",
     "area": "s6-povrsine",
     "lesson": "s6-delovi",
+    "answer": "27",
+    "hint": "Oduzmi izrez.",
+    "procedure": "35−8=27 cm².",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-delovi-3",
     "area": "s6-povrsine",
     "lesson": "s6-delovi",
+    "answer": "Normalne su",
+    "hint": "Traži ugao pri kome su delovi druge dijagonale visine.",
+    "procedure": "Normalne dijagonale formiraju visine na zajedničku osnovicu.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-delovi-4",
     "area": "s6-povrsine",
     "lesson": "s6-delovi",
+    "answer": "4",
+    "hint": "Površine su izražene u istoj jedinici, a delovi se ne preklapaju.",
+    "procedure": "2,4+1,6=4 m².",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-delovi-5",
     "area": "s6-povrsine",
     "lesson": "s6-delovi",
+    "answer": "10",
+    "hint": "Udvostruči površinu pre deljenja.",
+    "procedure": "2P=ef, pa je f=90:9=10 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-delovi-6",
     "area": "s6-povrsine",
     "lesson": "s6-delovi",
+    "answer": "24",
+    "hint": "Najpre udvostruči obe polovine.",
+    "procedure": "e=8, f=6, pa je P=8·6:2=24 cm².",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-delovi-7",
     "area": "s6-povrsine",
     "lesson": "s6-delovi",
+    "answer": "22",
+    "hint": "Staza je razlika površina.",
+    "procedure": "8·5−6·3=40−18=22 m².",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-delovi-8",
     "area": "s6-povrsine",
     "lesson": "s6-delovi",
+    "answer": "18",
+    "hint": "Dijagonala razdvaja dva podudarna trougla.",
+    "procedure": "P=36 cm². Polovina je 18 cm².",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-delovi-9",
     "area": "s6-povrsine",
     "lesson": "s6-delovi",
+    "answer": "34",
+    "hint": "Preklop bi bio uračunat dvaput.",
+    "procedure": "Saberi pojedinačne površine i jednom oduzmi preklop: 20+18−4=34 cm².",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-delovi-10",
     "area": "s6-povrsine",
     "lesson": "s6-delovi",
+    "answer": "2,3",
+    "hint": "Od zida oduzmi oba odvojena otvora.",
+    "procedure": "P=15−2−1,5=11,5 m². Boje treba 11,5·0,2=2,3 l.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-delovi-11",
     "area": "s6-povrsine",
     "lesson": "s6-delovi",
+    "answer": "70",
+    "hint": "Saberi visine dva trougla.",
+    "procedure": "P=20·(2+5):2=70 cm².",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-merenje-15",
@@ -12914,8 +12958,12 @@
     "id": "s6-povrsine-primena",
     "area": "s6-povrsine",
     "lesson": "s6-delovi",
+    "answer": "80",
+    "hint": "Uporedi dva kvadrata.",
+    "procedure": "P=12²−8²=144−64=80 cm².",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-merenje-16",
@@ -12954,15 +13002,23 @@
     "id": "s6-delovi-15",
     "area": "s6-povrsine",
     "lesson": "s6-delovi",
+    "answer": "Ne",
+    "hint": "Da li je druga dijagonala istovremeno visina?",
+    "procedure": "Bez pravog ugla njena dužina ne daje zbir visina na prvu dijagonalu.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-delovi-16",
     "area": "s6-povrsine",
     "lesson": "s6-delovi",
+    "answer": "40",
+    "hint": "Najpre površina jedne pločice.",
+    "procedure": "10·4:2=20 cm². Dve imaju 40 cm².",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-sinteza-1",
@@ -13594,22 +13650,34 @@
     "id": "s6-delovi-12",
     "area": "s6-povrsine",
     "lesson": "s6-delovi",
+    "answer": "72",
+    "hint": "Izračunaj dva različita dela.",
+    "procedure": "P=10·6+6·4:2=60+12=72 cm².",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-delovi-13",
     "area": "s6-povrsine",
     "lesson": "s6-delovi",
+    "answer": "8",
+    "hint": "Pretvori dužinu u centimetre.",
+    "procedure": "0,8 dm=8 cm. f=2·32:8=8 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-delovi-14",
     "area": "s6-povrsine",
     "lesson": "s6-delovi",
+    "answer": "55",
+    "hint": "Oduzmi četiri jednake površine.",
+    "procedure": "64−4·2,25=55 cm².",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-sinteza-12",
@@ -13735,8 +13803,12 @@
     "id": "s6-polugodiste-10",
     "area": "s6-zavrsnica",
     "lesson": "s6-delovi",
+    "answer": "840",
+    "hint": "Oduzmi površinu romba od cele ploče.",
+    "procedure": "Ploča ima 1200 cm². Romb ima 30·24:2=360 cm², pa ostaje 840 cm².",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-godisnja-1",
@@ -13937,8 +14009,12 @@
     "id": "s6-izazov-8",
     "area": "s6-zavrsnica",
     "lesson": "s6-delovi",
+    "answer": "80",
+    "hint": "Dodaj širinu staze na oba kraja svake dimenzije.",
+    "procedure": "Spolja je 10·8=80 m², bašta ima 48 m². Za 32 m² treba 32:0,4=80 ploča.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-izazov-9",

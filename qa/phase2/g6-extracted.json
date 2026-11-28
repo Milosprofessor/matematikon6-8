@@ -5733,14 +5733,14 @@
      ]
     },
     {
-     "question": "Iz pravougaonika 9 m sa 6 m uklonjen je ugaoni pravougaonik 3 m sa 2 m.",
+     "question": "Iz pravougaonika 9 m sa 6 m uklonjen je ugaoni pravougaonik 3 m sa 2 m. Kolika je preostala površina?",
      "steps": [
       "Ceo pravougaonik ima 9·6=54 m². Uklonjeni deo ima 3·2=6 m².",
       "Preostala površina je 54−6=48 m²."
      ]
     },
     {
-     "question": "Pročelje čine pravougaonik širine 8 m i visine 3 m i trouglasti zabat iste osnovice, visine 2 m.",
+     "question": "Pročelje čine pravougaonik širine 8 m i visine 3 m i trouglasti zabat iste osnovice, visine 2 m. Kolika je ukupna površina pročelja?",
      "steps": [
       "Pravougaonik ima 8·3=24 m², a zabat 8·2:2=8 m².",
       "Njihove unutrašnjosti se ne preklapaju, pa se površine sabiraju: 24+8=32 m²."
@@ -24422,7 +24422,7 @@
    "level": "basic",
    "prompt": "Dva dela bez preklapanja imaju 2,4 i 1,6 m². Površina celine u m²?",
    "math": "",
-   "hint": "Jednake jedinice se sabiraju.",
+   "hint": "Površine su izražene u istoj jedinici, a delovi se ne preklapaju.",
    "solution": "2,4+1,6=4 m².",
    "kind": "input",
    "answer": "4",
@@ -24677,7 +24677,7 @@
    "id": "s6-delovi-16",
    "skill": "Normalne dijagonale i površine složenih figura",
    "level": "advanced",
-   "prompt": "Dve jednake romboidne pločice oblika romba imaju dijagonale 10 i 4 cm. Bez preklapanja pokrivaju koliko cm²?",
+   "prompt": "Dve podudarne pločice oblika romba imaju dijagonale 10 i 4 cm. Bez preklapanja pokrivaju koliko cm²?",
    "math": "",
    "hint": "Najpre površina jedne pločice.",
    "solution": "10·4:2=20 cm². Dve imaju 40 cm².",

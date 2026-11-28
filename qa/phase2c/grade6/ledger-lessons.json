@@ -1433,7 +1433,35 @@
   {
     "id": "s6-delovi",
     "area": "s6-povrsine",
-    "status": "nepregledana u fazi 2C"
+    "sequence": "Od normalnih dijagonala do rastavljanja, oduzimanja otvora i preklopa.",
+    "examples": [
+      {
+        "question": "Deltoid ima normalne dijagonale 12 i 7 cm. Kolika je površina?",
+        "steps": [
+          "Podeli deltoid duž dijagonale od 12 cm. Visine dva trougla mogu biti različite, ali zbir im je 7 cm.",
+          "P=12·7:2=42 cm². Nije potrebno pretpostaviti da su oba trougla iste visine."
+        ],
+        "verification": "42 cm²"
+      },
+      {
+        "question": "Iz pravougaonika 9 m sa 6 m uklonjen je ugaoni pravougaonik 3 m sa 2 m. Kolika je preostala površina?",
+        "steps": [
+          "Ceo pravougaonik ima 9·6=54 m². Uklonjeni deo ima 3·2=6 m².",
+          "Preostala površina je 54−6=48 m²."
+        ],
+        "verification": "48 m²"
+      },
+      {
+        "question": "Pročelje čine pravougaonik širine 8 m i visine 3 m i trouglasti zabat iste osnovice, visine 2 m. Kolika je ukupna površina pročelja?",
+        "steps": [
+          "Pravougaonik ima 8·3=24 m², a zabat 8·2:2=8 m².",
+          "Njihove unutrašnjosti se ne preklapaju, pa se površine sabiraju: 24+8=32 m²."
+        ],
+        "verification": "32 m²"
+      }
+    ],
+    "assessment": "19 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
   },
   {
     "id": "s6-sinteza",
