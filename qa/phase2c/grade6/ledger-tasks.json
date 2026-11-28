@@ -12584,78 +12584,122 @@
     "id": "s6-merenje-1",
     "area": "s6-povrsine",
     "lesson": "s6-merenje",
+    "answer": "49",
+    "hint": "Pomnoži stranicu samom sobom.",
+    "procedure": "P=a²=7·7=49 cm².",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-merenje-2",
     "area": "s6-povrsine",
     "lesson": "s6-merenje",
+    "answer": "24",
+    "hint": "Zamisli tri reda po osam kvadrata.",
+    "procedure": "P=ab=8·3=24 m².",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-merenje-3",
     "area": "s6-povrsine",
     "lesson": "s6-merenje",
+    "answer": "200",
+    "hint": "Kvadrat sa stranicom 10 cm ima sto cm².",
+    "procedure": "2·100=200 cm².",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-merenje-4",
     "area": "s6-povrsine",
     "lesson": "s6-merenje",
+    "answer": "Visina na a",
+    "hint": "Koje rastojanje postaje širina pravougaonika?",
+    "procedure": "To je normalno rastojanje između paralelnih pravih osnovica.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-merenje-5",
     "area": "s6-povrsine",
     "lesson": "s6-merenje",
+    "answer": "9",
+    "hint": "Uvrsti u P=a·h_a.",
+    "procedure": "63=7h_a, pa h_a=9 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-merenje-6",
     "area": "s6-povrsine",
     "lesson": "s6-merenje",
+    "answer": "1,5",
+    "hint": "Prevedi centimetre u metre.",
+    "procedure": "75 cm=0,75 m. P=2·0,75=1,5 m².",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-merenje-7",
     "area": "s6-povrsine",
     "lesson": "s6-merenje",
+    "answer": "25",
+    "hint": "Najpre iz obima do stranice.",
+    "procedure": "a=20:4=5 cm. P=5²=25 cm².",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-merenje-8",
     "area": "s6-povrsine",
     "lesson": "s6-merenje",
+    "answer": "Površine su jednake",
+    "hint": "Uporedi njihove visine.",
+    "procedure": "Rastojanje između paralelnih pravih je isto. Jednaki proizvodi daju jednake površine.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-merenje-9",
     "area": "s6-povrsine",
     "lesson": "s6-merenje",
+    "answer": "6",
+    "hint": "Površinu izrazi na dva načina.",
+    "procedure": "P=12·4=48 cm². Iz 8h_b=48 sledi h_b=6 cm.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-merenje-10",
     "area": "s6-povrsine",
     "lesson": "s6-merenje",
+    "answer": "48",
+    "hint": "Prebroj redove i kolone.",
+    "procedure": "Na stranicu od 3 m staje 6 pločica, a na 4 m staje 8. Ukupno 6·8=48.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-merenje-11",
     "area": "s6-povrsine",
     "lesson": "s6-merenje",
+    "answer": "1",
+    "hint": "Prati oba činioca proizvoda.",
+    "procedure": "(2a)·(h:2)=ah. Odnos je 1.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trougao-trapez-1",
@@ -12815,8 +12859,12 @@
     "id": "s6-merenje-15",
     "area": "s6-povrsine",
     "lesson": "s6-merenje",
+    "answer": "6",
+    "hint": "Ar ima sto kvadratnih metara.",
+    "procedure": "300·20=6000 g, odnosno 6 kg.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-povrsine-primena",
@@ -12829,8 +12877,12 @@
     "id": "s6-merenje-16",
     "area": "s6-povrsine",
     "lesson": "s6-merenje",
+    "answer": "18",
+    "hint": "Uporedi proizvode pre i posle.",
+    "procedure": "9·7−9·5=9·2=18 cm².",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trougao-trapez-15",
@@ -13424,22 +13476,34 @@
     "id": "s6-merenje-12",
     "area": "s6-povrsine",
     "lesson": "s6-merenje",
+    "answer": "12000",
+    "hint": "Jedan hektar je površina kvadrata sa stranicom od 100 m.",
+    "procedure": "1 ha=10000 m², pa 1,2 ha=12000 m².",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-merenje-13",
     "area": "s6-povrsine",
     "lesson": "s6-merenje",
+    "answer": "6",
+    "hint": "Rad u decimetrima traži dm².",
+    "procedure": "0,24 m²=24 dm². Dužina je 24:4=6 dm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-merenje-14",
     "area": "s6-povrsine",
     "lesson": "s6-merenje",
+    "answer": "4",
+    "hint": "Potraži pozitivan broj čiji je kvadrat jednak površini.",
+    "procedure": "P=16 cm², a 4·4=16.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trougao-trapez-12",
@@ -13695,8 +13759,12 @@
     "id": "s6-godisnja-8",
     "area": "s6-zavrsnica",
     "lesson": "s6-merenje",
+    "answer": "35",
+    "hint": "Jedan dm² sadrži 100 cm².",
+    "procedure": "3500:100=35 dm².",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-godisnja-9",
@@ -13779,8 +13847,12 @@
     "id": "s6-izazov-6",
     "area": "s6-zavrsnica",
     "lesson": "s6-merenje",
+    "answer": "6",
+    "hint": "Dva proizvoda daju istu površinu.",
+    "procedure": "Za stranice 3k i 2k važi 3k·h=2k·9. Deljenjem sa 3k dobijaš 6 cm.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-izazov-7",

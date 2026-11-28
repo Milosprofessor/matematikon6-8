@@ -1,0 +1,33 @@
+{
+  "id": "s6-merenje",
+  "area": "s6-povrsine",
+  "sequence": "Od izbora osnovice i visine do pretvaranja jedinica površine i dvojne primene formule.",
+  "examples": [
+    {
+      "question": "Paralelogram ima a=8 cm, b=5 cm i visinu na a od 3 cm. Kolika je površina?",
+      "steps": [
+        "Zamisli preslaganje u pravougaonik: osnovica ostaje 8 cm, a širina je visina 3 cm.",
+        "P=a·h_a=8·3=24 cm². Dužina kose stranice ne ulazi u taj proizvod."
+      ],
+      "verification": "24 cm²"
+    },
+    {
+      "question": "Koliko cm² ima 0,6 dm²?",
+      "steps": [
+        "Kvadrat stranice 1 dm ima deset redova po deset jediničnih kvadrata sa stranicom 1 cm.",
+        "1 dm²=100 cm², pa je 0,6 dm²=60 cm²."
+      ],
+      "verification": "60 cm²"
+    },
+    {
+      "question": "Pravougaonik ima površinu 54 m² i dužinu 9 m. Koliki je obim?",
+      "steps": [
+        "P=ab daje 54=9b, zato je b=6 m.",
+        "O=2(a+b)=2·15=30 m. Površina je u kvadratnim metrima, obim u metrima."
+      ],
+      "verification": "Širina 6 m, obim 30 m."
+    }
+  ],
+  "assessment": "18 zadataka; 10 u redovnom toku.",
+  "status": "potpuno recenzirana"
+}
