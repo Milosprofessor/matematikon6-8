@@ -31,7 +31,7 @@ def sheet(name,columns,data,widths=None):
   for c in row:c.alignment=Alignment(vertical='top',wrap_text=True)
   if 'potpuno' in str(row[-1].value):row[-1].fill=PatternFill('solid',fgColor='D8F3DC')
  tbl=Table(displayName='T'+str(len(wb.worksheets)),ref=ws.dimensions);tbl.tableStyleInfo=TableStyleInfo(name='TableStyleMedium2',showRowStripes=True);ws.add_table(tbl)
-next_task=next(r for r in rows if r['status'].startswith('nepregledan'))
+next_task=next((r for r in rows if r['status'].startswith('nepregledan')), {'lesson':'Kraj šestog razreda','id':'Svi zadaci pregledani'})
 sheet('Sažetak',['Stavka','Broj','Napomena'],[
  ['Ukupno zadataka',len(rows),'Aktuelni izvozni inventar'],['Potpuno recenzirani',len(by),'Semantički i matematički; tehnički nalazi LOG-06 ostaju'],['Delimično recenzirani',0,'Ne preuzimaju se prethodne provere kao nova recenzija'],['Nepregledani',len(rows)-len(by),'Faza 2C'],['Lekcije',len(lessons),f'{len(lesson_evidence)} pregledane'],['Glavni postojeći primeri',81,f"{sum(len(l['examples']) if l['id'].startswith('s6-') else 1 for l in lesson_evidence.values())} pregledanih postojećih primera"],['Novi primeri',sum(len(l['examples'])-1 for l in lesson_evidence.values() if not l['id'].startswith('s6-')),'Pregledani'],['Godišnji ishodi',17,'Veze pregledanih lekcija i granice dokaza zabeležene u matrici nastavnih ishoda faze 2'],['Sledeći sadržaj',next_task['lesson'],next_task['id']]])
 sheet('Zadaci',cols,[[r.get(k,'') for k in cols] for r in rows],{'id':25,'area':24,'lesson':30,'status':30,'old_level':16,'level':16})

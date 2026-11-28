@@ -1,3 +1,15 @@
+# Završena sadržajna recenzija šestog razreda
+
+Svih 919 različitih zadataka i 45 lekcija imaju pojedinačne zapise u evidenciji faze 2C. U poslednjem prolazu od prethodno potvrđenih 741 zadatka obrađeno je preostalih 178 u deset lekcija. Poređenje inventara na početku i na kraju tog prolaza potvrđuje iste identifikatore, redosled rada, fondove vežbanja, ključeve odgovora, opcije i pripadnost zadataka proverama.
+
+Završna provera drugog polugodišta, godišnja provera i izazov za svaku rezoluciju imaju po 10/10, uz sačuvan raniji rezultat nakon osvežavanja. Posebno su proverene mere ili geometrijski odnosi na 14 interaktivnih crteža u desktop i touch prikazu. Dokazi su u qa/phase2c/grade6/s6-sinteza/. Testiranje telefona izvedeno je emulacijom. Ograničenja zajedničkog validatora ostaju zabeležena za fazu 3; ostvarenost ishoda konkretnog učenika nije merena.
+
+# Checkpoint 42 — Godišnja sistematizacija i mešoviti problemi
+
+919/919 zadataka i 45/45 lekcija. G6C-064: precizirani zapis razlomka, stalni učinak radnika i zbir mera unutrašnjih uglova. Proverene tri zbirne provere i interaktivne figure.
+
+Egzaktno pregledano 17 zadataka i tri rešena primera. 127/127 programskih testova, Worker i Pages build, TypeScript; lint bez grešaka. Na desktopu i touch emulaciji proveren je tok svih deset redovnih zadataka, pomoć, povratna informacija, tri primera, ćirilica i napredak posle osvežavanja. Posebna regresija napretka prošla. Ostali zadaci provereni su računski. Sledeći zadatak: Kraj šestog razreda.
+
 # Checkpoint 41 — Normalne dijagonale i površine složenih figura
 
 902/919 zadataka i 44/45 lekcija. G6C-063: Eksplicitni zahtevi za površine ostatka i pročelja i objašnjeno sabiranje delova bez preklapanja.

@@ -12,13 +12,13 @@ export default springLesson({
   worked: [{"question":"Na planu 1:200 pravougaona učionica ima 3 i 4 cm. Kolika joj je stvarna površina?","steps":["Stvarne stranice su 600 i 800 cm, odnosno 6 i 8 m. Razmeru primeni na svaku dužinu posebno.","P=6·8=48 m². Provera: površina na planu 12 cm² povećana je 200·200 puta."]},{"question":"Zaliha je 18 l, a dnevno se troši 2,5 l. Koliko punih dana ostaje najmanje 5 l?","steps":["Zapiši 18−2,5d≥5. Sredi na −2,5d≥−13 i podeli negativnim brojem: d≤5,2.","Najviše pet celih dana. Posle pet dana ostaje 5,5 l, posle šest samo 3 l."]},{"question":"Temena A(−1, 0), B(5, 0), C(2, 4) čine trougao. Kolika je površina u jediničnim kvadratima?","steps":["AB leži na osi x i dužina mu je 5−(−1)=6. Ordinata tačke C daje visinu od 4 jedinice.","P=6·4:2=12 kvadratnih jedinica."]}]
 }, [
   ["Kota podmornice poraste sa −18 na −7 m. Koliki je uspon u m?","11","Krajnja kota minus početna.","−7−(−18)=11 m."],
-  ["Trougao ima uglove 45° i 65°. Treći u stepenima?","70","Uglovi daju opruženi ugao.","180−45−65=70°."],
+  ["Trougao ima uglove 45° i 65°. Treći u stepenima?","70","Zbir mera tri unutrašnja ugla trougla je 180°.","180−45−65=70°."],
   ["Pravougaonik ima obim 18 cm i širinu 4 cm. Dužina u cm?","5","Poluobim je zbir susednih stranica.","18:2−4=5 cm."],
-  ["Koliko je 3/4 litra u mililitrima?","750","Litar ima 1000 ml.","1000:4·3=750 ml."],
+  ["Koliko mililitara iznosi [[frac:3|4]] litra?","750","Litar ima 1000 ml.","1000:4·3=750 ml."],
   ["Polovina proizvoda dva broja je −12. Prvi broj je 8. Drugi je koliko?","-3","Udvostruči dati rezultat.","Proizvod je −24. Drugi činilac je −24:8=−3."],
   ["Na karti 1:50000 izmereno je 6 cm. Koliko km je u stvarnosti?","3","Stvarnu dužinu prvo dobijaš u cm.","6·50000=300000 cm=3 km."],
   ["Trapez osnovica 8 i 12 m i visine 4 m zasađen je travom na 75% površine. Koliko m² je pod travom?","30","Prvo površina, zatim deo.","P=(8+12)·4:2=40 m². Tri četvrtine su 30 m²."],
-  ["Za pet dana tri jednaka radnika završe posao. Koliko dana treba pet takvih radnika?","3","Sačuvaj ukupan rad.","3·5=15 radnih dana jedne osobe. Pet radnika radi 15:5=3 dana."],
+  ["Tri radnika istog stalnog učinka završe posao za pet dana. Koliko dana treba pet radnika istog učinka za isti posao?","3","Sačuvaj ukupan rad.","3·5=15 radnih dana jedne osobe. Pet radnika radi 15:5=3 dana."],
   ["U trouglu jednakih krakova osnovica je za 3 cm kraća od kraka. Obim je 24 cm. Koliko cm ima osnovica?","6","Obim izrazi pomoću kraka.","Ako je krak x, onda 3x−3=24 daje x=9. Osnovica je 9−3=6 cm."],
   ["Bašta 5 m sa 4 m ima stazu širine 0,5 m duž cele unutrašnje ivice. Cena semena je 60 dinara po m² gredice. Koliki je trošak?","720","Smanji svaku dimenziju za dve širine staze.","Gredica ima 4 m sa 3 m. Trošak je 12·60=720 dinara."],
   ["Lift ide sa nivoa −2 tri nivoa gore i pet dole. Konačni nivo?","-4","Saberi pomeraje sa početnim nivoom.","−2+3−5=−4."],

@@ -8,7 +8,8 @@ d=json.loads((root/'qa/phase2/g6-extracted.json').read_text())
 bank={t['id']:t for t in d['bank'] if 'test:'+area in t['sources']}
 total=len(bank)
 assert total>0
-completed=[l['id'] for l in d['lessons'] if l['area']==area]
+grade_final=area in {'s6-polugodiste','s6-godisnja','s6-izazov'}
+completed=[l['id'] for l in d['lessons'] if grade_final or l['area']==area]
 assert completed
 class Silent(http.server.SimpleHTTPRequestHandler):
  def log_message(self,*args):pass
@@ -44,5 +45,6 @@ with sync_playwright() as pw:
   rows.append({'width':width,'ids':seen,'score':f'{total}/{total}','progress_preserved':True,'best_after_reload':True,'status':'pass'})
   ctx.close()
  browser.close()
-srv.shutdown();(out/'area-browser.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n')
+result_name=area+'-browser.json' if grade_final else 'area-browser.json'
+srv.shutdown();(out/result_name).write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n')
 print('2 complete area assessments; all tasks; score and prior progress preserved')
