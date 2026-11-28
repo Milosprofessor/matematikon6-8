@@ -1,0 +1,33 @@
+{
+  "id": "s6-podudarnost",
+  "area": "s6-trouglovi",
+  "sequence": "Od odgovarajućih elemenata do kriterijuma, simetrije i konstrukcija centara.",
+  "examples": [
+    {
+      "question": "Ako je △ABC≅△PQR, BC=7 cm i ∠A=36°, šta znaš o drugom trouglu?",
+      "steps": [
+        "Redosled daje parove A–P, B–Q i C–R.",
+        "Zato je QR=7 cm i ∠P=36°. Duž PR odgovara duži AC."
+      ],
+      "verification": "QR=7 cm i ∠P=36°"
+    },
+    {
+      "question": "Kako konstruisati opisanu kružnicu?",
+      "steps": [
+        "Iz A i B istim otvorom šestara, većim od polovine AB, opiši lukove iznad i ispod AB. Spoji njihova dva preseka. Ponovi za BC. Presek simetrala označi O.",
+        "Po prvoj simetrali OA=OB, po drugoj OB=OC. Kružnica sa centrom O i poluprečnikom OA prolazi kroz sva temena."
+      ],
+      "verification": "OA=OB=OC"
+    },
+    {
+      "question": "Kako upisati kružnicu u trougao?",
+      "steps": [
+        "Konstruiši simetrale dva unutrašnja ugla i označi presek I. Iz I spusti normalu na jednu stranicu do tačke T.",
+        "IT je udaljenost centra od svake stranice. Kružnica sa centrom I i poluprečnikom IT dodiruje sve tri."
+      ],
+      "verification": "Jednake normalne udaljenosti od pravih stranica."
+    }
+  ],
+  "assessment": "20 zadataka; 10 u redovnom toku.",
+  "status": "potpuno recenzirana"
+}

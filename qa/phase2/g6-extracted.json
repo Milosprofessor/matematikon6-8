@@ -4081,7 +4081,7 @@
     {
      "question": "Kako konstruisati opisanu kružnicu?",
      "steps": [
-      "Iz krajeva AB opiši jednake lukove iznad i ispod AB i spoji preseke. Ponovi za BC. Presek simetrala označi O.",
+      "Iz A i B istim otvorom šestara, većim od polovine AB, opiši lukove iznad i ispod AB. Spoji njihova dva preseka. Ponovi za BC. Presek simetrala označi O.",
       "Po prvoj simetrali OA=OB, po drugoj OB=OC. Kružnica sa centrom O i poluprečnikom OA prolazi kroz sva temena."
      ]
     },
@@ -20765,14 +20765,14 @@
    "id": "s6-podudarnost-2",
    "skill": "Podudarnost, simetrija i kružnice trougla",
    "level": "basic",
-   "prompt": "Opisanoj kružnici pripadaju sva tri šta?",
+   "prompt": "Koje tri tačke svakog trougla pripadaju njegovoj opisanoj kružnici?",
    "math": "",
    "hint": "Kuda prolazi opisana kružnica?",
    "solution": "Po konstrukciji prolazi kroz A, B i C.",
    "kind": "choice",
    "answer": "Temena",
    "choices": [
-    "Centra stranica",
+    "Podnožja visina",
     "Temena",
     "Središta stranica"
    ],

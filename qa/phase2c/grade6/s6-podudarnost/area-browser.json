@@ -1,0 +1,30 @@
+[
+  {
+    "width": 1366,
+    "ids": [
+      "s6-konstrukcije-15",
+      "s6-trouglovi-primena",
+      "s6-konstrukcije-16",
+      "s6-podudarnost-15",
+      "s6-podudarnost-16"
+    ],
+    "score": "5/5",
+    "progress_preserved": true,
+    "best_after_reload": true,
+    "status": "pass"
+  },
+  {
+    "width": 390,
+    "ids": [
+      "s6-konstrukcije-15",
+      "s6-trouglovi-primena",
+      "s6-konstrukcije-16",
+      "s6-podudarnost-15",
+      "s6-podudarnost-16"
+    ],
+    "score": "5/5",
+    "progress_preserved": true,
+    "best_after_reload": true,
+    "status": "pass"
+  }
+]

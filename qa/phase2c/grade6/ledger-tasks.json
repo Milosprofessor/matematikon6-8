@@ -10813,78 +10813,122 @@
     "id": "s6-podudarnost-1",
     "area": "s6-trouglovi",
     "lesson": "s6-podudarnost",
+    "answer": "KM",
+    "hint": "Prati prvo i treće mesto.",
+    "procedure": "A odgovara K, a C odgovara M. Zato AC odgovara KM.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-podudarnost-2",
     "area": "s6-trouglovi",
     "lesson": "s6-podudarnost",
+    "answer": "Temena",
+    "hint": "Kuda prolazi opisana kružnica?",
+    "procedure": "Po konstrukciji prolazi kroz A, B i C.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-podudarnost-3",
     "area": "s6-trouglovi",
     "lesson": "s6-podudarnost",
+    "answer": "U centru upisane kružnice",
+    "hint": "Šta meri simetrala ugla?",
+    "procedure": "Njene tačke jednako su udaljene od krakova. Presek je centar upisane kružnice.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-podudarnost-4",
     "area": "s6-trouglovi",
     "lesson": "s6-podudarnost",
+    "answer": "90",
+    "hint": "Priseti se normale.",
+    "procedure": "Visina pripada normali, pa je ugao prav.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-podudarnost-5",
     "area": "s6-trouglovi",
     "lesson": "s6-podudarnost",
+    "answer": "Ne",
+    "hint": "Može li se crtež uvećati?",
+    "procedure": "Uvećanje čuva sve uglove, a menja dužine stranica.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-podudarnost-6",
     "area": "s6-trouglovi",
     "lesson": "s6-podudarnost",
+    "answer": "7",
+    "hint": "S je sredina duži AA′.",
+    "procedure": "AS=SA′=3,5 cm, pa je AA′=7 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-podudarnost-7",
     "area": "s6-trouglovi",
     "lesson": "s6-podudarnost",
+    "answer": "4,5",
+    "hint": "Osa polovi duž pod pravim uglom.",
+    "procedure": "Udaljenost je polovina duži, 9:2=4,5 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-podudarnost-8",
     "area": "s6-trouglovi",
     "lesson": "s6-podudarnost",
+    "answer": "7",
+    "hint": "Prečnik prolazi kroz centar.",
+    "procedure": "Poluprečnik je polovina prečnika, 14:2=7 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-podudarnost-9",
     "area": "s6-trouglovi",
     "lesson": "s6-podudarnost",
+    "answer": "SSS",
+    "hint": "Uoči i zajedničku duž.",
+    "procedure": "AC=BC, AM=BM i CM=CM, pa važi SSS.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-podudarnost-10",
     "area": "s6-trouglovi",
     "lesson": "s6-podudarnost",
+    "answer": "4,8",
+    "hint": "Normala meri poluprečnik.",
+    "procedure": "r=2,4 cm. Prečnik je 2r=4,8 cm.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-podudarnost-11",
     "area": "s6-trouglovi",
     "lesson": "s6-podudarnost",
+    "answer": "65",
+    "hint": "Nađi ugao koji odgovara B.",
+    "procedure": "∠B=63°, pa je ∠A=180°−63°−52°=65°.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-konstrukcije-15",
@@ -10901,8 +10945,12 @@
     "id": "s6-trouglovi-primena",
     "area": "s6-trouglovi",
     "lesson": "s6-podudarnost",
+    "answer": "26",
+    "hint": "Zajednička stranica je unutar nove figure.",
+    "procedure": "2·21−2·8=26 cm. Dvaput oduzimamo zajedničku stranicu jer je bila u oba obima.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-konstrukcije-16",
@@ -10919,15 +10967,23 @@
     "id": "s6-podudarnost-15",
     "area": "s6-trouglovi",
     "lesson": "s6-podudarnost",
+    "answer": "Centar",
+    "hint": "Gde je sredina kada se krajevi poklapaju?",
+    "procedure": "Jedino je centar na nultom rastojanju od svog lika.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-podudarnost-16",
     "area": "s6-trouglovi",
     "lesson": "s6-podudarnost",
+    "answer": "9",
+    "hint": "Podudarnost čuva i obim.",
+    "procedure": "Treća je 24−7−8=9 cm.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-koordinate-1",
@@ -12392,22 +12448,34 @@
     "id": "s6-podudarnost-12",
     "area": "s6-trouglovi",
     "lesson": "s6-podudarnost",
+    "answer": "Simetrala duži AB",
+    "hint": "Zamisli simetričan prevoj papira.",
+    "procedure": "Simetrala duži prolazi kroz sredinu pod pravim uglom, a sve njene tačke jednako su udaljene od krajeva.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-podudarnost-13",
     "area": "s6-trouglovi",
     "lesson": "s6-podudarnost",
+    "answer": "Ugao naspram 6 cm",
+    "hint": "Uporedi dve date stranice.",
+    "procedure": "SSU traži ugao naspram veće date stranice. Ovde je 6>4.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-podudarnost-14",
     "area": "s6-trouglovi",
     "lesson": "s6-podudarnost",
+    "answer": "Da",
+    "hint": "Posmatraj pravu koja sadrži stranicu.",
+    "procedure": "Normala pada na produžetak stranice. Rastojanje do prave je visina.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-koordinate-12",
@@ -12788,8 +12856,12 @@
     "id": "s6-polugodiste-9",
     "area": "s6-zavrsnica",
     "lesson": "s6-podudarnost",
+    "answer": "Jednake udaljenosti od sve tri prave stranica",
+    "hint": "Razmisli gde su dodirne tačke.",
+    "procedure": "Poluprečnik do svake dodirne tačke je normalan na stranicu. Potrebne su jednake normalne udaljenosti.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-polugodiste-10",
@@ -12861,8 +12933,12 @@
     "id": "s6-godisnja-6",
     "area": "s6-zavrsnica",
     "lesson": "s6-podudarnost",
+    "answer": "8",
+    "hint": "Upari prvo i treće teme.",
+    "procedure": "A odgovara R, C odgovara Q. Zato RQ=AC=8 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-godisnja-7",
@@ -12942,8 +13018,12 @@
     "id": "s6-izazov-7",
     "area": "s6-zavrsnica",
     "lesson": "s6-podudarnost",
+    "answer": "15",
+    "hint": "Uporedi svaku stranicu sa poluprečnikom.",
+    "procedure": "Rastojanje centara je 5 cm, a zajednička tačka je od oba udaljena 5 cm. Obim je 3·5=15 cm.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-izazov-8",
