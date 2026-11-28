@@ -57,6 +57,7 @@ with sync_playwright() as pw:
     for _ in range(2):click(card.get_by_role('button',name='Proveri',exact=True))
     assert card.locator('.feedback.bad').count()==1
     click(card.get_by_role('button',name='Nagoveštaj'));click(card.get_by_role('button',name='Prikaži postupak'))
+    if "[[frac:" in t["solution"]:card.locator(".frac:visible").first.wait_for()
     check_fraction(card)
     if id=="ow-rhomb-height-0":assert "4,8 cm" in card.inner_text()
 

@@ -162,9 +162,9 @@ register("pitagora-trapez",[
  v=>{const k=v+1;return N("trap","reverse",v,"Odredi dužu osnovicu.","Jednakokraki trapez: b="+6*k+" cm, h="+4*k+" cm, c="+5*k+" cm",12*k,"Iz kraka i visine odredi polovinu razlike osnovica.","a²+b²=c². Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+"+4*k+"²="+5*k+"²; x²+"+16*k*k+"="+25*k*k+"; x²="+9*k*k+". Pozitivna dužina x="+3*k+" cm. Zato a="+6*k+"+2·"+3*k+"="+12*k+" cm.","advanced","Pitagora u trapezu")}
 ]);
 register("specijalni-pravougli-trouglovi",[
- v=>{const a=v+3;return N("special","area45",v,"Odredi površinu.","Trougao 45°–45°–90° ima katetu "+2*a+" cm.",2*a*a,"Katete su jednake.","P="+2*a+"·"+2*a+":2="+2*a*a+" cm².","medium","Posebni pravougli trouglovi")},
+ v=>{const a=v+3;return N("special","area45",v,"Odredi površinu.","Trougao 45°–45°–90° ima katetu "+2*a+" cm.",2*a*a,"Katete su jednake.","Katete su jednake. P=[[frac:"+2*a+"·"+2*a+"|2]]="+2*a*a+" cm².","medium","Posebni pravougli trouglovi")},
  v=>{const a=v+3;return Q("special","angle",v,"Odredi ugao naspram date katete.","Hipotenuza je "+2*a+" cm, kateta je "+a+" cm.",["30°","45°","60°"],"30°","Kateta je polovina hipotenuze.","Naspram takve katete je ugao od 30°.","medium","Posebni pravougli trouglovi","rule")},
- v=>{const a=v+3;return N("special","reverse",v,"Odredi hipotenuzu.","Trougao 30°–60°–90°: duža kateta je "+a+"[[sqrt:3]] cm.",2*a,"Odredi kraću katetu, pa hipotenuzu.","Kraća kateta je "+a+" cm; hipotenuza je "+2*a+" cm.","advanced","Posebni pravougli trouglovi")}
+ v=>{const a=v+3;return N("special","reverse",v,"Odredi hipotenuzu.","Trougao 30°–60°–90°: duža kateta je "+a+"[[sqrt:3]] cm.",2*a,"Odredi kraću katetu, pa hipotenuzu.",`a²+b²=c². Kraća kateta a leži naspram 30°, pa je c=2a. Zamenom dobijamo a²+(${a}[[sqrt:3]])²=(2a)². Zato a²+${3*a*a}=4a², odnosno 3a²=${3*a*a} i a²=${a*a}. Pozitivna kraća kateta je a=${a} cm, a hipotenuza c=${2*a} cm.`,"advanced","Posebni pravougli trouglovi")}
 ]);
 register("konstrukcija-iracionalnih-brojeva",[
  v=>Q("rootconstruct","tool",v,"Čime prenosiš konstruisanu duž na brojnu pravu?","",["Šestarom","Uglomerom","Zaokruživanjem broja"],"Šestarom","Potrebno je preneti dužinu bez približnog merenja.","Otvor šestara jednak dužini prenosi se od nule.","basic","Konstrukcija korena"),

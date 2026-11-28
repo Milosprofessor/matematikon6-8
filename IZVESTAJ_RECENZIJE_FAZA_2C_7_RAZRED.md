@@ -40,4 +40,10 @@ Proveren je 21 zadatak i četiri primera. U pravouglom trapezu projekcija kosog 
 
 Po 10 redovnih zadataka rešeno je kroz učenički ekran na desktopu i u emulaciji dodira. Provereni su horizontalni razlomak, ćirilica i napredak posle osvežavanja. Ostalih 11 zadataka provereno je u banci. Poređenje je potvrdilo očuvanje svih identifikatora, ključeva, opcija i oznaka crteža. Prošlo je 127 testova, Pages build, TypeScript i zasebna regresija skladišta sa sintetičkim podacima šestog razreda. Lint je završio sa šest upozorenja i bez grešaka.
 
-Ukupno 127/995 zadataka i 6/49 lekcija. Sledeća lekcija je specijalni-pravougli-trouglovi, prvi zadatak o7-st-1.
+## Specijalni pravougli trouglovi
+
+Provereno je svih 26 zadataka i četiri primera. Kod o7-st-1 jednake katete od 6 cm daju c²=36+36=72 i pozitivnu hipotenuzu 6√2 cm. U o7-st-3 dodat je uslov o uglovima koji određuje dužu katetu. Obrnuti zadaci koriste odnos hipotenuze i katete naspram 30° i izvode traženu dužinu. Poređenje dve hipotenuze koristi tačne kvadrate 32 i 36. Svih šest zadataka prepoznavanja ugla ima odgovor 30° zbog odnosa 1:2. Identifikatori i ključevi su očuvani.
+
+Po 10 redovnih zadataka rešeno je kroz učenički ekran na desktopu i u emulaciji dodira. Provereni su prikaz korena, horizontalni razlomak, ćirilica i napredak posle osvežavanja. Ostalih 16 zadataka provereno je iz banke. Prošlo je 127 testova, Pages build, TypeScript i zasebna regresija skladišta sa sintetičkim podacima šestog razreda. Lint je prijavio šest upozorenja i nula grešaka.
+
+Ukupno 153/995 zadataka i 7/49 lekcija. Sledeća lekcija je pitagora-cetvorougao, prvi zadatak o7-cv-1.
