@@ -151,8 +151,15 @@ register("pitagora-romb",[
 ]);
 register("pitagora-trapez",[
  v=>Q("trap","identify",v,"Koja duž je hipotenuza pomoćnog trougla?","Pravougli trapez",["Kosi krak","Visina","Razlika osnovica"],"Kosi krak","Visina je normalna na osnovice.","Kosi krak je naspram pravog ugla.","basic","Pitagora u trapezu","diagram"),
- v=>{const k=v+1;return N("trap","perimeter",v,"Odredi obim jednakokrakog trapeza.","a="+16*k+" cm, b="+4*k+" cm, h="+8*k+" cm",40*k,"Polovina razlike osnovica je kateta.","Pomoćna kateta je "+6*k+", krak je "+10*k+". O="+16*k+"+"+4*k+"+2·"+10*k+"="+40*k+" cm.","medium","Pitagora u trapezu")},
- v=>{const k=v+1;return N("trap","reverse",v,"Odredi dužu osnovicu.","Jednakokraki trapez: b="+6*k+" cm, h="+4*k+" cm, c="+5*k+" cm",12*k,"Iz kraka i visine odredi polovinu razlike osnovica.","Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+"+4*k+"²="+5*k+"²; x²+"+16*k*k+"="+25*k*k+"; x²="+9*k*k+". Pozitivna dužina x="+3*k+" cm. Zato a="+6*k+"+2·"+3*k+"="+12*k+" cm.","advanced","Pitagora u trapezu")}
+ v=>{
+   const scale=v+1, longer=16*scale, shorter=4*scale, height=8*scale;
+   const projection=(longer-shorter)/2, leg=10*scale;
+   return N("trap","perimeter",v,"Odredi obim jednakokrakog trapeza.",`a=${longer} cm, b=${shorter} cm, h=${height} cm`,longer+shorter+2*leg,
+     "Spusti visine sa krajeva kraće osnovice. Na dužoj osnovici ostaju dva jednaka odsečka.",
+     `a²+b²=c². U pomoćnom pravouglom trouglu katete su visina i projekcija kraka. Zbog jednakih krakova projekcije su jednake: x=[[frac:${longer}−${shorter}|2]]=${projection} cm. Krak k je hipotenuza, pa ${projection}²+${height}²=k². Dakle, ${projection**2}+${height**2}=k² i k²=${leg**2}. Pozitivan krak je k=[[sqrt:${leg**2}]]=${leg} cm. Obim je O=${longer}+${shorter}+2·${leg}=${longer+shorter+2*leg} cm.`,
+     "medium","Pitagora u trapezu");
+ },
+ v=>{const k=v+1;return N("trap","reverse",v,"Odredi dužu osnovicu.","Jednakokraki trapez: b="+6*k+" cm, h="+4*k+" cm, c="+5*k+" cm",12*k,"Iz kraka i visine odredi polovinu razlike osnovica.","a²+b²=c². Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+"+4*k+"²="+5*k+"²; x²+"+16*k*k+"="+25*k*k+"; x²="+9*k*k+". Pozitivna dužina x="+3*k+" cm. Zato a="+6*k+"+2·"+3*k+"="+12*k+" cm.","advanced","Pitagora u trapezu")}
 ]);
 register("specijalni-pravougli-trouglovi",[
  v=>{const a=v+3;return N("special","area45",v,"Odredi površinu.","Trougao 45°–45°–90° ima katetu "+2*a+" cm.",2*a*a,"Katete su jednake.","P="+2*a+"·"+2*a+":2="+2*a*a+" cm².","medium","Posebni pravougli trouglovi")},

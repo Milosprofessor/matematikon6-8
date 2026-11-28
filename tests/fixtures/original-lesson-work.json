@@ -4697,7 +4697,7 @@
         "math": "h=9 cm, a−b=12 cm",
         "answer": "15",
         "hint": "Visina i razlika osnovica su katete.",
-        "solution": "c²=81+144=225, pa je c=15 cm.",
+        "solution": "a²+b²=c². Katete su visina 9 cm i razlika osnovica 12 cm. Zato 9²+12²=c², pa 81+144=c² i c²=225. Pozitivan kosi krak je c=[[sqrt:225]]=15 cm.",
         "level": "basic",
         "skill": "Pitagora u trapezu"
       },
@@ -4737,7 +4737,7 @@
         "math": "a=26 cm, b=10 cm, h=6 cm",
         "answer": "10",
         "hint": "Koristi polovinu razlike osnovica.",
-        "solution": "(a−b)/2=8, pa je c²=8²+6²=100 i c=10 cm.",
+        "solution": "a²+b²=c². Projekcija kraka je [[frac:26−10|2]]=8 cm. Visina je 6 cm. Zato 6²+8²=c², pa 36+64=c² i c²=100. Pozitivan kosi krak je c=[[sqrt:100]]=10 cm.",
         "level": "medium",
         "skill": "Pitagora u trapezu"
       },
@@ -4747,7 +4747,7 @@
         "math": "c=13 cm, a−b=5 cm",
         "answer": "12",
         "hint": "Krak je hipotenuza.",
-        "solution": "h²+(a−b)²=c². h²+5²=13²; h²+25=169; h²=144. Pozitivna visina h=12 cm.",
+        "solution": "a²+b²=c². h²+(a−b)²=c². h²+5²=13²; h²+25=169; h²=144. Pozitivna visina h=12 cm.",
         "level": "medium",
         "skill": "Pitagora u trapezu"
       },
@@ -4771,8 +4771,8 @@
         "prompt": "Odredi obim jednakokrakog trapeza.",
         "math": "a=16 cm, b=4 cm, h=8 cm",
         "answer": "40",
-        "hint": "Polovina razlike osnovica je kateta.",
-        "solution": "Pomoćna kateta je 6, krak je 10. O=16+4+2·10=40 cm.",
+        "hint": "Spusti visine sa krajeva kraće osnovice. Na dužoj osnovici ostaju dva jednaka odsečka.",
+        "solution": "a²+b²=c². U pomoćnom pravouglom trouglu katete su visina i projekcija kraka. Zbog jednakih krakova projekcije su jednake: x=[[frac:16−4|2]]=6 cm. Krak k je hipotenuza, pa 6²+8²=k². Dakle, 36+64=k² i k²=100. Pozitivan krak je k=[[sqrt:100]]=10 cm. Obim je O=16+4+2·10=40 cm.",
         "level": "medium",
         "skill": "Pitagora u trapezu"
       },
@@ -4782,7 +4782,7 @@
         "math": "a=18 cm, b=8 cm, c=26 cm",
         "answer": "312",
         "hint": "Najpre odredi visinu.",
-        "solution": "h²+(a−b)²=c². h²+10²=26²; h²+100=676; h²=576; h=24 cm jer je pozitivna. P=(18+8)·24/2=312 cm².",
+        "solution": "a²+b²=c². h²+(a−b)²=c². h²+10²=26²; h²+100=676; h²=576; h=24 cm jer je pozitivna. P=[[frac:(18+8)·24|2]]=312 cm².",
         "level": "advanced",
         "skill": "Pitagora u trapezu"
       },
@@ -4807,7 +4807,7 @@
         "math": "Jednakokraki trapez: b=6 cm, h=4 cm, c=5 cm",
         "answer": "12",
         "hint": "Iz kraka i visine odredi polovinu razlike osnovica.",
-        "solution": "Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+4²=5²; x²+16=25; x²=9. Pozitivna dužina x=3 cm. Zato a=6+2·3=12 cm.",
+        "solution": "a²+b²=c². Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+4²=5²; x²+16=25; x²=9. Pozitivna dužina x=3 cm. Zato a=6+2·3=12 cm.",
         "level": "advanced",
         "skill": "Pitagora u trapezu"
       }

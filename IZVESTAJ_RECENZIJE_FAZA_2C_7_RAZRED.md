@@ -34,4 +34,10 @@ Proveren je 21 zadatak i četiri primera. Postupak iz pravog ugla između dijago
 
 Kroz učenički ekran rešeno je po 10 redovnih zadataka na desktopu i u emulaciji dodira. Provereni su horizontalni razlomci, prikaz 4,8 cm, ćirilica i napredak posle osvežavanja. Ostalih 11 zadataka provereno je u banci. Prošlo je 127 testova, Pages build, TypeScript i zasebna regresija skladišta sa sintetičkim podacima šestog razreda. Lint je završio sa šest upozorenja i bez grešaka.
 
-Ukupno 106/995 zadataka i 5/49 lekcija. Sledeća lekcija je pitagora-trapez, prvi zadatak o7-tr-1.
+## Trapez
+
+Proveren je 21 zadatak i četiri primera. U pravouglom trapezu projekcija kosog kraka jednaka je razlici osnovica. Kod jednakokrakog trapeza projekcije su jednake pa se uzima polovina razlike. U svih šest zadataka o obimu prvo se izvodi pozitivan krak. Za osnovice 16 cm i 4 cm i visinu 8 cm projekcija je 6 cm, krak 10 cm, a obim 40 cm. Provereno je i šest obrnutih zadataka u kojima se iz visine i kraka dobija duža osnovica. U primeru sa iracionalnim krakom sačuvan je tačan rezultat 2√61 cm.
+
+Po 10 redovnih zadataka rešeno je kroz učenički ekran na desktopu i u emulaciji dodira. Provereni su horizontalni razlomak, ćirilica i napredak posle osvežavanja. Ostalih 11 zadataka provereno je u banci. Poređenje je potvrdilo očuvanje svih identifikatora, ključeva, opcija i oznaka crteža. Prošlo je 127 testova, Pages build, TypeScript i zasebna regresija skladišta sa sintetičkim podacima šestog razreda. Lint je završio sa šest upozorenja i bez grešaka.
+
+Ukupno 127/995 zadataka i 6/49 lekcija. Sledeća lekcija je specijalni-pravougli-trouglovi, prvi zadatak o7-st-1.

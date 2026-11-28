@@ -1,0 +1,138 @@
+[
+  {
+    "id": "o7-tr-1",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o7-tr-3",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "ow-trap-identify-0",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o7-tr-2",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-tr-4",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-tr-5",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "ow-trap-perimeter-0",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-tr-6",
+    "width": 1366,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "id": "o7-tr-7",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "ow-trap-reverse-0",
+    "width": 1366,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "width": 1366,
+    "lesson": "pitagora-trapez",
+    "examples": 1,
+    "progress_reload": true,
+    "cyrillic": true,
+    "status": "pass"
+  },
+  {
+    "id": "o7-tr-1",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o7-tr-3",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "ow-trap-identify-0",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o7-tr-2",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-tr-4",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-tr-5",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "ow-trap-perimeter-0",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-tr-6",
+    "width": 390,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "id": "o7-tr-7",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "ow-trap-reverse-0",
+    "width": 390,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "width": 390,
+    "lesson": "pitagora-trapez",
+    "examples": 1,
+    "progress_reload": true,
+    "cyrillic": true,
+    "status": "pass"
+  }
+]
