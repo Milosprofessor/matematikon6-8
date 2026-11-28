@@ -8,4 +8,12 @@ Pregledana su sva 22 zadatka uvodne lekcije, uključujući dva zadatka iz prover
 
 Egzaktni ključ i zapisi pregledača nalaze se u qa/phase2c/grade7. Kroz učenički ekran rešeno je 10 redovnih zadataka na svakom od dva prikaza (1366 × 768 i dodir 390 × 844). Provereni su nagoveštaj, postupak, horizontalni razlomak, koren, ćirilica, interakcija sa katetama i napredak posle osvežavanja. Ostali zadaci pregledani su iz izvezene banke. Mobilna provera je emulacija u Chromium-u. Prošlo je 127 testova, Pages build i TypeScript. Lint je prijavio šest upozorenja i nula grešaka. Posebna regresija skladišta koristi sintetičke podatke šestog razreda.
 
-Ukupno 22/995 zadataka i 1/49 lekcija. Sledeća lekcija je nepoznata-stranica-pravougli, prvi zadatak o7-ns-1.
+## Nepoznata stranica pravouglog trougla
+
+Proveren je 21 jedinstveni zadatak, uključujući zadatak iz provere, i četiri primera. U zadatku o7-ns-3 sada se izvodi hipotenuza od 25 cm, a zatim obim od 56 cm. Svih šest modela merdevina polazi od opšte jednakosti, povezuje x i h sa katetama i dužinu merdevina sa hipotenuzom. Nezavisni ključ proverava dužine i oznake sva tri elementa svakog crteža merdevina. Kod površine je upotrebljen horizontalni razlomak. Poređenje banke potvrdilo je iste identifikatore, raspored, ključeve i izbore.
+
+Na oba prikaza učenik je rešio svih 10 radnih zadataka. Otvoreni su postupak i nagoveštaj, proveren je horizontalni razlomak, ćirilica i obnavljanje napretka posle osvežavanja. Mobilni prikaz je emuliran u Chromium-u. Preostalih 11 zadataka provereno je u banci. Prošlo je 127 testova, Pages build, TypeScript i regresija skladišta sa sintetičkim podacima šestog razreda. Lint je završio sa šest upozorenja i bez grešaka.
+
+Metodički nalaz: svih šest varijanti ow-leg-compare ima tačan odgovor a<b. Učenik može pogoditi obrazac bez računanja. Za ovaj pregled zadržani su postojeći ključevi i identifikatori zbog ranije sačuvanih odgovora.
+
+Ukupno 43/995 zadataka i 2/49 lekcija. Sledeća lekcija je pitagora-pravougaonik-kvadrat, prvi zadatak o7-pk-1.

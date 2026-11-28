@@ -4055,7 +4055,7 @@
         "math": "c=10 cm, a=8 cm",
         "answer": "6",
         "hint": "Prepoznaj hipotenuzu i postavi Pitagorinu teoremu.",
-        "solution": "Katete su a i b, hipotenuza c. a²+b²=c². 8²+b²=10²; 64+b²=100; b²=100−64=36. Pošto je b>0, b=6 cm.",
+        "solution": "a²+b²=c². Katete su a i b, a hipotenuza je c. 8²+b²=10²; 64+b²=100; b²=100−64=36. Pošto je b>0, b=6 cm.",
         "level": "basic",
         "skill": "Nepoznata kateta"
       },
@@ -4124,7 +4124,7 @@
         ],
         "answer": "Treba b=12.",
         "hint": "Poslednji korak je korenovanje.",
-        "solution": "a²+b²=c². 9²+b²=15²; 81+b²=225; b²=144. Pozitivna kateta b=12.",
+        "solution": "a²+b²=c². 9²+b²=15²; 81+b²=225; b²=144. Pozitivna kateta b=12 jedinica dužine.",
         "level": "medium",
         "skill": "Nepoznata kateta"
       },
@@ -4139,7 +4139,7 @@
         ],
         "answer": "a<b",
         "hint": "Odredi b pa uporedi.",
-        "solution": "a²+b²=c². 3²+b²=5²; 9+b²=25; b²=16. Pozitivna kateta b=4, pa je a<b.",
+        "solution": "a²+b²=c². 3²+b²=5²; 9+b²=25; b²=16. Pozitivna kateta b=4 jedinica dužine, pa je a<b.",
         "level": "medium",
         "skill": "Nepoznata kateta"
       },
@@ -4149,7 +4149,7 @@
         "math": "Katete su 7 cm i 24 cm.",
         "answer": "56",
         "hint": "Najpre odredi hipotenuzu.",
-        "solution": "c=25 cm, pa je O=7+24+25=56 cm.",
+        "solution": "a²+b²=c². 7²+24²=c². 49+576=c², pa je c²=625. Dužina je pozitivna, pa je c=[[sqrt:625]]=25 cm. Obim je O=7+24+25=56 cm.",
         "level": "advanced",
         "skill": "Pravougli trougao"
       },
@@ -4159,7 +4159,7 @@
         "math": "c=13 cm, a=5 cm",
         "answer": "30",
         "hint": "Najpre odredi drugu katetu.",
-        "solution": "a²+b²=c². 5²+b²=13²; 25+b²=169; b²=144; b=12 cm jer je pozitivna. P=5·12/2=30 cm².",
+        "solution": "a²+b²=c². 5²+b²=13²; 25+b²=169; b²=144; b=12 cm jer je pozitivna. P=[[frac:5·12|2]]=30 cm².",
         "level": "advanced",
         "skill": "Pravougli trougao"
       },
@@ -4169,7 +4169,7 @@
         "math": "Merdevine su 5 m. Vrh je na visini 4 m; zid je normalan na tlo.",
         "answer": "3",
         "hint": "Merdevine su hipotenuza.",
-        "solution": "Katete su udaljenost x i visina h, hipotenuza c je dužina merdevina. x²+h²=c². x²+4²=5². x²+16=25; x²=9. Pozitivna udaljenost x=3 m.",
+        "solution": "a²+b²=c². Katete su udaljenost x i visina h, a hipotenuza c je dužina merdevina. x²+h²=c². x²+4²=5². x²+16=25; x²=9. Pozitivna udaljenost x=3 m.",
         "level": "advanced",
         "skill": "Nepoznata kateta"
       }
