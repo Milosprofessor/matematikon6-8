@@ -22,4 +22,10 @@ Nezavisno su proverena sva 21 zadatka i četiri primera. Svih šest varijanti sa
 
 Po 10 redovnih zadataka rešeno je na desktopu i na emuliranom dodirnom ekranu. Provereni su ćirilica i učenički napredak posle osvežavanja. Jedanaest dodatnih zadataka provereno je iz banke. Prošlo je 127 testova, Pages build, TypeScript i zasebna regresija skladišta sa sintetičkim podacima šestog razreda. Lint je završio sa šest upozorenja i bez grešaka.
 
-Ukupno 64/995 zadataka i 3/49 lekcija. Sledeća lekcija je pitagora-jednakokraki, prvi zadatak o7-jk-1.
+## Jednakokraki i jednakostranični trougao
+
+Proveren je 21 zadatak i četiri primera. Objašnjenje podudarnosti koristi zajedničku katetu h i jednake hipotenuze, pa izvodi jednakost polovina osnovice. Svih šest obrnutih zadataka sada izvodi stranicu iz visine pre obima. Svih šest analiza greške koristi polovinu osnovice i pokazuje račun do pozitivne visine. Kod površine jednakostraničnog trougla prikazani su visina, tačan koren i horizontalni razlomak.
+
+Po 10 redovnih zadataka rešeno je na desktopu i emuliranom dodirnom ekranu. Provereni su prikaz razlomka, ćirilica i čuvanje napretka posle osvežavanja. Ostalih 11 zadataka provereno je iz banke. Poređenje sa prethodnom verzijom potvrdilo je iste identifikatore, redosled, opcije, ključeve i oznake crteža. Prošlo je 127 testova, Pages build, TypeScript i zasebna regresija skladišta sa sintetičkim podacima šestog razreda. Lint je završio sa šest upozorenja i bez grešaka.
+
+Ukupno 85/995 zadataka i 4/49 lekcija. Sledeća lekcija je pitagora-romb, prvi zadatak o7-ro-1.

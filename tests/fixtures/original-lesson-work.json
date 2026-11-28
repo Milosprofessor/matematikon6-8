@@ -4315,7 +4315,7 @@
         "math": "s=13 cm, a=10 cm",
         "answer": "12",
         "hint": "Polovina osnovice je 5 cm.",
-        "solution": "Katete su h i a/2, hipotenuza s. h²+(a/2)²=s²; h²+5²=13²; h²+25=169; h²=144. h=12 cm jer je pozitivna.",
+        "solution": "a²+b²=c². Katete su h i a/2, hipotenuza s. h²+(a/2)²=s²; h²+5²=13²; h²+25=169; h²=144. h=12 cm jer je pozitivna.",
         "level": "basic",
         "skill": "Pitagora u jednakokrakom trouglu"
       },
@@ -4330,7 +4330,7 @@
         ],
         "answer": "4√3 cm",
         "hint": "Koristi h=a√3/2.",
-        "solution": "h²+(a/2)²=a². h²+4²=8²; h²+16=64; h²=48. Pozitivna visina h=4√3 cm.",
+        "solution": "a²+b²=c². h²+(a/2)²=a². h²+4²=8²; h²+16=64; h²=48. Pozitivna visina h=4√3 cm.",
         "level": "basic",
         "skill": "Pitagora u jednakostraničnom trouglu"
       },
@@ -4345,7 +4345,7 @@
         ],
         "answer": "Dva jednaka dela",
         "hint": "Visina je i težišna duž.",
-        "solution": "Polovine osnovice su jednake.",
+        "solution": "Pravougli trouglovi imaju zajedničku katetu h i jednake hipotenuze (krake), pa su podudarni. Zato su polovine osnovice jednake.",
         "level": "basic",
         "skill": "Pitagora u jednakokrakom trouglu"
       },
@@ -4355,7 +4355,7 @@
         "math": "s=17 cm, h=15 cm",
         "answer": "16",
         "hint": "Najpre odredi polovinu osnovice.",
-        "solution": "(a/2)²+h²=s². (a/2)²+15²=17²; (a/2)²+225=289; (a/2)²=64. Pozitivna polovina je 8 cm, pa je a=16 cm.",
+        "solution": "a²+b²=c². (a/2)²+h²=s². (a/2)²+15²=17²; (a/2)²+225=289; (a/2)²=64. Pozitivna polovina je 8 cm, pa je a=16 cm.",
         "level": "medium",
         "skill": "Pitagora u jednakokrakom trouglu"
       },
@@ -4365,7 +4365,7 @@
         "math": "a=16 cm, h=15 cm",
         "answer": "17",
         "hint": "Polovina osnovice je 8 cm.",
-        "solution": "s²=8²+15²=289, pa je s=17 cm.",
+        "solution": "a²+b²=c². Polovina osnovice je 8 cm. Zato 8²+15²=s², pa je 64+225=s² i s²=289. Pozitivan krak je s=[[sqrt:289]]=17 cm.",
         "level": "medium",
         "skill": "Pitagora u jednakokrakom trouglu"
       },
@@ -4395,7 +4395,7 @@
         ],
         "answer": "Treba koristiti polovinu osnovice.",
         "hint": "Pomoćni pravougli trougao ima polovinu osnovice.",
-        "solution": "h²=5²−3²=16.",
+        "solution": "a²+b²=c². Katete su visina i polovina osnovice. h²+3²=5². Zato h²+9=25 i h²=16. Pozitivna visina je h=4 jedinica dužine.",
         "level": "medium",
         "skill": "Pitagora u jednakokrakom trouglu"
       },
@@ -4410,7 +4410,7 @@
         ],
         "answer": "9√3 cm²",
         "hint": "Koristi P=a²√3/4.",
-        "solution": "P=36√3/4=9√3 cm².",
+        "solution": "a²+b²=c². Polovina osnovice je 3 cm. Zato h²+3²=6², h²+9=36 i h²=27. Pozitivna visina je h=3[[sqrt:3]] cm. Površina je P=[[frac:6·3[[sqrt:3]]|2]]=9[[sqrt:3]] cm².",
         "level": "advanced",
         "skill": "Pitagora u jednakostraničnom trouglu"
       },
@@ -4420,7 +4420,7 @@
         "math": "s=10 cm, h=8 cm",
         "answer": "32",
         "hint": "Visina i polovina osnovice čine katete.",
-        "solution": "(a/2)²+h²=s². (a/2)²+8²=10²; (a/2)²+64=100; (a/2)²=36. Pozitivna polovina je 6 cm, a=12 cm. O=10+10+12=32 cm.",
+        "solution": "a²+b²=c². (a/2)²+h²=s². (a/2)²+8²=10²; (a/2)²+64=100; (a/2)²=36. Pozitivna polovina je 6 cm, a=12 cm. O=10+10+12=32 cm.",
         "level": "advanced",
         "skill": "Pitagora u jednakokrakom trouglu"
       },
@@ -4429,8 +4429,8 @@
         "prompt": "Odredi obim jednakostraničnog trougla.",
         "math": "h=3[[sqrt:3]] cm",
         "answer": "18",
-        "hint": "Iz h=a√3/2 odredi stranicu, pa obim.",
-        "solution": "Stranica je 6 cm; obim je 18 cm.",
+        "hint": "Označi stranicu sa s. Katete su visina i polovina stranice.",
+        "solution": "a²+b²=c². Neka je s stranica. Tada (s/2)²+h²=s². Zamenom visine dobijamo (s/2)²+(3[[sqrt:3]])²=s². Zato s²/4+27=s², odnosno 3s²=108 i s²=36. Pozitivna stranica je s=6 cm, pa je obim O=18 cm.",
         "level": "advanced",
         "skill": "Pitagora u jednakostraničnom trouglu"
       }

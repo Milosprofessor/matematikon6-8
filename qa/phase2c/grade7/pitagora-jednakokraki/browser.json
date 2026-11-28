@@ -1,0 +1,138 @@
+[
+  {
+    "id": "o7-jk-1",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o7-jk-2",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "ow-iso-split-0",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o7-jk-3",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-jk-4",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-jk-5",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "ow-iso-error-0",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-jk-6",
+    "width": 1366,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "id": "o7-jk-7",
+    "width": 1366,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "id": "ow-iso-reverse-0",
+    "width": 1366,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "width": 1366,
+    "lesson": "pitagora-jednakokraki",
+    "examples": 1,
+    "progress_reload": true,
+    "cyrillic": true,
+    "status": "pass"
+  },
+  {
+    "id": "o7-jk-1",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o7-jk-2",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "ow-iso-split-0",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o7-jk-3",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-jk-4",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-jk-5",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "ow-iso-error-0",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-jk-6",
+    "width": 390,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "id": "o7-jk-7",
+    "width": 390,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "id": "ow-iso-reverse-0",
+    "width": 390,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "width": 390,
+    "lesson": "pitagora-jednakokraki",
+    "examples": 1,
+    "progress_reload": true,
+    "cyrillic": true,
+    "status": "pass"
+  }
+]
