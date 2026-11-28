@@ -1,3 +1,9 @@
+# Checkpoint 34 — Četvorougao, dijagonale, uglovi i obim
+
+778/919 zadataka i 37/45 lekcija. G6C-056: Oba primera navode figuru, podatke i tražene uglove.
+
+Egzaktno pregledano 17 zadataka i tri rešena primera. 127/127 programskih testova, Worker i Pages build, TypeScript; lint bez grešaka. Na desktopu i touch emulaciji proveren je tok svih deset redovnih zadataka, pomoć, povratna informacija, tri primera, ćirilica i napredak posle osvežavanja. Posebna regresija napretka prošla. Ostali zadaci provereni su računski. Sledeći zadatak: s6-paralelogram-1.
+
 # Checkpoint 33 — Procenat, osnovica i promena cene
 
 761/919 zadataka i 36/45 lekcija. G6C-055: Ispravljeno značenje procenta kao stotog dela, zapis razlomaka i vraćanje osnovice.

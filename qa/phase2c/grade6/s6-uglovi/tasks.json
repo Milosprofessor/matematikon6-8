@@ -1,0 +1,189 @@
+[
+  {
+    "id": "s6-uglovi-1",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "answer": "2",
+    "hint": "Nabroj parove nesusednih temena.",
+    "procedure": "To su AC i BD, ukupno dve.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-uglovi-2",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "answer": "CD",
+    "hint": "Naspramne nemaju zajedničko teme.",
+    "procedure": "BC deli B, DA deli A, a CD ne deli nijedno teme.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-uglovi-3",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "answer": "360",
+    "hint": "Podeli ga na dva trougla.",
+    "procedure": "2·180°=360°.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-uglovi-4",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "answer": "12",
+    "hint": "Obiđi granicu figure.",
+    "procedure": "O=2+3+4+3=12 cm.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-uglovi-5",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "answer": "87",
+    "hint": "Poznate uglove saberi.",
+    "procedure": "360−(84+77+112)=87.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-uglovi-6",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "answer": "115",
+    "hint": "Zajedno grade opruženi ugao.",
+    "procedure": "180−65=115.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-uglovi-7",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "answer": "7",
+    "hint": "Oduzmi sve poznate stranice.",
+    "procedure": "21−(4,5+6+3,5)=7 cm.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-uglovi-8",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "answer": "75",
+    "hint": "Dva dela pripadaju istom uglu.",
+    "procedure": "32°+43°=75°.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-uglovi-9",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "answer": "120",
+    "hint": "Odredi meru jednog dela.",
+    "procedure": "Dvanaest delova imaju 360°. Jedan je 30°, najveći četiri dela ili 120°.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-uglovi-10",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "answer": "24",
+    "hint": "Dijagonala se pojavila u oba obima.",
+    "procedure": "17+19=36 uključuje 2·6. O=36−12=24 cm.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-uglovi-11",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "answer": "Ne",
+    "hint": "Uporedi njihov zbir sa četiri prava ugla.",
+    "procedure": "Svaki bi bio veći od 90°. Zbir bi prešao 360°.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-uglovi-15",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "answer": "7",
+    "hint": "Prvo nađi potrošenu ogradu.",
+    "procedure": "Obim je 28 m, pa je četvrta strana 28−21=7 m.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-uglovi-16",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "answer": "360",
+    "hint": "Od četiri opružena ugla oduzmi sve unutrašnje.",
+    "procedure": "4·180°−360°=360°.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-uglovi-12",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "answer": "D",
+    "hint": "Prati redosled oko granice.",
+    "procedure": "A i C su susedna temena temenu B. Preostalo je D.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-uglovi-13",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "answer": "90",
+    "hint": "Podeli ukupan zbir.",
+    "procedure": "360°:4=90°.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-uglovi-14",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-uglovi",
+    "answer": "110",
+    "hint": "Najpre oduzmi dva poznata.",
+    "procedure": "(360−140):2=110°.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-godisnja-3",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-uglovi",
+    "answer": "77",
+    "hint": "Ukupan zbir je dvostruki zbir u trouglu.",
+    "procedure": "360−91−89−103=77°.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  }
+]

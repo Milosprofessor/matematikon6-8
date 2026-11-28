@@ -1202,7 +1202,35 @@
   {
     "id": "s6-uglovi",
     "area": "s6-cetvorouglovi",
-    "status": "nepregledana u fazi 2C"
+    "sequence": "Elementi četvorougla, zbir uglova, obim i dvostruko brojanje dijagonale.",
+    "examples": [
+      {
+        "question": "Tri unutrašnja ugla konveksnog četvorougla su 72°, 108° i 95°. Koliki je četvrti unutrašnji ugao?",
+        "steps": [
+          "Povuci dijagonalu i saberi dva zbira po 180°. Unutrašnji zbir je 360°.",
+          "Poznati uglovi daju 275°, pa je četvrti 360°−275°=85°."
+        ],
+        "verification": "85°"
+      },
+      {
+        "question": "Četvorougao ima stranice 4, 6, 7 i 5 cm, a jednu dijagonalu 8 cm. Odredi obim.",
+        "steps": [
+          "Granica se sastoji od četiri stranice. Dijagonala prolazi kroz unutrašnjost.",
+          "O=4+6+7+5=22 cm."
+        ],
+        "verification": "22 cm"
+      },
+      {
+        "question": "Dva unutrašnja ugla četvorougla su prava, a mera trećeg je dvostruka mera četvrtog. Koliki su treći i četvrti ugao?",
+        "steps": [
+          "Posle dva prava ugla preostaje 180°. Ako je četvrti x, treći je 2x.",
+          "3x=180° daje x=60° i 2x=120°. Provera: 90+90+120+60=360."
+        ],
+        "verification": "Treći ugao 120°, četvrti 60°."
+      }
+    ],
+    "assessment": "17 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
   },
   {
     "id": "s6-paralelogram",
