@@ -64,7 +64,7 @@ test('nove lekcije ostaju na 10 zadataka, a podaci učenika i algoritam znanja o
 });
 test('baza čuva redosled i crteže uz nezavisno testirane ispravke audita faze 1',()=>{
  const protectedData=all.filter(({lesson:l})=>["september","october"].includes(l.month)).map(({grade:g,area:a,lesson:l})=>({grade:g.id,area:a.id,month:l.month??a.month??'september',id:l.id,pool:tasksForLesson(l.id,l.tasks).filter(t=>!t.id.startsWith('dop-')),work:lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)),visuals:lessonVisuals(l.id)}));
- assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'c4ec5e5df2bab77c8acef95d228930bfd7911e81081cc5f58025edff22c0e27f');
+ assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'b3660a73a1dae0641ccd0a80d425e2d58f315d6b72218a3cf17e6c1b94de492f');
 });
 test('glavno objašnjenje je kratko, ima jednu napomenu i čuva svaki izbor geometrijskog prikaza',()=>{
  const counts=[];let figures=0;

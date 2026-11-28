@@ -16,4 +16,10 @@ Na oba prikaza učenik je rešio svih 10 radnih zadataka. Otvoreni su postupak i
 
 Metodički nalaz: svih šest varijanti ow-leg-compare ima tačan odgovor a<b. Učenik može pogoditi obrazac bez računanja. Za ovaj pregled zadržani su postojeći ključevi i identifikatori zbog ranije sačuvanih odgovora.
 
-Ukupno 43/995 zadataka i 2/49 lekcija. Sledeća lekcija je pitagora-pravougaonik-kvadrat, prvi zadatak o7-pk-1.
+## Pravougaonik i kvadrat
+
+Nezavisno su proverena sva 21 zadatka i četiri primera. Svih šest varijanti sa površinom izvodi stranicu iz dijagonale. U šest poređenja izvedene su obe dijagonale. Metodički nalaz je da u svih šest varijanti odgovor ostaje „Drugi“. Ključevi, opcije, redosled i identifikatori su očuvani. U zadatku ot7p-4 izvedena je pozitivna dijagonala od 17 cm. Dijagonala AC je naspram pravog ugla B u trouglu ABC.
+
+Po 10 redovnih zadataka rešeno je na desktopu i na emuliranom dodirnom ekranu. Provereni su ćirilica i učenički napredak posle osvežavanja. Jedanaest dodatnih zadataka provereno je iz banke. Prošlo je 127 testova, Pages build, TypeScript i zasebna regresija skladišta sa sintetičkim podacima šestog razreda. Lint je završio sa šest upozorenja i bez grešaka.
+
+Ukupno 64/995 zadataka i 3/49 lekcija. Sledeća lekcija je pitagora-jednakokraki, prvi zadatak o7-jk-1.

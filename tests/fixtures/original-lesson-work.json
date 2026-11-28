@@ -4185,7 +4185,7 @@
         "math": "a=5 cm, b=12 cm",
         "answer": "13",
         "hint": "Stranice su katete.",
-        "solution": "d²=25+144=169, pa je d=13 cm.",
+        "solution": "a²+b²=c². Dijagonala d je hipotenuza. 5²+12²=d², pa je 25+144=d² i d²=169. Pozitivna dužina je d=[[sqrt:169]]=13 cm.",
         "level": "basic",
         "skill": "Pitagora u pravougaoniku"
       },
@@ -4199,8 +4199,8 @@
           "3√2 cm"
         ],
         "answer": "6√2 cm",
-        "hint": "Koristi d=a√2.",
-        "solution": "d=6√2 cm.",
+        "hint": "Dijagonala je hipotenuza, a katete imaju jednaku dužinu.",
+        "solution": "a²+b²=c². U kvadratu je a²+a²=d². Za a=6 cm važi 6²+6²=d², pa je 36+36=d² i d²=72. Pozitivna dužina je d=[[sqrt:72]]=6[[sqrt:2]] cm.",
         "level": "basic",
         "skill": "Pitagora u kvadratu"
       },
@@ -4225,7 +4225,7 @@
         "math": "d=10√2 cm",
         "answer": "10",
         "hint": "Dijagonala je hipotenuza, a obe katete su jednake.",
-        "solution": "a²+a²=d². 2a²=(10√2)²=200; a²=100; a=10 cm jer je pozitivna.",
+        "solution": "a²+b²=c². U kvadratu je a²+a²=d². 2a²=(10√2)²=200; a²=100; a=10 cm jer je pozitivna.",
         "level": "medium",
         "skill": "Pitagora u kvadratu"
       },
@@ -4240,7 +4240,7 @@
         ],
         "answer": "d²=a²+b²",
         "hint": "Dijagonala je hipotenuza.",
-        "solution": "Tačna je prva formula.",
+        "solution": "a²+b²=c². Dijagonala d je hipotenuza, pa je d²=a²+b².",
         "level": "medium",
         "skill": "Pitagora u pravougaoniku"
       },
@@ -4250,7 +4250,7 @@
         "math": "d=25 cm, a=15 cm",
         "answer": "20",
         "hint": "Druga stranica je kateta.",
-        "solution": "a²+b²=d². 15²+b²=25²; 225+b²=625; b²=400. Pozitivna stranica b=20 cm.",
+        "solution": "a²+b²=c². Dijagonala je hipotenuza: a²+b²=d². 15²+b²=25²; 225+b²=625; b²=400. Pozitivna stranica b=20 cm.",
         "level": "medium",
         "skill": "Pitagora u pravougaoniku"
       },
@@ -4259,8 +4259,8 @@
         "prompt": "Odredi površinu kvadrata.",
         "math": "d=3[[sqrt:2]] cm",
         "answer": "9",
-        "hint": "Prvo odredi stranicu iz d=a√2.",
-        "solution": "Stranica je 3 cm, pa je P=9 cm².",
+        "hint": "Dijagonala je hipotenuza, a katete su jednake.",
+        "solution": "a²+b²=c². U kvadratu je a²+a²=d². Za d=3[[sqrt:2]] cm dobijamo 2a²=(3[[sqrt:2]])²=18. Dakle, a²=9. Pozitivna stranica je a=[[sqrt:9]]=3 cm. Površina je P=9 cm².",
         "level": "medium",
         "skill": "Pitagora u kvadratu"
       },
@@ -4270,7 +4270,7 @@
         "math": "d=17 cm, a=8 cm",
         "answer": "46",
         "hint": "Najpre odredi drugu stranicu.",
-        "solution": "a²+b²=d². 8²+b²=17²; 64+b²=289; b²=225. Pozitivna dužina b=15 cm. O=2·(8+15)=46 cm.",
+        "solution": "a²+b²=c². Dijagonala je hipotenuza: a²+b²=d². 8²+b²=17²; 64+b²=289; b²=225. Pozitivna dužina b=15 cm. O=2·(8+15)=46 cm.",
         "level": "advanced",
         "skill": "Pitagora u pravougaoniku"
       },
@@ -4284,7 +4284,7 @@
         ],
         "answer": "Da",
         "hint": "Najpre odredi stranicu i obim.",
-        "solution": "a²+a²=d². 2a²=(8√2)²=128; a²=64; a=8 m jer je pozitivna. O=32 m, pa je 50 m dovoljno.",
+        "solution": "a²+b²=c². U kvadratu je a²+a²=d². 2a²=(8√2)²=128; a²=64; a=8 m jer je pozitivna. O=32 m, pa je 50 m dovoljno.",
         "level": "advanced",
         "skill": "Pitagora u kvadratu"
       },
@@ -4298,8 +4298,8 @@
           "Jednake su"
         ],
         "answer": "Drugi",
-        "hint": "Odredi obe stranice pa uporedi a√2.",
-        "solution": "Stranice su 3 i 4 cm. Dužu dijagonalu ima drugi kvadrat.",
+        "hint": "Iz obima i površine odredi stranice, pa uporedi dijagonale.",
+        "solution": "a²+b²=c². U kvadratu je a²+a²=d². Prva stranica je 12:4=3 cm, a druga [[sqrt:16]]=4 cm. Zato je d₁²=3²+3²=9+9=18, a d₂²=4²+4²=16+16=32. Dužine su pozitivne: d₁=3[[sqrt:2]] cm, d₂=4[[sqrt:2]] cm. Drugi kvadrat ima dužu dijagonalu.",
         "level": "advanced",
         "skill": "Pitagora u kvadratu"
       }

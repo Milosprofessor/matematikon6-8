@@ -112,8 +112,20 @@ register("nepoznata-stranica-pravougli",[
 ]);
 register("pitagora-pravougaonik-kvadrat",[
  v=>Q("rect","identify",v,"Koja duž je hipotenuza pomoćnog trougla?","Pravougaonik ABCD sa dijagonalom AC",["AC","AB","BC"],"AC","Pogledaj trougao ABC.","Ugao B je prav, pa je AC hipotenuza.","basic","Pitagora u pravougaoniku","diagram"),
- v=>{const a=v+3;return N("rect","squarearea",v,"Odredi površinu kvadrata.","d="+a+"[[sqrt:2]] cm",a*a,"Prvo odredi stranicu iz d=a√2.","Stranica je "+a+" cm, pa je P="+a*a+" cm².","medium","Pitagora u kvadratu")},
- v=>{const a=v+3;return Q("rect","compare",v,"Koji kvadrat ima dužu dijagonalu?","Prvi: O="+4*a+" cm. Drugi: P="+(a+1)**2+" cm².",["Prvi","Drugi","Jednake su"],"Drugi","Odredi obe stranice pa uporedi a√2.","Stranice su "+a+" i "+(a+1)+" cm. Dužu dijagonalu ima drugi kvadrat.","advanced","Pitagora u kvadratu","method")}
+ v=>{
+   const side=v+3, area=side*side;
+   return N("rect","squarearea",v,"Odredi površinu kvadrata.","d="+side+"[[sqrt:2]] cm",area,
+     "Dijagonala je hipotenuza, a katete su jednake.",
+     `a²+b²=c². U kvadratu je a²+a²=d². Za d=${side}[[sqrt:2]] cm dobijamo 2a²=(${side}[[sqrt:2]])²=${2*area}. Dakle, a²=${area}. Pozitivna stranica je a=[[sqrt:${area}]]=${side} cm. Površina je P=${area} cm².`,
+     "medium","Pitagora u kvadratu");
+ },
+ v=>{
+   const first=v+3, second=first+1;
+   return Q("rect","compare",v,"Koji kvadrat ima dužu dijagonalu?",`Prvi: O=${4*first} cm. Drugi: P=${second**2} cm².`,["Prvi","Drugi","Jednake su"],"Drugi",
+     "Iz obima i površine odredi stranice, pa uporedi dijagonale.",
+     `a²+b²=c². U kvadratu je a²+a²=d². Prva stranica je ${4*first}:4=${first} cm, a druga [[sqrt:${second**2}]]=${second} cm. Zato je d₁²=${first}²+${first}²=${first**2}+${first**2}=${2*first**2}, a d₂²=${second}²+${second}²=${second**2}+${second**2}=${2*second**2}. Dužine su pozitivne: d₁=${first}[[sqrt:2]] cm, d₂=${second}[[sqrt:2]] cm. Drugi kvadrat ima dužu dijagonalu.`,
+     "advanced","Pitagora u kvadratu","method");
+ }
 ]);
 register("pitagora-jednakokraki",[
  v=>Q("iso","split",v,"Dopuni.","Visina na osnovicu jednakokrakog trougla deli osnovicu na…",["Dva jednaka dela","Tri jednaka dela","Dva proizvoljna dela"],"Dva jednaka dela","Visina je i težišna duž.","Polovine osnovice su jednake.","basic","Pitagora u jednakokrakom trouglu","diagram"),

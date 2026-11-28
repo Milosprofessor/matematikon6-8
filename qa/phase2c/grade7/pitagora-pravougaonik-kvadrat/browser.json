@@ -1,0 +1,138 @@
+[
+  {
+    "id": "o7-pk-1",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o7-pk-2",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "ow-rect-identify-0",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o7-pk-4",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-pk-5",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-pk-6",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "ow-rect-squarearea-0",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-pk-3",
+    "width": 1366,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "id": "o7-pk-7",
+    "width": 1366,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "id": "ow-rect-compare-0",
+    "width": 1366,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "width": 1366,
+    "lesson": "pitagora-pravougaonik-kvadrat",
+    "examples": 1,
+    "progress_reload": true,
+    "cyrillic": true,
+    "status": "pass"
+  },
+  {
+    "id": "o7-pk-1",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o7-pk-2",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "ow-rect-identify-0",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o7-pk-4",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-pk-5",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-pk-6",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "ow-rect-squarearea-0",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o7-pk-3",
+    "width": 390,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "id": "o7-pk-7",
+    "width": 390,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "id": "ow-rect-compare-0",
+    "width": 390,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "width": 390,
+    "lesson": "pitagora-pravougaonik-kvadrat",
+    "examples": 1,
+    "progress_reload": true,
+    "cyrillic": true,
+    "status": "pass"
+  }
+]
