@@ -1,0 +1,33 @@
+{
+  "id": "s6-model",
+  "area": "s6-primene",
+  "sequence": "Od početne vrednosti i promene preko jednake podele do ograničenja u celim brojevima.",
+  "examples": [
+    {
+      "question": "Sa −1,5 °C temperatura poraste za 4 °C. Kolika je sada?",
+      "steps": [
+        "Početno stanje je negativno, promena pozitivna. Računamo −1,5+4.",
+        "Do nule je 1,5 stepeni, preostaje 2,5. Temperatura je 2,5 °C."
+      ],
+      "verification": "2,5 °C"
+    },
+    {
+      "question": "Tri jednake sveske i olovka od 45 dinara koštaju 240 dinara. Koliko košta sveska?",
+      "steps": [
+        "Ako je cena sveske x, važi 3x+45=240. Oduzimanjem 45 dobijamo 3x=195.",
+        "Deljenjem sa 3 nalazimo x=65. Provera je 3·65+45=240."
+      ],
+      "verification": "65 dinara"
+    },
+    {
+      "question": "Ronilac je na koti −2 m i spušta se 1,5 m u minuti. Koliko najviše celih minuta sme da se spušta ako ne sme ispod kote −8 m?",
+      "steps": [
+        "Posle t minuta kota je −2−1,5t. Uslov −2−1,5t≥−8 daje −1,5t≥−6.",
+        "Delimo sa −1,5 i dobijamo t≤4. Tačno posle četiri minuta stiže do granice."
+      ],
+      "verification": "Najviše četiri cela minuta."
+    }
+  ],
+  "assessment": "18 zadataka; 10 u redovnom toku.",
+  "status": "potpuno recenzirana"
+}

@@ -20,8 +20,9 @@ with sync_playwright() as pw:
   page=ctx.new_page();page.add_init_script("localStorage.setItem('matematikon68-script','latn')")
   page.goto(url);page.locator('.task-card').wait_for()
   def click(l):l.tap() if touch else l.click()
-  examples=page.locator('.learn-column details').filter(has=page.locator('summary',has_text='Primer sa postupkom'))
-  assert examples.count()==1
+  examples=page.locator('.learn-column details').filter(has=page.locator('summary',has_text='Rešeni primer' if lesson.get('worked') else 'Primer sa postupkom'))
+  expected_examples=len(lesson.get("worked",[])) or 1
+  assert examples.count()==expected_examples
   for detail in examples.all():
    if detail.get_attribute('open') is None:click(detail.locator('summary'))
   text=page.locator('.learn-column').inner_text()
@@ -60,9 +61,10 @@ with sync_playwright() as pw:
   assert re.search('[А-Яа-я]',page.locator('h1').inner_text())
   detail=page.locator('.learn-column details.lesson-explore').first
   if detail.get_attribute('open') is None:click(detail.locator('summary'))
-  assert re.search(r'\d,\d',page.locator('.learn-column').inner_text())
+  decimal=re.search(r'\d+,\d+',lesson['solved']['question']+' '+' '.join(lesson['solved']['steps']))
+  if decimal:assert decimal[0] in page.locator('.learn-column').inner_text()
   if '[[frac:' in str([lesson['solved'],lesson['examples'],[bank[i] for i in lesson['work']]]):assert seen_fraction
-  rows.append({'width':width,'lesson':lesson['id'],'examples':1,'progress_reload':True,'cyrillic':True,'status':'pass'})
+  rows.append({'width':width,'lesson':lesson['id'],'examples':expected_examples,'progress_reload':True,'cyrillic':True,'status':'pass'})
   ctx.close()
  browser.close()
 srv.shutdown()

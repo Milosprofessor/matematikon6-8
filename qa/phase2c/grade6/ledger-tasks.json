@@ -10538,99 +10538,155 @@
     "id": "s6-model-1",
     "area": "s6-primene",
     "lesson": "s6-model",
+    "answer": "150",
+    "hint": "Uplata povećava saldo.",
+    "procedure": "−350+500=150 dinara.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-model-2",
     "area": "s6-primene",
     "lesson": "s6-model",
+    "answer": "5,5",
+    "hint": "Od krajnje vrednosti oduzmi početnu.",
+    "procedure": "2−(−3,5)=5,5.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-model-3",
     "area": "s6-primene",
     "lesson": "s6-model",
+    "answer": "x≥4",
+    "hint": "Da li su tačno četiri litra dovoljna?",
+    "procedure": "Da, pa je granica uključena i sve veće količine odgovaraju.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-model-4",
     "area": "s6-primene",
     "lesson": "s6-model",
+    "answer": "0,375",
+    "hint": "Ukupnu masu podeli brojem porcija.",
+    "procedure": "1,5:4=0,375 kg.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-model-5",
     "area": "s6-primene",
     "lesson": "s6-model",
+    "answer": "1,75",
+    "hint": "Vrati pad suprotnom promenom.",
+    "procedure": "x−2,75=−1 daje x=1,75.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-model-6",
     "area": "s6-primene",
     "lesson": "s6-model",
+    "answer": "362,25",
+    "hint": "Podeli tek posle oduzimanja.",
+    "procedure": "(900−175,5):2=724,5:2=362,25.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-model-7",
     "area": "s6-primene",
     "lesson": "s6-model",
+    "answer": "-3,5",
+    "hint": "Saberi četiri promene.",
+    "procedure": "3·(−2,5)+4=−7,5+4=−3,5.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-model-8",
     "area": "s6-primene",
     "lesson": "s6-model",
+    "answer": "x>−4",
+    "hint": "Deliš negativnim brojem.",
+    "procedure": "Deljenjem obe strane sa −3 smer se obrće. Granica je 12:(−3)=−4.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-model-9",
     "area": "s6-primene",
     "lesson": "s6-model",
+    "answer": "7",
+    "hint": "Preostali novac uporedi sa cenom celog broja karata.",
+    "procedure": "400−95=305. Sedam karata košta 297,5, osam košta 340.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-model-10",
     "area": "s6-primene",
     "lesson": "s6-model",
+    "answer": "-4,5",
+    "hint": "Iz proseka vrati zbir.",
+    "procedure": "Zbir je 2·(−1,25)=−2,5. Druga temperatura je −2,5−2=−4,5.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-model-11",
     "area": "s6-primene",
     "lesson": "s6-model",
+    "answer": "30",
+    "hint": "Vrati popust na račun.",
+    "procedure": "(150+30):6=30 dinara.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-model-15",
     "area": "s6-primene",
     "lesson": "s6-model",
+    "answer": "-2,75",
+    "hint": "Početnu visinu dobijaš obrnutom promenom.",
+    "procedure": "1,5−4,25=−2,75.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-primene-primena",
     "area": "s6-primene",
     "lesson": "s6-model",
+    "answer": "271",
+    "hint": "Najpre izdvoj samo cenu robe.",
+    "procedure": "(900−87):3=813:3=271 dinar.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-model-16",
     "area": "s6-primene",
     "lesson": "s6-model",
+    "answer": "4",
+    "hint": "Pad uporedi sa promenom za jedan sat.",
+    "procedure": "−4−0,75t=−7 daje −0,75t=−3, pa je t=4.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-konstrukcije-1",
@@ -12218,22 +12274,34 @@
     "id": "s6-model-12",
     "area": "s6-primene",
     "lesson": "s6-model",
+    "answer": "25",
+    "hint": "Najpre odredi ukupnu promenu.",
+    "procedure": "7,5−(−42,5)=50. Jedna uplata je 50:2=25.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-model-13",
     "area": "s6-primene",
     "lesson": "s6-model",
+    "answer": "-2",
+    "hint": "Odredi granicu pre izbora celog broja.",
+    "procedure": "Deljenjem sa −4 dobijamo x>−2,5. Prvi ceo broj desno je −2.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-model-14",
     "area": "s6-primene",
     "lesson": "s6-model",
+    "answer": "17",
+    "hint": "Poslednja boca može biti delimično puna.",
+    "procedure": "12,6:0,75=16,8. Šesnaest boca prima 12 l, pa treba sedamnaesta.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-konstrukcije-12",
@@ -12774,8 +12842,12 @@
     "id": "s6-izazov-3",
     "area": "s6-zavrsnica",
     "lesson": "s6-model",
+    "answer": "7",
+    "hint": "Napiši nejednačinu i proveri sledeću celobrojnu vrednost.",
+    "procedure": "35+62,5x≤500 daje x≤7,44. Sedam vožnji staje, osam prelazi iznos.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-izazov-4",

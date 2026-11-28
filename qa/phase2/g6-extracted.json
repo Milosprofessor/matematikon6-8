@@ -3848,10 +3848,10 @@
      ]
     },
     {
-     "question": "Ronilac je na koti −2 m i spušta se 1,5 m u minuti. Koliko celih minuta sme da se spušta do kote −8 m uključivo?",
+     "question": "Ronilac je na koti −2 m i spušta se 1,5 m u minuti. Koliko najviše celih minuta sme da se spušta ako ne sme ispod kote −8 m?",
      "steps": [
       "Posle t minuta kota je −2−1,5t. Uslov −2−1,5t≥−8 daje −1,5t≥−6.",
-      "Delimo sa −1,5 i dobijamo t≤4. U četvrtom minutu stiže do granice."
+      "Delimo sa −1,5 i dobijamo t≤4. Tačno posle četiri minuta stiže do granice."
      ]
     }
    ],
@@ -20350,7 +20350,7 @@
    "id": "s6-model-6",
    "skill": "Od teksta do izraza, jednačine ili nejednačine",
    "level": "medium",
-   "prompt": "Dva druga dele ostatak od 900 dinara posle troška od 175,50 dinara. Koliko dinara dobija svaki?",
+   "prompt": "Dva druga imaju ukupno 900 dinara. Posle troška od 175,50 dinara preostali novac dele na jednake delove. Koliko dinara dobija svaki?",
    "math": "",
    "hint": "Podeli tek posle oduzimanja.",
    "solution": "(900−175,5):2=724,5:2=362,25.",

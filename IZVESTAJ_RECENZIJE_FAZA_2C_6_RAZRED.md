@@ -1,3 +1,9 @@
+# Checkpoint 25 — Od teksta do izraza, jednačine ili nejednačine
+
+617/919 zadataka i 28/45 lekcija. G6C-047: navedena jednaka podela preostalog novca i određeno najveće dozvoljeno vreme ronjenja. Završna provera oblasti: 3/3 na oba prikaza, prethodni napredak i rezultat očuvani.
+
+Egzaktno pregledano 18 zadataka i tri rešena primera. 127/127 programskih testova, Worker i Pages build, TypeScript; lint bez grešaka. Na desktopu i touch emulaciji proveren je tok svih deset redovnih zadataka, pomoć, povratna informacija, tri primera, ćirilica i napredak posle osvežavanja. Posebna regresija napretka prošla. Ostali zadaci provereni su računski. Sledeći zadatak: s6-konstrukcije-1.
+
 # Checkpoint 24 — Nejednačine u skupu racionalnih brojeva
 
 599/919 zadataka i 27/45 lekcija. G6C-046: kod nestroge nejednakosti nagoveštaj uključuje samu granicu, a postupak za najmanji ceo broj povezuje otvorenu granicu sa odgovorom. Oblast Racionalni brojevi završena: završna provera 10/10 na desktopu i dodirnom prikazu, prethodni napredak i rezultat sačuvani. Egzaktna provera obuhvata svih 15 pripadajućih zadataka i oba primera. 127/127 testova, Worker i Pages build, TypeScript, lint (6 upozorenja). Desktop i touch emulacija: po deset redovnih zadataka, povratna informacija, pomoć, prikaz matematike i ćirilice, napredak posle osvežavanja. Posebna regresija napretka prošla. Dodatni zadaci provereni računski. Sledeći zadatak s6-model-1.
