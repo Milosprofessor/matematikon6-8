@@ -1,0 +1,138 @@
+[
+  {
+    "id": "o6-su-1",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o6-su-2",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o6-ut-4",
+    "width": 1366,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o6-su-3",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o6-ut-5",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o6-ut-6",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "ow-external-sum-0",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o6-ut-7",
+    "width": 1366,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "ow-external-equal-0",
+    "width": 1366,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "id": "ow-external-third-0",
+    "width": 1366,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "width": 1366,
+    "lesson": "uglovi-transverzala",
+    "examples": 3,
+    "progress_reload": true,
+    "cyrillic": true,
+    "status": "pass"
+  },
+  {
+    "id": "o6-su-1",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o6-su-2",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o6-ut-4",
+    "width": 390,
+    "status": "pass",
+    "level": "basic"
+  },
+  {
+    "id": "o6-su-3",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o6-ut-5",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o6-ut-6",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "ow-external-sum-0",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "o6-ut-7",
+    "width": 390,
+    "status": "pass",
+    "level": "medium"
+  },
+  {
+    "id": "ow-external-equal-0",
+    "width": 390,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "id": "ow-external-third-0",
+    "width": 390,
+    "status": "pass",
+    "level": "advanced"
+  },
+  {
+    "width": 390,
+    "lesson": "uglovi-transverzala",
+    "examples": 3,
+    "progress_reload": true,
+    "cyrillic": true,
+    "status": "pass"
+  }
+]

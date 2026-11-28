@@ -1,0 +1,146 @@
+[
+  {
+    "id": "o6-utn-3",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "57°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "o6-utn-4",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "68°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "o6-utn-5",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "46°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "o6-utn-9",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "135°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "o6-utn-10",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "95°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-1-2",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "42°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-1-3",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "43°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-1-4",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "44°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-2-2",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "118°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-2-3",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "117°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-2-4",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "116°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-3-2",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "88°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-3-3",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "87°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "dop-uglovi-na-transverzali-3-4",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "86°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ot6-2",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "23°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ot6-3",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "55°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ot6-4",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "115°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ot6-7",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "7°",
+    "phase3": "LOG-06"
+  }
+]

@@ -23,7 +23,7 @@ export const semester7 = [
     ["provera", "Koja trojka je pravougla?", "", ["9, 40, 41", "3, 4, 6", "5, 5, 8"], "Uporedi kvadrate.", "81+1600=1681=41²."],
     ["kvadrat-hipotenuze", "Čemu je jednak kvadrat najduže strane trougla sa katetama 7 i 24?", "", "625", "Saberi kvadrate kateta.", "49+576=625."],
     ["dokaz", "Da li je za dokaz dovoljno da zbir kvadrata približno odgovara trećem kvadratu?", "", ["Ne", "Da"], "Razlikuj merenje od tačne jednakosti.", "Obrat teoreme zahteva tačnu jednakost."],
-    ["nepoznata-kateta", "Kolika je kateta ako je druga 20, a hipotenuza 29?", "", "21", "Oduzmi kvadrate poznatih stranica.", "841−400=441=21²."],
+    ["nepoznata-kateta", "Kolika je kateta ako je druga 20, a hipotenuza 29?", "", "21", "Oduzmi kvadrate poznatih stranica.", "a²+b²=c². 20²+b²=29²; 400+b²=841; b²=441; pozitivna kateta b=21."],
   ]),
   semesterLesson({
     id: "stepeni-ista-osnova",

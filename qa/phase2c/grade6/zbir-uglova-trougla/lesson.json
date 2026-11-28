@@ -1,0 +1,40 @@
+{
+  "id": "zbir-uglova-trougla",
+  "area": "trougao",
+  "status": "potpuno recenzirana",
+  "theory": "Zbir 180°, pozitivnost svih uglova, pravougli trougao.",
+  "sequence": "Pravilo → nepoznati ugao → uslov postojanja → jednačina.",
+  "examples": [
+    {
+      "question": "Odredi treći ugao ako su dva ugla 47° i 68°.",
+      "steps": [
+        "α+β+γ=180°.",
+        "47°+68°+γ=180°.",
+        "γ=180°−115°=65°.",
+        "Provera: 47°+68°+65°=180°."
+      ],
+      "verification": "65°"
+    },
+    {
+      "question": "Da li 0°, 80° i 100° mogu biti unutrašnji uglovi trougla?",
+      "steps": [
+        "0°+80°+100°=180°.",
+        "Ugao 0° nije pozitivan, pa takav trougao ne postoji."
+      ],
+      "verification": "ne postoji"
+    },
+    {
+      "question": "Uglovi su x, 2x i 3x. Odredi ih.",
+      "steps": [
+        "x+2x+3x=180°.",
+        "6x=180°, x=30°.",
+        "Uglovi su 30°, 60° i 90°; svi su pozitivni i zbir je 180°."
+      ],
+      "verification": "30°, 60°, 90°"
+    }
+  ],
+  "illustration": "Označeni unutrašnji uglovi i pravougli trougao.",
+  "misconceptions": "Sam zbir 180° nije dovoljan ako je ugao 0°.",
+  "assessment": "21 zadatak uključujući tematsku proveru.",
+  "limits": "Ne potvrđuje čitav godišnji ishod."
+}

@@ -1,0 +1,189 @@
+[
+  {
+    "id": "s6-vektori-1",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "answer": "→NM",
+    "hint": "Zameni početak i kraj.",
+    "procedure": "Dužina i pravac ostaju, a smer se obrće.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-vektori-2",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "answer": "→AC",
+    "hint": "Prati put od početne do krajnje tačke.",
+    "procedure": "Put počinje u A i završava se u C.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-vektori-3",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "answer": "8",
+    "hint": "Dužina se množi apsolutnom vrednošću činioca.",
+    "procedure": "2·4=8 cm.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-vektori-4",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "answer": "0",
+    "hint": "Kraj puta se poklapa sa početkom.",
+    "procedure": "Povratak u polazište daje nulti vektor.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-vektori-5",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "answer": "4",
+    "hint": "Udesno uzmi kao pozitivan smer.",
+    "procedure": "−3+7=4.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-vektori-6",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "answer": "→DC",
+    "hint": "Prati isti smer na naspramnoj strani.",
+    "procedure": "Od D do C krećeš se kao od A do B za istu dužinu.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-vektori-7",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "answer": "3",
+    "hint": "Znak određuje smer.",
+    "procedure": "Dužina je 0,5·6=3 cm, a smer suprotan.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-vektori-8",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "answer": "5,5",
+    "hint": "Obe dijagonale imaju zajedničku sredinu.",
+    "procedure": "11:2=5,5 cm.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-vektori-9",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "answer": "5",
+    "hint": "Prenesi →AB iz D.",
+    "procedure": "→AB pomera 5 udesno. Zato je C(5, 4).",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-vektori-10",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "answer": "7",
+    "hint": "Oduzimanje obrće smer drugog pomeraja.",
+    "procedure": "2v je 4 ulevo. Zato u−2v ide 3+4=7 udesno.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-vektori-11",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "answer": "0",
+    "hint": "Gde se put završava?",
+    "procedure": "Kraj je početna tačka X. Pređeni put može biti dug, a pomeraj nula.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-vektori-15",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "answer": "AB",
+    "hint": "Naspramne stranice su paralelne.",
+    "procedure": "CD∥AB, zato tražena prava prolazi kroz D paralelno sa AB.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-vektori-16",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "answer": "6",
+    "hint": "Vektor →BC prenesi iz A.",
+    "procedure": "Od B do C se ide 1 desno i 4 gore. Od A stižeš u D(2, 6).",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-vektori-12",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "answer": "Ne",
+    "hint": "Razmisli može li se promeniti zahvaćeni ugao.",
+    "procedure": "Ugao se može promeniti uz iste stranice, pa postoje nepodudarne figure.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-vektori-13",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "answer": "-3",
+    "hint": "Drugoj koordinati dodaj −5.",
+    "procedure": "2−5=−3.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-vektori-14",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-vektori",
+    "answer": "Suprotan",
+    "hint": "Znak i veličina imaju različite uloge.",
+    "procedure": "Negativan skalar obrće smer, a 3 utrostručuje dužinu.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-polugodiste-6",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-vektori",
+    "answer": "-2",
+    "hint": "Nađi vertikalni deo pomeraja.",
+    "procedure": "Od 1 do 4 ide se 3 nagore. Iz P dolaziš na −5+3=−2.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "width": 1366,
+    "ids": [
+      "s6-izazov-1",
+      "s6-izazov-2",
+      "s6-izazov-3",
+      "s6-izazov-4",
+      "s6-izazov-5",
+      "s6-izazov-6",
+      "s6-izazov-7",
+      "s6-izazov-8",
+      "s6-izazov-9",
+      "s6-izazov-10"
+    ],
+    "score": "10/10",
+    "progress_preserved": true,
+    "best_after_reload": true,
+    "status": "pass"
+  },
+  {
+    "width": 390,
+    "ids": [
+      "s6-izazov-1",
+      "s6-izazov-2",
+      "s6-izazov-3",
+      "s6-izazov-4",
+      "s6-izazov-5",
+      "s6-izazov-6",
+      "s6-izazov-7",
+      "s6-izazov-8",
+      "s6-izazov-9",
+      "s6-izazov-10"
+    ],
+    "score": "10/10",
+    "progress_preserved": true,
+    "best_after_reload": true,
+    "status": "pass"
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "sw-r7-triangle-0",
+    "expected": 4,
+    "solution": "a²+b²=c². 3²+b²=5²; 9+b²=25; b²=16; b=4 cm jer je pozitivna."
+  },
+  {
+    "id": "sw-r7-perimeter-0",
+    "expected": 14,
+    "solution": "a²+b²=d². 3²+b²=5²; 9+b²=25; b²=16; b=4 cm jer je pozitivna. O=2(a+b)=14 cm."
+  },
+  {
+    "id": "ow-trap-reverse-0",
+    "expected": 12,
+    "solution": "Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+4²=5²; x²+16=25; x²=9. Pozitivna dužina x=3 cm. Zato a=6+2·3=12 cm."
+  },
+  {
+    "id": "ow-quad-reverse-0",
+    "expected": 4,
+    "solution": "AC²+CD²=AD². 3²+CD²=5²; 9+CD²=25; CD²=16. Pozitivna dužina CD=4 cm."
+  },
+  {
+    "id": "ow-leg-ladder-0",
+    "expected": 3,
+    "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+4²=5². x²+16=25; x²=9. Pozitivna udaljenost x=3 m."
+  },
+  {
+    "id": "ow-leg-compare-0",
+    "expected": "a<b",
+    "solution": "a²+b²=c². 3²+b²=5²; 9+b²=25; b²=16. Pozitivna kateta b=4, pa je a<b."
+  },
+  {
+    "id": "sw-r7-triangle-1",
+    "expected": 8,
+    "solution": "a²+b²=c². 6²+b²=10²; 36+b²=100; b²=64; b=8 cm jer je pozitivna."
+  },
+  {
+    "id": "sw-r7-perimeter-1",
+    "expected": 28,
+    "solution": "a²+b²=d². 6²+b²=10²; 36+b²=100; b²=64; b=8 cm jer je pozitivna. O=2(a+b)=28 cm."
+  },
+  {
+    "id": "ow-trap-reverse-1",
+    "expected": 24,
+    "solution": "Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+8²=10²; x²+64=100; x²=36. Pozitivna dužina x=6 cm. Zato a=12+2·6=24 cm."
+  },
+  {
+    "id": "ow-quad-reverse-1",
+    "expected": 12,
+    "solution": "AC²+CD²=AD². 5²+CD²=13²; 25+CD²=169; CD²=144. Pozitivna dužina CD=12 cm."
+  },
+  {
+    "id": "ow-leg-ladder-1",
+    "expected": 5,
+    "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+12²=13². x²+144=169; x²=25. Pozitivna udaljenost x=5 m."
+  },
+  {
+    "id": "ow-leg-compare-1",
+    "expected": "a<b",
+    "solution": "a²+b²=c². 5²+b²=13²; 25+b²=169; b²=144. Pozitivna kateta b=12, pa je a<b."
+  },
+  {
+    "id": "sw-r7-triangle-2",
+    "expected": 12,
+    "solution": "a²+b²=c². 9²+b²=15²; 81+b²=225; b²=144; b=12 cm jer je pozitivna."
+  },
+  {
+    "id": "sw-r7-perimeter-2",
+    "expected": 42,
+    "solution": "a²+b²=d². 9²+b²=15²; 81+b²=225; b²=144; b=12 cm jer je pozitivna. O=2(a+b)=42 cm."
+  },
+  {
+    "id": "ow-trap-reverse-2",
+    "expected": 36,
+    "solution": "Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+12²=15²; x²+144=225; x²=81. Pozitivna dužina x=9 cm. Zato a=18+2·9=36 cm."
+  },
+  {
+    "id": "ow-quad-reverse-2",
+    "expected": 15,
+    "solution": "AC²+CD²=AD². 8²+CD²=17²; 64+CD²=289; CD²=225. Pozitivna dužina CD=15 cm."
+  },
+  {
+    "id": "ow-leg-ladder-2",
+    "expected": 8,
+    "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+15²=17². x²+225=289; x²=64. Pozitivna udaljenost x=8 m."
+  },
+  {
+    "id": "ow-leg-compare-2",
+    "expected": "a<b",
+    "solution": "a²+b²=c². 8²+b²=17²; 64+b²=289; b²=225. Pozitivna kateta b=15, pa je a<b."
+  },
+  {
+    "id": "sw-r7-triangle-3",
+    "expected": 16,
+    "solution": "a²+b²=c². 12²+b²=20²; 144+b²=400; b²=256; b=16 cm jer je pozitivna."
+  },
+  {
+    "id": "sw-r7-perimeter-3",
+    "expected": 56,
+    "solution": "a²+b²=d². 12²+b²=20²; 144+b²=400; b²=256; b=16 cm jer je pozitivna. O=2(a+b)=56 cm."
+  },
+  {
+    "id": "ow-trap-reverse-3",
+    "expected": 48,
+    "solution": "Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+16²=20²; x²+256=400; x²=144. Pozitivna dužina x=12 cm. Zato a=24+2·12=48 cm."
+  },
+  {
+    "id": "ow-quad-reverse-3",
+    "expected": 24,
+    "solution": "AC²+CD²=AD². 7²+CD²=25²; 49+CD²=625; CD²=576. Pozitivna dužina CD=24 cm."
+  },
+  {
+    "id": "ow-leg-ladder-3",
+    "expected": 7,
+    "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+24²=25². x²+576=625; x²=49. Pozitivna udaljenost x=7 m."
+  },
+  {
+    "id": "ow-leg-compare-3",
+    "expected": "a<b",
+    "solution": "a²+b²=c². 7²+b²=25²; 49+b²=625; b²=576. Pozitivna kateta b=24, pa je a<b."
+  },
+  {
+    "id": "sw-r7-triangle-4",
+    "expected": 20,
+    "solution": "a²+b²=c². 15²+b²=25²; 225+b²=625; b²=400; b=20 cm jer je pozitivna."
+  },
+  {
+    "id": "sw-r7-perimeter-4",
+    "expected": 70,
+    "solution": "a²+b²=d². 15²+b²=25²; 225+b²=625; b²=400; b=20 cm jer je pozitivna. O=2(a+b)=70 cm."
+  },
+  {
+    "id": "ow-trap-reverse-4",
+    "expected": 60,
+    "solution": "Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+20²=25²; x²+400=625; x²=225. Pozitivna dužina x=15 cm. Zato a=30+2·15=60 cm."
+  },
+  {
+    "id": "ow-quad-reverse-4",
+    "expected": 12,
+    "solution": "AC²+CD²=AD². 9²+CD²=15²; 81+CD²=225; CD²=144. Pozitivna dužina CD=12 cm."
+  },
+  {
+    "id": "ow-leg-ladder-4",
+    "expected": 9,
+    "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+12²=15². x²+144=225; x²=81. Pozitivna udaljenost x=9 m."
+  },
+  {
+    "id": "ow-leg-compare-4",
+    "expected": "a<b",
+    "solution": "a²+b²=c². 9²+b²=15²; 81+b²=225; b²=144. Pozitivna kateta b=12, pa je a<b."
+  },
+  {
+    "id": "sw-r7-triangle-5",
+    "expected": 24,
+    "solution": "a²+b²=c². 18²+b²=30²; 324+b²=900; b²=576; b=24 cm jer je pozitivna."
+  },
+  {
+    "id": "sw-r7-perimeter-5",
+    "expected": 84,
+    "solution": "a²+b²=d². 18²+b²=30²; 324+b²=900; b²=576; b=24 cm jer je pozitivna. O=2(a+b)=84 cm."
+  },
+  {
+    "id": "ow-trap-reverse-5",
+    "expected": 72,
+    "solution": "Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+24²=30²; x²+576=900; x²=324. Pozitivna dužina x=18 cm. Zato a=36+2·18=72 cm."
+  },
+  {
+    "id": "ow-quad-reverse-5",
+    "expected": 16,
+    "solution": "AC²+CD²=AD². 12²+CD²=20²; 144+CD²=400; CD²=256. Pozitivna dužina CD=16 cm."
+  },
+  {
+    "id": "ow-leg-ladder-5",
+    "expected": 12,
+    "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+16²=20². x²+256=400; x²=144. Pozitivna udaljenost x=12 m."
+  },
+  {
+    "id": "ow-leg-compare-5",
+    "expected": "a<b",
+    "solution": "a²+b²=c². 12²+b²=20²; 144+b²=400; b²=256. Pozitivna kateta b=16, pa je a<b."
+  }
+]

@@ -66,7 +66,8 @@ export const noteLayouts:Record<string,PointLayout[]>={
   p('Ponovljeno sabiranje i znak proizvoda','i0',{v:[0],table:true,definition:true}),
   p('Nula i broj −1','i1.0 i1.1',{f:[0,1]}),
   p('Više negativnih činilaca','i1.2'),
-  p('Zajednički činilac i provera','s1',{f:[2],note:true}),
+  p('Zajednički činilac i provera','s1',{f:[2,6],note:true}),
+  p('Svojstva množenja','',{f:[3,4,5],text:'Jedinica je neutralni element. Komutativnost znači zamenu mesta činilaca; asocijativnost znači drugačije grupisanje činilaca.'}),
  ],
  'deljenje':[
   p('Veza deljenja i množenja','i0',{f:[0],definition:true,note:true}),
@@ -79,13 +80,15 @@ export const noteLayouts:Record<string,PointLayout[]>={
   p('Nepoznati početni broj','s1'),
  ],
  'brojevni-izrazi':[
-  p('Redosled računanja','i0',{f:[0],note:true}),
+  p('Redosled računanja','i0.0 i0.1 i0.2',{f:[0],note:true}),
+  p('Dozvoljeno deljenje','i0.3'),
   p('Prevođenje teksta u izraz','i1'),
   p('Poređenje i nulti proizvod','s1',{f:[1]}),
  ],
  'trougao-vrste':[
   p('Temena i naspramne stranice','i0',{f:[0],definition:true,note:true}),
   p('Vrste prema stranicama','i1.0 i1.2',{v:[0,1]}),
+  p('Najprecizniji naziv','',{text:'U širem smislu jednakostranični trougao je takođe jednakokraki. Kada biramo jednu vrstu prema stranicama, koristimo najprecizniji naziv.'}),
   p('Vrste prema uglovima','i1.1 s0'),
   p('Obim i nepoznata stranica','s1',{f:[1]}),
  ],

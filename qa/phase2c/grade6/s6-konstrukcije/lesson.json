@@ -1,0 +1,34 @@
+{
+  "id": "s6-konstrukcije",
+  "area": "s6-trouglovi",
+  "sequence": "Konstrukcije uglova, SSS, SUS i USU, uslovi postojanja i broj nepodudarnih oblika.",
+  "examples": [
+    {
+      "question": "Kako konstruisati 75°?",
+      "steps": [
+        "U istom temenu sa zajedničkim početnim krakom u istoj poluravni konstruiši krake od 60° i 90°. Za 60° iz krajeva osnovice opiši lukove čiji je poluprečnik jednak osnovici. Spoji njihov presek sa temenom.",
+        "Za 90° označi dve tačke na početnoj pravoj jednako udaljene od temena, levo i desno. Iz njih jednakim otvorom većim od te udaljenosti opiši lukove iznad prave. Spoj temena s njihovim presekom je normala.",
+        "Prepolovi ugao između krakova. Novi krak sa početnim zaklapa 60°+15°=75°."
+      ],
+      "verification": "75°"
+    },
+    {
+      "question": "Kako nacrtati trougao sa stranicama 4, 5 i 7 cm?",
+      "steps": [
+        "Nacrtaj AB dužine 7 cm. Iz A opiši luk poluprečnika 4 cm, iz B luk poluprečnika 5 cm.",
+        "Presek lukova označi sa C i spoji sa A i B. Dužine su obezbeđene poluprečnicima, a 4+5>7."
+      ],
+      "verification": "1 < 7 < 9; dva simetrična položaja"
+    },
+    {
+      "question": "Dati su AB=6 cm, ugao kod A je 50°, kod B je 60°.",
+      "steps": [
+        "Prenesi zadata dva ugla na istu stranu duži AB, prvi u A od AB, drugi u B od BA.",
+        "Presek krakova je C. Treći ugao je 180°−110°=70°, pa je trougao nedegenerisan."
+      ],
+      "verification": "70°"
+    }
+  ],
+  "assessment": "17 zadataka; 10 u redovnom toku.",
+  "status": "potpuno recenzirana"
+}

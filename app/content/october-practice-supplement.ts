@@ -6,19 +6,19 @@ type Problem = [prompt:string, math:string, answer:number, hint:string, solution
 type Family = [skill:string, level:Level, make:(n:number)=>Problem];
 const families:Record<string,Family[]> = {
   "uglovi-na-transverzali":[
-    ["Odgovarajući uglovi","basic",n=>["Koliki je odgovarajući ugao u stepenima na drugoj paraleli?",`α=${40+n}°`,40+n,"Prave su paralelne.","Odgovarajući uglovi su jednaki."]],
+    ["Odgovarajući uglovi","basic",n=>["Koliki je odgovarajući ugao u stepenima na drugoj paraleli?",`α=${40+n}°`,40+n,"Prave su paralelne.",`Pošto su prave paralelne, saglasni uglovi su jednaki: β=α=${40+n}°.`]],
     ["Unutrašnji uglovi","medium",n=>["Na paralelama pronađi unutrašnji ugao sa iste strane sečice, u stepenima.",`α=${60+n}°`,120-n,"Zbir je opružen ugao.",`180°−${60+n}°=${120-n}°.`]],
-    ["Odnos uglova","advanced",n=>["Unutrašnji uglovi sa iste strane sečice paralelnih pravih razlikuju se za navedeni iznos. Koliki je manji u stepenima?",`Razlika je ${2*n}°.`,90-n,"Od 180° oduzmi razliku pa prepolovi.",`Manji ugao je (180°−${2*n}°):2=${90-n}°.`]],
+    ["Odnos uglova","advanced",n=>["Unutrašnji uglovi sa iste strane sečice paralelnih pravih razlikuju se za navedeni iznos. Koliki je manji u stepenima?",`Razlika je ${2*n}°.`,90-n,"Od 180° oduzmi razliku pa prepolovi.",`Neka je manji ugao x°, veći (x+${2*n})°. x+x+${2*n}=180, pa 2x=${180-2*n} i x=${90-n}. Manji ugao je ${90-n}°.`]],
   ],
   "skup-racionalnih-brojeva":[
     ["Zapis celog broja","basic",n=>["Dopuni brojilac.",`[[frac:x|4]]=−${n}`,-4*n,"Pomnoži obe strane sa 4.",`x=4·(−${n})=${-4*n}.`]],
-    ["Podela jedinice","medium",n=>["Koja je koordinata tačke koja je ovoliko četvrtina levo od nule?",`Broj četvrtina: ${n}`,-n/4,"Prvo odredi dužinu pomaka, zatim znak.",`Koordinata je −[[frac:${n}|4]].`]],
-    ["Brojanje razlomaka","advanced",n=>["Koliko razlomaka sa ovim pozitivnim imeniocem leži strogo između −1 i 0?",`Imenilac je ${n+3}.`,n+2,"Popiši moguće negativne brojioce.",`Brojioci su od −${n+2} do −1, ukupno ${n+2}.`]],
+    ["Podela jedinice","medium",n=>["Odredi koordinatu tačke koja je zadati broj četvrtina levo od nule.",`Broj četvrtina: ${n}`,-n/4,"Prvo odredi dužinu pomaka, zatim znak.",`Koordinata je −[[frac:${n}|4]].`]],
+    ["Brojanje razlomaka","medium",n=>["Koliko razlomaka sa celobrojnim brojiocem i zadatim pozitivnim imeniocem leži strogo između −1 i 0?",`Imenilac je ${n+3}.`,n+2,"Popiši moguće negativne brojioce.",`Pošto je imenilac pozitivan, −${n+3}<brojilac<0. Brojioci su od −${n+2} do −1, ukupno ${n+2}.`]],
   ],
   "apsolutna-vrednost-racionalnog":[
     ["Rastojanje od nule","basic",n=>["Upiši apsolutnu vrednost.",`|−${n},5|`,n+.5,"Rastojanje je nenegativno.",`Tačka je od nule udaljena ${n},5 jedinica.`]],
-    ["Negativna koordinata","medium",n=>["Pronađi negativnu koordinatu.",`|x|=${n},25`,-n-.25,"Odaberi tačku levo od nule.",`Od dva rešenja negativno je −${n},25.`]],
-    ["Razmak dve tačke","advanced",n=>["Koliki je razmak dva rešenja jednačine?",`|x|=${n},5`,2*n+1,"Tačke su simetrične u odnosu na nulu.",`Zbir dva jednaka rastojanja je 2·${n},5=${2*n+1}.`]],
+    ["Negativna koordinata","medium",n=>["Odredi negativno rešenje jednačine.",`|x|=${n},25`,-n-.25,"Odaberi tačku levo od nule.",`Rešenja su −${n},25 i ${n},25; uslov bira −${n},25.`]],
+    ["Razmak dve tačke","medium",n=>["Koliki je razmak dva rešenja jednačine?",`|x|=${n},5`,2*n+1,"Tačke su simetrične u odnosu na nulu.",`Zbir dva jednaka rastojanja je 2·${n},5=${2*n+1}.`]],
   ],
   "jednacine-kvadrat":[
     ["Pozitivan koren","basic",n=>["Upiši pozitivno rešenje.",`x²=${(n+6)**2}`,n+6,"Nađi pozitivan broj čiji je kvadrat dat.",`${n+6}²=${(n+6)**2}.`]],

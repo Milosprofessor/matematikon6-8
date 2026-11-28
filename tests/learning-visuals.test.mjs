@@ -64,7 +64,7 @@ test('nove lekcije ostaju na 10 zadataka, a podaci učenika i algoritam znanja o
 });
 test('baza čuva redosled i crteže uz nezavisno testirane ispravke audita faze 1',()=>{
  const protectedData=all.filter(({lesson:l})=>["september","october"].includes(l.month)).map(({grade:g,area:a,lesson:l})=>({grade:g.id,area:a.id,month:l.month??a.month??'september',id:l.id,pool:tasksForLesson(l.id,l.tasks).filter(t=>!t.id.startsWith('dop-')),work:lessonWorkTasks(l.id,tasksForLesson(l.id,l.tasks)),visuals:lessonVisuals(l.id)}));
- assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'d4606e6b1a272bda975be0df517721daa86efccfa59695adf3c4fc228b8e6a1a');
+ assert.equal(createHash('sha256').update(JSON.stringify(protectedData)).digest('hex'),'de03fbe9909f8420736a6da51974466f44283b54cda2b65231d18391a608df14');
 });
 test('glavno objašnjenje je kratko, ima jednu napomenu i čuva svaki izbor geometrijskog prikaza',()=>{
  const counts=[];let figures=0;
@@ -77,4 +77,139 @@ test('glavno objašnjenje je kratko, ima jednu napomenu i čuva svaki izbor geom
 test('sažeti tekst zadržava ključne uslove i oba pisma bez prevođenja matematičkih oznaka',()=>{
  const source=id=>JSON.stringify(learningByLesson[id]);assert.match(source('talesova-teorema'),/MN∥BC/);assert.match(source('stavovi-slicnosti'),/zahvaćen/);assert.match(source('jednacine-kvadrat'),/dva suprotna/);assert.match(source('poliedar'),/konveks/);assert.match(source('deljenje'),/b≠0/);assert.match(source('svojstva-korena'),/nenegativ/);
  const lesson=all.find(x=>x.lesson.id==='tacka-prava-ravan-osnove').lesson;const html=render(LessonLearningContent,{lesson},'cyrl');assert.match(html,/Шта треба да знаш/);assert.match(html,/A∈p/);assert.doesNotMatch(html,/А∈п/);
+});
+
+test('svih šest zadataka o merdevinama označava poznatu visinu, hipotenuzu i nepoznato x',()=>{
+ const {lesson:l}=all.find(x=>x.lesson.id==='nepoznata-stranica-pravougli');
+ const tasks=tasksForLesson(l.id,l.tasks).filter(t=>t.id.startsWith('ow-leg-ladder-'));
+ assert.equal(tasks.length,6);
+ for(const t of tasks){
+  const [,c,h]=t.math.match(/Merdevine su (\d+) m\. Vrh je na visini (\d+) m/);
+  assert.deepEqual(t.diagram.labels,{a:'x',b:h,c});
+  assert.match(t.solution,/x²\+h²=c²/);
+  const html=drawing(t.diagram);
+  assert.ok(Math.abs(distance(point(html,'A'),point(html,'C'))/distance(point(html,'A'),point(html,'B'))-Number(h)/Number(c))<1e-7);
+ }
+});
+
+test('recenzija 6. razreda: obnavljanje ima 45 stabilnih ID-jeva, tri raznovrsna primera i opravdane nivoe',()=>{
+ const {lesson:l}=all.find(x=>x.lesson.id==='kratko-obnavljanje-5');
+ const tasks=tasksForLesson(l.id,l.tasks);
+ assert.equal(tasks.length,45);assert.equal(new Set(tasks.map(t=>t.id)).size,45);
+ assert.equal(tasks.filter(t=>t.level==='basic').length,27);assert.equal(tasks.filter(t=>t.level==='medium').length,18);
+ assert.equal(l.worked.length,3);
+ assert.match(l.worked[2].steps.join(' '),/30=2\(6\+b\).*b=15−6=9 cm/);
+ for(const t of tasks.filter(t=>t.id.startsWith('sw-r5-rectangle-')))assert.match(t.solution,/O=2\(a\+b\).*Delimo obe strane/);
+ for(const t of tasks.filter(t=>t.id.startsWith('sw-r5-angle-')))assert.match(t.solution,/α\+β=180°/);
+});
+
+test('recenzija skup celih brojeva: stabilnih 17 zadataka, tri primera, opravdani nivoi',()=>{
+ const l=all.find(x=>x.lesson.id==='skup-celih-brojeva').lesson;
+ const tasks=tasksForLesson(l.id,l.tasks);
+ assert.equal(tasks.length,17);assert.equal(tasks.filter(t=>t.level==='basic').length,11);assert.equal(tasks.filter(t=>t.level==='medium').length,6);
+ assert.equal(l.worked.length,3);
+ for(const t of tasks.filter(t=>t.id.startsWith('sw-integer-reverse-')))assert.match(t.solution,/x−1=.*dodajemo 1.*−x=/);
+});
+
+test('recenzija apsolutne vrednosti: 22 ID-ja, tri primera i odgovarajući nivoi',()=>{
+ const l=all.find(x=>x.lesson.id==='apsolutna-vrednost').lesson;
+ const tasks=tasksForLesson(l.id,l.tasks);assert.equal(tasks.length,22);
+ assert.equal(tasks.filter(t=>t.level==='basic').length,17);
+ assert.equal(tasks.filter(t=>t.level==='medium').length,5);
+ assert.equal(l.worked.length,3);
+ for(const t of tasks.filter(t=>t.id.startsWith('sw-absolute-diagram-')))assert.equal(Number(t.answer),Math.abs(t.diagram.points[0].value));
+});
+
+test('recenzija poređenja: 22 ID-ja, tri primera i pravilni nivoi',()=>{
+ const l=all.find(x=>x.lesson.id==='uporedjivanje').lesson;
+ const tasks=tasksForLesson(l.id,l.tasks);assert.equal(tasks.length,22);
+ assert.equal(tasks.filter(t=>t.level==='basic').length,7);
+ assert.equal(tasks.filter(t=>t.level==='medium').length,15);
+ assert.equal(l.worked.length,3);
+ for(const t of tasks.filter(t=>t.id.startsWith('sw-order-digit-')))assert.match(t.solution,/Dozvoljene cifre su 0, 1, 2, 3, 4/);
+});
+
+test('recenzija sabiranja: 28 ID-ja, tri primera, predznak i ekvivalentne transformacije',()=>{
+ const l=all.find(x=>x.lesson.id==='sabiranje').lesson, tasks=tasksForLesson(l.id,l.tasks);
+ assert.equal(tasks.length,28);assert.equal(tasks.filter(t=>t.level==='basic').length,12);assert.equal(tasks.filter(t=>t.level==='medium').length,16);
+ assert.equal(l.worked.length,3);assert.match(tasks.find(t=>t.id==='6-4h').hint,/veće apsolutne vrednosti/);
+ for(const t of tasks.filter(t=>t.id.startsWith('sw-add-signcondition-')))assert.match(t.solution,/na obe strane/);
+});
+
+test('recenzija oduzimanja: 22 ID-ja, tri primera i ekvivalentne transformacije',()=>{
+ const l=all.find(x=>x.lesson.id==='oduzimanje').lesson, tasks=tasksForLesson(l.id,l.tasks);
+ assert.equal(tasks.length,22);assert.equal(tasks.filter(t=>t.level==='basic').length,12);assert.equal(tasks.filter(t=>t.level==='medium').length,10);
+ assert.equal(l.worked.length,3);
+ for(const id of ['6-5e','6-5i'])assert.match(tasks.find(t=>t.id===id).solution,/Provera:/);
+});
+
+test('recenzija rastojanja: 22 ID-ja, tri primera, dva smera i sredina',()=>{
+ const l=all.find(x=>x.lesson.id==='rastojanje').lesson, tasks=tasksForLesson(l.id,l.tasks);
+ assert.equal(tasks.length,22);assert.equal(tasks.filter(t=>t.level==='basic').length,5);assert.equal(tasks.filter(t=>t.level==='medium').length,17);
+ assert.equal(l.worked.length,3);assert.match(tasks.find(t=>t.id==='6-6j').solution,/Provera:/);
+ for(const t of tasks.filter(t=>t.id.startsWith('sw-distance-midpoint-')))assert.match(t.solution,/Polovina/);
+});
+
+test('recenzija sabiranja i oduzimanja: zagrade, povratno stanje i nivoi',()=>{
+ const l=all.find(x=>x.lesson.id==='sabiranje-oduzimanje').lesson,tasks=tasksForLesson(l.id,l.tasks);
+ assert.equal(tasks.length,22);assert.equal(tasks.filter(t=>t.level==='basic').length,12);assert.equal(tasks.filter(t=>t.level==='medium').length,10);
+ assert.equal(l.worked.length,3);
+ for(const t of tasks.filter(t=>['6-7c','6-7e'].includes(t.id)||t.id.startsWith('sw-signed-reverse-')))assert.match(t.solution,/Provera:/);
+});
+
+test('recenzija množenja: znak, nula, svojstva i nivoi',()=>{
+ const l=all.find(x=>x.lesson.id==='mnozenje').lesson,tasks=tasksForLesson(l.id,l.tasks);
+ assert.equal(tasks.length,34);assert.equal(tasks.filter(t=>t.level==='basic').length,11);assert.equal(tasks.filter(t=>t.level==='medium').length,23);
+ assert.equal(l.worked.length,3);
+ assert.ok(l.formulas.includes('a·0=0'));assert.ok(l.formulas.includes('a·b=b·a'));assert.ok(l.formulas.includes('(a·b)·c=a·(b·c)'));assert.ok(l.formulas.includes('a·(b−c)=a·b−a·c'));
+ for(const t of tasks.filter(t=>['6-8e','6-8g'].includes(t.id)))assert.match(t.solution,/Provera:/);
+ for(const t of tasks.filter(t=>t.id.startsWith('ow-mul-distribute-')))assert.match(t.solution,/·20=/);
+});
+
+test('recenzija deljenja: nula, nepoznati delilac i nivoi',()=>{
+ const l=all.find(x=>x.lesson.id==='deljenje').lesson,tasks=tasksForLesson(l.id,l.tasks);
+ assert.equal(tasks.length,28);assert.equal(tasks.filter(t=>t.level==='basic').length,5);assert.equal(tasks.filter(t=>t.level==='medium').length,23);
+ assert.equal(l.worked.length,3);
+ assert.match(l.worked[1].steps.join(' '),/nema jedinstvenog količnika/);
+ for(const t of tasks.filter(t=>['6-9e','6-9g'].includes(t.id)||t.id.startsWith('ow-div-both-')))assert.match(t.solution,/Provera:/);
+ assert.match(tasks.find(t=>t.id==='6-9g').solution,/x≠0/);
+});
+
+test('recenzija množenja i deljenja: redosled i provera',()=>{
+ const l=all.find(x=>x.lesson.id==='mnozenje-deljenje').lesson,tasks=tasksForLesson(l.id,l.tasks);
+ assert.equal(tasks.length,28);assert.equal(tasks.filter(t=>t.level==='basic').length,8);assert.equal(tasks.filter(t=>t.level==='medium').length,20);
+ assert.equal(l.worked.length,3);assert.match(l.worked[1].steps.join(' '),/−16≠−4/);
+ for(const t of tasks.filter(t=>['6-10c','6-10g'].includes(t.id)))assert.match(t.solution,/Provera:/);
+});
+
+test('recenzija brojevnih izraza: prioritet, nulti proizvod i nivoi',()=>{
+ const l=all.find(x=>x.lesson.id==='brojevni-izrazi').lesson,tasks=tasksForLesson(l.id,l.tasks);
+ assert.equal(tasks.length,28);assert.equal(tasks.filter(t=>t.level==='basic').length,8);assert.equal(tasks.filter(t=>t.level==='medium').length,20);
+ assert.equal(l.worked.length,3);
+ for(const t of tasks.filter(t=>t.id.startsWith('ow-expr-missing-')))assert.match(t.solution,/Provera:/);
+ for(const t of tasks.filter(t=>t.id.startsWith('ow-expr-brackets-')))assert.match(t.solution,/Drugi izraz daje −\d+, a treći \d+/);
+});
+
+test('recenzija vrsta trougla: zbir parova nije dužina stranice',()=>{
+ const l=all.find(x=>x.lesson.id==='trougao-vrste').lesson,tasks=tasksForLesson(l.id,l.tasks);
+ assert.equal(tasks.length,20);assert.equal(tasks.filter(t=>t.level==='basic').length,5);assert.equal(tasks.filter(t=>t.level==='medium').length,9);assert.equal(tasks.filter(t=>t.level==='advanced').length,6);
+ assert.equal(l.worked.length,3);
+ for(const t of tasks.filter(t=>t.id.startsWith('ow-tv-pairs-')))assert.deepEqual(t.diagram.labels,{a:'a',b:'b',c:'c'});
+ assert.deepEqual(tasks.find(t=>t.id==='o6-tv-6').diagram.labels,{a:'8',b:'11',c:'?'});
+});
+
+test('recenzija Trougla: geometrijska podudarnost oznaka i oblika, stroge granice',()=>{
+ const lesson=id=>all.find(x=>x.grade.id===6&&x.lesson.id===id).lesson;
+ const angle=(a,b,c)=>{const u=[a[0]-b[0],a[1]-b[1]],v=[c[0]-b[0],c[1]-b[1]];return Math.acos((u[0]*v[0]+u[1]*v[1])/(Math.hypot(...u)*Math.hypot(...v)))*180/Math.PI};
+ const measured=t=>{const h=drawing(t.diagram),A=point(h,'A'),B=point(h,'B'),C=point(h,'C');return [angle(B,A,C),angle(A,B,C),angle(A,C,B)]};
+ const close=(a,b)=>assert.ok(Math.abs(a-b)<1e-7,`${a} != ${b}`);
+ for(const id of ['zbir-uglova-trougla','uglovi-transverzala','uglovi-na-transverzali','odnos-stranica-uglova','nejednakost-trougla'])assert.equal(lesson(id).worked.length,3);
+ const interior=lesson('zbir-uglova-trougla');assert.match(interior.rules.join(' '),/ako i samo ako/);
+ const ext=lesson('uglovi-transverzala');for(const t of tasksForLesson(ext.id,ext.tasks).filter(t=>t.id.startsWith('ow-external-equal-'))){
+  const [a,b,c]=measured(t);close(b,c);close(180-a,2*Number(t.answer));
+ }
+ const side=lesson('odnos-stranica-uglova'),pool=tasksForLesson(side.id,side.tasks);
+ const iso=pool.find(t=>t.id==='o6-osu-3');assert.equal(iso.diagram.labels.c,'c');const [,b,c]=measured(iso);close(b,c);
+ for(const t of pool.filter(t=>t.id.startsWith('ow-sideangle-combine-'))){const [a,b,c]=measured(t);close(b-a,15);assert.ok(c>b&&b>a);}
+ const ineq=lesson('nejednakost-trougla');assert.match(ineq.intro,/ako i samo ako/);assert.equal(tasksForLesson(ineq.id,ineq.tasks).find(t=>t.id==='o6-nt-2').diagram,undefined);
 });

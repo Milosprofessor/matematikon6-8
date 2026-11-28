@@ -17,7 +17,7 @@ export default springLesson({
   ["Koja jedinica meri popločani deo dvorišta?", ["m²", "m", "cm³"], "Pločice prekrivaju ravan.", "Pokrivanje meri površinu, pa koristimo kvadratne jedinice."],
   ["Iz pravougaonika 9 cm sa 8 cm isečen je kvadrat stranice 3 cm. Koliko cm² je ostalo?", "63", "Od cele figure oduzmi otvor.", "P=9·8−3²=72−9=63 cm²."],
   ["Kvadrat ima površinu 64 cm² i obim 32 cm. Kolika je apotema u cm?", "4", "Kreni od formule sa obimom.", "64=32h:2=16h. Sledi h=4 cm."],
-  ["Figura oblika kućice sastoji se od pravougaonika 8 cm sa 5 cm i trougla iznad njega osnovice 8 cm i visine 3 cm. Površina u cm²?", "52", "Saberi zid i krov.", "8·5+8·3:2=40+12=52 cm²."],
+  ["Figura oblika kućice sastoji se od pravougaonika 8 cm sa 5 cm i trougla osnovice 8 cm i visine 3 cm koji sa pravougaonikom deli celu gornju stranicu, bez preklapanja unutrašnjosti. Površina u cm²?", "52", "Saberi zid i krov.", "8·5+8·3:2=40+12=52 cm²."],
   ["Sve dužine pravilnog mnogougla uvećamo tri puta. Koliko puta poraste površina?", "9", "Prati i obim i apotemu.", "Oba činioca porastu po tri puta, pa površina raste devet puta."],
   ["Tetiva kružnice duga je 10 cm. Poluprečnik je 13 cm. Izračunaj rastojanje centra od tetive u cm.", "12", "Spoji centar sa sredinom tetive.", "a²+b²=c². Zamenom 5²+h²=13², pa 25+h²=169 i h²=144. Pozitivna dužina je h=12 cm."],
   ["Od ugla pravougaonika 7 m sa 5 m odseče se pravougaonik 2 m sa 1 m. Obim preostalog L-oblika u m?", "24", "Koje dužine su nestale, a koje se pojavile?", "Dve uklonjene duži zamenjuju dve iste dužine. Obim ostaje 2·(7+5)=24 m."],

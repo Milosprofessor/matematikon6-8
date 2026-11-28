@@ -11,7 +11,7 @@ export default springLesson({
   skills: ["paralelnost", "obim-romba", "klasifikacija", "polovljenje", "obim-paralelograma", "suplement", "uslov", "simetrala", "zbir-i-razlika", "dijagonale", "presek"],
   worked: [{"question":"U ABCD ugao A ima 68°. Odredi ostala tri ugla paralelograma.","steps":["Zbog paralelnosti je ∠B=180°−68°=112°. Naspramni uglovi su jednaki.","Zato ∠C=68°, ∠D=112°. Zbir je 360°."]},{"question":"Pravougaonik ima AC=13 cm, a dijagonale se seku u S. Koliko je BS?","steps":["Dijagonale pravougaonika su jednake, pa je BD=13 cm.","Pošto se dijagonale paralelograma polove, BS=13:2=6,5 cm."]},{"question":"Romb ima obim 36 cm. Možemo li utvrditi dužinu dijagonale?","steps":["Sve četiri stranice su jednake, pa je stranica 36:4=9 cm.","Menjanjem ugla uz iste stranice menja se dijagonala. Sam obim nije dovoljan."]}]
 }, [
-  ["Koliko parova paralelnih stranica ima paralelogram?","2","Posmatraj obe naspramne stranice.","AB∥CD i BC∥DA daju dva para."],
+  ["Koliko parova paralelnih stranica ima paralelogram?","2","Pronađi oba para naspramnih stranica.","AB∥CD i BC∥DA daju dva para."],
   ["Obim romba stranice 4,5 cm iznosi koliko cm?","18","Sve stranice su jednake.","O=4a=4·4,5=18 cm."],
   ["Svaki kvadrat je i pravougaonik. Da li je tvrdnja tačna?",["Da","Ne"],"Proveri sve uglove.","Kvadrat ima četiri prava ugla, što ispunjava svojstvo pravougaonika."],
   ["Polovina dijagonale AC paralelograma ima 3 cm. Cela AC ima koliko cm?","6","Presek dijagonala je sredina.","AC=2·3=6 cm."],
@@ -26,5 +26,5 @@ export default springLesson({
   ["U paralelogramu je obim 46 cm i a=9 cm. Kolika je b u cm?","14","Poluobim je zbir susednih stranica.","b=46:2−9=14 cm."],
   ["U rombu je polovina ugla A jednaka 37°. Ugao B ima koliko stepeni?","106","Vrati ceo ugao A.","A=74°, pa je B=180°−74°=106°."],
   ["Dijagonale paralelograma imaju 10 i 16 cm. Koliki je u cm zbir dužina od preseka do sva četiri temena?","26","Saberi četiri polovine.","5+5+8+8=26 cm."],
-  ["Jedan ugao paralelograma je tri puta veći od susednog. Manji ima koliko stepeni?","45","Susedni uglovi daju 180°.","x+3x=180° daje x=45°."]
+  ["Mera jednog ugla paralelograma je trostruka mera susednog ugla. Manji ima koliko stepeni?","45","Susedni uglovi daju 180°.","x+3x=180° daje x=45°."]
 ]);

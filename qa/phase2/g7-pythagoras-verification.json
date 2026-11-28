@@ -1,0 +1,566 @@
+[
+  {
+    "finding": "G7-001",
+    "task": "solved",
+    "independent_fragments": [
+      "a²+b²=c²",
+      "8²+b²=17²",
+      "b²=289−64=225",
+      "b=15 cm"
+    ],
+    "solution": "Katete su a=8 cm i b, hipotenuza c=17 cm. a²+b²=c². 8²+b²=17², odnosno 64+b²=289. b²=289−64=225. Pošto je b>0, b=15 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-002",
+    "task": "solved",
+    "independent_fragments": [
+      "(a/2)²+h²=s²",
+      "6²+h²=10²",
+      "h²=100−36=64",
+      "h=8 cm"
+    ],
+    "solution": "Visina h deli osnovicu na polovine. Katete su a/2 i h, a krak s je hipotenuza. a/2=12/2=6 cm. (a/2)²+h²=s². 6²+h²=10². Sledi 36+h²=100, h²=100−36=64. Kako je h>0, h=8 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-012",
+    "task": "o7-ns-1",
+    "independent_fragments": [
+      "a²+b²=c²",
+      "8²+b²=10²",
+      "b²=36",
+      "b=6 cm"
+    ],
+    "solution": "Katete su a i b, hipotenuza c. a²+b²=c². 8²+b²=10²; 64+b²=100; b²=100−64=36. Pošto je b>0, b=6 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-013",
+    "task": "o7-ns-2",
+    "independent_fragments": [
+      "a²+b²=c²",
+      "a²+b²=c²",
+      "a²=c²−b²",
+      "a²=c²−b²"
+    ],
+    "solution": "a²+b²=c². Oduzmi b² sa obe strane: a²=c²−b².",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-014",
+    "task": "o7-ns-4",
+    "independent_fragments": [
+      "a²+b²=c²",
+      "a²+24²=25²",
+      "a²=49",
+      "a=7 cm"
+    ],
+    "solution": "a²+b²=c². a²+24²=25²; a²+576=625; a²=49. Pozitivna kateta a=7 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-015",
+    "task": "o7-ns-6",
+    "independent_fragments": [
+      "a²+b²=c²",
+      "5²+b²=13²",
+      "b²=144",
+      "b=12 cm"
+    ],
+    "solution": "a²+b²=c². 5²+b²=13²; 25+b²=169; b²=144; b=12 cm jer je pozitivna. P=5·12/2=30 cm².",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-016",
+    "task": "o7-ns-7",
+    "independent_fragments": [
+      "a²+b²=c²",
+      "9²+b²=15²",
+      "b²=144",
+      "b=12"
+    ],
+    "solution": "a²+b²=c². 9²+b²=15²; 81+b²=225; b²=144. Pozitivna kateta b=12.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-017",
+    "task": "ot7p-3",
+    "independent_fragments": [
+      "a²+b²=c²",
+      "15²+b²=17²",
+      "b²=64",
+      "b=8 cm"
+    ],
+    "solution": "a²+b²=c². 15²+b²=17²; 225+b²=289; b²=64; b=8 cm jer je pozitivna.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-018",
+    "task": "o7-pk-3",
+    "independent_fragments": [
+      "a²+b²=d²",
+      "8²+b²=17²",
+      "b²=225",
+      "b=15 cm"
+    ],
+    "solution": "a²+b²=d². 8²+b²=17²; 64+b²=289; b²=225. Pozitivna dužina b=15 cm. O=2·(8+15)=46 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-019",
+    "task": "o7-pk-4",
+    "independent_fragments": [
+      "a²+a²=d²",
+      "2a²=(10√2)²=200",
+      "a²=100",
+      "a=10 cm"
+    ],
+    "solution": "a²+a²=d². 2a²=(10√2)²=200; a²=100; a=10 cm jer je pozitivna.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-020",
+    "task": "o7-pk-6",
+    "independent_fragments": [
+      "a²+b²=d²",
+      "15²+b²=25²",
+      "b²=400",
+      "b=20 cm"
+    ],
+    "solution": "a²+b²=d². 15²+b²=25²; 225+b²=625; b²=400. Pozitivna stranica b=20 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-021",
+    "task": "o7-pk-7",
+    "independent_fragments": [
+      "a²+a²=d²",
+      "2a²=(8√2)²=128",
+      "a²=64",
+      "a=8 m"
+    ],
+    "solution": "a²+a²=d². 2a²=(8√2)²=128; a²=64; a=8 m jer je pozitivna. O=32 m, pa je 50 m dovoljno.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-022",
+    "task": "o7-jk-1",
+    "independent_fragments": [
+      "h²+(a/2)²=s²",
+      "h²+5²=13²",
+      "h²=144",
+      "h=12 cm"
+    ],
+    "solution": "Katete su h i a/2, hipotenuza s. h²+(a/2)²=s²; h²+5²=13²; h²+25=169; h²=144. h=12 cm jer je pozitivna.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-023",
+    "task": "o7-jk-2",
+    "independent_fragments": [
+      "h²+(a/2)²=a²",
+      "h²+4²=8²",
+      "h²=48",
+      "h=4√3 cm"
+    ],
+    "solution": "h²+(a/2)²=a². h²+4²=8²; h²+16=64; h²=48. Pozitivna visina h=4√3 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-024",
+    "task": "o7-jk-3",
+    "independent_fragments": [
+      "(a/2)²+h²=s²",
+      "(a/2)²+15²=17²",
+      "(a/2)²=64",
+      "a=16 cm"
+    ],
+    "solution": "(a/2)²+h²=s². (a/2)²+15²=17²; (a/2)²+225=289; (a/2)²=64. Pozitivna polovina je 8 cm, pa je a=16 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-025",
+    "task": "o7-jk-7",
+    "independent_fragments": [
+      "(a/2)²+h²=s²",
+      "(a/2)²+8²=10²",
+      "(a/2)²=36",
+      "a=12 cm"
+    ],
+    "solution": "(a/2)²+h²=s². (a/2)²+8²=10²; (a/2)²+64=100; (a/2)²=36. Pozitivna polovina je 6 cm, a=12 cm. O=10+10+12=32 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-026",
+    "task": "o7-ro-3",
+    "independent_fragments": [
+      "(d₁/2)²+(d₂/2)²=a²",
+      "5²+(d₂/2)²=13²",
+      "(d₂/2)²=144",
+      "d₂=24 cm"
+    ],
+    "solution": "(d₁/2)²+(d₂/2)²=a². 5²+(d₂/2)²=13²; 25+(d₂/2)²=169; (d₂/2)²=144. Pozitivna polovina je 12 cm, d₂=24 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-027",
+    "task": "o7-ro-7",
+    "independent_fragments": [
+      "(d₁/2)²+(d₂/2)²=a²",
+      "(d₁/2)²+15²=17²",
+      "(d₁/2)²=64",
+      "d₁=16 cm"
+    ],
+    "solution": "(d₁/2)²+(d₂/2)²=a². (d₁/2)²+15²=17²; (d₁/2)²+225=289; (d₁/2)²=64. Pozitivna polovina je 8 cm, pa je d₁=16 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-028",
+    "task": "o7-tr-4",
+    "independent_fragments": [
+      "h²+(a−b)²=c²",
+      "h²+5²=13²",
+      "h²=144",
+      "h=12 cm"
+    ],
+    "solution": "h²+(a−b)²=c². h²+5²=13²; h²+25=169; h²=144. Pozitivna visina h=12 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-029",
+    "task": "o7-tr-6",
+    "independent_fragments": [
+      "h²+(a−b)²=c²",
+      "h²+10²=26²",
+      "h²=576",
+      "h=24 cm"
+    ],
+    "solution": "h²+(a−b)²=c². h²+10²=26²; h²+100=676; h²=576; h=24 cm jer je pozitivna. P=(18+8)·24/2=312 cm².",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-030",
+    "task": "ot7p-5",
+    "independent_fragments": [
+      "h²+(a/2)²=a²",
+      "h²+5²=10²",
+      "h²=75",
+      "h=5√3 cm"
+    ],
+    "solution": "h²+(a/2)²=a². h²+5²=10²; h²+25=100; h²=75; h=5√3 cm jer je pozitivna.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-031",
+    "task": "pitagora-obrat-14",
+    "independent_fragments": [
+      "a²+b²=c²",
+      "20²+b²=29²",
+      "b²=441",
+      "b=21"
+    ],
+    "solution": "a²+b²=c². 20²+b²=29²; 400+b²=841; b²=441; pozitivna kateta b=21.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-032",
+    "task": "ow-leg-identify-0",
+    "independent_fragments": [
+      "a²+b²=c²",
+      "a²+b²=c²",
+      "b²=c²−a²",
+      "b=[[sqrt:c^2−a^2]]"
+    ],
+    "solution": "a²+b²=c². Oduzmi a² sa obe strane: b²=c²−a². Kako je b>0, b=[[sqrt:c^2−a^2]].",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-033",
+    "task": "ow-leg-compare-0",
+    "independent_fragments": [
+      "a²+b²=c²",
+      "3²+b²=5²",
+      "b²=16",
+      "b=4"
+    ],
+    "solution": "a²+b²=c². 3²+b²=5²; 9+b²=25; b²=16. Pozitivna kateta b=4, pa je a<b.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-034",
+    "task": "ow-leg-compare-1",
+    "independent_fragments": [
+      "a²+b²=c²",
+      "5²+b²=13²",
+      "b²=144",
+      "b=12"
+    ],
+    "solution": "a²+b²=c². 5²+b²=13²; 25+b²=169; b²=144. Pozitivna kateta b=12, pa je a<b.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-035",
+    "task": "ow-leg-compare-2",
+    "independent_fragments": [
+      "a²+b²=c²",
+      "8²+b²=17²",
+      "b²=225",
+      "b=15"
+    ],
+    "solution": "a²+b²=c². 8²+b²=17²; 64+b²=289; b²=225. Pozitivna kateta b=15, pa je a<b.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-036",
+    "task": "ow-leg-compare-3",
+    "independent_fragments": [
+      "a²+b²=c²",
+      "7²+b²=25²",
+      "b²=576",
+      "b=24"
+    ],
+    "solution": "a²+b²=c². 7²+b²=25²; 49+b²=625; b²=576. Pozitivna kateta b=24, pa je a<b.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-037",
+    "task": "ow-leg-compare-4",
+    "independent_fragments": [
+      "a²+b²=c²",
+      "9²+b²=15²",
+      "b²=144",
+      "b=12"
+    ],
+    "solution": "a²+b²=c². 9²+b²=15²; 81+b²=225; b²=144. Pozitivna kateta b=12, pa je a<b.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-038",
+    "task": "ow-leg-compare-5",
+    "independent_fragments": [
+      "a²+b²=c²",
+      "12²+b²=20²",
+      "b²=256",
+      "b=16"
+    ],
+    "solution": "a²+b²=c². 12²+b²=20²; 144+b²=400; b²=256. Pozitivna kateta b=16, pa je a<b.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-039",
+    "task": "ow-leg-ladder-0",
+    "independent_fragments": [
+      "x²+4²=5²",
+      "x²+16=25",
+      "x²=9",
+      "x=3 m"
+    ],
+    "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+4²=5². x²+16=25; x²=9. Pozitivna udaljenost x=3 m.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-040",
+    "task": "ow-leg-ladder-1",
+    "independent_fragments": [
+      "x²+12²=13²",
+      "x²+144=169",
+      "x²=25",
+      "x=5 m"
+    ],
+    "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+12²=13². x²+144=169; x²=25. Pozitivna udaljenost x=5 m.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-041",
+    "task": "ow-leg-ladder-2",
+    "independent_fragments": [
+      "x²+15²=17²",
+      "x²+225=289",
+      "x²=64",
+      "x=8 m"
+    ],
+    "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+15²=17². x²+225=289; x²=64. Pozitivna udaljenost x=8 m.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-042",
+    "task": "ow-leg-ladder-3",
+    "independent_fragments": [
+      "x²+24²=25²",
+      "x²+576=625",
+      "x²=49",
+      "x=7 m"
+    ],
+    "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+24²=25². x²+576=625; x²=49. Pozitivna udaljenost x=7 m.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-043",
+    "task": "ow-leg-ladder-4",
+    "independent_fragments": [
+      "x²+12²=15²",
+      "x²+144=225",
+      "x²=81",
+      "x=9 m"
+    ],
+    "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+12²=15². x²+144=225; x²=81. Pozitivna udaljenost x=9 m.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-044",
+    "task": "ow-leg-ladder-5",
+    "independent_fragments": [
+      "x²+16²=20²",
+      "x²+256=400",
+      "x²=144",
+      "x=12 m"
+    ],
+    "solution": "Katete su udaljenost x i visina, hipotenuza su merdevine. x²+16²=20². x²+256=400; x²=144. Pozitivna udaljenost x=12 m.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-045",
+    "task": "ow-trap-reverse-0",
+    "independent_fragments": [
+      "x²+h²=c²",
+      "x²+4²=5²",
+      "x²=9",
+      "x=3 cm"
+    ],
+    "solution": "Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+4²=5²; x²+16=25; x²=9. Pozitivna dužina x=3 cm. Zato a=6+2·3=12 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-046",
+    "task": "ow-trap-reverse-1",
+    "independent_fragments": [
+      "x²+h²=c²",
+      "x²+8²=10²",
+      "x²=36",
+      "x=6 cm"
+    ],
+    "solution": "Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+8²=10²; x²+64=100; x²=36. Pozitivna dužina x=6 cm. Zato a=12+2·6=24 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-047",
+    "task": "ow-trap-reverse-2",
+    "independent_fragments": [
+      "x²+h²=c²",
+      "x²+12²=15²",
+      "x²=81",
+      "x=9 cm"
+    ],
+    "solution": "Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+12²=15²; x²+144=225; x²=81. Pozitivna dužina x=9 cm. Zato a=18+2·9=36 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-048",
+    "task": "ow-trap-reverse-3",
+    "independent_fragments": [
+      "x²+h²=c²",
+      "x²+16²=20²",
+      "x²=144",
+      "x=12 cm"
+    ],
+    "solution": "Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+16²=20²; x²+256=400; x²=144. Pozitivna dužina x=12 cm. Zato a=24+2·12=48 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-049",
+    "task": "ow-trap-reverse-4",
+    "independent_fragments": [
+      "x²+h²=c²",
+      "x²+20²=25²",
+      "x²=225",
+      "x=15 cm"
+    ],
+    "solution": "Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+20²=25²; x²+400=625; x²=225. Pozitivna dužina x=15 cm. Zato a=30+2·15=60 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-050",
+    "task": "ow-trap-reverse-5",
+    "independent_fragments": [
+      "x²+h²=c²",
+      "x²+24²=30²",
+      "x²=324",
+      "x=18 cm"
+    ],
+    "solution": "Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+24²=30²; x²+576=900; x²=324. Pozitivna dužina x=18 cm. Zato a=36+2·18=72 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-051",
+    "task": "ow-quad-reverse-0",
+    "independent_fragments": [
+      "AC²+CD²=AD²",
+      "3²+CD²=5²",
+      "CD²=16",
+      "CD=4 cm"
+    ],
+    "solution": "AC²+CD²=AD². 3²+CD²=5²; 9+CD²=25; CD²=16. Pozitivna dužina CD=4 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-052",
+    "task": "ow-quad-reverse-1",
+    "independent_fragments": [
+      "AC²+CD²=AD²",
+      "5²+CD²=13²",
+      "CD²=144",
+      "CD=12 cm"
+    ],
+    "solution": "AC²+CD²=AD². 5²+CD²=13²; 25+CD²=169; CD²=144. Pozitivna dužina CD=12 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-053",
+    "task": "ow-quad-reverse-2",
+    "independent_fragments": [
+      "AC²+CD²=AD²",
+      "8²+CD²=17²",
+      "CD²=225",
+      "CD=15 cm"
+    ],
+    "solution": "AC²+CD²=AD². 8²+CD²=17²; 64+CD²=289; CD²=225. Pozitivna dužina CD=15 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-054",
+    "task": "ow-quad-reverse-3",
+    "independent_fragments": [
+      "AC²+CD²=AD²",
+      "7²+CD²=25²",
+      "CD²=576",
+      "CD=24 cm"
+    ],
+    "solution": "AC²+CD²=AD². 7²+CD²=25²; 49+CD²=625; CD²=576. Pozitivna dužina CD=24 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-055",
+    "task": "ow-quad-reverse-4",
+    "independent_fragments": [
+      "AC²+CD²=AD²",
+      "9²+CD²=15²",
+      "CD²=144",
+      "CD=12 cm"
+    ],
+    "solution": "AC²+CD²=AD². 9²+CD²=15²; 81+CD²=225; CD²=144. Pozitivna dužina CD=12 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  },
+  {
+    "finding": "G7-056",
+    "task": "ow-quad-reverse-5",
+    "independent_fragments": [
+      "AC²+CD²=AD²",
+      "12²+CD²=20²",
+      "CD²=256",
+      "CD=16 cm"
+    ],
+    "solution": "AC²+CD²=AD². 12²+CD²=20²; 144+CD²=400; CD²=256. Pozitivna dužina CD=16 cm.",
+    "status": "Matematički proračun i ključ potvrđeni; UI pregled zaseban"
+  }
+]

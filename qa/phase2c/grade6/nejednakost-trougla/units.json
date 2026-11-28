@@ -1,0 +1,122 @@
+[
+  {
+    "id": "o6-nt-3",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "6 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "o6-nt-7",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "20 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-ineqtri-isosceles-0",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "9 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-ineqtri-isosceles-1",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "11 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-ineqtri-isosceles-2",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "13 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-ineqtri-isosceles-3",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "15 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-ineqtri-isosceles-4",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "17 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-ineqtri-isosceles-5",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "19 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-ineqtri-perimeter-0",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "21 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-ineqtri-perimeter-1",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "25 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-ineqtri-perimeter-2",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "29 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-ineqtri-perimeter-3",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "33 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-ineqtri-perimeter-4",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "37 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-ineqtri-perimeter-5",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "41 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ot6-7",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "7 cm",
+    "phase3": "LOG-06"
+  }
+]

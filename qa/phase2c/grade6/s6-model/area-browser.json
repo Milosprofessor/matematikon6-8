@@ -1,0 +1,26 @@
+[
+  {
+    "width": 1366,
+    "ids": [
+      "s6-model-15",
+      "s6-primene-primena",
+      "s6-model-16"
+    ],
+    "score": "3/3",
+    "progress_preserved": true,
+    "best_after_reload": true,
+    "status": "pass"
+  },
+  {
+    "width": 390,
+    "ids": [
+      "s6-model-15",
+      "s6-primene-primena",
+      "s6-model-16"
+    ],
+    "score": "3/3",
+    "progress_preserved": true,
+    "best_after_reload": true,
+    "status": "pass"
+  }
+]

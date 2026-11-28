@@ -1,0 +1,390 @@
+[
+  {
+    "id": "sw-r7-triangle-0",
+    "answer": "4",
+    "reference": "5²−3²=16; b=4; rezultat=4",
+    "solution": "Katete su a i b, hipotenuza c. a²+b²=c². 3²+b²=5²; 9+b²=25; b²=25−9=16; b=4 cm jer je pozitivna.",
+    "checked_fragments": [
+      "a²+b²=c²",
+      "3²+b²=5²",
+      "9+b²=25",
+      "b²=25−9=16",
+      "b=4 cm",
+      "pozitivna"
+    ],
+    "lesson": "kratko-obnavljanje-7",
+    "area": "obnavljanje-7"
+  },
+  {
+    "id": "sw-r7-triangle-1",
+    "answer": "8",
+    "reference": "10²−6²=64; b=8; rezultat=8",
+    "solution": "Katete su a i b, hipotenuza c. a²+b²=c². 6²+b²=10²; 36+b²=100; b²=100−36=64; b=8 cm jer je pozitivna.",
+    "checked_fragments": [
+      "a²+b²=c²",
+      "6²+b²=10²",
+      "36+b²=100",
+      "b²=100−36=64",
+      "b=8 cm",
+      "pozitivna"
+    ],
+    "lesson": "kratko-obnavljanje-7",
+    "area": "obnavljanje-7"
+  },
+  {
+    "id": "sw-r7-triangle-2",
+    "answer": "12",
+    "reference": "15²−9²=144; b=12; rezultat=12",
+    "solution": "Katete su a i b, hipotenuza c. a²+b²=c². 9²+b²=15²; 81+b²=225; b²=225−81=144; b=12 cm jer je pozitivna.",
+    "checked_fragments": [
+      "a²+b²=c²",
+      "9²+b²=15²",
+      "81+b²=225",
+      "b²=225−81=144",
+      "b=12 cm",
+      "pozitivna"
+    ],
+    "lesson": "kratko-obnavljanje-7",
+    "area": "obnavljanje-7"
+  },
+  {
+    "id": "sw-r7-triangle-3",
+    "answer": "16",
+    "reference": "20²−12²=256; b=16; rezultat=16",
+    "solution": "Katete su a i b, hipotenuza c. a²+b²=c². 12²+b²=20²; 144+b²=400; b²=400−144=256; b=16 cm jer je pozitivna.",
+    "checked_fragments": [
+      "a²+b²=c²",
+      "12²+b²=20²",
+      "144+b²=400",
+      "b²=400−144=256",
+      "b=16 cm",
+      "pozitivna"
+    ],
+    "lesson": "kratko-obnavljanje-7",
+    "area": "obnavljanje-7"
+  },
+  {
+    "id": "sw-r7-triangle-4",
+    "answer": "20",
+    "reference": "25²−15²=400; b=20; rezultat=20",
+    "solution": "Katete su a i b, hipotenuza c. a²+b²=c². 15²+b²=25²; 225+b²=625; b²=625−225=400; b=20 cm jer je pozitivna.",
+    "checked_fragments": [
+      "a²+b²=c²",
+      "15²+b²=25²",
+      "225+b²=625",
+      "b²=625−225=400",
+      "b=20 cm",
+      "pozitivna"
+    ],
+    "lesson": "kratko-obnavljanje-7",
+    "area": "obnavljanje-7"
+  },
+  {
+    "id": "sw-r7-triangle-5",
+    "answer": "24",
+    "reference": "30²−18²=576; b=24; rezultat=24",
+    "solution": "Katete su a i b, hipotenuza c. a²+b²=c². 18²+b²=30²; 324+b²=900; b²=900−324=576; b=24 cm jer je pozitivna.",
+    "checked_fragments": [
+      "a²+b²=c²",
+      "18²+b²=30²",
+      "324+b²=900",
+      "b²=900−324=576",
+      "b=24 cm",
+      "pozitivna"
+    ],
+    "lesson": "kratko-obnavljanje-7",
+    "area": "obnavljanje-7"
+  },
+  {
+    "id": "sw-r7-perimeter-0",
+    "answer": "14",
+    "reference": "5²−3²=16; b=4; rezultat=14",
+    "solution": "Katete su stranice a i b, hipotenuza je dijagonala d. a²+b²=d². 3²+b²=5²; 9+b²=25; b²=25−9=16; b=4 cm jer je pozitivna. O=2(a+b)=2·(3+4)=14 cm.",
+    "checked_fragments": [
+      "a²+b²=d²",
+      "3²+b²=5²",
+      "9+b²=25",
+      "b²=25−9=16",
+      "b=4 cm",
+      "pozitivna",
+      "O=2(a+b)=2·(3+4)=14 cm"
+    ],
+    "lesson": "kratko-obnavljanje-7",
+    "area": "obnavljanje-7"
+  },
+  {
+    "id": "sw-r7-perimeter-1",
+    "answer": "28",
+    "reference": "10²−6²=64; b=8; rezultat=28",
+    "solution": "Katete su stranice a i b, hipotenuza je dijagonala d. a²+b²=d². 6²+b²=10²; 36+b²=100; b²=100−36=64; b=8 cm jer je pozitivna. O=2(a+b)=2·(6+8)=28 cm.",
+    "checked_fragments": [
+      "a²+b²=d²",
+      "6²+b²=10²",
+      "36+b²=100",
+      "b²=100−36=64",
+      "b=8 cm",
+      "pozitivna",
+      "O=2(a+b)=2·(6+8)=28 cm"
+    ],
+    "lesson": "kratko-obnavljanje-7",
+    "area": "obnavljanje-7"
+  },
+  {
+    "id": "sw-r7-perimeter-2",
+    "answer": "42",
+    "reference": "15²−9²=144; b=12; rezultat=42",
+    "solution": "Katete su stranice a i b, hipotenuza je dijagonala d. a²+b²=d². 9²+b²=15²; 81+b²=225; b²=225−81=144; b=12 cm jer je pozitivna. O=2(a+b)=2·(9+12)=42 cm.",
+    "checked_fragments": [
+      "a²+b²=d²",
+      "9²+b²=15²",
+      "81+b²=225",
+      "b²=225−81=144",
+      "b=12 cm",
+      "pozitivna",
+      "O=2(a+b)=2·(9+12)=42 cm"
+    ],
+    "lesson": "kratko-obnavljanje-7",
+    "area": "obnavljanje-7"
+  },
+  {
+    "id": "sw-r7-perimeter-3",
+    "answer": "56",
+    "reference": "20²−12²=256; b=16; rezultat=56",
+    "solution": "Katete su stranice a i b, hipotenuza je dijagonala d. a²+b²=d². 12²+b²=20²; 144+b²=400; b²=400−144=256; b=16 cm jer je pozitivna. O=2(a+b)=2·(12+16)=56 cm.",
+    "checked_fragments": [
+      "a²+b²=d²",
+      "12²+b²=20²",
+      "144+b²=400",
+      "b²=400−144=256",
+      "b=16 cm",
+      "pozitivna",
+      "O=2(a+b)=2·(12+16)=56 cm"
+    ],
+    "lesson": "kratko-obnavljanje-7",
+    "area": "obnavljanje-7"
+  },
+  {
+    "id": "sw-r7-perimeter-4",
+    "answer": "70",
+    "reference": "25²−15²=400; b=20; rezultat=70",
+    "solution": "Katete su stranice a i b, hipotenuza je dijagonala d. a²+b²=d². 15²+b²=25²; 225+b²=625; b²=625−225=400; b=20 cm jer je pozitivna. O=2(a+b)=2·(15+20)=70 cm.",
+    "checked_fragments": [
+      "a²+b²=d²",
+      "15²+b²=25²",
+      "225+b²=625",
+      "b²=625−225=400",
+      "b=20 cm",
+      "pozitivna",
+      "O=2(a+b)=2·(15+20)=70 cm"
+    ],
+    "lesson": "kratko-obnavljanje-7",
+    "area": "obnavljanje-7"
+  },
+  {
+    "id": "sw-r7-perimeter-5",
+    "answer": "84",
+    "reference": "30²−18²=576; b=24; rezultat=84",
+    "solution": "Katete su stranice a i b, hipotenuza je dijagonala d. a²+b²=d². 18²+b²=30²; 324+b²=900; b²=900−324=576; b=24 cm jer je pozitivna. O=2(a+b)=2·(18+24)=84 cm.",
+    "checked_fragments": [
+      "a²+b²=d²",
+      "18²+b²=30²",
+      "324+b²=900",
+      "b²=900−324=576",
+      "b=24 cm",
+      "pozitivna",
+      "O=2(a+b)=2·(18+24)=84 cm"
+    ],
+    "lesson": "kratko-obnavljanje-7",
+    "area": "obnavljanje-7"
+  },
+  {
+    "id": "s8-prizma-7",
+    "answer": "6",
+    "reference": "d²=6²·2=72; a²=36",
+    "solution": "Katete su obe ivice a kvadratne strane, hipotenuza je dijagonala d. a²+a²=d²; a²+a²=(6√2)²; 2a²=72; a²=36. Kako je a>0, a=6 cm.",
+    "checked_fragments": [
+      "a²+a²=d²",
+      "a²+a²=(6√2)²",
+      "2a²=72",
+      "a²=36",
+      "a>0",
+      "a=6 cm"
+    ],
+    "lesson": "s8-prizma",
+    "area": "s8-preseci"
+  },
+  {
+    "id": "s8-piramida-vezba",
+    "answer": "5",
+    "reference": "13²−12²=25; s=5",
+    "solution": "a²+b²=c². Katete su t=a/2=24:2=12 cm i s, hipotenuza je bočna ivica e=13 cm. t²+s²=e²; 12²+s²=13²; 144+s²=169; s²=169−144=25. Kako je s>0, s=5 cm.",
+    "checked_fragments": [
+      "t²+s²=e²",
+      "12²+s²=13²",
+      "144+s²=169",
+      "s²=169−144=25",
+      "s=5 cm",
+      "s>0"
+    ],
+    "lesson": "s8-piramida",
+    "area": "s8-piramide"
+  },
+  {
+    "id": "s8-valjak-9",
+    "answer": "4",
+    "reference": "17²−15²=64; d=8",
+    "solution": "Katete osnog preseka su prečnik d i visina H, hipotenuza je dijagonala D. d²+H²=D²; d²+15²=17²; d²+225=289; d²=289−225=64. Kako je d>0, d=8 cm. Poluprečnik r=d:2=4 cm.",
+    "checked_fragments": [
+      "d²+H²=D²",
+      "d²+15²=17²",
+      "d²+225=289",
+      "d²=289−225=64",
+      "d=8 cm",
+      "d>0",
+      "r=d:2=4 cm"
+    ],
+    "lesson": "s8-valjak",
+    "area": "s8-valjci"
+  },
+  {
+    "id": "s8-kupa-5",
+    "answer": "8",
+    "reference": "10²−6²=64; H=8",
+    "solution": "Katete polovine osnog preseka su r i H, hipotenuza s. r²+H²=s²; 6²+H²=10²; 36+H²=100; H²=100−36=64. Kako je H>0, H=8 cm.",
+    "checked_fragments": [
+      "r²+H²=s²",
+      "6²+H²=10²",
+      "36+H²=100",
+      "H²=100−36=64",
+      "H=8 cm",
+      "H>0"
+    ],
+    "lesson": "s8-kupa",
+    "area": "s8-kupe"
+  },
+  {
+    "id": "s8-lopta-8",
+    "answer": "5",
+    "reference": "13²−12²=25; ρ=5",
+    "solution": "Katete su rastojanje d i poluprečnik preseka ρ, hipotenuza R. d²+ρ²=R²; 12²+ρ²=13²; 144+ρ²=169; ρ²=169−144=25. Kako je ρ>0, ρ=5 cm.",
+    "checked_fragments": [
+      "d²+ρ²=R²",
+      "12²+ρ²=13²",
+      "144+ρ²=169",
+      "ρ²=169−144=25",
+      "ρ=5 cm",
+      "ρ>0"
+    ],
+    "lesson": "s8-lopta",
+    "area": "s8-lopte"
+  },
+  {
+    "id": "s8-lopta-9",
+    "answer": "6",
+    "reference": "10²−8²=36; d=6",
+    "solution": "P=πρ²=64π cm², pa je ρ²=64 i ρ=8 cm jer je poluprečnik pozitivan. Katete su d i ρ, hipotenuza R. d²+ρ²=R²; d²+8²=10²; d²+64=100; d²=100−64=36. Rastojanje nije negativno, pa je d=6 cm.",
+    "checked_fragments": [
+      "d²+ρ²=R²",
+      "d²+8²=10²",
+      "d²+64=100",
+      "d²=100−64=36",
+      "d=6 cm",
+      "P=πρ²=64π",
+      "ρ=8 cm",
+      "nije negativno"
+    ],
+    "lesson": "s8-lopta",
+    "area": "s8-lopte"
+  },
+  {
+    "id": "s8-piramida-13",
+    "answer": "10",
+    "reference": "13²−12²=25; t=5",
+    "solution": "a²+b²=c². Katete su t=a/2 i H, hipotenuza s. t²+H²=s²; t²+12²=13²; t²+144=169; t²=169−144=25. Kako je t>0, t=5 cm. Ivica a=2·5=10 cm.",
+    "checked_fragments": [
+      "t²+H²=s²",
+      "t²+12²=13²",
+      "t²+144=169",
+      "t²=169−144=25",
+      "t=5 cm",
+      "t>0",
+      "a=2·5=10 cm"
+    ],
+    "lesson": "s8-piramida",
+    "area": "s8-piramide"
+  },
+  {
+    "id": "s8-polugodiste-7",
+    "answer": "320π",
+    "reference": "17²−8²=225; H=15",
+    "solution": "Katete polovine osnog preseka su r i H, hipotenuza s. r²+H²=s²; 8²+H²=17²; 64+H²=289; H²=289−64=225. Kako je H>0, H=15 cm. V=πr²H:3=64π·15:3=320π cm³.",
+    "checked_fragments": [
+      "r²+H²=s²",
+      "8²+H²=17²",
+      "64+H²=289",
+      "H²=289−64=225",
+      "H=15 cm",
+      "H>0",
+      "320π cm³"
+    ],
+    "lesson": "s8-kupa",
+    "area": "s8-zavrsnica"
+  },
+  {
+    "id": "s8-polugodiste-8",
+    "answer": "12",
+    "reference": "13²−5²=144; d=12",
+    "solution": "P=πρ²=25π cm², pa je ρ²=25 i ρ=5 cm jer je poluprečnik pozitivan. Katete su ρ i d, hipotenuza R. ρ²+d²=R²; 5²+d²=13²; 25+d²=169; d²=169−25=144. Rastojanje nije negativno, pa je d=12 cm.",
+    "checked_fragments": [
+      "ρ²+d²=R²",
+      "5²+d²=13²",
+      "25+d²=169",
+      "d²=169−25=144",
+      "d=12 cm",
+      "P=πρ²=25π",
+      "ρ=5 cm",
+      "nije negativno"
+    ],
+    "lesson": "s8-lopta",
+    "area": "s8-zavrsnica"
+  },
+  {
+    "id": "s8-simA-13",
+    "answer": "18",
+    "reference": "15²−12²=81; t=9",
+    "solution": "Katete su t=a/2 i H, hipotenuza s. t²+H²=s²; t²+12²=15²; t²+144=225; t²=225−144=81. Kako je t>0, t=9 cm. Ivica a=2·9=18 cm.",
+    "checked_fragments": [
+      "t²+H²=s²",
+      "t²+12²=15²",
+      "t²+144=225",
+      "t²=225−144=81",
+      "t=9 cm",
+      "t>0",
+      "a=2·9=18 cm"
+    ],
+    "lesson": "s8-zapremina",
+    "area": "s8-zavrsnica"
+  },
+  {
+    "id": "s8-simB-13",
+    "answer": "6",
+    "reference": "d=10, b=6",
+    "solution": "U dijagonalnom preseku katete su d i H, hipotenuza D. d²+H²=D²; d²+24²=26²; d²+576=676; d²=676−576=100. Kako je d>0, d=10 cm. U osnovi su katete a i b, hipotenuza d. a²+b²=d²; 8²+b²=10²; 64+b²=100; b²=100−64=36. Kako je b>0, b=6 cm.",
+    "checked_fragments": [
+      "d²+H²=D²",
+      "d²+24²=26²",
+      "d²+576=676",
+      "d²=676−576=100",
+      "d>0",
+      "d=10 cm",
+      "a²+b²=d²",
+      "8²+b²=10²",
+      "64+b²=100",
+      "b²=100−64=36",
+      "b>0",
+      "b=6 cm"
+    ],
+    "lesson": "s8-prizma",
+    "area": "s8-zavrsnica"
+  }
+]

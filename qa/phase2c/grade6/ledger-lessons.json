@@ -1,0 +1,1499 @@
+[
+  {
+    "id": "kratko-obnavljanje-5",
+    "area": "obnavljanje-5",
+    "status": "potpuno recenzirana",
+    "theory": "Precizirani jednaki prioriteti; definicije pravih, uglova, kolinearnosti i formula razlomaka uz c>0 pregledane.",
+    "sequence": "Podsetnik predznanja: prirodni brojevi → razlomci → geometrija, bez uvođenja gradiva višeg razreda.",
+    "examples": [
+      {
+        "question": "Izračunaj: 36 : 6 + 4 · 3",
+        "steps": [
+          "Prvo deljenje i množenje: 36 : 6 = 6 i 4 · 3 = 12.",
+          "Zatim sabiranje: 6 + 12 = 18.",
+          "Rezultat je 18."
+        ],
+        "verification": "36/6+4·3=18"
+      },
+      {
+        "question": "Izračunaj [[frac:2|7]] + [[frac:3|7]].",
+        "steps": [
+          "Oba razlomka predstavljaju sedmine iste celine. Sabiramo brojioce, imenilac ostaje 7.",
+          "[[frac:2|7]]+[[frac:3|7]]=[[frac:2+3|7]]=[[frac:5|7]].",
+          "Rezultat je pet sedmina."
+        ],
+        "verification": "2/7+3/7=5/7"
+      },
+      {
+        "question": "Obim pravougaonika je 30 cm, jedna stranica je 6 cm. Odredi drugu.",
+        "steps": [
+          "Obim je zbir svih stranica: O=2(a+b).",
+          "30=2(6+b). Podelimo obe strane sa 2: 15=6+b.",
+          "Oduzmimo 6 sa obe strane: b=15−6=9 cm. Provera: 2(6+9)=30 cm."
+        ],
+        "verification": "2(6+9)=30 cm"
+      }
+    ],
+    "illustration": "Pravougaonik sa parovima jednakih stranica; dijagonala nije deo obima; oznake a,b odgovaraju formuli.",
+    "misconceptions": "Jednak prioritet sleva nadesno, ne sabirati imenioce, obim nije površina.",
+    "assessment": "10 zadataka u redovnom radu i 45 u bazenu; obnavljanje nema zasebnu godišnju proveru; 27 osnovnih i 18 srednjih; nema naprednih, jer postojeći zadaci ne zahtevaju izbor složene strategije.",
+    "limits": "Obnavljanje predznanja, ne dokaz godišnjeg ishoda šestog razreda; VAR ponavljaju iste konstrukcije, bez novih identifikatora."
+  },
+  {
+    "id": "skup-celih-brojeva",
+    "area": "celi-brojevi",
+    "status": "potpuno recenzirana",
+    "theory": "Precizirana definicija Z i izuzetak nule kod suprotnih brojeva; vrednost, a ne zapis određuje pripadnost.",
+    "sequence": "Z, brojna prava, prethodnik/sledbenik, suprotni brojevi.",
+    "examples": [
+      {
+        "question": "Odredi suprotan broj broju 8.",
+        "steps": [
+          "Na brojnoj pravoj 8 je osam jedinica desno od nule.",
+          "Suprotan broj je osam jedinica levo od nule: −8.",
+          "Suprotan broj broju 0 je 0."
+        ],
+        "verification": "8+(−8)=0; 0 je sama sebi suprotna"
+      },
+      {
+        "question": "Odredi prethodnik i sledbenik broja −1.",
+        "steps": [
+          "Prethodnik je za 1 manji: −1−1=−2.",
+          "Sledbenik je za 1 veći: −1+1=0.",
+          "Dakle, −2, −1, 0 su uzastopni celi brojevi."
+        ],
+        "verification": "−1−1=−2; −1+1=0"
+      },
+      {
+        "question": "Da li 6/3 i 5/2 pripadaju skupu Z?",
+        "steps": [
+          "[[frac:6|3]]=2, pa je to ceo broj.",
+          "[[frac:5|2]]=2,5, pa to nije ceo broj.",
+          "Pripadnost zavisi od vrednosti, ne od zapisa broja."
+        ],
+        "verification": "6/3=2∈Z; 5/2=2,5∉Z"
+      }
+    ],
+    "illustration": "Brojna prava: A(−3), O(0), B(3) simetrično; zadatak 6-1h tačno označava −3.",
+    "misconceptions": "Zapis razlomkom ne isključuje ceo broj; nula ni pozitivna ni negativna; suprotan nije prethodnik.",
+    "assessment": "17 zadataka u fondu i jedan zadatak tematske provere; 12 osnovnih, 6 srednjih.",
+    "limits": "Prisutnost dela ishoda 6.01/6.02; racionalni brojevi i apsolutna vrednost ostaju nepregledani."
+  },
+  {
+    "id": "apsolutna-vrednost",
+    "area": "celi-brojevi",
+    "status": "potpuno recenzirana",
+    "theory": "Rastojanje je nenegativno, nula ima apsolutnu vrednost 0; pozitivan, negativan i nemoguć desni član jednačine razdvojeni.",
+    "sequence": "Brojna prava → definicija → računanje → jednačina sa dodatnim uslovom.",
+    "examples": [
+      {
+        "question": "Izračunaj |−7| + |3|.",
+        "steps": [
+          "|−7|=7, a |3|=3 jer su to rastojanja od nule.",
+          "|−7|+|3|=7+3=10."
+        ],
+        "verification": "|−7|+|3|=10"
+      },
+      {
+        "question": "Reši |x|=5 uz uslov x<0.",
+        "steps": [
+          "Na rastojanju 5 od nule su −5 i 5.",
+          "Uslov x<0 isključuje 5; rešenje je x=−5.",
+          "Provera: |−5|=5 i −5<0."
+        ],
+        "verification": "|−5|=5 i −5<0"
+      },
+      {
+        "question": "Reši |x|=0 i |x|=−2.",
+        "steps": [
+          "Jedino je 0 na rastojanju 0 od nule, pa prvo ima rešenje x=0.",
+          "Rastojanje ne može biti negativno; drugo nema rešenja."
+        ],
+        "verification": "|x|=0 ⇒ x=0; |x|=−2 nema rešenja"
+      }
+    ],
+    "illustration": "Simetrične tačke na istoj udaljenosti od nule; šest konkretnih dijagrama sa A.",
+    "misconceptions": "Nula nije pozitivna; apsolutna vrednost nije uvek suprotan broj niti je negativna.",
+    "assessment": "22 zadatka u fondu i dva u proverama; 19 osnovnih, 5 srednjih.",
+    "limits": "Delovi ishoda 6.02 i 6.03; racionalni brojevi i ostali tipovi jednačina još nisu pregledani."
+  },
+  {
+    "id": "uporedjivanje",
+    "area": "celi-brojevi",
+    "status": "potpuno recenzirana",
+    "theory": "Poredak na brojnoj pravoj, negativni brojevi i apsolutna vrednost, nula, stroge i uključene granice.",
+    "sequence": "Poređenje → poredak → skup celih brojeva sa uslovom.",
+    "examples": [
+      {
+        "question": "Uporedi −11 i −6.",
+        "steps": [
+          "Oba broja su negativna. −6 je bliže nuli i nalazi se desno od −11.",
+          "Zato je −11<−6; veća apsolutna vrednost negativnog broja ne znači veći broj."
+        ],
+        "verification": "−11<−6"
+      },
+      {
+        "question": "Poređaj 4, −2, 0, −7 od najmanjeg.",
+        "steps": [
+          "Negativni brojevi su levo od nule, pozitivni desno. Među negativnim brojevima −7 je levo od −2.",
+          "Poredak sleva nadesno je −7<−2<0<4."
+        ],
+        "verification": "−7<−2<0<4"
+      },
+      {
+        "question": "Navedi sve cele brojeve x za koje važi −4<x≤1.",
+        "steps": [
+          "Strogi znak isključuje −4, a ≤ uključuje 1.",
+          "Počinjemo od −3 i idemo do 1: −3, −2, −1, 0, 1.",
+          "Ukupno je 5 celih brojeva."
+        ],
+        "verification": "−4<x≤1 daje −3,−2,−1,0,1"
+      }
+    ],
+    "illustration": "Brojna prava i zadatak 6-3f; koordinate i redosled provereni.",
+    "misconceptions": "Veća apsolutna vrednost negativnog broja ne znači veći broj; stroga granica nije uključena.",
+    "assessment": "22 zadatka u fondu, jedan tematski; osam osnovnih i 15 srednjih.",
+    "limits": "Deo ishoda 6.01 i 6.03; Q i ostale jednačine ostaju nepregledani."
+  },
+  {
+    "id": "sabiranje",
+    "area": "celi-brojevi",
+    "status": "potpuno recenzirana",
+    "theory": "Sabiranje kroz pomeranje i apsolutne vrednosti; suprotni sabirci daju nulu, različiti znaci nisu pravilo za množenje.",
+    "sequence": "Pomeranje → isti i različiti predznaci → svojstva → nepoznati sabirak.",
+    "examples": [
+      {
+        "question": "Izračunaj −12+7.",
+        "steps": [
+          "Počni od −12 i pomeri se 7 jedinica udesno.",
+          "12−7=5; ostaješ levo od nule, pa je −12+7=−5."
+        ],
+        "verification": "−12+7=−5"
+      },
+      {
+        "question": "Izračunaj −4+(−3).",
+        "steps": [
+          "Prvi sabirak je −4; drugi je −3, pa se pomeramo još 3 jedinice ulevo.",
+          "Sabiramo apsolutne vrednosti i zadržavamo negativan predznak: −(4+3)=−7."
+        ],
+        "verification": "−4+(−3)=−7"
+      },
+      {
+        "question": "Reši x+(−8)=3.",
+        "steps": [
+          "Dodaj 8 na obe strane: x+(−8)+8=3+8.",
+          "Suprotni sabirci daju nulu: x=11.",
+          "Provera: 11+(−8)=3."
+        ],
+        "verification": "11+(−8)=3"
+      }
+    ],
+    "illustration": "Brojna prava sa pomeranjima, smer odgovara predznaku sabirka.",
+    "misconceptions": "Znak većeg broja nije isto što i predznak sabirka veće apsolutne vrednosti; promena temperature nije konačna temperatura.",
+    "assessment": "28 zadataka u fondu i jedan tematski; 13 osnovnih, 16 srednjih.",
+    "limits": "Deo ishoda 6.03 i 6.04; ostale operacije i Q nisu recenzirani."
+  },
+  {
+    "id": "oduzimanje",
+    "area": "celi-brojevi",
+    "status": "potpuno recenzirana",
+    "theory": "Oduzimanje se svodi na sabiranje suprotnog umanjioca; nula ne menja broj.",
+    "sequence": "Umanjenik i umanjilac → suprotni broj → brojna prava → nepoznati član.",
+    "examples": [
+      {
+        "question": "Izračunaj −6−(−10).",
+        "steps": [
+          "Umanjenik −6 ostaje isti, a suprotan broj umanjioca −10 je 10.",
+          "−6−(−10)=−6+10=4. Veću apsolutnu vrednost ima pozitivan sabirak."
+        ],
+        "verification": "−6−(−10)=4"
+      },
+      {
+        "question": "Izračunaj 3−8 i −4−0.",
+        "steps": [
+          "3−8=3+(−8)=−5, jer je 8>3.",
+          "−4−0=−4+0=−4; nula je sama sebi suprotan broj."
+        ],
+        "verification": "3−8=−5; −4−0=−4"
+      },
+      {
+        "question": "Reši 2−x=−3.",
+        "steps": [
+          "Dodaj x na obe strane: 2=−3+x.",
+          "Dodaj 3 na obe strane: 5=x, pa je x=5.",
+          "Provera: 2−5=−3."
+        ],
+        "verification": "2−5=−3"
+      }
+    ],
+    "illustration": "Brojna prava: od −1 pomeranje za +3 do 2 pri oduzimanju −3.",
+    "misconceptions": "Predznak nije operacija; umanjenik ostaje isti; oduzimanje nije komutativno.",
+    "assessment": "22 zadatka u fondu i jedan tematski; 13 osnovnih i 10 srednjih.",
+    "limits": "Deo ishoda 6.03 i 6.04; ostale operacije nisu recenzirane."
+  },
+  {
+    "id": "rastojanje",
+    "area": "celi-brojevi",
+    "status": "potpuno recenzirana",
+    "theory": "Apsolutna vrednost razlike koordinata; redosled nije važan; rastojanje 0 samo za iste tačke.",
+    "sequence": "Jedinične duži → formula → dva položaja → sredina.",
+    "examples": [
+      {
+        "question": "Odredi rastojanje između −5 i 3.",
+        "steps": [
+          "d=|−5−3|=|−8|=8. Redosled koordinata ne menja rastojanje."
+        ],
+        "verification": "|−5−3|=8"
+      },
+      {
+        "question": "Odredi sve tačke x za koje je d(x,−2)=3.",
+        "steps": [
+          "Od −2 idi 3 jedinice ulevo ili udesno: −2−3=−5, odnosno −2+3=1.",
+          "Provera: |−5−(−2)|=3 i |1−(−2)|=3."
+        ],
+        "verification": "x=−5 ili 1"
+      },
+      {
+        "question": "Odredi sredinu duži A(−4), B(6).",
+        "steps": [
+          "d(A,B)=6−(−4)=10.",
+          "Polovina rastojanja je 5, pa od −4 idemo 5 jedinica udesno: −4+5=1.",
+          "Provera: |1−(−4)|=5 i |6−1|=5."
+        ],
+        "verification": "sredina 1"
+      }
+    ],
+    "illustration": "A(−3), B(2), rastojanje 5 jediničnih duži.",
+    "misconceptions": "Negativna koordinata nije negativno rastojanje; dva položaja; koordinata nije oznaka tačke.",
+    "assessment": "23 sa tematskom proverom; 6 osnovnih i 17 srednjih.",
+    "limits": "Deo ishoda 6.02–6.04; ne potvrđuje cele ishode."
+  },
+  {
+    "id": "sabiranje-oduzimanje",
+    "area": "celi-brojevi",
+    "status": "potpuno recenzirana",
+    "theory": "Pretvaranje razlike u zbir, uklanjanje zagrada u zbirovima i razlikama, redosled i grupisanje.",
+    "sequence": "Predznak i operacija → zagrade → svojstva zbira → obrnute promene.",
+    "examples": [
+      {
+        "question": "Izračunaj −7+12−(−4).",
+        "steps": [
+          "Oduzimanje −4 zameni sabiranjem 4: −7+12+4.",
+          "Računaj sleva nadesno: 5+4=9."
+        ],
+        "verification": "9"
+      },
+      {
+        "question": "Izračunaj 8−(3−5).",
+        "steps": [
+          "Prvo u zagradi: 3−5=−2, pa 8−(−2)=10.",
+          "Drugi način: 8−3+5=5+5=10. Minus ispred zagrade menja predznak oba sabirka."
+        ],
+        "verification": "10"
+      },
+      {
+        "question": "Izračunaj −9+6+9−4.",
+        "steps": [
+          "Pretvori oduzimanje u sabiranje: (−9)+6+9+(−4).",
+          "Zameni mesta i grupiši suprotne sabirke: ((−9)+9)+(6+(−4))=0+2=2."
+        ],
+        "verification": "2"
+      }
+    ],
+    "illustration": "Brojna prava −3 → 2 → 0; +5 i −2.",
+    "misconceptions": "Oduzimanje nije komutativno; predznak nije operacija; minus ispred zbira menja oba sabirka.",
+    "assessment": "23 sa tematskom proverom; 12 osnovnih i 11 srednjih.",
+    "limits": "Delovi godišnjih ishoda; ne potvrđuje cele ishode."
+  },
+  {
+    "id": "mnozenje",
+    "area": "celi-brojevi",
+    "status": "potpuno recenzirana",
+    "theory": "Predznak nenultih činilaca, nula, jedinica, −1, komutativnost, asocijativnost i distributivnost prema zbiru i razlici.",
+    "sequence": "Ponovljeno sabiranje → znak i nula → više činilaca → svojstva i provera.",
+    "examples": [
+      {
+        "question": "Izračunaj (−8)·(−7).",
+        "steps": [
+          "Oba činioca su negativna, pa je proizvod pozitivan.",
+          "8·7=56, zato je (−8)·(−7)=56."
+        ],
+        "verification": "56"
+      },
+      {
+        "question": "Izračunaj (−2)·3·(−4)·(−1).",
+        "steps": [
+          "Nema nule; tri negativna činioca daju negativan proizvod.",
+          "2·3·4·1=24, zato je proizvod −24. Ako bi bilo koji činilac bio nula, proizvod bi bio 0."
+        ],
+        "verification": "−24"
+      },
+      {
+        "question": "Izračunaj (−6)·8+(−6)·12 koristeći distributivnost.",
+        "steps": [
+          "Izdvoji zajednički činilac: (−6)·(8+12).",
+          "(−6)·20=−120. Provera: −48+(−72)=−120."
+        ],
+        "verification": "−120"
+      }
+    ],
+    "illustration": "Brojna prava 0 → −2 → −4 → −6; tri jednaka pomeranja.",
+    "misconceptions": "Nula nije ni pozitivna ni negativna; parnost negativnih činilaca važi samo bez nule; promena temperature nije konačno stanje.",
+    "assessment": "35 sa tematskom proverom; 12 osnovnih, 23 srednja.",
+    "limits": "Svojstva pokrivena teorijom; nema dovoljno različitih zadataka za potvrdu celog godišnjeg ishoda."
+  },
+  {
+    "id": "deljenje",
+    "area": "celi-brojevi",
+    "status": "potpuno recenzirana",
+    "theory": "Veza sa množenjem, znak nenultog količnika, slučajevi nule i uslov nenultog delioca; Z nije zatvoren za deljenje.",
+    "sequence": "Definicija → znak i nula → provera množenjem → nepoznati delilac.",
+    "examples": [
+      {
+        "question": "Izračunaj 48:(−6).",
+        "steps": [
+          "Deljenik i delilac su nenulti i različitih predznaka; količnik je negativan.",
+          "48:6=8, pa 48:(−6)=−8. Provera: (−8)·(−6)=48."
+        ],
+        "verification": "−8"
+      },
+      {
+        "question": "Objasni 0:(−5), 15:0 i 0:0.",
+        "steps": [
+          "0:(−5)=0, jer (−5)·0=0.",
+          "15:0 nije definisano: ne postoji broj koji pomnožen nulom daje 15.",
+          "0:0 nije definisano: svaki broj pomnožen nulom daje 0, pa nema jedinstvenog količnika."
+        ],
+        "verification": "0; nedefinisano; nedefinisano"
+      },
+      {
+        "question": "Odredi x ako je −42:x=7.",
+        "steps": [
+          "Uslov je x≠0. Iz definicije količnika sledi 7·x=−42.",
+          "x=−42:7=−6. Provera: (−42):(−6)=7; uslov x≠0 je ispunjen."
+        ],
+        "verification": "−6"
+      }
+    ],
+    "illustration": "Tabela znakova; poseban dijagram nije nužan.",
+    "misconceptions": "Nula u deljeniku nije isto što i nula u deliocu; 0:0 nema jedinstvenu vrednost; deljenje nije zatvoreno u Z.",
+    "assessment": "29 sa tematskom proverom; 6 osnovnih i 23 srednja.",
+    "limits": "Deo godišnjeg ishoda u Z, ne potvrđuje Q."
+  },
+  {
+    "id": "mnozenje-deljenje",
+    "area": "celi-brojevi",
+    "status": "potpuno recenzirana",
+    "theory": "Jednak prioritet, sleva nadesno, zagrade i nenulti delioci.",
+    "sequence": "Pravilo → poređenje različitih zagrada → nepoznati početni broj.",
+    "examples": [
+      {
+        "question": "Izračunaj −36:6·(−2).",
+        "steps": [
+          "Množenje i deljenje imaju isti prioritet. Prvo −36:6=−6.",
+          "Zatim (−6)·(−2)=12."
+        ],
+        "verification": "12"
+      },
+      {
+        "question": "Uporedi 48:(−6)·2 i 48:((−6)·2).",
+        "steps": [
+          "Prvi izraz: 48:(−6)·2=(−8)·2=−16.",
+          "Drugi izraz: (−6)·2=−12, zatim 48:(−12)=−4.",
+          "−16≠−4; zagrade menjaju redosled i vrednost."
+        ],
+        "verification": "−16 i −4"
+      },
+      {
+        "question": "Odredi x ako je x:(−4)·3=15.",
+        "steps": [
+          "Podeli obe strane sa 3: x:(−4)=5.",
+          "Pomnoži obe strane sa −4: x=−20.",
+          "Provera: (−20):(−4)·3=5·3=15."
+        ],
+        "verification": "−20"
+      }
+    ],
+    "illustration": "Operacijski lanci u zadacima.",
+    "misconceptions": "Množenje nema prednost nad deljenjem; pregrupisavanje može promeniti rezultat.",
+    "assessment": "28 zadataka, 8 osnovnih i 20 srednjih.",
+    "limits": "Delovi godišnjih ishoda u Z; ne potvrđuje Q."
+  },
+  {
+    "id": "brojevni-izrazi",
+    "area": "celi-brojevi",
+    "status": "potpuno recenzirana",
+    "theory": "Prioritet zagrada, množenja/deljenja i sabiranja/oduzimanja; nenulti delioci i nulti proizvod.",
+    "sequence": "Redosled → ugnježdene i negativne vrednosti → prevod teksta u izraz.",
+    "examples": [
+      {
+        "question": "Izračunaj 6−2·(−3+5).",
+        "steps": [
+          "Zagrada: −3+5=2.",
+          "Množenje: 2·2=4.",
+          "Zatim 6−4=2."
+        ],
+        "verification": "2"
+      },
+      {
+        "question": "Izračunaj 36:(−3·2)−(−4).",
+        "steps": [
+          "U zagradi je (−3)·2=−6; delilac nije nula.",
+          "36:(−6)=−6, zatim −6−(−4)=−6+4=−2."
+        ],
+        "verification": "−2"
+      },
+      {
+        "question": "Od 24 oduzmi proizvod 6 i −3.",
+        "steps": [
+          "Zapiši ceo izraz: 24−6·(−3).",
+          "Prvo proizvod: 6·(−3)=−18.",
+          "Zatim 24−(−18)=24+18=42."
+        ],
+        "verification": "42"
+      }
+    ],
+    "illustration": "Računski zapis i objašnjenje redosleda dovoljni.",
+    "misconceptions": "Ne računamo uvek sleva nadesno; zagrade menjaju redosled; nula u proizvodu ne znači da su oba činioca nula.",
+    "assessment": "29 sa tematskom proverom; 8 osnovnih i 21 srednji.",
+    "limits": "Celobrojni izrazi pregledani, ne potvrđuje ishode u Q."
+  },
+  {
+    "id": "trougao-vrste",
+    "area": "trougao",
+    "status": "potpuno recenzirana",
+    "theory": "Definicija, temena, naspramne stranice, dva kriterijuma klasifikacije, obim.",
+    "sequence": "Elementi → vrste prema stranicama i uglovima → obim i nepoznata stranica.",
+    "examples": [
+      {
+        "question": "Odredi vrstu trougla sa stranicama 6 cm, 6 cm i 6 cm.",
+        "steps": [
+          "Sve tri stranice su jednake: a=b=c=6 cm.",
+          "Najprecizniji naziv prema stranicama je jednakostranični trougao."
+        ],
+        "verification": "jednakostraničan"
+      },
+      {
+        "question": "Odredi vrstu trougla sa uglovima 90°, 45° i 45°.",
+        "steps": [
+          "Najveći ugao je 90°, pa je trougao pravougli.",
+          "Dva ugla su jednaka, pa su njima naspramne stranice jednake. Trougao je i jednakokraki."
+        ],
+        "verification": "pravougli i jednakokraki"
+      },
+      {
+        "question": "Obim trougla je 31 cm, a=8 cm, b=11 cm. Odredi c.",
+        "steps": [
+          "O=a+b+c.",
+          "31=8+11+c, pa 31=19+c.",
+          "Oduzmi 19 na obe strane: c=12 cm. Provera: 8+11+12=31 cm."
+        ],
+        "verification": "12 cm"
+      }
+    ],
+    "illustration": "Dve skice sa stvarnim dužinama, simboličke skice bez lažnih podataka za nepoznatu ili zbir stranica.",
+    "misconceptions": "Jednakostranični je u širem smislu jednakokraki; razvrstavanje prema uglovima i stranicama su dva nezavisna kriterijuma.",
+    "assessment": "22 sa tematskim proverama; 7 osnovnih, 9 srednjih, 6 naprednih.",
+    "limits": "Ne potvrđuje čitav godišnji ishod geometrije."
+  },
+  {
+    "id": "zbir-uglova-trougla",
+    "area": "trougao",
+    "status": "potpuno recenzirana",
+    "theory": "Zbir 180°, pozitivnost svih uglova, pravougli trougao.",
+    "sequence": "Pravilo → nepoznati ugao → uslov postojanja → jednačina.",
+    "examples": [
+      {
+        "question": "Odredi treći ugao ako su dva ugla 47° i 68°.",
+        "steps": [
+          "α+β+γ=180°.",
+          "47°+68°+γ=180°.",
+          "γ=180°−115°=65°.",
+          "Provera: 47°+68°+65°=180°."
+        ],
+        "verification": "65°"
+      },
+      {
+        "question": "Da li 0°, 80° i 100° mogu biti unutrašnji uglovi trougla?",
+        "steps": [
+          "0°+80°+100°=180°.",
+          "Ugao 0° nije pozitivan, pa takav trougao ne postoji."
+        ],
+        "verification": "ne postoji"
+      },
+      {
+        "question": "Uglovi su x, 2x i 3x. Odredi ih.",
+        "steps": [
+          "x+2x+3x=180°.",
+          "6x=180°, x=30°.",
+          "Uglovi su 30°, 60° i 90°; svi su pozitivni i zbir je 180°."
+        ],
+        "verification": "30°, 60°, 90°"
+      }
+    ],
+    "illustration": "Označeni unutrašnji uglovi i pravougli trougao.",
+    "misconceptions": "Sam zbir 180° nije dovoljan ako je ugao 0°.",
+    "assessment": "21 zadatak uključujući tematsku proveru.",
+    "limits": "Ne potvrđuje čitav godišnji ishod."
+  },
+  {
+    "id": "uglovi-transverzala",
+    "area": "trougao",
+    "status": "potpuno recenzirana",
+    "theory": "Spoljašnji ugao, naporedni, nesusedni i zbir po jednog kod svakog temena.",
+    "sequence": "Definicija → suplement → zbir nesusednih → zbir 360°.",
+    "examples": [
+      {
+        "question": "Odredi spoljašnji ugao kod temena A ako su β=56° i γ=71°.",
+        "steps": [
+          "α₁=β+γ.",
+          "α₁=56°+71°=127°.",
+          "Provera: α=180°−127°=53°; 53°+56°+71°=180°."
+        ],
+        "verification": "127°"
+      },
+      {
+        "question": "Unutrašnji ugao α je 74°. Odredi α₁.",
+        "steps": [
+          "α+α₁=180°.",
+          "74°+α₁=180°.",
+          "α₁=106°."
+        ],
+        "verification": "106°"
+      },
+      {
+        "question": "Dva spoljašnja ugla kod različitih temena su 100° i 110°. Odredi treći.",
+        "steps": [
+          "α₁+β₁+γ₁=360°.",
+          "γ₁=360°−100°−110°=150°."
+        ],
+        "verification": "150°"
+      }
+    ],
+    "illustration": "Produžetak stranice i odgovarajući luk; šest jednakokrakih slučajeva geometrijski prilagođeno.",
+    "misconceptions": "360° važi samo za po jedan spoljašnji ugao kod svakog temena.",
+    "assessment": "26 zadataka uključujući ot6-4.",
+    "limits": "Ne potvrđuje čitav godišnji ishod."
+  },
+  {
+    "id": "uglovi-na-transverzali",
+    "area": "trougao",
+    "status": "potpuno recenzirana",
+    "theory": "Transverzala, saglasni, naizmenični, jednostrani i unakrsni uglovi.",
+    "sequence": "Položaj → paralelnost → odnosi → jednačina i trougao.",
+    "examples": [
+      {
+        "question": "Transverzala seče dve paralelne prave. Jedan unutrašnji ugao je 68°. Koliki je unutrašnji ugao sa iste strane?",
+        "steps": [
+          "Pošto je p∥q, α+β=180°.",
+          "68°+β=180°.",
+          "β=180°−68°=112°."
+        ],
+        "verification": "112°"
+      },
+      {
+        "question": "Dva naizmenična unutrašnja ugla paralelnih pravih su (x+20)° i (3x−30)°. Odredi x.",
+        "steps": [
+          "Pošto je p∥q, x+20=3x−30.",
+          "50=2x, x=25.",
+          "Oba ugla imaju 45°."
+        ],
+        "verification": "x=25"
+      },
+      {
+        "question": "Dva unutrašnja ugla paralelnih pravih sa iste strane transverzale razlikuju se za 8°. Odredi ih.",
+        "steps": [
+          "Neka je manji ugao x°, veći (x+8)°.",
+          "x+x+8=180.",
+          "2x=172, x=86.",
+          "Uglovi su 86° i 94°; zbir je 180°."
+        ],
+        "verification": "86° i 94°"
+      }
+    ],
+    "illustration": "Položaj sektora kod preseka i dve paralelne prave.",
+    "misconceptions": "Jednakost unakrsnih ne zahteva paralelnost; između preseka mora važiti p∥q.",
+    "assessment": "19 zadataka.",
+    "limits": "Ne potvrđuje čitav godišnji ishod."
+  },
+  {
+    "id": "odnos-stranica-uglova",
+    "area": "trougao",
+    "status": "potpuno recenzirana",
+    "theory": "Naspramni elementi i poredak, jednakokraki trougao.",
+    "sequence": "Teorema → primena → provera.",
+    "examples": [
+      {
+        "question": "U trouglu je α=80°, β=60°, γ=40°. Poređaj stranice.",
+        "steps": [
+          "α>β>γ.",
+          "Naspram većeg ugla je veća stranica, pa a>b>c."
+        ],
+        "verification": "a>b>c"
+      },
+      {
+        "question": "U trouglu ABC je AB=AC. Šta važi za uglove?",
+        "steps": [
+          "AB=c, AC=b; b=c.",
+          "Naspram jednakih stranica su jednaki uglovi, zato β=γ."
+        ],
+        "verification": "β=γ"
+      },
+      {
+        "question": "U jednakokrakom trouglu ugao na osnovici je 68°. Odredi ugao pri vrhu.",
+        "steps": [
+          "Drugi ugao na osnovici je takođe 68°.",
+          "α+68°+68°=180°.",
+          "α=180°−136°=44°."
+        ],
+        "verification": "44°"
+      }
+    ],
+    "illustration": "Oznake, oblik i prikaz nemogućih dužina provereni.",
+    "misconceptions": "Naspramna, ne susedna stranica.",
+    "assessment": "16 zadataka uključujući tematsku proveru.",
+    "limits": "Ne potvrđuje čitav godišnji ishod."
+  },
+  {
+    "id": "nejednakost-trougla",
+    "area": "trougao",
+    "status": "potpuno recenzirana",
+    "theory": "Neophodan i dovoljan uslov, strogi interval treće stranice.",
+    "sequence": "Teorema → primena → provera.",
+    "examples": [
+      {
+        "question": "Može li trougao imati stranice 4 cm, 7 cm i 12 cm?",
+        "steps": [
+          "Najduža duž je 12 cm.",
+          "4+7=11 cm.",
+          "12>11, pa trougao ne postoji."
+        ],
+        "verification": "ne postoji"
+      },
+      {
+        "question": "Dve stranice su 6 cm i 10 cm. Odredi sve moguće cele dužine treće stranice u cm.",
+        "steps": [
+          "|a−b|<c<a+b.",
+          "4<c<16.",
+          "c može biti 5, 6, …, 15; ukupno 11 mogućnosti."
+        ],
+        "verification": "5–15; 11 mogućnosti"
+      },
+      {
+        "question": "Jednakokraki trougao ima različite dužine stranica 4 cm i 9 cm. Odredi krak.",
+        "steps": [
+          "Ako je krak 4 cm, onda je 4+4<9; trougao ne postoji.",
+          "Ako je krak 9 cm, najduža duž 9 je manja od 9+4.",
+          "Krak je 9 cm, osnovica 4 cm."
+        ],
+        "verification": "9 cm"
+      }
+    ],
+    "illustration": "Oznake, oblik i prikaz nemogućih dužina provereni.",
+    "misconceptions": "Jednakost nije dovoljna; otvorene granice.",
+    "assessment": "27 zadataka uključujući tematsku proveru.",
+    "limits": "Ne potvrđuje čitav godišnji ishod."
+  },
+  {
+    "id": "skup-racionalnih-brojeva",
+    "area": "racionalni-brojevi",
+    "status": "potpuno recenzirana",
+    "theory": "Definicija Q, nenulti imenilac, nula, ekvivalentni zapisi i poredak.",
+    "sequence": "Definicija → zapis → prava → poređenje.",
+    "examples": [
+      {
+        "question": "Kako zapisati −2 kao razlomak sa imeniocem 6?",
+        "steps": [
+          "−2=[[frac:x|6]]. Pomnožimo obe strane sa 6: −12=x.",
+          "Dakle −2=[[frac:−12|6]]. Provera: −12:6=−2."
+        ],
+        "verification": "−2"
+      },
+      {
+        "question": "Skrati −[[frac:12|20]], pa ga zapiši decimalno.",
+        "steps": [
+          "Brojilac i imenilac podelimo sa 4: −[[frac:12|20]]=−[[frac:3|5]].",
+          "Proširimo sa 2: −[[frac:3|5]]=−[[frac:6|10]]=−0,6."
+        ],
+        "verification": "−3/5=−0,6"
+      },
+      {
+        "question": "Poređaj −[[frac:2|5]] i −[[frac:3|10]].",
+        "steps": [
+          "−[[frac:2|5]]=−[[frac:4|10]].",
+          "Kako je −4<−3, sledi −[[frac:4|10]]<−[[frac:3|10]], odnosno −[[frac:2|5]]<−[[frac:3|10]]."
+        ],
+        "verification": "−2/5<−3/10"
+      }
+    ],
+    "illustration": "Proverene koordinate A i C.",
+    "misconceptions": "Imenilac nula, suprotan broj nuli, negativni poredak.",
+    "assessment": "19 zadataka.",
+    "limits": "Ne potvrđuje godišnji ishod u celini."
+  },
+  {
+    "id": "apsolutna-vrednost-racionalnog",
+    "area": "racionalni-brojevi",
+    "status": "potpuno recenzirana",
+    "theory": "Apsolutna vrednost, tri slučaja jednačine, rastojanje.",
+    "sequence": "Definicija → jednačina → rastojanje.",
+    "examples": [
+      {
+        "question": "Koja dva racionalna broja imaju apsolutnu vrednost 1,25?",
+        "steps": [
+          "|x|=1,25. Pošto je 1,25>0, postoje dva suprotna rešenja: x=−1,25 ili x=1,25.",
+          "Provera: |−1,25|=|1,25|=1,25."
+        ],
+        "verification": "±1,25"
+      },
+      {
+        "question": "Reši |x|=0 i |x|=−0,2.",
+        "steps": [
+          "Jedino je nula na rastojanju nula od nule: x=0.",
+          "Rastojanje ne može biti negativno, zato druga jednačina nema rešenja."
+        ],
+        "verification": "0; nema rešenja"
+      },
+      {
+        "question": "Odredi rastojanje A(−[[frac:5|6]]) i B(−[[frac:1|3]]).",
+        "steps": [
+          "d(A,B)=|−[[frac:5|6]]−(−[[frac:1|3]])|.",
+          "d(A,B)=|−[[frac:5|6]]+[[frac:2|6]]|=|−[[frac:3|6]]|=[[frac:1|2]]."
+        ],
+        "verification": "1/2"
+      }
+    ],
+    "illustration": "Proverene koordinate A i B.",
+    "misconceptions": "Spoljašnji minus, stroge granice, nulto rastojanje.",
+    "assessment": "19 zadataka.",
+    "limits": "Ne potvrđuje godišnji ishod u celini."
+  },
+  {
+    "id": "q-zapisi",
+    "area": "racionalni-brojevi",
+    "status": "potpuno recenzirana",
+    "sequence": "Proširivanje i skraćivanje, konačan decimalni zapis, periodičan zapis.",
+    "examples": [
+      {
+        "question": "Kako zapisati −0,375 kao neskrativ razlomak?",
+        "steps": [
+          "Tri decimale daju −[[frac:375|1000]].",
+          "Podeli brojilac i imenilac sa 125.",
+          "Dobijaš −[[frac:3|8]]."
+        ],
+        "verification": "−375/1000 = −3/8"
+      }
+    ],
+    "assessment": "14 zadataka; 10 u redovnom toku.",
+    "misconceptions": "Dužina periode i cifra koja se ponavlja."
+  },
+  {
+    "id": "q-poredak",
+    "area": "racionalni-brojevi",
+    "sequence": "Od znaka i položaja prema strogim granicama i opštem poređenju.",
+    "examples": [
+      {
+        "question": "Šta je bliže nuli, −0,7 ili −[[frac:2|3]]?",
+        "steps": [
+          "−0,7=−[[frac:21|30]], a −[[frac:2|3]]=−[[frac:20|30]].",
+          "−[[frac:20|30]] leži desno od −[[frac:21|30]].",
+          "Bliži nuli je −[[frac:2|3]]."
+        ],
+        "verification": "20/30 < 21/30 po apsolutnoj vrednosti."
+      }
+    ],
+    "misconceptions": "Kod negativnih brojeva manja udaljenost od nule znači veći broj.",
+    "assessment": "14 zadataka, 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "q-zbir-razlika",
+    "area": "racionalni-brojevi",
+    "sequence": "Od istih jedinica preko zajedničkog imenioca do premeštanja i modelovanja.",
+    "examples": [
+      {
+        "question": "Temperatura je bila −1,5 °C, a zatim +0,75 °C. Za koliko je porasla?",
+        "steps": [
+          "Oduzmi početnu temperaturu od krajnje.",
+          "0,75−(−1,5)=0,75+1,5.",
+          "Porast je 2,25 °C."
+        ],
+        "verification": "0,75−(−1,5)=2,25."
+      }
+    ],
+    "misconceptions": "Rastojanje je nenegativno; promena i koordinata mogu biti negativne.",
+    "assessment": "14 zadataka, 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "q-proizvod",
+    "area": "racionalni-brojevi",
+    "sequence": "Znak i nula, skraćivanje, deo količine, distributivnost i promena.",
+    "examples": [
+      {
+        "question": "Kako bez dugog množenja izračunati −0,25·19,6?",
+        "steps": [
+          "Zapiši 19,6 kao 20−0,4.",
+          "−0,25·20−(−0,25·0,4)=−5+0,1.",
+          "Proizvod je −4,9."
+        ],
+        "verification": "−0,25·19,6=−4,9."
+      }
+    ],
+    "misconceptions": "Skraćuju se činioci; pri distributivnosti množe se oba člana.",
+    "assessment": "14 za vežbanje i jedan iz godišnje provere.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "q-deljenje-izrazi",
+    "area": "racionalni-brojevi",
+    "sequence": "Recipročna vrednost, domen deljenja, prioritet i zagrade.",
+    "examples": [
+      {
+        "question": "Izračunaj (−[[frac:3|4]]+[[frac:1|2]]):(−0,5).",
+        "steps": [
+          "U zagradi je −[[frac:1|4]].",
+          "Deljenje sa −0,5 zamenjujemo množenjem sa −2.",
+          "(−[[frac:1|4]])·(−2)=[[frac:1|2]]."
+        ],
+        "verification": "(−3/4+1/2):(−0,5)=1/2."
+      }
+    ],
+    "misconceptions": "Nula kao deljenik i kao delilac; računanje sleva nadesno.",
+    "assessment": "14 za vežbanje i jedan iz godišnje provere.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "q-jednacine",
+    "area": "racionalni-brojevi",
+    "sequence": "Nepoznati član, složena jednačina, broj rešenja i model.",
+    "examples": [
+      {
+        "question": "Koji broj umanjen za −0,75 daje −2?",
+        "steps": [
+          "Napiši x−(−0,75)=−2.",
+          "x+0,75=−2 daje x=−2,75.",
+          "Provera: −2,75+0,75=−2."
+        ],
+        "verification": "−2,75−(−0,75)=−2."
+      }
+    ],
+    "misconceptions": "Delilac ne sme biti nula; jednačina sa nultim koeficijentom može biti identitet ili nemoguća.",
+    "assessment": "14 zadataka, 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "q-nejednacine",
+    "area": "racionalni-brojevi",
+    "sequence": "Pripadnost, smer i granica, presek uslova i celobrojna rešenja.",
+    "examples": [
+      {
+        "question": "Koji racionalni brojevi zadovoljavaju 0,5−x≥2?",
+        "steps": [
+          "Oduzmi 0,5 sa obe strane i dobijaš −x≥1,5.",
+          "Pomnoži sa −1 i obrni smer: x≤−1,5.",
+          "Granica −1,5 daje jednakost i pripada rešenju."
+        ],
+        "verification": "0,5−x≥2 daje x≤−1,5."
+      }
+    ],
+    "misconceptions": "Negativan činilac obrće smer; stroga nejednakost isključuje granicu.",
+    "assessment": "14 za vežbanje i jedan iz godišnje provere.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-model",
+    "area": "s6-primene",
+    "sequence": "Od početne vrednosti i promene preko jednake podele do ograničenja u celim brojevima.",
+    "examples": [
+      {
+        "question": "Sa −1,5 °C temperatura poraste za 4 °C. Kolika je sada?",
+        "steps": [
+          "Početno stanje je negativno, promena pozitivna. Računamo −1,5+4.",
+          "Do nule je 1,5 stepeni, preostaje 2,5. Temperatura je 2,5 °C."
+        ],
+        "verification": "2,5 °C"
+      },
+      {
+        "question": "Tri jednake sveske i olovka od 45 dinara koštaju 240 dinara. Koliko košta sveska?",
+        "steps": [
+          "Ako je cena sveske x, važi 3x+45=240. Oduzimanjem 45 dobijamo 3x=195.",
+          "Deljenjem sa 3 nalazimo x=65. Provera je 3·65+45=240."
+        ],
+        "verification": "65 dinara"
+      },
+      {
+        "question": "Ronilac je na koti −2 m i spušta se 1,5 m u minuti. Koliko najviše celih minuta sme da se spušta ako ne sme ispod kote −8 m?",
+        "steps": [
+          "Posle t minuta kota je −2−1,5t. Uslov −2−1,5t≥−8 daje −1,5t≥−6.",
+          "Delimo sa −1,5 i dobijamo t≤4. Tačno posle četiri minuta stiže do granice."
+        ],
+        "verification": "Najviše četiri cela minuta."
+      }
+    ],
+    "assessment": "18 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-konstrukcije",
+    "area": "s6-trouglovi",
+    "sequence": "Konstrukcije uglova, SSS, SUS i USU, uslovi postojanja i broj nepodudarnih oblika.",
+    "examples": [
+      {
+        "question": "Kako konstruisati 75°?",
+        "steps": [
+          "U istom temenu sa zajedničkim početnim krakom u istoj poluravni konstruiši krake od 60° i 90°. Za 60° iz krajeva osnovice opiši lukove čiji je poluprečnik jednak osnovici. Spoji njihov presek sa temenom.",
+          "Za 90° označi dve tačke na početnoj pravoj jednako udaljene od temena, levo i desno. Iz njih jednakim otvorom većim od te udaljenosti opiši lukove iznad prave. Spoj temena s njihovim presekom je normala.",
+          "Prepolovi ugao između krakova. Novi krak sa početnim zaklapa 60°+15°=75°."
+        ],
+        "verification": "75°"
+      },
+      {
+        "question": "Kako nacrtati trougao sa stranicama 4, 5 i 7 cm?",
+        "steps": [
+          "Nacrtaj AB dužine 7 cm. Iz A opiši luk poluprečnika 4 cm, iz B luk poluprečnika 5 cm.",
+          "Presek lukova označi sa C i spoji sa A i B. Dužine su obezbeđene poluprečnicima, a 4+5>7."
+        ],
+        "verification": "1 < 7 < 9; dva simetrična položaja"
+      },
+      {
+        "question": "Dati su AB=6 cm, ugao kod A je 50°, kod B je 60°.",
+        "steps": [
+          "Prenesi zadata dva ugla na istu stranu duži AB, prvi u A od AB, drugi u B od BA.",
+          "Presek krakova je C. Treći ugao je 180°−110°=70°, pa je trougao nedegenerisan."
+        ],
+        "verification": "70°"
+      }
+    ],
+    "assessment": "17 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-podudarnost",
+    "area": "s6-trouglovi",
+    "sequence": "Od odgovarajućih elemenata do kriterijuma, simetrije i konstrukcija centara.",
+    "examples": [
+      {
+        "question": "Ako je △ABC≅△PQR, BC=7 cm i ∠A=36°, šta znaš o drugom trouglu?",
+        "steps": [
+          "Redosled daje parove A–P, B–Q i C–R.",
+          "Zato je QR=7 cm i ∠P=36°. Duž PR odgovara duži AC."
+        ],
+        "verification": "QR=7 cm i ∠P=36°"
+      },
+      {
+        "question": "Kako konstruisati opisanu kružnicu?",
+        "steps": [
+          "Iz A i B istim otvorom šestara, većim od polovine AB, opiši lukove iznad i ispod AB. Spoji njihova dva preseka. Ponovi za BC. Presek simetrala označi O.",
+          "Po prvoj simetrali OA=OB, po drugoj OB=OC. Kružnica sa centrom O i poluprečnikom OA prolazi kroz sva temena."
+        ],
+        "verification": "OA=OB=OC"
+      },
+      {
+        "question": "Kako upisati kružnicu u trougao?",
+        "steps": [
+          "Konstruiši simetrale dva unutrašnja ugla i označi presek I. Iz I spusti normalu na jednu stranicu do tačke T.",
+          "IT je udaljenost centra od svake stranice. Kružnica sa centrom I i poluprečnikom IT dodiruje sve tri."
+        ],
+        "verification": "Jednake normalne udaljenosti od pravih stranica."
+      }
+    ],
+    "assessment": "20 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-koordinate",
+    "area": "s6-odnosi",
+    "sequence": "Ose i kvadranti, pomeraj, zatim sredina duži i čitanje grafikona.",
+    "examples": [
+      {
+        "question": "Ucrtaj A(−3, 2).",
+        "steps": [
+          "Na mreži sa jediničnim podeocima od O pređi tri podeoka ulevo. Zatim pređi dva podeoka nagore.",
+          "Označi A. Levo od ose y i iznad ose x nalazi se drugi kvadrant."
+        ],
+        "verification": "A je tri jedinice levo i dve gore."
+      },
+      {
+        "question": "Od P(−2, 4) idi 5 udesno i 3 nadole.",
+        "steps": [
+          "Prva koordinata postaje −2+5=3. Druga postaje 4−3=1.",
+          "Nova tačka je (3, 1). Pomeraj ne zavisi od početne tačke."
+        ],
+        "verification": "P′=(3,1)."
+      },
+      {
+        "question": "U 8, 10 i 12 sati izmereno je 2, 6 i 5 °C. Kako to prikazati?",
+        "steps": [
+          "Na horizontalnoj osi označi sate, na vertikalnoj temperaturu. Ucrtaj (8, 2), (10, 6), (12, 5).",
+          "Između poslednja dva merenja promena je 5−6=−1 °C. Bez novih merenja ne znamo tačnu vrednost u 11 sati."
+        ],
+        "verification": "Tačke (8,2), (10,6), (12,5); razlikovati merenja i međuvrednosti."
+      }
+    ],
+    "assessment": "19 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-preslikavanja",
+    "area": "s6-odnosi",
+    "sequence": "Fiksne tačke i rastojanja pre koordinatnih pravila i sastavljanja preslikavanja.",
+    "examples": [
+      {
+        "question": "Nacrtaj sliku trougla ABC preko prave p kroz A.",
+        "steps": [
+          "Tačka A ostaje na mestu. Iz B i C spusti normale na p. Na svakoj normali prenesi isto rastojanje iza ose.",
+          "Spoji A, B′ i C′. Presavijanjem oko p se poklapaju odgovarajuće stranice i uglovi."
+        ],
+        "verification": "A ostaje na osi; odrazi B i C su na suprotnoj strani na istoj normalnoj udaljenosti."
+      },
+      {
+        "question": "Centralno preslikaj T(−2, 3) oko S(1, 1).",
+        "steps": [
+          "Od T do S ideš 3 udesno i 2 nadole. Ponovi isti pomeraj iz S.",
+          "Dobijaš T′(4, −1). S je na pola puta, pa je konstrukcija ispravna."
+        ],
+        "verification": "(4,−1)"
+      },
+      {
+        "question": "Pomeri trougao sa temenima (0, 1), (2, 1), (0, 4) za 2 ulevo i 3 nagore.",
+        "steps": [
+          "Od svake apscise oduzmi 2, svakoj ordinati dodaj 3.",
+          "Nova temena su (−2, 4), (0, 4), (−2, 7). Katete su i dalje duge 2 i 3 jedinice."
+        ],
+        "verification": "(−2,4), (0,4), (−2,7)"
+      }
+    ],
+    "assessment": "16 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-podaci",
+    "area": "s6-odnosi",
+    "sequence": "Tabela i skala, izbor prikaza, promene, a zatim običan i ponderisan prosek.",
+    "examples": [
+      {
+        "question": "U ponedeljak, utorak i sredu pozajmljeno je 8, 12 i 10 knjiga. Kako nacrtati stubove?",
+        "steps": [
+          "Na vodoravnoj osi napiši dane, a na uspravnoj broj knjiga sa jednakim korakom 2 od nule.",
+          "Stubovi su visoki 4, 6 i 5 podeoka. Najviše knjiga pozajmljeno je u utorak."
+        ],
+        "verification": "Stubovi visina 8, 12 i 10 na istoj skali."
+      },
+      {
+        "question": "U 8, 12 i 16 sati temperatura je bila 4, 10 i 7 °C. Na kom delu linija opada?",
+        "steps": [
+          "Na osi vremena sva tri merenja imaju jednak razmak od četiri sata. Ubeleži tačke (8, 4), (12, 10), (16, 7).",
+          "Od podneva do 16 sati promena je 7−10=−3 °C. Ne možemo utvrditi tačnu temperaturu u 14 sati bez dodatne pretpostavke."
+        ],
+        "verification": "Pad od 12 do 16 sati."
+      },
+      {
+        "question": "Za četiri dana pozajmljeno je 6, 0, 10 i 8 knjiga. Odredi prosek.",
+        "steps": [
+          "Ukupan broj je 6+0+10+8=24. Broj dana je četiri, jer i dan bez pozajmica pripada posmatranju.",
+          "24:4=6 knjiga dnevno u proseku. To ne znači da je svaki dan pozajmljeno baš šest."
+        ],
+        "verification": "24/4=6 knjiga."
+      }
+    ],
+    "assessment": "16 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-razmera",
+    "area": "s6-odnosi",
+    "sequence": "Od odnosa u istim jedinicama do podele celine, proporcije i razmere karte.",
+    "examples": [
+      {
+        "question": "Na karti 1:25000 put je dug 4 cm. Kolika je dužina u km?",
+        "steps": [
+          "Na terenu je 4·25000=100000 cm. Sto centimetara čini jedan metar.",
+          "100000 cm=1000 m=1 km."
+        ],
+        "verification": "100000 cm = 1 km"
+      },
+      {
+        "question": "Žuta i plava boja pomešane su u zapreminskoj razmeri 3:2. Koliko decilitara plave boje ima u 15 dl mešavine?",
+        "steps": [
+          "Ukupno je 3+2=5 jednakih delova. Jedan deo je 15:5=3 dl.",
+          "Plave ima 2·3=6 dl. Preostalih 9 dl žute daje odnos 9:6=3:2."
+        ],
+        "verification": "6 dl plave i 9 dl žute"
+      },
+      {
+        "question": "Reši 4:7=x:21.",
+        "steps": [
+          "Jednakost količnika daje 7x=4·21=84.",
+          "Deljenjem sa 7 dobijaš x=12. Provera: 12:21 skraćivanjem sa 3 daje 4:7."
+        ],
+        "verification": "x=12"
+      }
+    ],
+    "assessment": "18 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-zavisnost",
+    "area": "s6-odnosi",
+    "sequence": "Jedinična cena i stalni proizvod pre složenih obračuna sa fiksnim troškom.",
+    "examples": [
+      {
+        "question": "Četiri sveske iste jedinične cene koštaju 220 dinara. Koliko košta sedam takvih svezaka po istoj ceni?",
+        "steps": [
+          "Jedinična cena je 220:4=55 dinara. Količnik je nepromenjen.",
+          "Za sedam svezaka platićeš 7·55=385 dinara. Na grafiku su (0, 0), (4, 220) i (7, 385)."
+        ],
+        "verification": "385 dinara"
+      },
+      {
+        "question": "Šest slavina jednakog stalnog protoka napuni prazan bazen za 8 sati. Za koliko sati četiri takve slavine napune isti prazan bazen?",
+        "steps": [
+          "Za isti bazen potrebno je 6·8=48 sati rada jedne slavine.",
+          "Četiri slavine dele rad: 48:4=12 sati. Manje slavina znači duže vreme."
+        ],
+        "verification": "12 sati"
+      },
+      {
+        "question": "Taksi naplaćuje 100 dinara za početak i 50 po kilometru. Da li je iznos direktno proporcionalan putu?",
+        "steps": [
+          "Za 1 km račun je 150 dinara, a za 2 km je 200 dinara.",
+          "Dvostruki put nema dvostruk račun. Ni pri 0 km račun nije nula."
+        ],
+        "verification": "Odnos nije direktan, jer 2·150 ≠ 200."
+      }
+    ],
+    "assessment": "18 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-procenti",
+    "area": "s6-odnosi",
+    "sequence": "Deo osnovice, vraćanje osnovice, promena osnovice u uzastopnim popustima.",
+    "examples": [
+      {
+        "question": "Koliko je 15% od 800 dinara?",
+        "steps": [
+          "Deset procenata je 80, a pet procenata je polovina toga, 40.",
+          "Ukupno 80+40=120 dinara. Proveri množenjem 800·0,15."
+        ],
+        "verification": "120 dinara"
+      },
+      {
+        "question": "Majica posle popusta od 30% košta 840 dinara. Kolika je puna cena?",
+        "steps": [
+          "Plaćeno je 70% pune cene: 0,70x=840.",
+          "x=840:0,70=1200 dinara. Popust od 360 ostavlja 840."
+        ],
+        "verification": "1200 dinara"
+      },
+      {
+        "question": "Od 24 učenika šest trenira odbojku. Koliki je to procenat?",
+        "steps": [
+          "Odnos je 6:24=[[frac:1|4]].",
+          "Četvrtina od 100 je 25, zato odbojku trenira 25% učenika."
+        ],
+        "verification": "25%"
+      }
+    ],
+    "assessment": "20 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-uglovi",
+    "area": "s6-cetvorouglovi",
+    "sequence": "Elementi četvorougla, zbir uglova, obim i dvostruko brojanje dijagonale.",
+    "examples": [
+      {
+        "question": "Tri unutrašnja ugla konveksnog četvorougla su 72°, 108° i 95°. Koliki je četvrti unutrašnji ugao?",
+        "steps": [
+          "Povuci dijagonalu i saberi dva zbira po 180°. Unutrašnji zbir je 360°.",
+          "Poznati uglovi daju 275°, pa je četvrti 360°−275°=85°."
+        ],
+        "verification": "85°"
+      },
+      {
+        "question": "Četvorougao ima stranice 4, 6, 7 i 5 cm, a jednu dijagonalu 8 cm. Odredi obim.",
+        "steps": [
+          "Granica se sastoji od četiri stranice. Dijagonala prolazi kroz unutrašnjost.",
+          "O=4+6+7+5=22 cm."
+        ],
+        "verification": "22 cm"
+      },
+      {
+        "question": "Dva unutrašnja ugla četvorougla su prava, a mera trećeg je dvostruka mera četvrtog. Koliki su treći i četvrti ugao?",
+        "steps": [
+          "Posle dva prava ugla preostaje 180°. Ako je četvrti x, treći je 2x.",
+          "3x=180° daje x=60° i 2x=120°. Provera: 90+90+120+60=360."
+        ],
+        "verification": "Treći ugao 120°, četvrti 60°."
+      }
+    ],
+    "assessment": "17 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-paralelogram",
+    "area": "s6-cetvorouglovi",
+    "sequence": "Od naspramnih i susednih elemenata ka dovoljnim uslovima i klasifikaciji.",
+    "examples": [
+      {
+        "question": "U ABCD ugao A ima 68°. Odredi ostala tri ugla paralelograma.",
+        "steps": [
+          "Zbog paralelnosti je ∠B=180°−68°=112°. Naspramni uglovi su jednaki.",
+          "Zato ∠C=68°, ∠D=112°. Zbir je 360°."
+        ],
+        "verification": "112°, 68°, 112°"
+      },
+      {
+        "question": "Pravougaonik ima AC=13 cm, a dijagonale se seku u S. Koliko je BS?",
+        "steps": [
+          "Dijagonale pravougaonika su jednake, pa je BD=13 cm.",
+          "Pošto se dijagonale paralelograma polove, BS=13:2=6,5 cm."
+        ],
+        "verification": "BS=6,5 cm"
+      },
+      {
+        "question": "Romb ima obim 36 cm. Možemo li utvrditi dužinu dijagonale?",
+        "steps": [
+          "Sve četiri stranice su jednake, pa je stranica 36:4=9 cm.",
+          "Menjanjem ugla uz iste stranice menja se dijagonala. Sam obim nije dovoljan."
+        ],
+        "verification": "Stranica 9 cm, dijagonala zavisi i od ugla."
+      }
+    ],
+    "assessment": "17 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-vektori",
+    "area": "s6-cetvorouglovi",
+    "sequence": "Od smera do zbira, množenja skalarom i konstrukcije paralelograma.",
+    "examples": [
+      {
+        "question": "Od A idi 3 polja udesno, zatim 2 ulevo. Odredi dužinu i smer ukupnog pomeraja.",
+        "steps": [
+          "Prenesi drugi pomeraj na kraj prvog. U izabranom horizontalnom smeru račun je 3+(−2).",
+          "Krajnja tačka je jedno polje desno od A. Zbir može biti kraći od oba sabirka."
+        ],
+        "verification": "Jedno polje udesno."
+      },
+      {
+        "question": "Konstruiši paralelogram sa AB=5 cm, AD=3 cm i uglom A od 60°.",
+        "steps": [
+          "Nacrtaj AB i u A konstruiši ugao od 60°. Na drugom kraku prenesi AD=3 cm.",
+          "Kroz B konstruiši paralelu sa AD, a kroz D sa AB prenošenjem odgovarajućih uglova. Njihov presek daje C."
+        ],
+        "verification": "Dve paralele određuju C, jer je ugao od 60° nedegenerisan."
+      },
+      {
+        "question": "Kako konstruišeš paralelogram ako su date obe dijagonale i ugao između njih?",
+        "steps": [
+          "Za dijagonale pozitivnih dužina i ugao između njih veći od 0° i manji od 180°, konstruiši dve prave kroz S pod zadatim uglom. Na prvoj prenesi po polovinu prve dijagonale na suprotne strane od S.",
+          "Na drugoj na isti način prenesi polovine druge. Spoji krajeve naizmenično. Dijagonale se polove, pa je dobijena figura paralelogram."
+        ],
+        "verification": "Polovine dijagonala postavljaju se na suprotne strane zajedničkog središta."
+      }
+    ],
+    "assessment": "17 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-trapez",
+    "area": "s6-cetvorouglovi",
+    "sequence": "Od osnovica i srednje linije do rekonstrukcije dužina, obima i provere postojanja.",
+    "examples": [
+      {
+        "question": "Osnovice trapeza su 14 i 8 cm. Odredi srednju liniju.",
+        "steps": [
+          "Spoji sredine krakova. Dijagonala deli tu duž na dve srednje linije trouglova, jednu za svaku osnovicu.",
+          "Dužine delova su 7 i 4 cm. Zato je m=(14+8):2=11 cm."
+        ],
+        "verification": "11 cm"
+      },
+      {
+        "question": "Kako konstruisati jednakokraki trapez osnovica 10 i 6 cm i visine 3 cm?",
+        "steps": [
+          "Nacrtaj veću osnovicu i njenu simetralu. Na simetrali odmeri visinu 3 cm i kroz tu tačku konstruiši paralelu osnovici.",
+          "Na paraleli od središta odmeri po 3 cm levo i desno. Spoji bliže krajeve osnovica. Simetrija garantuje jednake krake."
+        ],
+        "verification": "Krajevi kraće osnovice leže po 3 cm levo i desno od ose."
+      },
+      {
+        "question": "Deltoid ima par stranica od 4 cm i par od 7 cm. Koliki je obim?",
+        "steps": [
+          "Na granici susrećeš dve kraće i dve duže stranice.",
+          "O=2(a+b)=2·(4+7)=22 cm. Dijagonale nisu deo obima."
+        ],
+        "verification": "22 cm"
+      }
+    ],
+    "assessment": "19 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-cetiri-stranice",
+    "area": "s6-cetvorouglovi",
+    "sequence": "Pomoćni trougao, veza sa paralelogramom, stroge granice i dodir kružnica.",
+    "examples": [
+      {
+        "question": "Konstruiši trapez sa osnovicama 9 i 5 cm i kracima AD=3 cm, BC=4 cm.",
+        "steps": [
+          "Nacrtaj AB=9 i na njoj AE=4 cm. Opiši luk iz A poluprečnika 3 cm i iz E poluprečnika 4 cm. Njihov presek iznad osnovice označi D.",
+          "Iz D prenesi 5 cm paralelno i u smeru AB do C. Četvorougao EBCD je paralelogram: EB=DC=5 cm i EB∥DC. Zato je BC=ED=4 cm."
+        ],
+        "verification": "AE=4 cm; trougao stranica 3,4,4 postoji i BC=ED."
+      },
+      {
+        "question": "Konstruiši romb ako su njegove dijagonale 8 i 6 cm.",
+        "steps": [
+          "Nacrtaj AC=8 cm i konstruiši njenu simetralu. Iz sredine S na toj pravoj odmeri SB=SD=3 cm na suprotnim stranama.",
+          "Spoji A, B, C, D. Dijagonale se polove, pa je figura paralelogram. Normalne dijagonale garantuju da je romb."
+        ],
+        "verification": "Normalne polovine dijagonala 4 i 3 daju stranicu 5 cm."
+      },
+      {
+        "question": "Konstruiši deltoid ABCD ako je AC=7 cm, AB=AD=4 cm i CB=CD=5 cm.",
+        "steps": [
+          "Nacrtaj AC, zatim opiši kružnice sa centrima A i C, poluprečnika 4 i 5 cm. Uslov 1<7<9 daje dva preseka.",
+          "Označi preseke B i D i spoji redom A, B, C i D. Jednakosti stranica slede iz jednakosti poluprečnika istih kružnica."
+        ],
+        "verification": "1 < 7 < 9 daje dva različita preseka."
+      }
+    ],
+    "assessment": "16 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-merenje",
+    "area": "s6-povrsine",
+    "sequence": "Od izbora osnovice i visine do pretvaranja jedinica površine i dvojne primene formule.",
+    "examples": [
+      {
+        "question": "Paralelogram ima a=8 cm, b=5 cm i visinu na a od 3 cm. Kolika je površina?",
+        "steps": [
+          "Zamisli preslaganje u pravougaonik: osnovica ostaje 8 cm, a širina je visina 3 cm.",
+          "P=a·h_a=8·3=24 cm². Dužina kose stranice ne ulazi u taj proizvod."
+        ],
+        "verification": "24 cm²"
+      },
+      {
+        "question": "Koliko cm² ima 0,6 dm²?",
+        "steps": [
+          "Kvadrat stranice 1 dm ima deset redova po deset jediničnih kvadrata sa stranicom 1 cm.",
+          "1 dm²=100 cm², pa je 0,6 dm²=60 cm²."
+        ],
+        "verification": "60 cm²"
+      },
+      {
+        "question": "Pravougaonik ima površinu 54 m² i dužinu 9 m. Koliki je obim?",
+        "steps": [
+          "P=ab daje 54=9b, zato je b=6 m.",
+          "O=2(a+b)=2·15=30 m. Površina je u kvadratnim metrima, obim u metrima."
+        ],
+        "verification": "Širina 6 m, obim 30 m."
+      }
+    ],
+    "assessment": "18 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-trougao-trapez",
+    "area": "s6-povrsine",
+    "sequence": "Od sastavljanja dve kopije do formule, obrnute primene i poređenja pri jednakoj visini.",
+    "examples": [
+      {
+        "question": "Trougao ima osnovicu 9 cm i visinu 4 cm. Kolika je površina?",
+        "steps": [
+          "Dve kopije daju paralelogram površine 9·4=36 cm².",
+          "Jedan trougao ima P=36:2=18 cm²."
+        ],
+        "verification": "18 cm²"
+      },
+      {
+        "question": "Trapez ima osnovice 6 i 10 cm i visinu 5 cm. Kolika je njegova površina?",
+        "steps": [
+          "Paralelogram od dve kopije ima osnovicu 16 cm i visinu 5 cm, pa je njegova površina 80 cm².",
+          "P=(6+10)·5:2=40 cm². Isti račun je m·h=8·5."
+        ],
+        "verification": "40 cm²"
+      },
+      {
+        "question": "Površina trougla je 30 cm², a visina 5 cm. Nađi osnovicu.",
+        "steps": [
+          "P=a·h:2 daje 30=a·5:2. Pomnoži obe strane sa 2.",
+          "60=5a, zato a=12 cm. Provera: 12·5:2=30."
+        ],
+        "verification": "12 cm"
+      }
+    ],
+    "assessment": "18 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-delovi",
+    "area": "s6-povrsine",
+    "sequence": "Od normalnih dijagonala do rastavljanja, oduzimanja otvora i preklopa.",
+    "examples": [
+      {
+        "question": "Deltoid ima normalne dijagonale 12 i 7 cm. Kolika je površina?",
+        "steps": [
+          "Podeli deltoid duž dijagonale od 12 cm. Visine dva trougla mogu biti različite, ali zbir im je 7 cm.",
+          "P=12·7:2=42 cm². Nije potrebno pretpostaviti da su oba trougla iste visine."
+        ],
+        "verification": "42 cm²"
+      },
+      {
+        "question": "Iz pravougaonika 9 m sa 6 m uklonjen je ugaoni pravougaonik 3 m sa 2 m. Kolika je preostala površina?",
+        "steps": [
+          "Ceo pravougaonik ima 9·6=54 m². Uklonjeni deo ima 3·2=6 m².",
+          "Preostala površina je 54−6=48 m²."
+        ],
+        "verification": "48 m²"
+      },
+      {
+        "question": "Pročelje čine pravougaonik širine 8 m i visine 3 m i trouglasti zabat iste osnovice, visine 2 m. Kolika je ukupna površina pročelja?",
+        "steps": [
+          "Pravougaonik ima 8·3=24 m², a zabat 8·2:2=8 m².",
+          "Njihove unutrašnjosti se ne preklapaju, pa se površine sabiraju: 24+8=32 m²."
+        ],
+        "verification": "32 m²"
+      }
+    ],
+    "assessment": "19 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  },
+  {
+    "id": "s6-sinteza",
+    "area": "s6-zavrsnica",
+    "sequence": "Više oblasti u istom modelu, pretvaranje jedinica, provera granice i prepoznavanje nedovoljnih podataka.",
+    "examples": [
+      {
+        "question": "Na planu 1:200 pravougaona učionica ima 3 i 4 cm. Kolika joj je stvarna površina?",
+        "steps": [
+          "Stvarne stranice su 600 i 800 cm, odnosno 6 i 8 m. Razmeru primeni na svaku dužinu posebno.",
+          "P=6·8=48 m². Provera: površina na planu 12 cm² povećana je 200·200 puta."
+        ],
+        "verification": "48 m²"
+      },
+      {
+        "question": "Zaliha je 18 l, a dnevno se troši 2,5 l. Koliko punih dana ostaje najmanje 5 l?",
+        "steps": [
+          "Zapiši 18−2,5d≥5. Sredi na −2,5d≥−13 i podeli negativnim brojem: d≤5,2.",
+          "Najviše pet celih dana. Posle pet dana ostaje 5,5 l, posle šest samo 3 l."
+        ],
+        "verification": "Najviše pet punih dana."
+      },
+      {
+        "question": "Temena A(−1, 0), B(5, 0), C(2, 4) čine trougao. Kolika je površina u jediničnim kvadratima?",
+        "steps": [
+          "AB leži na osi x i dužina mu je 5−(−1)=6. Ordinata tačke C daje visinu od 4 jedinice.",
+          "P=6·4:2=12 kvadratnih jedinica."
+        ],
+        "verification": "12 kvadratnih jedinica."
+      }
+    ],
+    "assessment": "17 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
+  }
+]

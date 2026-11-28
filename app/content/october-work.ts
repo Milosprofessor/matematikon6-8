@@ -51,49 +51,49 @@ const triples=[[3,4,5],[5,12,13],[8,15,17],[7,24,25],[9,12,15],[12,16,20]];
 register("mnozenje",[
  v=>{const a=v+3;return Q("mul","sum",v,"Izaberi proizvod.","(−"+a+")+(−"+a+")+(−"+a+")",["3·(−"+a+")","3·"+a,"−"+a+"·(−"+a+")"],"3·(−"+a+")","Prebroj jednake sabirke.","Tri jednaka sabirka zapisujemo kao 3·(−"+a+").","basic","Množenje")},
  v=>{const a=v+3;return N("mul","table",v,"Dopuni poslednju vrednost.","y=(−"+a+")·x; x: −2, 0, 3; y: "+2*a+", 0, ?",-3*a,"Uvrsti x=3.","(−"+a+")·3=−"+3*a+".","medium","Množenje","calculation")},
- v=>{const a=v+3;return Q("mul","compare",v,"Uporedi bez računanja.","(−"+a+")·5 __ (−"+a+")·7",["<",">","="],">","Oba proizvoda su negativna.","Prvi ima manju apsolutnu vrednost, pa je veći.","medium","Znak proizvoda","sign")},
- v=>{const a=v+3;return N("mul","distribute",v,"Izračunaj najkraćim putem.","(−"+a+")·9+(−"+a+")·11",-20*a,"Uoči zajednički činilac.","(−"+a+")·(9+11)=−"+20*a+".","advanced","Množenje","rule")}
+ v=>{const a=v+3;return Q("mul","compare",v,"Uporedi bez računanja.","(−"+a+")·5 __ (−"+a+")·7",["<",">","="],">","Oba proizvoda su negativna.","Pošto je 5<7, prvi proizvod ima manju apsolutnu vrednost. Oba su negativna, pa je prvi veći.","medium","Znak proizvoda","sign")},
+ v=>{const a=v+3;return N("mul","distribute",v,"Izračunaj najkraćim putem.","(−"+a+")·9+(−"+a+")·11",-20*a,"Uoči zajednički činilac.","(−"+a+")·(9+11)=(−"+a+")·20=−"+20*a+".","advanced","Množenje","rule")}
 ]);
 register("deljenje",[
  v=>{const a=v+3;return N("div","table",v,"Dopuni poslednju vrednost.","x: −"+4*a+", 0, "+6*a+"; x:(−"+a+"): 4, 0, ?",-6,"Podeli poslednji x sa negativnim brojem.",6*a+":(−"+a+")=−6.","medium","Deljenje","sign")},
  v=>{const a=v+3;return Q("div","compare",v,"Uporedi.","(−"+6*a+"):(−"+a+") __ (−"+6*a+"):"+a,["<",">","="],">","Odredi znak oba količnika.","Levi je 6, a desni −6.","medium","Znak količnika","sign")},
- v=>{const a=v+3;return N("div","both",v,"Odredi x.","x:"+a+"<0 i |x|="+3*a,-3*a,"Prvi uslov određuje znak.","Pošto je delilac pozitivan, x je negativan: x=−"+3*a+".","advanced","Deljenje","method")}
+ v=>{const a=v+3;return N("div","both",v,"Odredi x.","x:"+a+"<0 i |x|="+3*a,-3*a,"Prvi uslov određuje znak.","Iz |x|="+3*a+" sledi x=−"+3*a+" ili x="+3*a+". Pošto je delilac pozitivan i količnik negativan, x=−"+3*a+". Provera: (−"+3*a+"):"+a+"=−3 i |−"+3*a+"|="+3*a+".","advanced","Deljenje","method")}
 ]);
 register("mnozenje-deljenje",[
  v=>Q("md","order",v,"Šta prvo računaš?","−"+(v+3)*8+":"+(v+3)+"·(−2)",["Deljenje sleva","Proizvod desno","Oba istovremeno"],"Deljenje sleva","Operacije su istog reda.","Množenje i deljenje računamo sleva nadesno.","basic","Redosled operacija","rule"),
  v=>{const a=v+3;return N("md","table",v,"Dopuni kraj lanca.","−"+4*a+" → :"+a+" → −4 → ·(−3) → ?",12,"Računaj svaki korak redom.","−"+4*a+":"+a+"=−4; (−4)·(−3)=12.","medium","Množenje i deljenje","calculation")},
- v=>{const a=v+3;return N("md","context",v,"Odredi prosečnu promenu na sat.","Tokom "+a+" sata temperatura prvo opadne za "+4*a+" °C, pa poraste za "+a+" °C.",-3,"Prvo odredi ukupnu promenu.","Ukupna promena je −"+4*a+"+"+a+"=−"+3*a+" °C. Deljenjem sa "+a+" dobijamo −3 °C na sat.","advanced","Množenje i deljenje")}
+ v=>{const a=v+3;return N("md","context",v,"Odredi prosečnu promenu temperature u °C na sat, sa predznakom.","Tokom "+a+(a===3||a===4?" sata":" sati")+" temperatura prvo opadne za "+4*a+" °C, pa poraste za "+a+" °C.",-3,"Prvo odredi ukupnu promenu.","Ukupna promena je −"+4*a+"+"+a+"=−"+3*a+" °C. Deljenjem sa "+a+" dobijamo −3 °C na sat.","advanced","Množenje i deljenje")}
 ]);
 register("brojevni-izrazi",[
  v=>{const a=v+3;return Q("expr","model",v,"Izaberi izraz.","Od "+4*a+" oduzmi proizvod "+a+" i −3.",[4*a+"−"+a+"·(−3)","("+4*a+"−"+a+")·(−3)",4*a+"+"+a+"·(−3)"],4*a+"−"+a+"·(−3)","Prvo prepoznaj proizvod.","Oduzima se ceo proizvod: "+4*a+"−"+a+"·(−3).","basic","Brojevni izrazi")},
- v=>{const a=v+3;return N("expr","missing",v,"Dopuni.",a+"·(__−3)=0",3,"Činilac u zagradi mora biti 0.","3−3=0, pa nedostaje 3.","medium","Brojevni izrazi","rule")},
- v=>{const a=v+3;return Q("expr","brackets",v,"Koji raspored zagrada daje nulu?","",["("+a+"−"+a+")·4",a+"−("+a+"·4)",a+"−"+a+"·4"],"("+a+"−"+a+")·4","Proveri kako zagrade menjaju redosled.","Razlika jednakih brojeva je 0; 0·4=0. Druga dva izraza daju −"+3*a+".","advanced","Redosled operacija","method")}
+ v=>{const a=v+3;return N("expr","missing",v,"Dopuni.",a+"·(__−3)=0",3,"Činilac u zagradi mora biti 0.","Prvi činilac je "+a+", nije nula. Zato x−3=0, pa x=3. Provera: "+a+"·(3−3)=0.","medium","Brojevni izrazi","rule")},
+ v=>{const a=v+3;return Q("expr","brackets",v,"Koji izraz ima vrednost nula?","",["("+a+"−"+a+")·4",a+"−("+a+"·4)",a+"·4−"+a],"("+a+"−"+a+")·4","Proveri kako zagrade menjaju redosled.","Razlika jednakih brojeva je 0; 0·4=0. Drugi izraz daje −"+3*a+", a treći "+3*a+".","advanced","Redosled operacija","method")}
 ]);
 
 register("trougao-vrste",[
  v=>Q("tv","incidence",v,"Koje teme je zajedničko stranicama AB i BC?","△ABC",["A","B","C"],"B","Pogledaj oba naziva duži.","Obe stranice sadrže B.","basic","Elementi trougla"),
  v=>{const a=v+4;return Q("tv","table",v,"Koji red tabele je pogrešno opisan?","I: "+a+", "+a+", "+a+" → jednakostraničan; II: "+a+", "+a+", "+(a+1)+" → raznostraničan; III: "+a+", "+(a+1)+", "+(a+2)+" → raznostraničan",["I","II","III"],"II","Uporedi stranice u svakom redu.","U redu II dve stranice su jednake. Trougao je jednakokraki, ne raznostraničan.","medium","Vrste trouglova")},
- v=>{const a=v+4;return N("tv","pairs",v,"Odredi obim trougla.","a+b="+(2*a+1)+", b+c="+(2*a+3)+", c+a="+(2*a+2),3*a+3,"Sabiranjem sva tri podatka svaka stranica se pojavljuje dvaput.","2O="+(6*a+6)+", pa je O="+(3*a+3)+".","advanced","Elementi trougla")}
+ v=>{const a=v+4;return N("tv","pairs",v,"Odredi obim trougla.","a+b="+(2*a+1)+", b+c="+(2*a+3)+", c+a="+(2*a+2),3*a+3,"Sabiranjem sva tri podatka svaka stranica se pojavljuje dvaput.","O=a+b+c. Sabiranjem datih jednakosti: (a+b)+(b+c)+(c+a)="+(2*a+1)+"+"+(2*a+3)+"+"+(2*a+2)+". Zato 2O="+(6*a+6)+", pa O="+(6*a+6)+":2="+(3*a+3)+".","advanced","Elementi trougla")}
 ]);
 register("zbir-uglova-trougla",[
  v=>Q("angles","rule",v,"Dopuni.","α+β+γ=__",["90°","180°","360°"],"180°","Seti se zbira unutrašnjih uglova.","Zbir je 180°.","basic","Zbir uglova","rule"),
- v=>{const a=28+3*v;return N("angles","bisect",v,"Odredi drugi oštar ugao.","Pravougli trougao: jedan oštar ugao je "+a+"°.",90-a,"Dva oštra ugla zajedno daju 90°.","90°−"+a+"°="+(90-a)+"°.","medium","Zbir uglova")},
- v=>{const a=30+2*v;return N("angles","difference",v,"Odredi najveći ugao.","Najmanji je "+a+"°, a drugi je za 10° veći.",170-2*a,"Odredi drugi ugao, pa primeni zbir uglova.","Drugi je "+(a+10)+"°. Treći je 180°−"+a+"°−"+(a+10)+"°="+(170-2*a)+"° i najveći je.","advanced","Zbir uglova")}
+ v=>{const a=28+3*v;return N("angles","bisect",v,"Odredi drugi oštar ugao.","Pravougli trougao: jedan oštar ugao je "+a+"°.",90-a,"Dva oštra ugla zajedno daju 90°.","90°+"+a+"°+β=180°. β=90°−"+a+"°="+(90-a)+"°.","medium","Zbir uglova")},
+ v=>{const a=30+2*v;return N("angles","difference",v,"Odredi najveći ugao.","Najmanji ugao je "+a+"°, a jedan od preostalih je za 10° veći od njega.",170-2*a,"Odredi drugi ugao, pa primeni zbir uglova.","Drugi je "+(a+10)+"°. Treći je 180°−"+a+"°−"+(a+10)+"°="+(170-2*a)+"°. Uporedi: "+a+"°<"+(a+10)+"°<"+(170-2*a)+"°, pa je treći najveći.","advanced","Zbir uglova")}
 ]);
 register("uglovi-transverzala",[
- v=>{const a=100+5*v,b=110+2*v;return N("external","sum",v,"Odredi treći spoljašnji ugao.","Dva spoljašnja ugla su "+a+"° i "+b+"°.",360-a-b,"Svaki spoljašnji ugao dopunjuje unutrašnji do 180°.","Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je "+(360-a-b)+"°.","medium","Spoljašnji ugao")},
- v=>{const a=100+4*v;return N("external","equal",v,"Odredi svaki nesusedni unutrašnji ugao.","Spoljašnji je "+a+"°, a dva nesusedna unutrašnja su jednaka.",a/2,"Njihov zbir je spoljašnji ugao.","Svaki je "+a+"°:2="+a/2+"°.","advanced","Spoljašnji ugao")},
- v=>{const a=110+3*v,b=40+v;return N("external","third",v,"Odredi β.","α_1="+a+"°, γ="+b+"°",a-b,"Upotrebi α₁=β+γ.","β="+a+"°−"+b+"°="+(a-b)+"°.","advanced","Spoljašnji ugao")}
+ v=>{const a=100+5*v,b=110+2*v;return N("external","sum",v,"Odredi treći spoljašnji ugao.","Spoljašnji uglovi kod dva različita temena su "+a+"° i "+b+"°.",360-a-b,"Svaki spoljašnji ugao dopunjuje unutrašnji do 180°.","Zbir tri spoljašnja ugla je 3·180°−180°=360°. Treći je 360°−"+a+"°−"+b+"°="+(360-a-b)+"°.","medium","Spoljašnji ugao")},
+ v=>{const a=100+4*v;return N("external","equal",v,"Odredi svaki nesusedni unutrašnji ugao.","Spoljašnji je "+a+"°, a dva nesusedna unutrašnja su jednaka.",a/2,"Njihov zbir je spoljašnji ugao.","Ako je β=γ=x, onda je 2x="+a+"°, pa je svaki x="+a+"°:2="+a/2+"°.","advanced","Spoljašnji ugao")},
+ v=>{const a=110+3*v,b=40+v;return N("external","third",v,"Odredi β.","α_1="+a+"°, γ="+b+"°",a-b,"Upotrebi α₁=β+γ.","α₁=β+γ. β="+a+"°−"+b+"°="+(a-b)+"°.","advanced","Spoljašnji ugao")}
 ]);
 register("odnos-stranica-uglova",[
  v=>Q("sideangle","opposite",v,"Koja stranica je naspram ugla β?","△ABC",["AB","AC","BC"],"AC","Ugao β je kod B.","Naspram B je AC, odnosno b.","basic","Odnos stranica i uglova"),
  v=>Q("sideangle","equals",v,"Koji zaključak je tačan?","a=b i γ>α",["c>a=b","c<a=b","a>c>b"],"c>a=b","Jednakim stranicama odgovaraju jednaki uglovi.","α=β, a veći γ je naspram veće stranice c.","medium","Odnos stranica i uglova","method"),
- v=>{const a=38+2*v;return Q("sideangle","combine",v,"Odredi najdužu stranicu.","α="+a+"°, β je za 15° veći od α.",["a","b","c"],"c","Najpre odredi β i γ.","β="+(a+15)+"°, γ="+(165-2*a)+"°. Najveći je γ, pa je najduža c.","advanced","Odnos stranica i uglova","method")}
+ v=>{const a=38+2*v;return Q("sideangle","combine",v,"Odredi najdužu stranicu.","α="+a+"°, β je za 15° veći od α.",["a","b","c"],"c","Najpre odredi β i γ.","β="+a+"°+15°="+(a+15)+"°. γ=180°−"+a+"°−"+(a+15)+"°="+(165-2*a)+"°. Najveći je γ, pa je najduža c.","advanced","Odnos stranica i uglova","method")}
 ]);
 register("nejednakost-trougla",[
- v=>{const a=v+4;return Q("ineqtri","strict",v,"Koji uslov mora važiti?","Stranice su "+a+", "+(a+1)+" i c.",["c<"+(2*a+1),"c≥"+(2*a+1),"c="+(2*a+1)],"c<"+(2*a+1),"Najduža ne sme biti jednaka zbiru drugih dveju.","Neophodno je c<"+(2*a+1)+". To je samo jedna od nejednakosti.","basic","Nejednakost trougla","rule")},
- v=>{const a=v+4;return N("ineqtri","isosceles",v,"Odredi dužinu kraka.","Jednakokraki trougao ima dve različite dužine: "+a+" cm i "+(2*a+1)+" cm.",2*a+1,"Proveri koja dužina može da se ponovi.","Dva kraka od "+a+" daju zbir "+2*a+", manji od "+(2*a+1)+". Zato krak mora biti "+(2*a+1)+" cm.","medium","Nejednakost trougla")},
- v=>{const a=v+4;return N("ineqtri","perimeter",v,"Odredi najveći ceo obim.","Dve stranice su "+a+" cm i "+(a+3)+" cm; treća je ceo broj cm.",4*a+5,"Odredi najveću dozvoljenu treću stranicu.","Treća mora biti manja od "+(2*a+3)+", pa je najviše "+(2*a+2)+". Obim je "+(4*a+5)+" cm.","advanced","Nejednakost trougla")}
+ v=>{const a=v+4;return Q("ineqtri","strict",v,"Koji uslov mora važiti?","Stranice su "+a+", "+(a+1)+" i c.",["c<"+(2*a+1),"c≥"+(2*a+1),"c="+(2*a+1)],"c<"+(2*a+1),"Najduža ne sme biti jednaka zbiru drugih dveju.","Neophodno je c<"+(2*a+1)+". Za postojanje trougla mora važiti i c>1, pa 1<c<"+(2*a+1)+".","basic","Nejednakost trougla","rule")},
+ v=>{const a=v+4;return N("ineqtri","isosceles",v,"Odredi dužinu kraka.","Jednakokraki trougao ima dve različite dužine: "+a+" cm i "+(2*a+1)+" cm.",2*a+1,"Proveri koja dužina može da se ponovi.","Dva kraka od "+a+" daju zbir "+2*a+", manji od "+(2*a+1)+". Ako je krak "+(2*a+1)+" cm, najduža je manja od zbira druge dve, pa je taj trougao moguć. Zato krak mora biti "+(2*a+1)+" cm.","medium","Nejednakost trougla")},
+ v=>{const a=v+4;return N("ineqtri","perimeter",v,"Odredi najveći ceo obim.","Dve stranice su "+a+" cm i "+(a+3)+" cm; treća je ceo broj cm.",4*a+5,"Odredi najveću dozvoljenu treću stranicu.","Za treću stranicu x važi 3<x<"+(2*a+3)+". Najveći ceo x="+(2*a+2)+". O="+a+"+"+(a+3)+"+"+(2*a+2)+"="+(4*a+5)+" cm.","advanced","Nejednakost trougla")}
 ]);
 register("konstrukcije-uglova",[
  v=>Q("construct","tools",v,"Koji pribor koristimo za konstrukciju bez merenja ugla?","",["Šestar i lenjir bez podeoka","Samo uglomer","Samo lenjir sa podeocima"],"Šestar i lenjir bez podeoka","Konstrukcija prenosi dužine i povlači prave.","Šestarom prenosimo dužine, a lenjirom povlačimo prave.","basic","Konstrukcija ugla"),
@@ -102,43 +102,69 @@ register("konstrukcije-uglova",[
 ]);
 register("pitagorina-teorema",[
  v=>Q("pyth","valid",v,"Koji uslov je potreban za Pitagorinu teoremu?","",["Trougao je pravougli.","Sve stranice su jednake.","Dva ugla su jednaka."],"Trougao je pravougli.","Teorema povezuje katete i hipotenuzu.","Pitagorina teorema važi za pravougli trougao.","basic","Pitagorina teorema"),
- v=>{const a=v+3,b=v+4;return N("pyth","square",v,"Odredi c², ne c.","Katete su "+a+" cm i "+b+" cm.",a*a+b*b,"Saberi kvadrate kateta.","c²="+a*a+"+"+b*b+"="+(a*a+b*b)+" cm².","medium","Pitagorina teorema","calculation")},
- v=>{const [a,b,c]=triples[v];return N("pyth","path",v,"Za koliko metara je prečica kraća?","Put ima dva normalna dela: "+a+" m i "+b+" m. Prečica spaja početak i kraj.",a+b-c,"Prečica je hipotenuza.","Prečica je "+c+" m, a put "+(a+b)+" m. Razlika je "+(a+b-c)+" m.","advanced","Pitagorina teorema")}
+ v=>{const a=v+3,b=v+4;return N("pyth","square",v,"Odredi c², ne c.","Katete su "+a+" cm i "+b+" cm.",a*a+b*b,"Saberi kvadrate kateta.",`a² + b² = c². ${a}² + ${b}² = c². Dobijamo ${a*a} + ${b*b} = c², pa je c² = ${a*a+b*b} cm².`,"medium","Pitagorina teorema","calculation")},
+ v=>{const [a,b,c]=triples[v];return N("pyth","path",v,"Za koliko metara je prečica kraća?","Put ima dva normalna dela: "+a+" m i "+b+" m. Prečica spaja početak i kraj.",a+b-c,"Prečica je hipotenuza.",`a² + b² = c². Prečica c je naspram pravog ugla. ${a}² + ${b}² = c². Zato je ${a*a} + ${b*b} = c², pa je c² = ${c*c}. Dužina je pozitivna: c = [[sqrt:${c*c}]] = ${c} m. Put je ${a+b} m, pa je razlika ${a+b} − ${c} = ${a+b-c} m.`,"advanced","Pitagorina teorema")}
 ]);
 register("nepoznata-stranica-pravougli",[
- v=>Q("leg","identify",v,"Izaberi izraz za nepoznatu katetu b.","Hipotenuza c, kateta a",["[[sqrt:c^2−a^2]]","[[sqrt:c^2+a^2]]","c−a"],"[[sqrt:c^2−a^2]]","Iz c²=a²+b² izdvoji b².","b²=c²−a², pa je b=[[sqrt:c^2−a^2]].","basic","Nepoznata kateta","rule"),
- v=>{const [a,b,c]=triples[v];return Q("leg","compare",v,"Uporedi katete.","c="+c+", a="+a+"; nepoznata je b.",["a<b","a>b","a=b"],"a<b","Odredi b pa uporedi.","b=[[sqrt:"+(c*c-a*a)+"]]="+b+", pa je a<b.","medium","Nepoznata kateta","method")},
- v=>{const [a,b,c]=triples[v];return N("leg","ladder",v,"Odredi udaljenost podnožja od zida.","Merdevine su "+c+" m. Vrh je na visini "+b+" m; zid je normalan na tlo.",a,"Merdevine su hipotenuza.","Udaljenost je [[sqrt:"+c+"^2−"+b+"^2]]="+a+" m.","advanced","Nepoznata kateta")}
+ v=>Q("leg","identify",v,"Izaberi izraz za nepoznatu katetu b.","Hipotenuza c, kateta a",["[[sqrt:c^2−a^2]]","[[sqrt:c^2+a^2]]","c−a"],"[[sqrt:c^2−a^2]]","Iz c²=a²+b² izdvoji b².","a²+b²=c². Oduzmi a² sa obe strane: b²=c²−a². Kako je b>0, b=[[sqrt:c^2−a^2]].","basic","Nepoznata kateta","rule"),
+ v=>{const [a,b,c]=triples[v];return Q("leg","compare",v,"Uporedi katete.","c="+c+", a="+a+"; nepoznata je b.",["a<b","a>b","a=b"],"a<b","Odredi b pa uporedi.","a²+b²=c². "+a+"²+b²="+c+"²; "+a*a+"+b²="+c*c+"; b²="+(c*c-a*a)+". Pozitivna kateta b="+b+" jedinica dužine, pa je a<b.","medium","Nepoznata kateta","method")},
+ v=>{const [a,b,c]=triples[v];return N("leg","ladder",v,"Odredi udaljenost podnožja od zida.","Merdevine su "+c+" m. Vrh je na visini "+b+" m; zid je normalan na tlo.",a,"Merdevine su hipotenuza.","a²+b²=c². Katete su udaljenost x i visina h, a hipotenuza c je dužina merdevina. x²+h²=c². x²+"+b+"²="+c+"². x²+"+b*b+"="+c*c+"; x²="+(c*c-b*b)+". Pozitivna udaljenost x="+a+" m.","advanced","Nepoznata kateta")}
 ]);
 register("pitagora-pravougaonik-kvadrat",[
  v=>Q("rect","identify",v,"Koja duž je hipotenuza pomoćnog trougla?","Pravougaonik ABCD sa dijagonalom AC",["AC","AB","BC"],"AC","Pogledaj trougao ABC.","Ugao B je prav, pa je AC hipotenuza.","basic","Pitagora u pravougaoniku","diagram"),
- v=>{const a=v+3;return N("rect","squarearea",v,"Odredi površinu kvadrata.","d="+a+"[[sqrt:2]] cm",a*a,"Prvo odredi stranicu iz d=a√2.","Stranica je "+a+" cm, pa je P="+a*a+" cm².","medium","Pitagora u kvadratu")},
- v=>{const a=v+3;return Q("rect","compare",v,"Koji kvadrat ima dužu dijagonalu?","Prvi: O="+4*a+" cm. Drugi: P="+(a+1)**2+" cm².",["Prvi","Drugi","Jednake su"],"Drugi","Odredi obe stranice pa uporedi a√2.","Stranice su "+a+" i "+(a+1)+" cm. Dužu dijagonalu ima drugi kvadrat.","advanced","Pitagora u kvadratu","method")}
+ v=>{
+   const side=v+3, area=side*side;
+   return N("rect","squarearea",v,"Odredi površinu kvadrata.","d="+side+"[[sqrt:2]] cm",area,
+     "Dijagonala je hipotenuza, a katete su jednake.",
+     `a²+b²=c². U kvadratu je a²+a²=d². Za d=${side}[[sqrt:2]] cm dobijamo 2a²=(${side}[[sqrt:2]])²=${2*area}. Dakle, a²=${area}. Pozitivna stranica je a=[[sqrt:${area}]]=${side} cm. Površina je P=${area} cm².`,
+     "medium","Pitagora u kvadratu");
+ },
+ v=>{
+   const first=v+3, second=first+1;
+   return Q("rect","compare",v,"Koji kvadrat ima dužu dijagonalu?",`Prvi: O=${4*first} cm. Drugi: P=${second**2} cm².`,["Prvi","Drugi","Jednake su"],"Drugi",
+     "Iz obima i površine odredi stranice, pa uporedi dijagonale.",
+     `a²+b²=c². U kvadratu je a²+a²=d². Prva stranica je ${4*first}:4=${first} cm, a druga [[sqrt:${second**2}]]=${second} cm. Zato je d₁²=${first}²+${first}²=${first**2}+${first**2}=${2*first**2}, a d₂²=${second}²+${second}²=${second**2}+${second**2}=${2*second**2}. Dužine su pozitivne: d₁=${first}[[sqrt:2]] cm, d₂=${second}[[sqrt:2]] cm. Drugi kvadrat ima dužu dijagonalu.`,
+     "advanced","Pitagora u kvadratu","method");
+ }
 ]);
 register("pitagora-jednakokraki",[
- v=>Q("iso","split",v,"Dopuni.","Visina na osnovicu jednakokrakog trougla deli osnovicu na…",["Dva jednaka dela","Tri jednaka dela","Dva proizvoljna dela"],"Dva jednaka dela","Visina je i težišna duž.","Polovine osnovice su jednake.","basic","Pitagora u jednakokrakom trouglu","diagram"),
- v=>{const [a,b,c]=triples[v];return Q("iso","error",v,"Pronađi grešku.","s="+c+", osnovica="+2*a+"; h²="+c+"²−"+2*a+"²",["Treba koristiti polovinu osnovice.","Treba sabrati kvadrate.","Nema greške."],"Treba koristiti polovinu osnovice.","Pomoćni pravougli trougao ima polovinu osnovice.","h²="+c+"²−"+a+"²="+b*b+".","medium","Pitagora u jednakokrakom trouglu","diagram")},
- v=>{const a=v+3;return N("iso","reverse",v,"Odredi obim jednakostraničnog trougla.","h="+a+"[[sqrt:3]] cm",6*a,"Iz h=a√3/2 odredi stranicu, pa obim.","Stranica je "+2*a+" cm; obim je "+6*a+" cm.","advanced","Pitagora u jednakostraničnom trouglu")}
+ v=>Q("iso","split",v,"Dopuni.","Visina na osnovicu jednakokrakog trougla deli osnovicu na…",["Dva jednaka dela","Tri jednaka dela","Dva proizvoljna dela"],"Dva jednaka dela","Visina je i težišna duž.","Pravougli trouglovi imaju zajedničku katetu h i jednake hipotenuze (krake), pa su podudarni. Zato su polovine osnovice jednake.","basic","Pitagora u jednakokrakom trouglu","diagram"),
+ v=>{const [a,b,c]=triples[v];return Q("iso","error",v,"Pronađi grešku.","s="+c+", osnovica="+2*a+"; h²="+c+"²−"+2*a+"²",["Treba koristiti polovinu osnovice.","Treba sabrati kvadrate.","Nema greške."],"Treba koristiti polovinu osnovice.","Pomoćni pravougli trougao ima polovinu osnovice.","a²+b²=c². Katete su visina i polovina osnovice. h²+"+a+"²="+c+"². Zato h²+"+a*a+"="+c*c+" i h²="+b*b+". Pozitivna visina je h="+b+" jedinica dužine.","medium","Pitagora u jednakokrakom trouglu","diagram")},
+ v=>{const a=v+3;return N("iso","reverse",v,"Odredi obim jednakostraničnog trougla.","h="+a+"[[sqrt:3]] cm",6*a,"Označi stranicu sa s. Katete su visina i polovina stranice.","a²+b²=c². Neka je s stranica. Tada (s/2)²+h²=s². Zamenom visine dobijamo (s/2)²+("+a+"[[sqrt:3]])²=s². Zato s²/4+"+3*a*a+"=s², odnosno 3s²="+12*a*a+" i s²="+4*a*a+". Pozitivna stranica je s="+2*a+" cm, pa je obim O="+6*a+" cm.","advanced","Pitagora u jednakostraničnom trouglu")}
 ]);
 register("pitagora-cetvorougao",[
  v=>Q("quad","opposite",v,"Koja duž je hipotenuza trougla ACD?","∠ACD=90°",["AC","AD","CD"],"AD","Hipotenuza je naspram pravog ugla.","Naspram C je AD.","basic","Pitagora u četvorouglu","diagram"),
- v=>{const [a,b,c]=triples[v];return N("quad","reverse",v,"Odredi CD.","∠ACD=90°, AD="+c+" cm, AC="+a+" cm",b,"AD je hipotenuza.","CD²="+c+"²−"+a+"²="+b*b+", pa je CD="+b+" cm.","medium","Pitagora u četvorouglu")},
+ v=>{const [a,b,c]=triples[v];return N("quad","reverse",v,"Odredi CD.","∠ACD=90°, AD="+c+" cm, AC="+a+" cm",b,"AD je hipotenuza.","AC²+CD²=AD². "+a+"²+CD²="+c+"²; "+a*a+"+CD²="+c*c+"; CD²="+b*b+". Pozitivna dužina CD="+b+" cm.","medium","Pitagora u četvorouglu")},
  v=>{const k=v+1;return N("quad","area",v,"Odredi površinu četvorougla ABCD.","∠ABC=∠ACD=90°; AB="+3*k+", BC="+4*k+", CD="+12*k,36*k*k,"Odredi AC, pa saberi površine dva pravougla trougla.","AC="+5*k+". P₁="+6*k*k+", P₂="+30*k*k+", ukupno P="+36*k*k+".","advanced","Pitagora u četvorouglu","method",{type:"pythagoras",variant:"quadrilateral",labels:{AB:String(3*k),BC:String(4*k),CD:String(12*k),AC:"?",AD:""}})}
 ]);
 register("pitagora-romb",[
  v=>Q("rhomb","angles",v,"Pod kojim uglom se seku dijagonale romba?","",["45°","60°","90°"],"90°","Dijagonale su normalne.","Grade pravi ugao.","basic","Pitagora u rombu","rule"),
  v=>{const k=v+1;return N("rhomb","missingarea",v,"Odredi d₂.","P="+24*k*k+" cm², d_1="+6*k+" cm",8*k,"Upotrebi P=d₁d₂/2.","d₂=2·"+24*k*k+":"+6*k+"="+8*k+" cm.","medium","Romb")},
- v=>{const k=v+1;return N("rhomb","height",v,"Odredi visinu romba.","d_1="+6*k+" cm, d_2="+8*k+" cm",4.8*k,"Odredi stranicu i površinu; zatim koristi P=ah.","a="+5*k+" cm, P="+24*k*k+" cm², h=P:a="+num(4.8*k)+" cm.","advanced","Pitagora u rombu")}
+ v=>{
+   const scale=v+1, halfFirst=3*scale, halfSecond=4*scale;
+   const side=5*scale, area=2*halfFirst*halfSecond, height=area/side;
+   return N("rhomb","height",v,"Odredi visinu romba.",`d_1=${2*halfFirst} cm, d_2=${2*halfSecond} cm`,height,
+     "Polovine dijagonala su katete. Odredi stranicu i površinu, pa koristi P=ah.",
+     `a²+b²=c². Dijagonale romba se polove pod pravim uglom. Katete pomoćnog pravouglog trougla imaju dužine ${halfFirst} cm i ${halfSecond} cm, a hipotenuza je stranica s. Zato ${halfFirst}²+${halfSecond}²=s², pa ${halfFirst**2}+${halfSecond**2}=s² i s²=${side**2}. Pozitivna stranica je s=${side} cm. Površina je P=[[frac:${2*halfFirst}·${2*halfSecond}|2]]=${area} cm². Iz P=sh sledi h=[[frac:${area}|${side}]]=${num(height)} cm.`,
+     "advanced","Pitagora u rombu");
+ }
 ]);
 register("pitagora-trapez",[
  v=>Q("trap","identify",v,"Koja duž je hipotenuza pomoćnog trougla?","Pravougli trapez",["Kosi krak","Visina","Razlika osnovica"],"Kosi krak","Visina je normalna na osnovice.","Kosi krak je naspram pravog ugla.","basic","Pitagora u trapezu","diagram"),
- v=>{const k=v+1;return N("trap","perimeter",v,"Odredi obim jednakokrakog trapeza.","a="+16*k+" cm, b="+4*k+" cm, h="+8*k+" cm",40*k,"Polovina razlike osnovica je kateta.","Pomoćna kateta je "+6*k+", krak je "+10*k+". O="+16*k+"+"+4*k+"+2·"+10*k+"="+40*k+" cm.","medium","Pitagora u trapezu")},
- v=>{const k=v+1;return N("trap","reverse",v,"Odredi dužu osnovicu.","Jednakokraki trapez: b="+6*k+" cm, h="+4*k+" cm, c="+5*k+" cm",12*k,"Iz kraka i visine odredi polovinu razlike osnovica.","Polovina razlike je "+3*k+" cm. Zato a="+6*k+"+2·"+3*k+"="+12*k+" cm.","advanced","Pitagora u trapezu")}
+ v=>{
+   const scale=v+1, longer=16*scale, shorter=4*scale, height=8*scale;
+   const projection=(longer-shorter)/2, leg=10*scale;
+   return N("trap","perimeter",v,"Odredi obim jednakokrakog trapeza.",`a=${longer} cm, b=${shorter} cm, h=${height} cm`,longer+shorter+2*leg,
+     "Spusti visine sa krajeva kraće osnovice. Na dužoj osnovici ostaju dva jednaka odsečka.",
+     `a²+b²=c². U pomoćnom pravouglom trouglu katete su visina i projekcija kraka. Zbog jednakih krakova projekcije su jednake: x=[[frac:${longer}−${shorter}|2]]=${projection} cm. Krak k je hipotenuza, pa ${projection}²+${height}²=k². Dakle, ${projection**2}+${height**2}=k² i k²=${leg**2}. Pozitivan krak je k=[[sqrt:${leg**2}]]=${leg} cm. Obim je O=${longer}+${shorter}+2·${leg}=${longer+shorter+2*leg} cm.`,
+     "medium","Pitagora u trapezu");
+ },
+ v=>{const k=v+1;return N("trap","reverse",v,"Odredi dužu osnovicu.","Jednakokraki trapez: b="+6*k+" cm, h="+4*k+" cm, c="+5*k+" cm",12*k,"Iz kraka i visine odredi polovinu razlike osnovica.","a²+b²=c². Označimo polovinu razlike osnovica sa x. x²+h²=c². x²+"+4*k+"²="+5*k+"²; x²+"+16*k*k+"="+25*k*k+"; x²="+9*k*k+". Pozitivna dužina x="+3*k+" cm. Zato a="+6*k+"+2·"+3*k+"="+12*k+" cm.","advanced","Pitagora u trapezu")}
 ]);
 register("specijalni-pravougli-trouglovi",[
- v=>{const a=v+3;return N("special","area45",v,"Odredi površinu.","Trougao 45°–45°–90° ima katetu "+2*a+" cm.",2*a*a,"Katete su jednake.","P="+2*a+"·"+2*a+":2="+2*a*a+" cm².","medium","Posebni pravougli trouglovi")},
+ v=>{const a=v+3;return N("special","area45",v,"Odredi površinu.","Trougao 45°–45°–90° ima katetu "+2*a+" cm.",2*a*a,"Katete su jednake.","Katete su jednake. P=[[frac:"+2*a+"·"+2*a+"|2]]="+2*a*a+" cm².","medium","Posebni pravougli trouglovi")},
  v=>{const a=v+3;return Q("special","angle",v,"Odredi ugao naspram date katete.","Hipotenuza je "+2*a+" cm, kateta je "+a+" cm.",["30°","45°","60°"],"30°","Kateta je polovina hipotenuze.","Naspram takve katete je ugao od 30°.","medium","Posebni pravougli trouglovi","rule")},
- v=>{const a=v+3;return N("special","reverse",v,"Odredi hipotenuzu.","Trougao 30°–60°–90°: duža kateta je "+a+"[[sqrt:3]] cm.",2*a,"Odredi kraću katetu, pa hipotenuzu.","Kraća kateta je "+a+" cm; hipotenuza je "+2*a+" cm.","advanced","Posebni pravougli trouglovi")}
+ v=>{const a=v+3;return N("special","reverse",v,"Odredi hipotenuzu.","Trougao 30°–60°–90°: duža kateta je "+a+"[[sqrt:3]] cm.",2*a,"Odredi kraću katetu, pa hipotenuzu.",`a²+b²=c². Kraća kateta a leži naspram 30°, pa je c=2a. Zamenom dobijamo a²+(${a}[[sqrt:3]])²=(2a)². Zato a²+${3*a*a}=4a², odnosno 3a²=${3*a*a} i a²=${a*a}. Pozitivna kraća kateta je a=${a} cm, a hipotenuza c=${2*a} cm.`,"advanced","Posebni pravougli trouglovi")}
 ]);
 register("konstrukcija-iracionalnih-brojeva",[
  v=>Q("rootconstruct","tool",v,"Čime prenosiš konstruisanu duž na brojnu pravu?","",["Šestarom","Uglomerom","Zaokruživanjem broja"],"Šestarom","Potrebno je preneti dužinu bez približnog merenja.","Otvor šestara jednak dužini prenosi se od nule.","basic","Konstrukcija korena"),
@@ -203,6 +229,11 @@ export function lessonWorkTasks(lessonId:string,pool:Task[]):Task[]{
  return plan.map(id=>{const task=pool.find(item=>item.id===id);if(!task)throw new Error("Missing lesson work task: "+id);return task});
 }
 export function applyOctoberWorkLevels(lessonId:string,tasks:Task[]):Task[]{
+ if(lessonId==="trougao-vrste")return tasks.map(task=>({...task,level:task.id.startsWith("ow-tv-pairs-")?"advanced":["o6-tv-1","o6-tv-2","o6-tv-3","o6-tv-4","ow-tv-incidence-0"].includes(task.id)?"basic":"medium"}));
+ if(lessonId==="brojevni-izrazi")return tasks.map(task=>({...task,level:["6-11a","6-11f"].includes(task.id)||task.id.startsWith("ow-expr-model-")?"basic":"medium"}));
+ if(lessonId==="mnozenje-deljenje")return tasks.map(task=>({...task,level:["6-10a","6-10f"].includes(task.id)||task.id.startsWith("ow-md-order-")?"basic":"medium"}));
+ if(lessonId==="deljenje")return tasks.map(task=>({...task,level:["6-9a","6-9b","6-9c","6-9d","6-9f"].includes(task.id)?"basic":"medium"}));
+ if(lessonId==="mnozenje")return tasks.map(task=>({...task,level:["6-8a","6-8b","6-8c","6-8d","6-8f"].includes(task.id)||task.id.startsWith("ow-mul-sum-")?"basic":"medium"}));
  const plan=octoberWorkPlans[lessonId];if(!plan)return tasks;
  return tasks.map(task=>{
   const at=plan.indexOf(task.id);if(at<0)return task;

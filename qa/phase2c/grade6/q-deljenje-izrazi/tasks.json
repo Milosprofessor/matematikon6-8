@@ -1,0 +1,167 @@
+[
+  {
+    "id": "q-deljenje-izrazi-1",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "answer": "−[[frac:4|3]]",
+    "hint": "Znak mora ostati isti.",
+    "procedure": "Proizvod sa −[[frac:4|3]] je 1.",
+    "level": "basic",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-deljenje-izrazi-2",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "answer": "-3",
+    "hint": "Prevedi u desetine.",
+    "procedure": "−6 desetina podeljeno sa 2 desetine daje −3.",
+    "level": "basic",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-deljenje-izrazi-3",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "answer": "0,5:0",
+    "hint": "Proveri delilac.",
+    "procedure": "Deljenje nulom nije definisano.",
+    "level": "basic",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-deljenje-izrazi-4",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "answer": "1,5",
+    "hint": "Pomnoži deljenik recipročnom vrednošću delioca.",
+    "procedure": "[[frac:2|3]]·[[frac:9|4]]=[[frac:3|2]]=1,5.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-deljenje-izrazi-5",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "answer": "8",
+    "hint": "Podeli ukupnu količinu zapreminom jedne posude.",
+    "procedure": "3:0,375=8.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-deljenje-izrazi-6",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "answer": "2",
+    "hint": "Množenje i deljenje imaju isti prioritet.",
+    "procedure": "(4:0,5)·0,25=8·0,25=2.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-deljenje-izrazi-7",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "answer": "5,5",
+    "hint": "Prvo nađi količnik.",
+    "procedure": "Količnik je −4, pa je 1,5−(−4)=5,5.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-deljenje-izrazi-8",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "answer": "-6",
+    "hint": "Pomnoži obe strane sa nenultim x.",
+    "procedure": "−1,8=0,3x daje x=−6.",
+    "level": "advanced",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-deljenje-izrazi-9",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "answer": "2,5",
+    "hint": "Zasebno odredi vrednosti obe zagrade.",
+    "procedure": "−1,25:(−0,5)=2,5.",
+    "level": "advanced",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-deljenje-izrazi-10",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "answer": "6:(3·2)",
+    "hint": "Uporedi sa računanjem sleva nadesno.",
+    "procedure": "Početni izraz je 4, a 6:(3·2)=1.",
+    "level": "advanced",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-deljenje-izrazi-11",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "answer": "-5",
+    "hint": "Zapiši ga kao petinu sa znakom.",
+    "procedure": "(−0,2)·(−5)=1.",
+    "level": "basic",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-deljenje-izrazi-12",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "answer": "-5",
+    "hint": "Prvo podeli.",
+    "procedure": "−3:0,75=−4, pa je rezultat −5.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-deljenje-izrazi-13",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "answer": "0,75",
+    "hint": "Imenilac ne sme biti nula.",
+    "procedure": "Kada je x=0,75, tada je x−0,75=0.",
+    "level": "advanced",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-deljenje-izrazi-14",
+    "area": "racionalni-brojevi",
+    "lesson": "q-deljenje-izrazi",
+    "answer": "4",
+    "hint": "Prvo odredi količnik.",
+    "procedure": "Količnik je 8, a polovina je 4.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-godisnja-4",
+    "area": "s6-zavrsnica",
+    "lesson": "q-deljenje-izrazi",
+    "answer": "2,5",
+    "hint": "Prvo računaj zagradu.",
+    "procedure": "−0,8:(−0,4)=2. Saberi 2+0,5=2,5.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  }
+]

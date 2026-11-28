@@ -16,27 +16,28 @@ const spoljasnjiUglovi: Lesson = {
   title: "Spoljašnji uglovi trougla",
   month: "october",
   prerequisites: ["zbir-uglova-trougla"],
-  intro: "Spoljašnji ugao trougla nastaje kada produžimo jednu stranicu. Jednak je zbiru dva njemu nesusedna unutrašnja ugla.",
+  intro: "Spoljašnji ugao trougla je ugao između produžetka jedne stranice preko temena i poluprave druge stranice iz tog temena. Jednak je zbiru dva njemu nesusedna unutrašnja ugla.",
   rules: [
     "Spoljašnji i njemu susedni unutrašnji ugao imaju zbir 180°.",
-    "Spoljašnji ugao jednak je zbiru dva nesusedna unutrašnja ugla.",
-    "Trougao ima po dva spoljašnja ugla kod svakog temena; oni su međusobno jednaki.",
+    "Spoljašnji ugao jednak je zbiru dva njemu nesusedna unutrašnja ugla.",
+    "Trougao ima po dva spoljašnja ugla kod svakog temena; oni su međusobno jednaki jer su unakrsni. Zbir po jednog spoljašnjeg ugla kod svakog temena je 360°.",
   ],
   formulas: ["α+α_1=180°", "α_1=β+γ", "α_1+β_1+γ_1=360°"],
   examples: [
     "Ako je α=68°, tada je α₁=112°.",
     "Ako su β=47° i γ=63°, tada je α₁=110°.",
-    "Spoljašnji uglovi 100°, 120° i 140° imaju zbir 360°.",
+    "Po jedan spoljašnji ugao kod svakog temena: 100°, 120° i 140°, zbir 360°.",
   ],
   solved: {
     question: "Odredi spoljašnji ugao kod temena A ako su β=56° i γ=71°.",
     steps: ["Spoljašnji ugao jednak je zbiru dva nesusedna unutrašnja ugla.", "α₁=56°+71°.", "α₁=127°."],
   },
+  worked: [{question:"Odredi spoljašnji ugao kod temena A ako su β=56° i γ=71°.",steps:["α₁=β+γ.","α₁=56°+71°=127°.","Provera: α=180°−127°=53°; 53°+56°+71°=180°."]},{question:"Unutrašnji ugao α je 74°. Odredi α₁.",steps:["α+α₁=180°.","74°+α₁=180°.","α₁=106°."]},{question:"Dva spoljašnja ugla kod različitih temena su 100° i 110°. Odredi treći.",steps:["α₁+β₁+γ₁=360°.","γ₁=360°−100°−110°=150°."]}],
   diagram: "triangle",
   tasks: [
     I("o6-su-1", "Odredi α_1.", "α=74°", "106", "Naporedni uglovi imaju zbir 180°.", "α₁=180°−74°=106°.", "basic", "Spoljašnji ugao", { taskType: "susedni-uglovi", errorCategory: "calculation" }),
     I("o6-su-2", "Odredi α_1.", "β=48°, γ=69°", "117", "Saberi nesusedne unutrašnje uglove.", "α₁=48°+69°=117°.", "basic", "Spoljašnji ugao", { taskType: "zbir-nesusednih", errorCategory: "rule" }),
-    C("o6-su-3", "Izaberi tačnu jednakost.", "Spoljašnji ugao kod temena A", ["α_1=β+γ", "α_1=α+β", "α_1=180°+α"], "α_1=β+γ", "Traži uglove koji nisu susedni spoljašnjem uglu.", "Važi α₁=β+γ.", "medium", "Spoljašnji ugao", { taskType: "izbor-pravila", errorCategory: "rule" }),
+    C("o6-su-3", "Izaberi tačnu jednakost.", "Spoljašnji ugao kod temena A", ["α_1=β+γ", "α_1=α+β", "α_1=180°+α"], "α_1=β+γ", "Traži uglove koji nisu susedni spoljašnjem uglu.", "α+β+γ=180° i α+α₁=180°. Odatle sledi α₁=β+γ.", "medium", "Spoljašnji ugao", { taskType: "izbor-pravila", errorCategory: "rule" }),
   ],
 };
 
@@ -78,12 +79,14 @@ const legacyInteriorAngles = grade6Triangle.lessons.find(lesson => lesson.id ===
 const unutrasnjiUglovi: Lesson = {
   ...legacyInteriorAngles,
   intro: "Zbir unutrašnjih uglova svakog trougla je 180°. To pravilo koristimo da odredimo nepoznati ugao i proverimo da li tri data ugla mogu graditi trougao.",
-  rules: ["Zbir tri unutrašnja ugla je 180°.", "Za nepoznati ugao oduzmi zbir poznatih uglova od 180°.", "Sva tri unutrašnja ugla moraju biti pozitivna."],
+  rules: ["Zbir tri unutrašnja ugla je 180°.", "Za nepoznati ugao oduzmi zbir poznatih uglova od 180°.", "Tri ugla mogu graditi trougao ako i samo ako su svi pozitivni i zbir im je 180°."],
   formulas: ["α+β+γ=180°", "γ=180°−α−β"],
   examples: ["40°+60°+80°=180°", "α=180°−72°−48°=60°", "Uglovi 30°, 70° i 80° mogu graditi trougao."],
+  solved: {question:"Odredi treći ugao ako su dva ugla 47° i 68°.",steps:["α+β+γ=180°.","47°+68°+γ=180°.","γ=180°−115°=65°.","Provera: 47°+68°+65°=180°."]},
+  worked: [{question:"Odredi treći ugao ako su dva ugla 47° i 68°.",steps:["α+β+γ=180°.","47°+68°+γ=180°.","γ=180°−115°=65°.","Provera: 47°+68°+65°=180°."]},{question:"Da li 0°, 80° i 100° mogu biti unutrašnji uglovi trougla?",steps:["0°+80°+100°=180°.","Ugao 0° nije pozitivan, pa takav trougao ne postoji."]},{question:"Uglovi su x, 2x i 3x. Odredi ih.",steps:["x+2x+3x=180°.","6x=180°, x=30°.","Uglovi su 30°, 60° i 90°; svi su pozitivni i zbir je 180°."]}],
   tasks: [
     ...legacyInteriorAngles.tasks.filter(task => task.id !== "o6-zu-3"),
-    C("o6-zu-3", "Koji skup uglova može graditi trougao?", "", ["35°, 65°, 80°", "45°, 75°, 70°", "20°, 80°, 90°"], "35°, 65°, 80°", "Proveri zbir svakog skupa.", "35°+65°+80°=180°.", "advanced", "Zbir uglova", { taskType: "izbor-skupa-uglova", errorCategory: "method" }),
+    C("o6-zu-3", "Koji skup uglova može graditi trougao?", "", ["35°, 65°, 80°", "45°, 75°, 70°", "20°, 80°, 90°"], "35°, 65°, 80°", "Proveri zbir svakog skupa.", "35°+65°+80°=180°; svi su pozitivni. Ostali zbirovi su 190° i 190°.", "advanced", "Zbir uglova", { taskType: "izbor-skupa-uglova", errorCategory: "method" }),
   ],
 };
 export const grade6OctoberAreas: Area[] = [sequence({
@@ -139,17 +142,17 @@ const posebniPravougli: Lesson = {
     "Duža kateta trougla 30°–60°–90° jednaka je kraćoj kateti puta √3.",
   ],
   formulas: ["45°–45°–90°: c=a[[sqrt:2]]", "30°–60°–90°: c=2a", "b=a[[sqrt:3]]"],
-  examples: ["Kateta 5 u trouglu 45°–45°–90° daje c=5√2.", "Kraća kateta 7 u trouglu 30°–60°–90° daje c=14.", "Hipotenuza 18 daje kraću katetu 9."],
-  solved: { question: "U trouglu 30°–60°–90° hipotenuza je 20 cm. Odredi katete.", steps: ["Kraća kateta je polovina hipotenuze: a=10 cm.", "Duža kateta je a√3.", "Katete su 10 cm i 10√3 cm."] },
+  examples: ["a²+b²=c². Naspram jednakih uglova od 45° katete su jednake. Zato 5²+5²=c², pa 25+25=c² i c²=50. Dužina je pozitivna: c=[[sqrt:50]]=5[[sqrt:2]] cm.", "Trougao 30°–60°–90° je polovina jednakostraničnog trougla. Kateta naspram 30° je polovina hipotenuze, pa za katetu 7 cm dobijamo c=2·7=14 cm.", "U trouglu 30°–60°–90° sa hipotenuzom 18 cm kraća kateta naspram 30° ima dužinu a=[[frac:18|2]]=9 cm."],
+  solved: { question: "U trouglu 30°–60°–90° hipotenuza je 20 cm. Odredi katete.", steps: ["a²+b²=c². Kateta naspram 30° je polovina hipotenuze, pa je a=20:2=10 cm.", "10²+b²=20². Zato 100+b²=400 i b²=300.", "Pozitivna duža kateta je b=[[sqrt:300]]=10[[sqrt:3]] cm."] },
   diagram: "pythagoras",
   tasks: [
-    C("o7-st-1", "Odredi hipotenuzu.", "Kateta je 6 cm, uglovi su 45°,45°,90°.", ["6√2 cm", "12 cm", "3√2 cm"], "6√2 cm", "Koristi c=a√2.", "c=6√2 cm.", "basic", "Posebni pravougli trouglovi", { taskType: "hipotenuza-45", errorCategory: "rule" }),
+    C("o7-st-1", "Odredi hipotenuzu.", "Kateta je 6 cm, uglovi su 45°,45°,90°.", ["6√2 cm", "12 cm", "3√2 cm"], "6√2 cm", "Koje stranice leže naspram jednakih uglova?", "a²+b²=c². Naspram jednakih uglova od 45° katete su jednake. Zato 6²+6²=c², pa 36+36=c² i c²=72. Dužina je pozitivna: c=[[sqrt:72]]=6[[sqrt:2]] cm.", "basic", "Posebni pravougli trouglovi", { taskType: "hipotenuza-45", errorCategory: "rule" }),
     I("o7-st-2", "Odredi kraću katetu.", "c=26 cm, uglovi su 30°,60°,90°.", "13", "Kraća kateta je polovina hipotenuze.", "a=26:2=13 cm.", "basic", "Posebni pravougli trouglovi", { taskType: "kraca-kateta", errorCategory: "calculation" }),
-    C("o7-st-3", "Izaberi dužu katetu.", "Kraća kateta je 8 cm.", ["8√3 cm", "16 cm", "4√3 cm"], "8√3 cm", "Duža kateta je a√3.", "b=8√3 cm.", "medium", "Posebni pravougli trouglovi", { taskType: "duza-kateta", errorCategory: "rule" }),
+    C("o7-st-3", "Izaberi dužu katetu.", "U trouglu 30°–60°–90° kraća kateta je 8 cm.", ["8√3 cm", "16 cm", "4√3 cm"], "8√3 cm", "Duža kateta je a√3.", "a²+b²=c². Kraća kateta je naspram 30°, pa je c=2·8=16 cm. Zato 8²+b²=16², odnosno 64+b²=256 i b²=192. Pozitivna duža kateta je b=[[sqrt:192]]=8[[sqrt:3]] cm.", "medium", "Posebni pravougli trouglovi", { taskType: "duza-kateta", errorCategory: "rule" }),
     C("o7-st-4", "Koji odnos važi?", "Trougao 45°–45°–90°", ["Katete su jednake.", "Hipotenuza je jednaka kateti.", "Jedna kateta je dvostruka od druge."], "Katete su jednake.", "To je jednakokraki pravougli trougao.", "Katete su jednake.", "basic", "Posebni pravougli trouglovi", { taskType: "prepoznavanje-odnosa", errorCategory: "concept", practiceOnly: true }),
-    C("o7-st-5", "Odredi obim.", "Katete su 5 cm i 5 cm.", ["10+5√2 cm", "15√2 cm", "10+10√2 cm"], "10+5√2 cm", "Najpre odredi hipotenuzu.", "c=5√2, pa je O=5+5+5√2=10+5√2 cm.", "advanced", "Posebni pravougli trouglovi", { taskType: "obim-45", errorCategory: "method", practiceOnly: true }),
+    C("o7-st-5", "Odredi obim.", "Katete su 5 cm i 5 cm.", ["10+5√2 cm", "15√2 cm", "10+10√2 cm"], "10+5√2 cm", "Najpre odredi hipotenuzu.", "a²+b²=c². Naspram jednakih uglova od 45° katete su jednake. Zato 5²+5²=c², pa 25+25=c² i c²=50. Dužina je pozitivna: c=[[sqrt:50]]=5[[sqrt:2]] cm. Obim je O=5+5+5[[sqrt:2]]=10+5[[sqrt:2]] cm.", "advanced", "Posebni pravougli trouglovi", { taskType: "obim-45", errorCategory: "method", practiceOnly: true }),
     C("o7-st-6", "Pronađi grešku.", "U trouglu 30°–60°–90°, c=16 cm, pa je kraća kateta 16√3 cm.", ["Kraća kateta je 8 cm.", "Kraća kateta je 16 cm.", "Nema greške."], "Kraća kateta je 8 cm.", "Kraća kateta je polovina hipotenuze.", "16:2=8 cm.", "medium", "Posebni pravougli trouglovi", { taskType: "pronadji-gresku", errorCategory: "rule", practiceOnly: true }),
-    C("o7-st-7", "Uporedi hipotenuze.", "Kateta prvog 45° trougla je 4 cm, a kraća kateta drugog 30° trougla je 3 cm.", ["Prva je duža.", "Druga je duža.", "Jednake su."], "Druga je duža.", "Prva je 4√2, druga 6.", "Pošto je 4√2≈5,66<6, druga hipotenuza je duža.", "advanced", "Posebni pravougli trouglovi", { taskType: "poredjenje-modela", errorCategory: "method", practiceOnly: true }),
+    C("o7-st-7", "Uporedi hipotenuze.", "Kateta prvog 45° trougla je 4 cm, a kraća kateta drugog 30° trougla je 3 cm.", ["Prva je duža.", "Druga je duža.", "Jednake su."], "Druga je duža.", "Uporedi kvadrate pozitivnih dužina.", "a²+b²=c². Naspram jednakih uglova od 45° katete su jednake. Zato 4²+4²=c², pa 16+16=c² i c²=32. Dužina je pozitivna: c=[[sqrt:32]]=4[[sqrt:2]] cm. U drugom trouglu hipotenuza je 2·3=6 cm. Pošto je 32<36, druga hipotenuza je duža.", "advanced", "Posebni pravougli trouglovi", { taskType: "poredjenje-modela", errorCategory: "method", practiceOnly: true }),
   ],
 };
 

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "sw-r5-angle-0",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "140°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "sw-r5-angle-1",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "135°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "sw-r5-angle-2",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "130°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "sw-r5-angle-3",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "125°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "sw-r5-angle-4",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "120°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "sw-r5-angle-5",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "115°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "sw-r5-rectangle-0",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "7 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "sw-r5-rectangle-1",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "8 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "sw-r5-rectangle-2",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "9 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "sw-r5-rectangle-3",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "10 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "sw-r5-rectangle-4",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "11 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "sw-r5-rectangle-5",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "12 cm",
+    "phase3": "LOG-06"
+  }
+]

@@ -34,10 +34,12 @@ export function taskWithVisual(lessonId:string,original:Task):Task{
   if(lessonId==='trougao-vrste'&&/^\d+ cm, \d+ cm, \d+ cm$/.test(task.math)){const ns=task.math.match(/\d+/g)!.map(Number);Object.assign(l,{a:String(ns[0]),b:String(ns[1]),c:String(ns[2])});}
   if(lessonId==='nejednakost-trougla'){const ns=task.math.match(/\d+(?=\s*cm)/g)?.map(Number);if(ns?.length===3)Object.assign(l,{a:String(ns[0]),b:String(ns[1]),c:String(ns[2])});}
   if(l['α'])l.alpha=l['α'];if(l['β'])l.beta=l['β'];if(l['γ'])l.gamma=l['γ'];if(l['α1'])l.external=l['α1'];
-  if(/AB=AC/.test(task.math))Object.assign(l,{a:'a',b:'b',c:'b',alpha:'α',beta:'β',gamma:'β'});
-  if(lessonId==='uglovi-transverzala'){const adjacent=task.math.match(/Susedni unutrašnji ugao je (\d+)°/);if(adjacent)l.alpha=adjacent[1]+'°';const ext=task.math.match(/Spoljašnji (?:ugao )?je (\d+)°/);if(ext)l.external=ext[1]+'°';const other=task.math.match(/jedan nesusedni unutrašnji (\d+)°/);if(other)l.beta=other[1]+'°';diagram=/Dva spoljašnja/.test(task.math)?undefined:{type:'triangle',variant:'external',labels:l};}
+  if(/AB=AC/.test(task.math))Object.assign(l,{a:'a',b:'b',c:'c',alpha:'α',beta:'β',gamma:'γ',shapeAlpha:'50°',shapeBeta:'65°',shapeGamma:'65°'});
+  if(lessonId==='odnos-stranica-uglova'&&task.id.startsWith('ow-sideangle-combine-')){const alpha=Number(l.alpha?.replace('°',''));l.shapeBeta=String(alpha+15)+'°';}
+  if(lessonId==='uglovi-transverzala'){const adjacent=task.math.match(/Susedni unutrašnji ugao je (\d+)°/);if(adjacent)l.alpha=adjacent[1]+'°';const ext=task.math.match(/Spoljašnji (?:ugao )?je (\d+)°/);if(ext)l.external=ext[1]+'°';const other=task.math.match(/jedan nesusedni unutrašnji (\d+)°/);if(other)l.beta=other[1]+'°';if(task.id.startsWith("ow-external-equal-")&&ext)l.shapeBeta=String(Number(ext[1])/2)+"°";diagram=/Dva spoljašnja|Spoljašnji uglovi kod dva različita/.test(task.math)?undefined:{type:'triangle',variant:'external',labels:l};}
   else if(Object.keys(l).some(key=>['a','b','c','alpha','beta','gamma'].includes(key))||/△ABC/.test(task.math))diagram={type:'triangle',variant:['trougao-vrste','nejednakost-trougla','odnos-stranica-uglova'].includes(lessonId)?'sides':'angles',labels:l};
   else if(task.diagram?.type==='triangle')diagram={...task.diagram,labels:l};
+  if(lessonId==='nejednakost-trougla'&&task.id==='o6-nt-2')diagram=undefined;
  }else if(lessonId==='uglovi-na-transverzali'){
   const id=task.id,angle=Number(task.math.match(/(\d+)°/)?.[1]??65);const mark=(at:'upper'|'lower',sector:'top-right'|'top-left'|'bottom-right'|'bottom-left',label:string)=>({at,sector,label});
   if(['o6-utn-1','o6-utn-2','o6-utn-3','o6-utn-4','o6-utn-5','o6-utn-8','o6-utn-9'].includes(id)){
@@ -55,6 +57,7 @@ export function taskWithVisual(lessonId:string,original:Task):Task{
   if(l.d1)l.d1=l.d1;if(l.d2)l.d2=l.d2;
   if(variant==='right-altitude'){for(const key of ['p','q','h','c']){const m=task.math.match(new RegExp(key+'=('+numeric+')'));if(m)l[key]=m[1];}}
   const diff=task.math.match(/a−b=(\d+)/);if(diff)l.diff=diff[1];
+  if(task.id.startsWith('ow-leg-ladder-')){const given=task.math.match(/Merdevine su (\d+) m\. Vrh je na visini (\d+) m/);if(given)Object.assign(l,{a:'x',b:given[2],c:given[1]});}
   if(/Grešk|grešk|Proveri rezultat|mogu opisati|Da li/.test(task.prompt))diagram=undefined;
   else diagram={type:'pythagoras',variant,labels:l};
  }else if(lessonId==='funkcija-ykx'||lessonId==='direktna-proporcionalnost'){
@@ -72,6 +75,9 @@ export function taskWithVisual(lessonId:string,original:Task):Task{
   if(lessonId==='ortogonalnost')diagram=/kocke/.test(task.prompt)?{type:'space',variant:'polyhedron',labels:{case:task.id==='o8-or-6'?'adjacent-faces':'normal-edge'}}:task.id==='o8-or-4'?{type:'space',variant:'planes',labels:{relation:'orthogonal'}}:/grešk/.test(task.prompt)?undefined:{type:'space',variant:'orthogonal',labels:{case:task.id==='sw-normal-parallel-0'?'parallel-normals':task.id==='sw-normal-angle-0'?'angle':task.id==='sw-normal-two-0'?'foot-A':'standard'}};
   if(lessonId==='ortogonalna-projekcija'){const relation=/A∈α/.test(task.math)?'point':/normalne|najkraća|ista tačka/.test(task.prompt+' '+task.math)?'normal':/AB∥α/.test(task.math)?'parallel':/leži|AB⊂α/.test(task.prompt+' '+task.math)?'contained':'oblique';diagram={type:'space',variant:'projection',labels:{relation}};}
  }
+ // Pairwise sums are not side lengths; use an explicitly symbolic sketch.
+ if(task.id.startsWith('ow-tv-pairs-'))diagram={type:'triangle',variant:'sides',labels:{a:'a',b:'b',c:'c'}};
+ if(task.id==='o6-tv-6')diagram={type:'triangle',variant:'sides',labels:{a:'8',b:'11',c:'?'}};
  if(task.id==='o6-rq-5')diagram={type:'number-line',min:-2,max:1,divisions:4,points:[{value:-1.25,label:'A'}]};
  if(task.id==='o6-rq-10')diagram={type:'number-line',min:-1,max:1,divisions:10,points:[{value:-.4,label:'A'},{value:0,label:'O'},{value:.4,label:'B'},{value:.2,label:'C'}]};
  if(task.id==='o6-ra-9')diagram={type:'number-line',min:-1,max:0,divisions:8,points:[{value:-.875,label:'A'},{value:-.375,label:'B'}]};

@@ -1,0 +1,38 @@
+{
+  "id": "trougao-vrste",
+  "area": "trougao",
+  "status": "potpuno recenzirana",
+  "theory": "Definicija, temena, naspramne stranice, dva kriterijuma klasifikacije, obim.",
+  "sequence": "Elementi → vrste prema stranicama i uglovima → obim i nepoznata stranica.",
+  "examples": [
+    {
+      "question": "Odredi vrstu trougla sa stranicama 6 cm, 6 cm i 6 cm.",
+      "steps": [
+        "Sve tri stranice su jednake: a=b=c=6 cm.",
+        "Najprecizniji naziv prema stranicama je jednakostranični trougao."
+      ],
+      "verification": "jednakostraničan"
+    },
+    {
+      "question": "Odredi vrstu trougla sa uglovima 90°, 45° i 45°.",
+      "steps": [
+        "Najveći ugao je 90°, pa je trougao pravougli.",
+        "Dva ugla su jednaka, pa su njima naspramne stranice jednake. Trougao je i jednakokraki."
+      ],
+      "verification": "pravougli i jednakokraki"
+    },
+    {
+      "question": "Obim trougla je 31 cm, a=8 cm, b=11 cm. Odredi c.",
+      "steps": [
+        "O=a+b+c.",
+        "31=8+11+c, pa 31=19+c.",
+        "Oduzmi 19 na obe strane: c=12 cm. Provera: 8+11+12=31 cm."
+      ],
+      "verification": "12 cm"
+    }
+  ],
+  "illustration": "Dve skice sa stvarnim dužinama, simboličke skice bez lažnih podataka za nepoznatu ili zbir stranica.",
+  "misconceptions": "Jednakostranični je u širem smislu jednakokraki; razvrstavanje prema uglovima i stranicama su dva nezavisna kriterijuma.",
+  "assessment": "22 sa tematskim proverama; 7 osnovnih, 9 srednjih, 6 naprednih.",
+  "limits": "Ne potvrđuje čitav godišnji ishod geometrije."
+}

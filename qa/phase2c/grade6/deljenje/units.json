@@ -1,0 +1,10 @@
+[
+  {
+    "id": "6-9j",
+    "requiredUnit": "dinara dnevno",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "-6 dinara dnevno",
+    "phase3": "LOG-06"
+  }
+]

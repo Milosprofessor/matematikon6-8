@@ -1,0 +1,178 @@
+[
+  {
+    "id": "s6-podaci-1",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "answer": "5",
+    "hint": "Svako merenje daje po jedan par dan–temperatura.",
+    "procedure": "Pet različitih dana znači pet različitih parova.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-podaci-2",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "answer": "18",
+    "hint": "Pomnoži visinu u podeocima i vrednost podeoka.",
+    "procedure": "6·3=18 knjiga.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-podaci-3",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "answer": "Stubičasti dijagram",
+    "hint": "Da li nazivi klubova čine vremenski niz?",
+    "procedure": "Klubovi su kategorije. Odvojen stub za svaki klub omogućava poređenje.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-podaci-4",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "answer": "21",
+    "hint": "Saberi vrednosti, bez deljenja.",
+    "procedure": "5+7+9=21 stranica.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-podaci-5",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "answer": "1",
+    "hint": "U zbir uvrsti znake.",
+    "procedure": "(−2+1+4):3=3:3=1 °C.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-podaci-6",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "answer": "1",
+    "hint": "Formiraj dva zbira.",
+    "procedure": "A ima 19, B ima 18 knjiga. Razlika je jedna.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-podaci-7",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "answer": "6",
+    "hint": "Uporedi tri promene, a ne četiri vrednosti.",
+    "procedure": "Promene su +6, −1 i +4. Najveći porast je 6.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-podaci-8",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "answer": "Ne",
+    "hint": "Da li piše da je promena ravnomerna?",
+    "procedure": "Imamo samo dva merenja. Srednja vrednost u vremenu važi za ravnomernu promenu.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-podaci-9",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "answer": "22",
+    "hint": "Iz proseka izračunaj ukupan broj.",
+    "procedure": "4·23=92. Poznata prodaja je 70, pa ostaju 22 karte.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-podaci-10",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "answer": "10",
+    "hint": "Ponderiši brojem učenika u svakoj grupi.",
+    "procedure": "Ukupno je 4·12+2·6=60 stranica. Prosek je 60:6=10.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-podaci-11",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "answer": "65",
+    "hint": "Dodaj početnu vrednost.",
+    "procedure": "50+3·5=65.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-podaci-15",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "answer": "1",
+    "hint": "Zbir svih merenja je tri puta prosek.",
+    "procedure": "Ukupan zbir je 6. Nedostaje 6−(−1+6)=1 °C.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-podaci-16",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "answer": "4",
+    "hint": "Koristi ukupan put i ukupno vreme.",
+    "procedure": "20:5=4 km na sat. Obe pojedinačne deonice imaju i isti količnik.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-podaci-12",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "answer": "4",
+    "hint": "Poredi krajnje i početno stanje.",
+    "procedure": "3−(−1)=4 °C.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-podaci-13",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "answer": "5",
+    "hint": "Razlikuj nedostajući podatak i izmerenu nulu.",
+    "procedure": "Poznato je svih pet merenja. Delilac je pet.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-podaci-14",
+    "area": "s6-odnosi",
+    "lesson": "s6-podaci",
+    "answer": "Jednako je",
+    "hint": "Poredi udele, ne visine stubova za sirove brojeve.",
+    "procedure": "8:16=12:24=0,5. U obe grupe učešće je 50%.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  }
+]

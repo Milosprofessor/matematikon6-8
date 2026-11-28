@@ -1,0 +1,19 @@
+{
+  "id": "q-jednacine",
+  "area": "racionalni-brojevi",
+  "sequence": "Nepoznati član, složena jednačina, broj rešenja i model.",
+  "examples": [
+    {
+      "question": "Koji broj umanjen za −0,75 daje −2?",
+      "steps": [
+        "Napiši x−(−0,75)=−2.",
+        "x+0,75=−2 daje x=−2,75.",
+        "Provera: −2,75+0,75=−2."
+      ],
+      "verification": "−2,75−(−0,75)=−2."
+    }
+  ],
+  "misconceptions": "Delilac ne sme biti nula; jednačina sa nultim koeficijentom može biti identitet ili nemoguća.",
+  "assessment": "14 zadataka, 10 u redovnom toku.",
+  "status": "potpuno recenzirana"
+}

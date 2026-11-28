@@ -1,0 +1,19 @@
+{
+  "id": "q-zapisi",
+  "area": "racionalni-brojevi",
+  "status": "potpuno recenzirana",
+  "sequence": "Proširivanje i skraćivanje, konačan decimalni zapis, periodičan zapis.",
+  "examples": [
+    {
+      "question": "Kako zapisati −0,375 kao neskrativ razlomak?",
+      "steps": [
+        "Tri decimale daju −[[frac:375|1000]].",
+        "Podeli brojilac i imenilac sa 125.",
+        "Dobijaš −[[frac:3|8]]."
+      ],
+      "verification": "−375/1000 = −3/8"
+    }
+  ],
+  "assessment": "14 zadataka; 10 u redovnom toku.",
+  "misconceptions": "Dužina periode i cifra koja se ponavlja."
+}

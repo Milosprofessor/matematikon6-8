@@ -1,0 +1,33 @@
+{
+  "id": "s6-sinteza",
+  "area": "s6-zavrsnica",
+  "sequence": "Više oblasti u istom modelu, pretvaranje jedinica, provera granice i prepoznavanje nedovoljnih podataka.",
+  "examples": [
+    {
+      "question": "Na planu 1:200 pravougaona učionica ima 3 i 4 cm. Kolika joj je stvarna površina?",
+      "steps": [
+        "Stvarne stranice su 600 i 800 cm, odnosno 6 i 8 m. Razmeru primeni na svaku dužinu posebno.",
+        "P=6·8=48 m². Provera: površina na planu 12 cm² povećana je 200·200 puta."
+      ],
+      "verification": "48 m²"
+    },
+    {
+      "question": "Zaliha je 18 l, a dnevno se troši 2,5 l. Koliko punih dana ostaje najmanje 5 l?",
+      "steps": [
+        "Zapiši 18−2,5d≥5. Sredi na −2,5d≥−13 i podeli negativnim brojem: d≤5,2.",
+        "Najviše pet celih dana. Posle pet dana ostaje 5,5 l, posle šest samo 3 l."
+      ],
+      "verification": "Najviše pet punih dana."
+    },
+    {
+      "question": "Temena A(−1, 0), B(5, 0), C(2, 4) čine trougao. Kolika je površina u jediničnim kvadratima?",
+      "steps": [
+        "AB leži na osi x i dužina mu je 5−(−1)=6. Ordinata tačke C daje visinu od 4 jedinice.",
+        "P=6·4:2=12 kvadratnih jedinica."
+      ],
+      "verification": "12 kvadratnih jedinica."
+    }
+  ],
+  "assessment": "17 zadataka; 10 u redovnom toku.",
+  "status": "potpuno recenzirana"
+}

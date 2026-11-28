@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ow-md-context-0",
+    "requiredUnit": "°C na sat",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "-3 °C na sat",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-md-context-1",
+    "requiredUnit": "°C na sat",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "-3 °C na sat",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-md-context-2",
+    "requiredUnit": "°C na sat",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "-3 °C na sat",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-md-context-3",
+    "requiredUnit": "°C na sat",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "-3 °C na sat",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-md-context-4",
+    "requiredUnit": "°C na sat",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "-3 °C na sat",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-md-context-5",
+    "requiredUnit": "°C na sat",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "-3 °C na sat",
+    "phase3": "LOG-06"
+  }
+]

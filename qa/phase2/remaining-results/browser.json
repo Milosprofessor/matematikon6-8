@@ -1,0 +1,194 @@
+[
+  {
+    "width": 1366,
+    "lesson": "s6-trapez",
+    "visible": true
+  },
+  {
+    "width": 1366,
+    "lesson": "q-zapisi",
+    "visible": true
+  },
+  {
+    "width": 1366,
+    "lesson": "s7-luk",
+    "visible": true
+  },
+  {
+    "width": 1366,
+    "lesson": "s7-isecci",
+    "visible": true
+  },
+  {
+    "width": 1366,
+    "lesson": "s7-povrsina",
+    "task": "s7-povrsina-7",
+    "result": "correct"
+  },
+  {
+    "width": 1366,
+    "lesson": "s7-povrsina",
+    "visible": true
+  },
+  {
+    "width": 1366,
+    "lesson": "s7-rotacija",
+    "task": "s7-rotacija-9",
+    "result": "correct"
+  },
+  {
+    "width": 1366,
+    "lesson": "s7-rotacija",
+    "visible": true
+  },
+  {
+    "width": 1366,
+    "lesson": "s7-centri",
+    "activity": "Konstruiši ortocentar i težište\nNacrtaj tri različita trougla: oštrougli, pravougli i tupougli koji nije jednakokraki. Označi temena A, B, C.\nPomoću lenjira i šestara ili trougaonog lenjira konstruiši normale iz A i B na prave BC i CA (produži stranice po potrebi). Označi podnožja i prave uglove. Njihov presek je H; proveri i treću visinu iz C.\nKonstruiši sredine najmanje dve stranice, spoji ih sa naspramnim temenima i označi zajednički presek T. Trećom težišnom duži proveri presek. Uporedi H i T i izmeri odnos delova jedne težišne duži.\nKriterijumi za samoprocenu ili nastavnika\nPodnožje svake visine je na naspramnoj pravoj, a visina je normalna na nju; produžeci su označeni.\nH je unutar oštrouglog, u temenu pravog ugla pravouglog i van tupouglog trougla.\nTežišne duži spajaju teme sa sredinom naspramne stranice, T je unutra i deli ih u odnosu 2:1 od temena (uz toleranciju merenja).\n\nProveri svoj rad na papiru sa nastavnikom."
+  },
+  {
+    "width": 1366,
+    "lesson": "s7-centri",
+    "geometry": [
+      {
+        "x": 130,
+        "H": [
+          130.0,
+          96.41666666666666
+        ]
+      },
+      {
+        "x": 45,
+        "H": [
+          45.0,
+          188.5
+        ]
+      },
+      {
+        "x": 65,
+        "H": [
+          65.0,
+          156.0
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1366,
+    "lesson": "s7-centri",
+    "visible": true
+  },
+  {
+    "width": 1366,
+    "lesson": "s6-podaci",
+    "activity": "Izradi svoj dijagram\nIzaberi pet uzastopnih dana i zabeleži broj pročitanih stranica svakog dana (uključujući nulu); napravi tabelu dan – broj stranica. Ako nemaš podatke, upotrebi 3, 0, 4, 2, 5 za dane 1–5.\nNa papiru iz iste tabele nacrtaj stubičasti, tačkasti i linijski dijagram. Na horizontalnoj osi označi dane, na vertikalnoj broj stranica od nule; izaberi isti ravnomeran korak. U tačkastom prikazu označi parove (dan, broj stranica); u linijskom ih poveži redom.\nOdredi dan sa najviše stranica, uporedi dva dana i izračunaj razliku. Objasni koji prikaz najlakše pokazuje promenu kroz vreme.\nKriterijumi za samoprocenu ili nastavnika\nTabela odgovara svih pet podataka.\nSvaki prikaz ima naslov, oznake osa, jedinice i doslednu razmeru; stubovi i tačke predstavljaju tačne vrednosti.\nLinija povezuje tačke po redosledu dana, razlika i zaključak su tačni.\n\nProveri svoj rad na papiru sa nastavnikom."
+  },
+  {
+    "width": 1366,
+    "lesson": "s6-podaci",
+    "visible": true
+  },
+  {
+    "width": 1366,
+    "lesson": "s8-godina",
+    "activity": "Planiraj i sprovedi istraživanje\nPredloži istraživačko pitanje o zapremini ili površini ambalaže, obrazloži izbor i dogovori plan sa nastavnikom ili grupom. Zabeleži ko šta radi ako radite u grupi.\nOdredi uzorak od najmanje tri predmeta, koje veličine ćeš meriti, instrument, jedinice i način beleženja. Napravi tabelu predmeta, mera i izračunatih veličina; navedi pretpostavke o obliku.\nIzračunaj rezultate i uporedi ih međusobno. Ako porediš sa deklaracijom, poredi istu veličinu u usklađenim jedinicama (spoljašnja zapremina nije nužno kapacitet). Navedi moguće greške merenja i predstavi zaključak uz tabelu ili dijagram.\nKriterijumi za samoprocenu ili nastavnika\nUčenik obrazlaže izbor pitanja, uzorka i plana; ako je rad grupni, navodi sopstveni doprinos.\nTabela sadrži stvarna merenja, jedinice, odgovarajuće formule i proverljive proračune.\nZaključak sledi iz podataka, poređenje je opravdano i navedena su ograničenja istraživanja.\n\nProveri svoj rad na papiru sa nastavnikom."
+  },
+  {
+    "width": 1366,
+    "lesson": "s8-godina",
+    "visible": true
+  },
+  {
+    "width": 1366,
+    "lesson": "s7-rotacija-mini",
+    "task": "s7-rotacija-14",
+    "result": "correct"
+  },
+  {
+    "width": 360,
+    "lesson": "s6-trapez",
+    "visible": true
+  },
+  {
+    "width": 360,
+    "lesson": "q-zapisi",
+    "visible": true
+  },
+  {
+    "width": 360,
+    "lesson": "s7-luk",
+    "visible": true
+  },
+  {
+    "width": 360,
+    "lesson": "s7-isecci",
+    "visible": true
+  },
+  {
+    "width": 360,
+    "lesson": "s7-povrsina",
+    "visible": true
+  },
+  {
+    "width": 360,
+    "lesson": "s7-rotacija",
+    "visible": true
+  },
+  {
+    "width": 360,
+    "lesson": "s7-centri",
+    "activity": "Konstruiši ortocentar i težište\nNacrtaj tri različita trougla: oštrougli, pravougli i tupougli koji nije jednakokraki. Označi temena A, B, C.\nPomoću lenjira i šestara ili trougaonog lenjira konstruiši normale iz A i B na prave BC i CA (produži stranice po potrebi). Označi podnožja i prave uglove. Njihov presek je H; proveri i treću visinu iz C.\nKonstruiši sredine najmanje dve stranice, spoji ih sa naspramnim temenima i označi zajednički presek T. Trećom težišnom duži proveri presek. Uporedi H i T i izmeri odnos delova jedne težišne duži.\nKriterijumi za samoprocenu ili nastavnika\nPodnožje svake visine je na naspramnoj pravoj, a visina je normalna na nju; produžeci su označeni.\nH je unutar oštrouglog, u temenu pravog ugla pravouglog i van tupouglog trougla.\nTežišne duži spajaju teme sa sredinom naspramne stranice, T je unutra i deli ih u odnosu 2:1 od temena (uz toleranciju merenja).\n\nProveri svoj rad na papiru sa nastavnikom."
+  },
+  {
+    "width": 360,
+    "lesson": "s7-centri",
+    "geometry": [
+      {
+        "x": 130,
+        "H": [
+          130.0,
+          96.41666666666666
+        ]
+      },
+      {
+        "x": 45,
+        "H": [
+          45.0,
+          188.5
+        ]
+      },
+      {
+        "x": 65,
+        "H": [
+          65.0,
+          156.0
+        ]
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "lesson": "s7-centri",
+    "visible": true
+  },
+  {
+    "width": 360,
+    "lesson": "s6-podaci",
+    "activity": "Izradi svoj dijagram\nIzaberi pet uzastopnih dana i zabeleži broj pročitanih stranica svakog dana (uključujući nulu); napravi tabelu dan – broj stranica. Ako nemaš podatke, upotrebi 3, 0, 4, 2, 5 za dane 1–5.\nNa papiru iz iste tabele nacrtaj stubičasti, tačkasti i linijski dijagram. Na horizontalnoj osi označi dane, na vertikalnoj broj stranica od nule; izaberi isti ravnomeran korak. U tačkastom prikazu označi parove (dan, broj stranica); u linijskom ih poveži redom.\nOdredi dan sa najviše stranica, uporedi dva dana i izračunaj razliku. Objasni koji prikaz najlakše pokazuje promenu kroz vreme.\nKriterijumi za samoprocenu ili nastavnika\nTabela odgovara svih pet podataka.\nSvaki prikaz ima naslov, oznake osa, jedinice i doslednu razmeru; stubovi i tačke predstavljaju tačne vrednosti.\nLinija povezuje tačke po redosledu dana, razlika i zaključak su tačni.\n\nProveri svoj rad na papiru sa nastavnikom."
+  },
+  {
+    "width": 360,
+    "lesson": "s6-podaci",
+    "visible": true
+  },
+  {
+    "width": 360,
+    "lesson": "s8-godina",
+    "activity": "Planiraj i sprovedi istraživanje\nPredloži istraživačko pitanje o zapremini ili površini ambalaže, obrazloži izbor i dogovori plan sa nastavnikom ili grupom. Zabeleži ko šta radi ako radite u grupi.\nOdredi uzorak od najmanje tri predmeta, koje veličine ćeš meriti, instrument, jedinice i način beleženja. Napravi tabelu predmeta, mera i izračunatih veličina; navedi pretpostavke o obliku.\nIzračunaj rezultate i uporedi ih međusobno. Ako porediš sa deklaracijom, poredi istu veličinu u usklađenim jedinicama (spoljašnja zapremina nije nužno kapacitet). Navedi moguće greške merenja i predstavi zaključak uz tabelu ili dijagram.\nKriterijumi za samoprocenu ili nastavnika\nUčenik obrazlaže izbor pitanja, uzorka i plana; ako je rad grupni, navodi sopstveni doprinos.\nTabela sadrži stvarna merenja, jedinice, odgovarajuće formule i proverljive proračune.\nZaključak sledi iz podataka, poređenje je opravdano i navedena su ograničenja istraživanja.\n\nProveri svoj rad na papiru sa nastavnikom."
+  },
+  {
+    "width": 360,
+    "lesson": "s8-godina",
+    "visible": true
+  }
+]

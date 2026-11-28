@@ -16,13 +16,13 @@ export const areaTests: Record<GradeId,Record<string,AreaTestTask[]>> = {
     L(I("t6-1","Odredi suprotan broj.","−18","18","Promeni znak.","Suprotan broj broju −18 je 18.","basic","Skup celih brojeva"),"skup-celih-brojeva"),
     L(I("t6-2","Izračunaj.","|−27|","27","Apsolutna vrednost je rastojanje od nule.","|−27|=27.","basic","Apsolutna vrednost"),"apsolutna-vrednost"),
     L(C("t6-3","Uporedi.","−14 __ −9",["<",">","="],"<","−14 je levo od −9.","−14<−9.","basic","Poređenje"),"uporedjivanje"),
-    L(I("t6-4","Izračunaj.","−16+23","7","Znaci su različiti.","23−16=7.","medium","Sabiranje"),"sabiranje"),
-    L(I("t6-5","Izračunaj.","−8−(−13)","5","Oduzimanje negativnog postaje sabiranje.","−8+13=5.","medium","Oduzimanje"),"oduzimanje"),
-    L(I("t6-6","Odredi rastojanje.","A(−11), B(4)","15","Koristi apsolutnu vrednost razlike.","|−11−4|=15.","medium","Rastojanje"),"rastojanje"),
-    L(I("t6-7","Izračunaj.","−12+7−(−6)","1","Prvo ukloni zagradu.","−12+7+6=1.","medium","Sabiranje i oduzimanje"),"sabiranje-oduzimanje"),
-    L(I("t6-8","Izračunaj.","(−9)·(−8)","72","Isti znaci daju plus.","9·8=72.","basic","Množenje"),"mnozenje"),
-    L(I("t6-9","Izračunaj.","84:(−7)","-12","Različiti znaci daju minus.","84:7=12, pa je rezultat −12.","medium","Deljenje"),"deljenje"),
-    L(I("t6-10","Izračunaj.","18:(−3)−2·(−5)","4","Deljenje i množenje imaju prednost.","−6−(−10)=4.","advanced","Brojevni izrazi"),"brojevni-izrazi")
+    L(I("t6-4","Izračunaj.","−16+23","7","Znaci su različiti.","−16+23=23−16=7 jer pozitivan sabirak ima veću apsolutnu vrednost.","basic","Sabiranje"),"sabiranje"),
+    L(I("t6-5","Izračunaj.","−8−(−13)","5","Suprotan broj broju −13 je 13.","−8−(−13)=−8+13=5.","basic","Oduzimanje"),"oduzimanje"),
+    L(I("t6-6","Odredi rastojanje.","A(−11), B(4)","15","Koristi apsolutnu vrednost razlike.","|−11−4|=|−15|=15.","basic","Rastojanje"),"rastojanje"),
+    L(I("t6-7","Izračunaj.","−12+7−(−6)","1","Prvo ukloni zagradu.","−12+7+6=−5+6=1.","medium","Sabiranje i oduzimanje"),"sabiranje-oduzimanje"),
+    L(I("t6-8","Izračunaj.","(−9)·(−8)","72","Dva negativna činioca daju pozitivan proizvod.","(−9)·(−8)=9·8=72.","basic","Množenje"),"mnozenje"),
+    L(I("t6-9","Izračunaj.","84:(−7)","-12","Različiti znaci daju minus.","84:7=12, pa je rezultat −12.","basic","Deljenje"),"deljenje"),
+    L(I("t6-10","Izračunaj.","18:(−3)−2·(−5)","4","Deljenje i množenje imaju prednost.","18:(−3)=−6 i 2·(−5)=−10, pa −6−(−10)=−6+10=4.","medium","Brojevni izrazi"),"brojevni-izrazi")
   ],...octoberAreaTests[6]},
   7:{"realni-brojevi":[
     L(C("t7-1","Izaberi tačan zapis.","[[frac:9|20]]",["0,45","0,9","0,18"],"0,45","Proširi do imenioca 100.","9/20=45/100=0,45.","basic","Decimalni zapis"),"decimalni-zapis"),

@@ -1,0 +1,40 @@
+{
+  "id": "kratko-obnavljanje-5",
+  "area": "obnavljanje-5",
+  "status": "potpuno recenzirana",
+  "theory": "Precizirani jednaki prioriteti; definicije pravih, uglova, kolinearnosti i formula razlomaka uz c>0 pregledane.",
+  "sequence": "Podsetnik predznanja: prirodni brojevi → razlomci → geometrija, bez uvođenja gradiva višeg razreda.",
+  "examples": [
+    {
+      "question": "Izračunaj: 36 : 6 + 4 · 3",
+      "steps": [
+        "Prvo deljenje i množenje: 36 : 6 = 6 i 4 · 3 = 12.",
+        "Zatim sabiranje: 6 + 12 = 18.",
+        "Rezultat je 18."
+      ],
+      "verification": "36/6+4·3=18"
+    },
+    {
+      "question": "Izračunaj [[frac:2|7]] + [[frac:3|7]].",
+      "steps": [
+        "Oba razlomka predstavljaju sedmine iste celine. Sabiramo brojioce, imenilac ostaje 7.",
+        "[[frac:2|7]]+[[frac:3|7]]=[[frac:2+3|7]]=[[frac:5|7]].",
+        "Rezultat je pet sedmina."
+      ],
+      "verification": "2/7+3/7=5/7"
+    },
+    {
+      "question": "Obim pravougaonika je 30 cm, jedna stranica je 6 cm. Odredi drugu.",
+      "steps": [
+        "Obim je zbir svih stranica: O=2(a+b).",
+        "30=2(6+b). Podelimo obe strane sa 2: 15=6+b.",
+        "Oduzmimo 6 sa obe strane: b=15−6=9 cm. Provera: 2(6+9)=30 cm."
+      ],
+      "verification": "2(6+9)=30 cm"
+    }
+  ],
+  "illustration": "Pravougaonik sa parovima jednakih stranica; dijagonala nije deo obima; oznake a,b odgovaraju formuli.",
+  "misconceptions": "Jednak prioritet sleva nadesno, ne sabirati imenioce, obim nije površina.",
+  "assessment": "10 zadataka u redovnom radu i 45 u bazenu; obnavljanje nema zasebnu godišnju proveru; 27 osnovnih i 18 srednjih; nema naprednih, jer postojeći zadaci ne zahtevaju izbor složene strategije.",
+  "limits": "Obnavljanje predznanja, ne dokaz godišnjeg ishoda šestog razreda; VAR ponavljaju iste konstrukcije, bez novih identifikatora."
+}

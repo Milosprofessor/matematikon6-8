@@ -1,0 +1,23 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> site-creator-vinext-starter@0.1.0 lint
+> bash scripts/sites-env.sh -- eslint . --ignore-pattern dist --ignore-pattern .next
+
+
+/workspace/scratch/cf54a9156317/repo/app/content/plan-calendar.ts
+  1:27  warning  'Lesson' is defined but never used  @typescript-eslint/no-unused-vars
+
+/workspace/scratch/cf54a9156317/repo/app/content/task-visuals.ts
+  9:7  warning  'finite' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/workspace/scratch/cf54a9156317/repo/app/page.tsx
+  218:10  warning  'Diagram' is defined but never used  @typescript-eslint/no-unused-vars
+
+/workspace/scratch/cf54a9156317/repo/tests/october-work.test.mjs
+  4:9  warning  'createHash' is defined but never used  @typescript-eslint/no-unused-vars
+
+/workspace/scratch/cf54a9156317/repo/tests/september-work.test.mjs
+  20:45  warning  'areaMastery' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+✖ 5 problems (0 errors, 5 warnings)
+

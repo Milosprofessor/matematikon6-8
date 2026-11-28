@@ -28,8 +28,8 @@ cut("kupa","Polovina osnog preseka. Katete su r i H, hipotenuza je izvodnica s."
 });
 cut("lopta","Ravan seče loptu. Centar preseka je podnožje normale iz centra lopte.",{
   "lopta-ex2":["ρ = ?","d = 3 cm","R = 5 cm"],"lopta-8":["ρ = ?","d = 12 cm","R = 13 cm"],
-  "lopta-9":["ρ = 8 cm","d = ?","R = 10 cm"],"lopta-vezba":["ρ = 8 cm","d = 6 cm","R = ?"],
-  "polugodiste-8":["ρ = 5 cm","d = ?","R = 13 cm"]
+  "lopta-9":["ρ = ?","d = ?","R = 10 cm"],"lopta-vezba":["ρ = 8 cm","d = 6 cm","R = ?"],
+  "polugodiste-8":["ρ = ?","d = ?","R = 13 cm"]
 });
 cut("osnova kvadra","Dijagonala pravougaone strane deli je na dva podudarna pravougla trougla.",{
   "prizma-5":["a = 6 cm","b = 8 cm","d = ?"],"prizma-7":["a = ?","a = ?","d = 6√2 cm"]
@@ -59,5 +59,5 @@ export function EighthFigure({id}:{id:string}){
     <path d="M155 95V24L260 95Z" fill="#fff0bd" stroke="#874315" strokeWidth="2"/><path d="M155 87h8v8" fill="none" stroke="#874315"/>
     <g fill="#20364b" fontSize="14"><text x="205" y="112">1</text><text x="141" y="63">2</text><text x="210" y="49">3</text></g></svg>
     <figcaption>{c.caption} Šematski prikaz.</figcaption>
-    <ol>{c.labels.map((value,i)=><li key={i}>{i===2?"Hipotenuza":"Kateta"} · {value}</li>)}</ol></figure>;
+    <ol>{c.labels.map((value,i)=><li key={i}>{i===2?"Hipotenuza":"Kateta"} · {value}</li>)}</ol>{id==="s8-simB-13"&&<div><svg viewBox="0 0 300 119" role="img" aria-label="Pravougli trougao u osnovi kvadra: katete a = 8 cm i b = ?, hipotenuza d = ?"><path d="M65 95V24L235 95Z" fill="#fff0bd" stroke="#874315" strokeWidth="2"/><path d="M65 87h8v8" fill="none" stroke="#874315"/><g fill="#20364b" fontSize="14"><text x="130" y="112">a = 8 cm</text><text x="12" y="62">b = ?</text><text x="145" y="48">d = ?</text></g></svg><p>Drugi pravougli trougao je u osnovi kvadra; njegova hipotenuza d je kateta prvog trougla.</p></div>}</figure>;
 }

@@ -1,0 +1,39 @@
+{
+  "id": "mnozenje-deljenje",
+  "area": "celi-brojevi",
+  "status": "potpuno recenzirana",
+  "theory": "Jednak prioritet, sleva nadesno, zagrade i nenulti delioci.",
+  "sequence": "Pravilo → poređenje različitih zagrada → nepoznati početni broj.",
+  "examples": [
+    {
+      "question": "Izračunaj −36:6·(−2).",
+      "steps": [
+        "Množenje i deljenje imaju isti prioritet. Prvo −36:6=−6.",
+        "Zatim (−6)·(−2)=12."
+      ],
+      "verification": "12"
+    },
+    {
+      "question": "Uporedi 48:(−6)·2 i 48:((−6)·2).",
+      "steps": [
+        "Prvi izraz: 48:(−6)·2=(−8)·2=−16.",
+        "Drugi izraz: (−6)·2=−12, zatim 48:(−12)=−4.",
+        "−16≠−4; zagrade menjaju redosled i vrednost."
+      ],
+      "verification": "−16 i −4"
+    },
+    {
+      "question": "Odredi x ako je x:(−4)·3=15.",
+      "steps": [
+        "Podeli obe strane sa 3: x:(−4)=5.",
+        "Pomnoži obe strane sa −4: x=−20.",
+        "Provera: (−20):(−4)·3=5·3=15."
+      ],
+      "verification": "−20"
+    }
+  ],
+  "illustration": "Operacijski lanci u zadacima.",
+  "misconceptions": "Množenje nema prednost nad deljenjem; pregrupisavanje može promeniti rezultat.",
+  "assessment": "28 zadataka, 8 osnovnih i 20 srednjih.",
+  "limits": "Delovi godišnjih ishoda u Z; ne potvrđuje Q."
+}

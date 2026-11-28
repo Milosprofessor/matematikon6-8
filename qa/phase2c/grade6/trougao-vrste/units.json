@@ -1,0 +1,26 @@
+[
+  {
+    "id": "o6-tv-3",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "27 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "o6-tv-6",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "12 cm",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ot6-2",
+    "requiredUnit": "cm",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "23 cm",
+    "phase3": "LOG-06"
+  }
+]

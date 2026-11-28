@@ -5,11 +5,12 @@ export const grade6PlanAdditions:Lesson[] = [
     "title": "Skup racionalnih brojeva",
     "intro": "Proširujemo skup celih brojeva pozitivnim i negativnim razlomcima. Prepoznaj različite zapise istog broja i njegov položaj na brojevnoj pravoj.",
     "rules": [
-      "Racionalan broj može se napisati kao a/b, gde su a i b celi brojevi i b≠0.",
-      "Svaki ceo broj je racionalan: n=n/1. Nula je racionalna i može se zapisati kao 0/b za b≠0.",
-      "Skup Q čine pozitivni racionalni brojevi, nula i negativni racionalni brojevi.",
-      "Suprotni brojevi imaju jednaku udaljenost od nule i nalaze se na suprotnim stranama brojevne prave.",
-      "Za položaj razlomka sa pozitivnim imeniocem podeli jedinični segment na toliko jednakih delova koliko pokazuje imenilac."
+      "Racionalan broj je svaki broj koji se može zapisati kao [[frac:a|b]], gde a,b∈Z i b≠0. Imenilac se može izabrati pozitivan.",
+      "Svaki ceo broj n je racionalan: n=[[frac:n|1]]. Nula je racionalna i [[frac:0|b]]=0 za b≠0.",
+      "Skup Q čine pozitivni racionalni brojevi, nula i negativni racionalni brojevi. Nula nije ni pozitivna ni negativna.",
+      "Suprotni nenulti brojevi jednako su udaljeni od nule i leže sa različitih strana nule. Nula je sama sebi suprotan broj.",
+      "Proširujemo razlomak množenjem brojioca i imenioca istim nenultim celim brojem; skraćujemo deljenjem zajedničkim nenultim deliocem. Vrednost se ne menja.",
+      "Za pozitivni imenilac podeli jedinicu na toliko jednakih delova koliko pokazuje imenilac; apsolutna vrednost brojioca daje broj koraka, a predznak smer."
     ],
     "formulas": [
       "Q = {[[frac:a|b]] : a, b ∈ Z, b ≠ 0}",
@@ -17,10 +18,15 @@ export const grade6PlanAdditions:Lesson[] = [
       "n = [[frac:n|1]]",
       "−(−r)=r"
     ],
-    "examples": ["Broj 0 može se zapisati kao [[frac:0|9]], jer je 0:9=0."],
+    "examples": [
+      "Broj 0 može se zapisati kao [[frac:0|9]], jer je 0:9=0."
+    ],
     "solved": {
       "question": "Kako zapisati −2 kao razlomak sa imeniocem 6?",
-      "steps": ["Iz −2=[[frac:x|6]] sledi x=−2·6.", "Dobijamo −2=[[frac:−12|6]]."]
+      "steps": [
+        "−2=[[frac:x|6]]. Pomnožimo obe strane sa 6: −12=x.",
+        "Dakle −2=[[frac:−12|6]]. Provera: −12:6=−2."
+      ]
     },
     "tasks": [
       {
@@ -30,7 +36,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "choice",
         "answer": "[[frac:−4|7]]",
         "hint": "Proveri da li je imenilac različit od nule.",
-        "solution": "Brojevi −4 i 7 su celi, a 7≠0, pa −4/7 pripada Q. Ostali zapisi imaju imenilac 0 i nemaju vrednost.",
+        "solution": "Brojevi −4 i 7 su celi, a 7≠0, pa [[frac:−4|7]] pripada Q. Ostali zapisi imaju imenilac 0 i nemaju vrednost.",
         "level": "basic",
         "skill": "Skup racionalnih brojeva",
         "taskType": "pripadnost-racionalnih",
@@ -50,8 +56,8 @@ export const grade6PlanAdditions:Lesson[] = [
         "math": "−6",
         "kind": "choice",
         "answer": "[[frac:−6|1]]",
-        "hint": "Ceo broj n možeš zapisati kao n/1.",
-        "solution": "−6=−6/1. Razlomak 1/(−6) ima drugu vrednost, a −6/0 nije dozvoljen.",
+        "hint": "Ceo broj n možeš zapisati kao [[frac:n|1]].",
+        "solution": "−6=[[frac:−6|1]]. Razlomak [[frac:1|−6]] ima drugu vrednost, a [[frac:−6|0]] nije dozvoljen.",
         "level": "basic",
         "skill": "Racionalni zapis celog broja",
         "taskType": "ceo-broj-kao-razlomak",
@@ -72,7 +78,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "choice",
         "answer": "[[frac:7|9]]",
         "hint": "Promeni predznak, a veličinu razlomka sačuvaj.",
-        "solution": "Suprotan broj broju −7/9 je 7/9: iste su udaljenosti od nule na različitim stranama.",
+        "solution": "Suprotan broj broju [[frac:−7|9]] je [[frac:7|9]]: iste su udaljenosti od nule na različitim stranama.",
         "level": "basic",
         "skill": "Suprotni racionalni brojevi",
         "taskType": "suprotan-racionalni",
@@ -93,7 +99,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "choice",
         "answer": "−0,65",
         "hint": "Proširi pozitivan razlomak do imenioca 100, pa sačuvaj minus.",
-        "solution": "13/20=65/100=0,65, pa je −13/20=−0,65. Predznak ne menja cifre apsolutne vrednosti.",
+        "solution": "[[frac:13|20]]=[[frac:65|100]]=0,65, pa je [[frac:−13|20]]=−0,65. Predznak ne menja cifre apsolutne vrednosti.",
         "level": "medium",
         "skill": "Razlomak i decimalni zapis",
         "taskType": "decimalni-zapis-racionalnog",
@@ -113,8 +119,8 @@ export const grade6PlanAdditions:Lesson[] = [
         "math": "Svaka jedinica je podeljena na 4 jednaka dela. A je jednu podelu levo od −1.",
         "kind": "choice",
         "answer": "−[[frac:5|4]]",
-        "hint": "Jedna podela predstavlja 1/4; od nule do −1 ima četiri takve podele.",
-        "solution": "A je pet četvrtina levo od nule, pa joj je koordinata −5/4.",
+        "hint": "Jedna podela predstavlja [[frac:1|4]]; od nule do −1 ima četiri takve podele.",
+        "solution": "A je pet četvrtina levo od nule, pa joj je koordinata [[frac:−5|4]].",
         "level": "medium",
         "skill": "Racionalni brojevi na brojnoj pravoj",
         "taskType": "ocitavanje-razlomljene-koordinate",
@@ -130,12 +136,12 @@ export const grade6PlanAdditions:Lesson[] = [
       },
       {
         "id": "o6-rq-6",
-        "prompt": "Koliko članova ovog skupa su celi brojevi?",
+        "prompt": "Koliko elemenata ovog skupa pripada skupu Z?",
         "math": "S = {−4, 0, −[[frac:5|2]], [[frac:3|4]], [[frac:6|3]]}",
         "kind": "input",
         "answer": "3",
         "hint": "Proveri vrednost svakog člana; razlomak može predstavljati ceo broj.",
-        "solution": "Celi brojevi su −4, 0 i 6/3=2. Razlomci −5/2 i 3/4 nisu celi. Ima 3 celobrojna člana.",
+        "solution": "Celi brojevi su −4, 0 i [[frac:6|3]]=2. Razlomci [[frac:−5|2]] i [[frac:3|4]] nisu celi. Ima 3 celobrojna člana.",
         "level": "medium",
         "skill": "Veza skupova Z i Q",
         "taskType": "brojanje-celih-u-racionalnom-skupu",
@@ -151,7 +157,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "choice",
         "answer": "−[[frac:2|3]] < −[[frac:1|3]] < 0 < [[frac:1|6]]",
         "hint": "Negativni brojevi su levo od nule; negativni broj veće apsolutne vrednosti je manji.",
-        "solution": "−2/3 je dalje levo od −1/3. Zatim sledi 0, pa pozitivan broj 1/6.",
+        "solution": "Zajednički imenilac 6 daje −[[frac:4|6]]<−[[frac:2|6]]<0<[[frac:1|6]]. Zato je traženi poredak −[[frac:2|3]]<−[[frac:1|3]]<0<[[frac:1|6]].",
         "level": "medium",
         "skill": "Poredak racionalnih brojeva",
         "taskType": "rastuci-poredak-racionalnih",
@@ -172,7 +178,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "input",
         "answer": "11",
         "hint": "Prevedi obe granice na imenilac 8 i isključi krajeve.",
-        "solution": "Granice su −14/8 i −2/8, pa −14<n<−2. Dozvoljeni su n=−13,−12,…,−3: ukupno 11 celih brojeva.",
+        "solution": "Pomnožimo sve tri strane sa pozitivnim brojem 8; smer nejednakosti ostaje isti: −14<n<−2. Brojevi −13, −12, …, −3 daju 11 mogućnosti.",
         "level": "advanced",
         "skill": "Racionalni brojevi između granica",
         "taskType": "fiksni-imenilac-brojanje",
@@ -187,9 +193,9 @@ export const grade6PlanAdditions:Lesson[] = [
         "math": "−1 < −[[frac:n|6]] < 0",
         "kind": "input",
         "answer": "5",
-        "hint": "Posmatraj šestine između −1 i 0. Broj −1 odgovara −6/6.",
-        "solution": "Između −6/6 i 0 nalaze se −5/6,−4/6,−3/6,−2/6 i −1/6. Najveći dozvoljeni prirodan broj n je 5; n=6 daje isključenu granicu −1.",
-        "level": "advanced",
+        "hint": "Posmatraj šestine između −1 i 0. Broj −1 odgovara [[frac:−6|6]].",
+        "solution": "Množenjem svih strana sa −6 obrćemo oba znaka: 6>n>0, odnosno 0<n<6. Prirodni brojevi su 1, 2, 3, 4, 5; najveći je 5.",
+        "level": "medium",
         "skill": "Racionalni brojevi i nepoznati brojilac",
         "taskType": "nepoznati-brojilac-raspon",
         "errorCategory": "concept",
@@ -205,7 +211,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "answer": "0,2",
         "hint": "Najpre preslikaj položaj A na suprotnu stranu nule, pa prepolovi broj podela od O do B.",
         "solution": "A ima koordinatu −0,4, pa B ima koordinatu 0,4. Duž OB obuhvata četiri desetine; sredina je na drugoj podeli od nule, C(0,2).",
-        "level": "advanced",
+        "level": "medium",
         "skill": "Predstavljanje racionalnih brojeva",
         "taskType": "suprotna-tacka-i-sredina",
         "errorCategory": "concept",
@@ -216,6 +222,29 @@ export const grade6PlanAdditions:Lesson[] = [
         ],
         "prerequisites": [
           "skup-racionalnih-brojeva"
+        ]
+      }
+    ],
+    "worked": [
+      {
+        "question": "Kako zapisati −2 kao razlomak sa imeniocem 6?",
+        "steps": [
+          "−2=[[frac:x|6]]. Pomnožimo obe strane sa 6: −12=x.",
+          "Dakle −2=[[frac:−12|6]]. Provera: −12:6=−2."
+        ]
+      },
+      {
+        "question": "Skrati −[[frac:12|20]], pa ga zapiši decimalno.",
+        "steps": [
+          "Brojilac i imenilac podelimo sa 4: −[[frac:12|20]]=−[[frac:3|5]].",
+          "Proširimo sa 2: −[[frac:3|5]]=−[[frac:6|10]]=−0,6."
+        ]
+      },
+      {
+        "question": "Poređaj −[[frac:2|5]] i −[[frac:3|10]].",
+        "steps": [
+          "−[[frac:2|5]]=−[[frac:4|10]].",
+          "Kako je −4<−3, sledi −[[frac:4|10]]<−[[frac:3|10]], odnosno −[[frac:2|5]]<−[[frac:3|10]]."
         ]
       }
     ]
@@ -229,18 +258,25 @@ export const grade6PlanAdditions:Lesson[] = [
       "Za r≥0 važi |r|=r, a za r<0 važi |r|=−r.",
       "Suprotni racionalni brojevi imaju jednake apsolutne vrednosti.",
       "Za |x|=k i k>0 postoje dve vrednosti: x=−k i x=k. Za k=0 postoji samo x=0; za k<0 nema rešenja.",
-      "Kod dva negativna racionalna broja veći je onaj sa manjom apsolutnom vrednošću."
+      "Kod dva negativna racionalna broja veći je onaj sa manjom apsolutnom vrednošću.",
+      "Rastojanje dve tačke sa koordinatama a i b iznosi |a−b|, bez obzira na redosled tačaka."
     ],
     "formulas": [
       "|r|≥0",
       "|r|=|−r|",
       "Apsolutna vrednost razlomka = apsolutna vrednost brojioca : apsolutna vrednost imenioca (imenilac ≠ 0)",
-      "|0|=0"
+      "|0|=0",
+      "d(A,B)=|a−b|"
     ],
-    "examples": ["|−[[frac:3|8]]|=[[frac:3|8]], jer merimo rastojanje od nule."],
+    "examples": [
+      "|−[[frac:3|8]]|=[[frac:3|8]], jer merimo rastojanje od nule."
+    ],
     "solved": {
       "question": "Koja dva racionalna broja imaju apsolutnu vrednost 1,25?",
-      "steps": ["Obeleži tačke udaljene 1,25 jedinica od nule.", "Jedna je desno na 1,25, a druga levo na −1,25."]
+      "steps": [
+        "|x|=1,25. Pošto je 1,25>0, postoje dva suprotna rešenja: x=−1,25 ili x=1,25.",
+        "Provera: |−1,25|=|1,25|=1,25."
+      ]
     },
     "tasks": [
       {
@@ -266,7 +302,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "choice",
         "answer": "[[frac:5|7]]",
         "hint": "Predznak ne ulazi u dužinu rastojanja. Brojilac i imenilac ne menjaju mesta.",
-        "solution": "|−5/7|=5/7. Dobija se isti razlomak bez negativnog predznaka.",
+        "solution": "|[[frac:−5|7]]|=[[frac:5|7]]. Dobija se isti razlomak bez negativnog predznaka.",
         "level": "basic",
         "skill": "Apsolutna vrednost razlomka",
         "taskType": "apsolutna-vrednost-razlomka",
@@ -307,7 +343,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "choice",
         "answer": ">",
         "hint": "Najpre uzmi apsolutne vrednosti, pa poredi pozitivne razlomke pomoću imenioca 24.",
-        "solution": "Apsolutne vrednosti su 7/12=14/24 i 3/8=9/24. Pošto je 14/24>9/24, traženi znak je >.",
+        "solution": "Apsolutne vrednosti su [[frac:7|12]]=[[frac:14|24]] i [[frac:3|8]]=[[frac:9|24]]. Pošto je [[frac:14|24]]>[[frac:9|24]], traženi znak je >.",
         "level": "medium",
         "skill": "Poređenje apsolutnih vrednosti",
         "taskType": "poredjenje-apsolutnih-racionalnih",
@@ -328,7 +364,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "choice",
         "answer": "−[[frac:2|5]]",
         "hint": "Jednakost daje dva suprotna broja. Uslov x<0 zadržava negativni.",
-        "solution": "|x|=2/5 daje x=−2/5 ili x=2/5. Pošto je x<0, jedino rešenje je x=−2/5.",
+        "solution": "|x|=[[frac:2|5]] daje x=[[frac:−2|5]] ili x=[[frac:2|5]]. Pošto je x<0, jedino rešenje je x=[[frac:−2|5]].",
         "level": "medium",
         "skill": "Apsolutna vrednost i predznak",
         "taskType": "apsolutna-racionalnog-sa-uslovom",
@@ -349,7 +385,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "choice",
         "answer": "x=−[[frac:3|10]] ili x=[[frac:3|10]]",
         "hint": "Dve tačke nalaze se na pozitivnom zadatom rastojanju od nule.",
-        "solution": "Oba broja, −3/10 i 3/10, imaju apsolutnu vrednost 3/10. Drugih rešenja nema.",
+        "solution": "Oba broja, [[frac:−3|10]] i [[frac:3|10]], imaju apsolutnu vrednost [[frac:3|10]]. Drugih rešenja nema.",
         "level": "medium",
         "skill": "Rešenja apsolutne vrednosti",
         "taskType": "oba-racionalna-resenja",
@@ -386,12 +422,12 @@ export const grade6PlanAdditions:Lesson[] = [
       },
       {
         "id": "o6-ra-8",
-        "prompt": "Odredi sva rešenja oblika x=n/4, gde je n ceo broj.",
+        "prompt": "Odredi sva rešenja oblika x=[[frac:n|4]], gde je n ceo broj.",
         "math": "[[frac:1|2]]<|x|<1",
         "kind": "choice",
         "answer": "x=−[[frac:3|4]] ili x=[[frac:3|4]]",
-        "hint": "Između 2/4 i 4/4 strogo leži samo jedna pozitivna četvrtina. Dodaj i njenu suprotnu vrednost.",
-        "solution": "Uslov glasi 2/4<|x|<4/4. Za traženi oblik jedino je |x|=3/4, pa su rešenja x=−3/4 i x=3/4. Granice ±1/2 i ±1 nisu uključene.",
+        "hint": "Između [[frac:2|4]] i [[frac:4|4]] strogo leži samo jedna pozitivna četvrtina. Dodaj i njenu suprotnu vrednost.",
+        "solution": "Množenjem sa 4 dobijamo 2<|n|<4. Jedina celobrojna apsolutna vrednost je 3, pa n=−3 ili n=3. Rešenja su x=−[[frac:3|4]] ili x=[[frac:3|4]].",
         "level": "advanced",
         "skill": "Apsolutna vrednost u rasponu",
         "taskType": "apsolutna-raspon-fiksni-imenilac",
@@ -412,8 +448,8 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "choice",
         "answer": "[[frac:1|2]]",
         "hint": "Obe tačke su levo od nule. Oduzmi manje rastojanje od nule od većeg.",
-        "solution": "Rastojanja od nule su 7/8 i 3/8. Rastojanje između tačaka je 7/8−3/8=4/8=1/2.",
-        "level": "advanced",
+        "solution": "d(A,B)=|−[[frac:7|8]]−(−[[frac:3|8]])|=|−[[frac:4|8]]|=[[frac:1|2]].",
+        "level": "medium",
         "skill": "Rastojanje racionalnih tačaka",
         "taskType": "rastojanje-negativnih-razlomaka",
         "errorCategory": "sign",
@@ -433,7 +469,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "choice",
         "answer": "−[[frac:3|4]]",
         "hint": "Najpre izdvoji brojeve dovoljno velike apsolutne vrednosti. Zatim poredi same brojeve, uz njihove predznake.",
-        "solution": "Uslov ispunjavaju −5/6 i −3/4, jer su 5/6 i 3/4 veći od 2/3. Među ta dva negativna broja veći je −3/4, pošto je 3/4<5/6.",
+        "solution": "Prevedimo na imenilac 60. Apsolutne vrednosti su [[frac:50|60]], [[frac:45|60]], [[frac:30|60]] i [[frac:36|60]], a granica je [[frac:40|60]]. Uslov ispunjavaju samo −[[frac:5|6]] i −[[frac:3|4]]. Kako je −50<−45, najveći je −[[frac:3|4]].",
         "level": "advanced",
         "skill": "Apsolutna vrednost i poredak",
         "taskType": "filtriranje-pa-poredak",
@@ -445,6 +481,29 @@ export const grade6PlanAdditions:Lesson[] = [
         ],
         "prerequisites": [
           "apsolutna-vrednost-racionalnog"
+        ]
+      }
+    ],
+    "worked": [
+      {
+        "question": "Koja dva racionalna broja imaju apsolutnu vrednost 1,25?",
+        "steps": [
+          "|x|=1,25. Pošto je 1,25>0, postoje dva suprotna rešenja: x=−1,25 ili x=1,25.",
+          "Provera: |−1,25|=|1,25|=1,25."
+        ]
+      },
+      {
+        "question": "Reši |x|=0 i |x|=−0,2.",
+        "steps": [
+          "Jedino je nula na rastojanju nula od nule: x=0.",
+          "Rastojanje ne može biti negativno, zato druga jednačina nema rešenja."
+        ]
+      },
+      {
+        "question": "Odredi rastojanje A(−[[frac:5|6]]) i B(−[[frac:1|3]]).",
+        "steps": [
+          "d(A,B)=|−[[frac:5|6]]−(−[[frac:1|3]])|.",
+          "d(A,B)=|−[[frac:5|6]]+[[frac:2|6]]|=|−[[frac:3|6]]|=[[frac:1|2]]."
         ]
       }
     ]
@@ -470,6 +529,11 @@ export const grade6PlanAdditions:Lesson[] = [
       "question": "Transverzala seče dve paralelne prave. Jedan unutrašnji ugao je 68°. Koliki je unutrašnji ugao sa iste strane?",
       "steps": ["Zbir ova dva ugla je 180°.", "Drugi ugao je 180°−68°=112°."]
     },
+    "worked": [
+      {"question":"Transverzala seče dve paralelne prave. Jedan unutrašnji ugao je 68°. Koliki je unutrašnji ugao sa iste strane?","steps":["Pošto je p∥q, α+β=180°.","68°+β=180°.","β=180°−68°=112°."]},
+      {"question":"Dva naizmenična unutrašnja ugla paralelnih pravih su (x+20)° i (3x−30)°. Odredi x.","steps":["Pošto je p∥q, x+20=3x−30.","50=2x, x=25.","Oba ugla imaju 45°."]},
+      {"question":"Dva unutrašnja ugla paralelnih pravih sa iste strane transverzale razlikuju se za 8°. Odredi ih.","steps":["Neka je manji ugao x°, veći (x+8)°.","x+x+8=180.","2x=172, x=86.","Uglovi su 86° i 94°; zbir je 180°."]}
+    ],
     "tasks": [
       {
         "id": "o6-utn-1",
@@ -642,7 +706,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "input",
         "answer": "95",
         "hint": "Prenesi ugao od 37° preko paralelnih pravih na teme B, pa primeni zbir uglova trougla.",
-        "solution": "Ugao između PB i poluprave p nadesno jednak je naizmeničnom unutrašnjem uglu PBA, pa ∠PBA=37°. Zatim ∠APB=180°−48°−37°=95°.",
+        "solution": "Pošto je p∥q, ugao između PB i poluprave p nadesno jednak je naizmeničnom unutrašnjem uglu PBA, pa ∠PBA=37°. U trouglu APB: ∠PAB+∠PBA+∠APB=180°. Zato ∠APB=180°−48°−37°=95°.",
         "level": "advanced",
         "skill": "Transverzala i uglovi trougla",
         "taskType": "transverzala-u-trouglu",

@@ -1,0 +1,189 @@
+[
+  {
+    "id": "s6-sinteza-1",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "answer": "11",
+    "hint": "Krajnja kota minus početna.",
+    "procedure": "−7−(−18)=11 m.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-sinteza-2",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "answer": "70",
+    "hint": "Zbir mera tri unutrašnja ugla trougla je 180°.",
+    "procedure": "180−45−65=70°.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-sinteza-3",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "answer": "5",
+    "hint": "Poluobim je zbir susednih stranica.",
+    "procedure": "18:2−4=5 cm.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-sinteza-4",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "answer": "750",
+    "hint": "Litar ima 1000 ml.",
+    "procedure": "1000:4·3=750 ml.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-sinteza-5",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "answer": "-3",
+    "hint": "Udvostruči dati rezultat.",
+    "procedure": "Proizvod je −24. Drugi činilac je −24:8=−3.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-sinteza-6",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "answer": "3",
+    "hint": "Stvarnu dužinu prvo dobijaš u cm.",
+    "procedure": "6·50000=300000 cm=3 km.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-sinteza-7",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "answer": "30",
+    "hint": "Prvo površina, zatim deo.",
+    "procedure": "P=(8+12)·4:2=40 m². Tri četvrtine su 30 m².",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-sinteza-8",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "answer": "3",
+    "hint": "Sačuvaj ukupan rad.",
+    "procedure": "3·5=15 radnih dana jedne osobe. Pet radnika radi 15:5=3 dana.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-sinteza-9",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "answer": "6",
+    "hint": "Obim izrazi pomoću kraka.",
+    "procedure": "Ako je krak x, onda 3x−3=24 daje x=9. Osnovica je 9−3=6 cm.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-sinteza-10",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "answer": "720",
+    "hint": "Smanji svaku dimenziju za dve širine staze.",
+    "procedure": "Gredica ima 4 m sa 3 m. Trošak je 12·60=720 dinara.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-sinteza-11",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "answer": "-4",
+    "hint": "Saberi pomeraje sa početnim nivoom.",
+    "procedure": "−2+3−5=−4.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-sinteza-15",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "answer": "30",
+    "hint": "Razlika odgovara jednom delu.",
+    "procedure": "Jedan deo je 6. Ukupno pet delova ima 30 učenika.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-zavrsnica-primena",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "answer": "15",
+    "hint": "Prvo odredi stvarni put.",
+    "procedure": "Trasa ima 100000 cm=1 km. To je četvrtina od 4 km, pa hod traje 60:4=15 minuta.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-sinteza-16",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "answer": "6",
+    "hint": "Proveri dva susedna cela broja.",
+    "procedure": "Pet paketa pokriva 8 m², šest pokriva 9,6 m². Zato je šest dovoljno.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-sinteza-12",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "answer": "3",
+    "hint": "Nađi aritmetičku sredinu.",
+    "procedure": "(−4+10):2=3.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-sinteza-13",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "answer": "2000",
+    "hint": "Plaćeno je 85% početne cene.",
+    "procedure": "1700:0,85=2000 dinara.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-sinteza-14",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-sinteza",
+    "answer": "Nema dovoljno podataka",
+    "hint": "Pomeraj vrh paralelno osnovici.",
+    "procedure": "Osnovica i visina određuju površinu. Ostale dve stranice mogu menjati dužinu pa i obim.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  }
+]

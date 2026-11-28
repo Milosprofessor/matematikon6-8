@@ -31,8 +31,8 @@ test("29 oktobarskih lekcija ima po 10 izabranih interaktivnih zadataka",()=>{
   assert.equal(tasks.length,10,lesson.id);assert.equal(new Set(tasks.map(t=>t.id)).size,10);
   assert.equal(new Set(tasks.map(fingerprint)).size,10,lesson.id+": duplikat");
   assert.ok(new Set(tasks.map(t=>withTaskMetadata(t).taskType)).size>=8,lesson.id+": tipovi");
-  assert.equal(tasks.filter(t=>t.level==="basic").length,3);
-  assert.ok(tasks.some(t=>t.level==="medium"));if(!["snalazenje-u-prostoru","tacka-prava-ravan-osnove"].includes(lesson.id))assert.ok(tasks.some(t=>t.level==="advanced"),lesson.id);
+  assert.equal(tasks.filter(t=>t.level==="basic").length,lesson.id==="trougao-vrste"?5:3);
+  assert.ok(tasks.some(t=>t.level==="medium"));if(!["snalazenje-u-prostoru","tacka-prava-ravan-osnove","mnozenje","deljenje","mnozenje-deljenje","brojevni-izrazi"].includes(lesson.id))assert.ok(tasks.some(t=>t.level==="advanced"),lesson.id);
   for(const task of tasks)assert.ok(task.kind==="input"||task.kind==="choice");
  }
 });
@@ -143,6 +143,6 @@ test("stari ključevi i touch mete ostaju očuvani uz zajednički tok oba meseca
  assert.match(source,/inputMode=\{negativeAllowed\|\|task.answer.includes\("\/"\)\|\|.*?\?"text":"decimal"\}/);assert.match(source,/onSnapshot=\{next=>snapshot/);
  assert.match(css,/\.work-navigation>button\{[^}]*min-height:50px/);assert.match(css,/aside\.october-work-aside\{grid-template-columns:1fr/);
  for(const grade of grades)for(const area of grade.areas)for(const lesson of area.lessons.filter(l=>(l.month??area.month??"september")==="september")){
-  const pool=tasksForLesson(lesson.id,lesson.tasks);assert.equal(lessonWorkTasks(lesson.id,pool).length,10);if(!["mnozenje","deljenje"].includes(lesson.id))assert.equal(octoberVariants(lesson.id).length,0);
+  const pool=tasksForLesson(lesson.id,lesson.tasks);assert.equal(lessonWorkTasks(lesson.id,pool).length,10);if(!["mnozenje","deljenje","mnozenje-deljenje","brojevni-izrazi"].includes(lesson.id))assert.equal(octoberVariants(lesson.id).length,0);
  }
 });

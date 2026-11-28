@@ -52,7 +52,7 @@ export default unit({
   ["Cev unutrašnjeg poluprečnika 3 dm duga je 2 dm. Koliko litara stane, tačno?","18π","Za zapreminu koristi unutrašnje mere.","V=πr²H=9π·2=18π dm³=18π l."],
   ["Osni presek je kvadrat površine 100 cm². Visina valjka u cm?","10","Visina je stranica kvadrata.","H²=100 i H=10 cm."],
   ["Omotač iznosi 60π cm², H=6 cm. Poluprečnik u cm?","5","Izrazi nepoznatu iz M=2πrH.","60π=12πr. Posle deljenja sa 12π sledi r=5 cm."],
-  ["Dijagonala osnog preseka je 17 cm, a visina 15 cm. Koliki je poluprečnik u cm?","4","Traži prečnik kao katetu.","a²+b²=c². d²+225=289, d²=64 i d=8 cm. Poluprečnik je 4 cm."],
+  ["Dijagonala osnog preseka je 17 cm, a visina 15 cm. Koliki je poluprečnik u cm?","4","Traži prečnik kao katetu.","Katete osnog preseka su prečnik d i visina H, hipotenuza je dijagonala D. d²+H²=D²; d²+15²=17²; d²+225=289; d²=289−225=64. Kako je d>0, d=8 cm. Poluprečnik r=d:2=4 cm."],
   ["Otvorena cilindrična posuda sa jednim dnom ima r=4 cm i H=6 cm. Potrebna površina lima bez otpada u cm², tačno?","64π","Računaj jednu osnovu i ceo omotač.","B+M=16π+2π·4·6=64π cm²."],
   ["Koliko krugova ima mreža zatvorenog valjka?","2","Pogledaj vrh i dno.","Obe osnove su podudarni krugovi."],
   ["Zapremina je 75π cm³ i r=5 cm. Visina u cm?","3","Podeli zapreminu površinom osnove.","V=B·H, a B=25π cm². Zato H=3 cm."],

@@ -1,0 +1,189 @@
+[
+  {
+    "id": "s6-paralelogram-1",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "answer": "2",
+    "hint": "Pronađi oba para naspramnih stranica.",
+    "procedure": "AB∥CD i BC∥DA daju dva para.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-paralelogram-2",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "answer": "18",
+    "hint": "Sve stranice su jednake.",
+    "procedure": "O=4a=4·4,5=18 cm.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-paralelogram-3",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "answer": "Da",
+    "hint": "Proveri sve uglove.",
+    "procedure": "Kvadrat ima četiri prava ugla, što ispunjava svojstvo pravougaonika.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-paralelogram-4",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "answer": "6",
+    "hint": "Presek dijagonala je sredina.",
+    "procedure": "AC=2·3=6 cm.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-paralelogram-5",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "answer": "27",
+    "hint": "Ponovi svaki par stranica.",
+    "procedure": "O=2(a+b)=2·13,5=27 cm.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-paralelogram-6",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "answer": "63",
+    "hint": "Susedni uglovi dopunjuju se do opruženog.",
+    "procedure": "180°−117°=63°.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-paralelogram-7",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "answer": "Sve stranice jednake",
+    "hint": "Presek dijagonala ih polovi.",
+    "procedure": "Četiri pravougla trougla kod preseka imaju odgovarajuće jednake katete. Njihove hipotenuze su stranice romba.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-paralelogram-8",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "answer": "53",
+    "hint": "Uoči osu simetrije kroz to teme.",
+    "procedure": "106°:2=53°.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-paralelogram-9",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "answer": "7",
+    "hint": "Prvo nađi zbir dve susedne stranice.",
+    "procedure": "a+b=17. Ako je b=a+3, onda 2a+3=17 i a=7.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-paralelogram-10",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "answer": "Kvadrat",
+    "hint": "Iskoristi svako od tri svojstva.",
+    "procedure": "Polovljenje daje paralelogram, jednakost pravougaonik, a normalnost romb. Istovremeno je kvadrat.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-paralelogram-11",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "answer": "8",
+    "hint": "Izračunaj AC pa ga uporedi sa BD.",
+    "procedure": "AC=2·4=8 cm. Jednaka dijagonala BD ima 8 cm.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-paralelogram-15",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "answer": "26",
+    "hint": "Saberi četiri polovine.",
+    "procedure": "5+5+8+8=26 cm.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-paralelogram-16",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "answer": "45",
+    "hint": "Susedni uglovi daju 180°.",
+    "procedure": "x+3x=180° daje x=45°.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-paralelogram-12",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "answer": "Dijagonale se uzajamno polove",
+    "hint": "Potrebno je da obe dijagonale dele jedna drugu.",
+    "procedure": "Kad dele jedna drugu napola, parovi podudarnih trouglova daju paralelne naspramne stranice.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-paralelogram-13",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "answer": "14",
+    "hint": "Poluobim je zbir susednih stranica.",
+    "procedure": "b=46:2−9=14 cm.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-paralelogram-14",
+    "area": "s6-cetvorouglovi",
+    "lesson": "s6-paralelogram",
+    "answer": "106",
+    "hint": "Vrati ceo ugao A.",
+    "procedure": "A=74°, pa je B=180°−74°=106°.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-polugodiste-3",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-paralelogram",
+    "answer": "9",
+    "hint": "Najpre nađi BD.",
+    "procedure": "BD=AC=18 cm, a S je sredina. DS=9 cm.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  }
+]

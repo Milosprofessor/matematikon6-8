@@ -1,0 +1,102 @@
+[
+  {
+    "width": 1366,
+    "route": "kratko-obnavljanje-7",
+    "kind": "lesson",
+    "title": "Kratko obnavljanje"
+  },
+  {
+    "width": 1366,
+    "route": "s8-prizma",
+    "kind": "lesson",
+    "title": "Dijagonale, preseci i osnove pravih prizmi"
+  },
+  {
+    "width": 1366,
+    "route": "s8-piramida",
+    "kind": "lesson",
+    "title": "Visine, mreža i površina piramide"
+  },
+  {
+    "width": 1366,
+    "route": "s8-valjak",
+    "kind": "lesson",
+    "title": "Valjak od rotacije do mreže i zapremine"
+  },
+  {
+    "width": 1366,
+    "route": "s8-kupa",
+    "kind": "lesson",
+    "title": "Kupa, izvodnica i kružni isečak"
+  },
+  {
+    "width": 1366,
+    "route": "s8-lopta",
+    "kind": "lesson",
+    "title": "Lopta, sfera i ravni preseci"
+  },
+  {
+    "width": 1366,
+    "route": "s8-simA",
+    "kind": "exam",
+    "task": "s8-simA-13",
+    "result": "1/1"
+  },
+  {
+    "width": 1366,
+    "route": "s8-simB",
+    "kind": "exam",
+    "task": "s8-simB-13",
+    "result": "1/1"
+  },
+  {
+    "width": 360,
+    "route": "kratko-obnavljanje-7",
+    "kind": "lesson",
+    "title": "Kratko obnavljanje"
+  },
+  {
+    "width": 360,
+    "route": "s8-prizma",
+    "kind": "lesson",
+    "title": "Dijagonale, preseci i osnove pravih prizmi"
+  },
+  {
+    "width": 360,
+    "route": "s8-piramida",
+    "kind": "lesson",
+    "title": "Visine, mreža i površina piramide"
+  },
+  {
+    "width": 360,
+    "route": "s8-valjak",
+    "kind": "lesson",
+    "title": "Valjak od rotacije do mreže i zapremine"
+  },
+  {
+    "width": 360,
+    "route": "s8-kupa",
+    "kind": "lesson",
+    "title": "Kupa, izvodnica i kružni isečak"
+  },
+  {
+    "width": 360,
+    "route": "s8-lopta",
+    "kind": "lesson",
+    "title": "Lopta, sfera i ravni preseci"
+  },
+  {
+    "width": 360,
+    "route": "s8-simA",
+    "kind": "exam",
+    "task": "s8-simA-13",
+    "result": "1/1"
+  },
+  {
+    "width": 360,
+    "route": "s8-simB",
+    "kind": "exam",
+    "task": "s8-simB-13",
+    "result": "1/1"
+  }
+]

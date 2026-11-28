@@ -1,0 +1,122 @@
+[
+  {
+    "id": "o6-zu-1",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "60°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "o6-zu-6",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "30°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-angles-bisect-0",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "62°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-angles-bisect-1",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "59°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-angles-bisect-2",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "56°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-angles-bisect-3",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "53°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-angles-bisect-4",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "50°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-angles-bisect-5",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "47°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-angles-difference-0",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "110°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-angles-difference-1",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "106°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-angles-difference-2",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "102°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-angles-difference-3",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "98°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-angles-difference-4",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "94°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ow-angles-difference-5",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "90°",
+    "phase3": "LOG-06"
+  },
+  {
+    "id": "ot6-3",
+    "requiredUnit": "°",
+    "numericAccepted": true,
+    "unitAccepted": false,
+    "example": "55°",
+    "phase3": "LOG-06"
+  }
+]

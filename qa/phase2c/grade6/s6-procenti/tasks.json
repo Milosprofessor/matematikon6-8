@@ -1,0 +1,222 @@
+[
+  {
+    "id": "s6-procenti-1",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "answer": "6,5",
+    "hint": "Podeli na sto jednakih delova.",
+    "procedure": "650:100=6,5 dinara.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-procenti-2",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "answer": "0,35",
+    "hint": "Jedan procenat je jedan stoti deo celine.",
+    "procedure": "35:100=0,35.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-procenti-3",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "answer": "9",
+    "hint": "Četvrtina je 25%.",
+    "procedure": "36:4=9.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-procenti-4",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "answer": "Redovna cena",
+    "hint": "Od čega se računa popust?",
+    "procedure": "Procenat se primenjuje na cenu pre sniženja.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-procenti-5",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "answer": "2200",
+    "hint": "Prvo odredi popust.",
+    "procedure": "2500·0,12=300. Plaća se 2500−300=2200.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-procenti-6",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "answer": "16",
+    "hint": "Svedi na sto polja.",
+    "procedure": "[[frac:4|25]]=[[frac:16|100]], dakle 16%.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-procenti-7",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "answer": "30",
+    "hint": "Pomnoži nepoznatu osnovicu sa 0,60.",
+    "procedure": "0,6x=18 daje x=30.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-procenti-8",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "answer": "15",
+    "hint": "Promenu poredi sa starom cenom.",
+    "procedure": "Razlika je 120. Odnos 120:800=0,15 daje 15%.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-procenti-9",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "answer": "960",
+    "hint": "Drugi procenat odredi od povećane cene.",
+    "procedure": "Posle rasta cena je 1200, a popust je 240. Ostaje 960 dinara.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-procenti-10",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "answer": "1200",
+    "hint": "Vrati promene obrnutim redom.",
+    "procedure": "Pre poslednjeg popusta bilo je 900. Tih 900 dinara predstavlja 75% prvobitne cene, pa je ona 900:0,75=1200 dinara.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-procenti-11",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "answer": "25",
+    "hint": "Nađi ostatak glasova.",
+    "procedure": "Ostaju 4 od 16, odnosno četvrtina, 25%.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-odnosi-primena",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "answer": "400",
+    "hint": "Izdvoj jednu kartu, zatim vrati osnovicu.",
+    "procedure": "960:3=320. To je 0,8 redovne cene, pa je puna cena 320:0,8=400 dinara.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-procenti-15",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "answer": "20",
+    "hint": "Uporedi uštedu sa početnom cenom.",
+    "procedure": "300:1500=0,20 daje 20%.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-procenti-16",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "answer": "6",
+    "hint": "Nađi preostali procenat.",
+    "procedure": "Pogrešnih je 15%. Zato je 0,15·40=6.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-procenti-12",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "answer": "30",
+    "hint": "Zapiši procenat decimalno.",
+    "procedure": "400·0,075=30 dinara.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-procenti-13",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "answer": "1800",
+    "hint": "Nova cena odgovara 110% stare.",
+    "procedure": "1980:1,10=1800 dinara.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-procenti-14",
+    "area": "s6-odnosi",
+    "lesson": "s6-procenti",
+    "answer": "84",
+    "hint": "Poredi broj proklijalih i posejanih.",
+    "procedure": "42:50=0,84 daje 84%.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-polugodiste-7",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-procenti",
+    "answer": "160",
+    "hint": "Prvo vrati početnu cenu.",
+    "procedure": "640:0,8=800. Razlika je 800−640=160 dinara.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-godisnja-7",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-procenti",
+    "answer": "12",
+    "hint": "Izdvoj grupu na koju se procenat odnosi.",
+    "procedure": "Šestaša je 64:4=16. Tri četvrtine od 16 su 12.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-izazov-4",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-procenti",
+    "answer": "800",
+    "hint": "Računaj unazad od poslednje promene.",
+    "procedure": "Pre sniženja bilo je 900:0,9=1000 dinara. Pre rasta bilo je 1000:1,25=800.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  }
+]

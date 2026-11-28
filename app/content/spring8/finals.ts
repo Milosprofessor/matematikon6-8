@@ -10,8 +10,8 @@ const polugodiste: Entry[] = [
   ["s8-znak","medium","Nula y=7−0,5x je koji broj?","14","Traži y=0.","0,5x=7 i x=14."],
   ["s8-sistemi","medium","Reši 2x+y=14 i x−y=1. Upiši par.","(5;4)","Saberi uslove.","3x=15, x=5 i y=4. Obe leve strane daju 14 i 1."],
   ["s8-valjak","medium","Valjak r=3 cm i H=7 cm ima ukupnu površinu u cm², tačno?","60π","Saberi omotač i dve osnove.","P=2πr²+2πrH=18π+42π=60π cm²."],
-  ["s8-kupa","advanced","Kupa ima r=8 cm i s=17 cm. Zapremina u cm³, tačno?","320π","Odredi H iz osnog trougla.","a²+b²=c². 64+H²=289 daje H²=225, H=15 cm. V=64π·15:3=320π cm³."],
-  ["s8-lopta","advanced","Ravan preseca loptu po krugu površine 25π cm². R=13 cm. Udaljenost ravni u cm?","12","Spoji centar lopte i tačku na obodu preseka.","a²+b²=c². Katete su 5 i d. Iz 25+d²=169 sledi d²=144 i d=12 cm."]
+  ["s8-kupa","advanced","Kupa ima r=8 cm i s=17 cm. Zapremina u cm³, tačno?","320π","Odredi H iz osnog trougla.","Katete polovine osnog preseka su r i H, hipotenuza s. r²+H²=s²; 8²+H²=17²; 64+H²=289; H²=289−64=225. Kako je H>0, H=15 cm. V=πr²H:3=64π·15:3=320π cm³."],
+  ["s8-lopta","advanced","Ravan preseca loptu po krugu površine 25π cm². R=13 cm. Udaljenost ravni u cm?","12","Spoji centar lopte i tačku na obodu preseka.","P=πρ²=25π cm², pa je ρ²=25 i ρ=5 cm jer je poluprečnik pozitivan. Katete su ρ i d, hipotenuza R. ρ²+d²=R²; 5²+d²=13²; 25+d²=169; d²=169−25=144. Rastojanje nije negativno, pa je d=12 cm."]
 ];
 
 const godisnja: Entry[] = [

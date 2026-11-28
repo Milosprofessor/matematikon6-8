@@ -1,0 +1,46 @@
+[
+  {
+    "width": 1366,
+    "ids": [
+      "s6-koordinate-15",
+      "s6-odnosi-primena",
+      "s6-koordinate-16",
+      "s6-preslikavanja-15",
+      "s6-preslikavanja-16",
+      "s6-podaci-15",
+      "s6-podaci-16",
+      "s6-razmera-15",
+      "s6-razmera-16",
+      "s6-zavisnost-15",
+      "s6-zavisnost-16",
+      "s6-procenti-15",
+      "s6-procenti-16"
+    ],
+    "score": "13/13",
+    "progress_preserved": true,
+    "best_after_reload": true,
+    "status": "pass"
+  },
+  {
+    "width": 390,
+    "ids": [
+      "s6-koordinate-15",
+      "s6-odnosi-primena",
+      "s6-koordinate-16",
+      "s6-preslikavanja-15",
+      "s6-preslikavanja-16",
+      "s6-podaci-15",
+      "s6-podaci-16",
+      "s6-razmera-15",
+      "s6-razmera-16",
+      "s6-zavisnost-15",
+      "s6-zavisnost-16",
+      "s6-procenti-15",
+      "s6-procenti-16"
+    ],
+    "score": "13/13",
+    "progress_preserved": true,
+    "best_after_reload": true,
+    "status": "pass"
+  }
+]

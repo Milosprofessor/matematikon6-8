@@ -1,0 +1,33 @@
+{
+  "id": "s6-cetiri-stranice",
+  "area": "s6-cetvorouglovi",
+  "sequence": "Pomoćni trougao, veza sa paralelogramom, stroge granice i dodir kružnica.",
+  "examples": [
+    {
+      "question": "Konstruiši trapez sa osnovicama 9 i 5 cm i kracima AD=3 cm, BC=4 cm.",
+      "steps": [
+        "Nacrtaj AB=9 i na njoj AE=4 cm. Opiši luk iz A poluprečnika 3 cm i iz E poluprečnika 4 cm. Njihov presek iznad osnovice označi D.",
+        "Iz D prenesi 5 cm paralelno i u smeru AB do C. Četvorougao EBCD je paralelogram: EB=DC=5 cm i EB∥DC. Zato je BC=ED=4 cm."
+      ],
+      "verification": "AE=4 cm; trougao stranica 3,4,4 postoji i BC=ED."
+    },
+    {
+      "question": "Konstruiši romb ako su njegove dijagonale 8 i 6 cm.",
+      "steps": [
+        "Nacrtaj AC=8 cm i konstruiši njenu simetralu. Iz sredine S na toj pravoj odmeri SB=SD=3 cm na suprotnim stranama.",
+        "Spoji A, B, C, D. Dijagonale se polove, pa je figura paralelogram. Normalne dijagonale garantuju da je romb."
+      ],
+      "verification": "Normalne polovine dijagonala 4 i 3 daju stranicu 5 cm."
+    },
+    {
+      "question": "Konstruiši deltoid ABCD ako je AC=7 cm, AB=AD=4 cm i CB=CD=5 cm.",
+      "steps": [
+        "Nacrtaj AC, zatim opiši kružnice sa centrima A i C, poluprečnika 4 i 5 cm. Uslov 1<7<9 daje dva preseka.",
+        "Označi preseke B i D i spoji redom A, B, C i D. Jednakosti stranica slede iz jednakosti poluprečnika istih kružnica."
+      ],
+      "verification": "1 < 7 < 9 daje dva različita preseka."
+    }
+  ],
+  "assessment": "16 zadataka; 10 u redovnom toku.",
+  "status": "potpuno recenzirana"
+}

@@ -55,40 +55,40 @@ const comparisons=["<",">","="];
 // multiplication and division are deliberately absent from September additions.
 register("kratko-obnavljanje-5",[
  v=>N("r5-decimal",v,"Napiši decimalno.",f(v+2,10),(v+2)/10,"Deseti deo zapisujemo jednom decimalom.",`${f(v+2,10)}=${num((v+2)/10)}.`,"basic","Razlomci"),
- v=>Q("r5-order",v,"Poređaj od najmanjeg.",`${301+v}, ${310+v}, ${130+v}`,[`${130+v}, ${301+v}, ${310+v}`,`${301+v}, ${130+v}, ${310+v}`,`${310+v}, ${301+v}, ${130+v}`],`${130+v}, ${301+v}, ${310+v}`,"Uporedi stotine, pa desetice.",`${130+v}<${301+v}<${310+v}.`,"medium","Prirodni brojevi"),
- v=>N("r5-angle",v,"Odredi drugi ugao.",`Dva ugla čine opružen ugao. Prvi je ${40+5*v}°.`,140-5*v,"Opružen ugao ima 180°.",`180°−${40+5*v}°=${140-5*v}°.`,"medium","Osnovni pojmovi geometrije"),
- v=>Q("r5-compare",v,"Uporedi.",`${f(v+2,v+5)} __ ${f(v+3,v+5)}`,comparisons,"<","Imenioci su jednaki.","Veći brojilac daje veći razlomak.","medium","Poredak razlomaka"),
- v=>Q("r5-fractionmissing",v,"Dopuni.",`${f(1,v+4)}+x=${f(3,v+4)}`,[f(2,v+4),f(4,v+4),f(2,2*(v+4))],f(2,v+4),"Zadrži imenilac.",`1+2=3, pa je x=${f(2,v+4)}.`,"advanced","Razlomci"),
- v=>N("r5-expression",v,"Izračunaj.",`${4*(v+3)+10}−4·${v+3}+6`,16,"Množenje ima prednost.",`${4*(v+3)+10}−${4*(v+3)}+6=16.`,"advanced","Redosled operacija"),
- v=>N("r5-rectangle",v,"Odredi drugu stranicu pravougaonika.",`O=${4*(v+4)+6} cm, a=${v+4} cm`,v+7,"Polovina obima je zbir dve susedne stranice.",`b=${2*(v+4)+3}−${v+4}=${v+7} cm.`,"advanced","Osnovni pojmovi geometrije")
+ v=>Q("r5-order",v,"Poređaj od najmanjeg.",`${301+v}, ${310+v}, ${130+v}`,[`${130+v}, ${301+v}, ${310+v}`,`${301+v}, ${130+v}, ${310+v}`,`${310+v}, ${301+v}, ${130+v}`],`${130+v}, ${301+v}, ${310+v}`,"Uporedi stotine, pa desetice.",`${130+v}<${301+v}<${310+v}.`,"basic","Prirodni brojevi"),
+ v=>N("r5-angle",v,"Odredi drugi ugao u stepenima.",`Dva ugla čine opružen ugao. Prvi je ${40+5*v}°.`,140-5*v,"Opružen ugao ima 180°.",`α+β=180°. ${40+5*v}°+β=180°. β=180°−${40+5*v}°=${140-5*v}°.`,"basic","Osnovni pojmovi geometrije"),
+ v=>Q("r5-compare",v,"Uporedi.",`${f(v+2,v+5)} __ ${f(v+3,v+5)}`,comparisons,"<","Imenioci su jednaki.",`Pošto je ${v+2}<${v+3}, važi ${f(v+2,v+5)}<${f(v+3,v+5)}.`,"basic","Poredak razlomaka"),
+ v=>Q("r5-fractionmissing",v,"Dopuni.",`${f(1,v+4)}+x=${f(3,v+4)}`,[f(2,v+4),f(4,v+4),f(2,2*(v+4))],f(2,v+4),"Nepoznati sabirak dobijaš oduzimanjem poznatog sabirka od zbira.",`x=${f(3,v+4)}−${f(1,v+4)}=${f("3−1",v+4)}=${f(2,v+4)}.`,"medium","Razlomci"),
+ v=>N("r5-expression",v,"Izračunaj.",`${4*(v+3)+10}−4·${v+3}+6`,16,"Množenje ima prednost.",`${4*(v+3)+10}−4·${v+3}+6=${4*(v+3)+10}−${4*(v+3)}+6=10+6=16.`,"medium","Redosled operacija"),
+ v=>N("r5-rectangle",v,"Odredi drugu stranicu pravougaonika u cm.",`O=${4*(v+4)+6} cm, a=${v+4} cm`,v+7,"Polovina obima je zbir dve susedne stranice.",`O=2(a+b). ${4*(v+4)+6}=2(${v+4}+b). Delimo obe strane sa 2: ${2*(v+4)+3}=${v+4}+b. Oduzimamo ${v+4}: b=${2*(v+4)+3}−${v+4}=${v+7} cm.`,"medium","Osnovni pojmovi geometrije")
 ]);
 register("skup-celih-brojeva",[
- v=>N("integer-reverse",v,"Odredi broj suprotan broju x.",`Prethodnik broja x je −${v+5}.`,v+4,"Najpre pronađi sledbenik datog prethodnika.",`x=−${v+4}. Suprotan broj je ${v+4}.`,"advanced","Prethodnik i sledbenik")
+ v=>N("integer-reverse",v,"Odredi broj suprotan broju x.",`Prethodnik broja x je −${v+5}.`,v+4,"Najpre pronađi sledbenik datog prethodnika.",`x−1=−${v+5}; dodajemo 1 na obe strane: x=−${v+4}. Suprotan broj je −x=${v+4}.`,"advanced","Prethodnik i sledbenik")
 ]);
 register("apsolutna-vrednost",[
  v=>N("absolute-diagram",v,"Odredi apsolutnu vrednost koordinate A.","",v+2,"Prebroj jedinične duži do nule.",`A(−${v+2}), pa je |−${v+2}|=${v+2}.`,"basic","Apsolutna vrednost","diagram",{type:"number-line",min:-v-3,max:2,points:[{value:-v-2,label:"A"}]}),
  v=>N("absolute-table",v,"Dopuni poslednju vrednost.",`x: −${v+4}, 0, ${v+2}; |x|: ${v+4}, 0, ?`,v+2,"Apsolutna vrednost pozitivnog broja je taj broj.",`|${v+2}|=${v+2}.`,"medium","Apsolutna vrednost")
 ]);
 register("uporedjivanje",[
- v=>N("order-count",v,"Koliko celih brojeva ispunjava uslov?",`−${v+5}<x<−${v+1}`,3,"Granice nisu uključene.",`Brojevi su −${v+4}, −${v+3}, −${v+2}: ukupno 3.`,"advanced","Poredak"),
- v=>N("order-digit",v,"Odredi najveću cifru □.",`−${v+2}□>−${v+2}5`,4,"Negativan broj sa manjom apsolutnom vrednošću je veći.",`Potrebno je □<5. Najveća moguća cifra je 4.`,"advanced","Poređenje")
+ v=>N("order-count",v,"Koliko celih brojeva ispunjava uslov?",`−${v+5}<x<−${v+1}`,3,"Granice nisu uključene.",`Pošto su granice stroge, isključujemo −${v+5} i −${v+1}. Brojevi su −${v+4}, −${v+3}, −${v+2}: ukupno 3.`,"advanced","Poredak"),
+ v=>N("order-digit",v,"Odredi najveću cifru □.",`−${v+2}□>−${v+2}5`,4,"Negativan broj sa manjom apsolutnom vrednošću je veći.",`Uporedi apsolutne vrednosti: ${v+2}□<${v+2}5. Desetice su jednake, zato □<5. Dozvoljene cifre su 0, 1, 2, 3, 4; najveća je 4. Provera: −${v+2}4>−${v+2}5.`,"advanced","Poređenje")
 ]);
 register("sabiranje",[
  v=>N("add-table",v,"Dopuni poslednji zbir.",`a: −${v+5}, ${v+2}; b: ${v+1}, −${v+7}; a+b: −4, ?`,-5,"Saberi drugi par brojeva.",`${v+2}+(−${v+7})=−5.`,"medium","Sabiranje različitih znakova","sign"),
- v=>N("add-cancel",v,"Izračunaj najkraćim putem.",`−${v+8}+${v+3}+${v+8}+(−${v+1})`,2,"Upari suprotne sabirke.",`−${v+8}+${v+8}=0; ${v+3}+(−${v+1})=2.`,"advanced","Suprotni sabirci","rule"),
- v=>N("add-signcondition",v,"Odredi najmanji ceo broj x.",`−${v+5}+x>0`,v+6,"Zbir je pozitivan kada je pozitivan sabirak veći po apsolutnoj vrednosti.",`x mora biti veći od ${v+5}; najmanji ceo broj je ${v+6}.`,"advanced","Znak zbira","sign")
+ v=>N("add-cancel",v,"Izračunaj najkraćim putem.",`−${v+8}+${v+3}+${v+8}+(−${v+1})`,2,"Upari suprotne sabirke.",`Zamenom redosleda i grupisanjem sabiraka: (−${v+8}+${v+8})+(${v+3}+(−${v+1}))=0+2=2.`,"advanced","Suprotni sabirci","rule"),
+ v=>N("add-signcondition",v,"Odredi najmanji ceo broj x.",`−${v+5}+x>0`,v+6,"Zbir je pozitivan kada je pozitivan sabirak veći po apsolutnoj vrednosti.",`Dodajemo ${v+5} na obe strane: x>${v+5}. Granica je stroga, pa je najmanji ceo broj x=${v+6}.`,"advanced","Znak zbira","sign")
 ]);
 register("oduzimanje",[
- v=>N("subtract-table",v,"Dopuni poslednju razliku.",`a: −${v+3}, ${v+4}; b: −${v+5}, −2; a−b: 2, ?`,v+6,"Oduzimanje −2 je sabiranje 2.",`${v+4}−(−2)=${v+6}.`,"medium","Oduzimanje negativnog broja","sign"),
- v=>Q("subtract-compare",v,"Uporedi bez računanja.",`−${v+4}−(−${v+2}) __ −${v+4}−${v+2}`,comparisons,">","Levo dodajemo pozitivan broj, desno ga oduzimamo.","Levi rezultat je veći od početnog broja, a desni manji.","advanced","Oduzimanje negativnog broja","sign")
+ v=>N("subtract-table",v,"Dopuni poslednju razliku.",`a: −${v+3}, ${v+4}; b: −${v+5}, −2; a−b: 2, ?`,v+6,"Oduzimanje −2 je sabiranje 2.",`${v+4}−(−2)=${v+4}+2=${v+6}.`,"medium","Oduzimanje negativnog broja","sign"),
+ v=>Q("subtract-compare",v,"Uporedi bez računanja.",`−${v+4}−(−${v+2}) __ −${v+4}−${v+2}`,comparisons,">","Levo dodajemo pozitivan broj, desno ga oduzimamo.","Levi rezultat je veći od početnog broja (dodajemo pozitivan broj), a desni je manji (oduzimamo isti pozitivan broj). Zato je levi izraz veći od desnog.","advanced","Oduzimanje negativnog broja","sign")
 ]);
 register("rastojanje",[
- v=>N("distance-midpoint",v,"Odredi koordinatu sredine duži AB.",`A(−${v+6}), B(${v+2})`,-2,"Potraži tačku jednako udaljenu od A i B.",`Tačka −2 je od oba kraja udaljena ${v+4} jedinice.`,"medium","Rastojanje"),
- v=>N("distance-two",v,"Odredi x.",`d(x,−${v+4})=3 i d(x,${num(2-v)})=3`,-v-1,"Prvi uslov daje dve mogućnosti. Proveri drugi.",`Prvi uslov daje x=−${v+7} ili x=−${v+1}; samo x=−${v+1} je i od ${num(2-v)} udaljen 3 jedinice.`,"advanced","Rastojanje")
+ v=>N("distance-midpoint",v,"Odredi koordinatu sredine duži AB.",`A(−${v+6}), B(${v+2})`,-2,"Potraži tačku jednako udaljenu od A i B.",`d(A,B)=${v+2}−(−${v+6})=${2*v+8}. Polovina je ${v+4}, pa je koordinata sredine −${v+6}+${v+4}=−2. Oba kraja su udaljena ${v+4} jediničnih duži.`,"medium","Rastojanje"),
+ v=>N("distance-two",v,"Odredi x.",`d(x,−${v+4})=3 i d(x,${num(2-v)})=3`,-v-1,"Prvi uslov daje dve mogućnosti. Proveri drugi.",`Prvi uslov daje x=−${v+7} ili x=−${v+1}. Proverom drugog uslova, rastojanja od ${num(2-v)} su 9 i 3, redom. Samo x=−${v+1} zadovoljava oba uslova.`,"advanced","Rastojanje")
 ]);
 register("sabiranje-oduzimanje",[
- v=>N("signed-table",v,"Dopuni poslednju vrednost.",`x: −${v+2}, 0, ${v+3}; x−(−4): ${2-v}, 4, ?`,v+7,"Oduzimanje −4 znači sabiranje 4.",`${v+3}−(−4)=${v+7}.`,"medium","Sabiranje i oduzimanje","sign"),
- v=>N("signed-reverse",v,"Odredi početno stanje.",`Dodato je ${v+5}, zatim oduzeto ${v+8}. Konačno stanje je −${v+6}.`,-v-3,"Rešavaj unazad: vrati oduzeto, pa ukloni dodato.",`−${v+6}+${v+8}−${v+5}=−${v+3}.`,"advanced","Sabiranje i oduzimanje")
+ v=>N("signed-table",v,"Dopuni poslednju vrednost.",`x: −${v+2}, 0, ${v+3}; x−(−4): ${String(2-v).replace("-", "−")}, 4, ?`,v+7,"Oduzimanje −4 znači sabiranje 4.",`${v+3}−(−4)=${v+3}+4=${v+7}.`,"medium","Sabiranje i oduzimanje","sign"),
+ v=>N("signed-reverse",v,"Odredi početno stanje.",`Dodato je ${v+5}, zatim oduzeto ${v+8}. Konačno stanje je −${v+6}.`,-v-3,"Rešavaj unazad: vrati oduzeto, pa ukloni dodato.",`−${v+6}+${v+8}−${v+5}=2−${v+5}=−${v+3}. Provera: −${v+3}+${v+5}−${v+8}=−${v+6}.`,"medium","Sabiranje i oduzimanje")
 ]);
 
 // Grade 7: no roots before their lesson; no x²=a before Kvadrati brojeva.
@@ -147,9 +147,9 @@ register("kratko-obnavljanje-7",[
  v=>Q("r7-compare",v,"Uporedi.",`${root((v+3)**2)} __ ${v+2}`,comparisons,">","Odredi koren potpunog kvadrata.",`${root((v+3)**2)}=${v+3}>${v+2}.`,"basic","Realni brojevi"),
  v=>N("r7-area",v,"Odredi površinu paralelograma.",`a=${v+4} cm, h_a=3 cm`,3*(v+4),"Površina je proizvod stranice i odgovarajuće visine.",`P=a·h_a=${3*(v+4)} cm².`,"medium","Površina"),
  v=>Q("r7-error",v,"Pronađi grešku.",`${root(9+v)}+${root(16+v)}=${root(25+2*v)}`,["Koren zbira nije zbir korena.","Jednakost važi za sve nenegativne brojeve.","Koren se uvek deli."],"Koren zbira nije zbir korena.","Svojstvo proizvoda ne važi za sabiranje.","Levi zbir je veći: pri kvadriranju pojavljuje se i pozitivan dvostruki proizvod.","medium","Kvadratni koren","rule"),
- v=>N("r7-triangle",v,"Odredi katetu pravouglog trougla.",`c=${5*(v+1)} cm, a=${3*(v+1)} cm`,4*(v+1),"Oduzmi kvadrat poznate katete od kvadrata hipotenuze.",`b²=${16*(v+1)**2}; b=${4*(v+1)} cm.`,"advanced","Pitagorina teorema"),
+ v=>N("r7-triangle",v,"Odredi katetu pravouglog trougla.",`c=${5*(v+1)} cm, a=${3*(v+1)} cm`,4*(v+1),"Prepoznaj hipotenuzu i postavi Pitagorinu teoremu.",`Katete su a i b, hipotenuza c. a²+b²=c². ${3*(v+1)}²+b²=${5*(v+1)}²; ${9*(v+1)**2}+b²=${25*(v+1)**2}; b²=${25*(v+1)**2}−${9*(v+1)**2}=${16*(v+1)**2}; b=${4*(v+1)} cm jer je pozitivna.`,"advanced","Pitagorina teorema"),
  v=>Q("r7-root",v,"Pojednostavi.",root(2*(v+2)**2),[`${v+2}${root(2)}`,`${(v+2)**2}${root(2)}`,`${v+2}${root(3)}`],`${v+2}${root(2)}`,"Izdvoji potpuni kvadrat.",`${root(2*(v+2)**2)}=${root(`${(v+2)**2}·2`)}=${v+2}${root(2)}.`,"advanced","Kvadratni koren"),
- v=>N("r7-perimeter",v,"Odredi obim pravougaonika.",`d=${5*(v+1)} cm, a=${3*(v+1)} cm`,14*(v+1),"Prvo Pitagorinom teoremom odredi drugu stranicu.",`b=${4*(v+1)} cm; O=2(a+b)=${14*(v+1)} cm.`,"advanced","Pitagorina teorema")
+ v=>N("r7-perimeter",v,"Odredi obim pravougaonika.",`d=${5*(v+1)} cm, a=${3*(v+1)} cm`,14*(v+1),"Prvo Pitagorinom teoremom odredi drugu stranicu.",`Katete su stranice a i b, hipotenuza je dijagonala d. a²+b²=d². ${3*(v+1)}²+b²=${5*(v+1)}²; ${9*(v+1)**2}+b²=${25*(v+1)**2}; b²=${25*(v+1)**2}−${9*(v+1)**2}=${16*(v+1)**2}; b=${4*(v+1)} cm jer je pozitivna. O=2(a+b)=2·(${3*(v+1)}+${4*(v+1)})=${14*(v+1)} cm.`,"advanced","Pitagorina teorema")
 ]);
 register("razmera-duzi",[
  v=>N("ratio-total",v,"Odredi kraću duž.",`a:b=2:3 i a+b=${5*(v+3)} cm`,2*(v+3),"Ukupna dužina odgovara pet jednakih delova.",`Jedan deo je ${v+3} cm; kraća duž je ${2*(v+3)} cm.`,"advanced","Razmera")
@@ -261,6 +261,14 @@ const basicLater=new Set(["6-1k","6-2i","6-3j","sw-absolute-table-0","sw-r5-orde
 export function applySeptemberWorkLevels(lessonId:string,tasks:Task[]):Task[]{
  const plan=septemberWorkPlans[lessonId];if(!plan)return tasks;
  return tasks.map(task=>{
+  if(lessonId==="sabiranje-oduzimanje")return {...task,level:["6-7c","6-7e","6-7i","6-7j"].includes(task.id)||task.id.startsWith("sw-signed-reverse-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
+  if(lessonId==="rastojanje")return {...task,level:["6-6c","6-6e","6-6g","6-6h","6-6j"].includes(task.id)||task.id.startsWith("sw-distance-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
+  if(lessonId==="oduzimanje")return {...task,level:["6-5e","6-5g","6-5h","6-5i"].includes(task.id)||task.id.startsWith("sw-subtract-compare-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
+  if(lessonId==="sabiranje")return {...task,level:["6-4e","6-4h","6-4i","6-4j"].includes(task.id)||task.id.startsWith("sw-add-cancel-")||task.id.startsWith("sw-add-signcondition-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
+  if(lessonId==="uporedjivanje")return {...task,level:["6-3b","6-3g","6-3i"].includes(task.id)||task.id.startsWith("sw-order-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
+  if(lessonId==="apsolutna-vrednost")return {...task,level:["6-2b","6-2c","6-2d","6-2h","6-2j"].includes(task.id)?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
+  if(lessonId==="skup-celih-brojeva")return {...task,level:task.id.startsWith("sw-integer-reverse-")?"medium":"basic",taskType:retainedTypes[task.id]??task.taskType};
+  if(lessonId==="kratko-obnavljanje-5")return {...task,taskType:retainedTypes[task.id]??task.taskType};
   const at=plan.indexOf(task.id);
   const level:Level=at<0?task.level:at<3||basicOverrides.has(task.id)?"basic":at<7||basicLater.has(task.id)?"medium":"advanced";
   return {...task,level,taskType:retainedTypes[task.id]??task.taskType,

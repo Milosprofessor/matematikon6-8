@@ -1,0 +1,40 @@
+[
+  {
+    "width": 1366,
+    "ids": [
+      "s6-godisnja-1",
+      "s6-godisnja-2",
+      "s6-godisnja-3",
+      "s6-godisnja-4",
+      "s6-godisnja-5",
+      "s6-godisnja-6",
+      "s6-godisnja-7",
+      "s6-godisnja-8",
+      "s6-godisnja-9",
+      "s6-godisnja-10"
+    ],
+    "score": "10/10",
+    "progress_preserved": true,
+    "best_after_reload": true,
+    "status": "pass"
+  },
+  {
+    "width": 390,
+    "ids": [
+      "s6-godisnja-1",
+      "s6-godisnja-2",
+      "s6-godisnja-3",
+      "s6-godisnja-4",
+      "s6-godisnja-5",
+      "s6-godisnja-6",
+      "s6-godisnja-7",
+      "s6-godisnja-8",
+      "s6-godisnja-9",
+      "s6-godisnja-10"
+    ],
+    "score": "10/10",
+    "progress_preserved": true,
+    "best_after_reload": true,
+    "status": "pass"
+  }
+]

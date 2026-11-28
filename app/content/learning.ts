@@ -10,7 +10,7 @@ export const learningByLesson:Record<string,LessonLearning> = {
       "Imenilac određuje jednake delove celine, a brojilac njihov broj. Kod jednakih imenilaca poredi, sabiraj ili oduzimaj brojioce. Kolinearne tačke pripadaju istoj pravoj; dva ugla koja čine opružen ugao imaju zbir 180°."
     ],
     "steps": [
-      "U izrazu računaj zagrade, zatim množenje i deljenje, pa sabiranje i oduzimanje.",
+      "U izrazu računaj zagrade, zatim množenje i deljenje, pa sabiranje i oduzimanje. Operacije istog prioriteta računaj sleva nadesno.",
       "Nepoznati sabirak dobijaš oduzimanjem od zbira; nepoznatu stranicu pravougaonika oduzimanjem poznate od polovine obima."
     ],
     "why": "Obim pravougaonika obuhvata po dve jednake stranice; zato je njegova polovina zbir susednih stranica.",
@@ -36,7 +36,7 @@ export const learningByLesson:Record<string,LessonLearning> = {
       "Pre čitanja tačke pronađi nulu i vrednost jednog razmaka.",
       "Uzastopni celi brojevi razlikuju se za 1; ako znaš prethodnik, traženi broj je njegov sledbenik."
     ],
-    "why": "Suprotni brojevi leže sa različitih strana nule, na jednakom rastojanju od nje.",
+    "why": "Nenulti suprotni brojevi leže sa različitih strana nule, na jednakom rastojanju od nje; nula je sama sebi suprotna.",
     "caution": "Suprotan broj nije sledbenik. Broju 0 suprotan je ponovo 0.",
     "extraFormulas": [
       "Z={…,−2,−1,0,1,2,…}",
@@ -121,14 +121,14 @@ export const learningByLesson:Record<string,LessonLearning> = {
     "aim": "Prevedi oduzimanje u sabiranje suprotnog broja i razlikuj nepoznati umanjenik od nepoznatog umanjioca.",
     "idea": [
       "U izrazu a−b, a je umanjenik, b umanjilac, a rezultat razlika. Oduzeti broj znači sabrati njegov suprotan broj: prvi broj ostaje isti, a drugi menja predznak.",
-      "Oduzimanje pozitivnog broja pomera ulevo, a negativnog udesno. U zadacima sa liftom ili promenom stanja najpre zapiši početno stanje i smer promene."
+      "Oduzimanje pozitivnog broja pomera ulevo, negativnog udesno, a oduzimanje nule ne menja položaj. U zadacima sa liftom ili promenom stanja najpre zapiši početno stanje i smer promene."
     ],
     "steps": [
       "Prevedi oduzimanje u sabiranje i primeni poznato pravilo zbira.",
       "Nepoznati umanjenik je zbir razlike i umanjioca; nepoznati umanjilac je umanjenik minus razlika."
     ],
     "why": "Razlika sabrana sa umanjiocem mora vratiti umanjenik; time proveravamo račun.",
-    "caution": "Ne menjaj prvi broj. Oduzimanje uglavnom ne dozvoljava zamenu mesta.",
+    "caution": "Ne menjaj umanjenik. Znak računske operacije − nije isto što i predznak negativnog umanjioca u zagradi. Oduzimanje nije komutativno.",
     "extraFormulas": [
       "a−b=a+(−b)",
       "a−(−b)=a+b",
@@ -167,7 +167,7 @@ export const learningByLesson:Record<string,LessonLearning> = {
     "aim": "Uredi izraz sa više sabiranja i oduzimanja i vrati se od završnog do početnog stanja.",
     "idea": [
       "Izraz sa sabiranjem i oduzimanjem možeš pretvoriti u zbir brojeva sa predznacima. Potom računaj sleva nadesno ili grupiši pogodne sabirke, naročito suprotne parove.",
-      "Zagrade određuju šta prvo računamo. Kada ispred cele zagrade stoji minus, svaki njen član menja predznak. U tekstualnom zadatku dug ili pad stanja zapiši negativno, a vraćanje duga ili porast pozitivno."
+      "Zagrade određuju šta prvo računamo. Ako zagrada sadrži zbir ili razliku, plus ispred nje zadržava predznake sabiraka, a minus ih menja u suprotne. U tekstualnom zadatku dug ili pad stanja zapiši negativno, a vraćanje duga ili porast pozitivno."
     ],
     "steps": [
       "Sredi zagrade i sačuvaj predznak uz svaki broj.",
@@ -196,12 +196,16 @@ export const learningByLesson:Record<string,LessonLearning> = {
       "Pre računanja proveri nulu i prebroj negativne činioce.",
       "Nepoznati činilac proveri množenjem. Zajednički činilac možeš izdvojiti pre računanja zbira proizvoda."
     ],
-    "why": "Svaki negativni činilac menja predznak; dva takva menjanja međusobno se poništavaju.",
+    "why": "Za nenulti proizvod svaki negativni činilac menja predznak; dva takva menjanja međusobno se poništavaju.",
     "caution": "Ukupna promena temperature nije konačna temperatura ako početno stanje nije poznato.",
     "extraFormulas": [
       "a·0=0",
       "a·(−1)=−a",
-      "a·b+a·c=a·(b+c)"
+      "a·b+a·c=a·(b+c)",
+      "a·1=a",
+      "a·b=b·a",
+      "(a·b)·c=a·(b·c)",
+      "a·(b−c)=a·b−a·c"
     ],
     "sourcePages": "Udžbenik 6, str. 30–34; u planu za septembar čas 16; postojeća lekcija sajta zadržava oktobarski mesec.",
     "visuals": [
@@ -220,7 +224,7 @@ export const learningByLesson:Record<string,LessonLearning> = {
       "Nepoznati delilac pronađi iz veze množenja; u tekstualnom zadatku ukupnu ravnomernu promenu podeli brojem perioda."
     ],
     "why": "Količnik puta delilac mora dati deljenik: to je provera deljenja.",
-    "caution": "Deljenje nulom, uključujući 0:0, nije dozvoljeno.",
+    "caution": "Deljenje nulom nije dozvoljeno: za nenulti deljenik ne postoji odgovarajući činilac, a za 0:0 nema jedinstvenog količnika.",
     "extraFormulas": [
       "a:b=c ⇔ b·c=a, b≠0",
       "0:a=0, a≠0",
@@ -242,10 +246,10 @@ export const learningByLesson:Record<string,LessonLearning> = {
       "Izračunaj zagrade, a zatim prati zapis sleva nadesno.",
       "Nepoznati broj pronađi poništavanjem operacija obrnutim redom; proveri ga u izvornom izrazu."
     ],
-    "why": "U lancu operacija ne deliš samo poslednji broj: svaki sledeći korak obrađuje dotadašnji rezultat.",
+    "why": "Svaki sledeći korak obrađuje dotadašnji rezultat; deljenje nije asocijativno, pa ne pregrupišemo proizvoljno.",
     "caution": "Ne radi sva množenja pre deljenja; njihov prioritet je isti.",
     "extraFormulas": [
-      "(a:b)·c ≠ a:(b·c), u opštem slučaju",
+      "48:(−6)·2=−16; 48:((−6)·2)=−4",
       "a·0=0; delilac ≠0"
     ],
     "sourcePages": "Udžbenik 6, str. 35–38, posebno računanje mešovitog lanca na str. 36; operativni plan za oktobar, čas 19.",
@@ -257,7 +261,7 @@ export const learningByLesson:Record<string,LessonLearning> = {
   "brojevni-izrazi": {
     "aim": "Prevedi tekst u izraz, primeni redosled operacija i proveri kako zagrade menjaju vrednost.",
     "idea": [
-      "Brojevni izraz povezuje više računskih operacija. Redosled je: zagrade, množenje i deljenje, pa sabiranje i oduzimanje. Operacije istog prioriteta računaj sleva nadesno.",
+      "Brojevni izraz povezuje više računskih operacija. Redosled je: sadržaj zagrada od unutrašnjih ka spoljašnjim, množenje i deljenje, pa sabiranje i oduzimanje. Operacije istog prioriteta računaj sleva nadesno. Proveri da svaki delilac ima vrednost različitu od nule.",
       "Tekst prevedi deo po deo: proizvod označava množenje, količnik deljenje, a rečenica određuje šta se od čega oduzima. U zadatku sa stanjem odvoji početnu vrednost, ponovljene promene i završnu promenu."
     ],
     "steps": [
@@ -279,12 +283,12 @@ export const learningByLesson:Record<string,LessonLearning> = {
   "trougao-vrste": {
     "aim": "Prepoznaj elemente i vrste trougla i koristi obim za direktna i obrnuta pitanja.",
     "idea": [
-      "Trougao određuju tri nekolinearna temena i duži koje ih povezuju. U △ABC stranice a=BC, b=CA i c=AB leže naspram temena A, B i C; susedne stranice imaju zajedničko teme.",
-      "Prema stranicama trougao je raznostraničan, jednakokraki ili jednakostraničan. Prema najvećem uglu je oštrougli, pravougli ili tupougli. Isti trougao ima opis po oba kriterijuma; jednakim stranicama odgovaraju jednaki naspramni uglovi."
+      "Trougao je deo ravni ograničen trima dužima koje povezuju tri nekolinearna temena. U △ABC stranice a=BC, b=CA i c=AB leže naspram temena A, B i C; susedne stranice imaju zajedničko teme.",
+      "Prema stranicama razlikujemo raznostranični (sve različite), jednakokraki sa tačno dve jednake i jednakostranični (sve tri jednake stranice). Prema najvećem uglu je oštrougli, pravougli ili tupougli. Isti trougao ima opis po oba kriterijuma; jednakim stranicama odgovaraju jednaki naspramni uglovi i obrnuto."
     ],
     "steps": [
       "Uporedi dužine za podelu prema stranicama, a najveći ugao sa 90° za podelu prema uglovima.",
-      "Obim je zbir sve tri stranice; nepoznatu stranicu dobijaš oduzimanjem poznatih od obima."
+      "Obim je zbir dužina sve tri stranice; nepoznatu stranicu dobijaš oduzimanjem poznatih dužina od obima."
     ],
     "why": "Veze temena i naspramnih stranica ostaju iste kada se crtež okrene.",
     "caution": "Naspramna stranica ne sadrži slovo datog temena.",
@@ -301,15 +305,15 @@ export const learningByLesson:Record<string,LessonLearning> = {
   "zbir-uglova-trougla": {
     "aim": "Odredi nepoznati unutrašnji ugao i proveri da li zadate vrednosti mogu biti uglovi trougla.",
     "idea": [
-      "Zbir tri unutrašnja ugla svakog trougla iznosi 180°. Svaki ugao mora biti pozitivan. U pravouglom trouglu pravi ugao zauzima 90°, pa preostala dva oštra ugla zajedno daju 90°.",
+      "Zbir tri unutrašnja ugla svakog trougla iznosi 180°. Tri pozitivna ugla sa zbirom 180° određuju oblik trougla. U pravouglom trouglu pravi ugao zauzima 90°, pa preostala dva oštra ugla zajedno daju 90°.",
       "Za jedan nepoznati ugao oduzmi zbir poznatih od 180°. Ako su uglovi opisani pomoću x, njihove opise saberi u jednu jednakost, a potom izračunaj svaki ugao."
     ],
     "steps": [
       "Za proveru trougla proveri pozitivnost svih uglova i njihov zbir.",
       "Ako se traži najveći ugao, prvo pronađi sve uglove i tek onda ih uporedi."
     ],
-    "why": "Tri unutrašnja ugla mogu se složiti jedan do drugog u opružen ugao.",
-    "caution": "Trougao ne može imati dva prava ili dva tupa ugla.",
+    "why": "Paralela kroz C sa AB pokazuje da α, β i γ zajedno čine opružen ugao od 180°.",
+    "caution": "Trougao ne može imati dva prava ugla, dva tupa ugla niti jedan prav i jedan tup ugao.",
     "extraFormulas": [
       "α+β+γ=180°",
       "γ=180°−α−β"
@@ -1427,13 +1431,13 @@ export const learningByLesson:Record<string,LessonLearning> = {
     "aim": "Prepoznaj racionalan broj, njegove ekvivalentne zapise i položaj na brojevnoj pravoj; izdvoji brojeve prema zadatom uslovu.",
     "idea": [
       "Racionalan broj može se zapisati kao razlomak dva cela broja sa nenultim imeniocem. Skup Q obuhvata cele brojeve i razlomljene vrednosti sa oba predznaka; različiti zapisi mogu predstavljati isti broj.",
-      "Na brojnoj pravoj imenilac određuje podelu jedinice, a brojilac broj koraka. Negativne vrednosti su levo od nule, pozitivne desno; suprotan broj dobijaš promenom predznaka."
+      "Na brojnoj pravoj pozitivni imenilac određuje podelu jedinice, a apsolutna vrednost brojioca broj koraka. Negativne vrednosti su levo od nule, pozitivne desno; suprotan broj dobijaš promenom predznaka; nula je sama sebi suprotna."
     ],
     "steps": [
       "Za očitavanje tačke prvo proveri nulu i podele jedinice.",
       "Za poređenje koristi zajednički imenilac ili poznati decimalni zapis. U rasponu sa zadatim imeniocem uporedi brojioce; sredinu duži nađi polovljenjem rastojanja."
     ],
-    "why": "Proširivanje i skraćivanje menjaju zapis razlomka, ali ne i njegov položaj na pravoj.",
+    "why": "Proširivanjem množimo brojilac i imenilac istim nenultim celim brojem; skraćivanjem ih delimo zajedničkim nenultim deliocem. Vrednost ostaje ista.",
     "caution": "Imenilac ne sme biti 0; razlomak može predstavljati i ceo broj.",
     "extraFormulas": [
       "Q={[[frac:a|b]]:a,b∈Z,b≠0}",
@@ -1454,9 +1458,9 @@ export const learningByLesson:Record<string,LessonLearning> = {
     ],
     "steps": [
       "Poredi pozitivne apsolutne vrednosti pomoću zajedničkog imenioca ili decimalnog zapisa.",
-      "Kod negativnih brojeva obrni njihov poredak. Rastojanje dve negativne koordinate dobijaš razlikom većeg i manjeg rastojanja od nule."
+      "Kod negativnih brojeva obrni njihov poredak. Rastojanje dve tačke je apsolutna vrednost razlike njihovih koordinata."
     ],
-    "why": "Jednako rastojanje mogu imati dve tačke, po jedna sa svake strane nule.",
+    "why": "Za pozitivno rastojanje postoje dve tačke, po jedna sa svake strane nule; za nulto samo jedna.",
     "caution": "Minus izvan uspravnih crta ostaje: −|r| je suprotan broj apsolutnoj vrednosti.",
     "extraFormulas": [
       "|r|≥0",

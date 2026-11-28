@@ -25,7 +25,7 @@ export function question(id: string, skill: string, level: Level, row: Row, posi
 export function springLesson(chapter: Chapter, rows: Row[]): Lesson {
   const { skills, ...content } = chapter;
   const levels: Level[] = ["basic","basic","basic","basic","medium","medium","medium","medium","advanced","advanced","medium","basic","medium","advanced","basic","advanced"];
-  const items = rows.map((row, i) => question(chapter.id + "-" + (i + 1), chapter.title, levels[i], row, i + 1));
+  const items = rows.map((row, i) => question(chapter.id + "-" + (i + 1), chapter.title, chapter.id==="s7-rotacija"&&(i===8||i===13)?"basic":levels[i], row, i + 1));
   return {
     ...content, examples: [], solved: chapter.worked[0],
     tasks: items.slice(0, 11).map((task, i) => ({...task, taskType: skills[i], practiceOnly: i === 10})),

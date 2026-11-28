@@ -1,0 +1,42 @@
+[
+  {
+    "width": 1366,
+    "ids": [
+      "s6-uglovi-15",
+      "s6-cetvorouglovi-primena",
+      "s6-uglovi-16",
+      "s6-paralelogram-15",
+      "s6-paralelogram-16",
+      "s6-vektori-15",
+      "s6-vektori-16",
+      "s6-trapez-15",
+      "s6-trapez-16",
+      "s6-cetiri-stranice-15",
+      "s6-cetiri-stranice-16"
+    ],
+    "score": "11/11",
+    "progress_preserved": true,
+    "best_after_reload": true,
+    "status": "pass"
+  },
+  {
+    "width": 390,
+    "ids": [
+      "s6-uglovi-15",
+      "s6-cetvorouglovi-primena",
+      "s6-uglovi-16",
+      "s6-paralelogram-15",
+      "s6-paralelogram-16",
+      "s6-vektori-15",
+      "s6-vektori-16",
+      "s6-trapez-15",
+      "s6-trapez-16",
+      "s6-cetiri-stranice-15",
+      "s6-cetiri-stranice-16"
+    ],
+    "score": "11/11",
+    "progress_preserved": true,
+    "best_after_reload": true,
+    "status": "pass"
+  }
+]

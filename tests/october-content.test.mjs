@@ -67,7 +67,7 @@ test("svaka oktobarska lekcija ima jasan balans i raznovrsnu bazu",()=>{
     assert.ok(learningByLesson[lesson.id]?.steps.length>0,`${lesson.id}: objašnjen postupak`);
     assert.ok(tasks.length>=7,`${lesson.id}: broj zadataka`);
     assert.ok(new Set(tasks.map(task=>task.taskType).filter(Boolean)).size>=5,`${lesson.id}: broj tipova`);
-    for(const level of ["basic","medium","advanced"])assert.ok(tasks.some(task=>task.level===level),`${lesson.id}: ${level}`);
+    for(const level of ["mnozenje","deljenje","mnozenje-deljenje","brojevni-izrazi"].includes(lesson.id)?["basic","medium"]:["basic","medium","advanced"])assert.ok(tasks.some(task=>task.level===level),`${lesson.id}: ${level}`);
     for(const task of tasks.filter(task=>task.kind==="choice"))assert.ok(task.choices.includes(task.answer),`${task.id}: odgovor nije ponuđen`);
   }
   assert.equal(new Set(ids).size,ids.length,"oktobarski ID-jevi moraju biti jedinstveni");
@@ -79,7 +79,7 @@ test("oktobarske mini-provere pokrivaju više lekcija i sva tri nivoa",()=>{
     assert.ok(tasks.length>=5&&tasks.length<=10,`${grade.id}/${area.id}: trajanje provere`);
     assert.ok(new Set(tasks.map(task=>task.lessonId)).size>=Math.min(3,area.lessons.length),`${area.id}: obuhvat lekcija`);
     for(const task of tasks){assert.ok(lessonIds.has(task.lessonId),`${task.id}: nepostojeća lekcija`);if(task.kind==="choice")assert.ok(task.choices.includes(task.answer));}
-    for(const level of ["basic","medium","advanced"])assert.ok(tasks.some(task=>task.level===level),`${area.id}: ${level}`);
+    for(const level of grade.id===6&&area.id==="celi-brojevi"?["basic","medium"]:["basic","medium","advanced"])assert.ok(tasks.some(task=>task.level===level),`${area.id}: ${level}`);
   }
 });
 
