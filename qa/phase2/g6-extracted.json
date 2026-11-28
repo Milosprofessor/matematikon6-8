@@ -4792,7 +4792,7 @@
     {
      "question": "Od 24 učenika šest trenira odbojku. Koliki je to procenat?",
      "steps": [
-      "Odnos je 6:24=1/4.",
+      "Odnos je 6:24=[[frac:1|4]].",
       "Četvrtina od 100 je 25, zato odbojku trenira 25% učenika."
      ]
     }
@@ -22190,7 +22190,7 @@
    "level": "basic",
    "prompt": "Napiši 35% kao decimalni broj.",
    "math": "",
-   "hint": "Procenat označava stotine.",
+   "hint": "Jedan procenat je jedan stoti deo celine.",
    "solution": "35:100=0,35.",
    "kind": "input",
    "answer": "0,35",
@@ -22272,7 +22272,7 @@
    "prompt": "Četiri od 25 polja su obojena. Koliko je to procenata?",
    "math": "",
    "hint": "Svedi na sto polja.",
-   "solution": "4/25=16/100, dakle 16%.",
+   "solution": "[[frac:4|25]]=[[frac:16|100]], dakle 16%.",
    "kind": "input",
    "answer": "16",
    "taskType": "učešće",
@@ -22348,7 +22348,7 @@
    "prompt": "Posle popusta od 25% i dodatnih 100 dinara popusta plaća se 800 dinara. Kolika je prvobitna cena?",
    "math": "",
    "hint": "Vrati promene obrnutim redom.",
-   "solution": "Pre poslednjeg popusta bilo je 900. To je 75% od 900:0,75=1200 dinara.",
+   "solution": "Pre poslednjeg popusta bilo je 900. Tih 900 dinara predstavlja 75% prvobitne cene, pa je ona 900:0,75=1200 dinara.",
    "kind": "input",
    "answer": "1200",
    "taskType": "povratni-račun",
