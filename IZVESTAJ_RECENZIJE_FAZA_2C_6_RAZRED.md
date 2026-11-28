@@ -1,3 +1,7 @@
+# Checkpoint 20 — Sabiranje, oduzimanje i rastojanje
+
+540/919 zadataka i 23/45 lekcija. G6C-042: objašnjeni jednaki delovi, pozitivan smer ose kod ronioca i pojam suprotnog broja. Egzaktna provera obuhvata svih 14 pripadajućih zadataka i oba primera. 127/127 testova, Worker i Pages build, TypeScript, lint (6 upozorenja). Desktop i touch emulacija: po deset redovnih zadataka, povratna informacija, pomoć, prikaz matematike i ćirilice, napredak posle osvežavanja. Posebna regresija napretka prošla. Dodatni zadaci provereni računski. Sledeći zadatak q-proizvod-1.
+
 # Checkpoint 19 — Poređenje i poredak racionalnih brojeva
 
 526/919 zadataka i 22/45 lekcija. G6C-041: preciziran znak oba negativna broja u obrazloženju i objašnjen prelaz sa celih stotih delova na decimalni zapis. Egzaktno provereno svih 14 zadataka, sve opcije i oba primera. 127/127 testova, oba build-a, TypeScript, lint (6 upozorenja). Desktop i emulirani touch: po 10 zadataka, promena pisma, decimalni zarez, položaj brojioca i imenioca i crta razlomka, ponovno učitavanje. Posebna regresija napretka prošla. Četiri dodatna zadatka proverena računski. Sledeći zadatak q-zbir-razlika-1.

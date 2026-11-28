@@ -9768,99 +9768,155 @@
     "id": "q-zbir-razlika-1",
     "area": "racionalni-brojevi",
     "lesson": "q-zbir-razlika",
+    "answer": "3/10",
+    "hint": "Znaci su različiti.",
+    "procedure": "Devet desetina umanjeno za šest daje tri desetine.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zbir-razlika-2",
     "area": "racionalni-brojevi",
     "lesson": "q-zbir-razlika",
+    "answer": "-3/5",
+    "hint": "Imenilac ostaje isti.",
+    "procedure": "Sabiramo −1 i −2 i dobijamo −3 petine.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zbir-razlika-3",
     "area": "racionalni-brojevi",
     "lesson": "q-zbir-razlika",
+    "answer": "3/4",
+    "hint": "Promeni oduzimanje u sabiranje.",
+    "procedure": "0,25+0,50=0,75.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zbir-razlika-4",
     "area": "racionalni-brojevi",
     "lesson": "q-zbir-razlika",
+    "answer": "-7/12",
+    "hint": "Koristi dvanaestine.",
+    "procedure": "−[[frac:9|12]]+[[frac:2|12]]=−[[frac:7|12]].",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zbir-razlika-5",
     "area": "racionalni-brojevi",
     "lesson": "q-zbir-razlika",
+    "answer": "3/2",
+    "hint": "Oduzmi manju koordinatu od veće.",
+    "procedure": "−0,9−(−2,4)=1,5.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zbir-razlika-6",
     "area": "racionalni-brojevi",
     "lesson": "q-zbir-razlika",
+    "answer": "1/2",
+    "hint": "Koliki pomak udesno je potreban?",
+    "procedure": "x=−0,25+0,75=0,5.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zbir-razlika-7",
     "area": "racionalni-brojevi",
     "lesson": "q-zbir-razlika",
+    "answer": "3",
+    "hint": "Pronađi par suprotnih brojeva.",
+    "procedure": "−1,25+1,25=0 i 3,6−0,6=3.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zbir-razlika-8",
     "area": "racionalni-brojevi",
     "lesson": "q-zbir-razlika",
+    "answer": "-37/20",
+    "hint": "Pomak ulevo znači oduzimanje.",
+    "procedure": "−0,6−1,25=−1,85.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zbir-razlika-9",
     "area": "racionalni-brojevi",
     "lesson": "q-zbir-razlika",
+    "answer": "1/4",
+    "hint": "Počni od zagrade.",
+    "procedure": "U zagradi je −1, pa je −0,75+1=0,25.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zbir-razlika-10",
     "area": "racionalni-brojevi",
     "lesson": "q-zbir-razlika",
+    "answer": "-5/4",
+    "hint": "Površina je nula, ispod nje su negativne koordinate.",
+    "procedure": "−2,75−1,50+3=−1,25.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zbir-razlika-11",
     "area": "racionalni-brojevi",
     "lesson": "q-zbir-razlika",
+    "answer": "-2/25",
+    "hint": "Njihov zbir je nula.",
+    "procedure": "0,08+(−0,08)=0.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zbir-razlika-12",
     "area": "racionalni-brojevi",
     "lesson": "q-zbir-razlika",
+    "answer": "1",
+    "hint": "Tačke su sa različitih strana nule.",
+    "procedure": "[[frac:1|4]]+[[frac:3|4]]=1.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zbir-razlika-13",
     "area": "racionalni-brojevi",
     "lesson": "q-zbir-razlika",
+    "answer": "-1/4",
+    "hint": "Od levog kraja dodaj polovinu rastojanja.",
+    "procedure": "Rastojanje je 2, a −1,25+1=−0,25.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zbir-razlika-14",
     "area": "racionalni-brojevi",
     "lesson": "q-zbir-razlika",
+    "answer": "-5/6",
+    "hint": "Pazi na znak drugog člana.",
+    "procedure": "Zajednički imenilac je 6, a razlika je −[[frac:5|6]].",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-proizvod-1",

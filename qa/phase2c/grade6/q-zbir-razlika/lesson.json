@@ -1,0 +1,19 @@
+{
+  "id": "q-zbir-razlika",
+  "area": "racionalni-brojevi",
+  "sequence": "Od istih jedinica preko zajedničkog imenioca do premeštanja i modelovanja.",
+  "examples": [
+    {
+      "question": "Temperatura je bila −1,5 °C, a zatim +0,75 °C. Za koliko je porasla?",
+      "steps": [
+        "Oduzmi početnu temperaturu od krajnje.",
+        "0,75−(−1,5)=0,75+1,5.",
+        "Porast je 2,25 °C."
+      ],
+      "verification": "0,75−(−1,5)=2,25."
+    }
+  ],
+  "misconceptions": "Rastojanje je nenegativno; promena i koordinata mogu biti negativne.",
+  "assessment": "14 zadataka, 10 u redovnom toku.",
+  "status": "potpuno recenzirana"
+}

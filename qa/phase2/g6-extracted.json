@@ -3347,7 +3347,7 @@
   {
    "id": "q-zbir-razlika",
    "title": "Sabiranje, oduzimanje i rastojanje",
-   "intro": "Zajednički imenilac predstavlja istu jedinicu mere. Tek tada možemo sabirati brojioce sa njihovim znacima.",
+   "intro": "Kada razlomke svedemo na isti imenilac, njihovi brojioci broje delove jednake veličine. Sabiramo brojioce sa njihovim znacima, a imenilac zadržavamo.",
    "rules": [
     "Pri oduzimanju dodaj suprotan broj. Rastojanje je apsolutna vrednost razlike koordinata.",
     "Zbir možeš preurediti tako da prvo sabereš suprotne brojeve ili brojeve sa istim imeniocem.",
@@ -3378,7 +3378,7 @@
    "notes": [
     {
      "title": "Sabiranje, oduzimanje i rastojanje",
-     "text": "Zajednički imenilac predstavlja istu jedinicu mere. Tek tada možemo sabirati brojioce sa njihovim znacima.",
+     "text": "Kada razlomke svedemo na isti imenilac, njihovi brojioci broje delove jednake veličine. Sabiramo brojioce sa njihovim znacima, a imenilac zadržavamo.",
      "definition": true,
      "formulas": [],
      "visualIndexes": [],
@@ -19010,7 +19010,7 @@
   },
   {
    "id": "q-zbir-razlika-10",
-   "prompt": "Dubina ronioca je 2,75 m. Spusti se još 1,5 m, pa se podigne 3 m. Upiši koordinatu u odnosu na površinu.",
+   "prompt": "Dubina ronioca je 2,75 m. Spusti se još 1,5 m, pa se podigne 3 m. Površini odgovara 0, a pozitivan smer je naviše. Upiši krajnju koordinatu u metrima.",
    "math": "",
    "hint": "Površina je nula, ispod nje su negativne koordinate.",
    "solution": "−2,75−1,50+3=−1,25.",
@@ -19029,7 +19029,7 @@
   },
   {
    "id": "q-zbir-razlika-11",
-   "prompt": "Odredi suprotan sabirak broju 0,08.",
+   "prompt": "Odredi broj suprotan broju 0,08.",
    "math": "",
    "hint": "Njihov zbir je nula.",
    "solution": "0,08+(−0,08)=0.",
