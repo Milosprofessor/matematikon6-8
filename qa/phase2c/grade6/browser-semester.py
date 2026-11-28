@@ -29,7 +29,7 @@ with sync_playwright() as pw:
   seen_fraction=False
   def check_fraction(container):
    global seen_fraction
-   geometry=container.locator('.frac:visible').evaluate_all("""els=>els.map(el=>[...el.children].map(child=>{
+   geometry=container.locator('.frac:visible').evaluate_all("""els=>els.filter(el=>el.isConnected).map(el=>[...el.children].map(child=>{
     const r=child.getBoundingClientRect();return [r.y,r.height,getComputedStyle(child).borderBottomWidth]
    }))""")
    for (top,th,bar),(bottom,bh,_) in geometry:

@@ -3644,7 +3644,7 @@
    "rules": [
     "Za nepoznati umanjenik saberi razliku i umanjilac. Za nepoznati umanjilac oduzmi razliku od umanjenika.",
     "Za nepoznati činilac podeli proizvod poznatim nenultim činiocem. Proveri dobijeni broj u početnoj jednačini.",
-    "Kada je nepoznati broj delilac, nula nije moguća vrednost."
+    "Kada je nepoznati broj delilac, nula nije moguća vrednost. Ako je koeficijent uz x nula, proveri jednakost bez deljenja: 0·x je uvek nula."
    ],
    "formulas": [
     "x+a=b ⇒ x=b−a",
@@ -3695,7 +3695,7 @@
      "formulas": [],
      "visualIndexes": [],
      "table": false,
-     "note": "Kada je nepoznati broj delilac, nula nije moguća vrednost."
+     "note": "Kada je nepoznati broj delilac, nula nije moguća vrednost. Ako je koeficijent uz x nula, proveri jednakost bez deljenja: 0·x je uvek nula."
     }
    ],
    "visuals": [],
@@ -19704,7 +19704,7 @@
    "id": "q-jednacine-3",
    "prompt": "Odredi činilac.",
    "math": "0,5x=3",
-   "hint": "Ceo broj je dvostruko veći od polovine.",
+   "hint": "Polovina traženog broja je 3. Udvostruči je.",
    "solution": "x=3:0,5=6.",
    "taskType": "činilac",
    "answer": "6",
@@ -19842,7 +19842,7 @@
   },
   {
    "id": "q-jednacine-10",
-   "prompt": "Dve jednake boce sa sandukom mase 0,7 kg imaju 3,2 kg. Kolika je masa jedne pune boce u kg?",
+   "prompt": "Dve pune boce jednake mase i prazan sanduk zajedno imaju 3,2 kg. Prazan sanduk ima 0,7 kg. Kolika je masa jedne pune boce u kg?",
    "math": "",
    "hint": "Od ukupne mase oduzmi sanduk.",
    "solution": "(3,2−0,7):2=1,25.",

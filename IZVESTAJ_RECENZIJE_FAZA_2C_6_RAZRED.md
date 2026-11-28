@@ -1,3 +1,7 @@
+# Checkpoint 23 — Jednačine u skupu racionalnih brojeva
+
+584/919 zadataka i 26/45 lekcija. G6C-045: razjašnjeni nulti koeficijent, poznata polovina i jednake mase punih boca. Egzaktna provera obuhvata svih 14 pripadajućih zadataka i oba primera. 127/127 testova, Worker i Pages build, TypeScript, lint (6 upozorenja). Desktop i touch emulacija: po deset redovnih zadataka, povratna informacija, pomoć, prikaz matematike i ćirilice, napredak posle osvežavanja. Posebna regresija napretka prošla. Dodatni zadaci provereni računski. Sledeći zadatak q-nejednacine-1.
+
 # Checkpoint 22 — Deljenje i izrazi u skupu racionalnih brojeva
 
 570/919 zadataka i 25/45 lekcija. G6C-044: precizirano pravilo za operacije istog prioriteta i obrtanje delioca; godišnji zadatak dobio horizontalni razlomak. Egzaktna provera obuhvata svih 15 pripadajućih zadataka i oba primera. 127/127 testova, Worker i Pages build, TypeScript, lint (6 upozorenja). Desktop i touch emulacija: po deset redovnih zadataka, povratna informacija, pomoć, prikaz matematike i ćirilice, napredak posle osvežavanja. Posebna regresija napretka prošla. Dodatni zadaci provereni računski. Sledeći zadatak q-jednacine-1.

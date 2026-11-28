@@ -1,0 +1,156 @@
+[
+  {
+    "id": "q-jednacine-1",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "answer": "-0,5",
+    "hint": "Oduzmi 0,7.",
+    "procedure": "x=0,2−0,7=−0,5.",
+    "level": "basic",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-jednacine-2",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "answer": "0,75",
+    "hint": "Dodaj 1,25.",
+    "procedure": "x=−0,5+1,25=0,75.",
+    "level": "basic",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-jednacine-3",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "answer": "6",
+    "hint": "Polovina traženog broja je 3. Udvostruči je.",
+    "procedure": "x=3:0,5=6.",
+    "level": "basic",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-jednacine-4",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "answer": "-1",
+    "hint": "Oduzmi razliku od umanjenika.",
+    "procedure": "x=−0,4−0,6=−1.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-jednacine-5",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "answer": "-3",
+    "hint": "Pomnoži količnik deliocem.",
+    "procedure": "x=4·(−0,75)=−3.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-jednacine-6",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "answer": "-6",
+    "hint": "Čime treba pomnožiti −0,25 da dobiješ 1,5?",
+    "procedure": "x=1,5:(−0,25)=−6.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-jednacine-7",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "answer": "-0,25",
+    "hint": "Oduzmi tri četvrtine od polovine.",
+    "procedure": "[[frac:1|2]]−[[frac:3|4]]=−[[frac:1|4]]=−0,25.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-jednacine-8",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "answer": "-2",
+    "hint": "Najpre pomnoži obe strane sa −2.",
+    "procedure": "x−0,5=−2,5 daje x=−2.",
+    "level": "advanced",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-jednacine-9",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "answer": "Svi racionalni brojevi",
+    "hint": "Proveri šta se dobija za svaki x.",
+    "procedure": "Svaki racionalan broj daje proizvod nula.",
+    "level": "advanced",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-jednacine-10",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "answer": "1,25",
+    "hint": "Od ukupne mase oduzmi sanduk.",
+    "procedure": "(3,2−0,7):2=1,25.",
+    "level": "advanced",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-jednacine-11",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "answer": "-0,4",
+    "hint": "Dva minusa daju plus.",
+    "procedure": "x+0,4=0, pa je x=−0,4.",
+    "level": "basic",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-jednacine-12",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "answer": "Da",
+    "hint": "Zameni x brojem −2.",
+    "procedure": "Proizvod je −1,5.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-jednacine-13",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "answer": "0",
+    "hint": "Leva strana uvek ima istu vrednost.",
+    "procedure": "Nula nije jednaka −1, pa nema rešenja.",
+    "level": "advanced",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "q-jednacine-14",
+    "area": "racionalni-brojevi",
+    "lesson": "q-jednacine",
+    "answer": "-1,5",
+    "hint": "Pomnoži −3 polovinom.",
+    "procedure": "−3·0,5=−1,5.",
+    "level": "medium",
+    "method": "Egzaktan račun sa fractions.Fraction, sve alternative.",
+    "status": "potpuno recenziran"
+  }
+]
