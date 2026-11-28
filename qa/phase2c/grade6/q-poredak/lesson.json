@@ -1,0 +1,19 @@
+{
+  "id": "q-poredak",
+  "area": "racionalni-brojevi",
+  "sequence": "Od znaka i položaja prema strogim granicama i opštem poređenju.",
+  "examples": [
+    {
+      "question": "Šta je bliže nuli, −0,7 ili −[[frac:2|3]]?",
+      "steps": [
+        "−0,7=−[[frac:21|30]], a −[[frac:2|3]]=−[[frac:20|30]].",
+        "−[[frac:20|30]] leži desno od −[[frac:21|30]].",
+        "Bliži nuli je −[[frac:2|3]]."
+      ],
+      "verification": "20/30 < 21/30 po apsolutnoj vrednosti."
+    }
+  ],
+  "misconceptions": "Kod negativnih brojeva manja udaljenost od nule znači veći broj.",
+  "assessment": "14 zadataka, 10 u redovnom toku.",
+  "status": "potpuno recenzirana"
+}

@@ -1,3 +1,7 @@
+# Checkpoint 19 — Poređenje i poredak racionalnih brojeva
+
+526/919 zadataka i 22/45 lekcija. G6C-041: preciziran znak oba negativna broja u obrazloženju i objašnjen prelaz sa celih stotih delova na decimalni zapis. Egzaktno provereno svih 14 zadataka, sve opcije i oba primera. 127/127 testova, oba build-a, TypeScript, lint (6 upozorenja). Desktop i emulirani touch: po 10 zadataka, promena pisma, decimalni zarez, položaj brojioca i imenioca i crta razlomka, ponovno učitavanje. Posebna regresija napretka prošla. Četiri dodatna zadatka proverena računski. Sledeći zadatak q-zbir-razlika-1.
+
 # Checkpoint 18 — Ekvivalentni razlomci i decimalni zapis
 
 Polazni commit e188feea88f8143a07619224c5c408d05e1eb928. Ukupno 512/919 zadataka i 21/45 lekcija; preostaje 407 zadataka i 24 lekcije. Sledeća lekcija q-poredak, zadatak q-poredak-1.

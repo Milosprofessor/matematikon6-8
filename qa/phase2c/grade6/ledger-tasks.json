@@ -9614,99 +9614,155 @@
     "id": "q-poredak-1",
     "area": "racionalni-brojevi",
     "lesson": "q-poredak",
+    "answer": "−0,3",
+    "hint": "Pogledaj udaljenost od nule.",
+    "procedure": "Broj −0,3 udaljen je od nule tri desetine, a −0,8 osam desetina. Zato je −0,3 desno od −0,8.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktno poređenje, brojanje ili upoređivanje koeficijenata.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-poredak-2",
     "area": "racionalni-brojevi",
     "lesson": "q-poredak",
+    "answer": "=",
+    "hint": "Pretvori polovinu u desetine.",
+    "procedure": "Oba zapisa označavaju 0,5.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktno poređenje, brojanje ili upoređivanje koeficijenata.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-poredak-3",
     "area": "racionalni-brojevi",
     "lesson": "q-poredak",
+    "answer": "−[[frac:1|9]]",
+    "hint": "Pogledaj znak.",
+    "procedure": "Negativan broj je levo od nule.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktno poređenje, brojanje ili upoređivanje koeficijenata.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-poredak-4",
     "area": "racionalni-brojevi",
     "lesson": "q-poredak",
+    "answer": "−[[frac:4|5]]",
+    "hint": "Prevedi u stote delove.",
+    "procedure": "−0,80<−0,75<−0,70.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktno poređenje, brojanje ili upoređivanje koeficijenata.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-poredak-5",
     "area": "racionalni-brojevi",
     "lesson": "q-poredak",
+    "answer": "4",
+    "hint": "Popiši cele brojeve od prvog većeg od −1,4.",
+    "procedure": "To su −1, 0, 1 i 2.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktno poređenje, brojanje ili upoređivanje koeficijenata.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-poredak-6",
     "area": "racionalni-brojevi",
     "lesson": "q-poredak",
+    "answer": "<",
+    "hint": "Uzmi imenilac 18.",
+    "procedure": "−[[frac:15|18]]<−[[frac:14|18]].",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktno poređenje, brojanje ili upoređivanje koeficijenata.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-poredak-7",
     "area": "racionalni-brojevi",
     "lesson": "q-poredak",
+    "answer": "−0,35",
+    "hint": "Pretvori u stote delove.",
+    "procedure": "U stotim delovima važi −40<−35<−30. Deljenjem sa 100 dobijaš −0,4<−0,35<−0,3.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktno poređenje, brojanje ili upoređivanje koeficijenata.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-poredak-8",
     "area": "racionalni-brojevi",
     "lesson": "q-poredak",
+    "answer": "-2",
+    "hint": "Odredi između koja dva cela broja leži svaki broj.",
+    "procedure": "Oba su između −3 i −2, pa je odgovor −2.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktno poređenje, brojanje ili upoređivanje koeficijenata.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-poredak-9",
     "area": "racionalni-brojevi",
     "lesson": "q-poredak",
+    "answer": "4",
+    "hint": "Obe granice napiši u dvanaestinama.",
+    "procedure": "Između brojioca −8 i −3 su −7, −6, −5 i −4.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktno poređenje, brojanje ili upoređivanje koeficijenata.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-poredak-10",
     "area": "racionalni-brojevi",
     "lesson": "q-poredak",
+    "answer": "<",
+    "hint": "Razmotri znak svakog izraza.",
+    "procedure": "Leva strana je negativna, a desna pozitivna.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktno poređenje, brojanje ili upoređivanje koeficijenata.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-poredak-11",
     "area": "racionalni-brojevi",
     "lesson": "q-poredak",
+    "answer": "0,1",
+    "hint": "Dodaj nule do hiljaditih.",
+    "procedure": "100 hiljaditih je više od 99 i 90.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktno poređenje, brojanje ili upoređivanje koeficijenata.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-poredak-12",
     "area": "racionalni-brojevi",
     "lesson": "q-poredak",
+    "answer": "−[[frac:6|8]]=−0,75",
+    "hint": "Skrati sa 2.",
+    "procedure": "−[[frac:6|8]]=−[[frac:3|4]]=−0,75.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktno poređenje, brojanje ili upoređivanje koeficijenata.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-poredak-13",
     "area": "racionalni-brojevi",
     "lesson": "q-poredak",
+    "answer": "5",
+    "hint": "Proveri i granične cele brojeve.",
+    "procedure": "−2, −1, 0, 1 i 2 su u intervalu.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktno poređenje, brojanje ili upoređivanje koeficijenata.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-poredak-14",
     "area": "racionalni-brojevi",
     "lesson": "q-poredak",
+    "answer": "-0,3",
+    "hint": "Oba kraja su udaljena jednu desetinu od sredine.",
+    "procedure": "−0,3−(−0,4)=0,1 i −0,2−(−0,3)=0,1.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Egzaktno poređenje, brojanje ili upoređivanje koeficijenata.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zbir-razlika-1",
