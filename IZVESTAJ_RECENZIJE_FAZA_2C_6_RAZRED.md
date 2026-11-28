@@ -1,3 +1,11 @@
+# Checkpoint 18 — Ekvivalentni razlomci i decimalni zapis
+
+Polazni commit e188feea88f8143a07619224c5c408d05e1eb928. Ukupno 512/919 zadataka i 21/45 lekcija; preostaje 407 zadataka i 24 lekcije. Sledeća lekcija q-poredak, zadatak q-poredak-1.
+
+G6C-040. Prošireno pravilo za proizvoljan broj decimalnih mesta, uvedena veza ponovljenog ostatka i periode, precizirana tri pitanja. Egzaktna provera svih 14 zadataka i svih ponuđenih alternativa, primera −0,375 i −0,04. Redosled i ključevi odgovora sačuvani.
+
+127/127 testova; Worker i Pages build, TypeScript i lint (0 grešaka, 6 upozorenja). Desktop 1366×768 i emulirani touch 390×844: svih deset redovnih zadataka, netačan pa tačan odgovor, nagoveštaj, postupak, prikaz razlomka, decimalni zarez, ćirilica i napredak nakon osvežavanja. Posebna storage regresija prošla. Četiri dodatna zadatka proverena egzaktno, bez pojedinačnog UI testa. Dokazi u qa/phase2c/grade6/q-zapisi/.
+
 # Checkpoint 17 — Apsolutna vrednost racionalnog broja
 
 Datum: 28.11.2026. Polazni GitHub commit f48a5d592b59b417011eb13af60b146300a8cb56. Nalaz G6C-039.

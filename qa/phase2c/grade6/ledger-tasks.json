@@ -9460,99 +9460,155 @@
     "id": "q-zapisi-1",
     "area": "racionalni-brojevi",
     "lesson": "q-zapisi",
+    "answer": "5",
+    "hint": "Koliko puta je uvećan imenilac?",
+    "procedure": "20:4=5, pa je x=1·5=5.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisan račun sa fractions.Fraction; proverene sve opcije.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zapisi-2",
     "area": "racionalni-brojevi",
     "lesson": "q-zapisi",
+    "answer": "-0,6",
+    "hint": "Proširi do desetina.",
+    "procedure": "−[[frac:3|5]]=−[[frac:6|10]]=−0,6.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisan račun sa fractions.Fraction; proverene sve opcije.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zapisi-3",
     "area": "racionalni-brojevi",
     "lesson": "q-zapisi",
+    "answer": "[[frac:2|3]]",
+    "hint": "Nađi zajednički delilac.",
+    "procedure": "Deljenjem oba broja sa 6 dobija se [[frac:2|3]].",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisan račun sa fractions.Fraction; proverene sve opcije.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zapisi-4",
     "area": "racionalni-brojevi",
     "lesson": "q-zapisi",
+    "answer": "21",
+    "hint": "Poveži brojeve 2 i 14.",
+    "procedure": "Brojilac je pomnožen sa 7, zato je imenilac 3·7=21.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisan račun sa fractions.Fraction; proverene sve opcije.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zapisi-5",
     "area": "racionalni-brojevi",
     "lesson": "q-zapisi",
+    "answer": "-5",
+    "hint": "Zapiši broj preko 100.",
+    "procedure": "−[[frac:125|100]]=−[[frac:5|4]].",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisan račun sa fractions.Fraction; proverene sve opcije.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zapisi-6",
     "area": "racionalni-brojevi",
     "lesson": "q-zapisi",
+    "answer": "[[frac:1|3]]",
+    "hint": "Podeli brojilac imeniocem.",
+    "procedure": "1:3=0,333… Ostala dva zapisa su konačna.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisan račun sa fractions.Fraction; proverene sve opcije.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zapisi-7",
     "area": "racionalni-brojevi",
     "lesson": "q-zapisi",
+    "answer": "[[frac:6|8]]=[[frac:3|4]]",
+    "hint": "Skraćivanje je deljenje.",
+    "procedure": "6:2=3 i 8:2=4, pa ostaju tri četvrtine.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisan račun sa fractions.Fraction; proverene sve opcije.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zapisi-8",
     "area": "racionalni-brojevi",
     "lesson": "q-zapisi",
+    "answer": "16",
+    "hint": "Pretvori desethiljadite u razlomak.",
+    "procedure": "[[frac:625|10000]]=[[frac:1|16]] posle deljenja sa 625.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisan račun sa fractions.Fraction; proverene sve opcije.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zapisi-9",
     "area": "racionalni-brojevi",
     "lesson": "q-zapisi",
+    "answer": "[[frac:2|3]]",
+    "hint": "Razlikuj period od poslednje decimale.",
+    "procedure": "2:3=0,666… dok je [[frac:6|10]]=0,6.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisan račun sa fractions.Fraction; proverene sve opcije.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zapisi-10",
     "area": "racionalni-brojevi",
     "lesson": "q-zapisi",
+    "answer": "-9",
+    "hint": "Pretvori 0,375 u osmine.",
+    "procedure": "x=−24·[[frac:3|8]]=−9. Dva negativna broja daju pozitivan količnik.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisan račun sa fractions.Fraction; proverene sve opcije.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zapisi-11",
     "area": "racionalni-brojevi",
     "lesson": "q-zapisi",
+    "answer": "35",
+    "hint": "Odredi činilac proširivanja.",
+    "procedure": "15:3=5, pa je x=7·5.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisan račun sa fractions.Fraction; proverene sve opcije.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zapisi-12",
     "area": "racionalni-brojevi",
     "lesson": "q-zapisi",
+    "answer": "−0,875",
+    "hint": "Dovedi imenilac do 1000.",
+    "procedure": "−[[frac:7|8]]=−[[frac:875|1000]].",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisan račun sa fractions.Fraction; proverene sve opcije.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zapisi-13",
     "area": "racionalni-brojevi",
     "lesson": "q-zapisi",
+    "answer": "175",
+    "hint": "Jedna četvrtina sadrži 25 stotih.",
+    "procedure": "7·25=175 stotih delova.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisan račun sa fractions.Fraction; proverene sve opcije.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-zapisi-14",
     "area": "racionalni-brojevi",
     "lesson": "q-zapisi",
+    "answer": "−0,4 i −[[frac:2|5]]",
+    "hint": "Pretvori petine u desetine.",
+    "procedure": "−[[frac:2|5]]=−[[frac:4|10]]=−0,4.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisan račun sa fractions.Fraction; proverene sve opcije.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "q-poredak-1",

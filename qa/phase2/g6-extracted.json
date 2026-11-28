@@ -3150,7 +3150,7 @@
    "intro": "Istu tačku na brojnoj pravoj možemo označiti različitim razlomcima ili decimalnim brojem.",
    "rules": [
     "Brojilac i imenilac množimo istim nenultim celim brojem. Pri skraćivanju delimo ih istim nenultim celim brojem koji deli i brojilac i imenilac bez ostatka. Imenilac mora biti različit od nule.",
-    "Za decimalni zapis podeli brojilac imeniocem. Konačan decimalni broj napiši preko desetice, stotine ili hiljade, pa skrati.",
+    "Za decimalni zapis podeli brojilac imeniocem. Pri pretvaranju konačnog decimalnog zapisa u razlomak, u imenilac napiši 1 i onoliko nula koliko ima decimalnih mesta, pa skrati. Ako se pri deljenju ponovi nenulti ostatak, ponavlja se i grupa cifara u količniku, kao cifra 6 u zapisu 0,(6).",
     "Znak minus ispred razlomka odnosi se na ceo količnik. Dva minusa u količniku daju plus."
    ],
    "formulas": [
@@ -3195,7 +3195,7 @@
     },
     {
      "title": "Postupak",
-     "text": "Za decimalni zapis podeli brojilac imeniocem. Konačan decimalni broj napiši preko desetice, stotine ili hiljade, pa skrati.",
+     "text": "Za decimalni zapis podeli brojilac imeniocem. Pri pretvaranju konačnog decimalnog zapisa u razlomak, u imenilac napiši 1 i onoliko nula koliko ima decimalnih mesta, pa skrati. Ako se pri deljenju ponovi nenulti ostatak, ponavlja se i grupa cifara u količniku, kao cifra 6 u zapisu 0,(6).",
      "definition": false,
      "formulas": [],
      "visualIndexes": [],
@@ -18259,7 +18259,7 @@
   },
   {
    "id": "q-zapisi-3",
-   "prompt": "Izaberi najjednostavniji zapis.",
+   "prompt": "Izaberi neskrativ razlomak jednake vrednosti.",
    "math": "[[frac:12|18]]",
    "hint": "Nađi zajednički delilac.",
    "solution": "Deljenjem oba broja sa 6 dobija se [[frac:2|3]].",
@@ -18322,7 +18322,7 @@
   },
   {
    "id": "q-zapisi-6",
-   "prompt": "Koji zapis je periodičan sa periodom 3?",
+   "prompt": "Čiji decimalni zapis ima cifru 3 kao period?",
    "math": "",
    "hint": "Podeli brojilac imeniocem.",
    "solution": "1:3=0,333… Ostala dva zapisa su konačna.",
@@ -18391,7 +18391,7 @@
   },
   {
    "id": "q-zapisi-9",
-   "prompt": "Koji razlomak ima isti zapis kao 0,(6)?",
+   "prompt": "Koji razlomak je jednak broju 0,(6)?",
    "math": "",
    "hint": "Razlikuj period od poslednje decimale.",
    "solution": "2:3=0,666… dok je [[frac:6|10]]=0,6.",
