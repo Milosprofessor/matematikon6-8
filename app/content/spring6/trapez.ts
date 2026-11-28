@@ -13,7 +13,7 @@ export default springLesson({
 }, [
   ["Kako se zovu paralelne stranice trapeza?",["Osnovice","Kraci","Dijagonale"],"Posmatraj stranice na paralelnim pravama.","Nazivamo ih osnovicama, a preostale dve kracima."],
   ["Srednja linija trougla paralelna je stranici od 9 cm. Koliko cm ima srednja linija?","4,5","Uzmi polovinu odgovarajuće stranice.","9:2=4,5 cm."],
-  ["Koliko stepeni čini ugao dijagonala deltoida?","90","Jedna je osa simetrije druge.","One seku jedna drugu pod pravim uglom."],
+  ["Pod kojim uglom se seku dijagonale deltoida? Upiši broj stepeni.","90","Prava koja sadrži dijagonalu simetrije normalna je na drugu dijagonalu.","One seku jedna drugu pod pravim uglom."],
   ["Osnovice imaju 7 i 13 cm. Koliko cm ima srednja linija?","10","Izračunaj aritmetičku sredinu.","m=(7+13):2=10 cm."],
   ["Srednja linija trapeza ima 9 cm, jedna osnovica 12 cm. Koliko cm ima druga?","6","Vrati zbir osnovica.","2m=a+b=18 cm. Druga ima 18−12=6 cm."],
   ["Uz veću osnovicu jednakokrakog trapeza ugao je 63°. Koliki je u stepenima ugao na istom kraku uz drugu osnovicu?","117","Osnovice su paralelne.","Uglovi na kraku se dopunjuju: 180−63=117."],
@@ -24,7 +24,7 @@ export default springLesson({
   ["Da li sama jednakost jednog para susednih stranica garantuje deltoid?",["Ne","Da"],"Proveri drugi par.","Za deltoid su potrebna dva para jednakih susednih stranica."],
   ["Trapez ima osnovice 4 i 10 cm i jednake krake po 5 cm. Koliki je obim u cm?","24","Obiđi granicu.","4+10+5+5=24 cm."],
   ["U trouglu je srednja linija 3,7 cm. Paralelna stranica ima koliko cm?","7,4","Stranica je dvostruko duža.","2·3,7=7,4 cm."],
-  ["Dijagonala simetrije deltoida polovi drugu dužine 15 cm. Koliko cm ima jedna polovina?","7,5","Jednaki delovi imaju polovinu dužine.","15:2=7,5 cm."],
+  ["Dijagonala koja leži na osi simetrije deltoida polovi drugu dijagonalu, dugu 15 cm. Koliko cm ima jedna polovina?","7,5","Jednaki delovi imaju polovinu dužine.","15:2=7,5 cm."],
   ["U jednakokrakom trapezu razlika osnovica je 10 cm, a kraća ima 8 cm. Koliko cm ima srednja linija?","13","Izračunaj dužu osnovicu.","Duža je 18 cm, pa m=(18+8):2=13 cm."],
   ["Može li trapez osnovica 15 i 5 cm i oba kraka od 4 cm postojati?",["Ne","Da"],"Uporedi krak sa njegovom horizontalnom projekcijom.","Projekcija svakog kraka bila bi (15−5):2=5 cm. Krak dužine 4 cm ne može imati projekciju od 5 cm."]
 ]);

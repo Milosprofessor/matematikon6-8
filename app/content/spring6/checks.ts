@@ -35,7 +35,7 @@ export const finals = [
     ["s6-podudarnost","medium","U △ABC≅△RPQ su AB=5, BC=7, AC=8 cm. Koliko cm ima stranica RQ?","8","Upari prvo i treće teme.","A odgovara R, C odgovara Q. Zato RQ=AC=8 cm."],
     ["s6-procenti","medium","Četvrtinu od 64 učenika čine šestaši. Od njih 75% dolazi pešice. Koliko šestaša dolazi pešice?","12","Izdvoj grupu na koju se procenat odnosi.","Šestaša je 64:4=16. Tri četvrtine od 16 su 12."],
     ["s6-merenje","medium","Koliko kvadratnih decimetara čini 3500 cm²?","35","Jedan dm² sadrži 100 cm².","3500:100=35 dm²."],
-    ["s6-trapez","advanced","Tačke M i N su sredine krakova trapeza. MN=14 cm, manja osnovica je polovina veće. Koliko cm ima veća?","56/3","Zbir osnovica je dvostruka srednja linija.","Ako je veća x, onda x+x:2=28. Pomnoži sa 2: 3x=56. Veća je 56/3 cm."],
+    ["s6-trapez","advanced","Tačke M i N su sredine krakova trapeza. MN=14 cm, manja osnovica je polovina veće. Koliko cm ima veća?","56/3","Zbir osnovica je dvostruka srednja linija.","Ako je veća x, onda x+x:2=28. Pomnoži sa 2: 3x=56. Veća je [[frac:56|3]] cm."],
     ["s6-koordinate","advanced","Koordinate su A(−2, −1), B(4, −1), C(1, 2). Kolika je površina trougla u kvadratnim jedinicama?","9","Za osnovicu izaberi horizontalnu duž.","AB=6. Visina je 2−(−1)=3. P=6·3:2=9."],
   ]),
   finalCheck("s6-izazov", "Napredna problemska provera", [

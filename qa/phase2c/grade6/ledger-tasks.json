@@ -12221,78 +12221,122 @@
     "id": "s6-trapez-1",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-trapez",
+    "answer": "Osnovice",
+    "hint": "Posmatraj stranice na paralelnim pravama.",
+    "procedure": "Nazivamo ih osnovicama, a preostale dve kracima.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trapez-2",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-trapez",
+    "answer": "4,5",
+    "hint": "Uzmi polovinu odgovarajuće stranice.",
+    "procedure": "9:2=4,5 cm.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trapez-3",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-trapez",
+    "answer": "90",
+    "hint": "Prava koja sadrži dijagonalu simetrije normalna je na drugu dijagonalu.",
+    "procedure": "One seku jedna drugu pod pravim uglom.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trapez-4",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-trapez",
+    "answer": "10",
+    "hint": "Izračunaj aritmetičku sredinu.",
+    "procedure": "m=(7+13):2=10 cm.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trapez-5",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-trapez",
+    "answer": "6",
+    "hint": "Vrati zbir osnovica.",
+    "procedure": "2m=a+b=18 cm. Druga ima 18−12=6 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trapez-6",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-trapez",
+    "answer": "117",
+    "hint": "Osnovice su paralelne.",
+    "procedure": "Uglovi na kraku se dopunjuju: 180−63=117.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trapez-7",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-trapez",
+    "answer": "12",
+    "hint": "Oduzmi obe kraće pa podeli.",
+    "procedure": "(38−14):2=12 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trapez-8",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-trapez",
+    "answer": "26",
+    "hint": "Svaka stranica je dvostruko duža od odgovarajuće srednje linije.",
+    "procedure": "Zbir se takođe udvostručuje: 2·13=26 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trapez-9",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-trapez",
+    "answer": "4",
+    "hint": "Razlika osnovica je raspoređena simetrično.",
+    "procedure": "15−7=8 cm, po 8:2=4 cm sa svake strane.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trapez-10",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-trapez",
+    "answer": "18",
+    "hint": "Zbir osnovica čini dvostruku srednju liniju.",
+    "procedure": "x+3x=24, pa x=6 i 3x=18 cm.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trapez-11",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-trapez",
+    "answer": "Ne",
+    "hint": "Proveri drugi par.",
+    "procedure": "Za deltoid su potrebna dva para jednakih susednih stranica.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-cetiri-stranice-1",
@@ -12386,8 +12430,12 @@
     "id": "s6-cetvorouglovi-primena",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-trapez",
+    "answer": "7",
+    "hint": "Koliko iznose osnovice zajedno?",
+    "procedure": "Zbir osnovica je 2·13=26. Dva jednaka kraka zajedno imaju 14 cm, dakle po 7 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-uglovi-16",
@@ -12448,15 +12496,23 @@
     "id": "s6-trapez-15",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-trapez",
+    "answer": "13",
+    "hint": "Izračunaj dužu osnovicu.",
+    "procedure": "Duža je 18 cm, pa m=(18+8):2=13 cm.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trapez-16",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-trapez",
+    "answer": "Ne",
+    "hint": "Uporedi krak sa njegovom horizontalnom projekcijom.",
+    "procedure": "Projekcija svakog kraka bila bi (15−5):2=5 cm. Krak dužine 4 cm ne može imati projekciju od 5 cm.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-cetiri-stranice-15",
@@ -13250,22 +13306,34 @@
     "id": "s6-trapez-12",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-trapez",
+    "answer": "24",
+    "hint": "Obiđi granicu.",
+    "procedure": "4+10+5+5=24 cm.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trapez-13",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-trapez",
+    "answer": "7,4",
+    "hint": "Stranica je dvostruko duža.",
+    "procedure": "2·3,7=7,4 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trapez-14",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-trapez",
+    "answer": "7,5",
+    "hint": "Jednaki delovi imaju polovinu dužine.",
+    "procedure": "15:2=7,5 cm.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-cetiri-stranice-12",
@@ -13570,8 +13638,12 @@
     "id": "s6-godisnja-9",
     "area": "s6-zavrsnica",
     "lesson": "s6-trapez",
+    "answer": "56/3",
+    "hint": "Zbir osnovica je dvostruka srednja linija.",
+    "procedure": "Ako je veća x, onda x+x:2=28. Pomnoži sa 2: 3x=56. Veća je [[frac:56|3]] cm.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-godisnja-10",
@@ -13599,8 +13671,12 @@
     "id": "s6-izazov-2",
     "area": "s6-zavrsnica",
     "lesson": "s6-trapez",
+    "answer": "11",
+    "hint": "Prva srednja linija postaje osnovica manjeg trapeza.",
+    "procedure": "Prva je (9+17):2=13 cm. Nova je (9+13):2=11 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-izazov-3",

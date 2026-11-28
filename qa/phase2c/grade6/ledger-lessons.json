@@ -1301,7 +1301,35 @@
   {
     "id": "s6-trapez",
     "area": "s6-cetvorouglovi",
-    "status": "nepregledana u fazi 2C"
+    "sequence": "Od osnovica i srednje linije do rekonstrukcije dužina, obima i provere postojanja.",
+    "examples": [
+      {
+        "question": "Osnovice trapeza su 14 i 8 cm. Odredi srednju liniju.",
+        "steps": [
+          "Spoji sredine krakova. Dijagonala deli tu duž na dve srednje linije trouglova, jednu za svaku osnovicu.",
+          "Dužine delova su 7 i 4 cm. Zato je m=(14+8):2=11 cm."
+        ],
+        "verification": "11 cm"
+      },
+      {
+        "question": "Kako konstruisati jednakokraki trapez osnovica 10 i 6 cm i visine 3 cm?",
+        "steps": [
+          "Nacrtaj veću osnovicu i njenu simetralu. Na simetrali odmeri visinu 3 cm i kroz tu tačku konstruiši paralelu osnovici.",
+          "Na paraleli od središta odmeri po 3 cm levo i desno. Spoji bliže krajeve osnovica. Simetrija garantuje jednake krake."
+        ],
+        "verification": "Krajevi kraće osnovice leže po 3 cm levo i desno od ose."
+      },
+      {
+        "question": "Deltoid ima par stranica od 4 cm i par od 7 cm. Koliki je obim?",
+        "steps": [
+          "Na granici susrećeš dve kraće i dve duže stranice.",
+          "O=2(a+b)=2·(4+7)=22 cm. Dijagonale nisu deo obima."
+        ],
+        "verification": "22 cm"
+      }
+    ],
+    "assessment": "19 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
   },
   {
     "id": "s6-cetiri-stranice",

@@ -1,3 +1,9 @@
+# Checkpoint 37 — Trapez, srednje linije i deltoid
+
+831/919 zadataka i 40/45 lekcija. G6C-059: Precizirani ugao dijagonala, osa simetrije i razlomački rezultat godišnjeg zadatka.
+
+Egzaktno pregledano 19 zadataka i tri rešena primera. 127/127 programskih testova, Worker i Pages build, TypeScript; lint bez grešaka. Na desktopu i touch emulaciji proveren je tok svih deset redovnih zadataka, pomoć, povratna informacija, tri primera, ćirilica i napredak posle osvežavanja. Posebna regresija napretka prošla. Ostali zadaci provereni su računski. Sledeći zadatak: s6-cetiri-stranice-1.
+
 # Checkpoint 36 — Vektori i konstrukcija paralelograma
 
 812/919 zadataka i 39/45 lekcija. G6C-058: Zahtev razlikuje dužinu i smer; konstrukcija navodi uslove za nedegenerisane dijagonale.
