@@ -1235,7 +1235,35 @@
   {
     "id": "s6-paralelogram",
     "area": "s6-cetvorouglovi",
-    "status": "nepregledana u fazi 2C"
+    "sequence": "Od naspramnih i susednih elemenata ka dovoljnim uslovima i klasifikaciji.",
+    "examples": [
+      {
+        "question": "U ABCD ugao A ima 68°. Odredi ostala tri ugla paralelograma.",
+        "steps": [
+          "Zbog paralelnosti je ∠B=180°−68°=112°. Naspramni uglovi su jednaki.",
+          "Zato ∠C=68°, ∠D=112°. Zbir je 360°."
+        ],
+        "verification": "112°, 68°, 112°"
+      },
+      {
+        "question": "Pravougaonik ima AC=13 cm, a dijagonale se seku u S. Koliko je BS?",
+        "steps": [
+          "Dijagonale pravougaonika su jednake, pa je BD=13 cm.",
+          "Pošto se dijagonale paralelograma polove, BS=13:2=6,5 cm."
+        ],
+        "verification": "BS=6,5 cm"
+      },
+      {
+        "question": "Romb ima obim 36 cm. Možemo li utvrditi dužinu dijagonale?",
+        "steps": [
+          "Sve četiri stranice su jednake, pa je stranica 36:4=9 cm.",
+          "Menjanjem ugla uz iste stranice menja se dijagonala. Sam obim nije dovoljan."
+        ],
+        "verification": "Stranica 9 cm, dijagonala zavisi i od ugla."
+      }
+    ],
+    "assessment": "17 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
   },
   {
     "id": "s6-vektori",

@@ -1,3 +1,9 @@
+# Checkpoint 35 — Paralelogram, pravougaonik, romb i kvadrat
+
+795/919 zadataka i 38/45 lekcija. G6C-057: Precizirani parovi stranica i trostruka mera ugla.
+
+Egzaktno pregledano 17 zadataka i tri rešena primera. 127/127 programskih testova, Worker i Pages build, TypeScript; lint bez grešaka. Na desktopu i touch emulaciji proveren je tok svih deset redovnih zadataka, pomoć, povratna informacija, tri primera, ćirilica i napredak posle osvežavanja. Posebna regresija napretka prošla. Ostali zadaci provereni su računski. Sledeći zadatak: s6-vektori-1.
+
 # Checkpoint 34 — Četvorougao, dijagonale, uglovi i obim
 
 778/919 zadataka i 37/45 lekcija. G6C-056: Oba primera navode figuru, podatke i tražene uglove.
