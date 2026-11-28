@@ -3942,9 +3942,9 @@
    "aim": "Izaberi podatke koji određuju trougao i izvedi konstrukciju lenjirom i šestarom.",
    "intro": "Šestar prenosi rastojanje. Svaka tačka njegovog luka jednako je udaljena od središta.",
    "rules": [
-    "Za ugao od 60° konstruiši jednakostranični trougao. Simetrala deli ugao napola: iz temena opiši luk, pa iz njegova dva preseka sa kracima opiši jednake lukove i spoji njihov presek s temenom.",
+    "Za ugao od 60° konstruiši jednakostranični trougao. Simetrala deli ugao napola: iz temena opiši luk, pa iz ta dva preseka sa kracima opiši lukove istim otvorom šestara tako da se seku unutar ugla, pa njihov presek spoji s temenom.",
     "Kod SSS nacrtaj osnovicu i oko krajeva opiši kružnice preostalim stranicama. Kod SUS prenesi zahvaćeni ugao, a kod USU iz krajeva osnovice prenesi dva nalegla ugla. Presek određuje treće teme.",
-    "Ako je zbir kraćih stranica jednak najdužoj, temena leže na pravoj i nema trougla."
+    "Zbir dve kraće stranice mora biti veći od najduže. Ako je jednak najdužoj, tri temena leže na pravoj; ako je manji, kružnice se ne seku."
    ],
    "formulas": [
     "α+β+γ=180°",
@@ -4009,7 +4009,7 @@
     },
     {
      "title": "Pravilo",
-     "text": "Za ugao od 60° konstruiši jednakostranični trougao. Simetrala deli ugao napola: iz temena opiši luk, pa iz njegova dva preseka sa kracima opiši jednake lukove i spoji njihov presek s temenom.",
+     "text": "Za ugao od 60° konstruiši jednakostranični trougao. Simetrala deli ugao napola: iz temena opiši luk, pa iz ta dva preseka sa kracima opiši lukove istim otvorom šestara tako da se seku unutar ugla, pa njihov presek spoji s temenom.",
      "definition": false,
      "formulas": [
       "α+β+γ=180°",
@@ -4025,7 +4025,7 @@
      "formulas": [],
      "visualIndexes": [],
      "table": false,
-     "note": "Ako je zbir kraćih stranica jednak najdužoj, temena leže na pravoj i nema trougla."
+     "note": "Zbir dve kraće stranice mora biti veći od najduže. Ako je jednak najdužoj, tri temena leže na pravoj; ako je manji, kružnice se ne seku."
     }
    ],
    "visuals": [],

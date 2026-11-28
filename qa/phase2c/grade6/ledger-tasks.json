@@ -10692,78 +10692,122 @@
     "id": "s6-konstrukcije-1",
     "area": "s6-trouglovi",
     "lesson": "s6-konstrukcije",
+    "answer": "45",
+    "hint": "Simetrala deli ugao na jednake delove.",
+    "procedure": "90°:2=45°.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-konstrukcije-2",
     "area": "s6-trouglovi",
     "lesson": "s6-konstrukcije",
+    "answer": "60",
+    "hint": "Tri jednaka ugla čine opruženi ugao.",
+    "procedure": "180°:3=60°.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-konstrukcije-3",
     "area": "s6-trouglovi",
     "lesson": "s6-konstrukcije",
+    "answer": "Kružnica",
+    "hint": "Pazi na reč „svih“ i tačno rastojanje.",
+    "procedure": "Granica kruga je kružnica poluprečnika 4 cm.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-konstrukcije-4",
     "area": "s6-trouglovi",
     "lesson": "s6-konstrukcije",
+    "answer": "Ne",
+    "hint": "Uporedi zbir dve kraće sa najdužom.",
+    "procedure": "2+3=5, pa su temena kolinearna.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-konstrukcije-5",
     "area": "s6-trouglovi",
     "lesson": "s6-konstrukcije",
+    "answer": "30",
+    "hint": "Svaki put podeli trenutni ugao sa dva.",
+    "procedure": "120°:2:2=30°.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-konstrukcije-6",
     "area": "s6-trouglovi",
     "lesson": "s6-konstrukcije",
+    "answer": "SUS",
+    "hint": "Koje duži grade dati ugao?",
+    "procedure": "AB i AC se sastaju u A. Poznat je upravo zahvaćeni ugao.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-konstrukcije-7",
     "area": "s6-trouglovi",
     "lesson": "s6-konstrukcije",
+    "answer": "62",
+    "hint": "Dopuni zbir do 180°.",
+    "procedure": "180°−42°−76°=62°.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-konstrukcije-8",
     "area": "s6-trouglovi",
     "lesson": "s6-konstrukcije",
+    "answer": "135",
+    "hint": "Produženjem kraka nastaje opruženi ugao.",
+    "procedure": "180°−45°=135°.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-konstrukcije-9",
     "area": "s6-trouglovi",
     "lesson": "s6-konstrukcije",
+    "answer": "5",
+    "hint": "Upotrebi i razliku i zbir.",
+    "procedure": "4<x<10 daje 5, 6, 7, 8 i 9.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-konstrukcije-10",
     "area": "s6-trouglovi",
     "lesson": "s6-konstrukcije",
+    "answer": "1",
+    "hint": "Uporedi sve tri stranice oba trougla.",
+    "procedure": "Odrazi preko osnovice imaju tri jednake odgovarajuće stranice. Dobija se jedan oblik.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-konstrukcije-11",
     "area": "s6-trouglovi",
     "lesson": "s6-konstrukcije",
+    "answer": "120",
+    "hint": "Saberi mere nadovezanih uglova.",
+    "procedure": "90°+30°=120°.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-podudarnost-1",
@@ -10846,8 +10890,12 @@
     "id": "s6-konstrukcije-15",
     "area": "s6-trouglovi",
     "lesson": "s6-konstrukcije",
+    "answer": "6",
+    "hint": "Traži udaljenost traženog temena od B.",
+    "procedure": "C je od B udaljeno BC=6 cm.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-trouglovi-primena",
@@ -10860,8 +10908,12 @@
     "id": "s6-konstrukcije-16",
     "area": "s6-trouglovi",
     "lesson": "s6-konstrukcije",
+    "answer": "7",
+    "hint": "Zbir nije dozvoljena granica.",
+    "procedure": "Treća je manja od 8 i veća od 1. Najveći ceo izbor je 7.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-podudarnost-15",
@@ -12307,22 +12359,34 @@
     "id": "s6-konstrukcije-12",
     "area": "s6-trouglovi",
     "lesson": "s6-konstrukcije",
+    "answer": "0",
+    "hint": "Uporedi zbir poluprečnika s razmakom centara.",
+    "procedure": "4+4<9. Lukovi ne mogu da se sretnu.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-konstrukcije-13",
     "area": "s6-trouglovi",
     "lesson": "s6-konstrukcije",
+    "answer": "Dva puta prepolovi",
+    "hint": "Prati svaku polovinu.",
+    "procedure": "60°:2=30°, pa 30°:2=15°.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-konstrukcije-14",
     "area": "s6-trouglovi",
     "lesson": "s6-konstrukcije",
+    "answer": "Ne",
+    "hint": "Izračunaj zbir datih uglova.",
+    "procedure": "185° prelazi zbir sva tri ugla trougla.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-podudarnost-12",
@@ -12671,8 +12735,12 @@
     "id": "s6-polugodiste-2",
     "area": "s6-zavrsnica",
     "lesson": "s6-konstrukcije",
+    "answer": "75",
+    "hint": "Oba dela su jednaka.",
+    "procedure": "150°:2=75°.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-polugodiste-3",
