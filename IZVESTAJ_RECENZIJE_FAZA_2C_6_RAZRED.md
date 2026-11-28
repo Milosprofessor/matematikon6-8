@@ -1,3 +1,20 @@
+# Checkpoint 16 — Skup racionalnih brojeva
+
+Datum: 28.11.2026. Polazni commit 7cb32cd. Nalaz G6C-038.
+
+- 479/919 zadataka; 19/45 lekcija; 440 zadataka preostalo.
+- Skup racionalnih brojeva: 19/19 (6 osnovnih, 12 srednjih, 1 napredni), 3/3 rešena primera, egzaktna aritmetika Python Fraction; proverene sve alternative i koordinate. ID, redosled i ključevi odgovora sačuvani.
+- Precizirani definicija Q, nenulti imenilac, neutralnost i suprotan broj nule, proširivanje/skraćivanje, poređenje i strogi rasponi; horizontalni zapis razlomaka i decimalni zarez. Pet korekcija nivoa.
+- Worker i Pages build, 127/127 programskih testova nakon ciljne promene snapshot-a (prvobitni neuspeh sačuvan), TypeScript i lint (6 upozorenja, 0 grešaka).
+- 22 browser zapisa: desktop i mobilna touch emulacija, 10 redovnih zadataka na oba prikaza, tri primera, pogrešan odgovor, hint/postupak, ćirilica i napredak nakon osvežavanja. Sistemski Chromium neispravan; alternativni Chromium uspešan. Fizički uređaji i sve adaptivne varijante nisu pojedinačno testirani kroz UI.
+- Ishod 6.01 delimično pregledan; godišnji ishod nije potvrđen u celini.
+
+**Sledeće:** apsolutna-vrednost-racionalnog, o6-ra-1. Faza 2C nije završena. Bez merge-a i objave.
+
+Dokazi: qa/phase2c/grade6/skup-racionalnih-brojeva, ledger-tasks.json, ledger-lessons.json i Excel evidencije.
+
+---
+
 # Checkpoint 15 — Oblast Trougao završena
 
 Datum: 27.11.2026. Polazni GitHub commit 0104a03. Sadržajni GitHub commit ffb19d6d19e8ad78ca920d884600b6f090f12ef2. Nalazi G6C-035–037.

@@ -2849,11 +2849,12 @@
    "title": "Skup racionalnih brojeva",
    "intro": "Proširujemo skup celih brojeva pozitivnim i negativnim razlomcima. Prepoznaj različite zapise istog broja i njegov položaj na brojevnoj pravoj.",
    "rules": [
-    "Racionalan broj može se napisati kao a/b, gde su a i b celi brojevi i b≠0.",
-    "Svaki ceo broj je racionalan: n=n/1. Nula je racionalna i može se zapisati kao 0/b za b≠0.",
-    "Skup Q čine pozitivni racionalni brojevi, nula i negativni racionalni brojevi.",
-    "Suprotni brojevi imaju jednaku udaljenost od nule i nalaze se na suprotnim stranama brojevne prave.",
-    "Za položaj razlomka sa pozitivnim imeniocem podeli jedinični segment na toliko jednakih delova koliko pokazuje imenilac."
+    "Racionalan broj je svaki broj koji se može zapisati kao [[frac:a|b]], gde a,b∈Z i b≠0. Imenilac se može izabrati pozitivan.",
+    "Svaki ceo broj n je racionalan: n=[[frac:n|1]]. Nula je racionalna i [[frac:0|b]]=0 za b≠0.",
+    "Skup Q čine pozitivni racionalni brojevi, nula i negativni racionalni brojevi. Nula nije ni pozitivna ni negativna.",
+    "Suprotni nenulti brojevi jednako su udaljeni od nule i leže sa različitih strana nule. Nula je sama sebi suprotan broj.",
+    "Proširujemo razlomak množenjem brojioca i imenioca istim nenultim celim brojem; skraćujemo deljenjem zajedničkim nenultim deliocem. Vrednost se ne menja.",
+    "Za pozitivni imenilac podeli jedinicu na toliko jednakih delova koliko pokazuje imenilac; apsolutna vrednost brojioca daje broj koraka, a predznak smer."
    ],
    "formulas": [
     "Q = {[[frac:a|b]] : a, b ∈ Z, b ≠ 0}",
@@ -2867,10 +2868,33 @@
    "solved": {
     "question": "Kako zapisati −2 kao razlomak sa imeniocem 6?",
     "steps": [
-     "Iz −2=[[frac:x|6]] sledi x=−2·6.",
-     "Dobijamo −2=[[frac:−12|6]]."
+     "−2=[[frac:x|6]]. Pomnožimo obe strane sa 6: −12=x.",
+     "Dakle −2=[[frac:−12|6]]. Provera: −12:6=−2."
     ]
    },
+   "worked": [
+    {
+     "question": "Kako zapisati −2 kao razlomak sa imeniocem 6?",
+     "steps": [
+      "−2=[[frac:x|6]]. Pomnožimo obe strane sa 6: −12=x.",
+      "Dakle −2=[[frac:−12|6]]. Provera: −12:6=−2."
+     ]
+    },
+    {
+     "question": "Skrati −[[frac:12|20]], pa ga zapiši decimalno.",
+     "steps": [
+      "Brojilac i imenilac podelimo sa 4: −[[frac:12|20]]=−[[frac:3|5]].",
+      "Proširimo sa 2: −[[frac:3|5]]=−[[frac:6|10]]=−0,6."
+     ]
+    },
+    {
+     "question": "Poređaj −[[frac:2|5]] i −[[frac:3|10]].",
+     "steps": [
+      "−[[frac:2|5]]=−[[frac:4|10]].",
+      "Kako je −4<−3, sledi −[[frac:4|10]]<−[[frac:3|10]], odnosno −[[frac:2|5]]<−[[frac:3|10]]."
+     ]
+    }
+   ],
    "month": "october",
    "prerequisites": [],
    "area": "racionalni-brojevi",
@@ -2890,7 +2914,7 @@
     },
     {
      "title": "Ekvivalentni zapisi i celi brojevi",
-     "text": "Proširivanje i skraćivanje menjaju zapis razlomka, ali ne i njegov položaj na pravoj.",
+     "text": "Proširivanjem množimo brojilac i imenilac istim nenultim celim brojem; skraćivanjem ih delimo zajedničkim nenultim deliocem. Vrednost ostaje ista.",
      "definition": false,
      "formulas": [
       "Z⊂Q",
@@ -2901,7 +2925,7 @@
     },
     {
      "title": "Položaj na brojnoj pravoj",
-     "text": "Na brojnoj pravoj imenilac određuje podelu jedinice, a brojilac broj koraka. Negativne vrednosti su levo od nule, pozitivne desno; suprotan broj dobijaš promenom predznaka. Za očitavanje tačke prvo proveri nulu i podele jedinice.",
+     "text": "Na brojnoj pravoj pozitivni imenilac određuje podelu jedinice, a apsolutna vrednost brojioca broj koraka. Negativne vrednosti su levo od nule, pozitivne desno; suprotan broj dobijaš promenom predznaka; nula je sama sebi suprotna. Za očitavanje tačke prvo proveri nulu i podele jedinice.",
      "definition": false,
      "formulas": [],
      "visualIndexes": [
@@ -17209,7 +17233,7 @@
    "kind": "choice",
    "answer": "[[frac:−4|7]]",
    "hint": "Proveri da li je imenilac različit od nule.",
-   "solution": "Brojevi −4 i 7 su celi, a 7≠0, pa −4/7 pripada Q. Ostali zapisi imaju imenilac 0 i nemaju vrednost.",
+   "solution": "Brojevi −4 i 7 su celi, a 7≠0, pa [[frac:−4|7]] pripada Q. Ostali zapisi imaju imenilac 0 i nemaju vrednost.",
    "level": "basic",
    "skill": "Skup racionalnih brojeva",
    "taskType": "pripadnost-racionalnih",
@@ -17237,8 +17261,8 @@
    "math": "−6",
    "kind": "choice",
    "answer": "[[frac:−6|1]]",
-   "hint": "Ceo broj n možeš zapisati kao n/1.",
-   "solution": "−6=−6/1. Razlomak 1/(−6) ima drugu vrednost, a −6/0 nije dozvoljen.",
+   "hint": "Ceo broj n možeš zapisati kao [[frac:n|1]].",
+   "solution": "−6=[[frac:−6|1]]. Razlomak [[frac:1|−6]] ima drugu vrednost, a [[frac:−6|0]] nije dozvoljen.",
    "level": "basic",
    "skill": "Racionalni zapis celog broja",
    "taskType": "ceo-broj-kao-razlomak",
@@ -17266,7 +17290,7 @@
    "kind": "choice",
    "answer": "[[frac:7|9]]",
    "hint": "Promeni predznak, a veličinu razlomka sačuvaj.",
-   "solution": "Suprotan broj broju −7/9 je 7/9: iste su udaljenosti od nule na različitim stranama.",
+   "solution": "Suprotan broj broju [[frac:−7|9]] je [[frac:7|9]]: iste su udaljenosti od nule na različitim stranama.",
    "level": "basic",
    "skill": "Suprotni racionalni brojevi",
    "taskType": "suprotan-racionalni",
@@ -17294,7 +17318,7 @@
    "kind": "choice",
    "answer": "−0,65",
    "hint": "Proširi pozitivan razlomak do imenioca 100, pa sačuvaj minus.",
-   "solution": "13/20=65/100=0,65, pa je −13/20=−0,65. Predznak ne menja cifre apsolutne vrednosti.",
+   "solution": "[[frac:13|20]]=[[frac:65|100]]=0,65, pa je [[frac:−13|20]]=−0,65. Predznak ne menja cifre apsolutne vrednosti.",
    "level": "medium",
    "skill": "Razlomak i decimalni zapis",
    "taskType": "decimalni-zapis-racionalnog",
@@ -17322,8 +17346,8 @@
    "math": "Svaka jedinica je podeljena na 4 jednaka dela. A je jednu podelu levo od −1.",
    "kind": "choice",
    "answer": "−[[frac:5|4]]",
-   "hint": "Jedna podela predstavlja 1/4; od nule do −1 ima četiri takve podele.",
-   "solution": "A je pet četvrtina levo od nule, pa joj je koordinata −5/4.",
+   "hint": "Jedna podela predstavlja [[frac:1|4]]; od nule do −1 ima četiri takve podele.",
+   "solution": "A je pet četvrtina levo od nule, pa joj je koordinata [[frac:−5|4]].",
    "level": "medium",
    "skill": "Racionalni brojevi na brojnoj pravoj",
    "taskType": "ocitavanje-razlomljene-koordinate",
@@ -17358,12 +17382,12 @@
   },
   {
    "id": "o6-rq-6",
-   "prompt": "Koliko članova ovog skupa su celi brojevi?",
+   "prompt": "Koliko elemenata ovog skupa pripada skupu Z?",
    "math": "S = {−4, 0, −[[frac:5|2]], [[frac:3|4]], [[frac:6|3]]}",
    "kind": "input",
    "answer": "3",
    "hint": "Proveri vrednost svakog člana; razlomak može predstavljati ceo broj.",
-   "solution": "Celi brojevi su −4, 0 i 6/3=2. Razlomci −5/2 i 3/4 nisu celi. Ima 3 celobrojna člana.",
+   "solution": "Celi brojevi su −4, 0 i [[frac:6|3]]=2. Razlomci [[frac:−5|2]] i [[frac:3|4]] nisu celi. Ima 3 celobrojna člana.",
    "level": "medium",
    "skill": "Veza skupova Z i Q",
    "taskType": "brojanje-celih-u-racionalnom-skupu",
@@ -17386,7 +17410,7 @@
    "kind": "choice",
    "answer": "−[[frac:2|3]] < −[[frac:1|3]] < 0 < [[frac:1|6]]",
    "hint": "Negativni brojevi su levo od nule; negativni broj veće apsolutne vrednosti je manji.",
-   "solution": "−2/3 je dalje levo od −1/3. Zatim sledi 0, pa pozitivan broj 1/6.",
+   "solution": "Zajednički imenilac 6 daje −[[frac:4|6]]<−[[frac:2|6]]<0<[[frac:1|6]]. Zato je traženi poredak −[[frac:2|3]]<−[[frac:1|3]]<0<[[frac:1|6]].",
    "level": "medium",
    "skill": "Poredak racionalnih brojeva",
    "taskType": "rastuci-poredak-racionalnih",
@@ -17414,7 +17438,7 @@
    "kind": "input",
    "answer": "11",
    "hint": "Prevedi obe granice na imenilac 8 i isključi krajeve.",
-   "solution": "Granice su −14/8 i −2/8, pa −14<n<−2. Dozvoljeni su n=−13,−12,…,−3: ukupno 11 celih brojeva.",
+   "solution": "Pomnožimo sve tri strane sa pozitivnim brojem 8; smer nejednakosti ostaje isti: −14<n<−2. Brojevi −13, −12, …, −3 daju 11 mogućnosti.",
    "level": "advanced",
    "skill": "Racionalni brojevi između granica",
    "taskType": "fiksni-imenilac-brojanje",
@@ -17436,9 +17460,9 @@
    "math": "−1 < −[[frac:n|6]] < 0",
    "kind": "input",
    "answer": "5",
-   "hint": "Posmatraj šestine između −1 i 0. Broj −1 odgovara −6/6.",
-   "solution": "Između −6/6 i 0 nalaze se −5/6,−4/6,−3/6,−2/6 i −1/6. Najveći dozvoljeni prirodan broj n je 5; n=6 daje isključenu granicu −1.",
-   "level": "advanced",
+   "hint": "Posmatraj šestine između −1 i 0. Broj −1 odgovara [[frac:−6|6]].",
+   "solution": "Množenjem svih strana sa −6 obrćemo oba znaka: 6>n>0, odnosno 0<n<6. Prirodni brojevi su 1, 2, 3, 4, 5; najveći je 5.",
+   "level": "medium",
    "skill": "Racionalni brojevi i nepoznati brojilac",
    "taskType": "nepoznati-brojilac-raspon",
    "errorCategory": "concept",
@@ -17461,7 +17485,7 @@
    "answer": "0,2",
    "hint": "Najpre preslikaj položaj A na suprotnu stranu nule, pa prepolovi broj podela od O do B.",
    "solution": "A ima koordinatu −0,4, pa B ima koordinatu 0,4. Duž OB obuhvata četiri desetine; sredina je na drugoj podeli od nule, C(0,2).",
-   "level": "advanced",
+   "level": "medium",
    "skill": "Predstavljanje racionalnih brojeva",
    "taskType": "suprotna-tacka-i-sredina",
    "errorCategory": "concept",
@@ -17570,7 +17594,7 @@
   },
   {
    "id": "dop-skup-racionalnih-brojeva-2-2",
-   "prompt": "Koja je koordinata tačke koja je ovoliko četvrtina levo od nule?",
+   "prompt": "Odredi koordinatu tačke koja je zadati broj četvrtina levo od nule.",
    "math": "Broj četvrtina: 2",
    "kind": "input",
    "answer": "-0,5",
@@ -17591,7 +17615,7 @@
   },
   {
    "id": "dop-skup-racionalnih-brojeva-2-3",
-   "prompt": "Koja je koordinata tačke koja je ovoliko četvrtina levo od nule?",
+   "prompt": "Odredi koordinatu tačke koja je zadati broj četvrtina levo od nule.",
    "math": "Broj četvrtina: 3",
    "kind": "input",
    "answer": "-0,75",
@@ -17612,7 +17636,7 @@
   },
   {
    "id": "dop-skup-racionalnih-brojeva-2-4",
-   "prompt": "Koja je koordinata tačke koja je ovoliko četvrtina levo od nule?",
+   "prompt": "Odredi koordinatu tačke koja je zadati broj četvrtina levo od nule.",
    "math": "Broj četvrtina: 4",
    "kind": "input",
    "answer": "-1",
@@ -17633,13 +17657,13 @@
   },
   {
    "id": "dop-skup-racionalnih-brojeva-3-2",
-   "prompt": "Koliko razlomaka sa ovim pozitivnim imeniocem leži strogo između −1 i 0?",
+   "prompt": "Koliko razlomaka sa celobrojnim brojiocem i zadatim pozitivnim imeniocem leži strogo između −1 i 0?",
    "math": "Imenilac je 5.",
    "kind": "input",
    "answer": "4",
    "hint": "Popiši moguće negativne brojioce.",
-   "solution": "Brojioci su od −4 do −1, ukupno 4.",
-   "level": "advanced",
+   "solution": "Pošto je imenilac pozitivan, −5<brojilac<0. Brojioci su od −4 do −1, ukupno 4.",
+   "level": "medium",
    "skill": "Brojanje razlomaka",
    "taskType": "Brojanje razlomaka",
    "practiceOnly": true,
@@ -17654,13 +17678,13 @@
   },
   {
    "id": "dop-skup-racionalnih-brojeva-3-3",
-   "prompt": "Koliko razlomaka sa ovim pozitivnim imeniocem leži strogo između −1 i 0?",
+   "prompt": "Koliko razlomaka sa celobrojnim brojiocem i zadatim pozitivnim imeniocem leži strogo između −1 i 0?",
    "math": "Imenilac je 6.",
    "kind": "input",
    "answer": "5",
    "hint": "Popiši moguće negativne brojioce.",
-   "solution": "Brojioci su od −5 do −1, ukupno 5.",
-   "level": "advanced",
+   "solution": "Pošto je imenilac pozitivan, −6<brojilac<0. Brojioci su od −5 do −1, ukupno 5.",
+   "level": "medium",
    "skill": "Brojanje razlomaka",
    "taskType": "Brojanje razlomaka",
    "practiceOnly": true,
@@ -17675,13 +17699,13 @@
   },
   {
    "id": "dop-skup-racionalnih-brojeva-3-4",
-   "prompt": "Koliko razlomaka sa ovim pozitivnim imeniocem leži strogo između −1 i 0?",
+   "prompt": "Koliko razlomaka sa celobrojnim brojiocem i zadatim pozitivnim imeniocem leži strogo između −1 i 0?",
    "math": "Imenilac je 7.",
    "kind": "input",
    "answer": "6",
    "hint": "Popiši moguće negativne brojioce.",
-   "solution": "Brojioci su od −6 do −1, ukupno 6.",
-   "level": "advanced",
+   "solution": "Pošto je imenilac pozitivan, −7<brojilac<0. Brojioci su od −6 do −1, ukupno 6.",
+   "level": "medium",
    "skill": "Brojanje razlomaka",
    "taskType": "Brojanje razlomaka",
    "practiceOnly": true,

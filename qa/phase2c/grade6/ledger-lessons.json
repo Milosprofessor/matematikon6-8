@@ -697,7 +697,39 @@
   {
     "id": "skup-racionalnih-brojeva",
     "area": "racionalni-brojevi",
-    "status": "nepregledana u fazi 2C"
+    "status": "potpuno recenzirana",
+    "theory": "Definicija Q, nenulti imenilac, nula, ekvivalentni zapisi i poredak.",
+    "sequence": "Definicija → zapis → prava → poređenje.",
+    "examples": [
+      {
+        "question": "Kako zapisati −2 kao razlomak sa imeniocem 6?",
+        "steps": [
+          "−2=[[frac:x|6]]. Pomnožimo obe strane sa 6: −12=x.",
+          "Dakle −2=[[frac:−12|6]]. Provera: −12:6=−2."
+        ],
+        "verification": "−2"
+      },
+      {
+        "question": "Skrati −[[frac:12|20]], pa ga zapiši decimalno.",
+        "steps": [
+          "Brojilac i imenilac podelimo sa 4: −[[frac:12|20]]=−[[frac:3|5]].",
+          "Proširimo sa 2: −[[frac:3|5]]=−[[frac:6|10]]=−0,6."
+        ],
+        "verification": "−3/5=−0,6"
+      },
+      {
+        "question": "Poređaj −[[frac:2|5]] i −[[frac:3|10]].",
+        "steps": [
+          "−[[frac:2|5]]=−[[frac:4|10]].",
+          "Kako je −4<−3, sledi −[[frac:4|10]]<−[[frac:3|10]], odnosno −[[frac:2|5]]<−[[frac:3|10]]."
+        ],
+        "verification": "−2/5<−3/10"
+      }
+    ],
+    "illustration": "Proverene koordinate A i C.",
+    "misconceptions": "Imenilac nula, suprotan broj nuli, negativni poredak.",
+    "assessment": "19 zadataka.",
+    "limits": "Ne potvrđuje godišnji ishod u celini."
   },
   {
     "id": "apsolutna-vrednost-racionalnog",

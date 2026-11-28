@@ -1431,13 +1431,13 @@ export const learningByLesson:Record<string,LessonLearning> = {
     "aim": "Prepoznaj racionalan broj, njegove ekvivalentne zapise i položaj na brojevnoj pravoj; izdvoji brojeve prema zadatom uslovu.",
     "idea": [
       "Racionalan broj može se zapisati kao razlomak dva cela broja sa nenultim imeniocem. Skup Q obuhvata cele brojeve i razlomljene vrednosti sa oba predznaka; različiti zapisi mogu predstavljati isti broj.",
-      "Na brojnoj pravoj imenilac određuje podelu jedinice, a brojilac broj koraka. Negativne vrednosti su levo od nule, pozitivne desno; suprotan broj dobijaš promenom predznaka."
+      "Na brojnoj pravoj pozitivni imenilac određuje podelu jedinice, a apsolutna vrednost brojioca broj koraka. Negativne vrednosti su levo od nule, pozitivne desno; suprotan broj dobijaš promenom predznaka; nula je sama sebi suprotna."
     ],
     "steps": [
       "Za očitavanje tačke prvo proveri nulu i podele jedinice.",
       "Za poređenje koristi zajednički imenilac ili poznati decimalni zapis. U rasponu sa zadatim imeniocem uporedi brojioce; sredinu duži nađi polovljenjem rastojanja."
     ],
-    "why": "Proširivanje i skraćivanje menjaju zapis razlomka, ali ne i njegov položaj na pravoj.",
+    "why": "Proširivanjem množimo brojilac i imenilac istim nenultim celim brojem; skraćivanjem ih delimo zajedničkim nenultim deliocem. Vrednost ostaje ista.",
     "caution": "Imenilac ne sme biti 0; razlomak može predstavljati i ceo broj.",
     "extraFormulas": [
       "Q={[[frac:a|b]]:a,b∈Z,b≠0}",

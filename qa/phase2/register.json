@@ -3175,5 +3175,22 @@
     "status": "Ispravljeno i potvrđeno",
     "fix_commit": "ffb19d6d19e8ad78ca920d884600b6f090f12ef2",
     "phase2_evidence": "qa/phase2c/grade6/nejednakost-trougla/tasks.json; lesson.json; browser.json"
+  },
+  {
+    "id": "G6C-038",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Racionalni brojevi",
+    "lesson": "skup-racionalnih-brojeva",
+    "task": "Videti tasks.json",
+    "category": "Metodička preciznost",
+    "description": "Nedostaju uslovi ekvivalentnih zapisa i poseban slučaj nule; nepotpuni međukoraci i zapis razlomaka.",
+    "evidence": "qa/phase2c/grade6/skup-racionalnih-brojeva/tasks.json",
+    "location": "app/content/plan-additions.ts; learning.ts; october-practice-supplement.ts",
+    "fix": "Dopunjena definicija, tri primera, strogi raspon i obrt nejednakosti; kalibracija nivoa.",
+    "status": "Ispravljeno; egzaktno potvrđeno",
+    "fix_commit": null,
+    "phase2_evidence": "qa/phase2c/grade6/skup-racionalnih-brojeva/lesson.json"
   }
 ]

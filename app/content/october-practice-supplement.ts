@@ -12,8 +12,8 @@ const families:Record<string,Family[]> = {
   ],
   "skup-racionalnih-brojeva":[
     ["Zapis celog broja","basic",n=>["Dopuni brojilac.",`[[frac:x|4]]=−${n}`,-4*n,"Pomnoži obe strane sa 4.",`x=4·(−${n})=${-4*n}.`]],
-    ["Podela jedinice","medium",n=>["Koja je koordinata tačke koja je ovoliko četvrtina levo od nule?",`Broj četvrtina: ${n}`,-n/4,"Prvo odredi dužinu pomaka, zatim znak.",`Koordinata je −[[frac:${n}|4]].`]],
-    ["Brojanje razlomaka","advanced",n=>["Koliko razlomaka sa ovim pozitivnim imeniocem leži strogo između −1 i 0?",`Imenilac je ${n+3}.`,n+2,"Popiši moguće negativne brojioce.",`Brojioci su od −${n+2} do −1, ukupno ${n+2}.`]],
+    ["Podela jedinice","medium",n=>["Odredi koordinatu tačke koja je zadati broj četvrtina levo od nule.",`Broj četvrtina: ${n}`,-n/4,"Prvo odredi dužinu pomaka, zatim znak.",`Koordinata je −[[frac:${n}|4]].`]],
+    ["Brojanje razlomaka","medium",n=>["Koliko razlomaka sa celobrojnim brojiocem i zadatim pozitivnim imeniocem leži strogo između −1 i 0?",`Imenilac je ${n+3}.`,n+2,"Popiši moguće negativne brojioce.",`Pošto je imenilac pozitivan, −${n+3}<brojilac<0. Brojioci su od −${n+2} do −1, ukupno ${n+2}.`]],
   ],
   "apsolutna-vrednost-racionalnog":[
     ["Rastojanje od nule","basic",n=>["Upiši apsolutnu vrednost.",`|−${n},5|`,n+.5,"Rastojanje je nenegativno.",`Tačka je od nule udaljena ${n},5 jedinica.`]],
