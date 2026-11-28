@@ -16,8 +16,8 @@ export const octoberAreaTests = {
   ]},
   7:{
     "pitagorina-teorema":[
-      L(I("ot7p-1","Odredi hipotenuzu.","a=12 cm, b=16 cm","20","Saberi kvadrate kateta.","c²=144+256=400, pa je c=20 cm.","basic","Pitagorina teorema",{taskType:"hipotenuza"}),"pitagorina-teorema"),
-      L(C("ot7p-2","Da li je trougao pravougli?","Stranice su 8 cm, 15 cm i 17 cm.",["Da","Ne"],"Da","Proveri obrat Pitagorine teoreme.","8²+15²=64+225=289=17².","medium","Obrat Pitagorine teoreme",{taskType:"provera-pravouglosti"}),"pitagorina-teorema"),
+      L(I("ot7p-1","Odredi hipotenuzu.","a=12 cm, b=16 cm","20","Saberi kvadrate kateta.","a² + b² = c². 12² + 16² = c². 144 + 256 = c², pa je c² = 400. Pošto je dužina pozitivna, c = [[sqrt:400]] = 20 cm.","basic","Pitagorina teorema",{taskType:"hipotenuza"}),"pitagorina-teorema"),
+      L(C("ot7p-2","Da li je trougao pravougli?","Stranice su 8 cm, 15 cm i 17 cm.",["Da","Ne"],"Da","Proveri obrat Pitagorine teoreme.","Proveravamo da li važi a² + b² = c², pri čemu je c = 17 cm najduža stranica. Levo je 8² + 15² = 64 + 225 = 289, a desno 17² = 289. Po obratu teoreme trougao je pravougli.","medium","Obrat Pitagorine teoreme",{taskType:"provera-pravouglosti"}),"pitagorina-teorema"),
       L(I("ot7p-3","Odredi katetu.","c=17 cm, a=15 cm","8","Postavi Pitagorinu teoremu i izdvoji nepoznatu katetu.","a²+b²=c². 15²+b²=17²; 225+b²=289; b²=64; b=8 cm jer je pozitivna.","medium","Nepoznata kateta",{taskType:"kateta"}),"nepoznata-stranica-pravougli"),
       L(I("ot7p-4","Odredi dijagonalu pravougaonika.","a=8 cm, b=15 cm","17","Dijagonala je hipotenuza.","d²=8²+15²=289, pa je d=17 cm.","medium","Pitagora u pravougaoniku",{taskType:"dijagonala"}),"pitagora-pravougaonik-kvadrat"),
       L(C("ot7p-5","Odredi visinu jednakostraničnog trougla.","a=10 cm",["5√3 cm","10√3 cm","5√2 cm"],"5√3 cm","Visina deli stranicu na dva dela od 5 cm.","h²+(a/2)²=a². h²+5²=10²; h²+25=100; h²=75; h=5√3 cm jer je pozitivna.","medium","Pitagora u jednakostraničnom trouglu",{taskType:"visina-jednakostranicnog"}),"pitagora-jednakokraki"),

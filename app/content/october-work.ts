@@ -102,8 +102,8 @@ register("konstrukcije-uglova",[
 ]);
 register("pitagorina-teorema",[
  v=>Q("pyth","valid",v,"Koji uslov je potreban za Pitagorinu teoremu?","",["Trougao je pravougli.","Sve stranice su jednake.","Dva ugla su jednaka."],"Trougao je pravougli.","Teorema povezuje katete i hipotenuzu.","Pitagorina teorema važi za pravougli trougao.","basic","Pitagorina teorema"),
- v=>{const a=v+3,b=v+4;return N("pyth","square",v,"Odredi c², ne c.","Katete su "+a+" cm i "+b+" cm.",a*a+b*b,"Saberi kvadrate kateta.","c²="+a*a+"+"+b*b+"="+(a*a+b*b)+" cm².","medium","Pitagorina teorema","calculation")},
- v=>{const [a,b,c]=triples[v];return N("pyth","path",v,"Za koliko metara je prečica kraća?","Put ima dva normalna dela: "+a+" m i "+b+" m. Prečica spaja početak i kraj.",a+b-c,"Prečica je hipotenuza.","Prečica je "+c+" m, a put "+(a+b)+" m. Razlika je "+(a+b-c)+" m.","advanced","Pitagorina teorema")}
+ v=>{const a=v+3,b=v+4;return N("pyth","square",v,"Odredi c², ne c.","Katete su "+a+" cm i "+b+" cm.",a*a+b*b,"Saberi kvadrate kateta.",`a² + b² = c². ${a}² + ${b}² = c². Dobijamo ${a*a} + ${b*b} = c², pa je c² = ${a*a+b*b} cm².`,"medium","Pitagorina teorema","calculation")},
+ v=>{const [a,b,c]=triples[v];return N("pyth","path",v,"Za koliko metara je prečica kraća?","Put ima dva normalna dela: "+a+" m i "+b+" m. Prečica spaja početak i kraj.",a+b-c,"Prečica je hipotenuza.",`a² + b² = c². Prečica c je naspram pravog ugla. ${a}² + ${b}² = c². Zato je ${a*a} + ${b*b} = c², pa je c² = ${c*c}. Dužina je pozitivna: c = [[sqrt:${c*c}]] = ${c} m. Put je ${a+b} m, pa je razlika ${a+b} − ${c} = ${a+b-c} m.`,"advanced","Pitagorina teorema")}
 ]);
 register("nepoznata-stranica-pravougli",[
  v=>Q("leg","identify",v,"Izaberi izraz za nepoznatu katetu b.","Hipotenuza c, kateta a",["[[sqrt:c^2−a^2]]","[[sqrt:c^2+a^2]]","c−a"],"[[sqrt:c^2−a^2]]","Iz c²=a²+b² izdvoji b².","a²+b²=c². Oduzmi a² sa obe strane: b²=c²−a². Kako je b>0, b=[[sqrt:c^2−a^2]].","basic","Nepoznata kateta","rule"),

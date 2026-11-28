@@ -3920,7 +3920,7 @@
         "math": "a=8 cm, b=15 cm",
         "answer": "17",
         "hint": "Primeni a²+b²=c².",
-        "solution": "c²=64+225=289, pa je c=17 cm.",
+        "solution": "a² + b² = c². 8² + 15² = c². 64 + 225 = c², pa je c² = 289. Pošto je dužina pozitivna, c = [[sqrt:289]] = 17 cm.",
         "level": "basic",
         "skill": "Pitagorina teorema"
       },
@@ -3965,7 +3965,7 @@
         ],
         "answer": "Treba sabrati kvadrate.",
         "hint": "Za hipotenuzu sabiramo kvadrate kateta.",
-        "solution": "c²=6²+8²=100.",
+        "solution": "a² + b² = c². 6² + 8² = c². 36 + 64 = c², pa je c² = 100. Pošto je dužina pozitivna, c = [[sqrt:100]] = 10 jedinica dužine.",
         "level": "medium",
         "skill": "Pitagorina teorema"
       },
@@ -3980,7 +3980,7 @@
         ],
         "answer": "15",
         "hint": "9²+12²=225.",
-        "solution": "Treća stranica je 15.",
+        "solution": "a² + b² = c². 9² + 12² = c². 81 + 144 = c², pa je c² = 225. Pošto je dužina pozitivna, c = [[sqrt:225]] = 15 jedinica dužine.",
         "level": "medium",
         "skill": "Pitagorina teorema"
       },
@@ -4004,7 +4004,7 @@
         "math": "Katete su 3 cm i 4 cm.",
         "answer": "25",
         "hint": "Saberi kvadrate kateta.",
-        "solution": "c²=9+16=25 cm².",
+        "solution": "a² + b² = c². 3² + 4² = c². Dobijamo 9 + 16 = c², pa je c² = 25 cm².",
         "level": "medium",
         "skill": "Pitagorina teorema"
       },
@@ -4014,7 +4014,7 @@
         "math": "a=9 cm, b=12 cm",
         "answer": "54",
         "hint": "Katete su osnovica i visina.",
-        "solution": "P=9·12/2=54 cm².",
+        "solution": "P = [[frac:9·12|2]] = 54 cm².",
         "level": "medium",
         "skill": "Pravougli trougao"
       },
@@ -4029,7 +4029,7 @@
         ],
         "answer": "c=√(7²+24²)",
         "hint": "Traži se hipotenuza.",
-        "solution": "Kvadrati kateta se sabiraju.",
+        "solution": "a² + b² = c². 7² + 24² = c². 49 + 576 = c², pa je c² = 625. Pošto je dužina pozitivna, c = [[sqrt:625]] = 25 jedinica dužine.",
         "level": "medium",
         "skill": "Pitagorina teorema"
       },
@@ -4039,7 +4039,7 @@
         "math": "Put ima dva normalna dela: 3 m i 4 m. Prečica spaja početak i kraj.",
         "answer": "2",
         "hint": "Prečica je hipotenuza.",
-        "solution": "Prečica je 5 m, a put 7 m. Razlika je 2 m.",
+        "solution": "a² + b² = c². Prečica c je naspram pravog ugla. 3² + 4² = c². Zato je 9 + 16 = c², pa je c² = 25. Dužina je pozitivna: c = [[sqrt:25]] = 5 m. Put je 7 m, pa je razlika 7 − 5 = 2 m.",
         "level": "advanced",
         "skill": "Pitagorina teorema"
       }

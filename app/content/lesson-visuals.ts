@@ -48,7 +48,7 @@ const visuals:Record<string,LessonVisual[]>={
  'proporcije':[v({type:'segments',lengths:[2,3,4,6],names:['a','b','c','d']},'Jednake razmere daju a:b=c:d; ovde je 2:3=4:6.')],
  'produzena-proporcija':[v({type:'segments',lengths:[2,3,5],names:['2t','3t','5t'],unit:'u'},'Sve tri veličine sadrže istu jedinicu t. Ukupno je 2t+3t+5t=10t.')],
  'primena-produzene-proporcije':[v({type:'segments',lengths:[2,3,5],names:['2t','3t','5t']},'Pre računanja poveži uslov o zbiru ili razlici sa odgovarajućim brojem zajedničkih delova.')],
- 'pitagorina-teorema':[right,v({type:'pythagoras',variant:'right',labels:{a:'3',b:'4',c:'5'}},'Površine kvadrata nad katetama daju 3²+4²=5². Veza je vezana za prav ugao.')],
+ 'pitagorina-teorema':[right,v({type:'pythagoras',variant:'right',labels:{a:'3',b:'4',c:'5'}},'a² + b² = c². Za prikazane dužine 3² + 4² = 5², jer je 9 + 16 = 25.')],
  'nepoznata-stranica-pravougli':[right,v({type:'pythagoras',variant:'right',labels:{a:'a',b:'12',c:'13'}},'Počni od a²+b²=c². Kada je nepoznata kateta a, oduzmi b² sa obe strane, pa uzmi pozitivan koren.')],
  'pitagora-pravougaonik-kvadrat':[v({type:'pythagoras',variant:'rectangle'},'Dijagonala i dve susedne stranice grade pravougli trougao: d²=a²+b².'),v({type:'pythagoras',variant:'square'},'U kvadratu su katete jednake: d²=2a².')],
  'pitagora-jednakokraki':[v({type:'pythagoras',variant:'isosceles'},'Visina deli osnovicu na dva jednaka dela: h²+(a/2)²=s².'),v({type:'pythagoras',variant:'equilateral'},'U jednakostraničnom trouglu i krak ima dužinu a: h=a√3/2.')],
