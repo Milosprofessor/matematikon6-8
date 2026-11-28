@@ -1,0 +1,200 @@
+[
+  {
+    "id": "s6-zavisnost-1",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "answer": "150",
+    "hint": "Podeli cenu količinom.",
+    "procedure": "450:3=150 dinara po kg.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-zavisnost-2",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "answer": "12",
+    "hint": "Zameni x sa 3.",
+    "procedure": "y=4·3=12.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-zavisnost-3",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "answer": "Deli se sa 3",
+    "hint": "Proizvod je stalan.",
+    "procedure": "Tri puta veći prvi činilac mora imati tri puta manji drugi.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-zavisnost-4",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "answer": "O(0, 0)",
+    "hint": "Uvrsti x=0.",
+    "procedure": "Za svaki k dobijamo y=k·0=0.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-zavisnost-5",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "answer": "35",
+    "hint": "Odredi brzinu.",
+    "procedure": "42:3=14 km na sat. Za 2,5 sata pređe 14·2,5=35 km.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-zavisnost-6",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "answer": "Obrnuti",
+    "hint": "Proveri proizvode.",
+    "procedure": "Svaki proizvod je 36, što daje obrnutu proporcionalnost.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-zavisnost-7",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "answer": "6",
+    "hint": "Obim posla je isti.",
+    "procedure": "Ukupno je 9·4=36 mašinskih sati. Šest mašina radi 36:6=6 sati.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-zavisnost-8",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "answer": "-3",
+    "hint": "Podeli ordinatu apscisom.",
+    "procedure": "6:(−2)=−3, pa je y=−3x.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-zavisnost-9",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "answer": "4",
+    "hint": "Najpre oduzmi već obavljen rad.",
+    "procedure": "Obavljeno je 4·2=8. Ostaje 12 pumpnih sati, odnosno 12:3=4 sata.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-zavisnost-10",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "answer": "30",
+    "hint": "Rasporedi dostavu na broj knjiga.",
+    "procedure": "Za tri je 40+180:3=100, za šest je 40+180:6=70. Razlika je 30.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-zavisnost-11",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "answer": "50",
+    "hint": "Obe se menjaju istim faktorom.",
+    "procedure": "Prepolovljena pozitivna vrednost je za 50% manja.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-zavisnost-15",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "answer": "Ne",
+    "hint": "Proveri poslednji par.",
+    "procedure": "Prva dva količnika su 3. Treći je 10:3, različit od 3.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-zavisnost-16",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "answer": "6",
+    "hint": "Podeli zalihu dnevnom potrošnjom.",
+    "procedure": "120:20=6 dana.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-zavisnost-12",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "answer": "8",
+    "hint": "Podeli stalan proizvod sa x.",
+    "procedure": "60:7,5=8.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-zavisnost-13",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "answer": "750",
+    "hint": "Svedi na kilogram.",
+    "procedure": "300:1,2=250. Tri kilograma su 750 dinara.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-zavisnost-14",
+    "area": "s6-odnosi",
+    "lesson": "s6-zavisnost",
+    "answer": "1",
+    "hint": "Izračunaj oba vremena.",
+    "procedure": "180:60=3 sata, a 180:90=2 sata. Razlika je 1 sat.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-polugodiste-4",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-zavisnost",
+    "answer": "60",
+    "hint": "Posao ostaje isti.",
+    "procedure": "8·45=360 minuta jedne prskalice. Za šest je 360:6=60 minuta.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-izazov-5",
+    "area": "s6-zavrsnica",
+    "lesson": "s6-zavisnost",
+    "answer": "15",
+    "hint": "Rad meri danima jedne osobe.",
+    "procedure": "Potrebno je 36 radnih dana. Posle 12 ostaju 24. Dvoje radi još 12 dana, ukupno 3+12=15.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  }
+]

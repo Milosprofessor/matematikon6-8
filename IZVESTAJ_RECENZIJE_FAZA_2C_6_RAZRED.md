@@ -1,3 +1,9 @@
+# Checkpoint 32 — Direktna i obrnuta proporcionalnost
+
+741/919 zadataka i 35/45 lekcija. G6C-054: precizirani stalna jedinična cena i jednak protok. Excel razlikuje postojeće i novododate primere.
+
+Egzaktno pregledano 18 zadataka i tri rešena primera. 127/127 programskih testova, Worker i Pages build, TypeScript; lint bez grešaka. Na desktopu i touch emulaciji proveren je tok svih deset redovnih zadataka, pomoć, povratna informacija, tri primera, ćirilica i napredak posle osvežavanja. Posebna regresija napretka prošla. Ostali zadaci provereni su računski. Sledeći zadatak: s6-procenti-1.
+
 # Checkpoint 31 — Razmera i proporcija
 
 723/919 zadataka i 34/45 lekcija. G6C-053: precizirane veličine i jedinice u mešavini i provera proporcije skraćivanjem.

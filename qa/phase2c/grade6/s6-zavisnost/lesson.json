@@ -1,0 +1,33 @@
+{
+  "id": "s6-zavisnost",
+  "area": "s6-odnosi",
+  "sequence": "Jedinična cena i stalni proizvod pre složenih obračuna sa fiksnim troškom.",
+  "examples": [
+    {
+      "question": "Četiri sveske iste jedinične cene koštaju 220 dinara. Koliko košta sedam takvih svezaka po istoj ceni?",
+      "steps": [
+        "Jedinična cena je 220:4=55 dinara. Količnik je nepromenjen.",
+        "Za sedam svezaka platićeš 7·55=385 dinara. Na grafiku su (0, 0), (4, 220) i (7, 385)."
+      ],
+      "verification": "385 dinara"
+    },
+    {
+      "question": "Šest slavina jednakog stalnog protoka napuni prazan bazen za 8 sati. Za koliko sati četiri takve slavine napune isti prazan bazen?",
+      "steps": [
+        "Za isti bazen potrebno je 6·8=48 sati rada jedne slavine.",
+        "Četiri slavine dele rad: 48:4=12 sati. Manje slavina znači duže vreme."
+      ],
+      "verification": "12 sati"
+    },
+    {
+      "question": "Taksi naplaćuje 100 dinara za početak i 50 po kilometru. Da li je iznos direktno proporcionalan putu?",
+      "steps": [
+        "Za 1 km račun je 150 dinara, a za 2 km je 200 dinara.",
+        "Dvostruki put nema dvostruk račun. Ni pri 0 km račun nije nula."
+      ],
+      "verification": "Odnos nije direktan, jer 2·150 ≠ 200."
+    }
+  ],
+  "assessment": "18 zadataka; 10 u redovnom toku.",
+  "status": "potpuno recenzirana"
+}
