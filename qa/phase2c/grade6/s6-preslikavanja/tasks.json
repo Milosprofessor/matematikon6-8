@@ -1,0 +1,178 @@
+[
+  {
+    "id": "s6-preslikavanja-1",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "answer": "U istoj tački",
+    "hint": "Koliko je rastojanje do ose?",
+    "procedure": "Nula preneta na drugu stranu i dalje daje istu tačku.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-preslikavanja-2",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "answer": "90",
+    "hint": "Osa je simetrala te duži.",
+    "procedure": "Simetrala seče duž pod pravim uglom.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-preslikavanja-3",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "answer": "3,7",
+    "hint": "Da li se pri poluokretu figura rasteže?",
+    "procedure": "Poluokret čuva dužinu pa slika ima 3,7 cm.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-preslikavanja-4",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "answer": "2",
+    "hint": "Zadrži apscisu, promeni vertikalni smer.",
+    "procedure": "Druga tačka je 2 jedinice iznad ose: (4, 2).",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-preslikavanja-5",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "answer": "4,4",
+    "hint": "Osa se nalazi na pola puta.",
+    "procedure": "Ukupno rastojanje je 2·2,2=4,4 cm.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-preslikavanja-6",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "answer": "2",
+    "hint": "Centar je središte para.",
+    "procedure": "Prosek apscisa je (−5+9):2=2.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-preslikavanja-7",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "answer": "3",
+    "hint": "Prvo odredi horizontalni pomeraj.",
+    "procedure": "Po horizontali pomeraj je −1−2=−3, dok vertikalni pomeraj ne utiče na apscisu. Zato je nova apscisa B jednaka 6−3=3.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-preslikavanja-8",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "answer": "Početni trougao",
+    "hint": "Prati samo jedno teme.",
+    "procedure": "Prvi odraz ga prenosi na drugu stranu. Drugi ga vraća, kao i svako drugo teme.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-preslikavanja-9",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "answer": "3",
+    "hint": "Izvrši operacije zadatim redom.",
+    "procedure": "Odraz daje −2, pa pomeraj daje −2+5=3.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-preslikavanja-10",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "answer": "Ne",
+    "hint": "Gde treba da se nalazi sredina spojnice?",
+    "procedure": "Osa mora razdvajati tačku i njen različit lik. Na istoj strani taj uslov nije ispunjen.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-preslikavanja-11",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "answer": "1",
+    "hint": "Ako se tačka poklopi sa likom, gde je sredina?",
+    "procedure": "Jedino sam centar ostaje na mestu.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-preslikavanja-15",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "answer": "62",
+    "hint": "Podudarnost čuva odgovarajuće uglove.",
+    "procedure": "Dva jednaka ugla daju 124°, pa je svaki 62°.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-preslikavanja-16",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "answer": "-6",
+    "hint": "Posle translacije promeni znak obe koordinate.",
+    "procedure": "Međupoložaj je (2, 6). Centralni lik je (−2, −6).",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-preslikavanja-12",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "answer": "3",
+    "hint": "Vrati vertikalni pomeraj.",
+    "procedure": "Ako je y−4=−1, onda y=3.",
+    "level": "basic",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-preslikavanja-13",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "answer": "4",
+    "hint": "Centar je na sredini između 1 i 7.",
+    "procedure": "1+(7−1):2=4.",
+    "level": "medium",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  },
+  {
+    "id": "s6-preslikavanja-14",
+    "area": "s6-odnosi",
+    "lesson": "s6-preslikavanja",
+    "answer": "Osna simetrija oko te prave",
+    "hint": "Proveri tačke koje su na osi.",
+    "procedure": "Rastojanje svake od njih do ose je nula pa ostaje na mestu.",
+    "level": "advanced",
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
+  }
+]

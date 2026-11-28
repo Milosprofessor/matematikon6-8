@@ -17,7 +17,7 @@ export default springLesson({
   ["Preslikaj (4, −2) preko ose x. Nova ordinata?","2","Zadrži apscisu, promeni vertikalni smer.","Druga tačka je 2 jedinice iznad ose: (4, 2)."],
   ["Tačka je 2,2 cm udaljena od ose. Koliko cm prelazi do osnosimetričnog lika?","4,4","Osa se nalazi na pola puta.","Ukupno rastojanje je 2·2,2=4,4 cm."],
   ["Apscise tačke i njenog centralnog lika su −5 i 9. Kolika je apscisa centra?","2","Centar je središte para.","Prosek apscisa je (−5+9):2=2."],
-  ["Pri translaciji A(2, 3) pređe u (−1, 7). Koja je nova apscisa slike B(6, 0)?","3","Prvo odredi horizontalni pomeraj.","A je pomeren za −3 vodoravno. Zato je nova apscisa B jednaka 6−3=3."],
+  ["Pri translaciji A(2, 3) pređe u (−1, 7). Istom translacijom preslikaj B(6, 0). Kolika je apscisa njene slike?","3","Prvo odredi horizontalni pomeraj.","Po horizontali pomeraj je −1−2=−3, dok vertikalni pomeraj ne utiče na apscisu. Zato je nova apscisa B jednaka 6−3=3."],
   ["Ako isti trougao dva puta preslikaš preko iste prave, šta dobijaš?",["Početni trougao","Upola manji trougao","Tačku"],"Prati samo jedno teme.","Prvi odraz ga prenosi na drugu stranu. Drugi ga vraća, kao i svako drugo teme."],
   ["A(2, 1) preslika se preko ose y, pa se slika pomeri 5 udesno. Koja je konačna apscisa?","3","Izvrši operacije zadatim redom.","Odraz daje −2, pa pomeraj daje −2+5=3."],
   ["Neko tvrdi da su dve različite tačke na istoj strani ose jedna drugoj osnosimetrične. Da li je moguće?",["Ne","Da"],"Gde treba da se nalazi sredina spojnice?","Osa mora razdvajati tačku i njen različit lik. Na istoj strani taj uslov nije ispunjen."],

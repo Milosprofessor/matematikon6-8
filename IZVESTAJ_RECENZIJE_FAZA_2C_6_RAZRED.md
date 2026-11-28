@@ -1,3 +1,9 @@
+# Checkpoint 29 — Osna i centralna simetrija i translacija
+
+689/919 zadataka i 32/45 lekcija. G6C-051: objašnjen horizontalni pomeraj pri translaciji obe tačke.
+
+Egzaktno pregledano 16 zadataka i tri rešena primera. 127/127 programskih testova, Worker i Pages build, TypeScript; lint bez grešaka. Na desktopu i touch emulaciji proveren je tok svih deset redovnih zadataka, pomoć, povratna informacija, tri primera, ćirilica i napredak posle osvežavanja. Posebna regresija napretka prošla. Ostali zadaci provereni su računski. Sledeći zadatak: s6-podaci-1.
+
 # Checkpoint 28 — Koordinate, pomeranje i čitanje podataka
 
 673/919 zadataka i 31/45 lekcija. G6C-050: pitanje o procentu izričito određuje grupe i celinu.

@@ -1037,7 +1037,35 @@
   {
     "id": "s6-preslikavanja",
     "area": "s6-odnosi",
-    "status": "nepregledana u fazi 2C"
+    "sequence": "Fiksne tačke i rastojanja pre koordinatnih pravila i sastavljanja preslikavanja.",
+    "examples": [
+      {
+        "question": "Nacrtaj sliku trougla ABC preko prave p kroz A.",
+        "steps": [
+          "Tačka A ostaje na mestu. Iz B i C spusti normale na p. Na svakoj normali prenesi isto rastojanje iza ose.",
+          "Spoji A, B′ i C′. Presavijanjem oko p se poklapaju odgovarajuće stranice i uglovi."
+        ],
+        "verification": "A ostaje na osi; odrazi B i C su na suprotnoj strani na istoj normalnoj udaljenosti."
+      },
+      {
+        "question": "Centralno preslikaj T(−2, 3) oko S(1, 1).",
+        "steps": [
+          "Od T do S ideš 3 udesno i 2 nadole. Ponovi isti pomeraj iz S.",
+          "Dobijaš T′(4, −1). S je na pola puta, pa je konstrukcija ispravna."
+        ],
+        "verification": "(4,−1)"
+      },
+      {
+        "question": "Pomeri trougao sa temenima (0, 1), (2, 1), (0, 4) za 2 ulevo i 3 nagore.",
+        "steps": [
+          "Od svake apscise oduzmi 2, svakoj ordinati dodaj 3.",
+          "Nova temena su (−2, 4), (0, 4), (−2, 7). Katete su i dalje duge 2 i 3 jedinice."
+        ],
+        "verification": "(−2,4), (0,4), (−2,7)"
+      }
+    ],
+    "assessment": "16 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
   },
   {
     "id": "s6-podaci",
