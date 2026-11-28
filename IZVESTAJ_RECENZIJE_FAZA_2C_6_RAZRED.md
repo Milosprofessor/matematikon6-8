@@ -1,3 +1,9 @@
+# Checkpoint 31 — Razmera i proporcija
+
+723/919 zadataka i 34/45 lekcija. G6C-053: precizirane veličine i jedinice u mešavini i provera proporcije skraćivanjem.
+
+Egzaktno pregledano 18 zadataka i tri rešena primera. 127/127 programskih testova, Worker i Pages build, TypeScript; lint bez grešaka. Na desktopu i touch emulaciji proveren je tok svih deset redovnih zadataka, pomoć, povratna informacija, tri primera, ćirilica i napredak posle osvežavanja. Posebna regresija napretka prošla. Ostali zadaci provereni su računski. Sledeći zadatak: s6-zavisnost-1.
+
 # Checkpoint 30 — Tabele, dijagrami i tumačenje podataka
 
 705/919 zadataka i 33/45 lekcija. G6C-052: precizirane jedinice temperature i poređenje ukupnog broja pozajmljenih knjiga.

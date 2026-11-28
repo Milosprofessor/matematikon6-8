@@ -1103,7 +1103,35 @@
   {
     "id": "s6-razmera",
     "area": "s6-odnosi",
-    "status": "nepregledana u fazi 2C"
+    "sequence": "Od odnosa u istim jedinicama do podele celine, proporcije i razmere karte.",
+    "examples": [
+      {
+        "question": "Na karti 1:25000 put je dug 4 cm. Kolika je dužina u km?",
+        "steps": [
+          "Na terenu je 4·25000=100000 cm. Sto centimetara čini jedan metar.",
+          "100000 cm=1000 m=1 km."
+        ],
+        "verification": "100000 cm = 1 km"
+      },
+      {
+        "question": "Žuta i plava boja pomešane su u zapreminskoj razmeri 3:2. Koliko decilitara plave boje ima u 15 dl mešavine?",
+        "steps": [
+          "Ukupno je 3+2=5 jednakih delova. Jedan deo je 15:5=3 dl.",
+          "Plave ima 2·3=6 dl. Preostalih 9 dl žute daje odnos 9:6=3:2."
+        ],
+        "verification": "6 dl plave i 9 dl žute"
+      },
+      {
+        "question": "Reši 4:7=x:21.",
+        "steps": [
+          "Jednakost količnika daje 7x=4·21=84.",
+          "Deljenjem sa 7 dobijaš x=12. Provera: 12:21 skraćivanjem sa 3 daje 4:7."
+        ],
+        "verification": "x=12"
+      }
+    ],
+    "assessment": "18 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
   },
   {
     "id": "s6-zavisnost",

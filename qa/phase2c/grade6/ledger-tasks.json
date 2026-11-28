@@ -11352,78 +11352,122 @@
     "id": "s6-razmera-1",
     "area": "s6-odnosi",
     "lesson": "s6-razmera",
+    "answer": "2:3",
+    "hint": "Podeli oba člana sa 6.",
+    "procedure": "12:6=2 i 18:6=3 daju 2:3.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-razmera-2",
     "area": "s6-odnosi",
     "lesson": "s6-razmera",
+    "answer": "100",
+    "hint": "Čitaj prvi član kao crtež.",
+    "procedure": "Jednom centimetru odgovara sto centimetara.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-razmera-3",
     "area": "s6-odnosi",
     "lesson": "s6-razmera",
+    "answer": "12",
+    "hint": "Prvi član je utrostručen.",
+    "procedure": "I drugi se množi sa 3. Zato je x=12.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-razmera-4",
     "area": "s6-odnosi",
     "lesson": "s6-razmera",
+    "answer": "7",
+    "hint": "Saberi brojeve delova.",
+    "procedure": "Pet delova prve i dva druge supstance daju sedam.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-razmera-5",
     "area": "s6-odnosi",
     "lesson": "s6-razmera",
+    "answer": "1:25",
+    "hint": "Pretvori metre u centimetre.",
+    "procedure": "8:200 skrati sa 8 i dobićeš 1:25.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-razmera-6",
     "area": "s6-odnosi",
     "lesson": "s6-razmera",
+    "answer": "3,5",
+    "hint": "Stvarnu dužinu smanji.",
+    "procedure": "7 m=700 cm. Na crtežu je 700:200=3,5 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-razmera-7",
     "area": "s6-odnosi",
     "lesson": "s6-razmera",
+    "answer": "36",
+    "hint": "Odredi vrednost jednog dela.",
+    "procedure": "84:7=12. Manji deo je 3·12=36.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-razmera-8",
     "area": "s6-odnosi",
     "lesson": "s6-razmera",
+    "answer": "15",
+    "hint": "Slika je uvećana.",
+    "procedure": "Dva dela su 6 cm, jedan je 3 cm, pet je 15 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-razmera-9",
     "area": "s6-odnosi",
     "lesson": "s6-razmera",
+    "answer": "55",
+    "hint": "Razlika odgovara razlici broja delova.",
+    "procedure": "Tri dela su 15 kg. Svih jedanaest delova imaju 11·5=55 kg.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-razmera-10",
     "area": "s6-odnosi",
     "lesson": "s6-razmera",
+    "answer": "250000",
+    "hint": "Kilometre pretvori u centimetre.",
+    "procedure": "6 km=600000 cm, pa n=600000:2,4=250000.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-razmera-11",
     "area": "s6-odnosi",
     "lesson": "s6-razmera",
+    "answer": "Da",
+    "hint": "Proveri proizvode spoljnih i unutrašnjih članova.",
+    "procedure": "8·21=168 i 12·14=168.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-zavisnost-1",
@@ -11656,15 +11700,23 @@
     "id": "s6-razmera-15",
     "area": "s6-odnosi",
     "lesson": "s6-razmera",
+    "answer": "28",
+    "hint": "Tri dela imaju 12 dece.",
+    "procedure": "Jedan deo je 4, pa sedam delova ima 28 dece.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-razmera-16",
     "area": "s6-odnosi",
     "lesson": "s6-razmera",
+    "answer": "3:20",
+    "hint": "Litar je hiljadu mililitara.",
+    "procedure": "150:1000 skrati sa 50 i dobijaš 3:20.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-zavisnost-15",
@@ -12736,22 +12788,34 @@
     "id": "s6-razmera-12",
     "area": "s6-odnosi",
     "lesson": "s6-razmera",
+    "answer": "7,5",
+    "hint": "Jedan deo je polovina količine sirupa.",
+    "procedure": "3:2=1,5 dl po delu. Vode je 5·1,5=7,5 dl.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-razmera-13",
     "area": "s6-odnosi",
     "lesson": "s6-razmera",
+    "answer": "9",
+    "hint": "Uporedi razmere njihovim proizvodima.",
+    "procedure": "10x=15·6=90. Zato je x=9.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-razmera-14",
     "area": "s6-odnosi",
     "lesson": "s6-razmera",
+    "answer": "8",
+    "hint": "Odredi koliko metara prikazuje 1 cm.",
+    "procedure": "20:5=4 m po centimetru. Dva centimetra prikazuju 8 m.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-zavisnost-12",
@@ -13024,8 +13088,12 @@
     "id": "s6-polugodiste-5",
     "area": "s6-zavrsnica",
     "lesson": "s6-razmera",
+    "answer": "3",
+    "hint": "Prevedi centimetre u kilometre.",
+    "procedure": "7,5·40000=300000 cm=3 km.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-polugodiste-6",
@@ -13172,8 +13240,12 @@
     "id": "s6-izazov-1",
     "area": "s6-zavrsnica",
     "lesson": "s6-razmera",
+    "answer": "750",
+    "hint": "Iz kilograma pređi u grame pa svedi na porciju.",
+    "procedure": "600:8=75 g po porciji. Za deset treba 750 g.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-izazov-2",

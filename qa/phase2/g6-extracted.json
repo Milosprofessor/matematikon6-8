@@ -4548,7 +4548,7 @@
      ]
     },
     {
-     "question": "U boji su žuta i plava u razmeri 3:2. Koliko plave ima u 15 dl?",
+     "question": "Žuta i plava boja pomešane su u zapreminskoj razmeri 3:2. Koliko decilitara plave boje ima u 15 dl mešavine?",
      "steps": [
       "Ukupno je 3+2=5 jednakih delova. Jedan deo je 15:5=3 dl.",
       "Plave ima 2·3=6 dl. Preostalih 9 dl žute daje odnos 9:6=3:2."
@@ -4558,7 +4558,7 @@
      "question": "Reši 4:7=x:21.",
      "steps": [
       "Jednakost količnika daje 7x=4·21=84.",
-      "Deljenjem sa 7 dobijaš x=12. Oba količnika mogu se skratiti na 4:7."
+      "Deljenjem sa 7 dobijaš x=12. Provera: 12:21 skraćivanjem sa 3 daje 4:7."
      ]
     }
    ],
