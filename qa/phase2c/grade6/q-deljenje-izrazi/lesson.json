@@ -1,0 +1,19 @@
+{
+  "id": "q-deljenje-izrazi",
+  "area": "racionalni-brojevi",
+  "sequence": "Recipročna vrednost, domen deljenja, prioritet i zagrade.",
+  "examples": [
+    {
+      "question": "Izračunaj (−[[frac:3|4]]+[[frac:1|2]]):(−0,5).",
+      "steps": [
+        "U zagradi je −[[frac:1|4]].",
+        "Deljenje sa −0,5 zamenjujemo množenjem sa −2.",
+        "(−[[frac:1|4]])·(−2)=[[frac:1|2]]."
+      ],
+      "verification": "(−3/4+1/2):(−0,5)=1/2."
+    }
+  ],
+  "misconceptions": "Nula kao deljenik i kao delilac; računanje sleva nadesno.",
+  "assessment": "14 za vežbanje i jedan iz godišnje provere.",
+  "status": "potpuno recenzirana"
+}

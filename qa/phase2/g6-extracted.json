@@ -3554,7 +3554,7 @@
    "intro": "Deljenje nenultim brojem jednako je množenju njegovom recipročnom vrednošću.",
    "rules": [
     "Recipročan broj daje proizvod 1 sa početnim brojem. Nula nema recipročnu vrednost.",
-    "U izrazu prvo izračunaj zagrade, zatim množenja i deljenja sleva nadesno, pa sabiranja i oduzimanja.",
+    "U izrazu prvo izračunaj zagrade, zatim množenja i deljenja sleva nadesno, pa sabiranja i oduzimanja sleva nadesno.",
     "Pri prelasku sa deljenja na množenje obrće se samo delilac."
    ],
    "formulas": [
@@ -3599,7 +3599,7 @@
     },
     {
      "title": "Postupak",
-     "text": "U izrazu prvo izračunaj zagrade, zatim množenja i deljenja sleva nadesno, pa sabiranja i oduzimanja.",
+     "text": "U izrazu prvo izračunaj zagrade, zatim množenja i deljenja sleva nadesno, pa sabiranja i oduzimanja sleva nadesno.",
      "definition": false,
      "formulas": [],
      "visualIndexes": [],
@@ -19456,7 +19456,7 @@
    "id": "q-deljenje-izrazi-4",
    "prompt": "Izračunaj.",
    "math": "−[[frac:2|3]]:(−[[frac:4|9]])",
-   "hint": "Pomnoži recipročnim deliocem.",
+   "hint": "Pomnoži deljenik recipročnom vrednošću delioca.",
    "solution": "[[frac:2|3]]·[[frac:9|4]]=[[frac:3|2]]=1,5.",
    "taskType": "količnik",
    "answer": "1,5",
@@ -26163,7 +26163,7 @@
    "id": "s6-godisnja-4",
    "skill": "Završna provera šestog razreda",
    "level": "medium",
-   "prompt": "Izračunaj (1,2−2) : (−0,4) + 1/2.",
+   "prompt": "Izračunaj (1,2−2) : (−0,4) + [[frac:1|2]].",
    "math": "",
    "hint": "Prvo računaj zagradu.",
    "solution": "−0,8:(−0,4)=2. Saberi 2+0,5=2,5.",

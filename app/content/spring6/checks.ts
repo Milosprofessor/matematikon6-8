@@ -30,7 +30,7 @@ export const finals = [
     ["apsolutna-vrednost","basic","Koliko je rastojanje brojeva −13 i −5 na brojevnoj pravoj?","8","Dužina je pozitivna.","Od −13 do −5 krećeš se osam koraka udesno."],
     ["q-proizvod","basic","Koliki je proizvod brojeva −0,8 i −2,5?","2","Najpre odredi znak.","Dva negativna činioca daju pozitivan proizvod. 0,8·2,5=2."],
     ["s6-uglovi","basic","Uglovi četvorougla su 91°, 89°, 103° i x. Koliko stepeni ima x?","77","Ukupan zbir je dvostruki zbir u trouglu.","360−91−89−103=77°."],
-    ["q-deljenje-izrazi","medium","Izračunaj (1,2−2) : (−0,4) + 1/2.","2,5","Prvo računaj zagradu.","−0,8:(−0,4)=2. Saberi 2+0,5=2,5."],
+    ["q-deljenje-izrazi","medium","Izračunaj (1,2−2) : (−0,4) + [[frac:1|2]].","2,5","Prvo računaj zagradu.","−0,8:(−0,4)=2. Saberi 2+0,5=2,5."],
     ["q-nejednacine","medium","Koliko nenegativnih celih brojeva zadovoljava −2x>−7?","4","Po deljenju negativnim brojem promeni smer.","x<3,5. Odgovaraju 0, 1, 2 i 3."],
     ["s6-podudarnost","medium","U △ABC≅△RPQ su AB=5, BC=7, AC=8 cm. Koliko cm ima stranica RQ?","8","Upari prvo i treće teme.","A odgovara R, C odgovara Q. Zato RQ=AC=8 cm."],
     ["s6-procenti","medium","Četvrtinu od 64 učenika čine šestaši. Od njih 75% dolazi pešice. Koliko šestaša dolazi pešice?","12","Izdvoj grupu na koju se procenat odnosi.","Šestaša je 64:4=16. Tri četvrtine od 16 su 12."],
