@@ -1004,7 +1004,35 @@
   {
     "id": "s6-koordinate",
     "area": "s6-odnosi",
-    "status": "nepregledana u fazi 2C"
+    "sequence": "Ose i kvadranti, pomeraj, zatim sredina duži i čitanje grafikona.",
+    "examples": [
+      {
+        "question": "Ucrtaj A(−3, 2).",
+        "steps": [
+          "Na mreži sa jediničnim podeocima od O pređi tri podeoka ulevo. Zatim pređi dva podeoka nagore.",
+          "Označi A. Levo od ose y i iznad ose x nalazi se drugi kvadrant."
+        ],
+        "verification": "A je tri jedinice levo i dve gore."
+      },
+      {
+        "question": "Od P(−2, 4) idi 5 udesno i 3 nadole.",
+        "steps": [
+          "Prva koordinata postaje −2+5=3. Druga postaje 4−3=1.",
+          "Nova tačka je (3, 1). Pomeraj ne zavisi od početne tačke."
+        ],
+        "verification": "P′=(3,1)."
+      },
+      {
+        "question": "U 8, 10 i 12 sati izmereno je 2, 6 i 5 °C. Kako to prikazati?",
+        "steps": [
+          "Na horizontalnoj osi označi sate, na vertikalnoj temperaturu. Ucrtaj (8, 2), (10, 6), (12, 5).",
+          "Između poslednja dva merenja promena je 5−6=−1 °C. Bez novih merenja ne znamo tačnu vrednost u 11 sati."
+        ],
+        "verification": "Tačke (8,2), (10,6), (12,5); razlikovati merenja i međuvrednosti."
+      }
+    ],
+    "assessment": "19 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
   },
   {
     "id": "s6-preslikavanja",

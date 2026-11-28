@@ -18,7 +18,7 @@ export default springLesson({
   ["Koliko jedinica razdvaja A(−3, 2) i B(5, 2)?","8","Druga koordinata je ista.","Horizontalno rastojanje je 5−(−3)=8."],
   ["Od (−2, −1) idi 4 nagore. Nova ordinata?","3","Dodaj vertikalni pomeraj.","−1+4=3. Apscisa ostaje −2."],
   ["Preslikaj (−5, 3) preko ose y. Nova apscisa?","5","Promeni horizontalni smer.","Slika je jednako daleko desno: x=5."],
-  ["Tri stuba pokazuju 12, 15 i 9 učenika. Koliko procenata ukupnog broja predstavlja treći?","25","Saberi pa uporedi deo s celinom.","Ukupno je 36. Devet je četvrtina, odnosno 25%."],
+  ["Na dijagramu tri stuba predstavljaju tri odvojene grupe od 12, 15 i 9 učenika. Koliki procenat svih tih učenika čini treća grupa?","25","Saberi pa uporedi deo s celinom.","Ukupno je 36. Devet je četvrtina, odnosno 25%."],
   ["Sredina duži ima apscisu 2. Jedan kraj ima apscisu −3. Koja je apscisa drugog kraja?","7","Od prvog kraja do sredine pređi isto kao do drugog.","2−(−3)=5. Dodaj još 5 na 2 i dobijaš 7."],
   ["Od 9 do 12 sati količina vode je pala sa 20 na 8 l ravnomerno. Za koliko litara opada za jedan sat?","4","Promenu podeli trajanjem.","Pad je 20−8=12 l tokom 3 sata, odnosno 4 l na sat."],
   ["U kom kvadrantu je centralno simetrična slika tačke (−3, −4) u odnosu na O?",["I","II","IV"],"Promeni znak obe koordinate.","Slika je (3, 4), u I kvadrantu."],

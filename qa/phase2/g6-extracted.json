@@ -21206,7 +21206,7 @@
    "id": "s6-koordinate-8",
    "skill": "Koordinate, pomeranje i čitanje podataka",
    "level": "medium",
-   "prompt": "Tri stuba pokazuju 12, 15 i 9 učenika. Koliko procenata ukupnog broja predstavlja treći?",
+   "prompt": "Na dijagramu tri stuba predstavljaju tri odvojene grupe od 12, 15 i 9 učenika. Koliki procenat svih tih učenika čini treća grupa?",
    "math": "",
    "hint": "Saberi pa uporedi deo s celinom.",
    "solution": "Ukupno je 36. Devet je četvrtina, odnosno 25%.",

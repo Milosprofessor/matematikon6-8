@@ -1,3 +1,9 @@
+# Checkpoint 28 — Koordinate, pomeranje i čitanje podataka
+
+673/919 zadataka i 31/45 lekcija. G6C-050: pitanje o procentu izričito određuje grupe i celinu.
+
+Egzaktno pregledano 19 zadataka i tri rešena primera. 127/127 programskih testova, Worker i Pages build, TypeScript; lint bez grešaka. Na desktopu i touch emulaciji proveren je tok svih deset redovnih zadataka, pomoć, povratna informacija, tri primera, ćirilica i napredak posle osvežavanja. Posebna regresija napretka prošla. Ostali zadaci provereni su računski. Sledeći zadatak: s6-preslikavanja-1.
+
 # Checkpoint 27 — Podudarnost, simetrija i kružnice trougla
 
 654/919 zadataka i 30/45 lekcija. G6C-049: precizirani konstrukcija simetrale stranice i pitanje o opisanoj kružnici. Proverena završna provera oblasti.
