@@ -12342,78 +12342,122 @@
     "id": "s6-cetiri-stranice-1",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-cetiri-stranice",
+    "answer": "5",
+    "hint": "Pomoćni trougao koristi razliku osnovica.",
+    "procedure": "AE=12−7=5 cm.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-cetiri-stranice-2",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-cetiri-stranice",
+    "answer": "3",
+    "hint": "Obe dijagonale se polove.",
+    "procedure": "6:2=3 cm.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-cetiri-stranice-3",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-cetiri-stranice",
+    "answer": "AC",
+    "hint": "Traži temena iz kojih meriš jednake susedne stranice.",
+    "procedure": "Centri su A i C. Prava AC je osa simetrije.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-cetiri-stranice-4",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-cetiri-stranice",
+    "answer": "Šestar",
+    "hint": "Otvor ostaje isti pri pomeranju.",
+    "procedure": "Razmak krakova šestara prenosi dužinu.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-cetiri-stranice-5",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-cetiri-stranice",
+    "answer": "Ne",
+    "hint": "Proveri pomoćni trougao.",
+    "procedure": "Razlika osnovica je 8 cm. Pošto je 3+4<8, lukovi se ne seku.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-cetiri-stranice-6",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-cetiri-stranice",
+    "answer": "ED",
+    "hint": "Posmatraj paralelogram EBCD.",
+    "procedure": "U paralelogramu EBCD duži ED i BC su naspramne stranice, pa su jednake.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-cetiri-stranice-7",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-cetiri-stranice",
+    "answer": "Romb",
+    "hint": "Pogledaj sve četiri stranice.",
+    "procedure": "Sve četiri su poluprečnici od po 5 cm, pa je figura romb.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-cetiri-stranice-8",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-cetiri-stranice",
+    "answer": "4",
+    "hint": "Izdvoji preostalu duž van projekcije kraće osnovice.",
+    "procedure": "Razlika je 8 cm. Simetrija je deli na dva dela od 4 cm.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-cetiri-stranice-9",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-cetiri-stranice",
+    "answer": "7",
+    "hint": "Primeni dvostruku nejednakost trougla na 6, 4 i x.",
+    "procedure": "Za pomoćni trougao treba 2<x<10. Celobrojni izbori su od 3 do 9, ukupno 7.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-cetiri-stranice-10",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-cetiri-stranice",
+    "answer": "1",
+    "hint": "Uporedi rastojanje centara sa zbirom poluprečnika.",
+    "procedure": "8=3+5 pa se kružnice dodiruju spolja. Jedan presek ne daje dva različita temena.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-cetiri-stranice-11",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-cetiri-stranice",
+    "answer": "Ne",
+    "hint": "Proveri uslov za paralelogram.",
+    "procedure": "Obe moraju poloviti jedna drugu. Inače može nastati deltoid sa različitim parovima stranica.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-uglovi-15",
@@ -12518,15 +12562,23 @@
     "id": "s6-cetiri-stranice-15",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-cetiri-stranice",
+    "answer": "8",
+    "hint": "Pomoćni trougao ima dve stranice 4 i 5 cm.",
+    "procedure": "Treća mora biti manja od 9 i veća od 1. Najveći ceo izbor je 8.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-cetiri-stranice-16",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-cetiri-stranice",
+    "answer": "Da",
+    "hint": "Pomeraj gornju osnovicu duž njene prave.",
+    "procedure": "Pomeranje čuva obe osnovice i visinu, ali menja dužine krakova. Zato oblik nije jedinstven.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-merenje-1",
@@ -13339,22 +13391,34 @@
     "id": "s6-cetiri-stranice-12",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-cetiri-stranice",
+    "answer": "7",
+    "hint": "Prepoznaj odgovarajući naspramni krak.",
+    "procedure": "EBCD je paralelogram. ED=BC=7 cm.",
     "level": "basic",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-cetiri-stranice-13",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-cetiri-stranice",
+    "answer": "7 cm",
+    "hint": "Primeni strogu nejednakost između razlike i zbira.",
+    "procedure": "2<AC<10, pa odgovara 7 cm. Krajnje vrednosti daju dodir.",
     "level": "medium",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-cetiri-stranice-14",
     "area": "s6-cetvorouglovi",
     "lesson": "s6-cetiri-stranice",
+    "answer": "90",
+    "hint": "Posebni ugao ne zavisi od dužina dijagonala.",
+    "procedure": "U rombu su dijagonale normalne, pa je ugao 90°.",
     "level": "advanced",
-    "status": "nepregledan u fazi 2C"
+    "method": "Nezavisno rešenje i poređenje sa ponuđenim odgovorima.",
+    "status": "potpuno recenziran"
   },
   {
     "id": "s6-merenje-12",

@@ -1,3 +1,9 @@
+# Checkpoint 38 — Konstrukcije trapeza, romba i deltoida
+
+847/919 zadataka i 41/45 lekcija. G6C-060: Imenovan pomoćni paralelogram i obuhvaćen kvadrat kao poseban romb.
+
+Egzaktno pregledano 16 zadataka i tri rešena primera. 127/127 programskih testova, Worker i Pages build, TypeScript; lint bez grešaka. Na desktopu i touch emulaciji proveren je tok svih deset redovnih zadataka, pomoć, povratna informacija, tri primera, ćirilica i napredak posle osvežavanja. Posebna regresija napretka prošla. Ostali zadaci provereni su računski. Sledeći zadatak: s6-merenje-1.
+
 # Checkpoint 37 — Trapez, srednje linije i deltoid
 
 831/919 zadataka i 40/45 lekcija. G6C-059: Precizirani ugao dijagonala, osa simetrije i razlomački rezultat godišnjeg zadatka.

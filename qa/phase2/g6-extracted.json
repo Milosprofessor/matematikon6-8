@@ -23603,7 +23603,7 @@
    "prompt": "Koja je duž u pomoćnom trouglu jednaka kraku BC kad iz D prenosiš DC paralelno sa EB?",
    "math": "",
    "hint": "Posmatraj paralelogram EBCD.",
-   "solution": "ED i BC su njegove naspramne stranice i zato su jednake.",
+   "solution": "U paralelogramu EBCD duži ED i BC su naspramne stranice, pa su jednake.",
    "kind": "choice",
    "answer": "ED",
    "choices": [
@@ -25707,7 +25707,7 @@
    "id": "s6-cetiri-stranice-14",
    "skill": "Konstrukcije trapeza, romba i deltoida",
    "level": "advanced",
-   "prompt": "Koji je ugao u stepenima između dijagonala romba koji nije kvadrat?",
+   "prompt": "Pod kojim uglom se seku dijagonale svakog romba, uključujući i kvadrat? Upiši broj stepeni.",
    "math": "",
    "hint": "Posebni ugao ne zavisi od dužina dijagonala.",
    "solution": "U rombu su dijagonale normalne, pa je ugao 90°.",
