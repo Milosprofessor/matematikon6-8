@@ -1268,7 +1268,35 @@
   {
     "id": "s6-vektori",
     "area": "s6-cetvorouglovi",
-    "status": "nepregledana u fazi 2C"
+    "sequence": "Od smera do zbira, množenja skalarom i konstrukcije paralelograma.",
+    "examples": [
+      {
+        "question": "Od A idi 3 polja udesno, zatim 2 ulevo. Odredi dužinu i smer ukupnog pomeraja.",
+        "steps": [
+          "Prenesi drugi pomeraj na kraj prvog. U izabranom horizontalnom smeru račun je 3+(−2).",
+          "Krajnja tačka je jedno polje desno od A. Zbir može biti kraći od oba sabirka."
+        ],
+        "verification": "Jedno polje udesno."
+      },
+      {
+        "question": "Konstruiši paralelogram sa AB=5 cm, AD=3 cm i uglom A od 60°.",
+        "steps": [
+          "Nacrtaj AB i u A konstruiši ugao od 60°. Na drugom kraku prenesi AD=3 cm.",
+          "Kroz B konstruiši paralelu sa AD, a kroz D sa AB prenošenjem odgovarajućih uglova. Njihov presek daje C."
+        ],
+        "verification": "Dve paralele određuju C, jer je ugao od 60° nedegenerisan."
+      },
+      {
+        "question": "Kako konstruišeš paralelogram ako su date obe dijagonale i ugao između njih?",
+        "steps": [
+          "Za dijagonale pozitivnih dužina i ugao između njih veći od 0° i manji od 180°, konstruiši dve prave kroz S pod zadatim uglom. Na prvoj prenesi po polovinu prve dijagonale na suprotne strane od S.",
+          "Na drugoj na isti način prenesi polovine druge. Spoji krajeve naizmenično. Dijagonale se polove, pa je dobijena figura paralelogram."
+        ],
+        "verification": "Polovine dijagonala postavljaju se na suprotne strane zajedničkog središta."
+      }
+    ],
+    "assessment": "17 zadataka; 10 u redovnom toku.",
+    "status": "potpuno recenzirana"
   },
   {
     "id": "s6-trapez",

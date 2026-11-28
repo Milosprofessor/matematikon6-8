@@ -5130,7 +5130,7 @@
    ],
    "worked": [
     {
-     "question": "Od A idi 3 polja desno, zatim 2 levo. Šta je zbir?",
+     "question": "Od A idi 3 polja udesno, zatim 2 ulevo. Odredi dužinu i smer ukupnog pomeraja.",
      "steps": [
       "Prenesi drugi pomeraj na kraj prvog. U izabranom horizontalnom smeru račun je 3+(−2).",
       "Krajnja tačka je jedno polje desno od A. Zbir može biti kraći od oba sabirka."
@@ -5146,14 +5146,14 @@
     {
      "question": "Kako konstruišeš paralelogram ako su date obe dijagonale i ugao između njih?",
      "steps": [
-      "Konstruiši dve prave pod zadatim uglom kroz S. Na prvoj prenesi po polovinu prve dijagonale na suprotne strane od S.",
+      "Za dijagonale pozitivnih dužina i ugao između njih veći od 0° i manji od 180°, konstruiši dve prave kroz S pod zadatim uglom. Na prvoj prenesi po polovinu prve dijagonale na suprotne strane od S.",
       "Na drugoj na isti način prenesi polovine druge. Spoji krajeve naizmenično. Dijagonale se polove, pa je dobijena figura paralelogram."
      ]
     }
    ],
    "examples": [],
    "solved": {
-    "question": "Od A idi 3 polja desno, zatim 2 levo. Šta je zbir?",
+    "question": "Od A idi 3 polja udesno, zatim 2 ulevo. Odredi dužinu i smer ukupnog pomeraja.",
     "steps": [
      "Prenesi drugi pomeraj na kraj prvog. U izabranom horizontalnom smeru račun je 3+(−2).",
      "Krajnja tačka je jedno polje desno od A. Zbir može biti kraći od oba sabirka."
