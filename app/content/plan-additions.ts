@@ -258,18 +258,25 @@ export const grade6PlanAdditions:Lesson[] = [
       "Za r≥0 važi |r|=r, a za r<0 važi |r|=−r.",
       "Suprotni racionalni brojevi imaju jednake apsolutne vrednosti.",
       "Za |x|=k i k>0 postoje dve vrednosti: x=−k i x=k. Za k=0 postoji samo x=0; za k<0 nema rešenja.",
-      "Kod dva negativna racionalna broja veći je onaj sa manjom apsolutnom vrednošću."
+      "Kod dva negativna racionalna broja veći je onaj sa manjom apsolutnom vrednošću.",
+      "Rastojanje dve tačke sa koordinatama a i b iznosi |a−b|, bez obzira na redosled tačaka."
     ],
     "formulas": [
       "|r|≥0",
       "|r|=|−r|",
       "Apsolutna vrednost razlomka = apsolutna vrednost brojioca : apsolutna vrednost imenioca (imenilac ≠ 0)",
-      "|0|=0"
+      "|0|=0",
+      "d(A,B)=|a−b|"
     ],
-    "examples": ["|−[[frac:3|8]]|=[[frac:3|8]], jer merimo rastojanje od nule."],
+    "examples": [
+      "|−[[frac:3|8]]|=[[frac:3|8]], jer merimo rastojanje od nule."
+    ],
     "solved": {
       "question": "Koja dva racionalna broja imaju apsolutnu vrednost 1,25?",
-      "steps": ["Obeleži tačke udaljene 1,25 jedinica od nule.", "Jedna je desno na 1,25, a druga levo na −1,25."]
+      "steps": [
+        "|x|=1,25. Pošto je 1,25>0, postoje dva suprotna rešenja: x=−1,25 ili x=1,25.",
+        "Provera: |−1,25|=|1,25|=1,25."
+      ]
     },
     "tasks": [
       {
@@ -295,7 +302,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "choice",
         "answer": "[[frac:5|7]]",
         "hint": "Predznak ne ulazi u dužinu rastojanja. Brojilac i imenilac ne menjaju mesta.",
-        "solution": "|−5/7|=5/7. Dobija se isti razlomak bez negativnog predznaka.",
+        "solution": "|[[frac:−5|7]]|=[[frac:5|7]]. Dobija se isti razlomak bez negativnog predznaka.",
         "level": "basic",
         "skill": "Apsolutna vrednost razlomka",
         "taskType": "apsolutna-vrednost-razlomka",
@@ -336,7 +343,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "choice",
         "answer": ">",
         "hint": "Najpre uzmi apsolutne vrednosti, pa poredi pozitivne razlomke pomoću imenioca 24.",
-        "solution": "Apsolutne vrednosti su 7/12=14/24 i 3/8=9/24. Pošto je 14/24>9/24, traženi znak je >.",
+        "solution": "Apsolutne vrednosti su [[frac:7|12]]=[[frac:14|24]] i [[frac:3|8]]=[[frac:9|24]]. Pošto je [[frac:14|24]]>[[frac:9|24]], traženi znak je >.",
         "level": "medium",
         "skill": "Poređenje apsolutnih vrednosti",
         "taskType": "poredjenje-apsolutnih-racionalnih",
@@ -357,7 +364,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "choice",
         "answer": "−[[frac:2|5]]",
         "hint": "Jednakost daje dva suprotna broja. Uslov x<0 zadržava negativni.",
-        "solution": "|x|=2/5 daje x=−2/5 ili x=2/5. Pošto je x<0, jedino rešenje je x=−2/5.",
+        "solution": "|x|=[[frac:2|5]] daje x=[[frac:−2|5]] ili x=[[frac:2|5]]. Pošto je x<0, jedino rešenje je x=[[frac:−2|5]].",
         "level": "medium",
         "skill": "Apsolutna vrednost i predznak",
         "taskType": "apsolutna-racionalnog-sa-uslovom",
@@ -378,7 +385,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "choice",
         "answer": "x=−[[frac:3|10]] ili x=[[frac:3|10]]",
         "hint": "Dve tačke nalaze se na pozitivnom zadatom rastojanju od nule.",
-        "solution": "Oba broja, −3/10 i 3/10, imaju apsolutnu vrednost 3/10. Drugih rešenja nema.",
+        "solution": "Oba broja, [[frac:−3|10]] i [[frac:3|10]], imaju apsolutnu vrednost [[frac:3|10]]. Drugih rešenja nema.",
         "level": "medium",
         "skill": "Rešenja apsolutne vrednosti",
         "taskType": "oba-racionalna-resenja",
@@ -415,12 +422,12 @@ export const grade6PlanAdditions:Lesson[] = [
       },
       {
         "id": "o6-ra-8",
-        "prompt": "Odredi sva rešenja oblika x=n/4, gde je n ceo broj.",
+        "prompt": "Odredi sva rešenja oblika x=[[frac:n|4]], gde je n ceo broj.",
         "math": "[[frac:1|2]]<|x|<1",
         "kind": "choice",
         "answer": "x=−[[frac:3|4]] ili x=[[frac:3|4]]",
-        "hint": "Između 2/4 i 4/4 strogo leži samo jedna pozitivna četvrtina. Dodaj i njenu suprotnu vrednost.",
-        "solution": "Uslov glasi 2/4<|x|<4/4. Za traženi oblik jedino je |x|=3/4, pa su rešenja x=−3/4 i x=3/4. Granice ±1/2 i ±1 nisu uključene.",
+        "hint": "Između [[frac:2|4]] i [[frac:4|4]] strogo leži samo jedna pozitivna četvrtina. Dodaj i njenu suprotnu vrednost.",
+        "solution": "Množenjem sa 4 dobijamo 2<|n|<4. Jedina celobrojna apsolutna vrednost je 3, pa n=−3 ili n=3. Rešenja su x=−[[frac:3|4]] ili x=[[frac:3|4]].",
         "level": "advanced",
         "skill": "Apsolutna vrednost u rasponu",
         "taskType": "apsolutna-raspon-fiksni-imenilac",
@@ -441,8 +448,8 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "choice",
         "answer": "[[frac:1|2]]",
         "hint": "Obe tačke su levo od nule. Oduzmi manje rastojanje od nule od većeg.",
-        "solution": "Rastojanja od nule su 7/8 i 3/8. Rastojanje između tačaka je 7/8−3/8=4/8=1/2.",
-        "level": "advanced",
+        "solution": "d(A,B)=|−[[frac:7|8]]−(−[[frac:3|8]])|=|−[[frac:4|8]]|=[[frac:1|2]].",
+        "level": "medium",
         "skill": "Rastojanje racionalnih tačaka",
         "taskType": "rastojanje-negativnih-razlomaka",
         "errorCategory": "sign",
@@ -462,7 +469,7 @@ export const grade6PlanAdditions:Lesson[] = [
         "kind": "choice",
         "answer": "−[[frac:3|4]]",
         "hint": "Najpre izdvoji brojeve dovoljno velike apsolutne vrednosti. Zatim poredi same brojeve, uz njihove predznake.",
-        "solution": "Uslov ispunjavaju −5/6 i −3/4, jer su 5/6 i 3/4 veći od 2/3. Među ta dva negativna broja veći je −3/4, pošto je 3/4<5/6.",
+        "solution": "Prevedimo na imenilac 60. Apsolutne vrednosti su [[frac:50|60]], [[frac:45|60]], [[frac:30|60]] i [[frac:36|60]], a granica je [[frac:40|60]]. Uslov ispunjavaju samo −[[frac:5|6]] i −[[frac:3|4]]. Kako je −50<−45, najveći je −[[frac:3|4]].",
         "level": "advanced",
         "skill": "Apsolutna vrednost i poredak",
         "taskType": "filtriranje-pa-poredak",
@@ -474,6 +481,29 @@ export const grade6PlanAdditions:Lesson[] = [
         ],
         "prerequisites": [
           "apsolutna-vrednost-racionalnog"
+        ]
+      }
+    ],
+    "worked": [
+      {
+        "question": "Koja dva racionalna broja imaju apsolutnu vrednost 1,25?",
+        "steps": [
+          "|x|=1,25. Pošto je 1,25>0, postoje dva suprotna rešenja: x=−1,25 ili x=1,25.",
+          "Provera: |−1,25|=|1,25|=1,25."
+        ]
+      },
+      {
+        "question": "Reši |x|=0 i |x|=−0,2.",
+        "steps": [
+          "Jedino je nula na rastojanju nula od nule: x=0.",
+          "Rastojanje ne može biti negativno, zato druga jednačina nema rešenja."
+        ]
+      },
+      {
+        "question": "Odredi rastojanje A(−[[frac:5|6]]) i B(−[[frac:1|3]]).",
+        "steps": [
+          "d(A,B)=|−[[frac:5|6]]−(−[[frac:1|3]])|.",
+          "d(A,B)=|−[[frac:5|6]]+[[frac:2|6]]|=|−[[frac:3|6]]|=[[frac:1|2]]."
         ]
       }
     ]

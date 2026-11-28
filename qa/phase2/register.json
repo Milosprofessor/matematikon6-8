@@ -3190,7 +3190,24 @@
     "location": "app/content/plan-additions.ts; learning.ts; october-practice-supplement.ts",
     "fix": "Dopunjena definicija, tri primera, strogi raspon i obrt nejednakosti; kalibracija nivoa.",
     "status": "Ispravljeno; egzaktno potvrđeno",
-    "fix_commit": null,
+    "fix_commit": "f48a5d592b59b417011eb13af60b146300a8cb56",
     "phase2_evidence": "qa/phase2c/grade6/skup-racionalnih-brojeva/lesson.json"
+  },
+  {
+    "id": "G6C-039",
+    "priority": "P2",
+    "grade": "6",
+    "term": "I",
+    "area": "Racionalni brojevi",
+    "lesson": "apsolutna-vrednost-racionalnog",
+    "task": "Videti tasks.json",
+    "category": "Metodička preciznost",
+    "description": "Rastojanje i slučaj nule nedovoljno eksplicitni; razlomci i međukoraci.",
+    "evidence": "qa/phase2c/grade6/apsolutna-vrednost-racionalnog/tasks.json",
+    "location": "app/content/plan-additions.ts; learning.ts; october-practice-supplement.ts",
+    "fix": "Tri primera, formula rastojanja, stroge granice i negativni poredak.",
+    "status": "Ispravljeno; egzaktno potvrđeno",
+    "fix_commit": null,
+    "phase2_evidence": "qa/phase2c/grade6/apsolutna-vrednost-racionalnog/lesson.json"
   }
 ]

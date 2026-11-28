@@ -1,3 +1,19 @@
+# Checkpoint 17 — Apsolutna vrednost racionalnog broja
+
+Datum: 28.11.2026. Polazni GitHub commit f48a5d592b59b417011eb13af60b146300a8cb56. Nalaz G6C-039.
+
+- 498/919 zadataka; 20/45 lekcija; 421 zadatak preostao.
+- Apsolutna vrednost racionalnog broja: 19/19, uključujući devet generisanih varijanti; 3/3 rešena primera. Python Fraction, provereni rezultati, izbori, koordinate, stroge granice.
+- Dopunjena tri slučaja jednačine sa apsolutnom vrednošću i formula rastojanja; razlomci sa crtom, decimalni zarez u prikazu, četiri korekcije nivoa. ID, redosled i ključevi odgovora očuvani.
+- 127/127 programskih testova, Worker i Pages build, TypeScript i lint (0 grešaka, šest upozorenja); 22 browser zapisa desktop i touch sa osvežavanjem, tri primera i promenom pisma.
+- Nisu testirani fizički uređaji, niti sve adaptivne varijante pojedinačno kroz UI. Ishodi ostaju delimični.
+
+**Sledeće:** q-zapisi. Faza 2C nije završena; bez spajanja i objave.
+
+Dokazi: qa/phase2c/grade6/apsolutna-vrednost-racionalnog, ledger-tasks.json, ledger-lessons.json i Excel evidencije.
+
+---
+
 # Checkpoint 16 — Skup racionalnih brojeva
 
 Datum: 28.11.2026. Polazni commit 7cb32cd. Nalaz G6C-038.

@@ -1458,9 +1458,9 @@ export const learningByLesson:Record<string,LessonLearning> = {
     ],
     "steps": [
       "Poredi pozitivne apsolutne vrednosti pomoću zajedničkog imenioca ili decimalnog zapisa.",
-      "Kod negativnih brojeva obrni njihov poredak. Rastojanje dve negativne koordinate dobijaš razlikom većeg i manjeg rastojanja od nule."
+      "Kod negativnih brojeva obrni njihov poredak. Rastojanje dve tačke je apsolutna vrednost razlike njihovih koordinata."
     ],
-    "why": "Jednako rastojanje mogu imati dve tačke, po jedna sa svake strane nule.",
+    "why": "Za pozitivno rastojanje postoje dve tačke, po jedna sa svake strane nule; za nulto samo jedna.",
     "caution": "Minus izvan uspravnih crta ostaje: −|r| je suprotan broj apsolutnoj vrednosti.",
     "extraFormulas": [
       "|r|≥0",
